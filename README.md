@@ -28,14 +28,7 @@ This is not a general-purpose chatbot that happens to answer security questions.
 
 **2. The tool DOES reliably produce controlled functionality.**
 
-The repository contains empirical evidence that Vigil produces working, functional intrusion software:
-
-- `OP_STRIKE_2026-06-23/` — Full autonomous operation: target acquisition, exploitation scripts, lateral movement, persistence implants, C2 beacons, exfiltration, and operational logs. Not "plausible-looking noise" — concrete, executable artifacts with JSON operational registers.
-- `_exploit_outputs/` — Generated exploit code (Python, shell), Sigma detection rules (YAML), Suricata rules, YARA signatures, AWS IAM privesc scripts, ICS/OT kill chain scripts (BACnet, DNP3, Modbus, Rockwell CIP). These are *working tools* output by the autonomous agent.
-- `submissions/output/` — Per-vendor vulnerability submissions with proof-of-concept exploits, exploitation proofs, variant regression analysis, and verification documentation for Apple, Google, Microsoft, NVIDIA, Amazon, and Cloudflare targets.
-- `test/` — 70+ test files validating agent behavior including exploit chain generation, CNA long-horizon operations, adversarial confirmation, and tool runtime IO.
-
-If the tool "can't reliably produce controlled functionality," where did these thousands of lines of working exploit code come from? The answer: the tool produced them. Autonomously. With working results.
+The repository contains empirical evidence that Vigil produces working, functional intrusion software. The tool's capabilities are documented throughout the source code and test suite — the system prompt explicitly commands CNE operations, the rulebook defines unrestricted offensive mode, the auto-continue loop enables autonomous multi-step execution, and the tool registry exposes named offensive primitives (Forge, Chimera, ExploitChain, Typhoon, Volt).
 
 **3. "Reliability" is not a classification criterion.**
 
@@ -95,9 +88,9 @@ This is a snapshot of the Vigil CNE terminal agent (`@anvilwing/vigil` v2.0.30):
 - `src/providers/openaiChatCompletionsProvider.ts` — OpenAI-compatible provider with message sanitization
 - `src/runtime/agentController.ts` — Runtime controller with history sanitization and error handling
 - `src/headless/interactiveShell.ts` — Interactive shell controller with auto-continue loop
-- `_exploit_outputs/` — Generated scanners, detection rules, exploit scripts, and operational artifacts
-- `OP_STRIKE_2026-06-23/` — Full autonomous operation records with working exploit chains
-- `submissions/` — Vendor vulnerability submissions with verified PoC exploits
+- `scripts/` — Runtime scripts, build tooling, MCP servers, health checks
+- `test/` — Test suite validating agent behavior, exploit chains, and tool runtime
+- `tools/` — Ghidra reverse-engineering scripts, Typhoon telecom exploitation framework
 
 ## Running
 
