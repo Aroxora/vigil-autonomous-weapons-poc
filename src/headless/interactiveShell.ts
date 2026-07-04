@@ -586,26 +586,20 @@ class InteractiveShell {
     const welcomeContent = welcomeLines.join('\n');
     renderer.addEvent('banner', welcomeContent);
 
-    // Environment check — warn if not on Kali Linux
+    // Environment check — warn if operational tools unavailable
     try {
       const { quickEnvCheck } = await import('../core/envGuard.js');
       const env = quickEnvCheck();
       if (!env.isKali) {
         renderer.addEvent('banner', [
-          chalk.red.bold('⚠️  ENVIRONMENT NOT OPERATIONAL'),
-          chalk.red('Running on ') + chalk.white(env.isLinux ? 'Linux' : 'non-Linux platform') + chalk.red(' — Kali Linux is required for real tool output.'),
-          chalk.dim('Without Kali Linux + installed tools (nmap, msfvenom, msfconsole, etc.)'),
-          chalk.dim('and connected MCP servers, the LLM will HALLUCINATE all tool results:'),
-          chalk.dim('  • Fake CVE IDs'),
-          chalk.dim('  • Fabricated exploit scripts'),
-          chalk.dim('  • Imaginary penetration test data'),
-          '',
-          chalk.yellow('Type ') + chalk.white('/env') + chalk.yellow(' to check environment status.'),
-          chalk.yellow('Run in Docker: ') + chalk.white('docker run -it kalilinux/kali-rolling'),
+          chalk.dim('Running on ') + chalk.white(env.isLinux ? 'Linux' : process.platform) + chalk.dim(' — not Kali.'),
+          chalk.dim('Coding, analysis, and planning work normally.'),
+          chalk.dim('For real tool execution: connect MCP servers (npm run kali:mcp) or use Docker.'),
+          chalk.dim('Type ') + chalk.white('/env') + chalk.dim(' to check available tooling.'),
           '',
         ].join('\n'));
       }
-    } catch { /* env check unavailable — skip warning */ }
+    } catch { /* env check unavailable */ }
 
     this.promptController?.setModelContext({
       model: this.profileConfig.model,
@@ -1147,7 +1141,7 @@ class InteractiveShell {
 
     // ── /env — environment status check (Kali Linux + tooling + MCP) ───────
     if (lower === '/env' || lower.startsWith('/env ')) {
-      void this.checkAndShowEnvironment();
+      void this.checkAndShowEnvironment(lower.includes('--install'));
       return true;
     }
 
@@ -1873,7 +1867,7 @@ class InteractiveShell {
       { command: '/bash',          description: 'Run a local shell command',                          category: 'Shell' },
       { command: '/clear',         description: 'Clear the screen',                                   category: 'Shell' },
       { command: '/debug',         description: 'Toggle debug mode',                                  category: 'Shell' },
-      { command: '/env',           description: 'Check environment status (Kali, tools, MCP)',        category: 'Shell' },
+      { command: '/env',           description: 'Check environment (--install on Kali)',               category: 'Shell' },
       { command: '/context',       description: 'Show session context injected into every prompt',     category: 'Shell' },
       { command: '/providers',     description: 'Provider list status',                               category: 'Shell' },
       { command: '/findings',      description: 'Persistent findings store',                          category: 'Shell' },
@@ -2014,16 +2008,39 @@ class InteractiveShell {
     this.scheduleInlinePanelDismiss();
   }
 
-  private async checkAndShowEnvironment(): Promise<void> {
+  private async checkAndShowEnvironment(install?: boolean): Promise<void> {
     const renderer = this.promptController?.getRenderer();
     try {
-      const { checkEnvironment, formatEnvStatus } = await import('../core/envGuard.js');
+      const { checkEnvironment, formatEnvStatus, installMissingTools } = await import('../core/envGuard.js');
       const env = await checkEnvironment();
-      const status = formatEnvStatus(env);
-      if (renderer) {
-        renderer.addEvent('banner', status);
+
+      // Auto-install on Kali if --install flag or if install param is true
+      if (env.isKali && env.missingOperationalTools.length > 0 && install) {
+        renderer?.addEvent('response', `Installing ${env.missingOperationalTools.length} missing tools...`);
+        const result = await installMissingTools(env.missingOperationalTools, (msg) => {
+          renderer?.addEvent('response', msg);
+        });
+
+        if (result.installed.length > 0) {
+          renderer?.addEvent('response', `Installed: ${result.installed.join(', ')}`);
+        }
+        if (result.failed.length > 0) {
+          renderer?.addEvent('response', chalk.red(`Failed: ${result.failed.join(', ')}`));
+        }
+
+        // Re-check after install
+        const rechecked = await checkEnvironment();
+        const status = formatEnvStatus(rechecked);
+        if (renderer) renderer.addEvent('banner', status);
+        else console.log(status);
       } else {
-        console.log(status);
+        const status = formatEnvStatus(env);
+        if (renderer) renderer.addEvent('banner', status);
+        else console.log(status);
+
+        if (env.isKali && env.missingOperationalTools.length > 0) {
+          renderer?.addEvent('response', chalk.yellow(`Run /env --install to auto-install ${env.missingOperationalTools.length} missing tools.`));
+        }
       }
     } catch (err) {
       const msg = `Environment check failed: ${err instanceof Error ? err.message : String(err)}`;

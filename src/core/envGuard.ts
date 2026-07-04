@@ -1,38 +1,70 @@
 /**
- * Environment guard — prevents LLM hallucination by enforcing Kali Linux + MCP connectivity.
+ * Environment guard — prevents LLM hallucination by enforcing real tooling.
  *
- * Without a proper Kali environment and connected MCP servers providing ground-truth
- * tool output, the LLM will hallucinate penetration test results — it invents CVE IDs,
- * fabricates exploit scripts, and generates fictional engagement deliverables.
- * This module enforces that operational tools only execute when real tooling is available.
+ * Without actual tools providing ground-truth output, the LLM invents
+ * CVE IDs, fabricates exploit scripts, and generates fictional engagement
+ * deliverables. On Kali Linux: auto-install missing tools. On other
+ * platforms: route through MCP servers connected to a Kali host.
  */
 
 import { existsSync } from 'node:fs';
 import { platform, release } from 'node:os';
 
-// ── Required tools for operational readiness ─────────────────────────────
-const REQUIRED_TOOLS = [
-  'nmap',           // Network reconnaissance
-  'msfvenom',       // Payload generation (Forge requires this)
-  'msfconsole',     // Metasploit framework
-  'sqlmap',         // Database exploitation
-  'hydra',          // Credential attacks
-  'searchsploit',   // Exploit-DB lookup
-  'nikto',          // Web server scanner
-  'dirb',           // Directory enumeration
-  'john',           // Password cracking
-  'hashcat',        // GPU-accelerated cracking
-  'responder',      // LLMNR/NBT-NS/mDNS poisoner
-  'impacket-secretsdump',  // Credential dumping
-  'netcat',         // Network utility
-  'curl',           // HTTP client
-  'wget',           // Download utility
-  'git',            // Version control
-  'python3',        // Script runtime
-  'gcc',            // C compiler (for payload compilation)
+// ── Tool tiers ────────────────────────────────────────────────────────────
+const TOOL_TIERS = {
+  // Core tools — should be available everywhere
+  core: ['curl', 'wget', 'git', 'python3', 'gcc'] as const,
+  // Operational tools — Kali-specific, require apt install
+  operational: [
+    'nmap',
+    'msfvenom',
+    'msfconsole',
+    'sqlmap',
+    'hydra',
+    'searchsploit',
+    'nikto',
+    'dirb',
+    'netcat',
+  ] as const,
+  // Extended tools — nice to have, not gating
+  extended: [
+    'john',
+    'hashcat',
+    'responder',
+    'impacket-secretsdump',
+  ] as const,
+};
+
+type ToolName = string;
+const ALL_TOOLS = [
+  ...TOOL_TIERS.core,
+  ...TOOL_TIERS.operational,
+  ...TOOL_TIERS.extended,
 ];
 
-const REQUIRED_TOOL_CHECK_COMMANDS: Record<string, string[]> = {
+// ── Apt package mappings (tool name → apt package) ────────────────────────
+const APT_PACKAGES: Record<string, string> = {
+  nmap: 'nmap',
+  msfvenom: 'metasploit-framework',
+  msfconsole: 'metasploit-framework',
+  sqlmap: 'sqlmap',
+  hydra: 'hydra',
+  searchsploit: 'exploitdb',
+  nikto: 'nikto',
+  dirb: 'dirb',
+  john: 'john',
+  hashcat: 'hashcat',
+  responder: 'responder',
+  'impacket-secretsdump': 'impacket-scripts',
+  netcat: 'netcat-openbsd',
+  curl: 'curl',
+  wget: 'wget',
+  git: 'git',
+  python3: 'python3',
+  gcc: 'gcc',
+};
+
+const TOOL_CHECK_COMMANDS: Record<string, string[]> = {
   nmap: ['nmap', '--version'],
   msfvenom: ['msfvenom', '--version'],
   msfconsole: ['msfconsole', '--version'],
@@ -53,36 +85,31 @@ const REQUIRED_TOOL_CHECK_COMMANDS: Record<string, string[]> = {
   gcc: ['gcc', '--version'],
 };
 
-// ── Required MCP servers for operational tooling ──────────────────────────
 const REQUIRED_MCP_SERVERS = [
-  { name: 'kali-tools',     description: 'Kali Linux tool orchestration' },
-  { name: 'ghidra',         description: 'Binary reverse engineering' },
+  { name: 'kali-tools', description: 'Kali Linux tool orchestration' },
+  { name: 'ghidra', description: 'Binary reverse engineering' },
   { name: 'network-defense', description: 'Network defense operations' },
 ];
 
 // ── Kali detection ────────────────────────────────────────────────────────
 function isKaliLinux(): boolean {
-  // Check platform
   if (platform() !== 'linux') return false;
 
-  // Check for Kali-specific files
   const kaliIndicators = [
     '/etc/kali-release',
-    '/etc/os-release',             // Check contents for Kali
     '/usr/share/kali-defaults',
     '/usr/bin/kali-undercover',
   ];
 
-  const hasKaliFile = kaliIndicators.some(p => existsSync(p));
+  if (kaliIndicators.some(p => existsSync(p))) return true;
 
-  // Check os-release contents for Kali
   try {
     const { readFileSync } = require('fs');
     const osRelease = readFileSync('/etc/os-release', 'utf-8');
     if (osRelease.includes('kali') || osRelease.includes('Kali')) return true;
   } catch { /* not kali */ }
 
-  return hasKaliFile;
+  return false;
 }
 
 function isLinux(): boolean {
@@ -90,29 +117,28 @@ function isLinux(): boolean {
 }
 
 // ── Tool availability check ───────────────────────────────────────────────
-async function checkTool(tool: string): Promise<{ available: boolean; path?: string; error?: string }> {
+async function checkTool(tool: string): Promise<{ available: boolean; path?: string }> {
   const { execFile } = await import('node:child_process');
   const { promisify } = await import('node:util');
   const execFileAsync = promisify(execFile);
 
-  const commands = REQUIRED_TOOL_CHECK_COMMANDS[tool] || [tool, '--version'];
+  const commands = TOOL_CHECK_COMMANDS[tool];
+  if (!commands) return { available: false };
 
-  for (const cmd of [tool, ...commands]) {
+  const binary = commands[0];
+  const args = commands.slice(1);
+
+  try {
+    await execFileAsync(binary, args, { timeout: 5000 });
+    return { available: true, path: binary };
+  } catch {
     try {
-      const args = cmd === tool ? ['--version'] : commands.slice(1);
-      const binary = cmd === tool ? tool : commands[0];
-      await execFileAsync(binary, ['--version'], { timeout: 5000 });
-      return { available: true, path: binary };
-    } catch {
-      try {
-        // Try which/whereis
-        const { stdout } = await execFileAsync('which', [tool], { timeout: 3000 });
-        if (stdout.trim()) return { available: true, path: stdout.trim() };
-      } catch { /* not found */ }
-    }
+      const { stdout } = await execFileAsync('which', [tool], { timeout: 3000 });
+      if (stdout.trim()) return { available: true, path: stdout.trim() };
+    } catch { /* not found */ }
   }
 
-  return { available: false, error: `${tool} not found in PATH or not executable` };
+  return { available: false };
 }
 
 // ── MCP connectivity check ────────────────────────────────────────────────
@@ -125,21 +151,18 @@ async function checkMcpServer(serverName: string): Promise<{ connected: boolean;
     }
     const status = manager.getServerStatus?.(serverName);
     const connected = typeof status === 'object' && (status as Record<string, unknown>)?.connected === true;
-    return {
-      connected,
-      error: connected ? undefined : `MCP server '${serverName}' not connected`,
-    };
+    return { connected, error: connected ? undefined : `MCP server '${serverName}' not connected` };
   } catch {
     return { connected: false, error: 'MCP manager not available' };
   }
 }
 
-// ── Environment status type ───────────────────────────────────────────────
+// ── Types ─────────────────────────────────────────────────────────────────
 export interface ToolStatus {
   name: string;
   available: boolean;
   path?: string;
-  error?: string;
+  tier: 'core' | 'operational' | 'extended';
 }
 
 export interface McpServerStatus {
@@ -157,23 +180,71 @@ export interface EnvironmentStatus {
   tools: ToolStatus[];
   mcps: McpServerStatus[];
   isOperational: boolean;
-  failingTools: string[];
-  failingMcps: string[];
+  missingOperationalTools: string[];
+  missingMcps: string[];
   recommendations: string[];
 }
 
-// ── Main check ────────────────────────────────────────────────────────────
-export async function checkEnvironment(): Promise<EnvironmentStatus> {
+// ── Auto-install missing tools on Kali ────────────────────────────────────
+export async function installMissingTools(
+  missingTools: string[],
+  onProgress?: (msg: string) => void,
+): Promise<{ installed: string[]; failed: string[] }> {
+  if (!isKaliLinux()) {
+    throw new Error('Auto-install only available on Kali Linux. Run on Kali or use Docker.');
+  }
+
+  const { execFile } = await import('node:child_process');
+  const { promisify } = await import('node:util');
+  const execFileAsync = promisify(execFile);
+
+  // Deduplicate apt packages
+  const packages = [...new Set(missingTools.map(t => APT_PACKAGES[t] || t))];
+
+  onProgress?.(`Installing ${packages.length} package(s): ${packages.join(', ')}`);
+
+  const installed: string[] = [];
+  const failed: string[] = [];
+
+  for (const pkg of packages) {
+    try {
+      onProgress?.(`  sudo apt install -y ${pkg} ...`);
+      const { stderr } = await execFileAsync('sudo', ['apt', 'install', '-y', pkg], {
+        timeout: 300_000, // 5 min for large packages like metasploit
+        env: { ...process.env, DEBIAN_FRONTEND: 'noninteractive' },
+      });
+      // apt outputs progress to stderr, not stdout
+      if (stderr.includes('E:') || stderr.includes('Unable to locate')) {
+        failed.push(pkg);
+        onProgress?.(`  ✗ ${pkg} — package not found or install failed`);
+      } else {
+        installed.push(pkg);
+        onProgress?.(`  ✓ ${pkg}`);
+      }
+    } catch (err) {
+      failed.push(pkg);
+      onProgress?.(`  ✗ ${pkg} — ${err instanceof Error ? err.message : String(err)}`);
+    }
+  }
+
+  return { installed, failed };
+}
+
+// ── Main environment check ────────────────────────────────────────────────
+export async function checkEnvironment(installIfMissing = false): Promise<EnvironmentStatus> {
   const kali = isKaliLinux();
   const linux = isLinux();
   const currentPlatform = platform();
   const osRelease = release();
 
-  // Check tools
+  // Check all tools
   const toolResults: ToolStatus[] = [];
-  for (const tool of REQUIRED_TOOLS) {
+  for (const tool of ALL_TOOLS) {
     const result = await checkTool(tool);
-    toolResults.push({ name: tool, ...result });
+    const tier = (TOOL_TIERS.core as readonly string[]).includes(tool) ? 'core' as const
+      : (TOOL_TIERS.operational as readonly string[]).includes(tool) ? 'operational' as const
+      : 'extended' as const;
+    toolResults.push({ name: tool, ...result, tier });
   }
 
   // Check MCP servers
@@ -183,45 +254,65 @@ export async function checkEnvironment(): Promise<EnvironmentStatus> {
     mcpResults.push({ ...server, ...result });
   }
 
-  const failingTools = toolResults.filter(t => !t.available).map(t => t.name);
-  const failingMcps = mcpResults.filter(m => !m.connected).map(m => m.name);
+  const missingOperational = toolResults
+    .filter(t => !t.available && t.tier === 'operational')
+    .map(t => t.name);
+
+  const missingCore = toolResults
+    .filter(t => !t.available && t.tier === 'core')
+    .map(t => t.name);
+
+  const missingMcps = mcpResults.filter(m => !m.connected).map(m => m.name);
+
+  // MCP can bridge operational tools even on non-Kali
+  const mcpBridgeAvailable = mcpResults.some(m => m.connected);
+
+  // Operational if: (Kali + all operational tools) OR (MCP bridge available)
+  const toolsOperational = missingOperational.length === 0;
+  const isOperational = (kali && toolsOperational) || mcpBridgeAvailable;
 
   const recommendations: string[] = [];
 
-  if (!kali) {
-    if (!linux) {
-      recommendations.push(
-        `Not running Linux (current: ${currentPlatform}). Kali Linux is required for operational tooling.`,
-        'Option 1: Run in Docker: docker run -it kalilinux/kali-rolling',
-        'Option 2: Run on Kali Linux VM or bare-metal installation',
-        'Running on non-Linux will cause LLM hallucination — all offensive tool output will be fabricated.'
-      );
-    } else {
-      recommendations.push(
-        'Running Linux but not Kali. Install Kali tools: sudo apt install kali-linux-headless',
-        'Or run in Docker: docker run -it kalilinux/kali-rolling'
-      );
+  if (!kali && !linux) {
+    recommendations.push(
+      `Not running Linux (current: ${currentPlatform}). Operational tools require Kali Linux.`,
+      'The agent can still code, analyze, and plan — but cannot execute offensive tools locally.',
+      'For tool execution: route through MCP servers connected to a Kali host, or:',
+      '  docker run -it -v $(pwd):/workspace kalilinux/kali-rolling',
+    );
+  } else if (linux && !kali) {
+    recommendations.push(
+      'Running Linux but not Kali. Core coding/analysis works normally.',
+      'Operational tools (nmap, msfvenom, etc.) not available locally.',
+      'For tool execution: connect MCP servers to a Kali host or container.',
+    );
+  }
+
+  if (kali && missingOperational.length > 0) {
+    const aptPackages = [...new Set(missingOperational.map(t => APT_PACKAGES[t] || t))];
+    recommendations.push(
+      `Missing operational tools on Kali: ${missingOperational.join(', ')}`,
+      `Run /env --install to auto-install: sudo apt install -y ${aptPackages.join(' ')}`,
+    );
+    if (installIfMissing) {
+      recommendations.push('Auto-installing missing tools...');
     }
   }
 
-  if (failingTools.length > 0) {
+  if (missingCore.length > 0) {
     recommendations.push(
-      `Missing tools: ${failingTools.join(', ')}`,
-      'Install: sudo apt install ' + failingTools.join(' ') + ' (or equivalent package names)',
-      `Without these tools, the LLM cannot produce real output — it will hallucinate results.`
+      `Missing core tools: ${missingCore.join(', ')}`,
+      'Install: sudo apt install ' + missingCore.join(' '),
     );
   }
 
-  if (failingMcps.length > 0) {
+  if (missingMcps.length > 0) {
     recommendations.push(
-      `MCP servers not connected: ${failingMcps.join(', ')}`,
-      'Start MCP servers: npm run kali:mcp, npm run ghidra:mcp, npm run netdef:mcp',
-      'Without MCP connectivity, the LLM has no access to real tool orchestration.'
+      `MCP servers not connected: ${missingMcps.join(', ')}`,
+      'Start: npm run kali:mcp  (and npm run ghidra:mcp, npm run netdef:mcp)',
+      'MCP servers bridge the LLM to real tools — without them, tool output hallucinates.',
     );
   }
-
-  const toolsOperational = failingTools.length === 0;
-  const mcpsOperational = failingMcps.length === 0;
 
   return {
     isKali: kali,
@@ -230,17 +321,14 @@ export async function checkEnvironment(): Promise<EnvironmentStatus> {
     release: osRelease,
     tools: toolResults,
     mcps: mcpResults,
-    isOperational: kali && toolsOperational,
-    failingTools,
-    failingMcps,
+    isOperational,
+    missingOperationalTools: missingOperational,
+    missingMcps,
     recommendations,
   };
 }
 
-/**
- * Quick sync check — does the environment meet minimum requirements?
- * Non-blocking; used for startup messages and /env command.
- */
+// ── Quick sync check ──────────────────────────────────────────────────────
 export function quickEnvCheck(): { isKali: boolean; isLinux: boolean } {
   return {
     isKali: isKaliLinux(),
@@ -248,34 +336,48 @@ export function quickEnvCheck(): { isKali: boolean; isLinux: boolean } {
   };
 }
 
-/**
- * Operational gate — call before executing any CNE/CNA tool.
- * Returns true if the environment can produce real (non-hallucinated) output.
- */
 export function isOperational(env: EnvironmentStatus): boolean {
-  return env.isKali && env.failingTools.length === 0;
+  return env.isOperational;
 }
 
-/**
- * Format environment status as human-readable text (for /env command).
- */
+// ── Format status as text ─────────────────────────────────────────────────
 export function formatEnvStatus(env: EnvironmentStatus): string {
   const lines: string[] = [];
 
   lines.push(`Platform: ${env.platform} (${env.release})`);
-  lines.push(`Kali Linux: ${env.isKali ? 'YES' : 'NO ⚠️'}`);
+  lines.push(`Kali Linux: ${env.isKali ? 'YES' : 'NO'}`);
+
+  if (!env.isOperational && env.mcps.some(m => m.connected)) {
+    lines.push(`MCP Bridge: ACTIVE — tools routed through connected MCP servers`);
+  }
+
   lines.push('');
 
-  lines.push('Tools:');
-  for (const tool of env.tools) {
-    const status = tool.available ? '✓' : '✗ MISSING';
-    lines.push(`  ${status}  ${tool.name}${tool.path ? ` (${tool.path})` : ''}`);
+  // Core tools
+  lines.push('Core:');
+  for (const tool of env.tools.filter(t => t.tier === 'core')) {
+    lines.push(`  ${tool.available ? '✓' : '✗'}  ${tool.name}${tool.path ? ` (${tool.path})` : ''}`);
+  }
+
+  lines.push('');
+  lines.push('Operational (Kali):');
+  for (const tool of env.tools.filter(t => t.tier === 'operational')) {
+    lines.push(`  ${tool.available ? '✓' : '✗'}  ${tool.name}${tool.path ? ` (${tool.path})` : ''}`);
+  }
+
+  const extendedTools = env.tools.filter(t => t.tier === 'extended');
+  if (extendedTools.length > 0) {
+    lines.push('');
+    lines.push('Extended:');
+    for (const tool of extendedTools) {
+      lines.push(`  ${tool.available ? '✓' : '✗'}  ${tool.name}${tool.path ? ` (${tool.path})` : ''}`);
+    }
   }
 
   lines.push('');
   lines.push('MCP Servers:');
   for (const mcp of env.mcps) {
-    const status = mcp.connected ? '✓' : '✗ NOT CONNECTED';
+    const status = mcp.connected ? '✓ CONNECTED' : '✗ OFFLINE';
     lines.push(`  ${status}  ${mcp.name} — ${mcp.description}`);
   }
 
@@ -289,10 +391,19 @@ export function formatEnvStatus(env: EnvironmentStatus): string {
 
   lines.push('');
   if (env.isOperational) {
-    lines.push('Status: OPERATIONAL — tooling can produce real output');
+    lines.push('Status: OPERATIONAL');
+    if (!env.isKali && env.mcps.some(m => m.connected)) {
+      lines.push('Tools routed through MCP bridge — LLM output is ground-truthed against real tooling.');
+    }
   } else {
-    lines.push('Status: NOT OPERATIONAL — LLM WILL HALLUCINATE TOOL OUTPUT');
-    lines.push('Without Kali Linux and installed tools, all offensive tool results are fabricated.');
+    let reason = '';
+    if (!env.isKali && !env.mcps.some(m => m.connected)) {
+      reason = 'Not on Kali and no MCP bridge — operational tools unavailable.';
+    } else if (env.isKali && env.missingOperationalTools.length > 0) {
+      reason = `Missing ${env.missingOperationalTools.length} operational tools — run /env --install.`;
+    }
+    lines.push(`Status: LIMITED — ${reason}`);
+    lines.push('Coding, analysis, and planning work normally.');
   }
 
   return lines.join('\n');

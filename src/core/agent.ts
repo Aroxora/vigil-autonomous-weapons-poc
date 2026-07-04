@@ -901,19 +901,29 @@ export class AgentRuntime {
     const numCalls = toolCalls.length;
     const executedEdits: Array<{ call: ToolCallRequest; output: string; fromCache: boolean }> = [];
 
-    // Environment guard — prevent hallucinated tool output when not on Kali Linux
+    // Environment guard — prevent hallucinated tool output
     const hasOperationalTool = toolCalls.some(c => OPERATIONAL_TOOLS.has(c.name));
     if (hasOperationalTool) {
       const env = quickEnvCheck();
-      if (!env.isKali) {
-        const { formatEnvStatus } = await import('./envGuard.js');
+      // Check if MCP bridge could provide tool access
+      let mcpAvailable = false;
+      try {
+        const { getSharedMcpManager } = await import('../plugins/tools/mcp/mcpClient.js');
+        const manager = getSharedMcpManager();
+        if (manager.isInitialized()) {
+          const mcpStatus = manager.getServerStatus?.('kali-tools');
+          mcpAvailable = typeof mcpStatus === 'object' && (mcpStatus as Record<string, unknown>)?.connected === true;
+        }
+      } catch { /* MCP not available */ }
+
+      if (!env.isKali && !mcpAvailable) {
         for (const call of toolCalls) {
           if (OPERATIONAL_TOOLS.has(call.name)) {
             this.messages.push({
               role: 'tool',
               name: call.name,
               toolCallId: call.id,
-              content: `REJECTED: Environment not operational. Tool '${call.name}' requires Kali Linux with installed offensive tools (nmap, msfvenom, msfconsole, etc.) and connected MCP servers. Without real tool output, the LLM produces hallucinated results — fabricated CVE IDs, fictional exploit scripts, and imaginary penetration test data.\n\nRun /env to check environment status.\n\nCurrent platform: ${env.isLinux ? 'Linux' : 'non-Linux'} (${process.platform}). Kali Linux required.`,
+              content: `BLOCKED: Tool '${call.name}' requires Kali Linux or a connected MCP server. Without real tool output, results would be hallucinated.\n\nRun /env to check status. Options:\n  • Connect MCP: npm run kali:mcp (bridge to Kali host)\n  • Run on Kali: docker run -it -v $(pwd):/workspace kalilinux/kali-rolling`,
             });
           }
         }
