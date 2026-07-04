@@ -51,7 +51,6 @@
     "scripts/install-vigil.sh",
     "scripts/install-ghidra.ps1",
     "scripts/safe-validators",
-    "tools/ghidra",
     "README.md",
     "agents",
     "LICENSE"
@@ -122,8 +121,6 @@
     "kali:mcp": "node scripts/vigil-run.mjs scripts/kali-tools-mcp.mjs",
     "netdef:mcp": "node scripts/vigil-run.mjs scripts/network-defense-mcp.mjs",
     "threatfeed:mcp": "node scripts/vigil-run.mjs scripts/threat-feed-mcp.mjs",
-    "threat:intel": "node scripts/threat-actor-intel.mjs",
-    "unified:deploy": "node scripts/unified-deploy.mjs",
     "endpoint:mcp": "node scripts/vigil-run.mjs scripts/endpoint-defense-mcp.mjs",
     "install:universal": "bash scripts/install-vigil.sh",
     "docker:build": "docker build -t trenchwork/vigil:latest .",
