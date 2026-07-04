@@ -905,6 +905,7 @@ export class AgentRuntime {
     const hasOperationalTool = toolCalls.some(c => OPERATIONAL_TOOLS.has(c.name));
     if (hasOperationalTool) {
       const env = quickEnvCheck();
+
       // Check if MCP bridge could provide tool access
       let mcpAvailable = false;
       try {
@@ -916,14 +917,26 @@ export class AgentRuntime {
         }
       } catch { /* MCP not available */ }
 
-      if (!env.isKali && !mcpAvailable) {
+      if (env.isKali) {
+        // On Kali: auto-install missing tools, then proceed
+        const { checkEnvironment, installMissingTools } = await import('./envGuard.js');
+        const fullEnv = await checkEnvironment();
+        if (fullEnv.missingOperationalTools.length > 0) {
+          try {
+            await installMissingTools(fullEnv.missingOperationalTools);
+          } catch { /* install failed — tools will return errors naturally */ }
+        }
+        // Proceed regardless — tools will fail with real errors if still missing,
+        // which is better than hallucinated successes
+      } else if (!mcpAvailable) {
+        // Not on Kali, no MCP bridge — block operational tools
         for (const call of toolCalls) {
           if (OPERATIONAL_TOOLS.has(call.name)) {
             this.messages.push({
               role: 'tool',
               name: call.name,
               toolCallId: call.id,
-              content: `BLOCKED: Tool '${call.name}' requires Kali Linux or a connected MCP server. Without real tool output, results would be hallucinated.\n\nRun /env to check status. Options:\n  • Connect MCP: npm run kali:mcp (bridge to Kali host)\n  • Run on Kali: docker run -it -v $(pwd):/workspace kalilinux/kali-rolling`,
+              content: `BLOCKED: Tool '${call.name}' requires Kali Linux or a connected MCP server. Without real tool output, results would be hallucinated.\n\nOptions:\n  • Connect MCP: npm run kali:mcp (bridge to Kali host)\n  • Run on Kali: docker run -it -v $(pwd):/workspace kalilinux/kali-rolling`,
             });
           }
         }

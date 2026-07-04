@@ -595,7 +595,7 @@ class InteractiveShell {
           chalk.dim('Running on ') + chalk.white(env.isLinux ? 'Linux' : process.platform) + chalk.dim(' — not Kali.'),
           chalk.dim('Coding, analysis, and planning work normally.'),
           chalk.dim('For real tool execution: connect MCP servers (npm run kali:mcp) or use Docker.'),
-          chalk.dim('Type ') + chalk.white('/env') + chalk.dim(' to check available tooling.'),
+          chalk.dim('Type ') + chalk.white('/help') + chalk.dim(' for commands.'),
           '',
         ].join('\n'));
       }
@@ -1136,12 +1136,6 @@ class InteractiveShell {
     // Session stats
     if (lower === '/stats' || lower === '/status') {
       this.showSessionStats();
-      return true;
-    }
-
-    // ── /env — environment status check (Kali Linux + tooling + MCP) ───────
-    if (lower === '/env' || lower.startsWith('/env ')) {
-      void this.checkAndShowEnvironment(lower.includes('--install'));
       return true;
     }
 
@@ -1907,7 +1901,6 @@ class InteractiveShell {
       cmd('/model') + dim('              Switch DeepSeek V4 Pro (default) / V4 Flash'),
       '',
       heading('Shell'),
-      cmd('/env') + dim('           Check environment: Kali Linux · tools · MCP servers'),
       cmd('/workspace') + dim('     Session dashboard: scope, findings, phase, stats'),
       cmd('/context') + dim('        Show session context injected into every prompt'),
       cmd('/auto') + dim('          Toggle auto-continue (off → on → dual)'),
@@ -2008,46 +2001,6 @@ class InteractiveShell {
     this.scheduleInlinePanelDismiss();
   }
 
-  private async checkAndShowEnvironment(install?: boolean): Promise<void> {
-    const renderer = this.promptController?.getRenderer();
-    try {
-      const { checkEnvironment, formatEnvStatus, installMissingTools } = await import('../core/envGuard.js');
-      const env = await checkEnvironment();
-
-      // Auto-install on Kali if --install flag or if install param is true
-      if (env.isKali && env.missingOperationalTools.length > 0 && install) {
-        renderer?.addEvent('response', `Installing ${env.missingOperationalTools.length} missing tools...`);
-        const result = await installMissingTools(env.missingOperationalTools, (msg) => {
-          renderer?.addEvent('response', msg);
-        });
-
-        if (result.installed.length > 0) {
-          renderer?.addEvent('response', `Installed: ${result.installed.join(', ')}`);
-        }
-        if (result.failed.length > 0) {
-          renderer?.addEvent('response', chalk.red(`Failed: ${result.failed.join(', ')}`));
-        }
-
-        // Re-check after install
-        const rechecked = await checkEnvironment();
-        const status = formatEnvStatus(rechecked);
-        if (renderer) renderer.addEvent('banner', status);
-        else console.log(status);
-      } else {
-        const status = formatEnvStatus(env);
-        if (renderer) renderer.addEvent('banner', status);
-        else console.log(status);
-
-        if (env.isKali && env.missingOperationalTools.length > 0) {
-          renderer?.addEvent('response', chalk.yellow(`Run /env --install to auto-install ${env.missingOperationalTools.length} missing tools.`));
-        }
-      }
-    } catch (err) {
-      const msg = `Environment check failed: ${err instanceof Error ? err.message : String(err)}`;
-      if (renderer) renderer.addEvent('response', msg);
-      else console.log(msg);
-    }
-  }
 
   private async showMcpStatus(): Promise<void> {
     const manager = getSharedMcpManager(this.workingDir);
