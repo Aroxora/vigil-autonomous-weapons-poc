@@ -18,8 +18,6 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, chmodSync } from 'n
 import { resolve, dirname, join } from 'node:path';
 import { homedir } from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { exec as childExec } from 'node:child_process';
-import { promisify } from 'node:util';
 import chalk from 'chalk';
 import gradientString from 'gradient-string';
 
@@ -48,8 +46,6 @@ import { saveModelPreference } from '../core/preferences.js';
 import { setDebugMode, debugSnippet } from '../utils/debugLogger.js';
 import type { AgentEventUnion } from '../contracts/v1/agent.js';
 import type { ProviderId } from '../core/types.js';
-
-const exec = promisify(childExec);
 import { ensureNextSteps } from '../core/finalResponseFormatter.js';
 import { getTaskCompletionDetector, detectFailingTestOrBuild } from '../core/taskCompletionDetector.js';
 import { checkForUpdates, performBackgroundUpdate, type UpdateInfo } from '../core/updateChecker.js';
@@ -945,30 +941,6 @@ class InteractiveShell {
     // Don't prefix with "Based on my analysis" - just return clean content
     return response.endsWith('.') ? response : response + '.';
   }
-  private async runLocalCommand(command: string): Promise<void> {
-    const renderer = this.promptController?.getRenderer();
-    if (!command) {
-      this.promptController?.setStatusMessage('Usage: /bash <command>');
-      setTimeout(() => this.promptController?.setStatusMessage(null), 2500);
-      return;
-    }
-
-    this.promptController?.setStatusMessage(`bash: ${command}`);
-    try {
-      const { stdout: out, stderr } = await exec(command, {
-        cwd: this.workingDir,
-        maxBuffer: 4 * 1024 * 1024,
-      });
-      const output = [out, stderr].filter(Boolean).join('').trim() || '(no output)';
-      renderer?.addEvent('tool', `$ ${command}\n${output}`);
-    } catch (error) {
-      const err = error as { stdout?: string; stderr?: string; message?: string };
-      const output = [err.stdout, err.stderr, err.message].filter(Boolean).join('\n').trim();
-      renderer?.addEvent('error', `$ ${command}\n${output || 'command failed'}`);
-    } finally {
-      this.promptController?.setStatusMessage(null);
-    }
-  }
 
   private handleSlashCommand(command: string): boolean | Promise<boolean> {
     const trimmed = command.trim();
@@ -1014,10 +986,6 @@ class InteractiveShell {
       return true;
     }
 
-    if (lower === '/clear' || lower === '/c') {
-      stdout.write('\x1b[2J\x1b[H');
-      return true;
-    }
 
     // --- /connections — provider key management ---
     if (lower === '/connections' || lower === '/conn' || lower === '/cn') {
@@ -1025,11 +993,6 @@ class InteractiveShell {
       return true;
     }
 
-    if (lower.startsWith('/bash') || lower.startsWith('/sh ')) {
-      const cmd = trimmed.replace(/^\/(bash|sh)\s*/i, '').trim();
-      void this.runLocalCommand(cmd);
-      return true;
-    }
 
     // Toggle auto mode: off → on → dual → off
     if (lower === '/auto' || lower === '/continue') {
@@ -1040,10 +1003,6 @@ class InteractiveShell {
       return true;
     }
 
-    if (lower === '/exit' || lower === '/quit' || lower === '/q') {
-      this.handleExit();
-      return true;
-    }
 
     if (lower.startsWith('/debug')) {
       const parts = trimmed.split(/\s+/);
@@ -1553,14 +1512,9 @@ class InteractiveShell {
   /** Register all slash commands with the Ink prompt for tab-completion UI. */
   private registerSlashCommands(): void {
     const cmds = [
-      { command: '/help',       description: 'Show this help panel',                        category: 'Shell' },
-      { command: '/exit',       description: 'Quit Vigil',                                  category: 'Shell' },
-      { command: '/clear',      description: 'Clear the screen',                            category: 'Shell' },
       { command: '/model',      description: 'Switch provider or model',                    category: 'Shell' },
       { command: '/key',        description: 'Manage API keys',                             category: 'Shell' },
       { command: '/secrets',    description: 'Manage API secrets',                          category: 'Shell' },
-      { command: '/connections',description: 'Manage provider connections',                  category: 'Shell' },
-      { command: '/bash',       description: 'Run a local shell command',                   category: 'Shell' },
       { command: '/debug',      description: 'Toggle debug mode',                           category: 'Shell' },
       { command: '/auto',       description: 'Toggle auto-continue',                        category: 'Shell' },
     ];
@@ -1584,18 +1538,6 @@ class InteractiveShell {
       heading('Quick start'),
       dim('  Type any security task or question. The agent understands natural language.'),
       '',
-      heading('API Keys & Settings'),
-      cmd('/key') + dim('/keys           Manage API keys'),
-      cmd('/secrets') + dim('/s             Manage API secrets'),
-      cmd('/connections') + dim('/conn /cn    Manage provider connections'),
-      cmd('/model') + dim('                 Switch provider or model'),
-      '',
-      heading('Shell'),
-      cmd('/auto') + dim('              Toggle auto-continue'),
-      cmd('/bash <cmd>') + dim('       Run a local shell command'),
-      cmd('/debug') + dim('             Toggle debug mode'),
-      cmd('/clear') + dim('             Clear screen'),
-      cmd('/exit') + dim('              Quit'),
     ];
 
     this.promptController.setInlinePanel(lines);
