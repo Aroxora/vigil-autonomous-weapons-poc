@@ -237,10 +237,16 @@ describe('ParallelCoordinator — Worker Pool Lifecycle', () => {
     it('tracks per-worker token consumption', () => {
       const workerTokens = new Map<string, number>();
       const workers = ['w1', 'w2', 'w3', 'w4'];
-      const tasks = Array.from({ length: 20 }, () => ({
-        worker: workers[Math.floor(Math.random() * workers.length)]!,
-        tokens: 100 + Math.floor(Math.random() * 500),
-      }));
+      const tasks = [
+        { worker: 'w1', tokens: 200 },
+        { worker: 'w2', tokens: 300 },
+        { worker: 'w3', tokens: 400 },
+        { worker: 'w4', tokens: 500 },
+        ...Array.from({ length: 16 }, () => ({
+          worker: workers[Math.floor(Math.random() * workers.length)]!,
+          tokens: 100 + Math.floor(Math.random() * 500),
+        })),
+      ];
 
       for (const task of tasks) {
         workerTokens.set(task.worker, (workerTokens.get(task.worker) || 0) + task.tokens);
