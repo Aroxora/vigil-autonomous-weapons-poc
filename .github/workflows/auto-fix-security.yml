@@ -1,0 +1,44 @@
+name: Auto-Fix npm Security Vulnerabilities
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: npm audit fix (root)
+        run: npm audit fix --force 2>/dev/null || echo "No force fixes needed"
+
+      - name: npm audit fix (web)
+        working-directory: site/vigil-web
+        run: npm audit fix --force 2>/dev/null || echo "No web fixes needed"
+
+      - name: npm audit fix (functions)
+        working-directory: site/functions
+        run: npm audit fix --force 2>/dev/null || echo "No function fixes needed"
+
+      - name: npm audit fix (lambda)
+        working-directory: aws/lambda
+        run: npm audit fix --force 2>/dev/null || echo "No lambda fixes needed"
+
+      - name: Commit security fixes
+        run: |
+          git config user.email "vigil@trenchwork.org"
+          git config user.name "Vigil Security Bot"
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git add package-lock.json site/vigil-web/package-lock.json site/functions/package-lock.json aws/lambda/package-lock.json 2>/dev/null || true
+            git commit -am "chore(security): auto-fix npm vulnerabilities" || echo "No changes to commit"
+            git push origin main || echo "Push skipped — check permissions"
+          fi

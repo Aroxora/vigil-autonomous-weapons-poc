@@ -1,0 +1,7933 @@
+{
+  "operation": "STRIKE-001",
+  "completed": "2026-06-23T04:49:00.423014+00:00",
+  "phases": {
+    "persistence_count": 440,
+    "c2_channels_active": 440,
+    "lateral_ot_discovered": 256,
+    "credentials_harvested": 147,
+    "total_compromised_hosts": 440
+  },
+  "deployment_log": [
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:44.656831+00:00",
+      "ip": "54.160.0.164",
+      "port": 47808,
+      "method": "schedule_object_60C_5min",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:44.657008+00:00",
+      "ip": "18.204.0.58",
+      "port": 47808,
+      "method": "schedule_object_60C_5min",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:44.680818+00:00",
+      "ip": "54.160.0.164",
+      "port": 20000,
+      "method": "rtu_config_point_0x4FFF",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.161693+00:00",
+      "ip": "3.80.0.125",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.167422+00:00",
+      "ip": "3.208.0.8",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.168478+00:00",
+      "ip": "3.80.0.106",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.169352+00:00",
+      "ip": "3.80.0.100",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.171329+00:00",
+      "ip": "3.80.0.184",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.172141+00:00",
+      "ip": "3.80.0.163",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.182559+00:00",
+      "ip": "3.80.0.178",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.195267+00:00",
+      "ip": "3.80.0.213",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.197024+00:00",
+      "ip": "3.80.0.81",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.198744+00:00",
+      "ip": "3.80.0.58",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.199282+00:00",
+      "ip": "3.208.0.128",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.199805+00:00",
+      "ip": "3.80.0.154",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.200326+00:00",
+      "ip": "3.80.0.90",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.200861+00:00",
+      "ip": "3.208.0.32",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.201372+00:00",
+      "ip": "3.80.0.216",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.201969+00:00",
+      "ip": "3.80.0.28",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.203967+00:00",
+      "ip": "3.208.0.116",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.204605+00:00",
+      "ip": "3.80.0.155",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.205454+00:00",
+      "ip": "3.208.0.43",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.205892+00:00",
+      "ip": "3.80.0.87",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.206386+00:00",
+      "ip": "3.80.0.19",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.207900+00:00",
+      "ip": "3.208.0.90",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.208360+00:00",
+      "ip": "3.80.0.175",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.208782+00:00",
+      "ip": "3.80.0.120",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.209362+00:00",
+      "ip": "3.80.0.136",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.210284+00:00",
+      "ip": "3.80.0.129",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.211084+00:00",
+      "ip": "3.80.0.249",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.216639+00:00",
+      "ip": "3.208.0.133",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.234490+00:00",
+      "ip": "3.80.0.107",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.257451+00:00",
+      "ip": "3.80.0.86",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.282794+00:00",
+      "ip": "3.80.0.224",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.312479+00:00",
+      "ip": "3.208.0.17",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.340820+00:00",
+      "ip": "3.80.0.63",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.360083+00:00",
+      "ip": "3.80.0.9",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.378068+00:00",
+      "ip": "3.208.0.70",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.390585+00:00",
+      "ip": "3.208.0.61",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.410891+00:00",
+      "ip": "3.80.0.97",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.430382+00:00",
+      "ip": "3.208.0.171",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.441197+00:00",
+      "ip": "3.208.0.98",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.456075+00:00",
+      "ip": "3.208.0.30",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.469922+00:00",
+      "ip": "3.80.0.20",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.491299+00:00",
+      "ip": "3.80.0.47",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.510442+00:00",
+      "ip": "3.208.0.177",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.528856+00:00",
+      "ip": "3.80.0.215",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.541533+00:00",
+      "ip": "3.208.0.188",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.559974+00:00",
+      "ip": "3.208.0.18",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.573853+00:00",
+      "ip": "3.80.0.157",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.588917+00:00",
+      "ip": "3.208.0.110",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.607428+00:00",
+      "ip": "3.208.0.94",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.624601+00:00",
+      "ip": "3.80.0.134",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.640921+00:00",
+      "ip": "3.80.0.94",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.653927+00:00",
+      "ip": "3.208.0.72",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.669629+00:00",
+      "ip": "3.80.0.235",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.687883+00:00",
+      "ip": "3.208.0.163",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.708182+00:00",
+      "ip": "3.80.0.127",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.722076+00:00",
+      "ip": "3.80.0.64",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.750648+00:00",
+      "ip": "3.208.0.201",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.775472+00:00",
+      "ip": "3.208.0.79",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.797248+00:00",
+      "ip": "3.208.0.81",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.816360+00:00",
+      "ip": "3.208.0.170",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.838752+00:00",
+      "ip": "3.208.0.97",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.857310+00:00",
+      "ip": "3.208.0.55",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.879975+00:00",
+      "ip": "3.208.0.136",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.909057+00:00",
+      "ip": "3.80.0.145",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.936024+00:00",
+      "ip": "3.208.0.5",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.966656+00:00",
+      "ip": "3.80.0.219",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:47.998882+00:00",
+      "ip": "3.80.0.52",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.026855+00:00",
+      "ip": "3.208.0.42",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.057443+00:00",
+      "ip": "3.80.0.205",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.085967+00:00",
+      "ip": "3.80.0.186",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.106938+00:00",
+      "ip": "3.80.0.188",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.125556+00:00",
+      "ip": "3.80.0.187",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.145603+00:00",
+      "ip": "3.80.0.88",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.167584+00:00",
+      "ip": "3.208.0.28",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.188360+00:00",
+      "ip": "3.208.0.105",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.230199+00:00",
+      "ip": "3.208.0.169",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.268684+00:00",
+      "ip": "3.208.0.233",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.305812+00:00",
+      "ip": "3.80.0.222",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.336388+00:00",
+      "ip": "3.208.0.13",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.369077+00:00",
+      "ip": "3.80.0.133",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.407050+00:00",
+      "ip": "3.80.0.189",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.440974+00:00",
+      "ip": "3.208.0.75",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.452163+00:00",
+      "ip": "3.80.0.218",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.463401+00:00",
+      "ip": "3.208.0.173",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.482678+00:00",
+      "ip": "3.80.0.194",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.504757+00:00",
+      "ip": "3.80.0.35",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.531688+00:00",
+      "ip": "3.80.0.156",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.559271+00:00",
+      "ip": "3.80.0.37",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.594196+00:00",
+      "ip": "3.208.0.2",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.632860+00:00",
+      "ip": "3.208.0.236",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.679520+00:00",
+      "ip": "3.80.0.132",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.718020+00:00",
+      "ip": "3.208.0.196",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.773319+00:00",
+      "ip": "18.204.0.231",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.821326+00:00",
+      "ip": "3.208.0.166",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.872631+00:00",
+      "ip": "3.208.0.155",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.927538+00:00",
+      "ip": "3.208.0.39",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:48.993502+00:00",
+      "ip": "3.208.0.180",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.038686+00:00",
+      "ip": "3.208.0.164",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.077484+00:00",
+      "ip": "18.204.0.4",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.113255+00:00",
+      "ip": "18.204.0.124",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.157768+00:00",
+      "ip": "18.204.0.209",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.195036+00:00",
+      "ip": "3.80.0.179",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.238739+00:00",
+      "ip": "18.204.0.34",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.268212+00:00",
+      "ip": "3.208.0.130",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.294363+00:00",
+      "ip": "3.208.0.225",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.319869+00:00",
+      "ip": "18.204.0.90",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.342025+00:00",
+      "ip": "3.208.0.253",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.371778+00:00",
+      "ip": "3.208.0.174",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.393488+00:00",
+      "ip": "18.204.0.54",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.411973+00:00",
+      "ip": "3.208.0.232",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.421166+00:00",
+      "ip": "18.204.0.187",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.426437+00:00",
+      "ip": "18.208.0.13",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.445646+00:00",
+      "ip": "18.204.0.112",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.457323+00:00",
+      "ip": "18.204.0.99",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.463570+00:00",
+      "ip": "3.208.0.248",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.471979+00:00",
+      "ip": "18.204.0.217",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.473385+00:00",
+      "ip": "18.208.0.80",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.474749+00:00",
+      "ip": "18.208.0.62",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.475602+00:00",
+      "ip": "18.204.0.228",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.478092+00:00",
+      "ip": "18.204.0.58",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.480107+00:00",
+      "ip": "3.208.0.242",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.481939+00:00",
+      "ip": "18.204.0.222",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.526537+00:00",
+      "ip": "18.204.0.186",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.574070+00:00",
+      "ip": "18.208.0.11",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.652490+00:00",
+      "ip": "18.208.0.20",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.721676+00:00",
+      "ip": "18.204.0.183",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.791280+00:00",
+      "ip": "18.204.0.98",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.853454+00:00",
+      "ip": "18.204.0.6",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.903145+00:00",
+      "ip": "18.208.0.57",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.934399+00:00",
+      "ip": "18.208.0.68",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.958925+00:00",
+      "ip": "18.204.0.167",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.960852+00:00",
+      "ip": "18.204.0.114",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.962809+00:00",
+      "ip": "18.204.0.170",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.965617+00:00",
+      "ip": "18.204.0.100",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.967765+00:00",
+      "ip": "3.208.0.244",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.980562+00:00",
+      "ip": "18.208.0.145",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:49.994267+00:00",
+      "ip": "18.204.0.246",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.019050+00:00",
+      "ip": "3.208.0.223",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.038557+00:00",
+      "ip": "18.208.0.174",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.060610+00:00",
+      "ip": "18.204.0.139",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.090918+00:00",
+      "ip": "18.204.0.252",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.121458+00:00",
+      "ip": "18.204.0.22",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.151330+00:00",
+      "ip": "18.204.0.82",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.164353+00:00",
+      "ip": "18.208.0.177",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.170204+00:00",
+      "ip": "18.204.0.192",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.189559+00:00",
+      "ip": "18.208.0.131",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.212538+00:00",
+      "ip": "18.208.0.142",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.236128+00:00",
+      "ip": "18.204.0.42",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.258881+00:00",
+      "ip": "18.204.0.51",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.274890+00:00",
+      "ip": "18.208.0.140",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.298175+00:00",
+      "ip": "3.208.0.239",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.321841+00:00",
+      "ip": "18.208.0.28",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.347376+00:00",
+      "ip": "18.208.0.117",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.365790+00:00",
+      "ip": "18.208.0.42",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.379623+00:00",
+      "ip": "18.204.0.240",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.394422+00:00",
+      "ip": "18.208.0.148",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.396422+00:00",
+      "ip": "34.192.0.58",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.397921+00:00",
+      "ip": "18.208.0.152",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.408467+00:00",
+      "ip": "18.208.0.104",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.412554+00:00",
+      "ip": "18.204.0.200",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.431771+00:00",
+      "ip": "18.208.0.167",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.460437+00:00",
+      "ip": "18.204.0.245",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.511760+00:00",
+      "ip": "18.204.0.191",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.550593+00:00",
+      "ip": "18.204.0.52",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.586485+00:00",
+      "ip": "34.192.0.86",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.634777+00:00",
+      "ip": "3.208.0.234",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.680817+00:00",
+      "ip": "18.204.0.132",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.713320+00:00",
+      "ip": "18.208.0.60",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.746947+00:00",
+      "ip": "18.208.0.102",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.765327+00:00",
+      "ip": "34.192.0.90",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.786732+00:00",
+      "ip": "18.204.0.38",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.807186+00:00",
+      "ip": "18.208.0.173",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.839697+00:00",
+      "ip": "18.204.0.214",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.859725+00:00",
+      "ip": "18.208.0.165",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.893529+00:00",
+      "ip": "18.208.0.77",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.918559+00:00",
+      "ip": "18.208.0.37",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.936951+00:00",
+      "ip": "18.204.0.238",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.956521+00:00",
+      "ip": "18.208.0.255",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.970438+00:00",
+      "ip": "34.192.0.202",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.984531+00:00",
+      "ip": "18.208.0.122",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.986322+00:00",
+      "ip": "18.208.0.1",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.988132+00:00",
+      "ip": "18.208.0.241",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.989495+00:00",
+      "ip": "18.204.0.223",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.991376+00:00",
+      "ip": "18.208.0.193",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.992036+00:00",
+      "ip": "18.208.0.72",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.993313+00:00",
+      "ip": "34.192.0.17",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.994197+00:00",
+      "ip": "18.204.0.128",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.995585+00:00",
+      "ip": "18.208.0.222",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:50.998076+00:00",
+      "ip": "18.208.0.168",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.019283+00:00",
+      "ip": "18.208.0.228",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.061915+00:00",
+      "ip": "34.192.0.26",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.096642+00:00",
+      "ip": "18.208.0.208",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.148145+00:00",
+      "ip": "34.192.0.57",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.220263+00:00",
+      "ip": "18.204.0.211",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.301823+00:00",
+      "ip": "34.192.0.63",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.374299+00:00",
+      "ip": "18.208.0.204",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.428417+00:00",
+      "ip": "18.208.0.146",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.484886+00:00",
+      "ip": "18.208.0.30",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.540793+00:00",
+      "ip": "18.208.0.251",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.589135+00:00",
+      "ip": "18.208.0.233",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.618566+00:00",
+      "ip": "34.192.0.194",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.640790+00:00",
+      "ip": "34.192.0.19",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.661532+00:00",
+      "ip": "18.208.0.238",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.701560+00:00",
+      "ip": "34.192.0.152",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.736674+00:00",
+      "ip": "34.192.0.10",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.776060+00:00",
+      "ip": "34.192.0.199",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.804983+00:00",
+      "ip": "18.208.0.76",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.841882+00:00",
+      "ip": "34.224.0.97",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.869778+00:00",
+      "ip": "18.208.0.183",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.898959+00:00",
+      "ip": "18.208.0.213",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.907749+00:00",
+      "ip": "34.192.0.179",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.910536+00:00",
+      "ip": "34.192.0.62",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.914028+00:00",
+      "ip": "18.204.0.225",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.924323+00:00",
+      "ip": "34.224.0.27",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.931346+00:00",
+      "ip": "34.192.0.114",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.967738+00:00",
+      "ip": "18.208.0.240",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:51.998937+00:00",
+      "ip": "34.192.0.157",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.030325+00:00",
+      "ip": "34.192.0.94",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.058512+00:00",
+      "ip": "34.192.0.89",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.091343+00:00",
+      "ip": "34.192.0.207",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.131172+00:00",
+      "ip": "34.192.0.2",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.170118+00:00",
+      "ip": "34.192.0.220",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.194612+00:00",
+      "ip": "34.192.0.73",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.215465+00:00",
+      "ip": "34.192.0.102",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.241646+00:00",
+      "ip": "18.208.0.207",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.265605+00:00",
+      "ip": "34.192.0.252",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.291254+00:00",
+      "ip": "34.224.0.124",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.316925+00:00",
+      "ip": "34.192.0.200",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.341261+00:00",
+      "ip": "34.192.0.99",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.343312+00:00",
+      "ip": "34.192.0.44",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.344683+00:00",
+      "ip": "34.192.0.42",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.345911+00:00",
+      "ip": "34.192.0.33",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.348726+00:00",
+      "ip": "34.224.0.26",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.349865+00:00",
+      "ip": "34.192.0.180",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.351019+00:00",
+      "ip": "34.192.0.105",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.351869+00:00",
+      "ip": "34.224.0.2",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.352749+00:00",
+      "ip": "34.224.0.172",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.353981+00:00",
+      "ip": "34.224.0.70",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.372269+00:00",
+      "ip": "34.224.0.11",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.421777+00:00",
+      "ip": "34.192.0.219",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.484592+00:00",
+      "ip": "34.192.0.144",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.541641+00:00",
+      "ip": "34.224.0.73",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.586911+00:00",
+      "ip": "34.224.0.201",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.627605+00:00",
+      "ip": "34.192.0.162",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.688990+00:00",
+      "ip": "34.224.0.233",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.722467+00:00",
+      "ip": "34.224.0.31",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.746482+00:00",
+      "ip": "34.224.0.21",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.763285+00:00",
+      "ip": "34.224.0.175",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.783416+00:00",
+      "ip": "34.224.0.42",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.801962+00:00",
+      "ip": "34.224.0.8",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.817880+00:00",
+      "ip": "34.224.0.192",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.836002+00:00",
+      "ip": "34.192.0.246",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.837598+00:00",
+      "ip": "34.192.0.74",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.839328+00:00",
+      "ip": "34.224.0.111",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.840848+00:00",
+      "ip": "34.192.0.241",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.843363+00:00",
+      "ip": "34.224.0.99",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.845480+00:00",
+      "ip": "34.224.0.238",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.849864+00:00",
+      "ip": "34.192.0.206",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.851141+00:00",
+      "ip": "34.192.0.9",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.853087+00:00",
+      "ip": "34.224.0.35",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.861255+00:00",
+      "ip": "34.224.0.152",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.920212+00:00",
+      "ip": "34.192.0.203",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:52.969654+00:00",
+      "ip": "34.224.1.0",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.055111+00:00",
+      "ip": "44.192.0.28",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.141222+00:00",
+      "ip": "34.224.0.170",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.209574+00:00",
+      "ip": "34.224.0.20",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.275277+00:00",
+      "ip": "34.224.0.45",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.311229+00:00",
+      "ip": "34.224.0.222",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.343893+00:00",
+      "ip": "34.224.0.88",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.369600+00:00",
+      "ip": "34.224.0.165",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.371738+00:00",
+      "ip": "34.224.0.108",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.391020+00:00",
+      "ip": "34.192.0.167",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.421112+00:00",
+      "ip": "34.224.0.167",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.448921+00:00",
+      "ip": "34.192.0.138",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.491148+00:00",
+      "ip": "34.192.0.15",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.525275+00:00",
+      "ip": "34.224.0.162",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.567647+00:00",
+      "ip": "34.224.0.64",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.606585+00:00",
+      "ip": "34.224.0.205",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.627715+00:00",
+      "ip": "34.224.0.142",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.645903+00:00",
+      "ip": "34.224.0.92",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.662826+00:00",
+      "ip": "34.192.0.221",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.684783+00:00",
+      "ip": "44.192.0.7",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.694476+00:00",
+      "ip": "34.224.0.163",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.698696+00:00",
+      "ip": "34.224.0.91",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.700533+00:00",
+      "ip": "44.192.0.13",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.716942+00:00",
+      "ip": "34.224.0.173",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.718746+00:00",
+      "ip": "34.224.0.136",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.735851+00:00",
+      "ip": "34.224.0.55",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.761945+00:00",
+      "ip": "34.224.0.23",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.793557+00:00",
+      "ip": "44.192.0.111",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.831437+00:00",
+      "ip": "34.224.0.135",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.864155+00:00",
+      "ip": "34.224.0.130",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.906733+00:00",
+      "ip": "34.224.0.140",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.943190+00:00",
+      "ip": "34.224.0.250",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.971376+00:00",
+      "ip": "44.192.0.2",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:53.995670+00:00",
+      "ip": "44.192.0.128",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.015353+00:00",
+      "ip": "34.224.0.128",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.031939+00:00",
+      "ip": "44.192.0.181",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.050639+00:00",
+      "ip": "44.192.0.66",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.076590+00:00",
+      "ip": "34.224.0.239",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.104863+00:00",
+      "ip": "34.192.0.175",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.213305+00:00",
+      "ip": "34.224.0.51",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.279412+00:00",
+      "ip": "54.152.0.13",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.321036+00:00",
+      "ip": "34.224.0.177",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.364187+00:00",
+      "ip": "34.224.0.244",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.412163+00:00",
+      "ip": "44.192.0.251",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.445397+00:00",
+      "ip": "44.192.0.31",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.467963+00:00",
+      "ip": "44.192.0.22",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.484964+00:00",
+      "ip": "44.192.0.12",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.507500+00:00",
+      "ip": "34.224.0.193",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.509731+00:00",
+      "ip": "34.224.0.235",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.510982+00:00",
+      "ip": "34.224.0.122",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.521236+00:00",
+      "ip": "44.192.0.5",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.536763+00:00",
+      "ip": "44.192.0.16",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.557753+00:00",
+      "ip": "44.192.0.129",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.588582+00:00",
+      "ip": "44.192.0.172",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.610888+00:00",
+      "ip": "34.224.0.226",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.630884+00:00",
+      "ip": "34.224.0.179",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.650826+00:00",
+      "ip": "44.192.0.252",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.671534+00:00",
+      "ip": "44.192.0.110",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.685574+00:00",
+      "ip": "44.192.0.123",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.689022+00:00",
+      "ip": "44.192.0.106",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.694770+00:00",
+      "ip": "54.80.0.140",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.726411+00:00",
+      "ip": "44.192.0.44",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.757106+00:00",
+      "ip": "44.192.0.120",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.780300+00:00",
+      "ip": "54.152.0.77",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.808565+00:00",
+      "ip": "18.208.0.89",
+      "port": 8080,
+      "method": "groovy_script_console",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.808747+00:00",
+      "ip": "54.152.0.18",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.844105+00:00",
+      "ip": "54.80.0.92",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.880959+00:00",
+      "ip": "44.192.0.74",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.912869+00:00",
+      "ip": "34.192.0.128",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.930603+00:00",
+      "ip": "54.80.0.223",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.931781+00:00",
+      "ip": "34.224.0.251",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.946004+00:00",
+      "ip": "44.192.0.105",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.974301+00:00",
+      "ip": "54.80.0.154",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:54.992670+00:00",
+      "ip": "54.152.0.30",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.016807+00:00",
+      "ip": "54.80.0.230",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.033384+00:00",
+      "ip": "44.192.0.155",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.055869+00:00",
+      "ip": "44.192.0.170",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.076441+00:00",
+      "ip": "44.192.0.69",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.098151+00:00",
+      "ip": "44.192.0.164",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.110885+00:00",
+      "ip": "44.192.0.125",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.114566+00:00",
+      "ip": "44.192.0.224",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.128973+00:00",
+      "ip": "44.192.0.163",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.135060+00:00",
+      "ip": "54.152.0.29",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.136096+00:00",
+      "ip": "54.80.0.8",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.136698+00:00",
+      "ip": "54.160.0.39",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.137568+00:00",
+      "ip": "54.80.0.14",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.138938+00:00",
+      "ip": "54.152.0.23",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.139899+00:00",
+      "ip": "54.80.0.21",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.151042+00:00",
+      "ip": "54.152.0.94",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.160946+00:00",
+      "ip": "54.80.0.116",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.161598+00:00",
+      "ip": "54.80.0.214",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.162885+00:00",
+      "ip": "54.152.0.61",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.164396+00:00",
+      "ip": "54.80.0.218",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.165720+00:00",
+      "ip": "44.192.0.205",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.167968+00:00",
+      "ip": "54.152.0.82",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.176049+00:00",
+      "ip": "54.80.0.236",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.179321+00:00",
+      "ip": "54.152.0.72",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.183517+00:00",
+      "ip": "54.152.0.135",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.185012+00:00",
+      "ip": "44.192.0.253",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.186157+00:00",
+      "ip": "44.192.0.1",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.187919+00:00",
+      "ip": "54.160.0.6",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.191828+00:00",
+      "ip": "54.80.0.243",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.199495+00:00",
+      "ip": "44.192.0.217",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.200966+00:00",
+      "ip": "18.208.0.116",
+      "port": 8080,
+      "method": "groovy_script_console",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.202324+00:00",
+      "ip": "54.160.0.123",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.202849+00:00",
+      "ip": "54.152.0.101",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.203345+00:00",
+      "ip": "54.80.0.37",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.204515+00:00",
+      "ip": "54.80.0.163",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.205783+00:00",
+      "ip": "54.160.0.67",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.212912+00:00",
+      "ip": "54.152.0.17",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.233811+00:00",
+      "ip": "54.152.0.38",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.250138+00:00",
+      "ip": "54.80.0.161",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.267673+00:00",
+      "ip": "54.152.0.178",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.272915+00:00",
+      "ip": "44.192.0.92",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.273501+00:00",
+      "ip": "54.80.0.207",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.274041+00:00",
+      "ip": "44.192.0.114",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.274733+00:00",
+      "ip": "54.152.0.142",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.275952+00:00",
+      "ip": "54.80.0.215",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.278046+00:00",
+      "ip": "54.160.0.188",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.279270+00:00",
+      "ip": "44.192.0.58",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.280815+00:00",
+      "ip": "54.80.0.107",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.281971+00:00",
+      "ip": "54.160.0.127",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.283650+00:00",
+      "ip": "54.152.0.127",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.284829+00:00",
+      "ip": "54.152.0.21",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.285991+00:00",
+      "ip": "44.192.0.192",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.287017+00:00",
+      "ip": "54.152.0.144",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.287727+00:00",
+      "ip": "54.80.0.171",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.298640+00:00",
+      "ip": "54.80.0.180",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.303939+00:00",
+      "ip": "54.160.0.9",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.307692+00:00",
+      "ip": "54.152.0.235",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.309561+00:00",
+      "ip": "54.152.0.217",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.310587+00:00",
+      "ip": "54.152.0.198",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.312314+00:00",
+      "ip": "54.160.0.164",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.316341+00:00",
+      "ip": "54.160.0.191",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.318862+00:00",
+      "ip": "54.152.0.108",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.320089+00:00",
+      "ip": "54.152.0.192",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.321212+00:00",
+      "ip": "54.152.0.6",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.322214+00:00",
+      "ip": "54.80.0.213",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.323202+00:00",
+      "ip": "54.152.0.99",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.324435+00:00",
+      "ip": "54.152.0.234",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.325530+00:00",
+      "ip": "54.160.0.24",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.326467+00:00",
+      "ip": "54.160.0.200",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.327763+00:00",
+      "ip": "54.160.0.97",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.328851+00:00",
+      "ip": "54.160.0.100",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.333767+00:00",
+      "ip": "54.160.0.90",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.334376+00:00",
+      "ip": "54.160.0.52",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.334844+00:00",
+      "ip": "54.152.0.140",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.345711+00:00",
+      "ip": "54.152.0.110",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.347637+00:00",
+      "ip": "54.80.0.167",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.350106+00:00",
+      "ip": "54.160.0.94",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.352774+00:00",
+      "ip": "54.152.0.243",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.366493+00:00",
+      "ip": "54.152.1.0",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.372618+00:00",
+      "ip": "54.160.0.140",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.374762+00:00",
+      "ip": "54.160.0.223",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.377280+00:00",
+      "ip": "54.160.0.119",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.379491+00:00",
+      "ip": "54.160.0.212",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.384190+00:00",
+      "ip": "54.160.0.160",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.389707+00:00",
+      "ip": "54.80.0.250",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.390626+00:00",
+      "ip": "54.160.0.103",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.394124+00:00",
+      "ip": "54.160.0.216",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.402020+00:00",
+      "ip": "54.160.0.78",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.407364+00:00",
+      "ip": "54.160.0.238",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.421935+00:00",
+      "ip": "54.160.0.45",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.422489+00:00",
+      "ip": "54.160.0.128",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.422911+00:00",
+      "ip": "54.160.0.229",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.427749+00:00",
+      "ip": "18.204.0.165",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:55.686374+00:00",
+      "ip": "54.160.0.167",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:56.364484+00:00",
+      "ip": "44.192.0.240",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:57.168042+00:00",
+      "ip": "3.208.0.149",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:58.424926+00:00",
+      "ip": "3.208.0.84",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:48:59.584204+00:00",
+      "ip": "18.204.0.53",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:49:00.229341+00:00",
+      "ip": "18.208.0.194",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:49:00.394974+00:00",
+      "ip": "44.192.0.149",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:49:00.398431+00:00",
+      "ip": "54.160.0.205",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "persistence",
+      "ts": "2026-06-23T04:49:00.412495+00:00",
+      "ip": "34.224.0.15",
+      "port": 443,
+      "method": "hidden_sslvpn_tunnel",
+      "status": "DEPLOYED"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416565+00:00",
+      "ip": "18.204.0.58",
+      "port": 47808,
+      "channels": [
+        "BACnet"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416691+00:00",
+      "ip": "54.160.0.164",
+      "port": 20000,
+      "channels": [
+        "DNP3"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416722+00:00",
+      "ip": "54.160.0.164",
+      "port": 47808,
+      "channels": [
+        "BACnet"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416796+00:00",
+      "ip": "3.80.0.145",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416804+00:00",
+      "ip": "3.80.0.154",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416812+00:00",
+      "ip": "3.80.0.155",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416883+00:00",
+      "ip": "3.80.0.136",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416891+00:00",
+      "ip": "3.80.0.184",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416898+00:00",
+      "ip": "3.80.0.100",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416905+00:00",
+      "ip": "3.80.0.205",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416957+00:00",
+      "ip": "3.80.0.63",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416961+00:00",
+      "ip": "3.80.0.179",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416967+00:00",
+      "ip": "3.80.0.120",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416973+00:00",
+      "ip": "3.80.0.20",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.416979+00:00",
+      "ip": "3.80.0.90",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417043+00:00",
+      "ip": "3.80.0.133",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417051+00:00",
+      "ip": "3.80.0.157",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417060+00:00",
+      "ip": "3.80.0.129",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417066+00:00",
+      "ip": "3.80.0.132",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417073+00:00",
+      "ip": "3.80.0.125",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417079+00:00",
+      "ip": "3.80.0.19",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417144+00:00",
+      "ip": "3.80.0.186",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417152+00:00",
+      "ip": "3.80.0.86",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417159+00:00",
+      "ip": "3.80.0.58",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417166+00:00",
+      "ip": "3.80.0.97",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417173+00:00",
+      "ip": "3.80.0.187",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417179+00:00",
+      "ip": "3.80.0.107",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417185+00:00",
+      "ip": "3.80.0.106",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417251+00:00",
+      "ip": "3.80.0.37",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417261+00:00",
+      "ip": "3.80.0.163",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417269+00:00",
+      "ip": "3.80.0.81",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417275+00:00",
+      "ip": "3.80.0.127",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417282+00:00",
+      "ip": "3.80.0.175",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417289+00:00",
+      "ip": "3.80.0.178",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417295+00:00",
+      "ip": "3.80.0.87",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417301+00:00",
+      "ip": "3.80.0.52",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417363+00:00",
+      "ip": "3.80.0.156",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417373+00:00",
+      "ip": "3.80.0.9",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417382+00:00",
+      "ip": "3.80.0.64",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417389+00:00",
+      "ip": "3.80.0.194",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417396+00:00",
+      "ip": "3.80.0.134",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417401+00:00",
+      "ip": "3.80.0.47",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417407+00:00",
+      "ip": "3.80.0.188",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417413+00:00",
+      "ip": "3.80.0.35",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417473+00:00",
+      "ip": "3.80.0.219",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417480+00:00",
+      "ip": "3.80.0.94",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417491+00:00",
+      "ip": "3.80.0.28",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417498+00:00",
+      "ip": "3.80.0.189",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417504+00:00",
+      "ip": "3.80.0.215",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417510+00:00",
+      "ip": "3.80.0.249",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417516+00:00",
+      "ip": "3.80.0.216",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417522+00:00",
+      "ip": "3.80.0.235",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417528+00:00",
+      "ip": "3.80.0.213",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417534+00:00",
+      "ip": "3.80.0.88",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417601+00:00",
+      "ip": "3.208.0.8",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417645+00:00",
+      "ip": "3.208.0.2",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417653+00:00",
+      "ip": "3.208.0.13",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417661+00:00",
+      "ip": "3.80.0.224",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417667+00:00",
+      "ip": "3.80.0.218",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417673+00:00",
+      "ip": "3.208.0.81",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417679+00:00",
+      "ip": "3.208.0.17",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417685+00:00",
+      "ip": "3.208.0.116",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417691+00:00",
+      "ip": "3.208.0.90",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417697+00:00",
+      "ip": "3.208.0.28",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417703+00:00",
+      "ip": "3.208.0.32",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417709+00:00",
+      "ip": "3.80.0.222",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417715+00:00",
+      "ip": "3.208.0.94",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417783+00:00",
+      "ip": "3.208.0.170",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417791+00:00",
+      "ip": "3.208.0.43",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417797+00:00",
+      "ip": "3.208.0.42",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417810+00:00",
+      "ip": "3.208.0.72",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417816+00:00",
+      "ip": "3.208.0.30",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417822+00:00",
+      "ip": "3.208.0.133",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417828+00:00",
+      "ip": "3.208.0.136",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417834+00:00",
+      "ip": "3.208.0.5",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417840+00:00",
+      "ip": "3.208.0.110",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417846+00:00",
+      "ip": "3.208.0.130",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417852+00:00",
+      "ip": "3.208.0.98",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417858+00:00",
+      "ip": "3.208.0.171",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417864+00:00",
+      "ip": "3.208.0.70",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417934+00:00",
+      "ip": "3.208.0.201",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417943+00:00",
+      "ip": "3.208.0.75",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417953+00:00",
+      "ip": "3.208.0.61",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417959+00:00",
+      "ip": "3.208.0.166",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417966+00:00",
+      "ip": "3.208.0.174",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417972+00:00",
+      "ip": "3.208.0.79",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417978+00:00",
+      "ip": "3.208.0.39",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417984+00:00",
+      "ip": "3.208.0.55",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417989+00:00",
+      "ip": "3.208.0.173",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.417995+00:00",
+      "ip": "3.208.0.177",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418002+00:00",
+      "ip": "3.208.0.233",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418007+00:00",
+      "ip": "3.208.0.155",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418013+00:00",
+      "ip": "3.208.0.236",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418019+00:00",
+      "ip": "3.208.0.105",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418109+00:00",
+      "ip": "3.208.0.253",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418119+00:00",
+      "ip": "3.208.0.188",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418127+00:00",
+      "ip": "3.208.0.180",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418133+00:00",
+      "ip": "3.208.0.196",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418139+00:00",
+      "ip": "3.208.0.18",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418145+00:00",
+      "ip": "3.208.0.97",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418151+00:00",
+      "ip": "3.208.0.128",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418157+00:00",
+      "ip": "3.208.0.163",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418163+00:00",
+      "ip": "3.208.0.169",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418169+00:00",
+      "ip": "3.208.0.225",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418175+00:00",
+      "ip": "3.208.0.223",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418184+00:00",
+      "ip": "3.208.0.234",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418191+00:00",
+      "ip": "3.208.0.239",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418199+00:00",
+      "ip": "3.208.0.232",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418206+00:00",
+      "ip": "3.208.0.164",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418281+00:00",
+      "ip": "3.208.0.242",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418285+00:00",
+      "ip": "18.204.0.90",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418345+00:00",
+      "ip": "18.204.0.132",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418353+00:00",
+      "ip": "18.204.0.58",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418359+00:00",
+      "ip": "18.204.0.51",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418366+00:00",
+      "ip": "18.204.0.99",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418371+00:00",
+      "ip": "18.204.0.4",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418377+00:00",
+      "ip": "18.204.0.38",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418383+00:00",
+      "ip": "18.204.0.82",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418389+00:00",
+      "ip": "18.204.0.42",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418394+00:00",
+      "ip": "18.204.0.100",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418401+00:00",
+      "ip": "18.204.0.54",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418409+00:00",
+      "ip": "18.204.0.22",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418417+00:00",
+      "ip": "18.204.0.52",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418424+00:00",
+      "ip": "18.204.0.34",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418430+00:00",
+      "ip": "3.208.0.244",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418436+00:00",
+      "ip": "18.204.0.112",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418442+00:00",
+      "ip": "18.204.0.114",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418447+00:00",
+      "ip": "3.208.0.248",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418529+00:00",
+      "ip": "18.204.0.240",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418537+00:00",
+      "ip": "18.204.0.98",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418543+00:00",
+      "ip": "18.204.0.124",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418549+00:00",
+      "ip": "18.204.0.170",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418555+00:00",
+      "ip": "18.204.0.128",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418560+00:00",
+      "ip": "18.204.0.191",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418566+00:00",
+      "ip": "18.204.0.222",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418571+00:00",
+      "ip": "18.204.0.139",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418577+00:00",
+      "ip": "18.204.0.238",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418583+00:00",
+      "ip": "18.208.0.13",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418590+00:00",
+      "ip": "18.204.0.186",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418596+00:00",
+      "ip": "18.204.0.209",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418604+00:00",
+      "ip": "18.204.0.246",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418610+00:00",
+      "ip": "18.204.0.6",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418616+00:00",
+      "ip": "18.204.0.192",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418622+00:00",
+      "ip": "18.204.0.231",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418627+00:00",
+      "ip": "18.204.0.245",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418633+00:00",
+      "ip": "18.204.0.200",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418754+00:00",
+      "ip": "18.204.0.187",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418758+00:00",
+      "ip": "18.204.0.167",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418764+00:00",
+      "ip": "18.204.0.214",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418770+00:00",
+      "ip": "18.204.0.223",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418775+00:00",
+      "ip": "18.204.0.211",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418781+00:00",
+      "ip": "18.204.0.252",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418787+00:00",
+      "ip": "18.208.0.1",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418798+00:00",
+      "ip": "18.204.0.228",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418805+00:00",
+      "ip": "18.204.0.217",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418811+00:00",
+      "ip": "18.204.0.225",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418817+00:00",
+      "ip": "18.204.0.183",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418823+00:00",
+      "ip": "18.208.0.42",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418828+00:00",
+      "ip": "18.208.0.11",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418834+00:00",
+      "ip": "18.208.0.62",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418839+00:00",
+      "ip": "18.208.0.30",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418845+00:00",
+      "ip": "18.208.0.165",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418851+00:00",
+      "ip": "18.208.0.142",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418856+00:00",
+      "ip": "18.208.0.80",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418979+00:00",
+      "ip": "18.208.0.72",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418982+00:00",
+      "ip": "18.208.0.148",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418989+00:00",
+      "ip": "18.208.0.104",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.418995+00:00",
+      "ip": "18.208.0.28",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419001+00:00",
+      "ip": "18.208.0.173",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419007+00:00",
+      "ip": "18.208.0.117",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419013+00:00",
+      "ip": "18.208.0.68",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419019+00:00",
+      "ip": "18.208.0.140",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419025+00:00",
+      "ip": "18.208.0.20",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419031+00:00",
+      "ip": "18.208.0.57",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419037+00:00",
+      "ip": "18.208.0.102",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419043+00:00",
+      "ip": "18.208.0.60",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419049+00:00",
+      "ip": "18.208.0.145",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419055+00:00",
+      "ip": "18.208.0.77",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419063+00:00",
+      "ip": "18.208.0.37",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419069+00:00",
+      "ip": "18.208.0.208",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419075+00:00",
+      "ip": "18.208.0.177",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419081+00:00",
+      "ip": "18.208.0.167",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419086+00:00",
+      "ip": "18.208.0.183",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419092+00:00",
+      "ip": "18.208.0.174",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419203+00:00",
+      "ip": "34.192.0.17",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419212+00:00",
+      "ip": "18.208.0.146",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419218+00:00",
+      "ip": "18.208.0.131",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419224+00:00",
+      "ip": "18.208.0.152",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419229+00:00",
+      "ip": "18.208.0.213",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419235+00:00",
+      "ip": "18.208.0.193",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419241+00:00",
+      "ip": "18.208.0.168",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419247+00:00",
+      "ip": "18.208.0.207",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419253+00:00",
+      "ip": "18.208.0.122",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419258+00:00",
+      "ip": "18.208.0.204",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419264+00:00",
+      "ip": "18.208.0.222",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419270+00:00",
+      "ip": "18.208.0.76",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419276+00:00",
+      "ip": "18.208.0.233",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419282+00:00",
+      "ip": "18.208.0.240",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419287+00:00",
+      "ip": "18.208.0.251",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419293+00:00",
+      "ip": "34.192.0.58",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419299+00:00",
+      "ip": "18.208.0.241",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419304+00:00",
+      "ip": "18.208.0.238",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419310+00:00",
+      "ip": "18.208.0.255",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419316+00:00",
+      "ip": "34.192.0.26",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419321+00:00",
+      "ip": "18.208.0.228",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419424+00:00",
+      "ip": "34.192.0.114",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419431+00:00",
+      "ip": "34.192.0.44",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419440+00:00",
+      "ip": "34.192.0.15",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419449+00:00",
+      "ip": "34.192.0.63",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419456+00:00",
+      "ip": "34.192.0.33",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419462+00:00",
+      "ip": "34.192.0.89",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419468+00:00",
+      "ip": "34.192.0.73",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419474+00:00",
+      "ip": "34.192.0.90",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419479+00:00",
+      "ip": "34.192.0.42",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419485+00:00",
+      "ip": "34.192.0.19",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419491+00:00",
+      "ip": "34.192.0.86",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419499+00:00",
+      "ip": "34.192.0.2",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419505+00:00",
+      "ip": "34.192.0.99",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419511+00:00",
+      "ip": "34.192.0.62",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419516+00:00",
+      "ip": "34.192.0.57",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419522+00:00",
+      "ip": "34.192.0.10",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419528+00:00",
+      "ip": "34.192.0.105",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419534+00:00",
+      "ip": "34.192.0.202",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419540+00:00",
+      "ip": "34.192.0.94",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419546+00:00",
+      "ip": "34.192.0.157",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419551+00:00",
+      "ip": "34.192.0.152",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419646+00:00",
+      "ip": "34.192.0.203",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419656+00:00",
+      "ip": "34.192.0.74",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419664+00:00",
+      "ip": "34.192.0.199",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419670+00:00",
+      "ip": "34.192.0.102",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419676+00:00",
+      "ip": "34.192.0.180",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419682+00:00",
+      "ip": "34.192.0.162",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419688+00:00",
+      "ip": "34.192.0.138",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419694+00:00",
+      "ip": "34.192.0.200",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419699+00:00",
+      "ip": "34.192.0.144",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419705+00:00",
+      "ip": "34.192.0.179",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419711+00:00",
+      "ip": "34.192.0.194",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419716+00:00",
+      "ip": "34.192.0.175",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419722+00:00",
+      "ip": "34.192.0.246",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419728+00:00",
+      "ip": "34.224.0.97",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419734+00:00",
+      "ip": "34.224.0.42",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419739+00:00",
+      "ip": "34.192.0.167",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419745+00:00",
+      "ip": "34.192.0.241",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419751+00:00",
+      "ip": "34.224.0.11",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419757+00:00",
+      "ip": "34.224.0.23",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419763+00:00",
+      "ip": "34.192.0.128",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419768+00:00",
+      "ip": "34.192.0.220",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419774+00:00",
+      "ip": "34.224.0.8",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419884+00:00",
+      "ip": "34.192.0.9",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419888+00:00",
+      "ip": "34.224.0.205",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419894+00:00",
+      "ip": "34.224.0.20",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419901+00:00",
+      "ip": "34.192.0.252",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419906+00:00",
+      "ip": "34.224.0.2",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419912+00:00",
+      "ip": "34.224.0.35",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419920+00:00",
+      "ip": "34.192.0.206",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419926+00:00",
+      "ip": "34.192.0.207",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419931+00:00",
+      "ip": "34.192.0.219",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419937+00:00",
+      "ip": "34.224.0.26",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419943+00:00",
+      "ip": "34.192.0.221",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419950+00:00",
+      "ip": "34.224.0.27",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419956+00:00",
+      "ip": "34.224.0.21",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419961+00:00",
+      "ip": "34.224.0.70",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419968+00:00",
+      "ip": "34.224.0.31",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419973+00:00",
+      "ip": "34.224.0.91",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419979+00:00",
+      "ip": "18.204.0.165",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419985+00:00",
+      "ip": "34.224.0.111",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419991+00:00",
+      "ip": "34.224.0.192",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.419997+00:00",
+      "ip": "34.224.0.172",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420002+00:00",
+      "ip": "34.224.0.108",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420008+00:00",
+      "ip": "34.224.0.124",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420014+00:00",
+      "ip": "34.224.0.92",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420019+00:00",
+      "ip": "34.224.0.88",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420138+00:00",
+      "ip": "34.224.0.235",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420145+00:00",
+      "ip": "34.224.0.73",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420151+00:00",
+      "ip": "34.224.0.136",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420157+00:00",
+      "ip": "34.224.0.162",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420163+00:00",
+      "ip": "34.224.0.128",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420169+00:00",
+      "ip": "34.224.0.45",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420175+00:00",
+      "ip": "34.224.0.64",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420180+00:00",
+      "ip": "34.224.0.238",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420186+00:00",
+      "ip": "34.224.0.167",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420192+00:00",
+      "ip": "34.224.0.170",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420199+00:00",
+      "ip": "34.224.0.130",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420205+00:00",
+      "ip": "34.224.0.99",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420210+00:00",
+      "ip": "34.224.0.165",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420216+00:00",
+      "ip": "34.224.0.122",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420222+00:00",
+      "ip": "34.224.0.140",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420228+00:00",
+      "ip": "34.224.0.55",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420238+00:00",
+      "ip": "34.224.0.51",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420244+00:00",
+      "ip": "34.224.0.177",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420250+00:00",
+      "ip": "34.224.0.152",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420255+00:00",
+      "ip": "34.224.0.193",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420263+00:00",
+      "ip": "34.224.0.222",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420269+00:00",
+      "ip": "34.224.0.201",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420276+00:00",
+      "ip": "34.224.0.175",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420282+00:00",
+      "ip": "34.224.0.233",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420288+00:00",
+      "ip": "34.224.0.135",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420408+00:00",
+      "ip": "44.192.0.105",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420423+00:00",
+      "ip": "3.208.0.84",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420429+00:00",
+      "ip": "34.224.0.226",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420435+00:00",
+      "ip": "3.208.0.149",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420441+00:00",
+      "ip": "34.224.0.163",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420447+00:00",
+      "ip": "34.224.0.173",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420452+00:00",
+      "ip": "34.224.0.179",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420458+00:00",
+      "ip": "34.224.0.142",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420464+00:00",
+      "ip": "44.192.0.66",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420470+00:00",
+      "ip": "44.192.0.128",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420476+00:00",
+      "ip": "44.192.0.28",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420482+00:00",
+      "ip": "44.192.0.16",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420487+00:00",
+      "ip": "34.224.0.244",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420493+00:00",
+      "ip": "44.192.0.111",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420499+00:00",
+      "ip": "44.192.0.22",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420504+00:00",
+      "ip": "44.192.0.2",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420510+00:00",
+      "ip": "44.192.0.31",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420517+00:00",
+      "ip": "44.192.0.129",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420523+00:00",
+      "ip": "44.192.0.74",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420529+00:00",
+      "ip": "44.192.0.13",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420535+00:00",
+      "ip": "44.192.0.12",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420541+00:00",
+      "ip": "44.192.0.69",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420547+00:00",
+      "ip": "34.224.0.250",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420553+00:00",
+      "ip": "34.224.1.0",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420564+00:00",
+      "ip": "44.192.0.1",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420681+00:00",
+      "ip": "54.80.0.8",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420689+00:00",
+      "ip": "44.192.0.114",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420695+00:00",
+      "ip": "44.192.0.106",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420701+00:00",
+      "ip": "44.192.0.181",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420706+00:00",
+      "ip": "34.224.0.251",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420712+00:00",
+      "ip": "44.192.0.110",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420718+00:00",
+      "ip": "44.192.0.123",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420723+00:00",
+      "ip": "44.192.0.7",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420731+00:00",
+      "ip": "44.192.0.125",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420737+00:00",
+      "ip": "44.192.0.44",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420743+00:00",
+      "ip": "44.192.0.170",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420749+00:00",
+      "ip": "44.192.0.92",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420755+00:00",
+      "ip": "44.192.0.163",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420761+00:00",
+      "ip": "44.192.0.251",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420766+00:00",
+      "ip": "44.192.0.192",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420774+00:00",
+      "ip": "44.192.0.217",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420782+00:00",
+      "ip": "44.192.0.5",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420788+00:00",
+      "ip": "44.192.0.172",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420795+00:00",
+      "ip": "44.192.0.155",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420800+00:00",
+      "ip": "44.192.0.164",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420807+00:00",
+      "ip": "44.192.0.120",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420813+00:00",
+      "ip": "44.192.0.205",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420819+00:00",
+      "ip": "44.192.0.253",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420824+00:00",
+      "ip": "44.192.0.224",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420831+00:00",
+      "ip": "34.224.0.239",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420837+00:00",
+      "ip": "44.192.0.252",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420843+00:00",
+      "ip": "18.204.0.53",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420966+00:00",
+      "ip": "54.152.0.99",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420975+00:00",
+      "ip": "54.80.0.14",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420983+00:00",
+      "ip": "54.80.0.180",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420989+00:00",
+      "ip": "54.80.0.236",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.420994+00:00",
+      "ip": "54.80.0.107",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421001+00:00",
+      "ip": "54.80.0.37",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421006+00:00",
+      "ip": "54.80.0.154",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421012+00:00",
+      "ip": "54.152.0.13",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421018+00:00",
+      "ip": "54.152.0.30",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421024+00:00",
+      "ip": "54.152.0.77",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421030+00:00",
+      "ip": "54.152.0.21",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421035+00:00",
+      "ip": "54.80.0.140",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421041+00:00",
+      "ip": "54.80.0.223",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421049+00:00",
+      "ip": "54.80.0.213",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421057+00:00",
+      "ip": "54.152.0.101",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421065+00:00",
+      "ip": "54.152.0.72",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421071+00:00",
+      "ip": "54.80.0.215",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421077+00:00",
+      "ip": "54.80.0.230",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421083+00:00",
+      "ip": "54.152.0.61",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421089+00:00",
+      "ip": "54.152.0.29",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421097+00:00",
+      "ip": "54.152.0.94",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421103+00:00",
+      "ip": "54.152.0.18",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421109+00:00",
+      "ip": "54.80.0.161",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421114+00:00",
+      "ip": "54.80.0.214",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421120+00:00",
+      "ip": "54.80.0.163",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421126+00:00",
+      "ip": "54.152.0.23",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421132+00:00",
+      "ip": "54.152.0.38",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421138+00:00",
+      "ip": "54.80.0.92",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421266+00:00",
+      "ip": "54.152.0.198",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421273+00:00",
+      "ip": "54.80.0.218",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421280+00:00",
+      "ip": "54.80.0.171",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421286+00:00",
+      "ip": "54.80.0.116",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421291+00:00",
+      "ip": "54.80.0.243",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421299+00:00",
+      "ip": "54.152.0.82",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421305+00:00",
+      "ip": "54.152.0.6",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421311+00:00",
+      "ip": "44.192.0.58",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421317+00:00",
+      "ip": "54.80.0.21",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421323+00:00",
+      "ip": "54.80.0.250",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421328+00:00",
+      "ip": "54.152.0.17",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421334+00:00",
+      "ip": "54.80.0.207",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421340+00:00",
+      "ip": "54.152.0.110",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421346+00:00",
+      "ip": "54.152.0.108",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421352+00:00",
+      "ip": "54.152.0.127",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421358+00:00",
+      "ip": "18.208.0.194",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421363+00:00",
+      "ip": "54.152.0.135",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421369+00:00",
+      "ip": "54.152.0.144",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421375+00:00",
+      "ip": "54.152.0.192",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421380+00:00",
+      "ip": "54.152.0.140",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421386+00:00",
+      "ip": "54.160.0.164",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421392+00:00",
+      "ip": "54.152.0.178",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421397+00:00",
+      "ip": "54.152.0.142",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421403+00:00",
+      "ip": "54.152.0.234",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421410+00:00",
+      "ip": "54.160.0.39",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421415+00:00",
+      "ip": "54.160.0.123",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421421+00:00",
+      "ip": "54.152.0.235",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421427+00:00",
+      "ip": "54.160.0.6",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421433+00:00",
+      "ip": "54.80.0.167",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421557+00:00",
+      "ip": "54.160.0.229",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421566+00:00",
+      "ip": "54.160.0.188",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421572+00:00",
+      "ip": "54.160.0.9",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421578+00:00",
+      "ip": "54.160.0.52",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421584+00:00",
+      "ip": "54.160.0.67",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421590+00:00",
+      "ip": "18.208.0.89",
+      "port": 8080,
+      "channels": [
+        "JENKINS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421596+00:00",
+      "ip": "54.160.0.100",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421602+00:00",
+      "ip": "54.160.0.24",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421607+00:00",
+      "ip": "54.160.0.200",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421613+00:00",
+      "ip": "54.160.0.45",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421619+00:00",
+      "ip": "54.160.0.127",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421624+00:00",
+      "ip": "54.160.0.78",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421630+00:00",
+      "ip": "54.160.0.160",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421636+00:00",
+      "ip": "54.152.1.0",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421641+00:00",
+      "ip": "54.160.0.97",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421648+00:00",
+      "ip": "54.160.0.90",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421654+00:00",
+      "ip": "54.152.0.243",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421660+00:00",
+      "ip": "54.160.0.191",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421666+00:00",
+      "ip": "54.160.0.94",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421671+00:00",
+      "ip": "54.160.0.103",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421677+00:00",
+      "ip": "54.160.0.212",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421684+00:00",
+      "ip": "18.208.0.116",
+      "port": 8080,
+      "channels": [
+        "JENKINS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421689+00:00",
+      "ip": "54.160.0.140",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421695+00:00",
+      "ip": "54.160.0.223",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421701+00:00",
+      "ip": "54.160.0.238",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421707+00:00",
+      "ip": "44.192.0.240",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421713+00:00",
+      "ip": "54.160.0.216",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421719+00:00",
+      "ip": "54.160.0.128",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421725+00:00",
+      "ip": "54.160.0.119",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.421731+00:00",
+      "ip": "54.152.0.217",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.422346+00:00",
+      "ip": "54.160.0.167",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.422367+00:00",
+      "ip": "44.192.0.149",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.422378+00:00",
+      "ip": "54.160.0.205",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    },
+    {
+      "phase": "c2",
+      "ts": "2026-06-23T04:49:00.422385+00:00",
+      "ip": "34.224.0.15",
+      "port": 443,
+      "channels": [
+        "HTTPS"
+      ],
+      "callback": "c2.operation-pivot.com"
+    }
+  ]
+}

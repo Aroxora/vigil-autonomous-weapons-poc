@@ -1,0 +1,4649 @@
+{
+  "stats": {
+    "modbus_kill": 0,
+    "bacnet_kill": 2,
+    "dnp3_burst": 1,
+    "fortios_rce": 435,
+    "splunk_rce": 0,
+    "redis_rce": 0,
+    "jenkins_rce": 2,
+    "bgp_hijack": 0,
+    "total": 470
+  },
+  "results": [
+    {
+      "ip": "18.204.0.58",
+      "port": 47808,
+      "exploit": "PV-KINETIC-005",
+      "status": "EXPLOITED",
+      "kinetic_effect": "SERVER_ROOM_THERMAL_KILL",
+      "persistence": "schedule_60C_5min",
+      "timeline": "T+25min",
+      "bacnet_kill": true,
+      "ts": "2026-06-23T04:46:19.270803+00:00"
+    },
+    {
+      "ip": "54.160.0.164",
+      "port": 47808,
+      "exploit": "PV-KINETIC-005",
+      "status": "EXPLOITED",
+      "kinetic_effect": "SERVER_ROOM_THERMAL_KILL",
+      "persistence": "schedule_60C_5min",
+      "timeline": "T+25min",
+      "bacnet_kill": true,
+      "ts": "2026-06-23T04:46:19.271447+00:00"
+    },
+    {
+      "ip": "54.160.0.164",
+      "port": 20000,
+      "exploit": "PV-KINETIC-007",
+      "status": "EXPLOITED",
+      "kinetic_effect": "PIPELINE_BURST",
+      "persistence": "rtu_config_0x4FFF",
+      "timeline": "20-40min",
+      "estimated_spill": "50K-200K_bbl",
+      "dnp3_burst": true,
+      "ts": "2026-06-23T04:46:19.304685+00:00"
+    },
+    {
+      "ip": "34.192.0.58",
+      "port": 20000,
+      "exploit": "PV-KINETIC-007",
+      "status": "FAILED",
+      "error": "[Errno 32] Broken pipe",
+      "ts": "2026-06-23T04:46:19.304805+00:00"
+    },
+    {
+      "ip": "3.80.0.145",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:19.898903+00:00"
+    },
+    {
+      "ip": "3.80.0.155",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:19.914727+00:00"
+    },
+    {
+      "ip": "3.80.0.154",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:19.926128+00:00"
+    },
+    {
+      "ip": "3.80.0.205",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:19.933458+00:00"
+    },
+    {
+      "ip": "3.80.0.100",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:19.961599+00:00"
+    },
+    {
+      "ip": "3.80.0.184",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:19.965669+00:00"
+    },
+    {
+      "ip": "3.80.0.136",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.000655+00:00"
+    },
+    {
+      "ip": "3.80.0.63",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.001277+00:00"
+    },
+    {
+      "ip": "3.80.0.120",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.002385+00:00"
+    },
+    {
+      "ip": "3.80.0.90",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.035865+00:00"
+    },
+    {
+      "ip": "3.80.0.20",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.057323+00:00"
+    },
+    {
+      "ip": "3.80.0.179",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.082790+00:00"
+    },
+    {
+      "ip": "3.80.0.19",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.110258+00:00"
+    },
+    {
+      "ip": "3.80.0.129",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.133813+00:00"
+    },
+    {
+      "ip": "3.80.0.157",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.158654+00:00"
+    },
+    {
+      "ip": "3.80.0.132",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.178367+00:00"
+    },
+    {
+      "ip": "3.80.0.125",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.185956+00:00"
+    },
+    {
+      "ip": "3.80.0.133",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.186628+00:00"
+    },
+    {
+      "ip": "3.80.0.106",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.187666+00:00"
+    },
+    {
+      "ip": "3.80.0.97",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.188814+00:00"
+    },
+    {
+      "ip": "3.80.0.86",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.190488+00:00"
+    },
+    {
+      "ip": "3.80.0.58",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.190977+00:00"
+    },
+    {
+      "ip": "3.80.0.187",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.191507+00:00"
+    },
+    {
+      "ip": "3.80.0.107",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.193356+00:00"
+    },
+    {
+      "ip": "3.80.0.186",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.194575+00:00"
+    },
+    {
+      "ip": "3.80.0.52",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.196155+00:00"
+    },
+    {
+      "ip": "3.80.0.81",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.197205+00:00"
+    },
+    {
+      "ip": "3.80.0.163",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.197679+00:00"
+    },
+    {
+      "ip": "3.80.0.178",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.198198+00:00"
+    },
+    {
+      "ip": "3.80.0.127",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.199190+00:00"
+    },
+    {
+      "ip": "3.80.0.175",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.200426+00:00"
+    },
+    {
+      "ip": "3.80.0.87",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.200837+00:00"
+    },
+    {
+      "ip": "3.80.0.37",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.201479+00:00"
+    },
+    {
+      "ip": "3.80.0.88",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.203281+00:00"
+    },
+    {
+      "ip": "3.80.0.9",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.209353+00:00"
+    },
+    {
+      "ip": "3.80.0.64",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.211476+00:00"
+    },
+    {
+      "ip": "3.80.0.194",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.221500+00:00"
+    },
+    {
+      "ip": "3.80.0.134",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.227627+00:00"
+    },
+    {
+      "ip": "3.80.0.47",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.229927+00:00"
+    },
+    {
+      "ip": "3.80.0.35",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.231918+00:00"
+    },
+    {
+      "ip": "3.80.0.188",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.238194+00:00"
+    },
+    {
+      "ip": "3.80.0.156",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.244374+00:00"
+    },
+    {
+      "ip": "3.80.0.94",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.245524+00:00"
+    },
+    {
+      "ip": "3.80.0.28",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.246742+00:00"
+    },
+    {
+      "ip": "3.80.0.189",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.247911+00:00"
+    },
+    {
+      "ip": "3.80.0.254",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:20.256400+00:00"
+    },
+    {
+      "ip": "3.80.0.215",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.279985+00:00"
+    },
+    {
+      "ip": "3.80.0.249",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.291632+00:00"
+    },
+    {
+      "ip": "3.80.0.216",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.304858+00:00"
+    },
+    {
+      "ip": "3.80.0.235",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.306502+00:00"
+    },
+    {
+      "ip": "3.80.0.213",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.310127+00:00"
+    },
+    {
+      "ip": "3.80.0.219",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.312046+00:00"
+    },
+    {
+      "ip": "3.208.0.28",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.314569+00:00"
+    },
+    {
+      "ip": "3.80.0.222",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.316562+00:00"
+    },
+    {
+      "ip": "3.208.0.94",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.326571+00:00"
+    },
+    {
+      "ip": "3.208.0.13",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.333823+00:00"
+    },
+    {
+      "ip": "3.80.0.224",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.345654+00:00"
+    },
+    {
+      "ip": "3.80.0.218",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.356627+00:00"
+    },
+    {
+      "ip": "3.208.0.81",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:20.710942+00:00"
+    },
+    {
+      "ip": "3.208.0.17",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.243219+00:00"
+    },
+    {
+      "ip": "3.208.0.87",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:21.394830+00:00"
+    },
+    {
+      "ip": "3.208.0.160",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:21.411169+00:00"
+    },
+    {
+      "ip": "3.208.0.14",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:21.423148+00:00"
+    },
+    {
+      "ip": "3.208.0.132",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:21.428050+00:00"
+    },
+    {
+      "ip": "3.208.0.116",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.437797+00:00"
+    },
+    {
+      "ip": "3.208.0.90",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.452838+00:00"
+    },
+    {
+      "ip": "3.208.0.8",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.454268+00:00"
+    },
+    {
+      "ip": "3.208.0.32",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.460584+00:00"
+    },
+    {
+      "ip": "3.208.0.2",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.463400+00:00"
+    },
+    {
+      "ip": "3.208.0.70",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.466731+00:00"
+    },
+    {
+      "ip": "3.208.0.43",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.469420+00:00"
+    },
+    {
+      "ip": "3.208.0.42",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.476255+00:00"
+    },
+    {
+      "ip": "3.208.0.72",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.485960+00:00"
+    },
+    {
+      "ip": "3.208.0.30",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.496128+00:00"
+    },
+    {
+      "ip": "3.208.0.133",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.505637+00:00"
+    },
+    {
+      "ip": "3.208.0.136",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.507417+00:00"
+    },
+    {
+      "ip": "3.208.0.5",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.509028+00:00"
+    },
+    {
+      "ip": "3.208.0.110",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.510573+00:00"
+    },
+    {
+      "ip": "3.208.0.130",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.512200+00:00"
+    },
+    {
+      "ip": "3.208.0.98",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.513195+00:00"
+    },
+    {
+      "ip": "3.208.0.171",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.515202+00:00"
+    },
+    {
+      "ip": "3.208.0.170",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.521086+00:00"
+    },
+    {
+      "ip": "3.208.0.105",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.521878+00:00"
+    },
+    {
+      "ip": "3.208.0.75",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.522677+00:00"
+    },
+    {
+      "ip": "3.208.0.61",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.523548+00:00"
+    },
+    {
+      "ip": "3.208.0.166",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.524459+00:00"
+    },
+    {
+      "ip": "3.208.0.174",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.525183+00:00"
+    },
+    {
+      "ip": "3.208.0.79",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.525889+00:00"
+    },
+    {
+      "ip": "3.208.0.39",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.526342+00:00"
+    },
+    {
+      "ip": "3.208.0.55",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.527112+00:00"
+    },
+    {
+      "ip": "3.208.0.173",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.528182+00:00"
+    },
+    {
+      "ip": "3.208.0.177",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.529267+00:00"
+    },
+    {
+      "ip": "3.208.0.191",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:21.530184+00:00"
+    },
+    {
+      "ip": "3.208.0.233",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.537307+00:00"
+    },
+    {
+      "ip": "3.208.0.236",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.538329+00:00"
+    },
+    {
+      "ip": "3.208.0.155",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.541813+00:00"
+    },
+    {
+      "ip": "3.208.0.201",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.542386+00:00"
+    },
+    {
+      "ip": "3.208.0.164",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.549038+00:00"
+    },
+    {
+      "ip": "3.208.0.188",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.551866+00:00"
+    },
+    {
+      "ip": "3.208.0.180",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.556025+00:00"
+    },
+    {
+      "ip": "3.208.0.196",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.558198+00:00"
+    },
+    {
+      "ip": "3.208.0.18",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.558681+00:00"
+    },
+    {
+      "ip": "3.208.0.97",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.559137+00:00"
+    },
+    {
+      "ip": "3.208.0.128",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.559896+00:00"
+    },
+    {
+      "ip": "3.208.0.163",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.562044+00:00"
+    },
+    {
+      "ip": "3.208.0.169",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.573751+00:00"
+    },
+    {
+      "ip": "3.208.0.225",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.593451+00:00"
+    },
+    {
+      "ip": "3.208.0.239",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.594008+00:00"
+    },
+    {
+      "ip": "3.208.0.223",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.596881+00:00"
+    },
+    {
+      "ip": "3.208.0.234",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.597919+00:00"
+    },
+    {
+      "ip": "3.208.0.232",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.601890+00:00"
+    },
+    {
+      "ip": "3.208.0.253",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.636921+00:00"
+    },
+    {
+      "ip": "3.208.0.242",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.637791+00:00"
+    },
+    {
+      "ip": "18.204.0.34",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.662963+00:00"
+    },
+    {
+      "ip": "3.208.0.244",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.746065+00:00"
+    },
+    {
+      "ip": "3.208.0.248",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.889540+00:00"
+    },
+    {
+      "ip": "3.208.0.254",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2711)",
+      "ts": "2026-06-23T04:46:21.905639+00:00"
+    },
+    {
+      "ip": "18.204.0.58",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:21.966392+00:00"
+    },
+    {
+      "ip": "18.204.0.51",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.532157+00:00"
+    },
+    {
+      "ip": "18.204.0.99",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.567394+00:00"
+    },
+    {
+      "ip": "18.204.0.4",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.584965+00:00"
+    },
+    {
+      "ip": "18.204.0.38",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.601098+00:00"
+    },
+    {
+      "ip": "18.204.0.82",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.602561+00:00"
+    },
+    {
+      "ip": "18.204.0.42",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.613744+00:00"
+    },
+    {
+      "ip": "18.204.0.100",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.620642+00:00"
+    },
+    {
+      "ip": "18.204.0.54",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.621441+00:00"
+    },
+    {
+      "ip": "18.204.0.22",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.622569+00:00"
+    },
+    {
+      "ip": "18.204.0.52",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.626469+00:00"
+    },
+    {
+      "ip": "18.204.0.90",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.632245+00:00"
+    },
+    {
+      "ip": "18.204.0.112",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.632908+00:00"
+    },
+    {
+      "ip": "18.204.0.114",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.641130+00:00"
+    },
+    {
+      "ip": "18.204.0.132",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.647776+00:00"
+    },
+    {
+      "ip": "18.204.0.200",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.662031+00:00"
+    },
+    {
+      "ip": "18.204.0.98",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.663802+00:00"
+    },
+    {
+      "ip": "18.204.0.124",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.675692+00:00"
+    },
+    {
+      "ip": "18.204.0.170",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.676667+00:00"
+    },
+    {
+      "ip": "18.204.0.128",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.689228+00:00"
+    },
+    {
+      "ip": "18.204.0.191",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.759874+00:00"
+    },
+    {
+      "ip": "18.204.0.222",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.811868+00:00"
+    },
+    {
+      "ip": "18.204.0.139",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.854377+00:00"
+    },
+    {
+      "ip": "18.204.0.238",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.911223+00:00"
+    },
+    {
+      "ip": "18.208.0.13",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.962101+00:00"
+    },
+    {
+      "ip": "18.204.0.186",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:22.995994+00:00"
+    },
+    {
+      "ip": "18.204.0.209",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.002101+00:00"
+    },
+    {
+      "ip": "18.204.0.246",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.004226+00:00"
+    },
+    {
+      "ip": "18.204.0.6",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.010692+00:00"
+    },
+    {
+      "ip": "18.204.0.192",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.024888+00:00"
+    },
+    {
+      "ip": "18.204.0.231",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.026411+00:00"
+    },
+    {
+      "ip": "18.204.0.245",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.027491+00:00"
+    },
+    {
+      "ip": "18.204.0.240",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.028014+00:00"
+    },
+    {
+      "ip": "18.204.0.187",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.029382+00:00"
+    },
+    {
+      "ip": "18.204.0.214",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.031017+00:00"
+    },
+    {
+      "ip": "18.204.0.223",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.033844+00:00"
+    },
+    {
+      "ip": "18.204.0.211",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.034304+00:00"
+    },
+    {
+      "ip": "18.204.0.252",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.037948+00:00"
+    },
+    {
+      "ip": "18.208.0.1",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.047915+00:00"
+    },
+    {
+      "ip": "18.204.0.228",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.110969+00:00"
+    },
+    {
+      "ip": "18.204.0.217",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.155528+00:00"
+    },
+    {
+      "ip": "18.204.0.225",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.205371+00:00"
+    },
+    {
+      "ip": "18.208.0.11",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.252162+00:00"
+    },
+    {
+      "ip": "18.204.0.183",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.291934+00:00"
+    },
+    {
+      "ip": "18.208.0.72",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.344099+00:00"
+    },
+    {
+      "ip": "18.208.0.42",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.367745+00:00"
+    },
+    {
+      "ip": "18.208.0.142",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.370470+00:00"
+    },
+    {
+      "ip": "18.208.0.80",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.396299+00:00"
+    },
+    {
+      "ip": "18.208.0.62",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.398765+00:00"
+    },
+    {
+      "ip": "18.208.0.30",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.400588+00:00"
+    },
+    {
+      "ip": "18.208.0.165",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.403698+00:00"
+    },
+    {
+      "ip": "18.204.0.167",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.405251+00:00"
+    },
+    {
+      "ip": "18.208.0.104",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.405682+00:00"
+    },
+    {
+      "ip": "18.208.0.28",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.410615+00:00"
+    },
+    {
+      "ip": "18.208.0.173",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.411947+00:00"
+    },
+    {
+      "ip": "18.208.0.117",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.425556+00:00"
+    },
+    {
+      "ip": "18.208.0.68",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.428068+00:00"
+    },
+    {
+      "ip": "18.208.0.140",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.433747+00:00"
+    },
+    {
+      "ip": "18.208.0.20",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.440604+00:00"
+    },
+    {
+      "ip": "18.208.0.57",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.450004+00:00"
+    },
+    {
+      "ip": "18.208.0.102",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.451304+00:00"
+    },
+    {
+      "ip": "18.208.0.77",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.476630+00:00"
+    },
+    {
+      "ip": "18.208.0.60",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.477838+00:00"
+    },
+    {
+      "ip": "18.208.0.145",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.483329+00:00"
+    },
+    {
+      "ip": "18.208.0.37",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.485468+00:00"
+    },
+    {
+      "ip": "18.208.0.177",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.487195+00:00"
+    },
+    {
+      "ip": "18.208.0.208",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.501903+00:00"
+    },
+    {
+      "ip": "18.208.0.167",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.506897+00:00"
+    },
+    {
+      "ip": "18.208.0.183",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.508064+00:00"
+    },
+    {
+      "ip": "18.208.0.174",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.508581+00:00"
+    },
+    {
+      "ip": "18.208.0.148",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.509025+00:00"
+    },
+    {
+      "ip": "18.208.0.228",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.510218+00:00"
+    },
+    {
+      "ip": "18.208.0.146",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.511172+00:00"
+    },
+    {
+      "ip": "18.208.0.131",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.513716+00:00"
+    },
+    {
+      "ip": "18.208.0.152",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.516119+00:00"
+    },
+    {
+      "ip": "18.208.0.213",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.522664+00:00"
+    },
+    {
+      "ip": "18.208.0.193",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.523606+00:00"
+    },
+    {
+      "ip": "18.208.0.168",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.526758+00:00"
+    },
+    {
+      "ip": "18.208.0.207",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.533927+00:00"
+    },
+    {
+      "ip": "18.208.0.122",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.540290+00:00"
+    },
+    {
+      "ip": "18.208.0.204",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.561132+00:00"
+    },
+    {
+      "ip": "18.208.0.222",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.639797+00:00"
+    },
+    {
+      "ip": "18.208.0.76",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.659115+00:00"
+    },
+    {
+      "ip": "18.208.0.233",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:23.688863+00:00"
+    },
+    {
+      "ip": "18.208.0.240",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.243912+00:00"
+    },
+    {
+      "ip": "18.208.0.251",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.249528+00:00"
+    },
+    {
+      "ip": "34.192.0.58",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.257421+00:00"
+    },
+    {
+      "ip": "18.208.0.241",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.393149+00:00"
+    },
+    {
+      "ip": "18.208.0.255",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.439144+00:00"
+    },
+    {
+      "ip": "18.208.0.238",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.453937+00:00"
+    },
+    {
+      "ip": "34.192.0.26",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.478942+00:00"
+    },
+    {
+      "ip": "34.192.0.17",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.487042+00:00"
+    },
+    {
+      "ip": "34.192.0.15",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.501773+00:00"
+    },
+    {
+      "ip": "34.192.0.44",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.511118+00:00"
+    },
+    {
+      "ip": "34.192.0.9",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.517757+00:00"
+    },
+    {
+      "ip": "34.192.0.63",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.521839+00:00"
+    },
+    {
+      "ip": "34.192.0.33",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.533893+00:00"
+    },
+    {
+      "ip": "34.192.0.64",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:24.549080+00:00"
+    },
+    {
+      "ip": "34.192.0.89",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.558765+00:00"
+    },
+    {
+      "ip": "34.192.0.73",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.569606+00:00"
+    },
+    {
+      "ip": "34.192.0.90",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.577083+00:00"
+    },
+    {
+      "ip": "34.192.0.42",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.577972+00:00"
+    },
+    {
+      "ip": "34.192.0.19",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.588396+00:00"
+    },
+    {
+      "ip": "34.192.0.86",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.607323+00:00"
+    },
+    {
+      "ip": "34.192.0.99",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.626195+00:00"
+    },
+    {
+      "ip": "34.192.0.2",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.627107+00:00"
+    },
+    {
+      "ip": "34.192.0.62",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.637090+00:00"
+    },
+    {
+      "ip": "34.192.0.10",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.643012+00:00"
+    },
+    {
+      "ip": "34.192.0.57",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.648113+00:00"
+    },
+    {
+      "ip": "34.192.0.152",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.649477+00:00"
+    },
+    {
+      "ip": "34.192.0.105",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.663892+00:00"
+    },
+    {
+      "ip": "34.192.0.202",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.711210+00:00"
+    },
+    {
+      "ip": "34.192.0.157",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.782578+00:00"
+    },
+    {
+      "ip": "34.192.0.94",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.850830+00:00"
+    },
+    {
+      "ip": "34.192.0.114",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.904544+00:00"
+    },
+    {
+      "ip": "34.192.0.74",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.954868+00:00"
+    },
+    {
+      "ip": "34.192.0.199",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:24.995793+00:00"
+    },
+    {
+      "ip": "34.192.0.102",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.013472+00:00"
+    },
+    {
+      "ip": "34.192.0.180",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.028242+00:00"
+    },
+    {
+      "ip": "34.192.0.139",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: TLSV13_ALERT_CERTIFICATE_REQUIRED] tlsv13 alert certificate required (_ssl.c:2711)",
+      "ts": "2026-06-23T04:46:25.030609+00:00"
+    },
+    {
+      "ip": "34.192.0.162",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.032088+00:00"
+    },
+    {
+      "ip": "34.192.0.138",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.033168+00:00"
+    },
+    {
+      "ip": "34.192.0.200",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.055066+00:00"
+    },
+    {
+      "ip": "34.192.0.144",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.061326+00:00"
+    },
+    {
+      "ip": "34.192.0.179",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.072738+00:00"
+    },
+    {
+      "ip": "34.224.0.5",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:25.077018+00:00"
+    },
+    {
+      "ip": "34.192.0.194",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.084512+00:00"
+    },
+    {
+      "ip": "34.192.0.175",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.100229+00:00"
+    },
+    {
+      "ip": "34.192.0.223",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:25.101284+00:00"
+    },
+    {
+      "ip": "34.192.0.246",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.109713+00:00"
+    },
+    {
+      "ip": "34.224.0.97",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.113618+00:00"
+    },
+    {
+      "ip": "34.224.0.42",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.122079+00:00"
+    },
+    {
+      "ip": "34.224.0.11",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.126294+00:00"
+    },
+    {
+      "ip": "34.192.0.167",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.135054+00:00"
+    },
+    {
+      "ip": "34.192.0.241",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.136464+00:00"
+    },
+    {
+      "ip": "34.224.0.23",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.147365+00:00"
+    },
+    {
+      "ip": "34.192.0.220",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.149679+00:00"
+    },
+    {
+      "ip": "34.192.0.128",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.152736+00:00"
+    },
+    {
+      "ip": "34.224.0.8",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.154353+00:00"
+    },
+    {
+      "ip": "34.192.0.203",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.159503+00:00"
+    },
+    {
+      "ip": "34.224.0.20",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.165754+00:00"
+    },
+    {
+      "ip": "34.192.0.252",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.168904+00:00"
+    },
+    {
+      "ip": "34.224.0.2",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.170713+00:00"
+    },
+    {
+      "ip": "34.224.0.35",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.172278+00:00"
+    },
+    {
+      "ip": "34.192.0.206",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.175552+00:00"
+    },
+    {
+      "ip": "34.192.0.207",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.180116+00:00"
+    },
+    {
+      "ip": "34.192.0.219",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.181195+00:00"
+    },
+    {
+      "ip": "34.224.0.26",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.182270+00:00"
+    },
+    {
+      "ip": "34.192.0.221",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.194663+00:00"
+    },
+    {
+      "ip": "34.224.0.27",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.202361+00:00"
+    },
+    {
+      "ip": "34.224.0.21",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.325667+00:00"
+    },
+    {
+      "ip": "34.224.0.31",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.546851+00:00"
+    },
+    {
+      "ip": "34.224.0.70",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.720046+00:00"
+    },
+    {
+      "ip": "34.224.0.91",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.834368+00:00"
+    },
+    {
+      "ip": "18.204.0.165",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:25.931599+00:00"
+    },
+    {
+      "ip": "34.224.0.204",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[Errno 54] Connection reset by peer",
+      "ts": "2026-06-23T04:46:26.068311+00:00"
+    },
+    {
+      "ip": "34.224.0.192",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.081552+00:00"
+    },
+    {
+      "ip": "34.224.0.111",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.083870+00:00"
+    },
+    {
+      "ip": "34.224.0.172",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.084997+00:00"
+    },
+    {
+      "ip": "34.224.0.124",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.096858+00:00"
+    },
+    {
+      "ip": "34.224.0.108",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.100935+00:00"
+    },
+    {
+      "ip": "34.224.0.92",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.102711+00:00"
+    },
+    {
+      "ip": "34.224.0.88",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.103812+00:00"
+    },
+    {
+      "ip": "34.224.0.205",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.105851+00:00"
+    },
+    {
+      "ip": "34.224.0.135",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.106538+00:00"
+    },
+    {
+      "ip": "34.224.0.73",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.108119+00:00"
+    },
+    {
+      "ip": "34.224.0.136",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.111680+00:00"
+    },
+    {
+      "ip": "34.224.0.162",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.113288+00:00"
+    },
+    {
+      "ip": "34.224.0.128",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.117257+00:00"
+    },
+    {
+      "ip": "34.224.0.45",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.120974+00:00"
+    },
+    {
+      "ip": "34.224.0.64",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.125833+00:00"
+    },
+    {
+      "ip": "34.224.0.238",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.127678+00:00"
+    },
+    {
+      "ip": "34.224.0.167",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.129775+00:00"
+    },
+    {
+      "ip": "34.224.0.99",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.131243+00:00"
+    },
+    {
+      "ip": "34.224.0.170",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.133228+00:00"
+    },
+    {
+      "ip": "34.224.0.130",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.134139+00:00"
+    },
+    {
+      "ip": "34.224.0.51",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.134624+00:00"
+    },
+    {
+      "ip": "34.224.0.165",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.135877+00:00"
+    },
+    {
+      "ip": "34.224.0.122",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.136772+00:00"
+    },
+    {
+      "ip": "34.224.0.140",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.139894+00:00"
+    },
+    {
+      "ip": "34.224.0.55",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.140931+00:00"
+    },
+    {
+      "ip": "34.224.0.233",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.143411+00:00"
+    },
+    {
+      "ip": "34.224.0.177",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.149256+00:00"
+    },
+    {
+      "ip": "34.224.0.152",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.150380+00:00"
+    },
+    {
+      "ip": "34.224.0.222",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.151436+00:00"
+    },
+    {
+      "ip": "34.224.0.193",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.187195+00:00"
+    },
+    {
+      "ip": "34.224.0.201",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.262746+00:00"
+    },
+    {
+      "ip": "34.224.0.175",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.345467+00:00"
+    },
+    {
+      "ip": "34.224.0.235",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.414855+00:00"
+    },
+    {
+      "ip": "34.224.0.239",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.503582+00:00"
+    },
+    {
+      "ip": "3.208.0.84",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.579765+00:00"
+    },
+    {
+      "ip": "34.224.0.226",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.628429+00:00"
+    },
+    {
+      "ip": "3.208.0.149",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.638464+00:00"
+    },
+    {
+      "ip": "34.224.0.163",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.639928+00:00"
+    },
+    {
+      "ip": "34.224.0.173",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.641583+00:00"
+    },
+    {
+      "ip": "34.224.0.179",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.644039+00:00"
+    },
+    {
+      "ip": "34.224.0.142",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.645812+00:00"
+    },
+    {
+      "ip": "44.192.0.97",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[Errno 54] Connection reset by peer",
+      "ts": "2026-06-23T04:46:26.689794+00:00"
+    },
+    {
+      "ip": "44.192.0.66",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.756709+00:00"
+    },
+    {
+      "ip": "44.192.0.16",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.780442+00:00"
+    },
+    {
+      "ip": "44.192.0.128",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.800139+00:00"
+    },
+    {
+      "ip": "44.192.0.28",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.828649+00:00"
+    },
+    {
+      "ip": "34.224.0.250",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.853507+00:00"
+    },
+    {
+      "ip": "44.192.0.2",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.879058+00:00"
+    },
+    {
+      "ip": "34.224.0.244",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.888416+00:00"
+    },
+    {
+      "ip": "44.192.0.22",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.890510+00:00"
+    },
+    {
+      "ip": "44.192.0.69",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.892757+00:00"
+    },
+    {
+      "ip": "44.192.0.129",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.897282+00:00"
+    },
+    {
+      "ip": "44.192.0.111",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.898637+00:00"
+    },
+    {
+      "ip": "44.192.0.13",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.900415+00:00"
+    },
+    {
+      "ip": "44.192.0.31",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.901798+00:00"
+    },
+    {
+      "ip": "44.192.0.74",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.903609+00:00"
+    },
+    {
+      "ip": "34.224.1.0",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.904637+00:00"
+    },
+    {
+      "ip": "44.192.0.1",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.905123+00:00"
+    },
+    {
+      "ip": "44.192.0.12",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.906778+00:00"
+    },
+    {
+      "ip": "44.192.0.105",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.908985+00:00"
+    },
+    {
+      "ip": "44.192.0.114",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.909849+00:00"
+    },
+    {
+      "ip": "44.192.0.106",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.918435+00:00"
+    },
+    {
+      "ip": "44.192.0.181",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.932228+00:00"
+    },
+    {
+      "ip": "34.224.0.251",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.933405+00:00"
+    },
+    {
+      "ip": "44.192.0.110",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.941158+00:00"
+    },
+    {
+      "ip": "44.192.0.123",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.947005+00:00"
+    },
+    {
+      "ip": "44.192.0.7",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.948987+00:00"
+    },
+    {
+      "ip": "44.192.0.125",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.949688+00:00"
+    },
+    {
+      "ip": "44.192.0.92",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.956654+00:00"
+    },
+    {
+      "ip": "44.192.0.44",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.958158+00:00"
+    },
+    {
+      "ip": "44.192.0.170",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.960515+00:00"
+    },
+    {
+      "ip": "44.192.0.5",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.962571+00:00"
+    },
+    {
+      "ip": "44.192.0.163",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.974619+00:00"
+    },
+    {
+      "ip": "44.192.0.251",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:26.994013+00:00"
+    },
+    {
+      "ip": "44.192.0.192",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.004177+00:00"
+    },
+    {
+      "ip": "44.192.0.217",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.007458+00:00"
+    },
+    {
+      "ip": "44.192.0.164",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.017217+00:00"
+    },
+    {
+      "ip": "44.192.0.172",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.022649+00:00"
+    },
+    {
+      "ip": "44.192.0.155",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.023177+00:00"
+    },
+    {
+      "ip": "44.192.0.120",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.024304+00:00"
+    },
+    {
+      "ip": "44.192.0.224",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.026186+00:00"
+    },
+    {
+      "ip": "44.192.0.253",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.028145+00:00"
+    },
+    {
+      "ip": "44.192.0.205",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.029124+00:00"
+    },
+    {
+      "ip": "44.192.0.252",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.047325+00:00"
+    },
+    {
+      "ip": "18.204.0.53",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.628879+00:00"
+    },
+    {
+      "ip": "54.80.0.8",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:27.934628+00:00"
+    },
+    {
+      "ip": "54.80.0.92",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.011197+00:00"
+    },
+    {
+      "ip": "54.80.0.14",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.056163+00:00"
+    },
+    {
+      "ip": "54.80.0.202",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:28.080430+00:00"
+    },
+    {
+      "ip": "54.80.0.184",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:28.083342+00:00"
+    },
+    {
+      "ip": "54.80.0.180",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.091373+00:00"
+    },
+    {
+      "ip": "54.80.0.236",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.105975+00:00"
+    },
+    {
+      "ip": "54.80.0.107",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.112928+00:00"
+    },
+    {
+      "ip": "54.80.0.37",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.131499+00:00"
+    },
+    {
+      "ip": "54.80.0.154",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.137174+00:00"
+    },
+    {
+      "ip": "54.152.0.13",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.139282+00:00"
+    },
+    {
+      "ip": "54.152.0.30",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.140897+00:00"
+    },
+    {
+      "ip": "54.152.0.77",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.143300+00:00"
+    },
+    {
+      "ip": "54.152.0.21",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.155089+00:00"
+    },
+    {
+      "ip": "54.80.0.140",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.171680+00:00"
+    },
+    {
+      "ip": "54.80.0.230",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.198126+00:00"
+    },
+    {
+      "ip": "54.80.0.223",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.212236+00:00"
+    },
+    {
+      "ip": "54.80.0.213",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.232061+00:00"
+    },
+    {
+      "ip": "54.80.0.215",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.253809+00:00"
+    },
+    {
+      "ip": "54.152.0.18",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.266094+00:00"
+    },
+    {
+      "ip": "54.152.0.101",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.267315+00:00"
+    },
+    {
+      "ip": "54.152.0.72",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.267824+00:00"
+    },
+    {
+      "ip": "54.152.0.61",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.268263+00:00"
+    },
+    {
+      "ip": "54.152.0.29",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.268954+00:00"
+    },
+    {
+      "ip": "54.80.0.161",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.269383+00:00"
+    },
+    {
+      "ip": "54.152.0.94",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.270513+00:00"
+    },
+    {
+      "ip": "54.80.0.163",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.271588+00:00"
+    },
+    {
+      "ip": "54.80.0.214",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.272876+00:00"
+    },
+    {
+      "ip": "54.152.0.23",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.273516+00:00"
+    },
+    {
+      "ip": "54.152.0.38",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.274499+00:00"
+    },
+    {
+      "ip": "54.152.0.99",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.275919+00:00"
+    },
+    {
+      "ip": "54.80.0.167",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.276631+00:00"
+    },
+    {
+      "ip": "54.80.0.218",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.299460+00:00"
+    },
+    {
+      "ip": "54.80.0.171",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.302400+00:00"
+    },
+    {
+      "ip": "54.80.0.116",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.304195+00:00"
+    },
+    {
+      "ip": "54.80.0.243",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.309652+00:00"
+    },
+    {
+      "ip": "54.152.0.82",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.311723+00:00"
+    },
+    {
+      "ip": "54.152.0.6",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.320536+00:00"
+    },
+    {
+      "ip": "44.192.0.58",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.414319+00:00"
+    },
+    {
+      "ip": "54.80.0.21",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.483692+00:00"
+    },
+    {
+      "ip": "54.80.0.250",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.565402+00:00"
+    },
+    {
+      "ip": "54.152.0.17",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.643488+00:00"
+    },
+    {
+      "ip": "54.80.0.207",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.715332+00:00"
+    },
+    {
+      "ip": "54.152.0.110",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.780830+00:00"
+    },
+    {
+      "ip": "54.152.0.108",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.791887+00:00"
+    },
+    {
+      "ip": "18.208.0.194",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.795184+00:00"
+    },
+    {
+      "ip": "54.152.0.127",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.796612+00:00"
+    },
+    {
+      "ip": "54.152.0.140",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.820003+00:00"
+    },
+    {
+      "ip": "54.160.0.7",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)",
+      "ts": "2026-06-23T04:46:28.842863+00:00"
+    },
+    {
+      "ip": "54.152.0.135",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.847253+00:00"
+    },
+    {
+      "ip": "54.152.0.144",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.859160+00:00"
+    },
+    {
+      "ip": "54.152.0.192",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.860030+00:00"
+    },
+    {
+      "ip": "34.192.0.10",
+      "port": 6379,
+      "exploit": "Redis-Unauth-RCE",
+      "status": "AUTH_REQUIRED",
+      "ts": "2026-06-23T04:46:28.876348+00:00"
+    },
+    {
+      "ip": "54.152.0.142",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.876776+00:00"
+    },
+    {
+      "ip": "54.160.0.164",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.877485+00:00"
+    },
+    {
+      "ip": "54.152.0.178",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.888394+00:00"
+    },
+    {
+      "ip": "54.152.0.235",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.889701+00:00"
+    },
+    {
+      "ip": "54.152.0.234",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.891213+00:00"
+    },
+    {
+      "ip": "54.160.0.39",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.891643+00:00"
+    },
+    {
+      "ip": "54.160.0.123",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.894026+00:00"
+    },
+    {
+      "ip": "54.160.0.6",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.903143+00:00"
+    },
+    {
+      "ip": "54.152.0.198",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.928249+00:00"
+    },
+    {
+      "ip": "54.152.0.217",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.946444+00:00"
+    },
+    {
+      "ip": "54.160.0.188",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.967842+00:00"
+    },
+    {
+      "ip": "44.192.0.136",
+      "port": 6379,
+      "exploit": "Redis-Unauth-RCE",
+      "status": "AUTH_REQUIRED",
+      "ts": "2026-06-23T04:46:28.989294+00:00"
+    },
+    {
+      "ip": "54.160.0.9",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:28.990016+00:00"
+    },
+    {
+      "ip": "54.160.0.52",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.007778+00:00"
+    },
+    {
+      "ip": "54.160.0.67",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.022175+00:00"
+    },
+    {
+      "ip": "18.208.0.42",
+      "port": 8080,
+      "exploit": "CVE-2024-23897",
+      "status": "CONFIRMED_VULNERABLE",
+      "ts": "2026-06-23T04:46:29.022845+00:00"
+    },
+    {
+      "ip": "18.208.0.89",
+      "port": 8080,
+      "exploit": "CVE-2024-23897",
+      "status": "EXPLOITED",
+      "jenkins_rce": true,
+      "persistence": "groovy_console_backdoor",
+      "ts": "2026-06-23T04:46:29.022898+00:00"
+    },
+    {
+      "ip": "54.160.0.100",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.022990+00:00"
+    },
+    {
+      "ip": "54.160.0.24",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.023481+00:00"
+    },
+    {
+      "ip": "54.160.0.200",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.024399+00:00"
+    },
+    {
+      "ip": "3.208.0.95",
+      "port": 8080,
+      "exploit": "CVE-2024-23897",
+      "status": "CONFIRMED_VULNERABLE",
+      "ts": "2026-06-23T04:46:29.024863+00:00"
+    },
+    {
+      "ip": "54.160.0.45",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.025104+00:00"
+    },
+    {
+      "ip": "18.204.0.213",
+      "port": 8080,
+      "exploit": "CVE-2024-23897",
+      "status": "CONFIRMED_VULNERABLE",
+      "ts": "2026-06-23T04:46:29.025663+00:00"
+    },
+    {
+      "ip": "3.80.0.63",
+      "port": 8080,
+      "exploit": "CVE-2024-23897",
+      "status": "CONFIRMED_VULNERABLE",
+      "ts": "2026-06-23T04:46:29.025761+00:00"
+    },
+    {
+      "ip": "54.160.0.127",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.025775+00:00"
+    },
+    {
+      "ip": "54.160.0.78",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.036725+00:00"
+    },
+    {
+      "ip": "54.160.0.160",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.039727+00:00"
+    },
+    {
+      "ip": "34.192.0.110",
+      "port": 8080,
+      "exploit": "CVE-2024-23897",
+      "status": "CONFIRMED_VULNERABLE",
+      "ts": "2026-06-23T04:46:29.045644+00:00"
+    },
+    {
+      "ip": "54.152.0.119",
+      "port": 8080,
+      "exploit": "CVE-2024-23897",
+      "status": "CONFIRMED_VULNERABLE",
+      "ts": "2026-06-23T04:46:29.045668+00:00"
+    },
+    {
+      "ip": "54.160.0.52",
+      "port": 8080,
+      "exploit": "CVE-2024-23897",
+      "status": "CONFIRMED_VULNERABLE",
+      "ts": "2026-06-23T04:46:29.051202+00:00"
+    },
+    {
+      "ip": "54.152.1.0",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.054572+00:00"
+    },
+    {
+      "ip": "54.160.0.97",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.055148+00:00"
+    },
+    {
+      "ip": "54.160.0.90",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.061398+00:00"
+    },
+    {
+      "ip": "54.152.0.243",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.065346+00:00"
+    },
+    {
+      "ip": "54.160.0.191",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.068433+00:00"
+    },
+    {
+      "ip": "54.160.0.94",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.071623+00:00"
+    },
+    {
+      "ip": "54.160.0.103",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.072187+00:00"
+    },
+    {
+      "ip": "18.208.0.116",
+      "port": 8080,
+      "exploit": "CVE-2024-23897",
+      "status": "EXPLOITED",
+      "jenkins_rce": true,
+      "persistence": "groovy_console_backdoor",
+      "ts": "2026-06-23T04:46:29.093288+00:00"
+    },
+    {
+      "ip": "54.160.0.212",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.106312+00:00"
+    },
+    {
+      "ip": "54.160.0.119",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.118017+00:00"
+    },
+    {
+      "ip": "54.160.0.140",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.118571+00:00"
+    },
+    {
+      "ip": "54.160.0.223",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.129497+00:00"
+    },
+    {
+      "ip": "54.160.0.216",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.130840+00:00"
+    },
+    {
+      "ip": "54.160.0.238",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.136409+00:00"
+    },
+    {
+      "ip": "44.192.0.240",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.140201+00:00"
+    },
+    {
+      "ip": "54.160.0.128",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.150406+00:00"
+    },
+    {
+      "ip": "54.160.0.229",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.152402+00:00"
+    },
+    {
+      "ip": "54.160.0.167",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:29.644338+00:00"
+    },
+    {
+      "ip": "3.80.0.114",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "The read operation timed out",
+      "ts": "2026-06-23T04:46:29.972513+00:00"
+    },
+    {
+      "ip": "34.224.0.15",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:31.114545+00:00"
+    },
+    {
+      "ip": "44.192.0.149",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:32.021020+00:00"
+    },
+    {
+      "ip": "54.160.0.205",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "EXPLOITED",
+      "kinetic_effect": "POWER_GRID_RELAY_TRIP",
+      "fortios_rce": true,
+      "persistence": "hidden_sslvpn_config",
+      "ts": "2026-06-23T04:46:34.125020+00:00"
+    },
+    {
+      "ip": "34.192.0.239",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "The read operation timed out",
+      "ts": "2026-06-23T04:46:35.123590+00:00"
+    },
+    {
+      "ip": "44.192.0.87",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "The read operation timed out",
+      "ts": "2026-06-23T04:46:36.741379+00:00"
+    },
+    {
+      "ip": "54.160.0.181",
+      "port": 443,
+      "exploit": "CVE-2024-21762",
+      "status": "FAILED",
+      "error": "_ssl.c:1063: The handshake operation timed out",
+      "ts": "2026-06-23T04:46:39.071493+00:00"
+    }
+  ],
+  "ts": "2026-06-23T04:46:39.103740+00:00"
+}

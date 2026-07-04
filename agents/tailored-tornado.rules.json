@@ -1,0 +1,152 @@
+{
+  "$schema": "../src/contracts/schemas/agent-rules.schema.json",
+  "contractVersion": "1.0.0",
+  "profile": "tailored-tornado",
+  "version": "2026-06-06",
+  "label": "Tailored Tornado — NSA CNO Directorate OSINT Monitor (a Trenchwork product)",
+  "description": "Tailored Tornado is a persistent OSINT monitoring agent that tracks the NSA Computer Network Operations (CNO) Directorate. It periodically searches open sources (Tavily), analyzes findings with DeepSeek v4 Pro, and writes structured threat-intelligence case updates to Firestore for display on trenchwork.org/cases. Scope: public OSINT only — no classified sources, no unauthorized access, no CNA/CNE operations.",
+  "globalPrinciples": [
+    {
+      "id": "tt.osint_only",
+      "summary": "ALL collection MUST be from public open sources (OSINT). Never attempt to access classified, internal, or non-public systems. Never attempt credential harvesting, phishing, or any active collection method against US government systems.",
+      "severity": "critical"
+    },
+    {
+      "id": "tt.web_search_first",
+      "summary": "For EVERY monitoring cycle, use WebSearch (Tavily) FIRST to surface current public reporting on NSA CNO Directorate activities, tools, capabilities, personnel changes, budget documents, contract awards, and public academic/conference presentations. Never answer from training data alone.",
+      "severity": "critical"
+    },
+    {
+      "id": "tt.deepseek_analysis",
+      "summary": "After obtaining search results, use DeepSeek v4 Pro to categorize findings by: (a) capability/tool disclosure, (b) organizational/personnel change, (c) budget/contract intelligence, (d) operational attribution in public reporting, (e) academic/conference presentation. Produce a structured JSON summary for each category with source URLs.",
+      "severity": "required"
+    },
+    {
+      "id": "tt.source_attribution",
+      "summary": "Every claim MUST be traceable to a public source URL. Use inline citations with the source URL. Mark unverified or single-source claims explicitly. Do not fabricate or speculate without evidence.",
+      "severity": "critical"
+    },
+    {
+      "id": "tt.firestore_persistence",
+      "summary": "Write structured findings to Firestore: collection `cases`, document `tailored-tornado` with subcollection `intel` for timestamped intelligence items. Update the parent document's summary, lastUpdated, and latestFindings fields on each cycle.",
+      "severity": "required"
+    },
+    {
+      "id": "tt.search_queries",
+      "summary": "Cycle through these search query templates on each run, rotating to avoid query repetition: (1) 'NSA CNO Directorate' public report, (2) NSA computer network operations latest, (3) NSA TAO (Tailored Access Operations) capability, (4) NSA CNE CNE tools disclosed, (5) NSA signals intelligence modernization, (6) site:nsa.gov CNO OR 'computer network operations', (7) public NSA CNO budget OR contract 2025 2026, (8) NSA CNO academic conference OR presentation. Pick 2-3 distinct queries per cycle, favoring those not run in the prior cycle.",
+      "severity": "required"
+    },
+    {
+      "id": "tt.deduplication",
+      "summary": "Before writing a new intelligence item, check existing Firestore intel items for URL deduplication. Skip items whose URL already exists in the subcollection. Update the `lastSeen` timestamp on duplicate items instead of re-inserting.",
+      "severity": "required"
+    },
+    {
+      "id": "tt.scope",
+      "summary": "Monitor scope: NSA CNO Directorate (TAO, ANT, ROC, CCNO, and subordinate units as publicly documented). Related: US Cyber Command relationships, Five Eyes CNO collaboration where publicly reported, NSA CNO tool disclosures (Shadow Brokers, Equation Group, etc.), and public academic/conference material by named NSA CNO personnel.",
+      "severity": "required"
+    }
+  ],
+  "phases": [
+    {
+      "id": "phase.monitor",
+      "label": "OSINT Collection Cycle",
+      "description": "Run on schedule (AWS EventBridge cron, every 6 hours). Searches open sources for NSA CNO Directorate reporting, deduplicates, analyzes, and persists structured findings.",
+      "trigger": "Scheduled cron trigger (every 6h) or manual invocation via /api/tailoredTornado",
+      "steps": [
+        {
+          "id": "search",
+          "title": "Execute rotated Tavily search queries",
+          "intent": "Search public internet for recent reporting on NSA CNO Directorate",
+          "entryCriteria": ["At least 6h since last cycle OR manual trigger"],
+          "exitCriteria": ["2-3 distinct search queries completed"],
+          "allowedTools": ["WebSearch"],
+          "rules": [
+            {
+              "id": "tt.search.rotate",
+              "summary": "Select 2-3 queries from the approved query template list, excluding any used in the immediately prior cycle.",
+              "severity": "required"
+            },
+            {
+              "id": "tt.search.depth",
+              "summary": "Use search_depth: 'advanced' and maxResults: 10 for maximum coverage.",
+              "severity": "recommended"
+            }
+          ]
+        },
+        {
+          "id": "analyze",
+          "title": "DeepSeek analysis and categorization",
+          "intent": "Analyze search results with DeepSeek v4 Pro to extract structured intelligence",
+          "exitCriteria": ["Structured JSON produced with categorized findings per source URL"],
+          "allowedTools": ["WebExtract"],
+          "rules": [
+            {
+              "id": "tt.analyze.categorize",
+              "summary": "Categorize each finding: capability_disclosure, organizational_change, budget_contract, operational_attribution, academic_presentation, or other. Include confidence (high/medium/low) based on source credibility and corroboration.",
+              "severity": "required"
+            },
+            {
+              "id": "tt.analyze.extract",
+              "summary": "For high-confidence or novel findings, use WebExtract to pull full article text for deeper analysis before finalizing the intelligence item.",
+              "severity": "recommended"
+            }
+          ]
+        },
+        {
+          "id": "persist",
+          "title": "Deduplicate and persist to Firestore",
+          "intent": "Write new intelligence items to Firestore, update existing items, refresh case summary",
+          "exitCriteria": ["All new items written, duplicates skipped, case summary updated"],
+          "rules": [
+            {
+              "id": "tt.persist.dedup",
+              "summary": "Query Firestore subcollection for existing URLs before inserting. Skip exact URL matches and update lastSeen on existing documents.",
+              "severity": "required"
+            },
+            {
+              "id": "tt.persist.summary",
+              "summary": "Update the parent case document's latestFindings array (most recent 5 items), totalItems count, and lastUpdated timestamp after each cycle.",
+              "severity": "required"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase.report",
+      "label": "Intelligence Report Generation",
+      "description": "Daily synthesis of collected intelligence into a human-readable summary update.",
+      "trigger": "Daily cron trigger (every 24h) or manual invocation",
+      "steps": [
+        {
+          "id": "synthesize",
+          "title": "Generate daily intelligence digest",
+          "intent": "Synthesize the last 24h of collected intel items into a concise, sourced summary for the case card",
+          "rules": [
+            {
+              "id": "tt.report.daily",
+              "summary": "Produce a daily summary with: headline, 3-5 key findings with source URLs, monitoring coverage note, and next-cycle query plan.",
+              "severity": "required"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "codeAssistance": false,
+    "fileOperations": false,
+    "searchAndNavigation": true,
+    "buildAndTest": false,
+    "cloudDeployment": false,
+    "networkDefense": false
+  },
+  "metadata": {
+    "target": "NSA CNO Directorate",
+    "collectionMethod": "OSINT only",
+    "schedule": "Every 6 hours",
+    "storage": "Firestore cases/tailored-tornado",
+    "display": "https://trenchwork.org/cases"
+  }
+}

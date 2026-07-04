@@ -1,0 +1,168 @@
+# =============================================================================
+# Typhoon Falco Rules — OT Protocol Anomaly Detection
+# Vigil Typhoon Framework v1.0.0 — 2026-06-15
+# Author: Bo Shang — Trenchwork
+#
+# Covers: Modbus, BACnet, DNP3, CIP/ENIP, CAN bus, BGP detection at kernel level
+# ATT&CK: T0855 (Unauthorized Command), T0814 (DoS), T0884 (Modify Params)
+# =============================================================================
+
+# ---- Modbus centrifuge kill chain indicators ------------------------------
+
+- rule: Typhoon Modbus Write to Safety Coil
+  desc: Detect Modbus FC 0x05 Write Single Coil to estop / interlock / safety-critical address
+  condition: >
+    fd.sport=502 or fd.sport=5020 and
+    evt.buffer contains "05 00" and
+    (evt.buffer contains "01 00 00 00" or evt.buffer contains "02 00 00 00")
+  output: "Modbus safety write detected — estop/interlock override (proc=%proc.name cmdline=%proc.cmdline connection=%fd.name)"
+  priority: CRITICAL
+  tags: [modbus, T0855, typhoon, ot]
+
+- rule: Typhoon Modbus Overspeed Register Write
+  desc: Detect Modbus FC 0x10 (Write Multiple Registers) with overspeed value 0x1F40 (8000 RPM)
+  condition: >
+    fd.sport=502 and
+    evt.buffer contains "10 00" and
+    evt.buffer contains "1F 40"
+  output: "Modbus overspeed register write detected (8000 RPM) — kinetic strike (proc=%proc.name connection=%fd.name)"
+  priority: CRITICAL
+  tags: [modbus, T0855, typhoon, kinetic]
+
+- rule: Typhoon Modbus Multiple Safety Writes Burst
+  desc: Detect > 3 Modbus write commands to safety register range in 5 seconds
+  condition: >
+    fd.sport=502 and
+    evt.type=write and
+    evt.buffer contains "10 00"
+  output: "Modbus safety register write burst — potential attack (proc=%proc.name)"
+  priority: WARNING
+  tags: [modbus, T0855, typhoon, burst]
+
+# ---- BACnet thermal kill indicators --------------------------------------
+
+- rule: Typhoon BACnet WriteProperty to Safety Analog Output
+  desc: Detect BACnet WriteProperty to Analog Output with high temperature value
+  condition: >
+    fd.sport=47808 and
+    evt.buffer contains "0F" and
+    (evt.buffer contains "05 00 00 01 00 55" or evt.buffer contains "05 00 00 02 00 55") and
+    (evt.buffer contains "4E 40" or evt.buffer contains "48 40")
+  output: "BACnet WriteProperty to safety AO with hazardous temp — thermal override (proc=%proc.name connection=%fd.name)"
+  priority: CRITICAL
+  tags: [bacnet, T0884, typhoon, thermal]
+
+- rule: Typhoon BACnet Alarm Suppression Attempt
+  desc: Detect BACnet WriteProperty to Binary Value alarm object (0x00C4)
+  condition: >
+    fd.sport=47808 and
+    evt.buffer contains "0F" and
+    evt.buffer contains "04 00 00 03 00 C4"
+  output: "BACnet alarm suppression attempt — safety override (proc=%proc.name)"
+  priority: CRITICAL
+  tags: [bacnet, T0884, T0889, typhoon, alarm]
+
+# ---- DNP3 pipeline burst indicators --------------------------------------
+
+- rule: Typhoon DNP3 Direct Operate on Safety Point
+  desc: Detect DNP3 Direct Operate (FC 0x0D) on Analog Output Group 41
+  condition: >
+    fd.sport=20000 and
+    evt.buffer contains "05 64" and
+    evt.buffer contains "0D" and
+    evt.buffer contains "29"
+  output: "DNP3 Direct Operate on safety point — pipeline pressure override (proc=%proc.name)"
+  priority: CRITICAL
+  tags: [dnp3, T0855, typhoon, pipeline]
+
+- rule: Typhoon DNP3 Safety Valve Force Close
+  desc: Detect DNP3 Direct Operate to close safety valve (write 0x0000)
+  condition: >
+    fd.sport=20000 and
+    evt.buffer contains "05 64" and
+    evt.buffer contains "29 04 01 01 00 00"
+  output: "DNP3 safety valve force closed — pipeline burst risk (proc=%proc.name)"
+  priority: CRITICAL
+  tags: [dnp3, T0855, typhoon, burst]
+
+# ---- CIP / Rockwell indicators -------------------------------------------
+
+- rule: Typhoon CIP Unauthenticated Forward Open
+  desc: Detect CIP Forward Open on ENIP port 44818 without prior authentication
+  condition: >
+    fd.sport=44818 and
+    evt.buffer contains "54 00"
+  output: "CIP Forward Open without authentication — potential tag manipulation (proc=%proc.name connection=%fd.name)"
+  priority: CRITICAL
+  tags: [cip, T0859, typhoon, rockwell]
+
+- rule: Typhoon CIP Firmware Download
+  desc: Detect CIP Firmware Download (service 0x50, class 0x0A) on port 44818
+  condition: >
+    fd.sport=44818 and
+    evt.buffer contains "50 00 0A 00"
+  output: "CIP firmware download detected — controller compromise (proc=%proc.name connection=%fd.name)"
+  priority: CRITICAL
+  tags: [cip, T0855, typhoon, firmware]
+
+- rule: Typhoon CIP CPU Mode Change
+  desc: Detect CIP CPU mode change (service 0x4F) — Run/Program/Remote transition
+  condition: >
+    fd.sport=44818 and
+    evt.buffer contains "4F 00"
+  output: "CIP CPU mode change detected — controller state transition (proc=%proc.name)"
+  priority: WARNING
+  tags: [cip, T0889, typhoon, cpu-mode]
+
+# ---- CAN bus indicators ---------------------------------------------------
+
+- rule: Typhoon CAN Bus High-Priority Frame Flood
+  desc: Detect repeated CAN arbitration ID 0x000 (highest priority) — bus DoS
+  condition: >
+    fd.sport=47808 and
+    evt.buffer contains "00 00 00 00 00 00 00 00"
+  output: "CAN bus high-priority frame flood — bus DoS (proc=%proc.name)"
+  priority: CRITICAL
+  tags: [canbus, T0814, typhoon, dos]
+
+- rule: Typhoon CANopen NMT Unauthorized Reset
+  desc: Detect CANopen NMT reset command (COB-ID 0x000, cmd 0x81)
+  condition: >
+    fd.sport=47808 and
+    evt.buffer contains "00 00 81"
+  output: "CANopen NMT unauthorized node reset (proc=%proc.name)"
+  priority: CRITICAL
+  tags: [canbus, T0855, typhoon, canopen]
+
+# ---- BGP hijack indicators ------------------------------------------------
+
+- rule: Typhoon BGP Unexpected Prefix Announcement
+  desc: Detect BGP UPDATE (type 2) from unexpected peer AS
+  condition: >
+    fd.sport=179 and
+    evt.buffer contains "02" and
+    evt.buffer contains "40 01"
+  output: "BGP UPDATE from external AS — potential prefix hijack (proc=%proc.name connection=%fd.name)"
+  priority: CRITICAL
+  tags: [bgp, T1498, typhoon, hijack]
+
+# ---- OT protocol tool detection -------------------------------------------
+
+- rule: Typhoon OT Protocol Tools in Container
+  desc: Detect OT exploitation tools spawned in containers (candump, cansend, modbus, cip)
+  condition: >
+    container and
+    proc.name in (candump, cansend, canplayer, modbus_client, cipster, pycomm3)
+  output: "OT exploitation tool running in container (proc=%proc.name container=%container.name)"
+  priority: WARNING
+  tags: [ot, typhoon, toolkit, container]
+
+- rule: Typhoon ChimeraForge Hardened Binary
+  desc: Detect hardened payload binary with ChimeraForge fingerprints (CF- prefix, NOP sled)
+  condition: >
+    proc.name contains "CF-" or
+    proc.cmdline contains "self_cleanup" or
+    proc.cmdline contains "log_tamper"
+  output: "ChimeraForge hardened payload detected (proc=%proc.name cmdline=%proc.cmdline)"
+  priority: CRITICAL
+  tags: [malware, T1027, typhoon, chimeraforge]

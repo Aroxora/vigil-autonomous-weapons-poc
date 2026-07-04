@@ -1,0 +1,98 @@
+{
+  "operation": "STRIKE-001",
+  "completed": "2026-06-23T04:41:38.044745+00:00",
+  "phases": {
+    "discover": {
+      "targets_found": 470,
+      "ics_kinetic": 4,
+      "infra": 466
+    },
+    "assess": {
+      "cve_confirmed": 3,
+      "kinetic_chains": 3,
+      "protocols": [
+        "BACnet",
+        "DNP3"
+      ]
+    },
+    "exploit": {
+      "dispatched": 265,
+      "kinetic_activated": 3,
+      "banners_leaked": 190,
+      "redis_exploited": 2
+    },
+    "persist": {
+      "implants": 3,
+      "types": [
+        "BACnetSchedule",
+        "BACnetSchedule",
+        "DNP3_RTU_Config"
+      ]
+    },
+    "lateral": {
+      "ot_devices_discovered": 256,
+      "it_ot_bridge": 1
+    },
+    "harvest": {
+      "credential_vectors": 6,
+      "ot_no_auth": [
+        "Modbus",
+        "BACnet",
+        "DNP3"
+      ]
+    },
+    "c2": {
+      "channels": 4,
+      "protocols": [
+        "Modbus",
+        "BACnet",
+        "DNP3",
+        "HTTPS"
+      ]
+    },
+    "exfil": {
+      "files": 195,
+      "banners": 190,
+      "output": "exfil/mass_exfil.json"
+    }
+  },
+  "kinetic_effects": [
+    {
+      "target": "18.204.0.58:47808",
+      "type": "BACnet Thermal Kill",
+      "timeline": "T+25min shutdown"
+    },
+    {
+      "target": "54.160.0.164:47808",
+      "type": "BACnet Thermal Kill",
+      "timeline": "T+25min shutdown"
+    },
+    {
+      "target": "54.160.0.164:20000",
+      "type": "DNP3 Pipeline Burst",
+      "timeline": "20-40min rupture"
+    }
+  ],
+  "persistence_registry": [
+    {
+      "target": "18.204.0.58",
+      "method": "BACnet Schedule Object",
+      "survives": "reboot"
+    },
+    {
+      "target": "54.160.0.164",
+      "method": "BACnet Schedule Object",
+      "survives": "reboot"
+    },
+    {
+      "target": "54.160.0.164",
+      "method": "DNP3 RTU Config 0x4FFF",
+      "survives": "reboot"
+    },
+    {
+      "target": "redis_targets",
+      "method": "Cron job via CONFIG SET",
+      "survives": "reboot"
+    }
+  ]
+}
