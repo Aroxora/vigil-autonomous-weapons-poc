@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "ghidra": {
+      "command": "node",
+      "args": ["scripts/ghidra-mcp-server.mjs"],
+      "env": {
+        "GHIDRA_INSTALL_DIR": "/opt/ghidra"
+      },
+      "profiles": ["vigil-code"]
+    },
+    "kali-tools": {
+      "command": "node",
+      "args": ["scripts/kali-tools-mcp.mjs"],
+      "profiles": ["vigil-code"]
+    },
+    "network-defense": {
+      "command": "node",
+      "args": ["scripts/network-defense-mcp.mjs"],
+      "profiles": ["vigil-code"]
+    },
+    "threat-feed": {
+      "command": "node",
+      "args": ["scripts/threat-feed-mcp.mjs"],
+      "profiles": ["vigil-code"]
+    },
+    "endpoint-defense": {
+      "command": "node",
+      "args": ["scripts/endpoint-defense-mcp.mjs"],
+      "profiles": ["vigil-code"]
+    },
+    "cloud-security": {
+      "command": "node",
+      "args": ["scripts/cloud-security-mcp.mjs"],
+      "profiles": ["vigil-code"]
+    },
+    "api-security": {
+      "command": "node",
+      "args": ["scripts/api-security-mcp.mjs"],
+      "profiles": ["vigil-code"]
+    }
+  }
+}

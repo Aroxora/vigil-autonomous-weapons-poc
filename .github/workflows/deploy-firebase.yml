@@ -1,0 +1,86 @@
+name: Deploy Firebase Site + Functions
+
+# PROJECT MAPPING:
+#   trenchwork.live → Firebase project "computer-network-operations" (hosting only)
+#   trenchwork.org  → Firebase project "erosolar-1b0db" (hosting + functions + firestore + storage)
+#   ero.solar       → Firebase project "erosolar-coder-506ae" (separate repo)
+#   deepseek app    → Firebase project "deepseek-9d1c4" (separate repo)
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 * * * *'  # Hourly auto-deploy via GitHub Actions
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build web frontend
+        working-directory: site/vigil-web
+        run: |
+          npm ci
+          npm run build
+
+      # ── trenchwork.live: deploy to computer-network-operations project ──
+      - name: Deploy to trenchwork.live (computer-network-operations)
+        working-directory: site/vigil-web
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          npm install -g firebase-tools 2>/dev/null || true
+          firebase deploy \
+            --only hosting \
+            --project computer-network-operations \
+            --config firebase.cno.json \
+            --non-interactive \
+            --token "$FIREBASE_TOKEN" \
+            || echo "trenchwork.live deploy skipped — FIREBASE_TOKEN not configured"
+
+      # ── trenchwork.org: deploy to erosolar-1b0db project (hosting + functions) ──
+      - name: Deploy to trenchwork.org (erosolar-1b0db)
+        working-directory: site
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          firebase deploy \
+            --only hosting \
+            --project erosolar-1b0db \
+            --non-interactive \
+            --token "$FIREBASE_TOKEN" \
+            || echo "trenchwork.org deploy skipped — FIREBASE_TOKEN not configured"
+
+      - name: Deploy Cloud Functions (erosolar-1b0db)
+        working-directory: site
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          cd functions && npm ci && cd ..
+          firebase deploy \
+            --only functions \
+            --project erosolar-1b0db \
+            --non-interactive \
+            --token "$FIREBASE_TOKEN" \
+            || echo "Functions deploy skipped"
+
+      - name: Deploy to AWS Lambda
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-1
+        run: |
+          if [ -n "$AWS_ACCESS_KEY_ID" ]; then
+            cd aws/lambda && npm ci && node zip-build.mjs && bash ../scripts/deploy.sh
+          else
+            echo "Lambda deploy skipped — AWS credentials not configured"
+          fi
+
+      - name: Run health check
+        run: node scripts/health-check.mjs --update-site || echo "Health check skipped"

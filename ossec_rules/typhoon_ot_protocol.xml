@@ -1,0 +1,189 @@
+<!--
+  Typhoon OSSEC Rules — OT Protocol Anomaly Detection
+  Vigil Typhoon Framework v1.0.0 — 2026-06-15
+  Author: Bo Shang — Trenchwork
+
+  Covers: Modbus (502), BACnet (47808), DNP3 (20000), CIP/ENIP (44818),
+          CAN bus (47808), BGP (179)
+  ATT&CK: T0855, T0814, T0884, T0859, T1498
+-->
+
+<group name="typhoon,ot,ics,">
+
+  <!-- ============================================================
+       Modbus centrifuge kill indicators
+       ============================================================ -->
+
+  <rule id="100500" level="15">
+    <decoded_as>modbus</decoded_as>
+    <description>Typhoon: Modbus safety coil write (estop/interlock override)</description>
+    <match>func_code=0x05|target=coil|addr=0x000</match>
+    <options>alert_by_email</options>
+    <group>typhoon_modbus,typhoon_critical,</group>
+  </rule>
+
+  <rule id="100501" level="15">
+    <decoded_as>modbus</decoded_as>
+    <description>Typhoon: Modbus overspeed register write (8000 RPM — centrifuge kill)</description>
+    <match>func_code=0x10|value=0x1F40|register_range</match>
+    <options>alert_by_email</options>
+    <group>typhoon_modbus,typhoon_critical,typhoon_kinetic,</group>
+  </rule>
+
+  <rule id="100502" level="12">
+    <decoded_as>modbus</decoded_as>
+    <description>Typhoon: Modbus multiple writes to safety register range in 5s</description>
+    <match>func_code=0x10</match>
+    <if_matched_sid>100501</if_matched_sid>
+    <frequency>5</frequency>
+    <timeframe>60</timeframe>
+    <same_source_ip />
+    <group>typhoon_modbus,typhoon_warning,</group>
+  </rule>
+
+  <!-- ============================================================
+       BACnet thermal kill indicators
+       ============================================================ -->
+
+  <rule id="100510" level="15">
+    <decoded_as>bacnet</decoded_as>
+    <description>Typhoon: BACnet WriteProperty to safety Analog Output (thermal override)</description>
+    <match>service=WriteProperty|object_type=AnalogOutput|present_value>50.0</match>
+    <options>alert_by_email</options>
+    <group>typhoon_bacnet,typhoon_critical,typhoon_kinetic,</group>
+  </rule>
+
+  <rule id="100511" level="15">
+    <decoded_as>bacnet</decoded_as>
+    <description>Typhoon: BACnet alarm suppression attempt (Binary Value object 0x00C4)</description>
+    <match>service=WriteProperty|object_type=BinaryValue|object_instance=0x00C4</match>
+    <options>alert_by_email</options>
+    <group>typhoon_bacnet,typhoon_critical,</group>
+  </rule>
+
+  <rule id="100512" level="12">
+    <decoded_as>bacnet</decoded_as>
+    <description>Typhoon: BACnet chiller/fan shutdown (Binary Output OFF)</description>
+    <match>service=WriteProperty|object_type=BinaryOutput|present_value=INACTIVE</match>
+    <group>typhoon_bacnet,typhoon_warning,</group>
+  </rule>
+
+  <!-- ============================================================
+       DNP3 pipeline burst indicators
+       ============================================================ -->
+
+  <rule id="100520" level="15">
+    <decoded_as>dnp3</decoded_as>
+    <description>Typhoon: DNP3 Direct Operate on safety point (Group 41, pipeline pressure)</description>
+    <match>func_code=DirectOperate|object_group=41</match>
+    <options>alert_by_email</options>
+    <group>typhoon_dnp3,typhoon_critical,typhoon_kinetic,</group>
+  </rule>
+
+  <rule id="100521" level="15">
+    <decoded_as>dnp3</decoded_as>
+    <description>Typhoon: DNP3 safety valve force close (Group 41 Var 4, value 0)</description>
+    <match>func_code=DirectOperate|object_group=41|variation=4|value=0</match>
+    <options>alert_by_email</options>
+    <group>typhoon_dnp3,typhoon_critical,typhoon_burst,</group>
+  </rule>
+
+  <rule id="100522" level="12">
+    <decoded_as>dnp3</decoded_as>
+    <description>Typhoon: DNP3 alarm threshold modification (Group 41 Var 5)</description>
+    <match>func_code=DirectOperate|object_group=41|variation=5</match>
+    <group>typhoon_dnp3,typhoon_warning,</group>
+  </rule>
+
+  <!-- ============================================================
+       CIP / Rockwell indicators
+       ============================================================ -->
+
+  <rule id="100530" level="15">
+    <decoded_as>cip</decoded_as>
+    <description>Typhoon: CIP Forward Open without authentication (CVE-2021-22681)</description>
+    <match>service=ForwardOpen|auth=unauth</match>
+    <options>alert_by_email</options>
+    <group>typhoon_cip,typhoon_critical,typhoon_cve,</group>
+  </rule>
+
+  <rule id="100531" level="15">
+    <decoded_as>cip</decoded_as>
+    <description>Typhoon: CIP firmware download (service 0x50)</description>
+    <match>service=FirmwareDownload|class_id=0x0A</match>
+    <options>alert_by_email</options>
+    <group>typhoon_cip,typhoon_critical,typhoon_firmware,</group>
+  </rule>
+
+  <rule id="100532" level="12">
+    <decoded_as>cip</decoded_as>
+    <description>Typhoon: CIP CPU mode change without authorization</description>
+    <match>service=CPUModeChange</match>
+    <group>typhoon_cip,typhoon_warning,</group>
+  </rule>
+
+  <!-- ============================================================
+       CAN bus indicators
+       ============================================================ -->
+
+  <rule id="100540" level="15">
+    <decoded_as>canbus</decoded_as>
+    <description>Typhoon: CAN bus high-priority frame flood (ID 0x000 — DoS)</description>
+    <match>arb_id=0x000</match>
+    <frequency>200</frequency>
+    <timeframe>5</timeframe>
+    <options>alert_by_email</options>
+    <group>typhoon_canbus,typhoon_critical,typhoon_dos,</group>
+  </rule>
+
+  <rule id="100541" level="15">
+    <decoded_as>canbus</decoded_as>
+    <description>Typhoon: CANopen NMT unauthorized node reset (cmd 0x81)</description>
+    <match>cob_id=0x000|cmd=0x81</match>
+    <options>alert_by_email</options>
+    <group>typhoon_canbus,typhoon_critical,typhoon_canopen,</group>
+  </rule>
+
+  <rule id="100542" level="14">
+    <decoded_as>canbus</decoded_as>
+    <description>Typhoon: J1939 DM1 diagnostic spoof (fake fault codes)</description>
+    <match>pgn=65226|fmi=0</match>
+    <group>typhoon_canbus,typhoon_high,typhoon_j1939,</group>
+  </rule>
+
+  <rule id="100543" level="14">
+    <decoded_as>canbus</decoded_as>
+    <description>Typhoon: J1939 address claiming conflict (cannot claim)</description>
+    <match>pgn=60928|reason=cannot_claim</match>
+    <group>typhoon_canbus,typhoon_high,typhoon_j1939,</group>
+  </rule>
+
+  <!-- ============================================================
+       BGP hijack indicators
+       ============================================================ -->
+
+  <rule id="100550" level="15">
+    <decoded_as>bgp</decoded_as>
+    <description>Typhoon: BGP UPDATE from unexpected peer (AS_PATH anomaly)</description>
+    <match>type=UPDATE|as_path</match>
+    <options>alert_by_email</options>
+    <group>typhoon_bgp,typhoon_critical,typhoon_hijack,</group>
+  </rule>
+
+  <rule id="100551" level="14">
+    <decoded_as>bgp</decoded_as>
+    <description>Typhoon: BGP TCP RST on session (potential hijack attempt)</description>
+    <match>type=RST|port=179</match>
+    <frequency>3</frequency>
+    <timeframe>60</timeframe>
+    <group>typhoon_bgp,typhoon_high,</group>
+  </rule>
+
+  <rule id="100552" level="12">
+    <decoded_as>bgp</decoded_as>
+    <description>Typhoon: BGP max-prefix threshold exceeded</description>
+    <match>max_prefix_exceeded</match>
+    <group>typhoon_bgp,typhoon_warning,typhoon_dos,</group>
+  </rule>
+
+</group>

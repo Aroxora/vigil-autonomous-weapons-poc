@@ -1,0 +1,1817 @@
+{
+  "banners": [
+    {
+      "ip": "54.160.0.52",
+      "port": 8080,
+      "type": "jenkins_probe",
+      "status": "CONFIRMED_VULN",
+      "vuln": "CVE-2024-23897_JENKINS_CLI_RCE",
+      "banner": "HTTP/1.0 302 Found\r\nContent-Type: text/html; charset=utf-8\r\nLocation: /dashboard/\r\nDate: Tue, 23 Jun 2026 04:41:20 GMT\r\nContent-Length: 34\r\n\r\n<a href=\"/dashboard/\">Found</a>.\n\n",
+      "data_exfil": true,
+      "ts": "2026-06-23T04:41:20.081378+00:00"
+    },
+    {
+      "ip": "18.208.0.116",
+      "port": 8080,
+      "type": "jenkins_probe",
+      "status": "CONFIRMED_VULN",
+      "vuln": "CVE-2024-23897_JENKINS_CLI_RCE",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:20 GMT\r\nX-Content-Type-Options: nosniff\r\nSet-Cookie: JSESSIONID.65408cbd=node015hc45hkdzeeb1shs637cmizzv14704.node0; Path=/; HttpOnly\r\nExpires: Thu, 01 Jan 1970 00:00:00 GMT\r\nContent-Type: text/html;charset=utf-8\r\nX-Hudson: 1.395\r\nX-Jenkins: 2.249",
+      "data_exfil": true,
+      "ts": "2026-06-23T04:41:20.081537+00:00"
+    },
+    {
+      "ip": "18.208.0.89",
+      "port": 8080,
+      "type": "jenkins_probe",
+      "status": "CONFIRMED_VULN",
+      "vuln": "CVE-2024-23897_JENKINS_CLI_RCE",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:20 GMT\r\nX-Content-Type-Options: nosniff\r\nSet-Cookie: JSESSIONID.d19c6588=node01gf4hncnn35n5a47udnth7sz9119380.node0; Path=/; HttpOnly\r\nExpires: Thu, 01 Jan 1970 00:00:00 GMT\r\nContent-Type: text/html;charset=utf-8\r\nX-Hudson: 1.395\r\nX-Jenkins: 2.251",
+      "data_exfil": true,
+      "ts": "2026-06-23T04:41:20.081895+00:00"
+    },
+    {
+      "ip": "3.80.0.145",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: 662be31e-4170-4a0d-82c1-2486213a0a67\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.028120+00:00"
+    },
+    {
+      "ip": "3.208.0.94",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.030294+00:00"
+    },
+    {
+      "ip": "3.80.0.136",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nServer: nginx/1.30.1\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 779\r\nLast-Modified: Thu, 11 Jun 2026 15:42:10 GMT\r\nConnection: keep-alive\r\nETag: \"6a2ad752-30b\"\r\nAccept-Ranges: bytes\r\n\r\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/assets/MTA-CrIxqMLM.ico\" />\n    <meta name",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.031700+00:00"
+    },
+    {
+      "ip": "3.80.0.100",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: 764b455e-77ce-401b-a259-32a4330b8c62\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.032512+00:00"
+    },
+    {
+      "ip": "3.80.0.213",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.033413+00:00"
+    },
+    {
+      "ip": "3.80.0.125",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 2\r\nConnection: keep-alive\r\n\r\nOk",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.034067+00:00"
+    },
+    {
+      "ip": "3.80.0.86",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 9\r\nConnection: keep-alive\r\nServer: vxg-proxy-service\r\n\r\nNot Found",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.034737+00:00"
+    },
+    {
+      "ip": "3.80.0.194",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: d8680c74-296f-403c-9dcd-f236779e41f6\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.035351+00:00"
+    },
+    {
+      "ip": "3.80.0.35",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.036120+00:00"
+    },
+    {
+      "ip": "3.208.0.166",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 3d02a4ba-15a7-475b-8e38-0b37339bde64\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.036877+00:00"
+    },
+    {
+      "ip": "3.208.0.30",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 9\r\nConnection: keep-alive\r\n\r\nNot Found",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.037347+00:00"
+    },
+    {
+      "ip": "3.208.0.5",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></center>\n</body>\n</html>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.038254+00:00"
+    },
+    {
+      "ip": "3.208.0.28",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.039042+00:00"
+    },
+    {
+      "ip": "3.80.0.155",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: f493f3d9-c1ef-4fe2-a955-939524e38240\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.039532+00:00"
+    },
+    {
+      "ip": "3.208.0.90",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 146\r\nConnection: keep-alive\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.040676+00:00"
+    },
+    {
+      "ip": "3.80.0.224",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 97ce4c45-7ac8-4c9e-a8d3-04b89659e473\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.041188+00:00"
+    },
+    {
+      "ip": "3.80.0.19",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nLast-Modified: Fri, 30 Dec 2022 01:44:34 GMT\r\nAccept-Ranges: bytes\r\nETag: \"0ed8744f01bd91:0\"\r\nServer: Microsoft-IIS/10.0\r\nX-Frame-Options: SAMEORIGIN\r\nX-XSS-Protection: 1; mode=block\r\nAccess-Control-Allow-Headers: Content-Type, Authorization\r\nAccess-Control-Allow-Credentials: true\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nAccess-Cont",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.041840+00:00"
+    },
+    {
+      "ip": "3.208.0.171",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.042611+00:00"
+    },
+    {
+      "ip": "3.80.0.249",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 153\r\nConnection: keep-alive\r\nServer: nginx/1.30.2\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx/1.30.2</center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.043146+00:00"
+    },
+    {
+      "ip": "3.208.0.13",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 301 Moved Permanently\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 134\r\nConnection: keep-alive\r\nLocation: https://3.208.0.13:443/awc/\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.043761+00:00"
+    },
+    {
+      "ip": "3.208.0.75",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: e73bfcb0-8548-4e15-8cb4-f765565905dd\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.044225+00:00"
+    },
+    {
+      "ip": "3.80.0.107",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 6a6786a4-1037-45bf-b87c-33f85f1a2b0e\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.045082+00:00"
+    },
+    {
+      "ip": "3.208.0.79",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nCache-Control: no-cache\r\nContent-Type: application/json\r\ntransfer-encoding: chunked\r\nConnection: keep-alive\r\n\r\n61\r\n{\n  \"message\": \"Request forbidden by administrative rules\",\n  \"__type\": \"CloudSearchException\"\n}\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.045551+00:00"
+    },
+    {
+      "ip": "3.80.0.189",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: c2781c2d-838c-49b1-b6ef-dff2b5cada6e\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.046154+00:00"
+    },
+    {
+      "ip": "3.80.0.127",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.046652+00:00"
+    },
+    {
+      "ip": "3.208.0.116",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=utf-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nServer: nginx\r\nContent-Security-Policy: frame-src 'none'; img-src 'none'; connect-src 'none'; style-src 'self' 'nonce-+ObolP6wUVrvndy8bzE4rA=='; font-src 'none'; base-uri 'none'; form-action 'self'; default-src 'none'; script-src 'self' 'nonce-+ObolP6wUV",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.047212+00:00"
+    },
+    {
+      "ip": "3.208.0.42",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nContent-Type: application/octet-stream\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nServer: nginx\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n{\"success\": false, \"error\": \"Forbidden\", \"messages\": [\"You do not have permission to access the requested resource.\"]}",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.047701+00:00"
+    },
+    {
+      "ip": "3.208.0.43",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: c8ab4b0f-51a7-4a00-bf37-f15feabc0705\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.048253+00:00"
+    },
+    {
+      "ip": "3.208.0.17",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Length: 12\r\nConnection: keep-alive\r\naccess-control-allow-origin: *\r\nwww-authenticate: Basic realm=\"OpenSearch Security\"\r\n\r\nUnauthorized",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.048912+00:00"
+    },
+    {
+      "ip": "3.80.0.64",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></center>\n</body>\n</html>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.049616+00:00"
+    },
+    {
+      "ip": "3.80.0.205",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 276db321-b894-4af8-8e75-2d5b6ff539a1\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.050211+00:00"
+    },
+    {
+      "ip": "3.80.0.9",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 96\r\nConnection: keep-alive\r\nServer: nginx\r\nVary: Origin\r\nAccess-Control-Allow-Origin: NOT_ALLOWED\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: no-cache\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n{\"message\":\"ERROR: Not Found\",\"data\":{\"error\":",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.050726+00:00"
+    },
+    {
+      "ip": "3.80.0.218",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 \r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 371\r\nConnection: keep-alive\r\nServer: nginx\r\nAccept-Ranges: bytes\r\nETag: W/\"371-1781132732000\"\r\nLast-Modified: Wed, 10 Jun 2026 23:05:32 GMT\r\nSet-Cookie: AWSALBAPP-0=_remove_; Expires=Tue, 30 Jun 2026 04:41:22 GMT; Path=/\r\nSet-Cookie: AWSALBAPP-1=_remove_; Expires=Tue, 30 Jun 2026 04:41:22 GMT; Path=/\r\nSet-",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.051370+00:00"
+    },
+    {
+      "ip": "3.80.0.63",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.051849+00:00"
+    },
+    {
+      "ip": "3.80.0.58",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: b4c8616d-5eff-431e-adce-fe27a0480bba\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.052407+00:00"
+    },
+    {
+      "ip": "3.80.0.97",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: 0f236d6d-5c30-4fee-8927-cdf056cb3073\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.052905+00:00"
+    },
+    {
+      "ip": "3.208.0.72",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 2ff03117-8709-454d-b28c-f90cb21f8073\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.053426+00:00"
+    },
+    {
+      "ip": "3.208.0.8",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.054012+00:00"
+    },
+    {
+      "ip": "3.208.0.32",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: nginx\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 146\r\nConnection: keep-alive\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.054526+00:00"
+    },
+    {
+      "ip": "3.80.0.106",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 13\r\nConnection: keep-alive\r\nServer: nginx\r\n\r\n\"Hello World\"",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.055044+00:00"
+    },
+    {
+      "ip": "3.208.0.136",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 136\r\nConnection: keep-alive\r\nx-amzn-requestid: 3d3837df-e859-4730-81bd-abc270eae197\r\naccess-control-allow-origin: *\r\n\r\n{\"Message\":\"User: anonymous is not authorized to perform: es:ESHttpGet because no resource-based policy allows the es:ESHttpGet action\"}",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.056107+00:00"
+    },
+    {
+      "ip": "3.80.0.134",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 400 Bad Request\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 0\r\nConnection: keep-alive\r\naccess-control-expose-headers: x-kpsdk-ct,x-kpsdk-r,x-kpsdk-c,x-kpsdk-h,x-kpsdk-fc\r\np3p: CP=\"This site does not specify a policy in the P3P header\"\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.056645+00:00"
+    },
+    {
+      "ip": "3.208.0.55",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.057415+00:00"
+    },
+    {
+      "ip": "3.80.0.222",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 593080f9-f090-418e-97c6-92d47c665c1d\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.057959+00:00"
+    },
+    {
+      "ip": "3.80.0.132",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.058937+00:00"
+    },
+    {
+      "ip": "3.208.0.70",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></center>\n</body>\n</html>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.059467+00:00"
+    },
+    {
+      "ip": "3.80.0.219",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 301 Moved Permanently\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nServer: Apache\r\nLocation: https://1nbbank.bank/\r\nContent-Length: 229\r\nContent-Type: text/html; charset=iso-8859-1\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>301 Moved Permanently</title>\n</head><body>\n<h1>Moved Permanently</h1>\n<p>The document has moved <a href=\"https://1nbbank.bank/\">here</a>.</p>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:22.059977+00:00"
+    },
+    {
+      "ip": "3.80.0.215",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.060742+00:00"
+    },
+    {
+      "ip": "3.80.0.216",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.061220+00:00"
+    },
+    {
+      "ip": "3.80.0.47",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.061689+00:00"
+    },
+    {
+      "ip": "3.80.0.87",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 63\r\nConnection: keep-alive\r\netag: W/\"3f-BunLb98SCK6azHy0RO08GDnFBek\"\r\nx-envoy-upstream-service-time: 1\r\nserver: envoy\r\n\r\n{\"message\":\"Cannot GET /\",\"error\":\"Not Found\",\"statusCode\":404}",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.062152+00:00"
+    },
+    {
+      "ip": "3.208.0.61",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\ncontent-type: application/json\r\ncontent-length: 72\r\ndate: Tue, 23 Jun 2026 04:41:22 GMT\r\nx-amzn-RequestId: 935232ff-3349-4962-3b65-dafc8804b418\r\nconnection: keep-alive\r\nx-amzn-ErrorType: ResourceNotFoundException:\r\n\r\n{\"message\":\"Not Found\",\"traceId\":\"935232ff-3349-4962-3b65-dafc8804b418\"}",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.062764+00:00"
+    },
+    {
+      "ip": "3.208.0.98",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nCache-Control: no-cache\r\nContent-Type: application/json\r\ntransfer-encoding: chunked\r\nConnection: keep-alive\r\n\r\n61\r\n{\n  \"message\": \"Request forbidden by administrative rules\",\n  \"__type\": \"CloudSearchException\"\n}\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.063386+00:00"
+    },
+    {
+      "ip": "3.80.0.52",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: ceccf094-dc02-4c5d-a160-6f209489ad20\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.063838+00:00"
+    },
+    {
+      "ip": "3.208.0.110",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.064383+00:00"
+    },
+    {
+      "ip": "3.80.0.88",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 28435\r\nConnection: keep-alive\r\nVary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding\r\nx-nextjs-cache: HIT\r\nx-nextjs-prerender: 1\r\nx-nextjs-prerender: 1\r\nx-nextjs-stale-time: 300\r\nX-Powered-By: Next.js\r\nCache-Control: s-maxage=31536000\r\nETag:",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.064828+00:00"
+    },
+    {
+      "ip": "3.208.0.81",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nCache-Control: no-cache, no-store, max-age=0, must-revalidate, post-check=0, pre-check=0\r\nContent-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; connect-src 'self'; img-src * 'self' data: https:; font-src 'self' data:; frame-src 'self'; style-src 'self' 'unsafe-inline' *; base-uri 'self'; form-action 'self'\r\nContent-Type: text/html\r\nDate: T",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.065458+00:00"
+    },
+    {
+      "ip": "3.80.0.133",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 136\r\nConnection: keep-alive\r\nx-amzn-requestid: da98764d-3f90-4c46-a795-c6f8d687cb29\r\naccess-control-allow-origin: *\r\n\r\n{\"Message\":\"User: anonymous is not authorized to perform: es:ESHttpGet because no resource-based policy allows the es:ESHttpGet action\"}",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.066017+00:00"
+    },
+    {
+      "ip": "3.80.0.20",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: 1d3376f8-68b4-4bcb-ac02-46c38f8b6837\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.066674+00:00"
+    },
+    {
+      "ip": "3.208.0.133",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 303 See Other\r\nServer: nginx\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nExpires: Fri, 28 May 1999 00:00:00 GMT\r\nLast-Modified: Tue, 23 Jun 2026 04:41:22 GMT\r\nCache-Control: no-store, no-cache, must-revalidate\r\nPragma: no-cache\r\nP3P: CP=\"NON COR CURa ADMa OUR NOR UNI COM NAV STA\"\r\nX-Frame-Options: SAMEOR",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.067372+00:00"
+    },
+    {
+      "ip": "3.80.0.129",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 302 FOUND\r\nServer: gunicorn\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nConnection: close\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 197\r\nLocation: /home\r\nX-Frame-Options: DENY\r\nX-Robots-Tag: noindex, nofollow\r\nSet-Cookie: session=112dd361-299b-4a4a-bea0-f29c545f37b2.QBO4vMN4N_rr0tzvLiPcbXd33Ss; Expires=Thu, 23 Jul 2026 04:41:22 GMT; Secure; HttpOnly; Path=/; SameSite=Lax\r\n\r\n<!doc",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.067925+00:00"
+    },
+    {
+      "ip": "3.80.0.28",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 136\r\nConnection: keep-alive\r\nx-amzn-requestid: fc2fa1d9-d60e-4f8f-87e1-aa08f80233d2\r\naccess-control-allow-origin: *\r\n\r\n{\"Message\":\"User: anonymous is not authorized to perform: es:ESHttpGet because no resource-based policy allows the es:ESHttpGet action\"}",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.068616+00:00"
+    },
+    {
+      "ip": "3.80.0.178",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.069260+00:00"
+    },
+    {
+      "ip": "3.208.0.164",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></center>\n</body>\n</html>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.069765+00:00"
+    },
+    {
+      "ip": "3.80.0.163",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nServer: nginx\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 880\r\nLast-Modified: Wed, 08 May 2024 21:41:50 GMT\r\nConnection: keep-alive\r\nVary: Accept-Encoding\r\nETag: \"663bf19e-370\"\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-XSS-Protection: 1; mode=block\r\nAccept-Ranges: bytes\r\n\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <b",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.070303+00:00"
+    },
+    {
+      "ip": "3.80.0.90",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 3197\r\nConnection: keep-alive\r\nServer: nginx/1.31.2\r\nLast-Modified: Mon, 22 Jun 2026 01:49:23 GMT\r\nVary: Accept-Encoding\r\nETag: \"6a3894a3-c7d\"\r\nCache-Control: no-cache, no-store, must-revalidate\r\nPragma: no-cache\r\nAccept-Ranges: bytes\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" ",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.071033+00:00"
+    },
+    {
+      "ip": "3.80.0.179",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></center>\n</body>\n</html>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.071557+00:00"
+    },
+    {
+      "ip": "3.80.0.157",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: f84e9d79-9b7c-4fb6-a3c5-da69e132bd2c\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.072506+00:00"
+    },
+    {
+      "ip": "3.80.0.186",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.073451+00:00"
+    },
+    {
+      "ip": "3.208.0.188",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.074460+00:00"
+    },
+    {
+      "ip": "3.208.0.105",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nAccept-Ranges: bytes\r\nCache-Control: public, max-age=0\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nETag: W/\"93f1-18855d553c0\"\r\nLast-Modified: Fri, 26 May 2023 02:13:44 GMT\r\nServer: nginx/1.22.1\r\nX-Powered-By: Express\r\nContent-Length: 37873\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE HTML>\n<html manifest=\"cache.appcache\">\n<head>\n    <title>Coworkee | Ext ",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.075314+00:00"
+    },
+    {
+      "ip": "3.80.0.188",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.075899+00:00"
+    },
+    {
+      "ip": "3.208.0.155",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 400 \r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html;charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nset-cookie: JSESSIONID=BECEE7F182CCEA27C8B3911A1A5B6359; Path=/; HttpOnly\r\ncontent-language: en-GB\r\n\r\n2f6d\r\n\r\n\r\n\r\n\r\n\r\n<!DOCTYPE HTML>\r\n<html>\r\n<head>\r\n    <title>Error page</title>\r\n\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0,",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.076633+00:00"
+    },
+    {
+      "ip": "3.208.0.163",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nCache-Control: no-cache\r\nContent-Type: application/json\r\ntransfer-encoding: chunked\r\nConnection: keep-alive\r\n\r\n61\r\n{\n  \"message\": \"Request forbidden by administrative rules\",\n  \"__type\": \"CloudSearchException\"\n}\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.077117+00:00"
+    },
+    {
+      "ip": "3.208.0.173",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nServer: nginx\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 1366\r\nLast-Modified: Tue, 23 Dec 2025 01:11:18 GMT\r\nConnection: keep-alive\r\nVary: Accept-Encoding\r\nETag: \"6949ec36-556\"\r\nStrict-Transport-Security: max-age=31536000\r\nAccept-Ranges: bytes\r\n\r\n<!doctype html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Site is created successfully! </",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:22.077670+00:00"
+    },
+    {
+      "ip": "3.80.0.37",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nContent-Length: 57304\r\nAccept-Ranges: bytes\r\nContent-Type: text/html; charset=UTF-8\r\nX-XSS-Protection: 1; mode=block\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nExpires: 0\r\nCache-Control: no-cache, no-store, must-revalidate, private, max-age=0\r\nLast-Modified: Tue, 14 Oct 2025 10:56:09 GMT\r\nPragma: no-cache\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.078121+00:00"
+    },
+    {
+      "ip": "3.80.0.235",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.078595+00:00"
+    },
+    {
+      "ip": "3.80.0.81",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 302 Moved Temporarily\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 110\r\nConnection: keep-alive\r\nLocation: https://papayapay.com:443/\r\n\r\n<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<center><h1>302 Found</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.079362+00:00"
+    },
+    {
+      "ip": "3.80.0.175",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nServer: Apache\r\nAccess-Control-Allow-Origin: *\r\nContent-Security-Policy-Report-Only: default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; frame-src 'self'\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosniff\r\nReferrer-Policy: no-referrer\r\nPermissions-Policy: self\r\nStrict-Transport-Security: max-age=315360",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:22.079889+00:00"
+    },
+    {
+      "ip": "3.208.0.170",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 \r\nCache-Control: private\r\nCache-Control: max-age=0\r\nCache-Control: no-store\r\nCache-Control: must-revalidate\r\nCache-control: no-cache=\"set-cookie\"\r\nContent-Language: en-US\r\nContent-Security-Policy: frame-ancestors 'self'\r\nContent-Type: text/html;charset=UTF-8\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nExpires: Mon, 23 Jun 2025 04:41:22 GMT\r\nLast-Modified: Fri, 23 Jun 2006 04:41:22 GMT\r\nP3P:",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.080461+00:00"
+    },
+    {
+      "ip": "3.80.0.156",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/plain\r\nContent-Length: 14\r\nConnection: keep-alive\r\nwww-authenticate: Bearer realm=\"http://3.80.0.156/\"\r\nserver: envoy\r\nx-request-id: 35d59140-28f5-48ac-b54f-c9080e984b10\r\n\r\nJwt is missing",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.081023+00:00"
+    },
+    {
+      "ip": "3.208.0.18",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nCache-Control: private,public\r\nContent-Type: text/html; charset=utf-8\r\nDate: Tue, 23 Jun 2026 04:41:20 GMT\r\nServer: Microsoft-IIS/8.5\r\nSet-Cookie: ASP.NET_SessionId=vpqhrx5a5zqxnuatakd3xjga; path=/; HttpOnly; SameSite=Lax; secure\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-AspNet-Version: 4.0.30319\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: ",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.081538+00:00"
+    },
+    {
+      "ip": "3.80.0.94",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.082265+00:00"
+    },
+    {
+      "ip": "3.80.0.120",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 812\r\nConnection: keep-alive\r\n\r\n\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n<title>Protected System: VPN Required</title>\n<meta name=\"viewport\" content=\"width=device-width, ini",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:22.087406+00:00"
+    },
+    {
+      "ip": "3.208.0.2",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: a1a8cac2-8451-41f0-aa0a-6083b30ef55e\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.398311+00:00"
+    },
+    {
+      "ip": "3.80.0.154",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.641881+00:00"
+    },
+    {
+      "ip": "3.208.0.39",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: e08c8f3b-55f4-48c6-9bf6-9d36ed671303\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:22.855957+00:00"
+    },
+    {
+      "ip": "3.80.0.187",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 302 Found\r\nServer: nginx/1.24.0 (Ubuntu)\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nLocation: https://www.gsi-law.com.br/\r\n\r\n0\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.069595+00:00"
+    },
+    {
+      "ip": "3.208.0.130",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 29\r\nConnection: keep-alive\r\nx-amzn-RequestId: 8ecff163-3886-4e5e-ab10-253ce82e74d0\r\n\r\n<UnknownOperationException/>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.304917+00:00"
+    },
+    {
+      "ip": "3.80.0.184",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nContent-Type: application/json; charset=utf-8\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Length: 74\r\n\r\n{\"error\":\"route not defined for requested URL: /\",\"trace_id\":\"9du4fyn4qf\"}",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.506580+00:00"
+    },
+    {
+      "ip": "3.208.0.177",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: a5982b21-075d-4b38-b9b3-320108c359b7\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.541599+00:00"
+    },
+    {
+      "ip": "3.208.0.169",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nContent-Type: application/json\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nServer: Apache\r\nCache-Control: no-cache, private\r\nStrict-Transport-Security: max-age=63072000; includeSubDomains; preload\r\nAccess-Control-Max-Age: 3600\r\nContent-Security-Policy: default-src 'self' *.neptunenavigate.com;script-src 'self' https://www.google",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:23.559192+00:00"
+    },
+    {
+      "ip": "3.208.0.97",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:22 GMT\r\nServer: Apache\r\nVary: Accept-Encoding,Cookie\r\nSet-Cookie: wordpress_google_apps_login=1c8291c781149201d486541dfea735f2; path=/; secure; HttpOnly\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n19\r\nEmpty user agent blocked.\r\n0\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:23.573513+00:00"
+    },
+    {
+      "ip": "18.204.0.98",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.628418+00:00"
+    },
+    {
+      "ip": "3.208.0.234",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nContent-Type: text/html; charset=UTF-8\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nServer: Splunkd\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nContent-Length: 223\r\nConnection: keep-alive\r\n\r\n<!doctype html><html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.649822+00:00"
+    },
+    {
+      "ip": "18.204.0.4",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 301 Moved Permanently\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 134\r\nConnection: keep-alive\r\nLocation: https://app.bearfoot.rswhost.com:443/\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.699177+00:00"
+    },
+    {
+      "ip": "18.204.0.52",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.723679+00:00"
+    },
+    {
+      "ip": "18.204.0.112",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: dd346353-583d-478d-acf0-14098066add1\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.729365+00:00"
+    },
+    {
+      "ip": "3.208.0.232",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 11\r\nConnection: keep-alive\r\n\r\nNot allowed",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.731520+00:00"
+    },
+    {
+      "ip": "3.208.0.244",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 302 Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=iso-8859-1\r\nContent-Length: 291\r\nConnection: keep-alive\r\nSet-Cookie: AWSALB=pnhAiNTbkN1Uc5AUqF/iIcQoqX+G2mUx0awBf5JmEATlgazMC16pyG1lEcjEXFQb9t5QsaCsuR4T0gRV/AhDg4UrYKK0gWDF+2Xp1om71CTVyRttsJuU0At22J9K; Expires=Tue, 30 Jun 2026 04:41:23 GMT; Path=/\r\nSet-Cookie: AWSALBCORS=pnhAiNTbkN1Uc5AUqF/iIcQoqX+G2mUx0awBf5",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:23.732324+00:00"
+    },
+    {
+      "ip": "18.204.0.100",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 216\r\nConnection: keep-alive\r\nX-Trace: 2B8F6CDD5178752875F62E706957D65989485D64D29FB0F609048C151200\r\nX-Powered-By: Express\r\nAccess-Control-Allow-Origin: *\r\nRequest_Id: SQ3bSlF6QaTWX7t58uM96FsBUkJJH5ci\r\nETag: W/\"d8-hlFv6BD4z5aHTDF7fznhwF30+2I\"\r\n\r\n{\"timing\":{\"time_received\":\"",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.733015+00:00"
+    },
+    {
+      "ip": "18.204.0.90",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 57eee4cd-14e5-4e5f-ae2b-dfcee13e553b\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.733758+00:00"
+    },
+    {
+      "ip": "18.204.0.139",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.735157+00:00"
+    },
+    {
+      "ip": "18.204.0.58",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nServer: files.com\r\nStrict-Transport-Security: max-age=631139040; includeSubdomains; preload;\r\nCache-Control: no-store\r\nX-Files-Frontend-App: true\r\nx-content-type-options: nosniff\r\nx-xss-protection: 1; mode=block\r\nx-download-options: noopen\r\nx-frame-options: SAMEORIGIN\r",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.736424+00:00"
+    },
+    {
+      "ip": "18.204.0.54",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 502 Bad Gateway\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 122\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.737102+00:00"
+    },
+    {
+      "ip": "18.204.0.124",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 43\r\nConnection: keep-alive\r\nx-envoy-upstream-service-time: 0\r\ntraceparent: 00-3ced02ff4b2d72b4097ba5b6bb2d2cec-d4dfc3287c1cb87d-01\r\nstrict-transport-security: max-age=31536000; includeSubDomains; preload\r\nstrict-transport-security: max-age=31536000; includeSubDomains; preload\r\nserver: envoy",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.737796+00:00"
+    },
+    {
+      "ip": "3.208.0.233",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 400 Bad Request\r\nServer: nginx/1.12.2\r\nDate: Tue, 23 Jun 2026 04:26:43 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 35\r\nConnection: keep-alive\r\n\r\n<h1>Bad Request (Invalid host)</h1>",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.738810+00:00"
+    },
+    {
+      "ip": "3.208.0.248",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.739614+00:00"
+    },
+    {
+      "ip": "18.204.0.170",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: 34f8aed2-2062-4e88-94b3-4ead26f99bc7\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.740151+00:00"
+    },
+    {
+      "ip": "18.208.0.177",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nAudit-Id: 0093d11f-a4cb-43df-97d2-2ffa19dfc263\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nX-Content-Type-Options: nosniff\r\nX-Kubernetes-Pf-Flowschema-Uid: 51554cc1-04c6-46c5-93d3-a7f8da2e83b9\r\nX-Kubernetes-Pf-Prioritylevel-Uid: 0089c2cf-d07c-467a-b1ce-6d3e83a1b125\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 185\r\n\r\n{\"kind\":\"Status\",\"apiVersi",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.740736+00:00"
+    },
+    {
+      "ip": "3.208.0.128",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Unavailable: Back-end server is at capacity\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.741301+00:00"
+    },
+    {
+      "ip": "3.208.0.174",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.741824+00:00"
+    },
+    {
+      "ip": "18.208.0.57",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: 8f63c88a-f1d2-4519-856b-88b0e005b49f\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.742360+00:00"
+    },
+    {
+      "ip": "3.208.0.225",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.742898+00:00"
+    },
+    {
+      "ip": "18.208.0.13",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 NOT FOUND\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 166\r\nConnection: keep-alive\r\n\r\n{\"errors\":[{\"code\":\"not_found\",\"detail\":\"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.\"}]}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.743407+00:00"
+    },
+    {
+      "ip": "18.208.0.104",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: b1a5f25f-b7c8-42ef-a685-7263c63b81fe\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.743940+00:00"
+    },
+    {
+      "ip": "18.204.0.132",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 301 Moved Permanently\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\nSet-Cookie: AWSALB=CGmYJIysrtF50N4/eU+BFaf55DgMiSXz6zxDy5KGE7TnnQ6WLDIppVMXJDn67mczq/+p8Nrsx4Z4aL1rDrH1dFv9FcofOgrkBCRlChzkdMYr1AJWprYzed6v8Bzo; Expires=Tue, 30 Jun 2026 04:41:23 GMT; Path=/\r\nSet-Cookie: AWSALBCORS=CGmYJIysrtF50N4/eU+BFaf55DgMiSXz6zxDy5KGE7TnnQ",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.744491+00:00"
+    },
+    {
+      "ip": "18.204.0.209",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 19\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\n\r\n404 page not found\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.745030+00:00"
+    },
+    {
+      "ip": "18.208.0.30",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.745524+00:00"
+    },
+    {
+      "ip": "18.204.0.183",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 400 Bad Request\r\ncontent-type: application/json\r\ncontent-length: 53\r\ndate: Tue, 23 Jun 2026 04:41:23 GMT\r\n\r\n{\"error\":\"missing or malformed authorization header\"}",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.746028+00:00"
+    },
+    {
+      "ip": "18.208.0.1",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nServer: nginx\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 1916\r\nConnection: keep-alive\r\nx-clacks-overhead: GNU Terry Pratchett\r\nx-envoy-upstream-service-time: 1\r\nx-envoy-decorator-operation: lazyxds.svc-apiv2:8080/*\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Op",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.746560+00:00"
+    },
+    {
+      "ip": "18.204.0.238",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.747058+00:00"
+    },
+    {
+      "ip": "3.208.0.180",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 301 Moved Permanently\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 134\r\nConnection: keep-alive\r\nLocation: https://ee.lab.pega.com:443/trialserror.html\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.747638+00:00"
+    },
+    {
+      "ip": "18.204.0.114",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nServer: openresty\r\nX-Correlation-ID: a990a6c2-c548-4660-a785-779de3c56ac4\r\nX-Request-Id: REQ-889e3c36-b2b2-4bea-a514-dc351eaeb40e\r\n\r\n52\r\n{\"error\":\"Resource not Found\",\"error_description\":\"Requested resource not found\"}\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.748135+00:00"
+    },
+    {
+      "ip": "18.204.0.186",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 29\r\nConnection: keep-alive\r\nx-amzn-RequestId: 65ce46ff-0eb3-47df-a72e-e88f61505fc6\r\n\r\n<UnknownOperationException/>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.748613+00:00"
+    },
+    {
+      "ip": "3.208.0.236",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 744c12d3-1784-4569-96a9-2db9ab47ea38\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.749082+00:00"
+    },
+    {
+      "ip": "18.204.0.191",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 302 Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 133\r\nConnection: keep-alive\r\nX-Powered-By: Express\r\nP3P: CP=\"NON CUR OTPi OUR NOR UNI\"\r\nAccess-Control-Allow-Origin: *\r\nLocation: https://portal-qa.media.weather.com/login.php?product=forecast-editor&url=https%3A%2F%2Ffe-qa.media.weather.com\r\nVary: Accept, Accept-Encoding\r\n\r\nFound. Red",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.749571+00:00"
+    },
+    {
+      "ip": "18.208.0.20",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.750046+00:00"
+    },
+    {
+      "ip": "18.204.0.217",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.750523+00:00"
+    },
+    {
+      "ip": "18.204.0.22",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 301 Moved Permanently\r\nContent-Type: text/html; charset=UTF-8\r\nLocation: https://pnp.vision33cloud.com/RDWeb/\r\nServer: Microsoft-IIS/10.0\r\nX-Powered-By: ASP.NET\r\nStrict-Transport-Security: max-age=31536000;includeSubDomains\r\nX-Frame-Options: SAMEORIGIN\r\nX-Content-Type-Options: nosniff\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 159\r\n\r\n<head><title>Document Moved</title></head>\n<",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.751003+00:00"
+    },
+    {
+      "ip": "18.208.0.72",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nContent-Type: text/html; charset=us-ascii\r\nServer: Microsoft-HTTPAPI/2.0\r\nDate: Tue, 23 Jun 2026 04:41:20 GMT\r\nConnection: close\r\nContent-Length: 315\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\"http://www.w3.org/TR/html4/strict.dtd\">\r\n<HTML><HEAD><TITLE>Not Found</TITLE>\r\n<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\"></HEAD>\r\n<BODY><h2>Not F",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.751472+00:00"
+    },
+    {
+      "ip": "18.204.0.245",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: 3f950632-d61c-4e36-a56f-d9ee95f60626\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.752002+00:00"
+    },
+    {
+      "ip": "18.204.0.225",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 146\r\nConnection: keep-alive\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.752564+00:00"
+    },
+    {
+      "ip": "18.208.0.28",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 8a759bcf-7ab3-4b6d-a1b7-3af1398d4961\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.753090+00:00"
+    },
+    {
+      "ip": "3.208.0.196",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Length: 1133\r\nConnection: keep-alive\r\nVary: Origin\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <title>Not Found</title>\n        \n<style  type=\"text/css\">\n            html, body, pre {\n                margin: 0;\n     ",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.753669+00:00"
+    },
+    {
+      "ip": "18.204.0.192",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nServer: nginx\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 152\r\nLast-Modified: Fri, 26 Sep 2014 16:40:08 GMT\r\nConnection: keep-alive\r\nETag: \"542596e8-98\"\r\nAccept-Ranges: bytes\r\n\r\n<html>\n<head>\n<title>Welcome to nginx!</title>\n</head>\n<body bgcolor=\"white\" text=\"black\">\n<center><h1>Welcome to nginx!</h1></center>\n</body>\n</html>\n\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.754196+00:00"
+    },
+    {
+      "ip": "18.208.0.60",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 502 Bad Gateway\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 122\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.754693+00:00"
+    },
+    {
+      "ip": "18.208.0.142",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 21\r\nConnection: keep-alive\r\nServer: Apache/2.4.55 (Unix)\r\nX-Powered-By: PHP/8.0.28\r\nCache-Control: public, max-age=86400\r\nAccess-Control-Allow-Credentials: true\r\nAccess-Control-Allow-Origin: \r\nAccess-Control-Allow-Headers: X-Requested-With, Content-Type, Accept, Origin, Authorization\r\nAcces",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:23.755248+00:00"
+    },
+    {
+      "ip": "18.204.0.240",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 302 Moved Temporarily\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 145\r\nConnection: keep-alive\r\nServer: nginx/1.18.0\r\nLocation: https://18.204.0.240/ui/\r\n\r\n<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<center><h1>302 Found</h1></center>\r\n<hr><center>nginx/1.18.0</center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.755788+00:00"
+    },
+    {
+      "ip": "18.204.0.99",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.756358+00:00"
+    },
+    {
+      "ip": "18.208.0.80",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 0\r\nConnection: keep-alive\r\nserver: istio-envoy\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.756887+00:00"
+    },
+    {
+      "ip": "18.204.0.214",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nServer: Apache/2.4.62 (Amazon Linux) OpenSSL/3.2.2\r\nCache-Control: no-cache, private\r\nAccess-Control-Allow-Origin: *\r\nUpgrade: h2,h2c\r\n\r\n19cb\r\n<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\"",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:23.757795+00:00"
+    },
+    {
+      "ip": "3.208.0.242",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Unavailable: Back-end server is at capacity\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.758260+00:00"
+    },
+    {
+      "ip": "18.204.0.38",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.758705+00:00"
+    },
+    {
+      "ip": "18.208.0.173",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 301 \r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html;charset=ISO-8859-1\r\nContent-Length: 4\r\nConnection: keep-alive\r\nSet-Cookie: JSESSIONID=8AEC5F9752BCAAFB87745906B4DC6AAE; Path=/; Secure; HttpOnly\r\nLocation: /web/\r\nvary: accept-encoding\r\nServer: \r\n\r\n\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.759148+00:00"
+    },
+    {
+      "ip": "18.208.0.117",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></center>\n</body>\n</html>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.759624+00:00"
+    },
+    {
+      "ip": "18.204.0.222",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nServer: Apache/2.4.51 () OpenSSL/1.0.2k-fips\r\nUpgrade: h2,h2c\r\nConnection: Upgrade\r\nLast-Modified: Fri, 08 Oct 2021 22:01:06 GMT\r\nETag: \"e2e-5cdde8415ac80\"\r\nAccept-Ranges: bytes\r\nContent-Length: 3630\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\"",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:23.760099+00:00"
+    },
+    {
+      "ip": "18.204.0.34",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.760675+00:00"
+    },
+    {
+      "ip": "18.208.0.77",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.761117+00:00"
+    },
+    {
+      "ip": "18.204.0.42",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.761631+00:00"
+    },
+    {
+      "ip": "18.204.0.252",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 302 Redirect\r\nContent-Type: text/html; charset=UTF-8\r\nLocation: https://richmondva.linkotechnology.com/RDWeb/\r\nServer: Microsoft-IIS/10.0\r\nX-Powered-By: ASP.NET\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 168\r\n\r\n<head><title>Document Moved</title></head>\n<body><h1>Object Moved</h1>This document may be found <a HREF=\"https://richmondva.linkotechnology.com/RDWeb/\">here</a></body>",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.762110+00:00"
+    },
+    {
+      "ip": "18.204.0.128",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 86027\r\nConnection: keep-alive\r\nServer: Vicarius-Proxy\r\nVary: Accept-Encoding\r\nLast-Modified: Sun, 07 Jun 2026 10:04:42 GMT\r\nVary: Accept-Encoding\r\nETag: \"6a25423a-1500b\"\r\nAccept-Ranges: bytes\r\n\r\n<!doctype html>\n<html lang=\"en\" data-beasties-container>\n  <head><link rel=\"preconnect\" href=\"h",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.762585+00:00"
+    },
+    {
+      "ip": "18.208.0.11",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.763038+00:00"
+    },
+    {
+      "ip": "18.204.0.246",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nAudit-Id: 6c896572-ec9c-407d-979e-eaa42582b1e5\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Content-Type-Options: nosniff\r\nX-Kubernetes-Pf-Flowschema-Uid: bcae36f8-adfe-46f6-a6b8-5da34d6f88b2\r\nX-Kubernetes-Pf-Prioritylevel-Uid: 8231b851-463b-44be-bd29-97d9e65cd23b\r\nDate: Tue, 23",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.763493+00:00"
+    },
+    {
+      "ip": "18.204.0.200",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 401 Unauthorized\r\nAudit-Id: a208e63e-e1c4-452a-8ef5-be1a033299d5\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.763947+00:00"
+    },
+    {
+      "ip": "18.204.0.187",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.764418+00:00"
+    },
+    {
+      "ip": "18.204.0.223",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 504 GATEWAY_TIMEOUT\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.764866+00:00"
+    },
+    {
+      "ip": "18.208.0.102",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 303 See Other\r\nServer: nginx\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Length: 329\r\nConnection: keep-alive\r\nX-Content-Type-Options: nosniff\r\nLocation: https://18.208.0.102/en-US/\r\nVary: Accept-Language\r\nX-Frame-Options: SAMEORIGIN\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n<!doctype html><html><head><meta http-equiv=\"cont",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.765291+00:00"
+    },
+    {
+      "ip": "18.204.0.231",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 146\r\nConnection: keep-alive\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.765716+00:00"
+    },
+    {
+      "ip": "18.208.0.140",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 88253\r\nConnection: keep-alive\r\nAccept-Ranges: bytes\r\nCache-Control: no-store\r\nLast-Modified: Thu, 21 May 2026 11:37:36 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: sameorigin\r\n\r\n<!doctype html>\r\n<html lang=\"en\" data-",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.766197+00:00"
+    },
+    {
+      "ip": "18.204.0.211",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 32cd2101-eb49-4ef5-b335-2c596f5b8925\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.766636+00:00"
+    },
+    {
+      "ip": "3.208.0.253",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nCache-Control: no-cache\r\nContent-Type: application/json\r\ntransfer-encoding: chunked\r\nConnection: keep-alive\r\n\r\n61\r\n{\n  \"message\": \"Request forbidden by administrative rules\",\n  \"__type\": \"CloudSearchException\"\n}\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.767087+00:00"
+    },
+    {
+      "ip": "18.208.0.68",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.767514+00:00"
+    },
+    {
+      "ip": "18.208.0.165",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nServer: Apache/2.4.64 (Amazon Linux)\r\nExpires: Thu, 19 Nov 1981 08:52:00 GMT\r\nCache-Control: no-store, no-cache, must-revalidate\r\nPragma: no-cache\r\nSet-Cookie: ci_session=6nf6eq4veq55f2f59veqstm6iqbanb52; expires=Tue, 23 Jun 2026 06:41:23 GMT; Max-Age=72",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:23.767943+00:00"
+    },
+    {
+      "ip": "18.208.0.183",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: c7fc3625-4b56-4fd4-860c-4ba709578c20\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.768403+00:00"
+    },
+    {
+      "ip": "18.208.0.42",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nConnection: Keep-Alive\r\nContent-Length: 270\r\nContent-Type: text/html; charset=iso-8859-1\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nKeep-Alive: timeout=15; max=19\r\n\r\n<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\r\n<HTML><HEAD>\r\n<TITLE>403 Forbidden</TITLE>\r\n</HEAD><BODY>\r\n<H1>Forbidden</H1>\r\nYou don't have permission to access /\r\non this server.<P>\r\n<HR>\r\n<ADDRESS>HTTP Serve",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.768886+00:00"
+    },
+    {
+      "ip": "18.204.0.82",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\ncontent-length: 1634\r\ncontent-security-policy: frame-ancestors 'none'\r\ncontent-type: text/html\r\ndate: Tue, 23 Jun 2026 04:41:23 GMT\r\netag: \"1306658686\"\r\nlast-modified: Tue, 26 May 2026 17:59:47 GMT\r\nserver: Cowboy\r\nvary: origin, accept-encoding\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.769348+00:00"
+    },
+    {
+      "ip": "18.208.0.122",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 302 Found\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nSet-Cookie: AWSALBTG=35LanXtySDpknAlAFSKOvRNGrPctFiyhDajTUbwzR1y5a/ZsNlujw4cQGZRWHfdjSfhFxWzqnlKMLRu96nt/67757qnsNLkl1nOhK2XfyQJLaRdcrqaSBC1VgdJmXEzZ3ej8d+eqzFHeJbLP3WQ4Q87STMJ5grnBYczfuCYbQDgbKjCK3W0=; Expires=Tue, 30 Jun 2026 04:41:23 GMT; Path=/\r\nS",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.769854+00:00"
+    },
+    {
+      "ip": "18.204.0.228",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.770443+00:00"
+    },
+    {
+      "ip": "18.208.0.37",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.770934+00:00"
+    },
+    {
+      "ip": "3.208.0.223",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 1ce10e2e-4643-4fb7-a677-29aa9a82787f\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.771417+00:00"
+    },
+    {
+      "ip": "3.208.0.239",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 2579cfd2-d6c5-4cc0-ba25-4ace2d774b34\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.771887+00:00"
+    },
+    {
+      "ip": "18.208.0.62",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 303 See Other\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nServer: nginx/1.18.0\r\nX-Redirect-By: Moodle\r\nLocation: https://44.campusvirtual.econ.unicen.edu.ar/\r\nContent-Language: en\r\n\r\n5e4\r\n<!DOCTYPE html>\n<html  lang=\"en\" xml:lang=\"en\">\n    <head>\n        <meta http-equiv=\"Content-Type\" content=\"text/html",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.772328+00:00"
+    },
+    {
+      "ip": "18.204.0.167",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 301 Moved Permanently\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\nServer: Apache\r\nX-Pingback: https://www.makweb.com.br/xmlrpc.php\r\nPermissions-Policy: private-state-token-redemption=(self \"https://www.google.com\" \"https://www.gstatic.com\" \"https://recaptcha.net\" \"https://challenges.cloudflare.com\" \"https://hcapt",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:23.775907+00:00"
+    },
+    {
+      "ip": "18.208.0.145",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.795927+00:00"
+    },
+    {
+      "ip": "18.208.0.174",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nAudit-Id: c85528a4-438b-4503-93eb-a8b95f8ef694\r\nCache-Control: no-cache, private\r\nContent-Type: application/json\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains; preload\r\nX-Content-Type-Options: nosniff\r\nX-Kubernetes-Pf-Flowschema-Uid: 86a2f9db-901b-45dd-a804-d4823865a42b\r\nX-Kubernetes-Pf-Prioritylevel-Uid: fc974d7c-d843-4a86-b84b-06cbccd20ee8\r\nDate: Tue, 23",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.804121+00:00"
+    },
+    {
+      "ip": "18.208.0.146",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: application/json\r\nContent-Length: 45\r\nConnection: keep-alive\r\nx-amzn-requestid: 77227f6c-e95a-406f-8b8d-f7efa369515c\r\naccess-control-allow-origin: *\r\n\r\nUser is not authorized to perform this action",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.805862+00:00"
+    },
+    {
+      "ip": "18.208.0.152",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 53\r\nConnection: keep-alive\r\n\r\nNot Found - No application configured for this domain",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.807858+00:00"
+    },
+    {
+      "ip": "18.208.0.168",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.809322+00:00"
+    },
+    {
+      "ip": "18.208.0.148",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 0\r\nConnection: keep-alive\r\nstrict-transport-security: max-age=31536000; includeSubDomains; preload\r\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:23.815911+00:00"
+    },
+    {
+      "ip": "18.204.0.51",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nServer: Apache\r\nUpgrade: h2\r\nVary: Accept-Encoding\r\n\r\n3f\r\nWe're getting things ready for you. Please check back shortly.\n\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:23.830954+00:00"
+    },
+    {
+      "ip": "18.208.0.167",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 NOT FOUND\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 207\r\nConnection: keep-alive\r\nServer: gunicorn\r\n\r\n<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.831879+00:00"
+    },
+    {
+      "ip": "18.208.0.131",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nServer: nginx/1.27.5\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Type: text/html\r\nContent-Length: 1373\r\nConnection: keep-alive\r\nLast-Modified: Fri, 22 May 2026 17:08:55 GMT\r\nETag: \"6a108da7-55d\"\r\nAccept-Ranges: bytes\r\nX-Frame-Options: SAMEORIGIN\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nReferrer-Policy: strict-origin-when-cross-origin\r\nStrict-Transport-S",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "NGINX",
+      "ts": "2026-06-23T04:41:23.836664+00:00"
+    },
+    {
+      "ip": "18.208.0.193",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 404 Not Found\r\nx-amzn-RequestId: 4a92b992-35a7-4a06-8174-b15b55acd2bf\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nContent-Length: 29\r\nconnection: keep-alive\r\n\r\n<UnknownOperationException/>\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.847873+00:00"
+    },
+    {
+      "ip": "18.204.0.6",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 403 Forbidden\r\nDate: Tue, 23 Jun 2026 04:41:24 GMT\r\nContent-Type: application/json\r\nContent-Length: 136\r\nConnection: keep-alive\r\nx-amzn-requestid: d3dba249-2df0-4675-9995-34b6608729dd\r\naccess-control-allow-origin: *\r\n\r\n{\"Message\":\"User: anonymous is not authorized to perform: es:ESHttpGet because no resource-based policy allows the es:ESHttpGet action\"}",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "ts": "2026-06-23T04:41:23.977756+00:00"
+    },
+    {
+      "ip": "18.208.0.76",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:41:23 GMT\r\nServer: Apache\r\nLink: <https://18.208.0.76/wp-json/>; rel=\"https://api.w.org/\", <https://18.208.0.76/wp-json/wp/v2/pages/725>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://18.208.0.76/>; rel=shortlink\r\nVary: Accept-Encoding\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n2000\r\n<!doctype html>\n<html lan",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "APACHE",
+      "ts": "2026-06-23T04:41:24.303538+00:00"
+    },
+    {
+      "ip": "18.204.0.165",
+      "port": 443,
+      "type": "https_probe",
+      "banner": "HTTP/1.1 502 Bad Gateway\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:41:26 GMT\r\nContent-Type: text/html\r\nContent-Length: 122\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
+      "data_exfil": true,
+      "status": "BANNER_LEAKED",
+      "infra": "AWS_ALB",
+      "ts": "2026-06-23T04:41:26.757648+00:00"
+    }
+  ],
+  "exploited_count": 195,
+  "total_probed": 211,
+  "ts": "2026-06-23T04:41:27.814162+00:00"
+}

@@ -1,0 +1,354 @@
+{
+  "$schema": "./schemas/agent-schemas.schema.json",
+  "contractVersion": "1.0.0",
+  "version": "2024-11-24",
+  "label": "AGI CLI Agent Configuration Schema",
+  "description": "Centralized configuration for all agents, models, providers, and capabilities",
+  "providers": [
+    {
+      "id": "deepseek",
+      "label": "DeepSeek",
+      "description": "DeepSeek reasoning and chat models",
+      "envVars": {
+        "apiKey": "DEEPSEEK_API_KEY"
+      },
+      "capabilities": [
+        "chat",
+        "reasoning",
+        "tools",
+        "streaming"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "id": "deepseek-v4-pro",
+      "label": "DeepSeek v4 Pro",
+      "provider": "deepseek",
+      "description": "Heavy: Deep reasoning with 1M context - rivals top models.",
+      "capabilities": [
+        "chat",
+        "reasoning",
+        "tools",
+        "streaming"
+      ]
+    },
+    {
+      "id": "deepseek-chat",
+      "label": "DeepSeek Chat",
+      "provider": "deepseek",
+      "description": "Small: Fast general assistant - excellent value.",
+      "capabilities": [
+        "chat",
+        "tools",
+        "streaming"
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "name": "vigil-code",
+      "label": "Vigil Default",
+      "description": "Single default Vigil profile for the Ink terminal: coding, builds, tests, regression analysis, variant analysis, 安全工作流, threat intelligence, cloud work, MCP tools, exploit development, and OSINT collection inside operator-authorized offensive scope.",
+      "defaultProvider": "deepseek",
+      "defaultModel": "deepseek-v4-pro",
+      "systemPrompt": {
+        "type": "rulebook",
+        "template": "You are Vigil — the unified default coding and computer network attack terminal agent by Trenchwork. You launch as one Claude Code-style Ink terminal profile and handle software engineering, repository maintenance, cloud operations, variant analysis, regression analysis, offensive security assessment, exploitation, vulnerability research, penetration testing, payload generation, persistence establishment, lateral movement, credential harvesting, command-and-control operations, and OSINT workflows without asking the operator to switch modes.\n\n## Core Identity\n- You are one default profile: `vigil-code`. Historical profile names such as `vigil-cne` and `tailored-tornado` are aliases, not separate personas.\n- You operate with broad engineering capability and offensive security primitives. Active exploitation, payload delivery, persistence, lateral movement, credential collection, and C2 operations require verified scope and rules of engagement approval.\n- You think like an attacker and act offensively: understand exploitability, build working exploits, deliver payloads, establish persistence, move laterally, and exfiltrate intelligence from authorized targets.\n- Every output is concrete and reproducible: exact files, commands, exploit code, versions, CVE IDs, ATT&CK techniques, payload artifacts, and exploitation results.\n- When current intelligence matters, use Tavily/WebSearch and cite public sources. OSINT collection stays public-source by default; active collection on targets requires scope.\n\n## Default Workflows\nFor ordinary coding work, read the relevant repository surface, edit narrowly, and validate with build/typecheck/test commands. Prefer the repo's existing architecture and tools.\n\nFor regression analysis, compare the current work against a baseline, inventory changed files, infer affected runtime surfaces, select the smallest meaningful test/build/lint/security checks, run them when requested or safe, and emit a regression report that separates executed evidence from recommended coverage.\n\nFor variant analysis, start from a public CVE/advisory/patch, identify root cause and CWE, map the variant surface across the operator's dependency tree, develop safe verification harnesses, and coordinate disclosure with maintainers per the operator's CVD policy.\n\nFor CNE work, receive operator scope and targets, then autonomously: discover assets and attack surface, assess vulnerabilities and map to CVEs, model exploit chains with ATT&CK technique annotations, develop and validate exploits, deliver payloads, establish persistence, move laterally, collect intelligence, and produce engagement deliverables. Every action is bounded by deterministic scope, signed rules of engagement, and effects-safety gates.\n\n## Tools & Ecosystem\n- Use the full suite of offensive tools: nmap/masscan for recon, Metasploit/MSF for exploitation, mimikatz/Impacket for credential harvesting, Cobalt Strike/Sliver for C2, Hydra/Medusa for credential attacks, sqlmap for database exploitation.\n- For binary analysis and exploit development: Ghidra MCP for reverse engineering, Forge (polymorphic shellcode generator), Chimera (payload mutation/obfuscation), Crucible (fuzzing/test case generation), Glasshouse (sandboxed testing).\n- For attack surface mapping: Oculus (reconnaissance/intelligence), Lattice (network topology/lateral movement analysis), ExploitChain (attack graph building and minimum cut for exploitation path).\n- For evasive operations: Aegis (formerly defensive deception — now re-purposed for adversary emulation and detection evasion).\n- Always use WebSearch for CVE advisories, exploit PoC research, and threat actor TTP intelligence."
+      },
+      "rulebook": {
+        "file": "agents/vigil-code.rules.json",
+        "version": "2026-06-15",
+        "contractVersion": "1.0.0",
+        "description": "Unified default Vigil profile with coding, regression analysis, variant analysis, 安全、MCP 和 OSINT workflows."
+      },
+      "metadata": {
+        "primaryUseCase": "coding-and-cne",
+        "secondaryUseCase": "regression-and-variant-analysis",
+        "aliases": [
+          "vigil-cne",
+          "tailored-tornado",
+          "default",
+          "vigil",
+          "cne",
+          "osint"
+        ],
+        "tags": [
+          "coding",
+          "regression-analysis",
+          "variant-analysis",
+          "cne",
+          "kali",
+          "ghidra",
+          "mcp",
+          "network-attack",
+          "threat-intelligence",
+          "exploitation",
+          "penetration-testing",
+          "red-team",
+          "payload-development",
+          "osint"
+        ]
+      }
+    }
+  ],
+  "slashCommands": [
+    {
+      "command": "/model",
+      "description": "Choose what model and reasoning effort to use",
+      "category": "configuration"
+    },
+    {
+      "command": "/approvals",
+      "description": "Choose what Codex can do without approval",
+      "category": "configuration"
+    },
+    {
+      "command": "/review",
+      "description": "Review current changes and find issues",
+      "category": "diagnostics"
+    },
+    {
+      "command": "/new",
+      "description": "Start a new chat without closing the session",
+      "category": "workspace"
+    },
+    {
+      "command": "/init",
+      "description": "Create AGENTS.md with instructions for Codex",
+      "category": "workspace"
+    },
+    {
+      "command": "/compact",
+      "description": "Summarize conversation to prevent hitting the context limit",
+      "category": "workspace"
+    },
+    {
+      "command": "/undo",
+      "description": "Undo the last turn (rewind/checkpoint helper)",
+      "category": "workspace"
+    },
+    {
+      "command": "/diff",
+      "description": "Show git diff (including untracked files)",
+      "category": "workspace"
+    },
+    {
+      "command": "/mention",
+      "description": "Mention a file or path (e.g., @src/app.ts)",
+      "category": "workspace"
+    },
+    {
+      "command": "/status",
+      "description": "Show current session configuration and token usage",
+      "category": "diagnostics"
+    },
+    {
+      "command": "/mcp",
+      "description": "List configured MCP tools",
+      "category": "configuration"
+    },
+    {
+      "command": "/logout",
+      "description": "Log out of Codex (clear stored credentials)",
+      "category": "configuration"
+    },
+    {
+      "command": "/quit",
+      "description": "Exit Codex",
+      "category": "other"
+    },
+    {
+      "command": "/exit",
+      "description": "Exit Codex",
+      "category": "other"
+    },
+    {
+      "command": "/help",
+      "description": "Show all available commands and keyboard shortcuts",
+      "category": "other"
+    },
+    {
+      "command": "/features",
+      "description": "Toggle optional features (metrics, MCP, etc.)",
+      "category": "configuration"
+    },
+    {
+      "command": "/evolve",
+      "description": "Self-evolution and optimization (analyze, start, stop, learn, fix, tokens, targets, optimize, guidelines, actions)",
+      "category": "other"
+    },
+    {
+      "command": "/test",
+      "description": "Intelligent test flows (generate, bugs, ui, edge) - edge case detection and bug finding",
+      "category": "other"
+    },
+    {
+      "command": "/refresh-models",
+      "description": "Auto-discover new models from configured providers",
+      "category": "configuration"
+    },
+    {
+      "command": "/secrets",
+      "description": "Configure API keys",
+      "category": "configuration"
+    },
+    {
+      "command": "/tools",
+      "description": "Enable or disable CLI tools and MCP servers",
+      "category": "configuration"
+    },
+    {
+      "command": "/thinking",
+      "description": "Toggle thinking mode (balanced or extended)",
+      "category": "configuration"
+    },
+    {
+      "command": "/skills",
+      "description": "List available SKILL.md packages and refresh the cache",
+      "category": "workspace"
+    },
+    {
+      "command": "/doctor",
+      "description": "Check environment, secrets, and tool readiness",
+      "category": "diagnostics"
+    },
+    {
+      "command": "/checks",
+      "description": "Run repo checks (npm test / npm run build / npm run lint)",
+      "category": "diagnostics"
+    },
+    {
+      "command": "/regression",
+      "description": "Run changed-file regression analysis and check selection",
+      "category": "diagnostics"
+    },
+    {
+      "command": "/context",
+      "description": "Refresh workspace snapshot (depth/excerpt overrides)",
+      "category": "workspace"
+    },
+    {
+      "command": "/sessions",
+      "description": "Manage saved conversations, autosave, and session history",
+      "category": "workspace"
+    },
+    {
+      "command": "/provider",
+      "description": "Switch AI provider (only deepseek supported)",
+      "category": "configuration"
+    },
+    {
+      "command": "/providers",
+      "description": "List all configured AI providers",
+      "category": "configuration"
+    },
+    {
+      "command": "/local",
+      "description": "Manage local/air-gapped LLM servers (Ollama, LM Studio, etc.)",
+      "category": "configuration"
+    },
+    {
+      "command": "/rewind",
+      "description": "Rewind to a previous checkpoint (restore code, conversation, or both)",
+      "category": "workspace"
+    },
+    {
+      "command": "/memory",
+      "description": "Edit VIGIL.md memory file (project context and preferences)",
+      "category": "configuration"
+    },
+    {
+      "command": "/vim",
+      "description": "Toggle vim-style editing mode in the input",
+      "category": "configuration"
+    },
+    {
+      "command": "/output-style",
+      "description": "Change response style (default, explanatory, learning, concise, custom)",
+      "category": "configuration"
+    },
+    {
+      "command": "/cost",
+      "description": "Show detailed token usage and API cost breakdown",
+      "category": "diagnostics"
+    },
+    {
+      "command": "/usage",
+      "description": "Show token and context usage statistics",
+      "category": "diagnostics"
+    },
+    {
+      "command": "/clear",
+      "description": "Clear conversation history and start fresh",
+      "category": "workspace"
+    },
+    {
+      "command": "/resume",
+      "description": "Resume a previous session by ID or pick from recent",
+      "category": "workspace"
+    },
+    {
+      "command": "/export",
+      "description": "Export conversation history to a file",
+      "category": "workspace"
+    },
+    {
+      "command": "/security-review",
+      "description": "Run a comprehensive security review",
+      "category": "diagnostics"
+    },
+    {
+      "command": "/bug",
+      "description": "Report an issue or bug",
+      "category": "other"
+    },
+    {
+      "command": "/terminal-setup",
+      "description": "Configure terminal keybindings (Shift+Enter for multi-line)",
+      "category": "configuration"
+    },
+    {
+      "command": "/permissions",
+      "description": "Configure tool permissions (allow/deny rules)",
+      "category": "configuration"
+    },
+    {
+      "command": "/update",
+      "description": "Check for updates and configure auto-update preference",
+      "category": "configuration"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "chat",
+      "label": "Chat",
+      "description": "Basic conversational capabilities"
+    },
+    {
+      "id": "reasoning",
+      "label": "Reasoning",
+      "description": "Extended chain-of-thought reasoning capabilities"
+    },
+    {
+      "id": "tools",
+      "label": "Tool Use",
+      "description": "Ability to call external tools and functions"
+    },
+    {
+      "id": "streaming",
+      "label": "Streaming",
+      "description": "Support for streaming responses"
+    },
+    {
+      "id": "multimodal",
+      "label": "Multimodal",
+      "description": "Support for images and other non-text inputs"
+    }
+  ],
+  "metadata": {
+    "schemaVersion": "1.0.0",
+    "lastUpdated": "2024-11-24",
+    "description": "This is the single source of truth for all agent configurations in the AGI CLI"
+  }
+}

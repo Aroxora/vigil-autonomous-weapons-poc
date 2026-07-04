@@ -1,0 +1,44 @@
+name: Scheduled Health Check
+
+on:
+  schedule:
+    # Every 10 minutes (aligns with local 10min loop)
+    - cron: '*/10 * * * *'
+  workflow_dispatch:  # manual trigger
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+      - run: npm ci
+      - name: Run full health check
+        run: |
+          npm run health:json || true
+          cat site/vigil-web/public/health.json | head -c 2000 || true
+      - name: Upload health report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scheduled-health-${{ github.run_number }}
+          path: |
+            site/vigil-web/public/health.json
+            site/vigil-web/public/status.json
+          retention-days: 30
+      - name: Check for degradation (example)
+        run: |
+          OVERALL=$(node -e "
+            const h = require('./site/vigil-web/public/health.json');
+            console.log(h.overall || 'unknown');
+          " || echo 'unknown')
+          echo "Overall status: $OVERALL"
+          if [ "$OVERALL" = "fail" ]; then
+            echo "Health degraded — consider opening issue or alerting"
+            # Example: gh issue create ... (needs GH token with permissions)
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

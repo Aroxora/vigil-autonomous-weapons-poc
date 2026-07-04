@@ -1,0 +1,60 @@
+# Grouped, minor/patch-only Dependabot config (managed by erosolar tooling).
+# Major version bumps are ignored to avoid build-breaking PR noise;
+# security updates still flow regardless of these ignore rules.
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule: { interval: "weekly" }
+    open-pull-requests-limit: 5
+    groups:
+      npm:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: "npm"
+    directory: "/Erosolar_Browser"
+    schedule: { interval: "weekly" }
+    open-pull-requests-limit: 5
+    groups:
+      npm-erosolar-browser:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: "npm"
+    directory: "/aws/lambda"
+    schedule: { interval: "weekly" }
+    open-pull-requests-limit: 5
+    groups:
+      npm-aws-lambda:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: "npm"
+    directory: "/site/functions"
+    schedule: { interval: "weekly" }
+    open-pull-requests-limit: 5
+    groups:
+      npm-site-functions:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+  - package-ecosystem: "npm"
+    directory: "/site/vigil-web"
+    schedule: { interval: "weekly" }
+    open-pull-requests-limit: 5
+    groups:
+      npm-site-vigil-web:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]

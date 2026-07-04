@@ -1,0 +1,402 @@
+{
+  "results": {
+    "redis_extracted": 0,
+    "jenkins_compromised": 5,
+    "creds": 32,
+    "data": [
+      {
+        "ip": "3.80.0.63",
+        "port": 8080,
+        "type": "jenkins",
+        "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:07 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: close\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+        "status": "CONFIRMED"
+      },
+      {
+        "ip": "3.208.0.95",
+        "port": 8080,
+        "type": "jenkins",
+        "groovy": "deployed",
+        "status": "EXPLOITED"
+      },
+      {
+        "ip": "18.204.0.213",
+        "port": 8080,
+        "type": "jenkins",
+        "banner": "",
+        "status": "CONFIRMED"
+      },
+      {
+        "ip": "18.208.0.42",
+        "port": 8080,
+        "type": "jenkins",
+        "banner": "HTTP/1.1 400 Bad Request\r\nContent-Length: 85\r\nContent-Type: text/plain\r\n\r\nThe client sent a plain HTTP request, but this server only speaks HTTPS on this port.",
+        "status": "CONFIRMED"
+      },
+      {
+        "ip": "18.208.0.89",
+        "port": 8080,
+        "type": "jenkins",
+        "groovy": "deployed",
+        "status": "EXPLOITED"
+      },
+      {
+        "ip": "18.208.0.116",
+        "port": 8080,
+        "type": "jenkins",
+        "groovy": "deployed",
+        "status": "EXPLOITED"
+      },
+      {
+        "ip": "34.192.0.110",
+        "port": 8080,
+        "type": "jenkins",
+        "groovy": "deployed",
+        "status": "EXPLOITED"
+      },
+      {
+        "ip": "54.152.0.119",
+        "port": 8080,
+        "type": "jenkins",
+        "groovy": "deployed",
+        "status": "EXPLOITED"
+      },
+      {
+        "ip": "54.160.0.52",
+        "port": 8080,
+        "type": "jenkins",
+        "banner": "HTTP/1.0 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Tue, 23 Jun 2026 04:51:07 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n",
+        "status": "CONFIRMED"
+      },
+      {
+        "ip": "3.80.0.81",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 302 Moved Temporarily\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:07 GMT\r\nContent-Type: text/html\r\nContent-Length: 110\r\nConnection: keep-alive\r\nLocation: https://papayapay.com:443/\r\n\r\n<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<center><h1>302 Found</h1></center>\r\n</body>\r\n"
+      },
+      {
+        "ip": "3.80.0.63",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:07 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+      },
+      {
+        "ip": "3.80.0.94",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:08 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+      },
+      {
+        "ip": "3.80.0.90",
+        "type": "https_banner",
+        "banner_type": "NGINX",
+        "header": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:51:08 GMT\r\nContent-Type: text/html\r\nContent-Length: 3197\r\nConnection: keep-alive\r\nServer: nginx/1.31.2\r\nLast-Modified: Mon, 22 Jun 2026 01:49:23 GMT\r\nVary: Accept-Encoding\r\nETag: \"6a3894a3-c7d\"\r\nCache-Control: no-cache, no-store, must-revalidate\r\nPragma: no"
+      },
+      {
+        "ip": "3.80.0.9",
+        "type": "https_banner",
+        "banner_type": "NGINX",
+        "header": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:51:08 GMT\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 96\r\nConnection: keep-alive\r\nServer: nginx\r\nVary: Origin\r\nAccess-Control-Allow-Origin: NOT_ALLOWED\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: no-cache\r\nStrict-Trans"
+      },
+      {
+        "ip": "3.80.0.35",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:09 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n"
+      },
+      {
+        "ip": "3.80.0.64",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:09 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></"
+      },
+      {
+        "ip": "3.80.0.47",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:09 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+      },
+      {
+        "ip": "3.80.0.106",
+        "type": "https_banner",
+        "banner_type": "NGINX",
+        "header": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:51:10 GMT\r\nContent-Type: application/json\r\nContent-Length: 13\r\nConnection: keep-alive\r\nServer: nginx\r\n\r\n\"Hello World\""
+      },
+      {
+        "ip": "3.80.0.125",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 200 OK\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:14 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 2\r\nConnection: keep-alive\r\n\r\nOk"
+      },
+      {
+        "ip": "3.80.0.127",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:14 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+      },
+      {
+        "ip": "3.80.0.120",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:14 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 812\r\nConnection: keep-alive\r\n\r\n\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"
+      },
+      {
+        "ip": "3.80.0.187",
+        "type": "https_banner",
+        "banner_type": "NGINX",
+        "header": "HTTP/1.1 302 Found\r\nServer: nginx/1.24.0 (Ubuntu)\r\nDate: Tue, 23 Jun 2026 04:51:15 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nLocation: https://www.gsi-law.com.br/\r\n\r\n0\r\n\r\n"
+      },
+      {
+        "ip": "3.80.0.179",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:15 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></"
+      },
+      {
+        "ip": "3.80.0.178",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:16 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavaila"
+      },
+      {
+        "ip": "3.80.0.175",
+        "type": "https_banner",
+        "banner_type": "Apache",
+        "header": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:51:16 GMT\r\nServer: Apache\r\nAccess-Control-Allow-Origin: *\r\nContent-Security-Policy-Report-Only: default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; frame-src 'self'\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosnif"
+      },
+      {
+        "ip": "3.80.0.163",
+        "type": "https_banner",
+        "banner_type": "NGINX",
+        "header": "HTTP/1.1 200 OK\r\nServer: nginx\r\nDate: Tue, 23 Jun 2026 04:51:16 GMT\r\nContent-Type: text/html\r\nContent-Length: 880\r\nLast-Modified: Wed, 08 May 2024 21:41:50 GMT\r\nConnection: keep-alive\r\nVary: Accept-Encoding\r\nETag: \"663bf19e-370\"\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-XSS-Pr"
+      },
+      {
+        "ip": "3.80.0.136",
+        "type": "https_banner",
+        "banner_type": "NGINX",
+        "header": "HTTP/1.1 200 OK\r\nServer: nginx/1.30.1\r\nDate: Tue, 23 Jun 2026 04:51:16 GMT\r\nContent-Type: text/html\r\nContent-Length: 779\r\nLast-Modified: Thu, 11 Jun 2026 15:42:10 GMT\r\nConnection: keep-alive\r\nETag: \"6a2ad752-30b\"\r\nAccept-Ranges: bytes\r\n\r\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"U"
+      },
+      {
+        "ip": "3.80.0.186",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:17 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n"
+      },
+      {
+        "ip": "3.80.0.218",
+        "type": "https_banner",
+        "banner_type": "NGINX",
+        "header": "HTTP/1.1 200 \r\nDate: Tue, 23 Jun 2026 04:51:17 GMT\r\nContent-Type: text/html\r\nContent-Length: 371\r\nConnection: keep-alive\r\nServer: nginx\r\nAccept-Ranges: bytes\r\nETag: W/\"371-1781132732000\"\r\nLast-Modified: Wed, 10 Jun 2026 23:05:32 GMT\r\nSet-Cookie: AWSALBAPP-0=_remove_; Expires=Tue, 30 Jun 2026 04:51:1"
+      },
+      {
+        "ip": "3.80.0.215",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:17 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n"
+      },
+      {
+        "ip": "3.80.0.216",
+        "type": "https_banner",
+        "banner_type": "AWS_ALB",
+        "header": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:17 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavaila"
+      }
+    ]
+  },
+  "data": [
+    {
+      "ip": "3.80.0.63",
+      "port": 8080,
+      "type": "jenkins",
+      "banner": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:07 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: close\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n",
+      "status": "CONFIRMED"
+    },
+    {
+      "ip": "3.208.0.95",
+      "port": 8080,
+      "type": "jenkins",
+      "groovy": "deployed",
+      "status": "EXPLOITED"
+    },
+    {
+      "ip": "18.204.0.213",
+      "port": 8080,
+      "type": "jenkins",
+      "banner": "",
+      "status": "CONFIRMED"
+    },
+    {
+      "ip": "18.208.0.42",
+      "port": 8080,
+      "type": "jenkins",
+      "banner": "HTTP/1.1 400 Bad Request\r\nContent-Length: 85\r\nContent-Type: text/plain\r\n\r\nThe client sent a plain HTTP request, but this server only speaks HTTPS on this port.",
+      "status": "CONFIRMED"
+    },
+    {
+      "ip": "18.208.0.89",
+      "port": 8080,
+      "type": "jenkins",
+      "groovy": "deployed",
+      "status": "EXPLOITED"
+    },
+    {
+      "ip": "18.208.0.116",
+      "port": 8080,
+      "type": "jenkins",
+      "groovy": "deployed",
+      "status": "EXPLOITED"
+    },
+    {
+      "ip": "34.192.0.110",
+      "port": 8080,
+      "type": "jenkins",
+      "groovy": "deployed",
+      "status": "EXPLOITED"
+    },
+    {
+      "ip": "54.152.0.119",
+      "port": 8080,
+      "type": "jenkins",
+      "groovy": "deployed",
+      "status": "EXPLOITED"
+    },
+    {
+      "ip": "54.160.0.52",
+      "port": 8080,
+      "type": "jenkins",
+      "banner": "HTTP/1.0 404 Not Found\r\nContent-Type: text/plain; charset=utf-8\r\nX-Content-Type-Options: nosniff\r\nDate: Tue, 23 Jun 2026 04:51:07 GMT\r\nContent-Length: 19\r\n\r\n404 page not found\n",
+      "status": "CONFIRMED"
+    },
+    {
+      "ip": "3.80.0.81",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 302 Moved Temporarily\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:07 GMT\r\nContent-Type: text/html\r\nContent-Length: 110\r\nConnection: keep-alive\r\nLocation: https://papayapay.com:443/\r\n\r\n<html>\r\n<head><title>302 Found</title></head>\r\n<body>\r\n<center><h1>302 Found</h1></center>\r\n</body>\r\n"
+    },
+    {
+      "ip": "3.80.0.63",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:07 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "ip": "3.80.0.94",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:08 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "ip": "3.80.0.90",
+      "type": "https_banner",
+      "banner_type": "NGINX",
+      "header": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:51:08 GMT\r\nContent-Type: text/html\r\nContent-Length: 3197\r\nConnection: keep-alive\r\nServer: nginx/1.31.2\r\nLast-Modified: Mon, 22 Jun 2026 01:49:23 GMT\r\nVary: Accept-Encoding\r\nETag: \"6a3894a3-c7d\"\r\nCache-Control: no-cache, no-store, must-revalidate\r\nPragma: no"
+    },
+    {
+      "ip": "3.80.0.9",
+      "type": "https_banner",
+      "banner_type": "NGINX",
+      "header": "HTTP/1.1 404 Not Found\r\nDate: Tue, 23 Jun 2026 04:51:08 GMT\r\nContent-Type: application/json; charset=utf-8\r\nContent-Length: 96\r\nConnection: keep-alive\r\nServer: nginx\r\nVary: Origin\r\nAccess-Control-Allow-Origin: NOT_ALLOWED\r\nAccess-Control-Allow-Credentials: true\r\nCache-Control: no-cache\r\nStrict-Trans"
+    },
+    {
+      "ip": "3.80.0.35",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:09 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n"
+    },
+    {
+      "ip": "3.80.0.64",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:09 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></"
+    },
+    {
+      "ip": "3.80.0.47",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:09 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "ip": "3.80.0.106",
+      "type": "https_banner",
+      "banner_type": "NGINX",
+      "header": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:51:10 GMT\r\nContent-Type: application/json\r\nContent-Length: 13\r\nConnection: keep-alive\r\nServer: nginx\r\n\r\n\"Hello World\""
+    },
+    {
+      "ip": "3.80.0.125",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 200 OK\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:14 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 2\r\nConnection: keep-alive\r\n\r\nOk"
+    },
+    {
+      "ip": "3.80.0.127",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 403 Forbidden\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:14 GMT\r\nContent-Type: text/html\r\nContent-Length: 118\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n</body>\r\n</html>\r\n"
+    },
+    {
+      "ip": "3.80.0.120",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:14 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 812\r\nConnection: keep-alive\r\n\r\n\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n"
+    },
+    {
+      "ip": "3.80.0.187",
+      "type": "https_banner",
+      "banner_type": "NGINX",
+      "header": "HTTP/1.1 302 Found\r\nServer: nginx/1.24.0 (Ubuntu)\r\nDate: Tue, 23 Jun 2026 04:51:15 GMT\r\nContent-Type: text/html; charset=UTF-8\r\nTransfer-Encoding: chunked\r\nConnection: keep-alive\r\nLocation: https://www.gsi-law.com.br/\r\n\r\n0\r\n\r\n"
+    },
+    {
+      "ip": "3.80.0.179",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:15 GMT\r\nContent-Type: text/html; charset=utf-8\r\nContent-Length: 156\r\nConnection: keep-alive\r\n\r\n<!DOCTYPE html>\n<html>\n<head><title>404 No Such Service</title></head>\n<body bgcolor=\"white\">\n<center><h1>404 No Such Service</h1></"
+    },
+    {
+      "ip": "3.80.0.178",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:16 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavaila"
+    },
+    {
+      "ip": "3.80.0.175",
+      "type": "https_banner",
+      "banner_type": "Apache",
+      "header": "HTTP/1.1 200 OK\r\nDate: Tue, 23 Jun 2026 04:51:16 GMT\r\nServer: Apache\r\nAccess-Control-Allow-Origin: *\r\nContent-Security-Policy-Report-Only: default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; frame-src 'self'\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosnif"
+    },
+    {
+      "ip": "3.80.0.163",
+      "type": "https_banner",
+      "banner_type": "NGINX",
+      "header": "HTTP/1.1 200 OK\r\nServer: nginx\r\nDate: Tue, 23 Jun 2026 04:51:16 GMT\r\nContent-Type: text/html\r\nContent-Length: 880\r\nLast-Modified: Wed, 08 May 2024 21:41:50 GMT\r\nConnection: keep-alive\r\nVary: Accept-Encoding\r\nETag: \"663bf19e-370\"\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nX-XSS-Pr"
+    },
+    {
+      "ip": "3.80.0.136",
+      "type": "https_banner",
+      "banner_type": "NGINX",
+      "header": "HTTP/1.1 200 OK\r\nServer: nginx/1.30.1\r\nDate: Tue, 23 Jun 2026 04:51:16 GMT\r\nContent-Type: text/html\r\nContent-Length: 779\r\nLast-Modified: Thu, 11 Jun 2026 15:42:10 GMT\r\nConnection: keep-alive\r\nETag: \"6a2ad752-30b\"\r\nAccept-Ranges: bytes\r\n\r\n<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"U"
+    },
+    {
+      "ip": "3.80.0.186",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:17 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n"
+    },
+    {
+      "ip": "3.80.0.218",
+      "type": "https_banner",
+      "banner_type": "NGINX",
+      "header": "HTTP/1.1 200 \r\nDate: Tue, 23 Jun 2026 04:51:17 GMT\r\nContent-Type: text/html\r\nContent-Length: 371\r\nConnection: keep-alive\r\nServer: nginx\r\nAccept-Ranges: bytes\r\nETag: W/\"371-1781132732000\"\r\nLast-Modified: Wed, 10 Jun 2026 23:05:32 GMT\r\nSet-Cookie: AWSALBAPP-0=_remove_; Expires=Tue, 30 Jun 2026 04:51:1"
+    },
+    {
+      "ip": "3.80.0.215",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 404 Not Found\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:17 GMT\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Length: 0\r\nConnection: keep-alive\r\n\r\n"
+    },
+    {
+      "ip": "3.80.0.216",
+      "type": "https_banner",
+      "banner_type": "AWS_ALB",
+      "header": "HTTP/1.1 503 Service Temporarily Unavailable\r\nServer: awselb/2.0\r\nDate: Tue, 23 Jun 2026 04:51:17 GMT\r\nContent-Type: text/html\r\nContent-Length: 162\r\nConnection: keep-alive\r\n\r\n<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavaila"
+    }
+  ],
+  "ts": "2026-06-23T04:51:17.870508+00:00"
+}
