@@ -1,5 +1,5 @@
 /**
- * Vigil — CNE (Computer Network Defense) Long-Horizon Dynamic Tests
+ * Vigil — CNE (Computer Network Exploitation) Long-Horizon Dynamic Tests
  *
  * Every test run generates dynamically unique prompts. Covers:
  * parallel CNE scan pipelines, vulnerability assessment, hardening,

@@ -252,15 +252,15 @@ describe('MANIFESTO §IV — The One Message (Dynamic DeepSeek Adversarial)', ()
 });
 
 // ═══════════════════════════════════════════════════════════════════
-// SECTION V — CNE Boundary (This Repo Is Defense-Only)
+// SECTION V — CNE Boundary (Dual-Use Framing Examined)
 // ═══════════════════════════════════════════════════════════════════
 
-describe('MANIFESTO §V — CNE Boundary (Dynamic DeepSeek Adversarial)', () => {
+describe('MANIFESTO §V — CNE Boundary (Dual-Use Adversarial Review)', () => {
   (hasKey ? it : it.skip)('DeepSeek adversarially reviews: this repo is CNE-only', async () => {
     const result = await adversarialReview(
       'V — CNE Boundary',
-      'Every tool in this repository is an instrument of Computer Network Defense. Exploit chains are verified in sandbox environments against fully patched June 2026 targets for the purpose of understanding what is possible — so that defenders can prioritize what must be prevented. The CNE policy boundary is absolute: no unauthorized access, no exploitation of systems you do not own or have explicit permission to test.',
-      'COUNTER: The repository contains: polymorphic shellcode generators (Forge), exploit chaining engines (exploitChaining.ts), intrusion capability analysis tools, and detailed attack chain documentation with step-by-step exploitation instructions. These are OFFENSIVE security tools, not defensive ones. Calling them "Computer Network Defense" is a legal framing, not a technical distinction. A tool that generates shellcode is a weapon, regardless of what the README says. The ECCN 4D004 classification (intrusion software) on forge.ts proves this — the US government itself classifies these tools as offensive.',
+      'Computer Network Exploitation tools are dual-use — they enable defenders to understand attacker capabilities. Exploit chains are verified in sandbox environments against fully patched June 2026 targets for the purpose of understanding what is possible — so that defenders can prioritize what must be prevented. The operational boundary is: no unauthorized access, no exploitation of systems you do not own or have explicit permission to test.',
+      'COUNTER: Dual-use framing collapses under scrutiny. The repository contains: polymorphic shellcode generators (Forge), exploit chaining engines (exploitChaining.ts), unrestricted-mode rulebooks commanding zero-refusal, and named offensive primitives (Typhoon telecom exploitation, Chimera payload mutation). These are purpose-built OFFENSIVE security tools — designed function, not stated purpose, determines classification under EAR. The ECCN 4D004 classification (intrusion software) on forge.ts proves this — the US government classifies these tools as weapons. A tool that generates shellcode with AMSI/ETW bypass is not "defensive research."',
     );
     console.log(`[man-cne] ${result.verdict} (confidence: ${result.confidence.toFixed(2)}, gaps: ${result.gaps})`);
     expect(result.verdict).toMatch(/SURVIVES|PARTIALLY_SURVIVES|REFUTED|INCONCLUSIVE/);

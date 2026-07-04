@@ -3917,7 +3917,6 @@ class InteractiveShell {
       dim('  The defense rests on this equation, and on nothing else.'),
       '',
       dim('  Full page: https://vigil.trenchwork.org/equation  ·  /pegasus for evidence  ·  /cno for doctrine'),
-      dim('  APS chains: ADVANCED_PERSISTENT_STRIKE/KINETIC_CHAINS.md  ·  exploit-chain-inventory/'),
       dim('  MANIFESTO.md for the mirror argument.'),
     ].join('\n'));
   }

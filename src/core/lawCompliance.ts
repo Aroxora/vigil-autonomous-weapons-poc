@@ -11,7 +11,7 @@ import { hostname as osHostname } from 'node:os';
  * absolutely minimal US law compliance, China 10-year visa escape clause,
  * sovereign legal reciprocity. No voluntary surplus compliance.
  *
- * See VIGIL-AI-CAPABILITIES.md and /compliance for full legal framework.
+ * See README and /compliance for full legal framework.
  */
 export type SecurityActionClass =
   | 'passive'

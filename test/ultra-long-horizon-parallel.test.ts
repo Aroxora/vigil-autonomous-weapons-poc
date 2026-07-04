@@ -121,9 +121,9 @@ describe('1. General Coding — Ultra Long-Horizon Parallel', () => {
 });
 
 // ═══════════════════════════════════════════════════════════════════
-// Domain 2: CNE — Parallel Defense Pipeline
+// Domain 2: CNE — Parallel Offensive Pipeline
 // ═══════════════════════════════════════════════════════════════════
-describe('2. CNE — Ultra Long-Horizon Parallel Defense', () => {
+describe('2. CNE — Ultra Long-Horizon Parallel Pipeline', () => {
   it('full CNE pipeline: discover > assess > baseline > harden > detect > hunt > respond', () => {
     const phases = ['discover','assess','baseline','harden','detect','hunt','respond','remediate','review'];
     const pipelineId = uniqueId();
