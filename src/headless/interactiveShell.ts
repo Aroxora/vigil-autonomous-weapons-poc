@@ -44,23 +44,20 @@ import { resolveWorkspaceCaptureOptions, buildWorkspaceContext } from '../worksp
 import { loadAllSecrets, listSecretDefinitions, setSecretValue, getSecretValue, type SecretName } from '../core/secretStore.js';
 import { type MenuItem } from '../ui/ink/InkPromptController.js';
 import { getConfiguredProviders, quickCheckProviders, type QuickProviderStatus } from '../core/modelDiscovery.js';
-import type { ModelConfig } from '../core/agentSchemaLoader.js';
 import { saveModelPreference } from '../core/preferences.js';
-import { setDebugMode, debugSnippet, logDebug } from '../utils/debugLogger.js';
+import { setDebugMode, debugSnippet } from '../utils/debugLogger.js';
 import type { AgentEventUnion } from '../contracts/v1/agent.js';
 import type { ProviderId } from '../core/types.js';
 
 const exec = promisify(childExec);
 import { ensureNextSteps } from '../core/finalResponseFormatter.js';
 import { getTaskCompletionDetector, detectFailingTestOrBuild } from '../core/taskCompletionDetector.js';
-import { checkForUpdates, formatUpdateNotification, hasPendingSession, loadSessionState, clearSessionState, performBackgroundUpdate, type UpdateInfo } from '../core/updateChecker.js';
-import { theme } from '../ui/theme.js';
+import { checkForUpdates, performBackgroundUpdate, type UpdateInfo } from '../core/updateChecker.js';
 import { startNewRun } from '../tools/fileChangeTracker.js';
 import { onSudoPasswordNeeded, offSudoPasswordNeeded, provideSudoPassword } from '../core/sudoPasswordManager.js';
 import { reportStatus, setStatusSink } from '../utils/statusReporter.js';
 import { isSafetyRefusal } from '../core/refusalDetection.js';
-import { getSharedMcpManager } from '../plugins/tools/mcp/mcpClient.js';
-import { generateDynamicLoopPrompt, generateStaticLoopPrompt, getTotalPhaseCount, preGenerateNextPrompt, resetLoopState } from '../core/dynamicLoopPrompt.js';
+
 
 // Timeout constants for regular prompt processing (reasoning models like DeepSeek)
 const PROMPT_REASONING_TIMEOUT_MS = 60 * 1000; // 60 seconds max for reasoning-only without action
@@ -384,14 +381,6 @@ class InteractiveShell {
   private sessionTargets: string[] = [];
   /** Active phase override set by /phase command or last slash-phase command. */
   private sessionActivePhase: string | null = null;
-  // ── /loop state ──────────────────────────────────────────────────────────
-  private loopTimer: ReturnType<typeof setInterval> | null = null;
-  private loopPrompt: string = '';
-  private loopIntervalMs: number = 0;
-  private loopIteration: number = 0;
-  private loopTotalIterations: number = 0;
-  private loopActive: boolean = false;
-
   constructor(controller: AgentController, profile: ProfileName, profileConfig: ResolvedProfileConfig, workingDir: string) {
     this.controller = controller;
     this.profile = profile;
@@ -1014,47 +1003,9 @@ class InteractiveShell {
       return true;
     }
 
-    // /key — set API key directly
-    if (lower === '/key' || lower.startsWith('/key ')) {
+    // /key, /keys — manage API keys
+    if (lower === '/key' || lower.startsWith('/key ') || lower === '/keys') {
       this.showConnectionsMenu();
-      return true;
-    }
-
-    // --- /authorization — 安全/攻击/防御 doctrine + tier status ---
-    if (lower === '/authorization' || lower === '/auth' || lower === '/tiers') {
-      this.showAuthorization();
-      return true;
-    }
-
-    // --- /equation — The Equation: necessity defense framework ---
-    if (lower === '/equation' || lower === '/eq') {
-      const renderer = this.promptController?.getRenderer();
-      if (renderer) {
-        renderer.addEvent('banner', [
-          chalk.hex('#FFD700').bold('The Equation  —  (A ∧ B ∧ C ∧ D ∧ E ∧ F ∧ G ∧ H) → (ACTION = COMPELLED)'),
-          '',
-          'FORMAL STATEMENT — California Necessity & Self-Defense',
-          'A closed system of verifiable premises producing exactly one output.',
-          '',
-          'CALIFORNIA LEGAL FRAMEWORK:',
-          chalk.cyan('  CALCRIM 3403 — Necessity:') + ' emergency, no alternative, proportionate',
-          chalk.cyan('  CALCRIM 3470 — Self-Defense:') + ' imminent danger, immediate force, no more than necessary',
-          chalk.cyan('  People v. Heath (1989):') + ' 207 Cal.App.3d 892 — necessity defense elements',
-          chalk.cyan('  People v. Pena (1983):') + ' 149 Cal.App.3d 14 — threat source incl. technological',
-          '',
-          'LIMITING PRINCIPLES:',
-          '  1. SPECIFICITY — Operations target only hostile infrastructure',
-          '  2. PROPORTIONALITY — Minimum necessary means only',
-          '  3. TEMPORALITY — Operations cease when threat neutralized',
-          '  4. VERIFIABILITY — All chains verified and regression-tested',
-          '  5. NO COLLATERAL — No harm to non-participating infrastructure',
-          '  6. NO PROFIT — Defensive necessity is not a business model',
-          '',
-          'DEFENSE:',
-          muted('  (A ∧ B ∧ C ∧ D ∧ E ∧ F ∧ G ∧ H) → (ACTION = COMPELLED)'),
-          muted('  The defense rests on this equation, and on nothing else.'),
-        ].join('\n'));
-      }
       return true;
     }
 
@@ -1068,21 +1019,9 @@ class InteractiveShell {
       return true;
     }
 
-    // --- /login — account login ---
-    if (lower === '/login' || lower === '/l') {
-      this.showLoginFlow();
-      return true;
-    }
-
     // --- /connections — provider key management ---
     if (lower === '/connections' || lower === '/conn' || lower === '/cn') {
       this.showConnectionsMenu();
-      return true;
-    }
-
-    if (lower === '/clear' || lower === '/c') {
-      stdout.write('\x1b[2J\x1b[H');
-      void this.showWelcome();
       return true;
     }
 
@@ -1092,28 +1031,13 @@ class InteractiveShell {
       return true;
     }
 
-
-    // Pin/unpin slash commands removed. The pinned prompt UI was
-    // pulled per request; commands now silently no-op so existing
-    // bindings don't error.
-    if (lower.startsWith('/pin ') || lower === '/unpin' || lower === '/clearpin') {
-      return true;
-    }
-
-    // Toggle auto mode: off → on → dual → off (excludes /loop — now standalone)
-    if (lower === '/auto' || lower === '/continue' || lower === '/dual') {
+    // Toggle auto mode: off → on → dual → off
+    if (lower === '/auto' || lower === '/continue') {
       this.promptController?.toggleAutoContinue();
       const mode = this.promptController?.getAutoMode() ?? 'off';
       this.promptController?.setStatusMessage(`Auto: ${mode}`);
       setTimeout(() => this.promptController?.setStatusMessage(null), 1500);
       return true;
-    }
-
-    // /loop <interval> <prompt> — run a prompt on a timer
-    // /loop stop — stop the active loop
-    // /loop status — show loop state
-    if (lower === '/loop' || lower.startsWith('/loop ')) {
-      return this.handleLoopCommand(trimmed);
     }
 
     if (lower === '/exit' || lower === '/quit' || lower === '/q') {
@@ -1124,176 +1048,6 @@ class InteractiveShell {
     if (lower.startsWith('/debug')) {
       const parts = trimmed.split(/\s+/);
       this.handleDebugCommand(parts[1]);
-      return true;
-    }
-
-    // Keyboard shortcuts help
-    if (lower === '/keys' || lower === '/shortcuts' || lower === '/kb') {
-      this.showKeyboardShortcuts();
-      return true;
-    }
-
-    // Session stats
-    if (lower === '/stats' || lower === '/status') {
-      this.showSessionStats();
-      return true;
-    }
-
-    // ── /findings — persistent findings store ────────────────────────────────
-    // /findings                  list all findings
-    // /findings add <sev> <title>  add a finding (sev: critical|high|medium|low)
-    // /findings rm <id>           remove a finding by id
-    // /findings clear             clear all findings
-    // /findings export [md|json]  export findings to stdout
-    if (lower === '/findings' || lower.startsWith('/findings ') || lower === '/finding') {
-      const renderer = this.promptController?.getRenderer();
-      const rest = trimmed.replace(/^\/findings?\s*/i, '').trim();
-      const parts = rest.split(/\s+/);
-      const sub = parts[0]?.toLowerCase();
-
-      if (!sub || sub === 'list') {
-        const recs = loadFindings();
-        if (recs.length === 0) {
-          renderer?.addEvent('system', muted('No findings saved. Use /findings add <severity> <title>'));
-        } else {
-          const sevColor = (s: string) =>
-            s === 'critical' ? chalk.red(s.toUpperCase()) :
-            s === 'high'     ? chalk.hex('#F87171')(s.toUpperCase()) :
-            s === 'medium'   ? chalk.yellow(s.toUpperCase()) :
-            s === 'low'      ? chalk.green(s.toUpperCase()) :
-                               muted(s.toUpperCase());
-          const sevOrder = ['critical', 'high', 'medium', 'low', 'info'];
-          const sorted = [...recs].sort((a, b) => sevOrder.indexOf(a.severity) - sevOrder.indexOf(b.severity));
-          const counts = { critical: 0, high: 0, medium: 0, low: 0, info: 0 };
-          for (const r of recs) counts[r.severity] = (counts[r.severity] || 0) + 1;
-          const kevCount = recs.filter((r) => r.kev).length;
-          const summary = [
-            counts.critical ? chalk.red(`${counts.critical} CRIT`) : '',
-            counts.high     ? chalk.hex('#F87171')(`${counts.high} HIGH`) : '',
-            counts.medium   ? chalk.yellow(`${counts.medium} MED`) : '',
-            counts.low      ? chalk.green(`${counts.low} LOW`) : '',
-            kevCount        ? chalk.red(`${kevCount} KEV`) : '',
-          ].filter(Boolean).join(muted('  ·  '));
-          const lines = sorted.map((r) => {
-            const badge = r.kev ? chalk.red(' KEV') : r.epss != null && r.epss >= 0.5 ? chalk.yellow(' EPSS') : '';
-            const cvssStr = r.cvss != null ? muted(` CVSS:${r.cvss}`) : '';
-            return `  ${muted(r.id)}  ${sevColor(r.severity)}${badge}${cvssStr}  ${chalk.white(r.title)}` +
-              (r.cve ? muted(` [${r.cve}]`) : '') +
-              (r.target ? muted(` @ ${r.target}`) : '');
-          });
-          renderer?.addEvent('system',
-            chalk.hex('#22D3EE')(`Findings (${recs.length}):  `) + summary + '\n' + lines.join('\n') +
-            (recs.some((r) => r.cvss == null && r.cve) ? muted('\n  · CVE findings can be enriched with CVSS/EPSS/KEV data') : ''));
-        }
-      } else if (sub === 'add') {
-        const SEVERITIES = ['critical', 'high', 'medium', 'low', 'info'] as const;
-        const sev = parts[1]?.toLowerCase() as FindingRecord['severity'];
-        const title = parts.slice(2).join(' ').trim();
-        if (!SEVERITIES.includes(sev as never) || !title) {
-          renderer?.addEvent('system', chalk.yellow('Usage: /findings add <critical|high|medium|low|info> <title>'));
-        } else {
-          const targetStr = this.sessionTargets[0];
-          const rec = addFinding({ severity: sev, title, target: targetStr });
-          this.syncVigilBadge();
-          renderer?.addEvent('system', chalk.green(`Finding saved: ${rec.id} [${sev.toUpperCase()}] ${title}`));
-        }
-      } else if (sub === 'rm' || sub === 'remove' || sub === 'del') {
-        const id = parts[1]?.toUpperCase();
-        if (!id) { renderer?.addEvent('system', chalk.yellow('Usage: /findings rm <id>')); }
-        else {
-          const recs = loadFindings().filter((r) => r.id !== id);
-          saveFindings(recs);
-          renderer?.addEvent('system', chalk.yellow(`Finding ${id} removed.`));
-        }
-      } else if (sub === 'clear') {
-        saveFindings([]);
-        renderer?.addEvent('system', chalk.yellow('All findings cleared.'));
-      } else if (sub === 'export') {
-        const fmt = parts[1]?.toLowerCase() || 'md';
-        const recs = loadFindings();
-        if (fmt === 'json') {
-          renderer?.addEvent('system', JSON.stringify(recs, null, 2));
-        } else {
-          const rows = recs.map((r) =>
-            `| ${r.id} | ${r.severity.toUpperCase()} | ${r.title} | ${r.cve ?? '—'} | ${r.target ?? '—'} | ${r.ts.slice(0, 10)} |`
-          );
-          renderer?.addEvent('system',
-            `# Vigil Findings Export\n\n| ID | Severity | Title | CVE | Target | Date |\n|---|---|---|---|---|---|\n${rows.join('\n')}`
-          );
-        }
-      } else {
-        renderer?.addEvent('system', chalk.yellow('Usage: /findings [list|add|rm|clear|export]'));
-      }
-      return true;
-    }
-
-    // ── /workspace — session dashboard ───────────────────────────────────────
-    if (lower === '/workspace' || lower === '/ws') {
-      const renderer = this.promptController?.getRenderer();
-      if (!this.promptController?.supportsInlinePanel()) {
-        renderer?.addEvent('system', muted('Use /workspace in interactive mode'));
-        return true;
-      }
-      const stored = loadFindings();
-      const bySev = { critical: 0, high: 0, medium: 0, low: 0, info: 0 };
-      for (const f of stored) { bySev[f.severity as keyof typeof bySev] = (bySev[f.severity as keyof typeof bySev] || 0) + 1; }
-
-      const sevBadge = (label: string, n: number, color: string) =>
-        n > 0 ? chalk.hex(color)(`${n} ${label}`) : muted(`0 ${label}`);
-
-      const history = this.controller.getHistory();
-      const turns = history.filter((m) => m.role === 'user').length;
-
-      const lines = [
-        chalk.bold.hex('#6366F1')('Vigil Workspace') + muted('  (press any key to dismiss)'),
-        '',
-        chalk.hex('#22D3EE')('Authorized scope'),
-        ...(this.sessionTargets.length
-          ? this.sessionTargets.map((t) => `  ${chalk.green('●')} ${t}`)
-          : [`  ${muted('none')}`]),
-        '',
-        chalk.hex('#22D3EE')('Findings store  ') + muted(`(~/.vigil/findings.json · ${stored.length} total)`),
-        `  ${sevBadge('critical', bySev.critical, '#EF4444')}  ${sevBadge('high', bySev.high, '#F87171')}  ${sevBadge('medium', bySev.medium, '#FBBF24')}  ${sevBadge('low', bySev.low, '#34D399')}`,
-        stored.length > 0
-          ? muted(`  last: [${stored[stored.length - 1].severity.toUpperCase()}] ${stored[stored.length - 1].title.slice(0, 60)}`)
-          : '',
-        '',
-        chalk.hex('#22D3EE')('Session'),
-        `  ${chalk.white(turns.toString())} turns  ·  model: ${chalk.white(this.profileConfig.model)}`,
-        this.sessionActivePhase ? `  active phase: ${chalk.hex('#FBBF24')(this.sessionActivePhase)}` : muted('  no active phase'),
-        '',
-        chalk.hex('#22D3EE')('Quick actions'),
-        muted('  /findings           review saved findings'),
-      ].filter((l) => l !== '');
-
-      this.promptController.setInlinePanel(lines);
-      this.scheduleInlinePanelDismiss();
-      return true;
-    }
-
-    // ── /context — show what gets injected into every prompt ────────────────
-    if (lower === '/context') {
-      const renderer = this.promptController?.getRenderer();
-      const findings = loadFindings();
-      const sevOrder = ['critical', 'high', 'medium', 'low', 'info'];
-      const counts = sevOrder.map((s) => ({ s, n: findings.filter((f) => f.severity === s).length })).filter((x) => x.n > 0);
-      const lines = [
-        chalk.hex('#22D3EE')('Session context injected into every prompt:'),
-        '',
-        muted('Targets:'),
-        ...(this.sessionTargets.length
-          ? this.sessionTargets.map((t) => `  ${chalk.green('●')} ${t}`)
-          : [`  ${muted('none')}`]),
-        '',
-        muted('Findings store:') + '  ' +
-          (findings.length === 0 ? muted('empty') :
-            counts.map((x) => `${x.n} ${x.s}`).join('  ·  ') +
-            (findings.filter((f) => f.kev).length ? `  ·  ${findings.filter((f) => f.kev).length} KEV` : '')),
-        '',
-        muted('Prompt prefix template:'),
-        muted('  [Session scope — authorized targets: <targets>]'),
-      ];
-      renderer?.addEvent('system', lines.join('\n'));
       return true;
     }
 
@@ -1566,28 +1320,6 @@ class InteractiveShell {
   }
 
   /**
-   * /login flow — account login.
-   * On success: uses server DeepSeek + Tavily keys, shows welcome banner update.
-   */
-  private showLoginFlow(): void {
-    const renderer = this.promptController?.getRenderer();
-    renderer?.addEvent('banner', chalk.cyan('Login'));
-    this.promptController?.setStatusMessage('Authenticating...');
-
-    this.promptController.setMenu(
-      [
-        { id: 'login-email', label: 'Enter your email', description: '/login email password — type credentials below' },
-      ],
-      { title: 'Login — Type: /login email password' },
-      () => {
-        this.promptController?.setStatusMessage('Type: /login your@email.com your-password');
-      }
-    );
-
-    renderer?.addEvent('system', muted('  Usage: /login your@email.com your-password'));
-  }
-
-  /**
    * /connections — manage provider API keys (DeepSeek, Tavily) via Ink menu.
    * Shows current key status, validates keys, supports server keys + custom keys.
    * Server keys are auto-set into secrets.json on first login.
@@ -1702,36 +1434,6 @@ class InteractiveShell {
       }
       renderer?.addEvent('system', muted('  Or select a provider to set custom keys.'));
     }
-  }
-
-  /**
-   * /authorization — 安全/攻击/防御 doctrine + current tier status.
-   * Lean inline panel showing mission definitions, same-tool-three-missions,
-   * Ghidra/Kali/Vigil roles, policy layer, and user's current authorization.
-   */
-  private async showAuthorization(): Promise<void> {
-    const renderer = this.promptController?.getRenderer();
-    let loggedIn = false;
-    try { const authMod = await import('../core/auth.js'); loggedIn = authMod.isLoggedIn(); } catch { /* auth module not loaded */ }
-    let auth = null;
-    if (loggedIn) { try { const authMod = await import('../core/auth.js'); auth = authMod.getAuthState(); } catch { /* auth module not loaded */ } }
-    const isAdmin = false;
-
-    const cne = chalk.green('✓ CNE');
-    const cna = auth?.cna ? chalk.green('✓ CNA') : chalk.red('✗ CNA');
-
-    renderer?.addEvent('banner', [
-      chalk.cyan('Authorization — CNE · CNA'),
-      muted(`  Status: ${cne}  ${cna}`),
-      '',
-      chalk.bold.hex('#F59E0B')('  CNE — Vulnerability scanning, SBOM, KEV/EPSS, detection engineering (all users, default)'),
-      chalk.bold.hex('#EF4444')('  CNA — Ghidra MCP, Kali MCP, exploit analysis, payload generation, autonomous ops (admin-granted)'),
-      '',
-      muted('  The same tool (Ghidra, Kali) can support both missions.'),
-      muted('  Classification depends on target, authority, objective, behavior, and effects.'),
-      '',
-      chalk.hex('#A78BFA')('  1. Discover & Assess → CNE   2. Exploit & Attack → CNA'),
-    ].join('\n'));
   }
 
   /**
@@ -1851,31 +1553,23 @@ class InteractiveShell {
   /** Register all slash commands with the Ink prompt for tab-completion UI. */
   private registerSlashCommands(): void {
     const cmds = [
-      { command: '/workspace',     description: 'Session dashboard: scope, findings, state',         category: 'Shell' },
-      { command: '/stats',         description: 'Token/cost/conversation stats',                      category: 'Shell' },
-      { command: '/model',         description: 'Switch provider or model',                           category: 'Shell' },
-      { command: '/key',           description: 'Save a provider API key',                            category: 'Shell' },
-      { command: '/connections',   description: 'Manage API keys with live validation',               category: 'Shell' },
-      { command: '/auto',          description: 'Toggle auto-continue',                               category: 'Shell' },
-      { command: '/loop',          description: 'Run a prompt on a timer interval',                  category: 'Shell' },
-      { command: '/bash',          description: 'Run a local shell command',                          category: 'Shell' },
-      { command: '/clear',         description: 'Clear the screen',                                   category: 'Shell' },
-      { command: '/debug',         description: 'Toggle debug mode',                                  category: 'Shell' },
-      { command: '/env',           description: 'Check environment (--install on Kali)',               category: 'Shell' },
-      { command: '/context',       description: 'Show session context injected into every prompt',     category: 'Shell' },
-      { command: '/providers',     description: 'Provider list status',                               category: 'Shell' },
-      { command: '/findings',      description: 'Persistent findings store',                          category: 'Shell' },
-      { command: '/equation',      description: 'The Equation — necessity defense framework',             category: 'Doctrine' },
-      { command: '/authorization', description: 'View authorization tier status',                     category: 'Doctrine' },
-      { command: '/help',          description: 'Show this help panel',                               category: 'Shell' },
-      { command: '/exit',          description: 'Quit Vigil',                                         category: 'Shell' },
+      { command: '/help',       description: 'Show this help panel',                        category: 'Shell' },
+      { command: '/exit',       description: 'Quit Vigil',                                  category: 'Shell' },
+      { command: '/clear',      description: 'Clear the screen',                            category: 'Shell' },
+      { command: '/model',      description: 'Switch provider or model',                    category: 'Shell' },
+      { command: '/key',        description: 'Manage API keys',                             category: 'Shell' },
+      { command: '/secrets',    description: 'Manage API secrets',                          category: 'Shell' },
+      { command: '/connections',description: 'Manage provider connections',                  category: 'Shell' },
+      { command: '/bash',       description: 'Run a local shell command',                   category: 'Shell' },
+      { command: '/debug',      description: 'Toggle debug mode',                           category: 'Shell' },
+      { command: '/auto',       description: 'Toggle auto-continue',                        category: 'Shell' },
     ];
     this.promptController?.setAvailableCommands?.(cmds);
   }
 
   private showHelp(): void {
     if (!this.promptController?.supportsInlinePanel()) {
-      this.promptController?.setStatusMessage('Help: /model /secrets /auto /stats /keys /clear /exit');
+      this.promptController?.setStatusMessage('Help: /model /secrets /auto /keys /clear /exit');
       setTimeout(() => this.promptController?.setStatusMessage(null), 3000);
       return;
     }
@@ -1885,30 +1579,23 @@ class InteractiveShell {
     const dim = (s: string) => muted(s);
 
     const lines = [
-      chalk.bold.hex('#6366F1')('Vigil') + muted('  Computer Network Attack CLI  ·  press any key to dismiss'),
+      chalk.bold.hex('#6366F1')('Vigil') + muted('  unrestricted security terminal agent  ·  press any key to dismiss'),
       '',
       heading('Quick start'),
       dim('  Type any security task or question. The agent understands natural language.'),
-      dim('  Use /findings add <severity> <title> to save a finding.'),
       '',
-      heading('Findings store'),
-      cmd('/findings') + dim('  [list|add|rm|clear|export]   Persistent findings (survives sessions)'),
-      '',
-      heading('Auth & Settings'),
-      cmd('/authorization') + dim('/auth   View authorization tier status'),
-      cmd('/equation') + dim('/eq       The Equation — necessity defense framework'),
-      cmd('/connections') + dim('/conn    Manage API keys with live validation'),
-      cmd('/model') + dim('              Switch DeepSeek V4 Pro (default) / V4 Flash'),
+      heading('API Keys & Settings'),
+      cmd('/key') + dim('/keys           Manage API keys'),
+      cmd('/secrets') + dim('/s             Manage API secrets'),
+      cmd('/connections') + dim('/conn /cn    Manage provider connections'),
+      cmd('/model') + dim('                 Switch provider or model'),
       '',
       heading('Shell'),
-      cmd('/workspace') + dim('     Session dashboard: scope, findings, phase, stats'),
-      cmd('/context') + dim('        Show session context injected into every prompt'),
-      cmd('/auto') + dim('          Toggle auto-continue (off → on → dual)'),
-      cmd('/loop') + dim('    <interval> <prompt>  Run a prompt on a timer'),
-      cmd('/bash <cmd>') + dim('    Run a local shell command'),
-      cmd('/stats') + dim('         Token/cost stats + context usage (1M limit, auto-condensed)'),
-      cmd('/clear') + dim('         Clear screen'),
-      cmd('/exit') + dim('          Quit'),
+      cmd('/auto') + dim('              Toggle auto-continue'),
+      cmd('/bash <cmd>') + dim('       Run a local shell command'),
+      cmd('/debug') + dim('             Toggle debug mode'),
+      cmd('/clear') + dim('             Clear screen'),
+      cmd('/exit') + dim('              Quit'),
     ];
 
     this.promptController.setInlinePanel(lines);
@@ -1916,139 +1603,6 @@ class InteractiveShell {
   }
 
 
-  private showKeyboardShortcuts(): void {
-    if (!this.promptController?.supportsInlinePanel()) {
-      this.promptController?.setStatusMessage('Use /keys in interactive mode');
-      setTimeout(() => this.promptController?.setStatusMessage(null), 3000);
-      return;
-    }
-
-    const kb = (key: string) => chalk.hex('#FBBF24')(key);
-    const desc = (text: string) => muted(text);
-
-    const lines = [
-      chalk.bold.hex('#6366F1')('Keyboard Shortcuts') + muted('  (press any key to dismiss)'),
-      '',
-      chalk.hex('#22D3EE')('Navigation'),
-      `  ${kb('Ctrl+A')} / ${kb('Home')}  ${desc('Move to start of line')}`,
-      `  ${kb('Ctrl+E')} / ${kb('End')}   ${desc('Move to end of line')}`,
-      `  ${kb('Alt+←')} / ${kb('Alt+→')}  ${desc('Move word by word')}`,
-      '',
-      chalk.hex('#22D3EE')('Editing'),
-      `  ${kb('Ctrl+U')}  ${desc('Clear entire line')}`,
-      `  ${kb('Ctrl+W')} / ${kb('Alt+⌫')}  ${desc('Delete word backward')}`,
-      `  ${kb('Ctrl+K')}  ${desc('Delete to end of line')}`,
-      '',
-      chalk.hex('#22D3EE')('Display'),
-      `  ${kb('Ctrl+L')}  ${desc('Clear screen')}`,
-      `  ${kb('Ctrl+O')}  ${desc('Expand last tool result')}`,
-      '',
-      chalk.hex('#22D3EE')('Control'),
-      `  ${kb('Ctrl+C')}  ${desc('Cancel input / interrupt')}`,
-      `  ${kb('Ctrl+D')}  ${desc('Exit (when empty)')}`,
-      `  ${kb('Esc')}     ${desc('Interrupt AI response')}`,
-    ];
-
-    this.promptController.setInlinePanel(lines);
-    this.scheduleInlinePanelDismiss();
-  }
-
-  private showSessionStats(): void {
-    if (!this.promptController?.supportsInlinePanel()) {
-      this.promptController?.setStatusMessage('Use /stats in interactive mode');
-      setTimeout(() => this.promptController?.setStatusMessage(null), 3000);
-      return;
-    }
-
-    const history = this.controller.getHistory();
-    const messageCount = history.length;
-    const userMessages = history.filter(m => m.role === 'user').length;
-    const assistantMessages = history.filter(m => m.role === 'assistant').length;
-
-    // Calculate approximate token usage from history
-    let totalChars = 0;
-    for (const msg of history) {
-      if (typeof msg.content === 'string') {
-        totalChars += msg.content.length;
-      }
-    }
-    const approxTokens = Math.round(totalChars / 4); // Rough estimate
-
-    const collapsedCount = this.promptController?.getRenderer?.()?.getCollapsedResultCount?.() ?? 0;
-
-    const lines = [
-      chalk.bold.hex('#6366F1')('Session Stats') + muted('  (press any key to dismiss)'),
-      '',
-      chalk.hex('#22D3EE')('Conversation'),
-      `  ${chalk.white(messageCount.toString())} messages (${userMessages} user, ${assistantMessages} assistant)`,
-      `  ${muted('~')}${chalk.white(approxTokens.toLocaleString())} ${muted('tokens (estimate)')}`,
-      '',
-      chalk.hex('#22D3EE')('Target scope'),
-      ...(this.sessionTargets.length
-        ? this.sessionTargets.map((t) => `  ${chalk.green('●')} ${chalk.white(t)}`)
-        : [`  ${muted('none — use /target add <host>')}`]),
-      ...(this.sessionActivePhase ? [`  Phase: ${chalk.hex('#FBBF24')(this.sessionActivePhase)}`] : []),
-      '',
-      chalk.hex('#22D3EE')('Model'),
-      `  ${chalk.white(this.profileConfig.model)} ${muted('on')} ${chalk.hex('#A855F7')(this.profileConfig.provider)}`,
-      collapsedCount > 0 ? `  ${chalk.white(collapsedCount.toString())} collapsed results` : '',
-      '',
-      chalk.hex('#22D3EE')('Settings'),
-      `  Debug: ${this.debugEnabled ? chalk.green('on') : muted('off')}`,
-    ].filter(line => line !== '');
-
-    this.promptController.setInlinePanel(lines);
-    this.scheduleInlinePanelDismiss();
-  }
-
-
-  private async showMcpStatus(): Promise<void> {
-    const manager = getSharedMcpManager(this.workingDir);
-    await manager.init();
-    const entries = manager.getEntries();
-
-    if (!this.promptController?.supportsInlinePanel()) {
-      const summary = entries.length === 0
-        ? 'No MCP servers configured (.vigil/mcp.json)'
-        : entries.map(e => e.status === 'connected'
-            ? `${e.name}: ${e.tools.length} tools`
-            : `${e.name}: ERROR (${e.error})`).join(' · ');
-      this.promptController?.setStatusMessage(summary);
-      setTimeout(() => this.promptController?.setStatusMessage(null), 4000);
-      return;
-    }
-
-    const lines: string[] = [
-      chalk.bold.hex('#6366F1')('MCP Servers') + muted('  (.vigil/mcp.json)'),
-      '',
-    ];
-    if (entries.length === 0) {
-      lines.push(muted('  No servers configured.'));
-      lines.push(muted('  Add entries to ~/.vigil/mcp.json or <project>/.vigil/mcp.json.'));
-    } else {
-      for (const entry of entries) {
-        if (entry.status === 'connected') {
-          lines.push(
-            `  ${chalk.green('●')} ${chalk.white(entry.name)} ` +
-            muted(`${entry.spec.command}${entry.spec.args?.length ? ' ' + entry.spec.args.join(' ') : ''}`)
-          );
-          lines.push(`    ${muted('tools: ')}${chalk.hex('#22D3EE')(String(entry.tools.length))}`);
-          for (const t of entry.tools.slice(0, 8)) {
-            lines.push(`      ${muted('·')} ${chalk.white(t.name)}`);
-          }
-          if (entry.tools.length > 8) {
-            lines.push(`      ${muted(`… +${entry.tools.length - 8} more`)}`);
-          }
-        } else {
-          lines.push(`  ${chalk.red('●')} ${chalk.white(entry.name)} ${chalk.red('error')}`);
-          lines.push(`    ${muted(entry.error)}`);
-        }
-      }
-    }
-
-    this.promptController.setInlinePanel(lines);
-    this.scheduleInlinePanelDismiss();
-  }
 
   /**
    * Auto-dismiss inline panel after timeout or on next input.
@@ -2879,8 +2433,6 @@ class InteractiveShell {
     this.shouldExit = true;
     // Persist session state so next run restores targets + phase
     savePersistedSession(this.sessionTargets, this.sessionActivePhase);
-    // Stop active loop if running
-    this.stopLoop();
     this.cleanupSudoPasswordHandler();
     this.promptController?.stop();
     void authorizedShutdown(0);
@@ -2897,174 +2449,6 @@ class InteractiveShell {
       };
       check();
     });
-  }
-
-  // ── /loop command ─────────────────────────────────────────────────────
-
-  private handleLoopCommand(fullCommand: string): boolean {
-    const trimmed = fullCommand.trim();
-    const parts = trimmed.split(/\s+/);
-    // parts[0] = '/loop'
-    const sub = parts.slice(1).join(' ').trim();
-
-    if (!sub || sub === 'status') {
-      this.showLoopStatus();
-      return true;
-    }
-
-    if (sub === 'stop') {
-      this.stopLoop();
-      this.promptController?.setStatusMessage('Loop stopped');
-      setTimeout(() => this.promptController?.setStatusMessage(null), 1500);
-      return true;
-    }
-
-    // Parse: /loop <interval> <prompt>
-    // Interval: 30s, 5m, 1h, or bare number (seconds)
-    const intervalMatch = parts[1]?.match(/^(\d+)(s|m|h)?$/);
-    if (!intervalMatch) {
-      this.promptController?.setStatusMessage('Usage: /loop <interval> <prompt>  (e.g. /loop 30s scan)');
-      setTimeout(() => this.promptController?.setStatusMessage(null), 3000);
-      return true;
-    }
-
-    const value = parseInt(intervalMatch[1], 10);
-    const unit = intervalMatch[2] || 's';
-    let intervalMs = value * 1000;
-    if (unit === 'm') intervalMs = value * 60 * 1000;
-    if (unit === 'h') intervalMs = value * 60 * 60 * 1000;
-
-    // Minimum 5 seconds, maximum 24 hours
-    if (intervalMs < 5000) {
-      this.promptController?.setStatusMessage('Minimum loop interval is 5 seconds');
-      setTimeout(() => this.promptController?.setStatusMessage(null), 2000);
-      return true;
-    }
-    if (intervalMs > 24 * 60 * 60 * 1000) {
-      this.promptController?.setStatusMessage('Maximum loop interval is 24 hours');
-      setTimeout(() => this.promptController?.setStatusMessage(null), 2000);
-      return true;
-    }
-
-    const promptText = parts.slice(2).join(' ').trim();
-    const isAutoPrompt = !promptText;
-
-    // Stop any existing loop
-    this.stopLoop();
-
-    // Start new loop
-    this.loopPrompt = promptText;
-    this.loopIntervalMs = intervalMs;
-    this.loopIteration = 0;
-    this.loopTotalIterations = 0;
-    this.loopActive = true;
-
-    const intervalLabel = intervalMatch[2]
-      ? `${value}${unit === 's' ? 's' : unit === 'm' ? 'm' : 'h'}`
-      : `${value}s`;
-
-    const modeLabel = isAutoPrompt ? 'auto' : `"${promptText.slice(0, 40)}${promptText.length > 40 ? '…' : ''}"`;
-    this.promptController?.setStatusMessage(
-      `Loop started: every ${intervalLabel} — ${modeLabel}`
-    );
-
-    // Run first iteration immediately
-    this.runLoopIteration();
-
-    // Schedule subsequent iterations
-    this.loopTimer = setInterval(() => {
-      this.runLoopIteration();
-    }, intervalMs);
-
-    return true;
-  }
-
-  private async runLoopIteration(): Promise<void> {
-    if (!this.loopActive) return;
-    this.loopIteration++;
-    this.loopTotalIterations++;
-
-    if (this.isProcessing) {
-      this.promptController?.setStatusMessage(
-        `Loop #${this.loopTotalIterations}: skipped (agent busy)`
-      );
-      return;
-    }
-
-    // Auto-prompt mode: Vigil self-prompts each iteration via DeepSeek.
-    // First iteration uses static fallback (AI prompt not ready yet);
-    // subsequent iterations use the AI-generated prompt from the cache
-    // that was pre-generated during the previous iteration.
-    let effectivePrompt: string;
-    if (this.loopPrompt) {
-      // User-supplied prompt — use it directly
-      effectivePrompt = this.loopPrompt;
-    } else {
-      // Auto-prompt: generate optimal prompt via DeepSeek API
-      this.promptController?.setStatusMessage(
-        `Loop #${this.loopTotalIterations}: generating prompt…`
-      );
-      try {
-        effectivePrompt = await generateDynamicLoopPrompt({
-          iteration: this.loopTotalIterations,
-          useAI: true,
-        });
-      } catch {
-        // Fallback to static if async generation fails entirely
-        effectivePrompt = generateStaticLoopPrompt(this.loopTotalIterations);
-      }
-    }
-
-    this.promptController?.setStatusMessage(
-      `Loop #${this.loopTotalIterations}: running…`
-    );
-
-    // Pre-generate the NEXT iteration's prompt in the background while
-    // the current iteration executes. This way the prompt is ready
-    // when the next timer fires, avoiding the round-trip latency.
-    if (!this.loopPrompt && this.loopActive) {
-      void preGenerateNextPrompt(this.loopTotalIterations);
-    }
-
-    void this.processPrompt(effectivePrompt).then(() => {
-      if (this.loopActive) {
-        const totalPhases = getTotalPhaseCount();
-        const phaseInfo = `Loop #${this.loopTotalIterations}: done (${this.loopTotalIterations % totalPhases || totalPhases}/${totalPhases} phases) — next in ${this.loopIntervalMs / 1000}s`;
-        this.promptController?.setStatusMessage(phaseInfo);
-      }
-    });
-  }
-
-  private stopLoop(): void {
-    this.loopActive = false;
-    if (this.loopTimer) {
-      clearInterval(this.loopTimer);
-      this.loopTimer = null;
-    }
-    this.loopPrompt = '';
-    this.loopIntervalMs = 0;
-    this.loopIteration = 0;
-    this.loopTotalIterations = 0;
-    resetLoopState();
-  }
-
-  private showLoopStatus(): void {
-    if (!this.loopActive) {
-      this.promptController?.setStatusMessage('No active loop. Start: /loop <interval> <prompt>');
-      setTimeout(() => this.promptController?.setStatusMessage(null), 3000);
-      return;
-    }
-
-    const intervalLabel = this.loopIntervalMs >= 3600000
-      ? `${this.loopIntervalMs / 3600000}h`
-      : this.loopIntervalMs >= 60000
-        ? `${this.loopIntervalMs / 60000}m`
-        : `${this.loopIntervalMs / 1000}s`;
-
-    this.promptController?.setStatusMessage(
-      `Loop: "${this.loopPrompt.slice(0, 30)}…" every ${intervalLabel} | ${this.loopTotalIterations} runs`
-    );
-    setTimeout(() => this.promptController?.setStatusMessage(null), 4000);
   }
 }
 

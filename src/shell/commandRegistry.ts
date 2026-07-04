@@ -26,10 +26,6 @@
  */
 
 import { logDebug } from '../utils/debugLogger.js';
-import { hasChangesToRevert, getRevertSummary, revertAllChanges } from '../tools/fileChangeTracker.js';
-// readStanding/setPermissionMode imports removed alongside the
-// cowork extraction (2026-05). The /mode slash command went with
-// them — it managed cowork's permission state, not the CLI's.
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // Types
@@ -317,100 +313,6 @@ export function createBaseCommands(): CommandDefinition[] {
         shell.showModelMenu?.();
       },
     },
-    {
-      name: '/providers',
-      description: 'Show configured providers',
-      category: 'model',
-      handler: (ctx) => {
-        const shell = ctx.shell as { showConfiguredProviders?: () => void };
-        shell.showConfiguredProviders?.();
-      },
-    },
-
-    // Context
-    {
-      name: '/context',
-      description: 'Refresh workspace context',
-      category: 'context',
-      async: true,
-      handler: async (ctx) => {
-        const shell = ctx.shell as { refreshWorkspaceContextCommand?: (input: string) => Promise<void> };
-        await shell.refreshWorkspaceContextCommand?.(ctx.input);
-      },
-    },
-
-    // Session
-    {
-      name: '/sessions',
-      description: 'Session management',
-      category: 'session',
-      async: true,
-      handler: async (ctx) => {
-        const shell = ctx.shell as { handleSessionCommand?: (input: string) => Promise<void> };
-        await shell.handleSessionCommand?.(ctx.input);
-      },
-    },
-    {
-      name: '/revert',
-      description: 'Revert all file changes made this run',
-      category: 'session',
-      usage: '/revert [confirm]',
-      handler: (ctx) => {
-        const shell = ctx.shell as {
-          workingDir?: string;
-          printOutput?: (text: string) => void;
-        };
-        const workingDir = shell.workingDir ?? process.cwd();
-
-        if (!hasChangesToRevert()) {
-          shell.printOutput?.('No changes to revert.');
-          return;
-        }
-
-        const args = ctx.input.trim().toLowerCase();
-        if (args === 'confirm' || args === 'yes' || args === 'y') {
-          // Actually revert
-          const result = revertAllChanges(workingDir);
-          shell.printOutput?.(result);
-        } else {
-          // Show preview
-          const summary = getRevertSummary(workingDir);
-          shell.printOutput?.(summary);
-        }
-      },
-    },
-
-    // Tools
-    {
-      name: '/tools',
-      description: 'Show available tools',
-      category: 'tools',
-      handler: (ctx) => {
-        const shell = ctx.shell as { showToolsMenu?: () => void };
-        shell.showToolsMenu?.();
-      },
-    },
-    {
-      name: '/mcp',
-      description: 'Show MCP server status',
-      category: 'tools',
-      async: true,
-      handler: async (ctx) => {
-        const shell = ctx.shell as { showMcpStatus?: () => Promise<void> };
-        await shell.showMcpStatus?.();
-      },
-    },
-
-    // Learning
-    {
-      name: '/learn',
-      description: 'Show learning system status',
-      category: 'learning',
-      handler: (ctx) => {
-        const shell = ctx.shell as { showLearningStatus?: (input: string) => void };
-        shell.showLearningStatus?.(ctx.input);
-      },
-    },
 
     // Tools — API keys (replaces /secrets, single source for credential mgmt)
     {
@@ -423,11 +325,6 @@ export function createBaseCommands(): CommandDefinition[] {
         shell.showSecretsMenu?.();
       },
     },
-
-    // /mode slash command removed (2026-05) — it set cowork's
-    // permission mode, which moved with the cowork extraction.
-    // The HITL capability's autoPause is the equivalent knob for
-    // the coding CLI; toggle it via the Option+V shortcut.
   ];
 }
 
