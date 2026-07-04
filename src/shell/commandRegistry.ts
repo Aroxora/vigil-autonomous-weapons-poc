@@ -391,28 +391,6 @@ export function createBaseCommands(): CommandDefinition[] {
       },
     },
     {
-      name: '/regression',
-      description: 'Run changed-file regression analysis',
-      category: 'tools',
-      handler: (ctx) => {
-        const shell = ctx.shell as {
-          queuePrompt?: (prompt: string) => void;
-          printOutput?: (text: string) => void;
-        };
-        const options = ctx.input.trim();
-        const prompt =
-          `[安全阶段: phase.regression_analysis - 回归分析]\n` +
-          `Run regression analysis for the current repository${options ? ` with options: ${options}` : ''}.\n\n` +
-          `Execute: node scripts/_regression-analysis.mjs${options ? ` ${options}` : ''}\n\n` +
-          `Report changed files, affected surfaces, recommended checks, executed check evidence, variant linkage, and residual risk.`;
-        if (shell.queuePrompt) {
-          shell.queuePrompt(prompt);
-        } else {
-          shell.printOutput?.(prompt);
-        }
-      },
-    },
-    {
       name: '/mcp',
       description: 'Show MCP server status',
       category: 'tools',
