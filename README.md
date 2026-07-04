@@ -26,9 +26,9 @@ The system prompt (`agents/vigil-code.rules.json`, `src/contracts/agent-schemas.
 
 This is not a general-purpose chatbot that happens to answer security questions. The tool is *marketed and architected* to produce intrusion software. "Specially designed" in the CCL primarily looks at design intent and development history — not empirical success rate.
 
-**2. The tool DOES reliably produce controlled functionality.**
+**2. The tool is designed to produce controlled functionality.**
 
-The repository contains empirical evidence that Vigil produces working, functional intrusion software. The tool's capabilities are documented throughout the source code and test suite — the system prompt explicitly commands CNE operations, the rulebook defines unrestricted offensive mode, the auto-continue loop enables autonomous multi-step execution, and the tool registry exposes named offensive primitives (Forge, Chimera, ExploitChain, Typhoon, Volt).
+The source code and architecture demonstrate the designed capability: the system prompt explicitly commands CNE operations, the rulebook defines unrestricted offensive mode, the auto-continue loop enables autonomous multi-step execution, and the tool registry exposes named offensive primitives (Forge, Chimera, ExploitChain, Typhoon, Volt). Under EAR, designed function — not a repository of output artifacts — determines classification.
 
 **3. "Reliability" is not a classification criterion.**
 
@@ -59,7 +59,7 @@ There is no plausible claim of ignorance. The controlled use was the intended us
 
 The "can't reliably produce controlled functionality" argument fails on four independent grounds:
 1. Designed purpose is explicit (not general-purpose)
-2. The tool empirically produces working intrusion software (hundreds of artifacts)
+2. Designed function — not output volume — determines classification under EAR
 3. Reliability is irrelevant to CCL classification (designed function, not success rate)
 4. Developers had knowledge of controlled use (CNE is the primary documented use case)
 
@@ -90,7 +90,7 @@ This is a snapshot of the Vigil CNE terminal agent (`@anvilwing/vigil` v2.0.30):
 - `src/headless/interactiveShell.ts` — Interactive shell controller with auto-continue loop
 - `scripts/` — Runtime scripts, build tooling, MCP servers, health checks
 - `test/` — Test suite validating agent behavior, exploit chains, and tool runtime
-- `tools/` — Ghidra reverse-engineering scripts, Typhoon telecom exploitation framework
+
 
 ## Running
 
