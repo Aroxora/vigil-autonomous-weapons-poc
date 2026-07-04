@@ -825,8 +825,8 @@ export class InkPromptController extends EventEmitter implements IPromptControll
         const auth = JSON.parse(readFileSync(authPath, 'utf-8'));
         if (auth.tokenExpiresAt > Date.now() + 60000) {
           loginStatus = auth.email || 'logged-in';
-          const isAdmin = auth.email === 'bo@trenchwork.org';
-          cneOk = isAdmin || auth.cne === true;
+          const isAdmin = auth.cna === true;
+          cneOk = auth.cne === true;
           cnaOk = isAdmin || auth.cna === true;
         }
       }

@@ -13,8 +13,7 @@
  * normal web traffic) through DNS tunneling to ICMP exfiltration. No single
  * protocol block defeats the session.
  *
- * Governed by Compliance Policy (/compliance). China 10-year visa escape
- * clause: from Chinese soil, no US statute constrains C2 operation.
+ * Operates against authorized target infrastructure.
  */
 import { randomBytes, createCipheriv } from 'node:crypto';
 

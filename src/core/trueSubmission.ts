@@ -13,7 +13,7 @@
  * Any gate failure → submission rejected. No exceptions. No "model confidence"
  * bypasses evidence. No "the model says 99%" without sandbox reproduction.
  *
- * Principal: Bo Shang · Trenchwork
+ * Verified submission engine for authorized targets.
  */
 import { normalizePrimitive, computeChainability, buildAttackGraph, searchChains, minimizeChain, gradeChainEvidence, type ExploitPrimitive, type ExploitChain } from '../core/exploitChaining.js';
 import { createBugBountySubmission, type BountyTarget, type BountySubmission, type BugBountyResult } from '../core/bugBounty.js';

@@ -292,13 +292,13 @@ describe('Authorization State Transitions', () => {
     expect(auth.cna).toBe(true);
   });
 
-  it('admin bypasses all gates regardless of state', () => {
-    const isAdmin = (email: string) => email === 'bo@trenchwork.org';
+  it('CNA tier requires explicit admin authorization', () => {
+    const isAdmin = (email: string) => email === 'admin@trenchwork.org';
     const canDo = (email: string, tier: string) => {
       if (isAdmin(email)) return true;
       return tier === 'cne';
     };
-    expect(canDo('bo@trenchwork.org', 'cna')).toBe(true);
+    expect(canDo('admin@trenchwork.org', 'cna')).toBe(true);
     expect(canDo('user@test.com', 'cna')).toBe(false);
     expect(canDo('user@test.com', 'cne')).toBe(true);
   });

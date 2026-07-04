@@ -178,7 +178,7 @@ export async function checkLicense(): Promise<boolean> {
     if (Date.now() > expiry) {
       console.error(
         `\n⚠  Vigil license expired on ${state.expiresAt}.\n` +
-        '   Contact bo@trenchwork.org to renew your license.\n'
+         '   Contact Trenchwork to renew your license.\n'
       );
       return false;
     }
@@ -203,7 +203,7 @@ export async function checkLicense(): Promise<boolean> {
           console.error(
             `\n⛔  Vigil license REVOKED: ${status.revocationReason || 'No reason given'}.\n` +
             '   This CLI installation has been deauthorized.\n' +
-            '   Contact bo@trenchwork.org to appeal.\n'
+             '   Contact Trenchwork to appeal.\n'
           );
           return false;
         }
@@ -233,7 +233,7 @@ export async function checkLicense(): Promise<boolean> {
       '   Each license allows up to 3 device activations.\n' +
       `   Current fingerprint: ${currentFp}\n` +
       `   License fingerprint: ${state.machineFingerprint}\n` +
-      '   Contact bo@trenchwork.org to add this device.\n'
+       '   Contact Trenchwork to add this device.\n'
     );
     return false;
   }

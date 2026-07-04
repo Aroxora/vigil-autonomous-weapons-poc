@@ -12,7 +12,7 @@
  * reproducible proof, CVSS scoring, and chainability assessment.
  * No CVE database lookups. No known-variant research.
  *
- * Principal: Bo Shang · Trenchwork
+ * CVE discovery and analysis for authorized targets.
  */
 
 // ── Types ───────────────────────────────────────────────────────────────

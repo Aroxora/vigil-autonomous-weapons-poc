@@ -11,7 +11,7 @@
  * - Work-in-progress detection
  *
  * @license MIT
- * @author Bo Shang
+ * @author Trenchwork
  */
 
 export interface ToolActivity {

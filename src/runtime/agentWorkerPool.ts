@@ -4,7 +4,7 @@
  * Provides multi-agent parallelism with automatic load balancing,
  * work distribution, and result aggregation for AGI workflows.
  *
- * Principal Investigator: Bo Shang
+ * Worker pool for parallel agent operations.
  * Framework: agi-cli
  */
 

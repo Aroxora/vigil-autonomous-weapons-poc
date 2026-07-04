@@ -352,7 +352,7 @@ if (deepseekFlag.value || tavilyFlag.value) {
         await showCard({
           tone: 'info',
           title: 'Note',
-          body: `Application storage unavailable: ${err instanceof Error ? err.message : String(err)}\nYour identity was verified. Contact bo@trenchwork.org to complete your application.`,
+          body: `Application storage unavailable: ${err instanceof Error ? err.message : String(err)}\nYour identity was verified. Contact Trenchwork to complete your application.`,
         });
         process.exit(0);
       }
@@ -423,7 +423,7 @@ if (deepseekFlag.value || tavilyFlag.value) {
         ['node', process.version],
         ['platform', `${process.platform}/${process.arch}`],
       ],
-      hint: 'bo@trenchwork.org · https://trenchwork.org · Phase 3 Comprehensive',
+      hint: 'https://trenchwork.org · Phase 3 Comprehensive',
     });
     process.exit(0);
   })();

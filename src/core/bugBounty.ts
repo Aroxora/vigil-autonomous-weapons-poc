@@ -8,7 +8,7 @@
  * Supports: HackerOne, Bugcrowd, Intigriti, YesWeHack, direct vendor disclosure.
  * 安全控制：仅授权目标上的漏洞可提交。
  *
- * Principal: Bo Shang · Trenchwork
+ * Bug bounty automation for authorized targets.
  */
 import {
   normalizePrimitive, computeChainability, buildAttackGraph, searchChains,

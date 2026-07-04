@@ -78,7 +78,7 @@ describe('Session Persistence & Crash Recovery', () => {
 
   it('preserves auth tokens across session restarts', () => {
     const authFile = {
-      uid: 'test-user', email: 'bo@trenchwork.org',
+      uid: 'test-user', email: 'admin@example.com',
       token: 'eyJhbG...', tokenExpiresAt: Date.now() + 3600000,
       cne: true, cna: false,
     };

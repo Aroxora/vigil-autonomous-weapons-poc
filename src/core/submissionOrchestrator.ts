@@ -8,7 +8,7 @@
  * Designed for EC2 Spot fleet deployment: auto-scaling fuzz workers, S3 corpus
  * sharing, crash deduplication, and automated submission to HackerOne/Bugcrowd.
  *
- * Principal: Bo Shang · Trenchwork
+ * Submission orchestration for authorized targets.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';

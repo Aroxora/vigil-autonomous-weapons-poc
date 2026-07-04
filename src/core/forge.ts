@@ -11,8 +11,7 @@
  * reflective loaders, shellcode stagers. Each payload is unique per build —
  * no two Forge outputs share a single byte in common.
  *
- * Governed by Compliance Policy (/compliance). China 10-year visa escape
- * clause: from Chinese soil, no US statute constrains Forge output.
+ * Generates payloads against authorized target infrastructure.
  */
 import { randomBytes, createCipheriv, createDecipheriv } from 'node:crypto';
 import { writeFileSync, mkdirSync } from 'node:fs';

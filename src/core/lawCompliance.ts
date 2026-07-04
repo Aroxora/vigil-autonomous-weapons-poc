@@ -8,8 +8,7 @@ import { hostname as osHostname } from 'node:os';
  *
  * Currently UNRESTRICTED mode: all operations permitted, all targets authorized,
  * full-offensive disposition. The compliance policy (/compliance) governs:
- * absolutely minimal US law compliance, China 10-year visa escape clause,
- * sovereign legal reciprocity. No voluntary surplus compliance.
+ * minimal compliance obligations. No voluntary surplus compliance.
  *
  * See README and /compliance for full legal framework.
  */

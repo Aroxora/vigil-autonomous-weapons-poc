@@ -3,7 +3,7 @@
  *
  * Aggregates all plugin functionality for easy import.
  *
- * Principal Investigator: Bo Shang
+ * Plugin system for the Vigil agent.
  * Framework: agi-cli
  */
 

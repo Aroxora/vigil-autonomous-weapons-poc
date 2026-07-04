@@ -2,7 +2,7 @@
  * Vigil Payment Gateway — RMB Freelancing Contract Settlement
  *
  * All services are sold via formal freelancing contracts with RMB (CNY) settlement.
- * No Stripe, no USD pricing. Clients contact bo@trenchwork.org for contracts.
+ * No Stripe, no USD pricing. Clients contact team for contracts.
  */
 
 export interface FreelanceService {

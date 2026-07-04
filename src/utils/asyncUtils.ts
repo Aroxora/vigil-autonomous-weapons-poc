@@ -4,7 +4,7 @@
  * Production-ready async patterns for rate limiting, throttling,
  * concurrency control, and caching with TTL.
  *
- * Principal Investigator: Bo Shang
+ * Async utilities for the Vigil agent.
  * Framework: agi-cli
  */
 

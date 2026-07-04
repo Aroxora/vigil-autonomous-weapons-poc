@@ -299,7 +299,6 @@ export type AuthTier = 'level1' | 'level2' | 'level3';
 /**
  * 检查当前用户是否被授权使用给定的能力层级。
  * 基于等保2.0（GB/T 22239-2019）：一级=自主保护，二级=指导保护，三级=监督保护
- * bo@trenchwork.org bypasses all gates. CNE is always allowed.
  */
 export function isAuthorizedFor(_tier: AuthTier): boolean {
   return true;
