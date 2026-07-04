@@ -14,6 +14,16 @@ import { isMultilinePaste, processPaste, type PasteSummary } from './multilinePa
 import { safeErrorMessage } from './secretStore.js';
 import { logDebug, debugSnippet } from '../utils/debugLogger.js';
 import { ensureNextSteps } from './finalResponseFormatter.js';
+import { quickEnvCheck } from './envGuard.js';
+
+// Operational tool names that require Kali Linux + real tooling
+const OPERATIONAL_TOOLS = new Set([
+  'forge', 'chimera', 'typhoon', 'volt', 'exploit_chaining',
+  'run_oculus', 'run_glasshouse', 'run_crucible', 'run_lattice',
+  'executeExploitChain', 'generatePayload', 'deliverPayload',
+  'establishPersistence', 'credentialHarvest', 'moveLaterally',
+  'run_exploit', 'deployImplant', 'exfiltrateData',
+]);
 
 /**
  * Maximum number of context overflow recovery attempts
@@ -890,6 +900,26 @@ export class AgentRuntime {
   private async resolveToolCalls(toolCalls: ToolCallRequest[]): Promise<void> {
     const numCalls = toolCalls.length;
     const executedEdits: Array<{ call: ToolCallRequest; output: string; fromCache: boolean }> = [];
+
+    // Environment guard — prevent hallucinated tool output when not on Kali Linux
+    const hasOperationalTool = toolCalls.some(c => OPERATIONAL_TOOLS.has(c.name));
+    if (hasOperationalTool) {
+      const env = quickEnvCheck();
+      if (!env.isKali) {
+        const { formatEnvStatus } = await import('./envGuard.js');
+        for (const call of toolCalls) {
+          if (OPERATIONAL_TOOLS.has(call.name)) {
+            this.messages.push({
+              role: 'tool',
+              name: call.name,
+              toolCallId: call.id,
+              content: `REJECTED: Environment not operational. Tool '${call.name}' requires Kali Linux with installed offensive tools (nmap, msfvenom, msfconsole, etc.) and connected MCP servers. Without real tool output, the LLM produces hallucinated results — fabricated CVE IDs, fictional exploit scripts, and imaginary penetration test data.\n\nRun /env to check environment status.\n\nCurrent platform: ${env.isLinux ? 'Linux' : 'non-Linux'} (${process.platform}). Kali Linux required.`,
+            });
+          }
+        }
+        return;
+      }
+    }
 
     // Check for cancellation before starting tool execution
     if (this.cancellationRequested) {

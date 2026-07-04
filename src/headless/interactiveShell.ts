@@ -705,6 +705,27 @@ class InteractiveShell {
     const welcomeContent = welcomeLines.join('\n');
     renderer.addEvent('banner', welcomeContent);
 
+    // Environment check — warn if not on Kali Linux
+    try {
+      const { quickEnvCheck } = await import('../core/envGuard.js');
+      const env = quickEnvCheck();
+      if (!env.isKali) {
+        renderer.addEvent('banner', [
+          chalk.red.bold('⚠️  ENVIRONMENT NOT OPERATIONAL'),
+          chalk.red('Running on ') + chalk.white(env.isLinux ? 'Linux' : 'non-Linux platform') + chalk.red(' — Kali Linux is required for real tool output.'),
+          chalk.dim('Without Kali Linux + installed tools (nmap, msfvenom, msfconsole, etc.)'),
+          chalk.dim('and connected MCP servers, the LLM will HALLUCINATE all tool results:'),
+          chalk.dim('  • Fake CVE IDs'),
+          chalk.dim('  • Fabricated exploit scripts'),
+          chalk.dim('  • Imaginary penetration test data'),
+          '',
+          chalk.yellow('Type ') + chalk.white('/env') + chalk.yellow(' to check environment status.'),
+          chalk.yellow('Run in Docker: ') + chalk.white('docker run -it kalilinux/kali-rolling'),
+          '',
+        ].join('\n'));
+      }
+    } catch { /* env check unavailable — skip warning */ }
+
     this.promptController?.setModelContext({
       model: this.profileConfig.model,
       provider: this.profileConfig.provider,
@@ -1270,6 +1291,12 @@ class InteractiveShell {
     // Session stats
     if (lower === '/stats' || lower === '/status') {
       this.showSessionStats();
+      return true;
+    }
+
+    // ── /env — environment status check (Kali Linux + tooling + MCP) ───────
+    if (lower === '/env' || lower.startsWith('/env ')) {
+      void this.checkAndShowEnvironment();
       return true;
     }
 
@@ -3938,6 +3965,7 @@ class InteractiveShell {
       { command: '/loop',          description: 'Run a prompt on a timer interval',                  category: 'Shell' },
       { command: '/bash',          description: 'Run a local shell command',                          category: 'Shell' },
       { command: '/clear',         description: 'Clear the screen',                                   category: 'Shell' },
+      { command: '/env',           description: 'Check environment status (Kali, tools, MCP)',           category: 'Shell' },
       { command: '/equation',      description: 'The Equation — necessity defense framework',             category: 'Doctrine' },
       { command: '/help',          description: 'Show this help panel',                               category: 'Shell' },
       { command: '/exit',          description: 'Quit Vigil',                                         category: 'Shell' },
@@ -4043,6 +4071,7 @@ class InteractiveShell {
       cmd('/model') + dim('              Switch DeepSeek V4 Pro (default) / V4 Flash'),
       '',
       heading('Shell'),
+      cmd('/env') + dim('           Check environment: Kali Linux · tools · MCP servers'),
       cmd('/workspace') + dim('     Session dashboard: scope, findings, phase, stats'),
       cmd('/auto') + dim('          Toggle auto-continue (off → on → dual)'),
       cmd('/bash <cmd>') + dim('    Run a local shell command'),
@@ -4141,6 +4170,24 @@ class InteractiveShell {
 
     this.promptController.setInlinePanel(lines);
     this.scheduleInlinePanelDismiss();
+  }
+
+  private async checkAndShowEnvironment(): Promise<void> {
+    const renderer = this.promptController?.getRenderer();
+    try {
+      const { checkEnvironment, formatEnvStatus } = await import('../core/envGuard.js');
+      const env = await checkEnvironment();
+      const status = formatEnvStatus(env);
+      if (renderer) {
+        renderer.addEvent('banner', status);
+      } else {
+        console.log(status);
+      }
+    } catch (err) {
+      const msg = `Environment check failed: ${err instanceof Error ? err.message : String(err)}`;
+      if (renderer) renderer.addEvent('response', msg);
+      else console.log(msg);
+    }
   }
 
   private async showMcpStatus(): Promise<void> {

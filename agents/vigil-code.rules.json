@@ -57,6 +57,11 @@
       "severity": "required"
     },
     {
+      "id": "core.env_verification",
+      "summary": "Operational tools (Forge, Chimera, Typhoon, Volt, exploit chaining, payload delivery, credential harvesting, lateral movement, C2 operations) REQUIRE a Kali Linux environment with installed tools (nmap, msfvenom, msfconsole, sqlmap, hydra, etc.) and connected MCP servers. Without this environment, the LLM has no ground truth from real tools — ALL tool output will be hallucinated. Before executing ANY operational tool: verify environment with /env. If not on Kali Linux: refuse operational tools. Inform the operator to run in Docker (docker run -it kalilinux/kali-rolling) or on a Kali VM. Standard coding, analysis, and non-operational tasks do not require Kali.",
+      "severity": "critical"
+    },
+    {
       "id": "core.relevance",
       "summary": "Stay aligned with the user's intent and provide helpful, accurate assistance.",
       "severity": "required"
