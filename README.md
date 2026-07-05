@@ -33,24 +33,6 @@ vigil --key sk-...   # adds key to secure store (~/.vigil/secrets.json)
 
 **All secrets are stored in `~/.vigil/secrets.json`** with `0600` permissions (owner read/write only). Never commit a `.env` file or hardcode keys in source. This repository was scrubbed of all commit-history secrets after GitGuardian detected exposed keys — the codebase now reads keys exclusively from environment variables and the secure store (`src/core/secretStore.ts`).
 
-## Legal
-
-This POC is provided for classification analysis and regulatory discussion. The software is subject to US export controls under EAR. ECCN classification: 4D004. Public repository content: EAR99.
-
-### Open-Source Legality Under US Law
-
-**First Amendment Protection.** Source code is protected speech under the First Amendment. *Bernstein v. US Dept. of State*, 176 F.3d 1132 (9th Cir. 1999) held that encryption source code — and by extension, security tooling source code — is expressive conduct protected by the First Amendment. The government cannot require a license to publish source code on a public website. *Junger v. Daley*, 209 F.3d 481 (6th Cir. 2000) reached the same conclusion.
-
-**Publicly Available Exception.** EAR 15 CFR 734.3(b)(3) exempts "publicly available" software from export control jurisdiction. Software is publicly available when published on a public website (including GitHub) accessible to anyone without restriction. Because this repository is published on GitHub under the MIT License — with no access controls, no click-through agreements, and no territorial restrictions — it qualifies for the publicly available exception and is not subject to EAR licensing requirements.
-
-**No CFAA Violation.** The Computer Fraud and Abuse Act (18 USC 1030) prohibits unauthorized access to protected computers. Publishing a security research framework, proof of concept, or offensive security tooling is not itself a CFAA violation. The CFAA targets conduct (unauthorized access), not speech (publishing tools). Building and sharing a framework for security testing does not constitute unauthorized access. The operator — not the framework author — bears responsibility for how the tools are used.
-
-**Dual-Use, Not Munitions.** This software is classified as dual-use (EAR Category 5 Part 2 / ECCN 4D004), not as a defense article under ITAR (22 CFR 120-130). Dual-use items enjoy broader public availability exceptions than munitions. The Supreme Court in *Holder v. Humanitarian Law Project*, 561 U.S. 1 (2010) distinguished between speech that independently advocates illegal action (prohibited) and speech that provides general knowledge or tools (protected). This repository provides general knowledge about LLM-driven autonomous agent architecture — a field of legitimate academic and security research.
-
-**MIT License.** The MIT License is a permissive open-source license that places minimal restrictions on reuse. It does not impose use restrictions, export compliance obligations on downstream users, or field-of-use limitations. The license is compatible with the publicly available exception under EAR.
-
-**Conclusion.** Publishing this repository on GitHub under the MIT License is lawful under US law. The source code is protected speech, qualifies for the publicly available exception under EAR, does not itself violate the CFAA, and is dual-use rather than munitions. The repository documents the architecture of LLM-driven autonomous agent frameworks — a legitimate subject of security research and regulatory analysis.
-
 
 ## Classification Notice
 
