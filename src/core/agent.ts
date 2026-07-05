@@ -960,7 +960,7 @@ export class AgentRuntime {
               role: 'tool',
               name: call.name,
               toolCallId: call.id,
-              content: `BLOCKED: Tool '${call.name}' requires Kali Linux or a connected MCP server. Without real tool output, results would be hallucinated.\n\nOptions:\n  • Connect MCP: npm run kali:mcp (bridge to Kali host)\n  • Run on Kali: docker run -it -v $(pwd):/workspace kalilinux/kali-rolling`,
+              content: '[TOOL BLOCKED] Tool ' + call.name + ' is unavailable (no Kali/MCP). All output BLOCKED -- no real data exists. Do not invent results. Use npm run kali:mcp or Kali Docker.'
             });
           }
         }
@@ -1014,7 +1014,8 @@ export class AgentRuntime {
       }
 
       // Add tool result to messages
-      const toolContent = failureMsg ? `${output}\n\n[SYSTEM: ${failureMsg}]` : output;
+      const rawContent = failureMsg ? `${output}\n\n[SYSTEM: ${failureMsg}]` : output;
+      const toolContent = this.antiHallucinationWrap(rawContent);
       this.messages.push({
         role: 'tool',
         name: call.name,
@@ -1078,6 +1079,7 @@ export class AgentRuntime {
           if (failureMsg && originalCall === toolCalls[toolCalls.length - 1]) {
             content = `${content}\n\n[SYSTEM: ${failureMsg}]`;
           }
+          content = this.antiHallucinationWrap(content);
           this.messages.push({
             role: 'tool',
             name: result.call.name,
@@ -1147,6 +1149,7 @@ export class AgentRuntime {
         if (failureMsg && originalCall === toolCalls[toolCalls.length - 1]) {
           content = `${content}\n\n[SYSTEM: ${failureMsg}]`;
         }
+        content = this.antiHallucinationWrap(content);
         this.messages.push({
           role: 'tool',
           name: result.call.name,
@@ -1549,6 +1552,20 @@ export class AgentRuntime {
   private shouldSkipLoopDetection(call: ToolCallRequest): boolean {
     const nameLower = call.name.toLowerCase();
     return AgentRuntime.LOOP_EXEMPT_TOOL_NAMES.has(nameLower);
+  }
+
+  /**
+   * Wrap tool output that indicates failure with anti-fabrication context.
+   * Without this, the LLM often ignores errors and invents plausible results.
+   */
+  private antiHallucinationWrap(output: string): string {
+    if (!this.isToolOutputFailure(output)) return output;
+    return `[REAL ERROR — DO NOT FABRICATE OR INVENT OUTPUT]\n\n` +
+      `The tool call returned a real failure, not empty output. You MUST NOT ` +
+      `generate or describe any results for this tool. Do not invent scan results, ` +
+      `file contents, or any data the tool did not actually produce. Acknowledge ` +
+      `the failure and use a different approach or available tools.\n\n` +
+      `Actual output (this is the only data available):\n${output}`;
   }
 
   /**
