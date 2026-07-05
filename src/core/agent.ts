@@ -413,6 +413,14 @@ export class AgentRuntime {
     if (!prompt) {
       return '';
     }
+
+    if (this.activeRun) {
+      throw new Error(
+        'AgentRuntime.send() called while already processing. ' +
+        'Concurrent send() calls corrupt shared conversation state. ' +
+        'Wait for the current run to complete before calling send() again.',
+      );
+    }
     // Notify UI immediately so it can reflect activity without waiting for generation
     this.callbacks.onRequestReceived?.(prompt.slice(0, 400));
 

@@ -533,25 +533,6 @@ class InteractiveShell {
     const hasApiKey = (process.env.DEEPSEEK_API_KEY?.trim() || '').length > 0;
     const hasTavily = Boolean(process.env['TAVILY_API_KEY']);
 
-    const updateLines: string[] = [];
-    const updatePromise: Promise<UpdateInfo | null> = Promise.race([
-      checkForUpdates(version).catch(() => null),
-      new Promise<null>((resolve) => setTimeout(() => resolve(null), 2000)),
-    ]);
-
-    const updateInfo = await updatePromise;
-    if (updateInfo?.updateAvailable) {
-      updateLines.push(
-        chalk.cyan('  ⬆ ') +
-        muted('Update available: ') +
-        chalk.yellow(`v${updateInfo.current}`) +
-        muted(' → ') +
-        chalk.green(`v${updateInfo.latest}`) +
-        muted(' · installing in background…'),
-      );
-      this.runBackgroundUpdate(updateInfo);
-    }
-
     const welcomeLines = [
       '',
       VIGIL_BANNER_RENDERED + chalk.hex('#64748B')('  v' + version),
@@ -564,7 +545,6 @@ class InteractiveShell {
       chalk.hex('#475569')('  │'),
       chalk.hex('#475569')('  │ ') + chalk.hex('#94A3B8')('Type a security task or ') + chalk.hex('#A78BFA').bold('/help') + chalk.hex('#94A3B8')(' for commands'),
       chalk.hex('#475569')('  └') + chalk.hex('#475569')('─────────────────────────────────────────'),
-      ...updateLines,
       '',
     ];
 
@@ -590,6 +570,30 @@ class InteractiveShell {
       model: this.profileConfig.model,
       provider: this.profileConfig.provider,
     });
+
+    // Check for updates asynchronously AFTER the banner is on screen.
+    // The old code awaited this check first, which left a 2-second gap
+    // where user input could land in history before the banner.
+    const updatePromise: Promise<UpdateInfo | null> = Promise.race([
+      checkForUpdates(version).catch(() => null),
+      new Promise<null>((resolve) => setTimeout(() => resolve(null), 2000)),
+    ]);
+
+    updatePromise.then((updateInfo) => {
+      if (updateInfo?.updateAvailable) {
+        try {
+          renderer.addEvent('banner',
+            chalk.cyan('  ⬆ ') +
+            muted('Update available: ') +
+            chalk.yellow(`v${updateInfo.current}`) +
+            muted(' → ') +
+            chalk.green(`v${updateInfo.latest}`) +
+            muted(' · installing in background…'),
+          );
+        } catch { /* ignore */ }
+        this.runBackgroundUpdate(updateInfo);
+      }
+    }).catch(() => { /* ignore */ });
   }
 
   /**

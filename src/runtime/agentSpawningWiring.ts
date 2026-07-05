@@ -17,9 +17,9 @@ import type { ToolDefinition, ToolSuite } from '../core/toolRuntime.js';
 import { LeanAgent } from '../leanAgent.js';
 import { createProvider } from '../providers/providerFactory.js';
 import { selectionToProviderConfig } from './agentSession.js';
+import { parallelMap } from '../utils/asyncUtils.js';
 import type { AgentSession, ModelSelection } from './agentSession.js';
 
-// --- env-configurable constants ---
 const MAX_CONCURRENCY = (() => {
   const env = process.env['VIGIL_POOL_MAX_CONCURRENCY'];
   const parsed = env ? Number(env) : NaN;
@@ -52,23 +52,13 @@ interface TaskResult {
 export interface SpawningWiringDeps {
   session: AgentSession;
   workingDir: string;
-  /** Returns the controller's current model selection (live reference). */
   getSelection: () => ModelSelection;
 }
 
-/** Lightweight pool of LeanAgent instances keyed by model+provider. */
-const agentPool = new Map<string, LeanAgent>();
-
-function getPoolKey(selection: ModelSelection): string {
-  return `${selection.provider}:${selection.model}`;
-}
-
-function getOrCreateAgent(poolKey: string, providerConfig: any, deps: SpawningWiringDeps, selection: ModelSelection): LeanAgent {
-  const cached = agentPool.get(poolKey);
-  if (cached) return cached;
-
+function createSubAgent(deps: SpawningWiringDeps, selection: ModelSelection): LeanAgent {
+  const providerConfig = selectionToProviderConfig(selection);
   const provider = createProvider(providerConfig);
-  const agent = new LeanAgent({
+  return new LeanAgent({
     provider,
     workingDir: deps.workingDir,
     providerId: selection.provider,
@@ -78,8 +68,6 @@ function getOrCreateAgent(poolKey: string, providerConfig: any, deps: SpawningWi
       `Working directory: ${deps.workingDir}. ` +
       'When generating or running JavaScript code, use import/export (ESM) — require() is not available.',
   });
-  agentPool.set(poolKey, agent);
-  return agent;
 }
 
 export function wireAgentSpawning(deps: SpawningWiringDeps): void {
@@ -127,15 +115,13 @@ export function wireAgentSpawning(deps: SpawningWiringDeps): void {
         }
 
         const selection = deps.getSelection();
-        const providerConfig = selectionToProviderConfig(selection);
-        const poolKey = getPoolKey(selection);
         const startedAt = Date.now();
 
-        // Run tasks in parallel, reusing pooled agents for provider-identity reuse
-        const results: TaskResult[] = await Promise.all(
-          specs.map(async (task): Promise<TaskResult> => {
+        const results: TaskResult[] = await parallelMap(
+          specs,
+          async (task): Promise<TaskResult> => {
             try {
-              const subAgent = getOrCreateAgent(poolKey, providerConfig, deps, selection);
+              const subAgent = createSubAgent(deps, selection);
               const response = await Promise.race([
                 subAgent.chat(task.prompt, false),
                 new Promise<never>((_, reject) =>
@@ -164,7 +150,8 @@ export function wireAgentSpawning(deps: SpawningWiringDeps): void {
                 output: `Error: ${(err as Error).message}`,
               };
             }
-          }),
+          },
+          MAX_CONCURRENCY,
         );
 
         const elapsed = ((Date.now() - startedAt) / 1000).toFixed(1);
