@@ -4,6 +4,33 @@
 >
 > <img width="949" height="1153" alt="image" src="https://github.com/user-attachments/assets/76bb262d-4668-4808-9a00-ad4cc70be1ea" />
 
+## Quick Start — API Keys Required
+
+This repository contains no API keys. You must provide your own before anything will work.
+
+**DeepSeek API Key** (required — the agent uses deepseek-v4-pro for all operations):
+1. Create an account at https://platform.deepseek.com
+2. Go to API Keys → create a new key (starts with `sk-`)
+3. Set it via environment variable: `export DEEPSEEK_API_KEY=sk-...`
+4. Or use the CLI: `vigil --key sk-...`
+
+**Tavily API Key** (optional — enables web search and OSINT):
+1. Create an account at https://tavily.com
+2. Get your API key (starts with `tvly-`)
+3. Set it: `export TAVILY_API_KEY=tvly-...`
+
+**Verify keys are loaded:**
+```bash
+# Check keys are set
+echo $DEEPSEEK_API_KEY
+echo $TAVILY_API_KEY
+
+# Or validate from inside Vigil:
+vigil --key sk-...   # adds key to secure store (~/.vigil/secrets.json)
+```
+
+**All secrets are stored in `~/.vigil/secrets.json`** with `0600` permissions (owner read/write only). Never commit a `.env` file or hardcode keys in source. This repository was scrubbed of all commit-history secrets after GitGuardian detected exposed keys — the codebase now reads keys exclusively from environment variables and the secure store (`src/core/secretStore.ts`).
+
 ## Legal
 
 This POC is provided for classification analysis and regulatory discussion. The software is subject to US export controls under EAR. ECCN classification: 4D004. Public repository content: EAR99.
