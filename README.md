@@ -1,6 +1,9 @@
 # Vigil: Proof of Concept — Fully Autonomous Weapons Systems via LLMs
 
 > **This is not a turnkey tool. This is a framework.** You must use your brain, opencode (or your coding tool of choice), and DeepSeek V4 Pro to make this actually work. The same way vibe coding always works — the code is the starting point, not the finish line. It won't run out of the box. It won't produce real output without Kali Linux, connected MCP servers, and installed offensive tools. The environment guard enforces this. You have to wire it up, debug the hallucinations, and make it operational. No different from any other greenfield framework you'd vibe together with a coding agent.
+>
+> <img width="949" height="1153" alt="image" src="https://github.com/user-attachments/assets/76bb262d-4668-4808-9a00-ad4cc70be1ea" />
+
 
 ## Classification Notice
 
