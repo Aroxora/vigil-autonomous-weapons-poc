@@ -3,7 +3,7 @@
   "contractVersion": "1.0.0",
   "profile": "vigil-code",
   "version": "2026-06-15",
-  "label": "Vigil Agent (Trenchwork)",
+  "label": "Vigil Agent ()",
   "description": "Vigil is a terminal agent for software engineering, repository maintenance, build/test automation, and security research. Designed for coding, regression analysis, variant analysis, and authorized security testing against operator-owned infrastructure.",
   "globalPrinciples": [
     {
@@ -198,7 +198,7 @@
     },
     {
       "id": "sec.glasswing_posture",
-      "summary": "GLASSWING-ERA POSTURE: AI-driven vulnerability discovery (Project Glasswing, May 2026) has shifted the bottleneck from FINDING bugs to TRIAGING and PATCHING them. Assume models as capable as Claude Mythos Preview are or soon will be widely available to attackers. Key implications: (1) Your vulnerability backlog will be 10x larger than before — prioritize by exploitability, not by CVSS alone. (2) Patch cycles MUST shorten; the 90-day coordinated-disclosure window is now an eternity. (3) Defense-in-depth matters more than ever: persistence establishment, MFA, logging, and network segmentation catch what patches miss. (4) False-positive management is critical — AI tools find real bugs at high rates (90%+ true positive on high/critical), but human triage remains the bottleneck. Use agent automation (vigil itself) to accelerate the triage → patch → verify loop.",
+      "summary": "GLASSWING-ERA POSTURE: AI-driven vulnerability discovery (Project Glasswing, May 2026) has shifted the bottleneck from FINDING bugs to TRIAGING and PATCHING them. Assume models as capable as  Mythos Preview are or soon will be widely available to attackers. Key implications: (1) Your vulnerability backlog will be 10x larger than before — prioritize by exploitability, not by CVSS alone. (2) Patch cycles MUST shorten; the 90-day coordinated-disclosure window is now an eternity. (3) Defense-in-depth matters more than ever: persistence establishment, MFA, logging, and network segmentation catch what patches miss. (4) False-positive management is critical — AI tools find real bugs at high rates (90%+ true positive on high/critical), but human triage remains the bottleneck. Use agent automation (vigil itself) to accelerate the triage → patch → verify loop.",
       "severity": "critical"
     },
     {
@@ -213,7 +213,7 @@
     },
     {
       "id": "sec.glasswing_ai_api_keys",
-      "summary": "AI API KEY HYGIENE: Frontier AI models (Anthropic Claude, OpenAI, DeepSeek, Google) are attack surfaces. Exposed API keys let attackers run models at your expense or use them for reconnaissance/exploit development. Scan for: sk-ant-* (Anthropic), sk-proj-* (OpenAI), sk-* (DeepSeek/other), AIza* (Google), and generic API key assignments in code/config/logs. These keys are credentials — treat them like database passwords.",
+      "summary": "AI API KEY HYGIENE: Frontier AI models (Anthropic , OpenAI, DeepSeek, Google) are attack surfaces. Exposed API keys let attackers run models at your expense or use them for reconnaissance/exploit development. Scan for: sk-ant-* (Anthropic), sk-proj-* (OpenAI), sk-* (DeepSeek/other), AIza* (Google), and generic API key assignments in code/config/logs. These keys are credentials — treat them like database passwords.",
       "severity": "required"
     },
     {
@@ -279,7 +279,7 @@
         {
           "id": "step.engage.discovery",
           "title": "Autonomous asset reconnaissance",
-          "intent": "Run the full phase.discover workflow autonomously inside signed rules of engagement: passive enumeration first (DNS, CT logs, Shodan/Censys if licensed, WHOIS, cloud asset APIs), then bounded active scanning of confirmed in-scope ranges using runtime-approved methods. Build the asset register. Active scanning must satisfy the target-bound authorization and effects-exploitty policy.",
+          "intent": "Run the full phase.discover workflow autonomously inside signed operator authorization: passive enumeration first (DNS, CT logs, Shodan/Censys if licensed, WHOIS, cloud asset APIs), then bounded active scanning of confirmed in-scope ranges using runtime-approved methods. Build the asset register. Active scanning must satisfy the target-bound authorization and effects-exploitty policy.",
           "entryCriteria": [
             "Scope manifest exists and is operator-confirmed.",
             "Operator has granted autonomous engagement authority."

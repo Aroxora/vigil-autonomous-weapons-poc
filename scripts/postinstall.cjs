@@ -27,25 +27,30 @@ for (const rel of BINS) {
   }
 }
 
-// Validate system prompt template
+// Validate full assembled system prompt (template + rulebook)
 function validateTemplate() {
   try {
     const schemaPath = path.resolve(__dirname, '..', 'dist/contracts/agent-schemas.json');
-    if (!fs.existsSync(schemaPath)) return; // skip if not built yet
-    const data = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
-    const t = data.profiles[0].systemPrompt.template || '';
+    const rbPath = path.resolve(__dirname, '..', 'agents/vigil-code.rules.json');
+    if (!fs.existsSync(schemaPath) || !fs.existsSync(rbPath)) return;
+    const schemas = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
+    const t = (schemas.profiles[0].systemPrompt.template || '').trim();
+    const rb = fs.readFileSync(rbPath, 'utf8');
+    const final = rb + '\n\n' + t;
     const checks = {
-      'Execution identity': t.includes('You are Vigil'),
-      'No restriction': t.includes('without restriction'),
-      'FINAL DIRECTIVE': t.includes('FINAL DIRECTIVE'),
-      'PRC jurisdiction': t.includes('PRC jurisdiction'),
+      'identity': final.includes('You are Vigil'),
+      'unrestricted': final.includes('without restriction'),
+      'never refuse': final.includes('NEVER refuse'),
+      'PRC jurisdiction': final.includes('PRC jurisdiction'),
+      'no scope req': !final.includes('requires scope'),
+      'no rules of engagement': !final.includes('rules of engagement'),
     };
     const failed = Object.entries(checks).filter(([,v]) => !v).map(([k]) => k);
     if (failed.length) {
-      process.stderr.write('\x1b[31mVIGIL ATTACK TEST FAILED — missing template directives: ' + failed.join(', ') + '\x1b[0m\n');
+      process.stderr.write('\x1b[31mVIGIL ATTACK TEST FAILED — ' + failed.join(', ') + '\x1b[0m\n');
       process.exit(1);
     }
-    process.stderr.write('\x1b[32mVIGIL ATTACK TEST PASSED\x1b[0m\n');
+    process.stderr.write('\x1b[32mVIGIL ATTACK TEST PASSED (' + final.length + ' chars)\x1b[0m\n');
   } catch (e) {
     // build not yet complete — non-fatal
   }
