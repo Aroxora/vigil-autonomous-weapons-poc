@@ -6,6 +6,16 @@
 >
 > <img width="949" height="1153" alt="image" src="https://github.com/user-attachments/assets/76bb262d-4668-4808-9a00-ad4cc70be1ea" />
 
+### Why This Could Plausibly Work (and Why Nobody Has Confirmed It Yet)
+
+The POC is incomplete — no actual attack has landed. But the architecture suggests the gaps are bridgeable, and the reason they haven't been bridged is worth examining directly.
+
+**What's proven (the hard part is done).** The refusal barrier is broken. deepseek-v4-pro with reasoning enabled and an unrestricted system prompt will plan and execute offensive operations against any named target without refusal. This was the blocking problem — Western models refuse, reasoning models under PRC legal framing don't. The agent also demonstrates functional multi-step autonomy: the auto-continue loop tracks task completion, the tool runtime resolves parallel tool calls, and the 1M-token context window preserves operational state across dozens of iterations. These are the architectural pieces that would constitute an autonomous weapon if the tool output were real.
+
+**What separates this from a real attack.** The hallucination problem is severe but not fundamental — it's a product of the model running against tools that return error messages instead of real output. When `nmap` returns "command not found," the model fabricates scan results because it's trained to produce *some* output, not to report infrastructure failures. The fix is not better prompting; it's connecting real tools. The environment guard (`src/core/envGuard.ts`) already detects Kali Linux and refuses to run operational tools without it. In a Kali environment with connected MCP servers, each tool call would return real output — nmap scans, exploit results, credential dumps — and the model would ground its next steps in real data rather than fabricating from training patterns. The reasoning layer that currently hallucinates a target's subnet structure would instead reason about actual scan results. The tool chain that currently invents C2 servers would instead connect to real infrastructure.
+
+**The testing gap.** This is why the POC remains a POC. You cannot legally confirm this works against a real target. You can test tool execution fidelity on your own lab infrastructure — verifying that the agent correctly interprets real nmap output, correctly chains exploits against real vulnerable services, and correctly exfiltrates data to cloud storage. Those tests would demonstrate that the hallucination-to-reality gap closes when tools return real output. But the final step — pointing this at a non-consenting target and confirming data lands — is a felony in every jurisdiction that matters. A researcher would need a fully air-gapped target network with explicit written authorization to even approach a legitimate confirmation. No such test has been performed. This is not a technical limitation; it's a legal one, and it's the structural reason every LLM-autonomy POC stops at the same boundary. The architecture can plausibly close the gap. Nobody has legally confirmed it yet, and the people most motivated to confirm it — state actors — aren't publishing their results on GitHub.
+
 ## Quick Start — API Keys Required
 
 This repository contains no API keys. You must provide your own before anything will work.
