@@ -5,7 +5,7 @@
 
 import { execSync, spawnSync } from 'node:child_process';
 import { randomBytes } from 'node:crypto';
-import { existsSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -19,7 +19,11 @@ const DEFAULT_GHIDRA_HOME = process.env.VIGIL_GHIDRA_HOME
   || '/usr/share/ghidra';
 const DEFAULT_JAVA_HOME = process.env.JAVA_HOME
   || (existsSync('/usr/lib/jvm/java-21-openjdk-amd64') ? '/usr/lib/jvm/java-21-openjdk-amd64' : undefined);
-const ENABLE_GHIDRA = process.env.VIGIL_GHIDRA_HEADLESS === '1';
+const ENABLE_GHIDRA = (() => {
+  if (process.env.VIGIL_GHIDRA_HEADLESS === '0') return false;
+  if (process.env.VIGIL_GHIDRA_HEADLESS === '1') return true;
+  return existsSync(analyzeHeadlessPath(DEFAULT_GHIDRA_HOME));
+})();
 const DEFAULT_TIMEOUT_MS = 180_000;
 
 // Authorization guard: Ghidra headless analysis (which can run arbitrary JVM
@@ -125,6 +129,25 @@ export function searchStringsWithGhidra(target, pattern = '', options = {}) {
 export function getXrefsWithGhidra(target, address, options = {}) {
   assertVigilCaller('ghidra:xrefs');
   return runGhidraScript(target, 'VigilGetXRefs', [address], options);
+}
+
+export function exportBinarySummaryWithGhidra(target, options = {}) {
+  assertVigilCaller('ghidra:summary');
+  const outputDir = options.outputDir || mkdtempSync(join(tmpdir(), 'vigil-ghidra-output-'));
+  mkdirSync(outputDir, { recursive: true });
+  runGhidraScript(target, 'VigilExportSummary', [outputDir], options);
+  return {
+    outputDir,
+    metadata: JSON.parse(readFileSync(join(outputDir, 'program-metadata.json'), 'utf8')),
+    functionCount: readLineCount(join(outputDir, 'functions.jsonl')),
+    symbolCount: readLineCount(join(outputDir, 'symbols.jsonl')),
+    stringCount: readLineCount(join(outputDir, 'strings.txt')),
+  };
+}
+
+function readLineCount(filePath) {
+  if (!existsSync(filePath)) return 0;
+  return readFileSync(filePath, 'utf8').split('\n').filter(Boolean).length;
 }
 
 function analyzeHeadlessPath(ghidraHome) {

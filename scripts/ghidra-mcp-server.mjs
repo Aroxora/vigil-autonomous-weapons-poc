@@ -21,6 +21,7 @@ import { z } from 'zod';
 import {
   analyzeBinaryWithGhidra,
   decompileFunctionWithGhidra,
+  exportBinarySummaryWithGhidra,
   getXrefsWithGhidra,
   listFunctionsWithGhidra,
   probeGhidraHeadless,
@@ -126,6 +127,17 @@ server.registerTool(
     annotations: { readOnlyHint: true, destructiveHint: false },
   },
   async (args) => guarded(() => getXrefsWithGhidra(args.target, args.address, toolOptions(args))),
+);
+
+server.registerTool(
+  'ghidra_export_summary',
+  {
+    title: 'Export Binary Summary (Deep)',
+    description: 'Import a binary with Ghidra headless and export complete reverse-engineering summary: program metadata, all functions with signatures, all symbols with types, and all extractable strings. Returns a directory with JSON/JSONL/text files. Works on ELF, PE, and Mach-O binaries regardless of target OS.',
+    inputSchema: commonInput,
+    annotations: { readOnlyHint: true, destructiveHint: false },
+  },
+  async (args) => guarded(() => exportBinarySummaryWithGhidra(args.target, toolOptions(args))),
 );
 
 function toolOptions(args) {
