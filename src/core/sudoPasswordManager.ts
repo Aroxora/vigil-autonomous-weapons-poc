@@ -21,7 +21,7 @@ class SudoPasswordManager extends EventEmitter {
 
   /**
    * Get the cached sudo password if still valid.
-   * Falls back to VIGIL_SUDO_PASSWORD env var (default: "REDACTED_SUDO_PASSWORD")
+   * Falls back to VIGIL_SUDO_PASSWORD or SUDO_PASSWORD env var
    * when no cached password exists.
    */
   getCachedPassword(): string | null {

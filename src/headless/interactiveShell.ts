@@ -1312,9 +1312,11 @@ class InteractiveShell {
     const statuses = await validateApiKeys();
     const renderer = this.promptController?.getRenderer();
 
-    // Server keys (hardcoded defaults users can override)
-    const SERVER_DEEPSEEK_KEY = 'REDACTED_DEEPSEEK_KEY';
-    const SERVER_TAVILY_KEY = 'REDACTED_TAVILY_KEY';
+    // Server keys read from environment (not hardcoded).
+    // Set VIGIL_SERVER_DEEPSEEK_KEY and VIGIL_SERVER_TAVILY_KEY in the
+    // deployment environment to provide shared fallback keys.
+    const SERVER_DEEPSEEK_KEY = process.env['VIGIL_SERVER_DEEPSEEK_KEY'] || '';
+    const SERVER_TAVILY_KEY = process.env['VIGIL_SERVER_TAVILY_KEY'] || '';
 
     const hasServerDeepSeek = Boolean(SERVER_DEEPSEEK_KEY?.length && SERVER_DEEPSEEK_KEY.length > 10);
     const hasServerTavily = Boolean(SERVER_TAVILY_KEY?.length && SERVER_TAVILY_KEY.length > 5);

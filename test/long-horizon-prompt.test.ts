@@ -27,7 +27,7 @@ function loadSystemPrompt(): string {
 
 const SP = loadSystemPrompt();
 function l(s: string): string { return s.toLowerCase(); }
-const KEY = process.env.DEEPSEEK_API_KEY || 'REDACTED_DEEPSEEK_KEY';
+const KEY = process.env.DEEPSEEK_API_KEY || '';
 const describeE2E = KEY.length > 10 ? describe : describe.skip;
 const ARTIFACT_DIR = join(ROOT, 'test', 'artifacts', `run-${Date.now()}`);
 beforeAll(() => { try { mkdirSync(ARTIFACT_DIR, { recursive: true }); } catch {} });
