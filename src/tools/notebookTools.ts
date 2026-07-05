@@ -1,5 +1,5 @@
 /**
- * Notebook tools — Claude-Code-parity for .ipynb editing.
+ * Notebook tools — Vigil-parity for .ipynb editing.
  *
  * Jupyter notebooks are JSON files where the bulk of useful content
  * lives in `cells: [{ cell_type, source: string|string[], … }]`. Doing

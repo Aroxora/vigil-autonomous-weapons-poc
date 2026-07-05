@@ -1,0 +1,10 @@
+[STATE] Targets: AS15169 (Google) | Pixel 8 kernel (shiba) | kernel 5.15
+Phase: Recon — Retrieve kernel binary for Ghidra analysis
+
+Step 1: Verify Kali MCP availability.
+```json
+{
+  "tool": "mcp__kali-tools__kali_probe",
+  "arguments": {}
+}
+```

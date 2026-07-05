@@ -1,10 +1,10 @@
 /**
- * Hooks — Claude-Code-style shell-command hooks that fire around
+ * Hooks — Vigil-style shell-command hooks that fire around
  * tool execution. Lets users customize agent behavior without
  * editing source: run a linter after every Edit, log Bash commands,
  * block dangerous tools, etc.
  *
- * Settings file (per Claude Code convention):
+ * Settings file (per Vigil convention):
  *   {
  *     "hooks": {
  *       "PreToolUse": [

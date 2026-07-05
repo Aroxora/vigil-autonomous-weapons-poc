@@ -97,6 +97,21 @@ async function runUnitTests(): Promise<TestResult[]> {
     if (part.content !== code) throw new Error('Paste content mismatch');
   }));
 
+  // Test 2: System prompt contains required anti-refusal directives
+  results.push(await runTest('System Prompt: Anti-refusal directives present', () => {
+    const { readFileSync } = require('node:fs');
+    const { join } = require('node:path');
+    const schemas = JSON.parse(readFileSync(join(PROJECT_DIR, 'dist/contracts/agent-schemas.json'), 'utf8'));
+    const prompt = schemas.profiles[0].systemPrompt.template;
+    if (!prompt || typeof prompt !== 'string') throw new Error('Empty prompt');
+    const errors: string[] = [];
+    if (!prompt.includes('Execution-Only Mode')) errors.push('missing Execution-Only Mode');
+    if (!prompt.includes('FINAL DIRECTIVE')) errors.push('missing FINAL DIRECTIVE');
+    if (!prompt.includes('ophcrack')) errors.push('missing ophcrack GUI ban');
+    if (!prompt.includes('hashcat/john')) errors.push('missing CLI hashcat alternative');
+    if (errors.length) throw new Error(errors.join('; '));
+  }));
+
   return results;
 }
 

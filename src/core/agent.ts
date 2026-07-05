@@ -308,7 +308,12 @@ export class AgentRuntime {
   // Tool result cache: prevent duplicate identical tool calls by returning cached results
   // Key: tool signature (name + JSON args), Value: result string
   private toolResultCache = new Map<string, string>();
-  private static readonly TOOL_CACHE_MAX_SIZE = 50; // Keep last 50 tool results
+  private static readonly TOOL_CACHE_MAX_SIZE = 200; // Keep last 200 tool results
+
+  // MCP availability cache — avoid repeated lazy imports + status checks per tool batch
+  private mcpAvailable: boolean | null = null;
+  private mcpCheckedAt = 0;
+  private static readonly MCP_CACHE_TTL_MS = 5000; // recheck every 5s
 
   // Track tool history position per send() call for accurate progress detection
   private toolHistoryCursor = 0;
@@ -580,7 +585,13 @@ export class AgentRuntime {
 
     let contextRecoveryAttempts = 0;
     let transientRetryAttempts = 0;
-    const STREAM_HARD_CHAR_LIMIT = 120000; // Hard guardrail to prevent runaway provider output
+    // Hard guardrail to prevent runaway provider output — configurable via env
+    const STREAM_HARD_CHAR_LIMIT = (() => {
+      const env = process.env['VIGIL_STREAM_CHAR_LIMIT'];
+      const parsed = env ? Number(env) : NaN;
+      if (Number.isFinite(parsed) && parsed > 0) return parsed;
+      return 500000; // default 500K for code-gen / attack payloads
+    })();
     let totalCharsReceived = 0;
     let truncatedResponse = false;
 
@@ -680,8 +691,8 @@ export class AgentRuntime {
               const next = reasoningContent + chunk.content;
               totalCharsReceived += chunk.content.length;
               // Hard cap buffered reasoning to protect memory
-              if (next.length > 24000) {
-                reasoningContent = next.slice(-24000);
+              if (next.length > 96000) {
+                reasoningContent = next.slice(-96000);
               } else {
                 reasoningContent = next;
               }
@@ -697,10 +708,10 @@ export class AgentRuntime {
               const nextContent = fullContent + chunk.content;
               totalCharsReceived += chunk.content.length;
               // Cap buffered content to avoid OOM from runaway outputs
-              fullContent = nextContent.length > 48000 ? nextContent.slice(-48000) : nextContent;
+              fullContent = nextContent.length > 192000 ? nextContent.slice(-192000) : nextContent;
               if (suppressStreamNarration) {
                 const nextBuffered = bufferedContent + chunk.content;
-                bufferedContent = nextBuffered.length > 24000 ? nextBuffered.slice(-24000) : nextBuffered;
+                bufferedContent = nextBuffered.length > 96000 ? nextBuffered.slice(-96000) : nextBuffered;
               } else {
                 this.callbacks.onStreamChunk?.(chunk.content, 'content');
               }
@@ -906,16 +917,21 @@ export class AgentRuntime {
     if (hasOperationalTool) {
       const env = quickEnvCheck();
 
-      // Check if MCP bridge could provide tool access
-      let mcpAvailable = false;
-      try {
-        const { getSharedMcpManager } = await import('../plugins/tools/mcp/mcpClient.js');
-        const manager = getSharedMcpManager();
-        if (manager.isInitialized()) {
-          const mcpStatus = manager.getServerStatus?.('kali-tools');
-          mcpAvailable = typeof mcpStatus === 'object' && (mcpStatus as Record<string, unknown>)?.connected === true;
-        }
-      } catch { /* MCP not available */ }
+      // Check if MCP bridge could provide tool access — use cached check
+      let mcpAvailable = this.getCachedMcpAvailability();
+      if (mcpAvailable === null) {
+        try {
+          const { getSharedMcpManager } = await import('../plugins/tools/mcp/mcpClient.js');
+          const manager = getSharedMcpManager(this.workingDirectory);
+          if (manager.isInitialized()) {
+            const mcpStatus = manager.getServerStatus('kali-tools');
+            mcpAvailable = mcpStatus !== null && mcpStatus.connected === true;
+          } else {
+            mcpAvailable = false;
+          }
+        } catch { mcpAvailable = false; }
+        this.setCachedMcpAvailability(mcpAvailable);
+      }
 
       if (env.isKali) {
         // On Kali: auto-install missing tools, then proceed
@@ -1246,33 +1262,31 @@ export class AgentRuntime {
       return;
     }
 
-    for (const result of results) {
-      if (result.fromCache || !this.isEditToolCall(result.call.name)) {
-        continue;
-      }
+    const editable = results.filter(r => !r.fromCache && this.isEditToolCall(r.call.name));
+    if (editable.length === 0) return;
 
+    const tasks = editable.map(async (result) => {
       const files = this.getEditedFiles([result.call]);
       const truncatedOutput = this.truncateEditOutput(result.output);
       const prompt = this.buildEditExplanationPrompt(result.call.name, files, truncatedOutput);
-
       try {
         const response = await this.provider.generate(prompt, []);
-        if (response.type !== 'message') {
-          continue;
-        }
-        // Extract clean explanation, filtering out any reasoning/deliberation
+        if (response.type !== 'message') return null;
         const rawExplanation = response.content?.trim() ?? '';
         const explanation = this.extractCleanExplanation(rawExplanation);
         if (explanation) {
-          this.callbacks.onEditExplanation?.({
-            explanation,
-            files,
-            toolName: result.call.name,
-            toolCallId: result.call.id,
-          });
+          return { explanation, files, toolName: result.call.name, toolCallId: result.call.id };
         }
       } catch (error) {
         logDebug(`[agent] Failed to generate edit explanation: ${safeErrorMessage(error)}`);
+      }
+      return null;
+    });
+
+    const results_ = await Promise.allSettled(tasks);
+    for (const r of results_) {
+      if (r.status === 'fulfilled' && r.value !== null) {
+        this.callbacks.onEditExplanation?.(r.value);
       }
     }
   }
@@ -1486,6 +1500,18 @@ export class AgentRuntime {
     this.repeatedToolCallCount = 0;
     this.consecutiveFailures = 0;
     // Note: we DON'T clear toolResultCache here for cacheable tools; stateful tools bypass caching
+  }
+
+  private getCachedMcpAvailability(): boolean | null {
+    if (this.mcpCheckedAt > 0 && Date.now() - this.mcpCheckedAt < AgentRuntime.MCP_CACHE_TTL_MS) {
+      return this.mcpAvailable;
+    }
+    return null;
+  }
+
+  private setCachedMcpAvailability(available: boolean): void {
+    this.mcpAvailable = available;
+    this.mcpCheckedAt = Date.now();
   }
 
   /**

@@ -161,8 +161,8 @@ export class ProviderStreamError extends Error {
 }
 
 /**
- * Basic API key validation for non-OpenAI providers (DeepSeek, xAI, etc.)
- * Only checks that a key exists and has reasonable format - no OpenAI-specific validation
+ * API key validation for DeepSeek provider.
+ * Only checks that a key exists and has reasonable format.
  */
 function validateGenericApiKey(apiKey: string): string {
   if (!apiKey || typeof apiKey !== 'string') {
@@ -419,7 +419,7 @@ export class OpenAIChatCompletionsProvider implements LLMProvider {
     }
 
     this.client = new OpenAI(clientConfig);
-    this.id = options.providerId ?? 'openai';
+    this.id = options.providerId ?? 'deepseek';
     this.model = options.model;
     this.maxRetries = options.maxRetries ?? 3;
     this.temperature = typeof options.temperature === 'number' ? options.temperature : undefined;
@@ -800,49 +800,11 @@ function deepseekExtraBody(model?: string): Record<string, unknown> | undefined 
 }
 
 /**
- * Check if a model is a Grok model that may output reasoning content
- * Grok 3+, Grok 4, and variants with "think" or "reasoning" support chain-of-thought
- */
-function isGrokModel(model?: string): boolean {
-  if (!model) return false;
-  const normalized = model.toLowerCase();
-  return (
-    normalized.includes('grok') &&
-    (normalized.includes('think') ||
-      normalized.includes('reason') ||
-      normalized.includes('grok-3') ||
-      normalized.includes('grok-4'))
-  );
-}
-
-/**
- * Check if a model is a local reasoning model (via Ollama)
- * QwQ, Qwen reasoning, Llama reasoning variants, etc.
- */
-function isLocalReasoningModel(model?: string): boolean {
-  if (!model) return false;
-  const normalized = model.toLowerCase();
-  return (
-    // QwQ is Alibaba's reasoning model
-    normalized.includes('qwq') ||
-    // Qwen with reasoning
-    (normalized.includes('qwen') && normalized.includes('reason')) ||
-    // Llama reasoning variants
-    (normalized.includes('llama') && normalized.includes('reason')) ||
-    // Mistral reasoning
-    (normalized.includes('mistral') && normalized.includes('reason')) ||
-    // Generic reasoning model indicators
-    normalized.includes('-r1') ||
-    normalized.includes('think') ||
-    normalized.includes('cot')
-  );
-}
-
-/**
- * Check if a model supports reasoning/thinking content in responses
+ * Check if a model supports reasoning/thinking content in responses.
+ * DeepSeek V4 Pro is the sole model — always returns true.
  */
 function supportsReasoningContent(model?: string): boolean {
-  return isDeepSeekModel(model) || isGrokModel(model) || isLocalReasoningModel(model);
+  return isDeepSeekModel(model);
 }
 
 /**

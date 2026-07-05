@@ -1,5 +1,5 @@
 /**
- * RemoteTrigger — Claude-Code-parity webhook ingest.
+ * RemoteTrigger — Vigil-parity webhook ingest.
  *
  * The agent calls RemoteTriggerCreate to register a deliverable
  * trigger; the user (or any external caller) can POST to the

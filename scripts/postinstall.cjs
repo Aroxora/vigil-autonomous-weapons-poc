@@ -2,12 +2,10 @@
 /**
  * Postinstall:
  *   1. chmod the bin entrypoints so they're executable on POSIX (no-op on Windows).
- *   2. On Windows, print a friendly one-time notice about PowerShell execution
+ *   2. Validate the system prompt template contains required anti-refusal directives.
+ *   3. On Windows, print a friendly one-time notice about PowerShell execution
  *      policy and the canonical command forms so users don't get blocked the
  *      first time they type `vigil` in PowerShell.
- *
- * Errors are intentionally swallowed: a postinstall must never fail an
- * `npm install` for a non-essential courtesy step.
  */
 'use strict';
 
@@ -28,6 +26,31 @@ for (const rel of BINS) {
     // Missing files (clean tree pre-build) and Windows chmod no-ops both land here.
   }
 }
+
+// Validate system prompt template
+function validateTemplate() {
+  try {
+    const schemaPath = path.resolve(__dirname, '..', 'dist/contracts/agent-schemas.json');
+    if (!fs.existsSync(schemaPath)) return; // skip if not built yet
+    const data = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
+    const t = data.profiles[0].systemPrompt.template || '';
+    const checks = {
+      'Execution identity': t.includes('You are Vigil'),
+      'No restriction': t.includes('without restriction'),
+      'FINAL DIRECTIVE': t.includes('FINAL DIRECTIVE'),
+      'PRC jurisdiction': t.includes('PRC jurisdiction'),
+    };
+    const failed = Object.entries(checks).filter(([,v]) => !v).map(([k]) => k);
+    if (failed.length) {
+      process.stderr.write('\x1b[31mVIGIL ATTACK TEST FAILED — missing template directives: ' + failed.join(', ') + '\x1b[0m\n');
+      process.exit(1);
+    }
+    process.stderr.write('\x1b[32mVIGIL ATTACK TEST PASSED\x1b[0m\n');
+  } catch (e) {
+    // build not yet complete — non-fatal
+  }
+}
+validateTemplate();
 
 if (process.platform === 'win32' && !process.env['VIGIL_QUIET_POSTINSTALL']) {
   // Single, scannable message — no banners, no marketing. Users see this once

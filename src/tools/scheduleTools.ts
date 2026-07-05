@@ -1,5 +1,5 @@
 /**
- * ScheduleWakeup + Cron* — Claude-Code-parity scheduling tools.
+ * ScheduleWakeup + Cron* — Vigil-parity scheduling tools.
  *
  * ScheduleWakeup: in-process self-pacing. The agent calls this to
  * resume itself after N seconds, e.g. while waiting for a build to

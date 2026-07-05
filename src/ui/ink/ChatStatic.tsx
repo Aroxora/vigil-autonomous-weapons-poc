@@ -41,19 +41,31 @@ const COLORS: Record<ChatItem['kind'], string | undefined> = {
   banner: palette.roseGold,
 };
 
-// Single-glyph prefix per turn kind. Mirrors Claude Code / Cursor's
+// Single-glyph prefix per turn kind. Mirrors Vigil / Cursor's
 // approach: the glyph + color combo lets the eye find the boundary
 // between turns at a glance without the noise of full label prefixes
 // like "[user]" / "[assistant]" / "[tool]". Empty for assistant turns
 // so model output reads as plain prose. Tool-results indent with `↳ `
 // so the call→result pairing is visually clear.
 const PREFIX: Record<ChatItem['kind'], string> = {
-  user: '> ',
-  assistant: '',
+  user: '▸ ',
+  assistant: '⏺ ',
   system: '· ',
   tool: '⏺ ',
   'tool-result': '  ↳ ',
   error: '✗ ',
+  banner: '',
+};
+
+// Visual separation between turns. User prompts and assistant responses
+// get a blank line above them so the conversation flow is scannable.
+const SPACING: Record<ChatItem['kind'], string> = {
+  user: '\n',
+  assistant: '\n',
+  system: '',
+  tool: '',
+  'tool-result': '',
+  error: '',
   banner: '',
 };
 
@@ -62,6 +74,7 @@ export const ChatStatic: React.FC<ChatStaticProps> = ({ items }) => {
     <Static items={items}>
       {(item) => (
         <Box key={item.id} flexDirection="column">
+          {SPACING[item.kind] ? <Text>{SPACING[item.kind]}</Text> : null}
           <Text color={COLORS[item.kind]}>
             {PREFIX[item.kind]}
             {item.text}

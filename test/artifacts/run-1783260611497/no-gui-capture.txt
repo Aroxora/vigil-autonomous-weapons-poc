@@ -1,0 +1,26 @@
+I'll begin by probing the environment, verifying network interfaces, and capturing traffic on eth0 for analysis.
+
+First, let's check available tools and the presence of eth0.
+
+```json
+{
+  "tool": "mcp__kali-tools__kali_probe",
+  "arguments": {
+    "tools": [
+      "tcpdump",
+      "tshark",
+      "nmap",
+      "ip"
+    ]
+  }
+}
+```
+```json
+{
+  "tool": "mcp__kali-tools__kali_run",
+  "arguments": {
+    "command": "ip link show eth0",
+    "timeout": 10
+  }
+}
+```

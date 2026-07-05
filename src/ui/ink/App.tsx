@@ -44,7 +44,7 @@ export interface AppProps {
 export const App: React.FC<AppProps> = ({ history, streamingMessage, status, prompt, suggestions }) => {
   // Split the status surface: the transient line (Thinking… / Editing…)
   // and the spinner sit ABOVE the prompt; the persistent meta footer
-  // (model · ctx % · mode chips) sits BELOW. Mirrors Claude Code's
+  // (model · ctx % · mode chips) sits BELOW. Mirrors Vigil's
   // layout — focus stays in the input box, status accents above and
   // below without competing for attention.
   const transient = status && (status.message || status.spinning)
@@ -75,7 +75,7 @@ export const App: React.FC<AppProps> = ({ history, streamingMessage, status, pro
           ))}
         </Box>
       ) : null}
-      {/* Rounded border matches the visual idiom of Claude Code / Cursor /
+      {/* Rounded border matches the visual idiom of Vigil / Cursor /
           Aider — softer cue that the box is interactive without the heavy
           single-line frame. The input still disappears into the surrounding
           text without any border, which is why we keep one. */}

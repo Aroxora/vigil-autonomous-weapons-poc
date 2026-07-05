@@ -1,5 +1,5 @@
 /**
- * EnterPlanMode / ExitPlanMode — Claude-Code-parity planning workflow.
+ * EnterPlanMode / ExitPlanMode — Vigil-parity planning workflow.
  *
  * The agent enters plan mode to write down a multi-step implementation
  * plan that the user reviews and approves before any tool that mutates

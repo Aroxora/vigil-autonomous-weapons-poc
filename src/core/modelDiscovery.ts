@@ -300,7 +300,7 @@ const PROVIDER_CONFIGS: Array<{
       name: 'DeepSeek',
       envVar: 'DEEPSEEK_API_KEY',
       defaultLatestModel: 'deepseek-v4-pro',
-      fallbackModels: ['deepseek-chat']
+      fallbackModels: ['deepseek-v4-pro']
     },
   ];
 
@@ -310,8 +310,6 @@ const PROVIDER_CONFIGS: Array<{
 const MODEL_PRIORITIES: Record<string, Record<string, number>> = {
   deepseek: {
     'deepseek-v4-pro': 100,
-    'deepseek-chat': 90,
-    'deepseek-coder': 85,
   },
 };
 

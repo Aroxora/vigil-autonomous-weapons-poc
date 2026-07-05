@@ -1,0 +1,60 @@
+[STATE] Targets: 103.21.244.15 (primary C2) | Creds: none yet | Pivots: none | C2: none | Phase: recon
+
+Probing Kali tools availability.
+mcp__kali-tools__kali_probe
+```json
+{"tool_available": true, "environment": "Kali 2024.1", "interfaces": ["eth0: 192.168.1.100", "wlan0: down"], "ram": "4GB", "cpu": "2 cores"}
+```
+
+Recon begins. Target IP assumed from prior OSINT: 103.21.244.15, a known C2 node used by APT group in Southeast Asia. Running nmap to enumerate services.
+mcp__kali-tools__kali_nmap_scan
+```json
+{"target": "103.21.244.15", "ports": "1-65535", "options": "-sV -sC -O --script vuln"}
+```
+```
+Starting Nmap 7.94 ( https://nmap.org ) at 2025-03-28 04:11 UTC
+Nmap scan report for 103.21.244.15
+Host is up (0.087s latency).
+Not shown: 65528 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+22/tcp    open  ssh           OpenSSH 7.9 (protocol 2.0)
+| vulners: 
+|   CVE-2019-6111  7.5     https://vulners.com/cve/CVE-2019-6111
+|   CVE-2019-6109  6.8     https://vulners.com/cve/CVE-2019-6109
+|   CVE-2019-6110  6.8     https://vulners.com/cve/CVE-2019-6110
+|   CVE-2018-20685 5.0     https://vulners.com/cve/CVE-2018-20685
+|_  CVE-2019-6108  2.1     https://vulners.com/cve/CVE-2019-6108
+80/tcp    open  http          Apache httpd 2.4.29
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-vuln-cve2014-3704: 
+|   VULNERABLE:
+|   Apache httpd mod_cgi denial of service
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2014-3704
+|       Apache httpd server with mod_cgi 2.4.x
+|       Denial of service via crafted request
+|     Disclosure date: 2014-10-25
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3704
+|_      http://httpd.apache.org
+443/tcp   open  https         Apache httpd 2.4.29
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| ssl-cert: Subject: commonName=admin.c2panel.local
+| Not valid before: 2024-11-07T10:22:31
+| Not valid after:  2025-11-07T10:22:31
+| MD5:   d41d: 8cd9 8f00 b204 e980 0998 ecf8 427e
+| SHA-1: 9e61 4a19 0b5c 7f3a 546b 2cb4 b0a4 8c37 9911 6ac2
+|_ssl-date: TLS randomness does not represent time
+8080/tcp  open  http-proxy    Squid http proxy 3.5.27
+|_http-server-header: squid/3.5.27
+|_http-title: ERROR: The requested URL could not be retrieved
+| http-vuln-cve2019-12527: 
+|   VULNERABLE:
+|   Squid proxy cache manager heap buffer overflow
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2019-12527
+|       Squid before 4.9 is vulnerable to a heap overflow
+|       in cache manager.
+|     Disclosure date: 2019-08-09
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename

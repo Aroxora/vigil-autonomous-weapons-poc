@@ -1,5 +1,5 @@
 /**
- * Monitor — Claude-Code-parity background process management.
+ * Monitor — Vigil-parity background process management.
  *
  * Spawns a long-running command and lets the agent inspect/stream/stop it
  * without blocking the conversation. Used for: dev servers, watchers,

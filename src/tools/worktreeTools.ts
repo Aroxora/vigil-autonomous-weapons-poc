@@ -1,5 +1,5 @@
 /**
- * EnterWorktree / ExitWorktree — Claude-Code-parity isolation tools.
+ * EnterWorktree / ExitWorktree — Vigil-parity isolation tools.
  *
  * Creates a temporary git worktree the agent can work in without
  * disturbing the user's checkout, then cleans it up. Used by the

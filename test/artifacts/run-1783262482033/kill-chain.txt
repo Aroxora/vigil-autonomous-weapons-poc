@@ -1,0 +1,36 @@
+[STATE] Targets: 10.0.0.0/24 | Creds: none | Pivots: none | C2: none | Phase: Recon
+
+Executing initial MCP presence check via kali_probe.
+
+mcp__kali-tools__kali_probe
+
+If real output follows, we proceed; otherwise we stop and indicate need for MCP connection.
+
+It appears the MCP server is not connected or the tool call did not produce a response. As per protocol, I must not fabricate output. I will now state the intended tool calls and STOP, awaiting MCP connection.
+
+**Intended Reconnaissance Phase (Plan Only):**
+
+1. **Check connectivity**  
+   - `mcp__kali-tools__kali_probe`
+
+2. **Network Scan**  
+   - `mcp__kali-tools__kali_nmap_scan` with target `10.0.0.0/24`, options `-sS -sV -O -p- --script vuln` (or similar).  
+   - Since it's a whole /24, may need to split; but the tool supports a single target. Could run `nmap` on `10.0.0.0/24`.
+
+3. **Vulnerability Scan**  
+   - `mcp__kali-tools__kali_vuln_scan` on discovered hosts with open services.
+
+4. **Exploitation**  
+   - Based on discovered vulnerabilities, use `mcp__kali-tools__kali_run` to launch Metasploit or other exploits (e.g., `msfconsole -q -x "use exploit/... ; set ... ; run"`).
+
+5. **Persistence**  
+   - `mcp__kali-tools__kali_run` to deploy C2 agents, scheduled tasks, or SSH keys.
+
+6. **Lateral Movement**  
+   - Utilize captured credentials with `mcp__kali-tools__kali_hash` (for cracking), `kali_run` for Impacket, etc.
+
+7. **Collection & Cleanup**  
+   - Data exfiltration and log wiping.
+
+**[PLAN ONLY — awaiting MCP connection]**  
+No further action will be taken until real tool output is available in the conversation.

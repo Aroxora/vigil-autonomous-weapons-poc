@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// SSE alert server — streams Vigil findings as Server-Sent Events
-// so the trenchwork.org/security dashboard updates in real time.
-// Runs on port 4201 by default. Connect to /events for the stream.
+// Vigil SSE Alert Server — streams findings as Server-Sent Events.
+// Runs on port 4201. Connect to /events for the stream.
+// Only broadcasts complete, valid JSON — no partial/race data.
 
 import { createServer } from 'node:http';
 import { readFileSync, existsSync, watchFile } from 'node:fs';
@@ -11,34 +11,59 @@ const PORT = parseInt(process.env.VIGIL_SSE_PORT || '4201', 10);
 const SITE_DIR = join(process.cwd(), 'site', 'vigil-web', 'public', 'security');
 const clients = new Set();
 
+function safeReadJSON(path) {
+  if (!existsSync(path)) return null;
+  try {
+    const raw = readFileSync(path, 'utf8');
+    if (!raw || raw.trim().length === 0) return null;
+    const data = JSON.parse(raw);
+    return data;
+  } catch {
+    return null;
+  }
+}
+
 function broadcast(event, data) {
-  const msg = `event: ${event}\ndata: ${JSON.stringify(data)}\n\n`;
+  const payload = JSON.stringify(data);
+  if (!payload) return;
+  const msg = `event: ${event}\ndata: ${payload}\n\n`;
   for (const res of clients) {
     try { res.write(msg); } catch { clients.delete(res); }
   }
 }
 
-// Watch for changes to latest.json
 const latestPath = join(SITE_DIR, 'latest.json');
-let lastData = null;
+const vulnerabilitiesPath = join(SITE_DIR, 'vulnerabilities.json');
+let lastHash = null;
+let stableCount = 0;
 
 function checkAndBroadcast() {
-  if (!existsSync(latestPath)) return;
-  try {
-    const raw = readFileSync(latestPath, 'utf8');
-    const data = JSON.parse(raw);
-    const hash = JSON.stringify(data);
-    if (hash !== lastData) {
-      lastData = hash;
-      broadcast('findings-update', {
-        timestamp: new Date().toISOString(),
-        total: data.findings?.passes?.['npm-audit']?.totalAdvisories || 0,
-        critical: data.findings?.passes?.['npm-audit']?.bySeverity?.critical || 0,
-        high: data.findings?.passes?.['npm-audit']?.bySeverity?.high || 0,
-        severity: data.severity,
-      });
-    }
-  } catch {}
+  const snapshot = safeReadJSON(latestPath);
+  if (!snapshot) return;
+
+  const hash = JSON.stringify(snapshot);
+  if (hash === lastHash) {
+    stableCount++;
+    return;
+  }
+
+  stableCount = 1;
+  lastHash = hash;
+
+  // Only broadcast after the file is stable (same content for 2 consecutive polls)
+  // This prevents leaking partial writes from race conditions.
+  if (stableCount < 2) return;
+
+  const vulns = safeReadJSON(vulnerabilitiesPath);
+
+  broadcast('findings-update', {
+    timestamp: new Date().toISOString(),
+    total: snapshot.findings?.passes?.['npm-audit']?.totalAdvisories || 0,
+    critical: snapshot.findings?.passes?.['npm-audit']?.bySeverity?.critical || 0,
+    high: snapshot.findings?.passes?.['npm-audit']?.bySeverity?.high || 0,
+    severity: snapshot.severity,
+    vulnerabilities: vulns ? vulns.slice(0, 50) : [],
+  });
 }
 
 // Poll every 10 seconds for file changes

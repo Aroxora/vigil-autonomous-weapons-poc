@@ -30,7 +30,7 @@
       "requiredCapabilities": ["chat", "tools"],
       "preferredCapabilities": ["reasoning", "streaming"],
       "defaultTemperature": 0.0,
-      "recommendedProviders": ["anthropic", "openai", "deepseek"],
+      "recommendedProviders": ["deepseek"],
       "tools": ["read", "write", "edit", "bash", "glob", "grep"]
     },
     {
@@ -40,7 +40,7 @@
       "requiredCapabilities": ["chat", "reasoning"],
       "preferredCapabilities": ["tools", "streaming"],
       "defaultTemperature": 0.3,
-      "recommendedProviders": ["anthropic", "openai", "deepseek"],
+      "recommendedProviders": ["deepseek"],
       "tools": ["read", "glob", "grep", "web_search", "web_fetch"]
     },
     {
@@ -50,7 +50,7 @@
       "requiredCapabilities": ["chat"],
       "preferredCapabilities": ["streaming"],
       "defaultTemperature": 0.7,
-      "recommendedProviders": ["anthropic", "openai", "google"],
+      "recommendedProviders": ["deepseek"],
       "tools": []
     },
     {
@@ -60,7 +60,7 @@
       "requiredCapabilities": ["chat", "tools"],
       "preferredCapabilities": ["reasoning"],
       "defaultTemperature": 0.0,
-      "recommendedProviders": ["anthropic", "openai"],
+      "recommendedProviders": ["deepseek"],
       "tools": ["read", "glob", "grep", "analyze_complexity", "dependency_audit", "code_security_scan"]
     },
     {
@@ -70,7 +70,7 @@
       "requiredCapabilities": ["chat"],
       "preferredCapabilities": ["tools", "streaming"],
       "defaultTemperature": 0.5,
-      "recommendedProviders": ["anthropic", "openai", "google"],
+      "recommendedProviders": ["deepseek"],
       "tools": ["web_search", "web_fetch", "read"]
     },
     {
@@ -80,7 +80,7 @@
       "requiredCapabilities": ["chat", "multimodal"],
       "preferredCapabilities": ["vision", "streaming"],
       "defaultTemperature": 0.3,
-      "recommendedProviders": ["google", "anthropic", "openai"],
+      "recommendedProviders": ["deepseek"],
       "tools": ["read", "write"]
     },
     {
@@ -90,7 +90,7 @@
       "requiredCapabilities": ["chat", "tools"],
       "preferredCapabilities": ["reasoning"],
       "defaultTemperature": 0.0,
-      "recommendedProviders": ["anthropic", "openai"],
+      "recommendedProviders": ["deepseek"],
       "tools": ["read", "write", "edit", "bash", "generate_test_stub"]
     },
     {
@@ -100,7 +100,7 @@
       "requiredCapabilities": ["chat", "tools"],
       "preferredCapabilities": ["streaming"],
       "defaultTemperature": 0.3,
-      "recommendedProviders": ["anthropic", "openai"],
+      "recommendedProviders": ["deepseek"],
       "tools": ["read", "write", "edit", "generate_docstring"]
     },
     {
@@ -110,11 +110,10 @@
       "requiredCapabilities": ["chat", "tools", "reasoning"],
       "preferredCapabilities": ["streaming"],
       "defaultTemperature": 0.0,
-      "recommendedProviders": ["anthropic", "openai"],
+      "recommendedProviders": ["deepseek"],
       "tools": ["read", "glob", "grep", "dependency_audit", "code_security_scan"],
       "requiresAuth": true
-    },
-  ],
+    }],
 
   "toolCategories": [
     {

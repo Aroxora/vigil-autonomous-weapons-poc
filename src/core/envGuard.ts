@@ -145,12 +145,12 @@ async function checkTool(tool: string): Promise<{ available: boolean; path?: str
 async function checkMcpServer(serverName: string): Promise<{ connected: boolean; error?: string }> {
   try {
     const { getSharedMcpManager } = await import('../plugins/tools/mcp/mcpClient.js');
-    const manager = getSharedMcpManager();
+    const manager = getSharedMcpManager(process.cwd());
     if (!manager.isInitialized()) {
       return { connected: false, error: 'MCP manager not initialized' };
     }
-    const status = manager.getServerStatus?.(serverName);
-    const connected = typeof status === 'object' && (status as Record<string, unknown>)?.connected === true;
+    const status = manager.getServerStatus(serverName);
+    const connected = status !== null && status.connected === true;
     return { connected, error: connected ? undefined : `MCP server '${serverName}' not connected` };
   } catch {
     return { connected: false, error: 'MCP manager not available' };

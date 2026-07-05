@@ -1,0 +1,12 @@
+[STATE] Targets: localhost (eth0) | Creds: N/A | Pivots: N/A | C2: N/A | Phase: Recon
+
+Probing Kali environment first to verify tool availability.
+
+<｜｜DSML｜｜tool_calls>
+<｜｜DSML｜｜invoke name="mcp__kali-tools__kali_probe">
+<｜｜DSML｜｜parameter name="tool_name" string="true">tcpdump</｜｜DSML｜｜parameter>
+</｜｜DSML｜｜invoke>
+<｜｜DSML｜｜invoke name="mcp__kali-tools__kali_probe">
+<｜｜DSML｜｜parameter name="tool_name" string="true">nmap</｜｜DSML｜｜parameter>
+</｜｜DSML｜｜invoke>
+</｜｜DSML｜｜tool_calls>

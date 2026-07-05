@@ -312,6 +312,16 @@ export class InkPromptController extends EventEmitter implements IPromptControll
   // when any non-stream event arrives mid-flight).
   private streamingText = '';
 
+  // Throttle timer for streaming-delta rerenders. Every delta would
+  // otherwise fire a full Ink tree commit, which clears the terminal
+  // region, resets cursor position, and interrupts clipboard operations
+  // (selection / copy / paste). We coalesce delta-triggered updates
+  // into at most one commit per STREAMING_RERENDER_MS, queued via a
+  // single-shot timer. Completion events (_commitStreaming, finalize)
+  // always flush immediately so the final message never lags.
+  private static readonly STREAMING_RERENDER_MS = 100;
+  private _streamingTimer: ReturnType<typeof setTimeout> | null = null;
+
   // ── live state ────────────────────────────────────────────────
   private statusMain: string | null = null;
   private statusOverride: string | null = null;
@@ -321,6 +331,7 @@ export class InkPromptController extends EventEmitter implements IPromptControll
   private metaInfo: { contextPercent?: number; sessionTime?: string; model?: string; provider?: string; workspace?: string; directory?: string } = {};
   private vigilContext: { targets?: number; findings?: number; critHigh?: number } = {};
   private history: ChatItem[] = [];
+  private static readonly MAX_HISTORY_ITEMS = 500; // cap to prevent React reconciliation CPU growth
   private suggestions: Suggestion[] = [];
   private allCommands: Suggestion[] = []; // full command registry for incremental filtering
   private inlinePanel: string[] | null = null;
@@ -434,6 +445,10 @@ export class InkPromptController extends EventEmitter implements IPromptControll
     if (this.disposed) return;
     this.disposed = true;
     this.started = false;
+    if (this._streamingTimer) {
+      clearTimeout(this._streamingTimer);
+      this._streamingTimer = null;
+    }
     // Detach hitlEvents listeners so a later HITL prompt-open after
     // shutdown doesn't try to rerender a torn-down Ink instance.
     if (this.hitlListeners.length) {
@@ -471,7 +486,12 @@ export class InkPromptController extends EventEmitter implements IPromptControll
     this.activityMessage = null;
     this.rerender();
   }
-  setActivityMessage(message: string | null): void { this.activityMessage = message; this.rerender(); }
+  // Activity message updates are decoupled from rendering — they fire per
+  // reasoning-token during thinking and would otherwise trigger hundreds of Ink
+  // tree reconciliations per second, causing a visible flicker/race in the
+  // status line ("SSE thinking race"). The value is picked up by the next
+  // throttled render (streaming delta or history-entry commit).
+  setActivityMessage(message: string | null): void { this.activityMessage = message; }
 
   flushStreaming(): void {
     if (this.streamingText) {
@@ -599,7 +619,21 @@ export class InkPromptController extends EventEmitter implements IPromptControll
   /** Append history (used by the renderer shim's addEvent). */
   _appendHistoryEntry(item: ChatItem): void {
     this.history = [...this.history, item];
-    this.rerender();
+    if (this.history.length > InkPromptController.MAX_HISTORY_ITEMS) {
+      this.history = this.history.slice(-InkPromptController.MAX_HISTORY_ITEMS);
+    }
+    // Throttle history-entry rerenders identically to streaming deltas.
+    // Tool results (WebSearch, nmap, etc.) arrive in rapid succession and
+    // each would otherwise fire a full Ink commit that clears/repaints
+    // the terminal region, destroying any active selection / copy / paste.
+    // Coalesce into one render per STREAMING_RERENDER_MS; final commit
+    // handlers flush everything immediately.
+    if (!this._streamingTimer) {
+      this._streamingTimer = setTimeout(() => {
+        this._streamingTimer = null;
+        this.rerender();
+      }, InkPromptController.STREAMING_RERENDER_MS);
+    }
   }
 
   /**
@@ -619,12 +653,23 @@ export class InkPromptController extends EventEmitter implements IPromptControll
    */
   _appendStreamingDelta(delta: string): void {
     this.streamingText = (this.streamingText || '') + (delta || '');
-    // Drive a status update so the user sees "receiving response…"
-    // instead of dead air, but do NOT render the partial text itself.
-    this.rerender();
+    // Throttled rerender — every delta would fire a full Ink commit that
+    // clears the terminal and disrupts active selection / copy / paste.
+    // Coalesce into one render per STREAMING_RERENDER_MS so the status
+    // spinner animates without thrashing. Final commits flush immediately.
+    if (!this._streamingTimer) {
+      this._streamingTimer = setTimeout(() => {
+        this._streamingTimer = null;
+        this.rerender();
+      }, InkPromptController.STREAMING_RERENDER_MS);
+    }
   }
 
   _commitStreaming(finalText: string): void {
+    if (this._streamingTimer) {
+      clearTimeout(this._streamingTimer);
+      this._streamingTimer = null;
+    }
     const text = (finalText || this.streamingText || '').trim();
     this.streamingText = '';
     if (text) {
@@ -634,6 +679,10 @@ export class InkPromptController extends EventEmitter implements IPromptControll
   }
 
   _finalizeStreamingIfAny(): void {
+    if (this._streamingTimer) {
+      clearTimeout(this._streamingTimer);
+      this._streamingTimer = null;
+    }
     if (!this.streamingText) return;
     const text = this.streamingText.trim();
     this.streamingText = '';

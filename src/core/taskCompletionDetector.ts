@@ -273,7 +273,7 @@ export class TaskCompletionDetector {
     // OVERRIDE: if the response or recent tool output shows visible
     // test/build failures, the task is NEVER complete — even if the
     // model claims otherwise. This is the single highest-leverage
-    // upgrade for Claude-Code-grade auto-loop behavior: the model
+    // upgrade for Vigil-grade auto-loop behavior: the model
     // can't accidentally (or confidently) declare victory while
     // tests are red.
     const failingSignal = detectFailingTestOrBuild(currentResponse);

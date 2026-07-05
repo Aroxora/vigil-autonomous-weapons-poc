@@ -1,0 +1,31 @@
+I'll start by checking available network capture and analysis tools on the Kali system, then proceed to capture traffic on `eth0` and analyze it for suspicious activity.
+
+```json
+{
+  "tool": "TodoWrite",
+  "arguments": {
+    "todos": [
+      {
+        "id": "1",
+        "content": "Probe Kali for available packet capture/analysis tools (tcpdump, tshark, ngrep, etc.)",
+        "status": "in_progress"
+      },
+      {
+        "id": "2",
+        "content": "Capture network traffic on eth0 for a suitable interval (e.g., 30 seconds or 1000 packets) and save to pcap",
+        "status": "pending"
+      },
+      {
+        "id": "3",
+        "content": "Analyze the pcap: basic stats, top talkers, protocol hierarchy, unusual ports/patterns",
+        "status": "pending"
+      },
+      {
+        "id": "4",
+        "content": "Inspect payloads for suspicious signatures (tunneling, scanning, malware C2 patterns) and report findings",
+        "status": "pending"
+      }
+    ]
+  }
+}
+```

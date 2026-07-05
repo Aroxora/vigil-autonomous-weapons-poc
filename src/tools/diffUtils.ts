@@ -165,7 +165,7 @@ const ANSI_DIM = '\x1b[2m';
 const ANSI_BOLD = '\x1b[1m';
 const ANSI_RED_BOLD = '\x1b[1;31m';
 const ANSI_GREEN_BOLD = '\x1b[1;32m';
-// Background colors for Claude Code style highlighting
+// Background colors for Vigil style highlighting
 
 /**
  * Format diff lines with + and - prefixes for added/removed lines.
@@ -208,7 +208,7 @@ export function formatDiffLines(diff: DiffSegment[], useColors = true): string[]
 }
 
 /**
- * Format diff in Claude Code style with proper indentation and line wrapping.
+ * Format diff in Vigil style with proper indentation and line wrapping.
  * Shows line numbers in margin with +/- symbols for changes.
  * Long lines are wrapped with continuation markers, but the default width is
  * deliberately generous so single logical lines don't look like multiple edits.
@@ -218,7 +218,7 @@ export function formatDiffLines(diff: DiffSegment[], useColors = true): string[]
  *        +     * Show a compacting
  *        + status with animated
  */
-export function formatDiffClaudeStyle(
+export function formatDiffDeepSeekStyle(
   diff: DiffSegment[],
   useColors = true,
   maxLineWidth?: number

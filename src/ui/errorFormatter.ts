@@ -1,9 +1,9 @@
 /**
- * Error Formatter - Claude Code style
+ * Error Formatter - Vigil style
  * Enhanced error message and stack trace formatting with robust handling
  *
  * Features:
- * - Consistent Claude Code styling with proper iconography
+ * - Consistent Vigil styling with proper iconography
  * - Robust handling of malformed error objects
  * - Configurable stack trace depth
  * - Code context display with syntax highlighting

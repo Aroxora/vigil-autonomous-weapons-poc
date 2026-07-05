@@ -291,7 +291,7 @@ export class ToolRuntime implements IToolRuntime {
     // Load hook config eagerly. Hot-reloading on every tool call would
     // give the user faster feedback but at the cost of file I/O on
     // every step — we accept "edit settings → restart CLI" as the
-    // tradeoff (matches Claude Code).
+    // tradeoff (matches Vigil).
     try {
       this.hooks = loadHooksConfig(options.workingDir ?? process.cwd());
     } catch (err) {

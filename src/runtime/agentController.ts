@@ -859,4 +859,8 @@ export class AgentController implements IAgentController {
   getToolSuites(): ToolSuite[] {
     return this.session.toolSuites;
   }
+
+  getToolCount(): number {
+    return this.session.toolRuntime.listProviderTools().length;
+  }
 }

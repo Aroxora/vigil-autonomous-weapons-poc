@@ -7,7 +7,7 @@ export class SkillCapabilityModule implements CapabilityModule {
   async create(context: CapabilityContext): Promise<CapabilityContribution> {
     return {
       id: 'skills.tools',
-      description: 'Skill registry — Claude-Code-style reusable playbooks loaded from .vigil/skills/.',
+      description: 'Skill registry — Vigil-style reusable playbooks loaded from .vigil/skills/.',
       toolSuite: {
         id: 'skills',
         description: 'Skill discovery + loading',

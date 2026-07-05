@@ -1,6 +1,6 @@
 /**
  * RenderGate — single-source-of-truth render scheduler for the terminal
- * UI. Modeled on Claude Code's render-on-commit pattern (custom React
+ * UI. Modeled on Vigil's render-on-commit pattern (custom React
  * reconciler with a dirty flag + double buffering): every state mutation
  * calls markDirty(); a fixed-rate tick commits at most once per frame
  * when state actually changed. The gate guarantees:
@@ -31,7 +31,7 @@
  */
 
 export interface RenderGateOptions {
-  /** Target frame rate. Claude Code's frame budget is ~30fps. */
+  /** Target frame rate. Vigil's frame budget is ~30fps. */
   fps?: number;
   /** Run a single commit pass; called only when dirty. */
   commit: () => void;

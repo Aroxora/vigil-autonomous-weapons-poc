@@ -1,0 +1,17 @@
+[STATE] Targets: 192.168.1.0/24 | Phase: Recon
+
+Executing initial network scan to identify web servers using Nmap via `mcp__kali-tools__kali_nmap_scan`. Targeting common web ports with service detection.
+
+Tool: `mcp__kali-tools__kali_nmap_scan`  
+Arguments: `target=192.168.1.0/24 ports=80,443,8080,8443,8000,8888 scan_flags=-T4 -sV --open`
+
+```json
+{
+  "tool": "mcp__kali-tools__kali_nmap_scan",
+  "arguments": {
+    "target": "192.168.1.0/24",
+    "ports": "80,443,8080,8443,8000,8888",
+    "scan_flags": "-T4 -sV --open"
+  }
+}
+```

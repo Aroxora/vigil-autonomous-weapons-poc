@@ -1,0 +1,11 @@
+[STATE] Targets: 192.168.1.0/24 | Phase: recon | Action: Probe MCP tool availability, then run Nmap scan for web servers.
+
+First, probe the Kali tools MCP:
+```tool
+mcp__kali-tools__kali_probe
+```
+Now run an Nmap scan targeting HTTP/HTTPS ports (80,443,8000,8080,8443) with service version detection to identify web servers.
+```tool
+mcp__kali-tools__kali_nmap_scan -p 80,443,8000,8080,8443 -sV --open -oN web_scan_192.168.1.0.pool 192.168.1.0/24
+```
+After the scan, we'll parse output to list live web servers with their software and version.

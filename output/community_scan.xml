@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Sun Jul  5 12:17:38 2026 as: /usr/lib/nmap/nmap -&#45;privileged -sS -sV -O -p- -&#45;min-rate 500 -T4 -&#45;open -oX /home/bo/GitHub/vigil-autonomous-weapons-poc/output/community_scan.xml 184.105.99.79 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -sS -sV -O -p- -&#45;min-rate 500 -T4 -&#45;open -oX /home/bo/GitHub/vigil-autonomous-weapons-poc/output/community_scan.xml 184.105.99.79" start="1783268258" startstr="Sun Jul  5 12:17:38 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="184.105.99.79" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskprogress task="SYN Stealth Scan" time="1783268289" percent="23.20" remaining="103" etc="1783268392"/>
+<taskprogress task="SYN Stealth Scan" time="1783268289" percent="23.27" remaining="103" etc="1783268391"/>
+<host starttime="1783268258" endtime="1783268401"><status state="up" reason="reset" reason_ttl="57"/>
+<address addr="184.105.99.79" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-response" count="65532" proto="tcp" ports="1-79,81-442,444-4999,5001-65535"/>
+</extraports>
+<extraports state="closed" count="1">
+<extrareasons reason="reset" count="1" proto="tcp" ports="5000"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="57"/><service name="http-proxy" product="HAProxy http proxy" version="2.0.0 or later" devicetype="load balancer" method="probed" conf="10"><cpe>cpe:/a:haproxy:haproxy</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="57"/><service name="http-proxy" product="HAProxy http proxy" version="2.0.0 or later" devicetype="load balancer" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:haproxy:haproxy</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="5000"/>
+<osmatch name="Linux 4.15" accuracy="97" line="70932">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="97"><cpe>cpe:/o:linux:linux_kernel:4.15</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 5.10 - 5.19" accuracy="94" line="72453">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.13" accuracy="93" line="60380">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Android 9 - 11 (Linux 4.9 - 4.14)" accuracy="90" line="34699">
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="9.X" accuracy="90"><cpe>cpe:/o:google:android:9</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="10.X" accuracy="90"><cpe>cpe:/o:google:android:10</cpe></osclass>
+<osclass type="phone" vendor="Google" osfamily="Android" osgen="11.X" accuracy="90"><cpe>cpe:/o:google:android:11</cpe></osclass>
+<osclass type="phone" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="90" line="59132">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.14" accuracy="90" line="68905">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.15 - 5.19" accuracy="90" line="71007">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osmatch name="Android 10 - 11 (Linux 4.9 - 4.14)" accuracy="90" line="33087">
+<osclass type="general purpose" vendor="Google" osfamily="Android" osgen="10.X" accuracy="90"><cpe>cpe:/o:google:android:10</cpe></osclass>
+<osclass type="general purpose" vendor="Google" osfamily="Android" osgen="11.X" accuracy="90"><cpe>cpe:/o:google:android:11</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Ubiquiti Dream Machine Pro gateway (Linux 4.19)" accuracy="90" line="111491">
+<osclass type="router" vendor="Ubiquiti" osfamily="embedded" accuracy="90"/>
+<osclass type="router" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:4.19</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.10" accuracy="89" line="60347">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="342943" lastboot="Wed Jul  1 13:04:18 2026"/>
+<tcpsequence index="259" difficulty="Good luck!" values="F2981D82,5A0ACA29,25000E96,546DEE08,CF82793A,19878746"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="1470DABA,1470DB1A,1470DB7C,1470DBE5,1470DC47,1470DCAB"/>
+<times srtt="74024" rttvar="2169" to="100000"/>
+</host>
+<runstats><finished time="1783268401" timestr="Sun Jul  5 12:20:01 2026" summary="Nmap done at Sun Jul  5 12:20:01 2026; 1 IP address (1 host up) scanned in 143.92 seconds" elapsed="143.92" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

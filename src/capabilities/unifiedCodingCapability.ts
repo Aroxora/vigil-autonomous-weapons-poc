@@ -13,7 +13,7 @@ import type { JSONSchemaObject, JSONSchemaString } from '../core/types.js';
 import * as fs from 'fs';
 import * as path from 'path';
 import { execSync } from 'child_process';
-import { buildDiffWithContext, formatDiffClaudeStyle } from '../tools/diffUtils.js';
+import { buildDiffWithContext, formatDiffDeepSeekStyle } from '../tools/diffUtils.js';
 import { recordFileChange } from '../tools/fileChangeTracker.js';
 import type { LLMProvider } from '../core/types.js';
 
@@ -256,7 +256,7 @@ export class UnifiedCodingCapabilityModule implements CapabilityModule {
           // Format diff with colors (limit to 10 lines)
           const MAX_DIFF_LINES = 10;
           const truncatedSegments = diffResult.segments.slice(0, MAX_DIFF_LINES);
-          const diffLines = formatDiffClaudeStyle(truncatedSegments, true);
+          const diffLines = formatDiffDeepSeekStyle(truncatedSegments, true);
           const remainingChanges = diffResult.segments.length - MAX_DIFF_LINES;
           if (remainingChanges > 0) {
             diffLines.push(`      ... +${remainingChanges} more changes`);
@@ -639,7 +639,7 @@ export class UnifiedCodingCapabilityModule implements CapabilityModule {
   }
 
   // ============================================================================
-  // AGENT-SPAWN TOOLS — Claude-Code-style Agent + lifecycle tools
+  // AGENT-SPAWN TOOLS — Vigil-style Agent + lifecycle tools
   // ============================================================================
 
   private async createAgentSpawnTools(): Promise<ToolDefinition<Record<string, unknown>>[]> {

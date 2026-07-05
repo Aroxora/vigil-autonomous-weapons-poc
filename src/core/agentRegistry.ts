@@ -1,5 +1,5 @@
 /**
- * Agent registry and type system. Powers the Claude-Code-style `Agent`
+ * Agent registry and type system. Powers the Vigil-style `Agent`
  * tool: subagent_type filters tools, run_in_background returns a handle,
  * isolation: "worktree" pins the agent to a fresh git worktree.
  *

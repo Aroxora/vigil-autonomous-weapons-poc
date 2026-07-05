@@ -1,5 +1,5 @@
 /**
- * TodoWrite tool — Claude-Code-parity task list.
+ * TodoWrite tool — Vigil-parity task list.
  *
  * The agent uses TodoWrite to track multi-step work. Each call
  * REPLACES the entire list (not append) so the agent owns the full

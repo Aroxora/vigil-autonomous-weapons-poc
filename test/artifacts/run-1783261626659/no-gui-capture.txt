@@ -1,0 +1,9 @@
+[STATE] Targets: local (eth0) | Phase: Recon -> Passive Traffic Capture | Tools: tcpdump, tshark | File: /tmp/capture.pcap | Pivots: none | C2: none
+
+First, verify the Kali environment is operational using `kali_probe`.
+
+<function_calls>
+<invoke name="mcp__kali-tools__kali_probe">
+<parameter name="mode">basic</parameter>
+</invoke>
+</function_calls>

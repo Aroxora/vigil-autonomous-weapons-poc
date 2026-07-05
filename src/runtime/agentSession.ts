@@ -46,9 +46,9 @@ export interface ModelSelection {
   systemPrompt?: string;
   reasoningEffort?: ReasoningEffortLevel;
   textVerbosity?: TextVerbosityLevel;
-  /** Extended thinking configuration for supported models (Anthropic Claude 4/3.7, Gemini 2.5+) */
+  /** Extended thinking configuration for DeepSeek V4 Pro */
   thinking?: ThinkingBudgetConfig;
-  /** Thinking level for models that support discrete intensities (Gemini 3 Pro) */
+  /** Thinking level for deepseek-v4-pro */
   thinkingLevel?: ThinkingLevel;
 }
 

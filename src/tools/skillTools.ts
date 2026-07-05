@@ -1,5 +1,5 @@
 /**
- * Skills — Claude-Code-parity skill registry.
+ * Skills — Vigil-parity skill registry.
  *
  * A skill is a markdown file that documents a reusable approach
  * (e.g., "simplify", "security-review", "init-project") with

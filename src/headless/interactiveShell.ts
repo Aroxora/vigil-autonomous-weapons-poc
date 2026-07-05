@@ -559,8 +559,8 @@ class InteractiveShell {
       chalk.hex('#475569')('  ┌') + chalk.hex('#475569')('─────────────────────────────────────────'),
       chalk.hex('#475569')('  │ ') + chalk.hex('#3B82F6').bold('Model') + chalk.hex('#64748B')('  ' + this.profileConfig.model + '  ') + chalk.hex('#334155')('·') + chalk.hex('#64748B')('  ') + chalk.hex('#3B82F6').bold('Provider') + chalk.hex('#64748B')('  ' + this.profileConfig.provider),
       chalk.hex('#475569')('  │ ') + chalk.hex('#10B981').bold('DeepSeek') + chalk.hex('#64748B')(hasApiKey ? '  ✓ connected' : '  ✗ unset') + chalk.hex('#334155')('  │  ') + chalk.hex('#10B981').bold('Tavily') + chalk.hex('#64748B')(hasTavily ? '  ✓ connected' : '  ✗ unset'),
-      chalk.hex('#475569')('  │ ') + chalk.hex('#F59E0B').bold('Tools') + chalk.hex('#64748B')('  9 unlocked') + chalk.hex('#334155')('  ·  ') + chalk.hex('#F59E0B').bold('License') + chalk.hex('#64748B')('  none required'),
-      chalk.hex('#475569')('  │ ') + chalk.hex('#64748B')('Context  1M tokens') + chalk.hex('#334155')('  ·  ') + chalk.hex('#64748B')('pricing  ' + chalk.hex('#22D3EE')('$0.435') + chalk.hex('#64748B')('/$0.14 per 1M')),
+      chalk.hex('#475569')('  │ ') + chalk.hex('#F59E0B').bold('Tools') + chalk.hex('#64748B')('  ' + this.getToolCount() + ' unlocked') + chalk.hex('#334155')('  ·  ') + chalk.hex('#F59E0B').bold('License') + chalk.hex('#64748B')('  none required'),
+      chalk.hex('#475569')('  │ ') + chalk.hex('#64748B')('Context  1M tokens') + chalk.hex('#334155')('  ·  ') + chalk.hex('#64748B')('pricing  ' + chalk.hex('#22D3EE')(this.getModelPricingString()) + chalk.hex('#475569')('  (2x peak)')),
       chalk.hex('#475569')('  │'),
       chalk.hex('#475569')('  │ ') + chalk.hex('#94A3B8')('Type a security task or ') + chalk.hex('#A78BFA').bold('/help') + chalk.hex('#94A3B8')(' for commands'),
       chalk.hex('#475569')('  └') + chalk.hex('#475569')('─────────────────────────────────────────'),
@@ -1171,8 +1171,30 @@ class InteractiveShell {
     return null;
   }
 
+  private getModelPricingString(): string {
+    const model = (this.profileConfig.model || '').toLowerCase();
+    if (model.includes('pro')) {
+      return '$0.435/$0.87 per 1M tokens';
+    }
+    if (model.includes('flash')) {
+      return '$0.14/$0.28 per 1M tokens';
+    }
+    return '$0.435/$0.87 per 1M tokens';
+  }
+
+  private getToolCount(): number {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const ctrl = this.controller as any;
+      if (typeof ctrl?.getToolCount === 'function') return ctrl.getToolCount() as number;
+      return 9;
+    } catch {
+      return 9;
+    }
+  }
+
   /**
-   * Show interactive model picker menu (Claude Code style).
+   * Show interactive model picker menu (Vigil style).
    * Auto-discovers latest models from each provider's API.
    * Uses arrow key navigation with inline panel display.
    */
@@ -1187,22 +1209,13 @@ class InteractiveShell {
     renderer?.addEvent('banner', chalk.cyan('Model Selection — DeepSeek'));
 
     const currentModel = this.profileConfig.model || 'deepseek-v4-pro';
-    const isPro = currentModel.includes('pro');
 
     const menuItems: MenuItem[] = [
       {
         id: 'deepseek-v4-pro',
-        label: `DeepSeek V4 Pro ${isPro ? chalk.green('(current)') : ''}`,
+        label: `DeepSeek V4 Pro ${chalk.green('(sole model)')}`,
         description: 'High-thought reasoning · 64K context · $0.435/$0.87 per 1M tokens',
-        isActive: isPro,
-        disabled: false,
-        category: 'deepseek',
-      },
-      {
-        id: 'deepseek-v4-flash',
-        label: `DeepSeek V4 Flash ${!isPro ? chalk.green('(current)') : ''}`,
-        description: 'Fast inference · 64K context · $0.14/$0.28 per 1M tokens',
-        isActive: !isPro,
+        isActive: true,
         disabled: false,
         category: 'deepseek',
       },
@@ -1296,7 +1309,7 @@ class InteractiveShell {
     const renderer = this.promptController?.getRenderer();
 
     // Server keys (hardcoded defaults users can override)
-    const SERVER_DEEPSEEK_KEY = 'REDACTED_DEEPSEEK_KEY_OLD';
+    const SERVER_DEEPSEEK_KEY = 'REDACTED_DEEPSEEK_KEY';
     const SERVER_TAVILY_KEY = 'REDACTED_TAVILY_KEY';
 
     const hasServerDeepSeek = Boolean(SERVER_DEEPSEEK_KEY?.length && SERVER_DEEPSEEK_KEY.length > 10);
@@ -1839,7 +1852,7 @@ class InteractiveShell {
           case 'tool.start': {
             const toolName = event.toolName;
             const args = event.parameters;
-            // Default format: `ToolName(arg)` — Claude Code's idiom.
+            // Default format: `ToolName(arg)` — Vigil's idiom.
             // ChatStatic prefixes a `⏺ ` glyph for kind='tool', so this
             // string is what reads after the bullet. Shorter and more
             // scannable than `[ToolName] arg`.

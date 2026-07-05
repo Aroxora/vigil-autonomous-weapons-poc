@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0",
+  "timestamp": "2026-07-05T16:37:14.188Z",
+  "overall": "fail",
+  "services": [
+    {
+      "name": "DeepSeek Provider",
+      "status": "degraded",
+      "details": "No DEEPSEEK_API_KEY (env or secrets.json)",
+      "metric": null
+    },
+    {
+      "name": "Tavily Search",
+      "status": "degraded",
+      "details": "No TAVILY_API_KEY",
+      "metric": null
+    },
+    {
+      "name": "Firebase Admin (Service Account)",
+      "status": "degraded",
+      "details": "Failed to load SA token: Cannot find module '/home/bo/GitHub/vigil-autonomous-weapons-poc/scripts/_firebase-admin.mjs' imported from /home/bo/GitHub/vigil-autonomous-weapons-poc/scripts/health-check.mjs",
+      "metric": null
+    },
+    {
+      "name": "System Memory",
+      "status": "ok",
+      "details": "Used: 40% (6528MB / 16407MB)",
+      "metric": "40%"
+    },
+    {
+      "name": "System Load Avg (1m)",
+      "status": "degraded",
+      "details": "Load: 7.37 on 8 cores",
+      "metric": "7.37"
+    },
+    {
+      "name": "Disk Space (root)",
+      "status": "ok",
+      "details": "Used: 19% (79G/452G)",
+      "metric": "19%"
+    },
+    {
+      "name": "Node.js Version",
+      "status": "ok",
+      "details": "Node v20.20.2 on linux x64",
+      "metric": "v20.20.2"
+    },
+    {
+      "name": "Vigil Version",
+      "status": "ok",
+      "details": "@anvilwing/vigil@2.0.30",
+      "metric": "2.0.30"
+    },
+    {
+      "name": "CLI Build (dist)",
+      "status": "ok",
+      "details": "Built 12m ago",
+      "metric": "12m old"
+    },
+    {
+      "name": "10min Loop Process",
+      "status": "ok",
+      "details": "No PID file (may be running in different launcher). Activity tracked via artifacts.",
+      "metric": "artifact-based"
+    },
+    {
+      "name": "ECCN Classifier Pipeline",
+      "status": "fail",
+      "details": "No recent eccn-classification-* dir found",
+      "metric": null
+    },
+    {
+      "name": "Capability-Chain CNE Evidence Engine",
+      "status": "fail",
+      "details": "No recent run-* or daily-* chain dirs",
+      "metric": null
+    },
+    {
+      "name": "Git Repo",
+      "status": "degraded",
+      "details": "Uncommitted changes present",
+      "metric": "main"
+    },
+    {
+      "name": "10min Analysis Loop",
+      "status": "degraded",
+      "details": "No recent loop artifacts",
+      "metric": null
+    },
+    {
+      "name": "SSE Live Updates",
+      "status": "degraded",
+      "details": "Could not reach http://localhost:4201/health",
+      "metric": null
+    },
+    {
+      "name": "Website Build (React+Vite)",
+      "status": "fail",
+      "details": "No dist/ found — run npm run build in site/vigil-web",
+      "metric": null
+    }
+  ],
+  "meta": {
+    "platform": "linux",
+    "node": "v20.20.2",
+    "vigilHome": "~/.vigil",
+    "note": "Run with DEEPSEEK_API_KEY / TAVILY_API_KEY for deeper provider checks. Integrates with 10min loop + SSE."
+  }
+}

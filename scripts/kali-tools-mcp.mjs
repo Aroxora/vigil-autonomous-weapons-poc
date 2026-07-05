@@ -79,10 +79,8 @@ const KALI_TOOLS = {
     desc: 'Disk forensics, memory analysis, file carving, steganography',
   },
   'reverse-engineering': {
-    tools: ['ghidra', 'radare2', 'rizin', 'iaito', 'cutter', 'edb-debugger',
-      'gdb', 'jadx', 'apktool', 'ollydbg', 'x64dbg', 'objdump',
-      'strings', 'ltrace', 'strace'],
-    desc: 'Disassemblers, debuggers, decompilers, binary analysis',
+    tools: ['radare2', 'rizin', 'gdb', 'jadx', 'apktool', 'objdump', 'strings', 'ltrace', 'strace'],
+    desc: 'Disassemblers, debuggers, decompilers, binary analysis (headless/CLI only)',
   },
   'reporting': {
     tools: ['faraday', 'crackmapexec', 'eyewitness', 'maltego',
@@ -122,6 +120,44 @@ function safeRun(cmd, timeoutMs = TIMEOUT_MS) {
       killSignal: 'SIGKILL',
     }).trim();
   } catch { return ''; }
+}
+
+function safeSpawn(bin, args = [], timeoutMs = TIMEOUT_MS) {
+  try {
+    const finalArgs = IS_WIN
+      ? args.map(a => String(a))
+      : args.map(a => String(a));
+    return spawnSync(bin, finalArgs, {
+      encoding: 'utf8',
+      timeout: timeoutMs + 5000,
+      stdio: ['ignore', 'pipe', 'ignore'],
+      maxBuffer: 16 * 1024 * 1024,
+      killSignal: 'SIGKILL',
+    }).stdout?.trim() || '';
+  } catch { return ''; }
+}
+
+function safeSpawnLines(bin, args = [], head = Infinity, timeoutMs = TIMEOUT_MS) {
+  const out = safeSpawn(bin, args, timeoutMs);
+  if (!out || head >= Infinity) return out;
+  return out.split('\n').slice(0, head).join('\n');
+}
+
+function safeSpawnWithInput(bin, args = [], input = '', timeoutMs = TIMEOUT_MS) {
+  try {
+    return spawnSync(bin, args.map(a => String(a)), {
+      encoding: 'utf8',
+      timeout: timeoutMs + 5000,
+      input,
+      stdio: ['pipe', 'pipe', 'ignore'],
+      maxBuffer: 16 * 1024 * 1024,
+      killSignal: 'SIGKILL',
+    }).stdout?.trim() || '';
+  } catch { return ''; }
+}
+
+function parseFlags(flagStr) {
+  return flagStr.split(/\s+/).filter(Boolean);
 }
 
 function safeRunJson(cmd, timeoutMs = TIMEOUT_MS) {
@@ -245,13 +281,13 @@ server.registerTool(
     }
 
     const timeoutMs = args.timeoutMs || TIMEOUT_MS;
-    const extraArgs = args.args || '';
-    const cmd = `${args.tool} ${extraArgs} 2>/dev/null`;
-    const output = safeRun(cmd, timeoutMs);
+    const extraArgs = (args.args || '').trim();
+    const spawnArgs = extraArgs ? parseFlags(extraArgs) : [];
+    const output = safeSpawn(args.tool, spawnArgs, timeoutMs);
 
     return jsonResult({
       tool: args.tool,
-      command: cmd,
+      args: extraArgs,
       exitCode: output ? 0 : 1,
       output: output.slice(0, 50000),
       truncated: output.length > 50000,
@@ -280,14 +316,15 @@ server.registerTool(
     } catch (error) {
       return jsonResult({ error: String(error?.message || error), policy: 'CNE target-bound authorization' });
     }
-    const flags = { basic: '-sV --top-ports 1000', service: '-sV -sC --top-ports 1000', os: '-sV -O --top-ports 2000', vuln: '-sV -sC --script vuln', full: '-sV -sC -O -p- --script vuln' };
+    const scanFlags = { basic: '-sV --top-ports 1000', service: '-sV -sC --top-ports 1000', os: '-sV -O --top-ports 2000', vuln: '-sV -sC --script vuln', full: '-sV -sC -O -p- --script vuln' };
     if (args.ports && !/^\d{1,5}(?:-\d{1,5})?(?:,\d{1,5}(?:-\d{1,5})?)*$/.test(args.ports)) {
       return jsonResult({ error: `Invalid port expression: ${args.ports}`, policy: 'argument validation' });
     }
-    const portFlag = args.ports ? `-p ${args.ports}` : '';
-    const cmd = `nmap ${flags[args.scanType]} ${portFlag} ${shellQuote(args.target)}`;
-    const output = safeRun(cmd, args.timeoutMs);
-    return jsonResult({ target: args.target, scanType: args.scanType, command: cmd, output: output.slice(0, 100000) });
+    const spawnArgs = [...parseFlags(scanFlags[args.scanType])];
+    if (args.ports) { spawnArgs.push('-p', args.ports); }
+    spawnArgs.push(args.target);
+    const output = safeSpawn('nmap', spawnArgs, args.timeoutMs);
+    return jsonResult({ target: args.target, scanType: args.scanType, command: `nmap ${scanFlags[args.scanType]} ${args.ports ? `-p ${args.ports}` : ''} ${args.target}`, output: output.slice(0, 100000) });
   },
 );
 
@@ -312,18 +349,29 @@ server.registerTool(
         return jsonResult({ error: String(error?.message || error), policy: 'CNE target-bound authorization' });
       }
     }
-    const commands = {
-      nikto: `nikto -h ${shellQuote(args.target)} -Tuning 1234567890`,
-      wpscan: `wpscan --url ${shellQuote(args.target)} --no-banner --format cli-no-color`,
-      searchsploit: `searchsploit ${shellQuote(args.target || '')}`,
-      lynis: 'lynis audit system --quick --no-colors',
-      'lynis-system': 'lynis audit system --no-colors',
-      'unix-privesc': 'unix-privesc-check 2>&1',
-    };
-    const cmd = commands[args.scanner];
-    if (!cmd) return jsonResult({ error: `Unknown scanner: ${args.scanner}` });
-    if (args.scanner === 'searchsploit' && !haveExe('searchsploit')) return jsonResult({ error: 'searchsploit not installed' });
-    const output = safeRun(cmd, args.timeoutMs);
+    let output = '';
+    const target = args.target || '';
+    switch (args.scanner) {
+      case 'nikto':
+        output = safeSpawn('nikto', ['-h', target, '-Tuning', '1234567890'], args.timeoutMs);
+        break;
+      case 'wpscan':
+        output = safeSpawn('wpscan', ['--url', target, '--no-banner', '--format', 'cli-no-color'], args.timeoutMs);
+        break;
+      case 'searchsploit':
+        if (!haveExe('searchsploit')) return jsonResult({ error: 'searchsploit not installed' });
+        output = safeSpawn('searchsploit', [target], args.timeoutMs);
+        break;
+      case 'lynis':
+      case 'lynis-system':
+        output = safeRun('lynis audit system --quick --no-colors', args.timeoutMs);
+        break;
+      case 'unix-privesc':
+        output = safeRun('unix-privesc-check 2>&1', args.timeoutMs);
+        break;
+      default:
+        return jsonResult({ error: `Unknown scanner: ${args.scanner}` });
+    }
     return jsonResult({ scanner: args.scanner, target: args.target || 'localhost', output: output.slice(0, 100000) });
   },
 );
@@ -352,8 +400,13 @@ server.registerTool(
 
     if (args.audit === 'malware-scan' || args.audit === 'all') {
       if (which('clamscan')) {
-        const scanPath = args.path || '/home /tmp /var/tmp';
-        results.malware_clamav = safeRun(`clamscan --no-summary -r ${scanPath} 2>/dev/null || true`, args.timeoutMs).slice(0, 30000);
+        if (args.path) {
+          try { denyIfUnsafeKaliInvocation('clamscan', args.path); } catch (error) {
+            return jsonResult({ error: String(error?.message || error), policy: 'CNE argument validation' });
+          }
+        }
+        const scanPaths = args.path ? parseFlags(args.path) : ['/home', '/tmp', '/var/tmp'];
+        results.malware_clamav = safeSpawn('clamscan', ['--no-summary', '-r', ...scanPaths], args.timeoutMs).slice(0, 30000);
       }
       if (which('tiger')) results.malware_tiger = safeRun('tiger -q 2>&1 || true', args.timeoutMs).slice(0, 30000);
     }
@@ -393,17 +446,41 @@ server.registerTool(
     annotations: { readOnlyHint: true, destructiveHint: false },
   },
   async (args) => {
-    const commands = {
-      exiftool: `exiftool "${args.target}" 2>/dev/null`,
-      binwalk: `binwalk -Me "${args.target}" 2>/dev/null || binwalk "${args.target}" 2>/dev/null`,
-      foremost: `foremost -i "${args.target}" -o /tmp/vigil-foremost-$$ 2>/dev/null`,
-      'volatility-info': `volatility3 -f "${args.target}" windows.info 2>/dev/null || volatility -f "${args.target}" imageinfo 2>/dev/null`,
-      strings: `strings "${args.target}" 2>/dev/null | head -500`,
-      hash: `sha256sum "${args.target}" 2>/dev/null && md5sum "${args.target}" 2>/dev/null`,
-    };
-    const cmd = commands[args.operation];
-    if (!cmd) return jsonResult({ error: `Unknown operation: ${args.operation}` });
-    const output = safeRun(cmd, args.timeoutMs);
+    try {
+      denyIfUnsafeKaliInvocation('exiftool', args.target);
+      denyIfUnsafeKaliInvocation('binwalk', args.target);
+    } catch (error) {
+      return jsonResult({ error: String(error?.message || error), policy: 'CNE argument validation' });
+    }
+    let output = '';
+    switch (args.operation) {
+      case 'exiftool':
+        output = safeSpawn('exiftool', [args.target], args.timeoutMs);
+        break;
+      case 'binwalk':
+        output = safeSpawn('binwalk', ['-Me', args.target], args.timeoutMs);
+        if (!output) output = safeSpawn('binwalk', [args.target], args.timeoutMs);
+        break;
+      case 'foremost':
+        output = safeSpawn('foremost', ['-i', args.target, '-o', `/tmp/vigil-foremost-${process.pid}`], args.timeoutMs);
+        break;
+      case 'volatility-info': {
+        output = safeSpawn('volatility3', ['-f', args.target, 'windows.info'], args.timeoutMs);
+        if (!output) output = safeSpawn('volatility', ['-f', args.target, 'imageinfo'], args.timeoutMs);
+        break;
+      }
+      case 'strings':
+        output = safeSpawnLines('strings', [args.target], 500, args.timeoutMs);
+        break;
+      case 'hash': {
+        const sha = safeSpawn('sha256sum', [args.target], args.timeoutMs);
+        const md5 = safeSpawn('md5sum', [args.target], args.timeoutMs);
+        output = [sha, md5].filter(Boolean).join('\n');
+        break;
+      }
+      default:
+        return jsonResult({ error: `Unknown operation: ${args.operation}` });
+    }
     return jsonResult({ operation: args.operation, target: args.target, output: output.slice(0, 80000) });
   },
 );
@@ -422,18 +499,43 @@ server.registerTool(
     annotations: { readOnlyHint: true, destructiveHint: false },
   },
   async (args) => {
-    const commands = {
-      'radare2-info': `r2 -q -c 'iI~arch;iI~os;iI~bintype;iI~bits;iI~canary;iI~pic;iI~nx;iI~relro' "${args.target}" 2>/dev/null`,
-      'radare2-functions': `r2 -q -c 'afl~[0]' "${args.target}" 2>/dev/null | head -200`,
-      'objdump-headers': `objdump -f -h "${args.target}" 2>/dev/null`,
-      'objdump-symbols': `objdump -t "${args.target}" 2>/dev/null | head -300`,
-      strings: `strings "${args.target}" 2>/dev/null | head -500`,
-      checksec: `checksec --file="${args.target}" 2>/dev/null || pwn checksec "${args.target}" 2>/dev/null`,
-      ldd: `ldd "${args.target}" 2>/dev/null`,
-    };
-    const cmd = commands[args.tool];
-    if (!cmd) return jsonResult({ error: `Unknown tool: ${args.tool}` });
-    const output = safeRun(cmd, args.timeoutMs);
+    try {
+      denyIfUnsafeKaliInvocation('radare2', args.target);
+    } catch (error) {
+      return jsonResult({ error: String(error?.message || error), policy: 'CNE argument validation' });
+    }
+    let output = '';
+    switch (args.tool) {
+      case 'radare2-info': {
+        const info = safeSpawn('r2', ['-q', '-c', 'iI~arch;iI~os;iI~bintype;iI~bits;iI~canary;iI~pic;iI~nx;iI~relro', args.target], args.timeoutMs);
+        output = info;
+        break;
+      }
+      case 'radare2-functions': {
+        const funcs = safeSpawn('r2', ['-q', '-c', 'afl~[0]', args.target], args.timeoutMs);
+        output = funcs ? funcs.split('\n').slice(0, 200).join('\n') : '';
+        break;
+      }
+      case 'objdump-headers':
+        output = safeSpawn('objdump', ['-f', '-h', args.target], args.timeoutMs);
+        break;
+      case 'objdump-symbols':
+        output = safeSpawnLines('objdump', ['-t', args.target], 300, args.timeoutMs);
+        break;
+      case 'strings':
+        output = safeSpawnLines('strings', [args.target], 500, args.timeoutMs);
+        break;
+      case 'checksec': {
+        output = safeSpawn('checksec', ['--file=' + args.target], args.timeoutMs);
+        if (!output) output = safeSpawn('pwn', ['checksec', args.target], args.timeoutMs);
+        break;
+      }
+      case 'ldd':
+        output = safeSpawn('ldd', [args.target], args.timeoutMs);
+        break;
+      default:
+        return jsonResult({ error: `Unknown tool: ${args.tool}` });
+    }
     return jsonResult({ tool: args.tool, target: args.target, output: output.slice(0, 50000) });
   },
 );
@@ -452,22 +554,26 @@ server.registerTool(
     annotations: { readOnlyHint: true, destructiveHint: false },
   },
   async (args) => {
-    if (args.operation === 'generate-wordlist') {
-      return jsonResult({
-        error: 'CNE policy denied wordlist generation from target content. Use approved password hygiene checks or scoped credential audits instead.',
-        policy: 'data-purpose boundary',
-      });
-    }
     switch (args.operation) {
-      case 'identify-hash':
-        return jsonResult({ type: 'hash-identification', output: safeRun(`hash-identifier 2>/dev/null <<< "${args.value || ''}"`, args.timeoutMs).slice(0, 10000) });
+      case 'identify-hash': {
+        if (!haveExe('hash-identifier')) return jsonResult({ error: 'hash-identifier not installed' });
+        const val = args.value || '';
+        const output = safeSpawnWithInput('hash-identifier', [], val + '\n', args.timeoutMs);
+        return jsonResult({ type: 'hash-identification', output: (output || '').slice(0, 10000) });
+      }
       case 'check-common': {
-        const pw = args.value || '';
-        const count = safeRun(`grep -c '^${pw}$' /usr/share/wordlists/rockyou.txt 2>/dev/null || echo 0`, 15000).trim();
+        const pw = String(args.value || '');
+        if (!pw) return jsonResult({ error: 'value is required for check-common' });
+        const wordlist = '/usr/share/wordlists/rockyou.txt';
+        const grepOut = safeSpawn('grep', ['-cF', pw, wordlist], 15000);
+        const count = grepOut.trim() || safeRun(`grep -c '^${pw.replace(/'/g, `'\\''`)}$' /usr/share/wordlists/rockyou.txt 2>/dev/null || echo 0`, 15000).trim();
         return jsonResult({ password: pw, inCommonWordlist: count !== '0', commonFileHits: parseInt(count) || 0 });
       }
       case 'generate-wordlist':
-        return jsonResult({ type: 'wordlist', output: safeRun(`cewl -d 2 -m 5 -w /dev/stdout "${args.value || 'http://localhost'}" 2>/dev/null | head -100`, args.timeoutMs).slice(0, 30000) });
+        return jsonResult({
+          error: 'CNE policy denied wordlist generation from target content. Use approved password hygiene checks or scoped credential audits instead.',
+          policy: 'data-purpose boundary',
+        });
       default:
         return jsonResult({ error: `Unknown operation: ${args.operation}` });
     }
@@ -514,7 +620,7 @@ server.registerTool(
     } catch (error) {
       return jsonResult({ error: String(error?.message || error), policy: 'CNE target-bound authorization' });
     }
-    const output = safeRun(`wafw00f -a ${shellQuote(args.target)} 2>/dev/null`, 30000);
+    const output = safeSpawn('wafw00f', ['-a', args.target], 30000);
     return jsonResult({ target: args.target, output: output.slice(0, 20000) });
   },
 );

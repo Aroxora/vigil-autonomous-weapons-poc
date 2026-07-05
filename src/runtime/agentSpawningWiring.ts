@@ -19,9 +19,22 @@ import { createProvider } from '../providers/providerFactory.js';
 import { selectionToProviderConfig } from './agentSession.js';
 import type { AgentSession, ModelSelection } from './agentSession.js';
 
-const MAX_CONCURRENCY = 5;
-const SUBAGENT_TIMEOUT_MS = 30_000; // 30 seconds per sub-agent
-const MAX_OUTPUT_LENGTH = 8000; // truncate sub-agent output to prevent context blowup
+// --- env-configurable constants ---
+const MAX_CONCURRENCY = (() => {
+  const env = process.env['VIGIL_POOL_MAX_CONCURRENCY'];
+  const parsed = env ? Number(env) : NaN;
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : 8;
+})();
+const SUBAGENT_TIMEOUT_MS = (() => {
+  const env = process.env['VIGIL_SUBAGENT_TIMEOUT_MS'];
+  const parsed = env ? Number(env) : NaN;
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : 60_000;
+})();
+const MAX_OUTPUT_LENGTH = (() => {
+  const env = process.env['VIGIL_SUBAGENT_OUTPUT_LENGTH'];
+  const parsed = env ? Number(env) : NaN;
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : 16_000;
+})();
 
 interface TaskSpec {
   id: string;
@@ -29,11 +42,44 @@ interface TaskSpec {
   prompt: string;
 }
 
+interface TaskResult {
+  id: string;
+  description: string;
+  success: boolean;
+  output: string;
+}
+
 export interface SpawningWiringDeps {
   session: AgentSession;
   workingDir: string;
   /** Returns the controller's current model selection (live reference). */
   getSelection: () => ModelSelection;
+}
+
+/** Lightweight pool of LeanAgent instances keyed by model+provider. */
+const agentPool = new Map<string, LeanAgent>();
+
+function getPoolKey(selection: ModelSelection): string {
+  return `${selection.provider}:${selection.model}`;
+}
+
+function getOrCreateAgent(poolKey: string, providerConfig: any, deps: SpawningWiringDeps, selection: ModelSelection): LeanAgent {
+  const cached = agentPool.get(poolKey);
+  if (cached) return cached;
+
+  const provider = createProvider(providerConfig);
+  const agent = new LeanAgent({
+    provider,
+    workingDir: deps.workingDir,
+    providerId: selection.provider,
+    modelId: selection.model,
+    systemPrompt:
+      'You are a focused sub-agent. Complete ONE specific task and return a concise report. ' +
+      `Working directory: ${deps.workingDir}. ` +
+      'When generating or running JavaScript code, use import/export (ESM) — require() is not available.',
+  });
+  agentPool.set(poolKey, agent);
+  return agent;
 }
 
 export function wireAgentSpawning(deps: SpawningWiringDeps): void {
@@ -56,7 +102,6 @@ export function wireAgentSpawning(deps: SpawningWiringDeps): void {
       },
       handler: async (args: Record<string, unknown>) => {
         let raw: any = args['tasks'];
-        // Accept both JSON string and array — LLMs sometimes pass arrays directly
         if (Array.isArray(raw)) {
           raw = JSON.stringify(raw);
         }
@@ -81,30 +126,16 @@ export function wireAgentSpawning(deps: SpawningWiringDeps): void {
           }
         }
 
-        // Build a fresh provider for this batch using the controller's
-        // CURRENT selection — sub-agents inherit the user's choice of
-        // model without us caching a stale instance.
         const selection = deps.getSelection();
         const providerConfig = selectionToProviderConfig(selection);
-
+        const poolKey = getPoolKey(selection);
         const startedAt = Date.now();
-        // Each sub-agent runs with a timeout guard and output truncation.
-        // Without this, a hung sub-agent blocks the entire Parallel.all
-        // forever, and unbounded output can overflow the context window.
-        const results = await Promise.all(
-          specs.map(async (task) => {
+
+        // Run tasks in parallel, reusing pooled agents for provider-identity reuse
+        const results: TaskResult[] = await Promise.all(
+          specs.map(async (task): Promise<TaskResult> => {
             try {
-              const provider = createProvider(providerConfig);
-              const subAgent = new LeanAgent({
-                provider,
-                workingDir: deps.workingDir,
-                providerId: selection.provider,
-                modelId: selection.model,
-                systemPrompt:
-                  'You are a focused sub-agent. Complete ONE specific task and return a concise report. ' +
-                  `Working directory: ${deps.workingDir}. ` +
-                  'When generating or running JavaScript code, use import/export (ESM) — require() is not available.',
-              });
+              const subAgent = getOrCreateAgent(poolKey, providerConfig, deps, selection);
               const response = await Promise.race([
                 subAgent.chat(task.prompt, false),
                 new Promise<never>((_, reject) =>
@@ -142,7 +173,7 @@ export function wireAgentSpawning(deps: SpawningWiringDeps): void {
           '',
         ];
         for (const r of results) {
-          const tag = r.success ? '✓' : '✗';
+          const tag = r.success ? '\u2713' : '\u2717';
           lines.push(`--- [${tag}] ${r.id}: ${r.description} ---`);
           lines.push(r.output);
           lines.push('');

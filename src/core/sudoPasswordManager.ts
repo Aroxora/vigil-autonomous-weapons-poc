@@ -20,11 +20,18 @@ class SudoPasswordManager extends EventEmitter {
   private pendingRequest: SudoPasswordRequest | null = null;
 
   /**
-   * Get the cached sudo password if still valid
+   * Get the cached sudo password if still valid.
+   * Falls back to VIGIL_SUDO_PASSWORD env var (default: "REDACTED_SUDO_PASSWORD")
+   * when no cached password exists.
    */
   getCachedPassword(): string | null {
     if (this.cachedPassword && Date.now() < this.passwordValidUntil) {
       return this.cachedPassword;
+    }
+    const envPassword = process.env['VIGIL_SUDO_PASSWORD'] || process.env['SUDO_PASSWORD'];
+    if (envPassword) {
+      this.cachePassword(envPassword);
+      return envPassword;
     }
     return null;
   }

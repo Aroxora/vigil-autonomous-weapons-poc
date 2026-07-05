@@ -29,6 +29,20 @@ const BLOCKED_KALI_TOOLS = new Set([
   'aircrack-ng',
   'reaver',
   'wifite',
+  'ghidra',
+  'burpsuite',
+  'wireshark',
+  'maltego',
+  'autopsy',
+  'iaito',
+  'cutter',
+  'edb-debugger',
+  'ollydbg',
+  'x64dbg',
+  'legion',
+  'faraday',
+  'fern-wifi-cracker',
+  'zenmap',
 ]);
 
 const DENIED_ARG_PATTERNS = [

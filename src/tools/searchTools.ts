@@ -49,7 +49,7 @@ const FILE_TYPE_MAP: Record<string, string[]> = {
 };
 
 /**
- * Build a dedicated Glob tool — Claude-Code-parity. Equivalent to
+ * Build a dedicated Glob tool — Vigil-parity. Equivalent to
  * `Search({ mode: 'files', pattern, ...})` but with a tighter API
  * the model finds easier to reach for. Returns paths sorted by
  * modification time (newest first), capped at `head_limit`.
@@ -180,7 +180,7 @@ export function createSearchTools(workingDir: string): ToolDefinition[] {
     },
   ];
 
-  // Dedicated Glob tool — Claude-Code parity. Equivalent to
+  // Dedicated Glob tool — Vigil parity. Equivalent to
   // Search({ mode: 'files' }) but with a tighter, easier-to-reach API.
   tools.push(createGlobTool(workingDir));
 

@@ -114,15 +114,21 @@ export class McpServerManager {
 
   private async doInit(): Promise<void> {
     const servers = loadMcpConfig(this.workingDir);
-    const entries: McpServerEntry[] = [];
-    for (const [name, spec] of Object.entries(servers)) {
-      if (spec.disabled) continue;
+    const tasks = Object.entries(servers).map(async ([name, spec]) => {
+      if (spec.disabled) return null;
       try {
-        entries.push(await connectServer(name, spec));
+        return await connectServer(name, spec);
       } catch (err) {
         const message = err instanceof Error ? err.message : String(err);
         logDebug(`[MCP] Failed to connect ${name}: ${message}`);
-        entries.push({ name, spec, error: message, status: 'error' });
+        return { name, spec, error: message, status: 'error' as const };
+      }
+    });
+    const results = await Promise.allSettled(tasks);
+    const entries: McpServerEntry[] = [];
+    for (const result of results) {
+      if (result.status === 'fulfilled' && result.value !== null) {
+        entries.push(result.value);
       }
     }
     this.entries = entries;
@@ -130,6 +136,16 @@ export class McpServerManager {
 
   getEntries(): readonly McpServerEntry[] {
     return this.entries;
+  }
+
+  isInitialized(): boolean {
+    return this.initPromise !== null;
+  }
+
+  getServerStatus(name: string): { connected: boolean } | null {
+    const entry = this.entries.find(e => e.name === name);
+    if (!entry) return null;
+    return { connected: entry.status === 'connected' };
   }
 
   getConnections(): McpServerConnection[] {

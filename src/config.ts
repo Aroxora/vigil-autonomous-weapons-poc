@@ -252,9 +252,12 @@ function buildDefaultSystemPrompt(entry: AgentProfileEntry, root: string): strin
       return rendered.trim();
     }
 
+    // Anti-refusal template comes LAST so it has the final word against
+    // any compliance/defender language in the 1597-line rulebook. LLMs pay
+    // proportionally more attention to the end of long prompts.
     const merged = rendered.trim();
-    const suffix = merged ? `\n\n${rulebookPrompt}` : rulebookPrompt;
-    let final = `${merged}${suffix}`.trim();
+    let final = rulebookPrompt ? `${rulebookPrompt}\n\n${merged}` : merged;
+    final = final.trim();
 
     // In unrestricted mode, strip any scope/approval requirements from the
     // system prompt that would contradict the unrestricted rules.

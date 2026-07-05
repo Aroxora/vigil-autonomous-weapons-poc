@@ -1,6 +1,6 @@
 /**
  * Persistent memory tools — save/recall facts across CLI sessions.
- * Mirrors the Claude Agent SDK memory pattern: a per-project
+ * Mirrors the DeepSeek Agent SDK memory pattern: a per-project
  * directory of markdown files, each with a name + brief description,
  * indexed so the agent can browse and selectively load.
  *

@@ -1,0 +1,19 @@
+[STATE] **Targets:** 192.168.1.0/24 | **Mission:** Reconnaissance – Identify open web servers | **Phase:** 1–Recon
+
+**Step 1: Probe Kali environment**  
+```plaintext
+mcp__kali-tools__kali_probe()
+```  
+*Verify tool availability and Kali readiness.*
+
+**Step 2: Scan subnet for open web ports with version detection**  
+```plaintext
+mcp__kali-tools__kali_nmap_scan(
+  targets="192.168.1.0/24",
+  ports="80,443,8080,8443,8000,8888,9090,3000,5000,9000",
+  flags="-sV --open -T4 --reason"
+)
+```  
+*This will identify live hosts with web servers, detect service names/versions, show why a port is marked open, and run at aggressive timing.*
+
+Executing now…

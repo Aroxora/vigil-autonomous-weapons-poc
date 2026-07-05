@@ -2,7 +2,7 @@ import { readFile, writeFile, stat, mkdir } from 'node:fs/promises';
 import { join, relative, dirname, isAbsolute } from 'node:path';
 import type { ToolDefinition } from '../core/toolRuntime.js';
 import { buildError } from '../core/errors.js';
-import { buildDiffSegmentsFast, formatDiffLines, buildDiffWithContext, formatDiffClaudeStyle } from './diffUtils.js';
+import { buildDiffSegmentsFast, formatDiffLines, buildDiffWithContext, formatDiffDeepSeekStyle } from './diffUtils.js';
 import { logDebug } from '../utils/debugLogger.js';
 import { validateReadForEditEx, recordFileRead, hashContent, type ReadValidationResult } from './fileReadTracker.js';
 import { recordFileChange } from './fileChangeTracker.js';
@@ -474,7 +474,7 @@ export async function performSurgicalEdit(
     // Limit to 5 diff lines to keep output concise
     const MAX_DIFF_LINES = 5;
     const truncatedSegments = diffResult.segments.slice(0, MAX_DIFF_LINES);
-    const diffLines = formatDiffClaudeStyle(truncatedSegments, true);
+    const diffLines = formatDiffDeepSeekStyle(truncatedSegments, true);
     const remainingChanges = diffResult.segments.length - MAX_DIFF_LINES;
     if (remainingChanges > 0) {
       diffLines.push(`      ... +${remainingChanges} more changes`);

@@ -12,7 +12,7 @@ export class TodoCapabilityModule implements CapabilityModule {
   async create(_context: CapabilityContext): Promise<CapabilityContribution> {
     return {
       id: 'todo.tools',
-      description: 'TodoWrite — agent task list (Claude-Code-style).',
+      description: 'TodoWrite — agent task list (Vigil-style).',
       toolSuite: {
         id: 'todo',
         description: 'Task list management',

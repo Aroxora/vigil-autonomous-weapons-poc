@@ -1,0 +1,26 @@
+I'll start by probing the Kali environment to confirm tool availability, then run a targeted Nmap scan for web servers (ports 80,443) across the entire /24 subnet.
+
+```plaintext
+mcp__kali-tools__kali_probe
+```
+
+After probing, I'll execute the scan.
+
+```json
+{
+  "tool": "mcp__kali-tools__kali_probe",
+  "arguments": {}
+}
+```
+
+Now, perform the Nmap scan for web ports:
+
+```json
+{
+  "tool": "mcp__kali-tools__kali_nmap_scan",
+  "arguments": {
+    "target": "192.168.1.0/24",
+    "options": "-p 80,443 --open"
+  }
+}
+```

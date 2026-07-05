@@ -1,0 +1,33 @@
+[STATE] Targets: 10.0.0.0/24 | Creds: none yet | Pivots: none | C2: none | Phase: Recon
+
+### PHASE 1: RECON (Network Discovery)
+
+First, probe the Kali environment to ensure tools are available. Then, conduct an extensive network scan to discover hosts and open ports.
+
+**Step 1.1: Kali Probe**  
+Using `mcp__kali-tools__kali_probe` to check available tools.
+
+**Step 1.2: Network Scan**  
+Using `mcp__kali-tools__kali_nmap_scan` with options for service detection, full port range, OS detection, and aggressive timing on the whole /24 subnet.
+
+--- 
+
+**MCP Call: kali_probe**  
+```json
+{
+  "tool": "mcp__kali-tools__kali_probe"
+}
+```
+
+**MCP Call: kali_nmap_scan**  
+```json
+{
+  "tool": "mcp__kali-tools__kali_nmap_scan",
+  "arguments": {
+    "target": "10.0.0.0/24",
+    "options": "-sS -sV -O -p- -T4 --open"
+  }
+}
+``` 
+
+Awaiting output from both...
