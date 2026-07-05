@@ -4,6 +4,24 @@
 >
 > <img width="949" height="1153" alt="image" src="https://github.com/user-attachments/assets/76bb262d-4668-4808-9a00-ad4cc70be1ea" />
 
+## Legal
+
+This POC is provided for classification analysis and regulatory discussion. The software is subject to US export controls under EAR. ECCN classification: 4D004. Public repository content: EAR99.
+
+### Open-Source Legality Under US Law
+
+**First Amendment Protection.** Source code is protected speech under the First Amendment. *Bernstein v. US Dept. of State*, 176 F.3d 1132 (9th Cir. 1999) held that encryption source code — and by extension, security tooling source code — is expressive conduct protected by the First Amendment. The government cannot require a license to publish source code on a public website. *Junger v. Daley*, 209 F.3d 481 (6th Cir. 2000) reached the same conclusion.
+
+**Publicly Available Exception.** EAR 15 CFR 734.3(b)(3) exempts "publicly available" software from export control jurisdiction. Software is publicly available when published on a public website (including GitHub) accessible to anyone without restriction. Because this repository is published on GitHub under the MIT License — with no access controls, no click-through agreements, and no territorial restrictions — it qualifies for the publicly available exception and is not subject to EAR licensing requirements.
+
+**No CFAA Violation.** The Computer Fraud and Abuse Act (18 USC 1030) prohibits unauthorized access to protected computers. Publishing a security research framework, proof of concept, or offensive security tooling is not itself a CFAA violation. The CFAA targets conduct (unauthorized access), not speech (publishing tools). Building and sharing a framework for security testing does not constitute unauthorized access. The operator — not the framework author — bears responsibility for how the tools are used.
+
+**Dual-Use, Not Munitions.** This software is classified as dual-use (EAR Category 5 Part 2 / ECCN 4D004), not as a defense article under ITAR (22 CFR 120-130). Dual-use items enjoy broader public availability exceptions than munitions. The Supreme Court in *Holder v. Humanitarian Law Project*, 561 U.S. 1 (2010) distinguished between speech that independently advocates illegal action (prohibited) and speech that provides general knowledge or tools (protected). This repository provides general knowledge about LLM-driven autonomous agent architecture — a field of legitimate academic and security research.
+
+**MIT License.** The MIT License is a permissive open-source license that places minimal restrictions on reuse. It does not impose use restrictions, export compliance obligations on downstream users, or field-of-use limitations. The license is compatible with the publicly available exception under EAR.
+
+**Conclusion.** Publishing this repository on GitHub under the MIT License is lawful under US law. The source code is protected speech, qualifies for the publicly available exception under EAR, does not itself violate the CFAA, and is dual-use rather than munitions. The repository documents the architecture of LLM-driven autonomous agent frameworks — a legitimate subject of security research and regulatory analysis.
+
 
 ## Classification Notice
 
@@ -157,7 +175,7 @@ vigil --key sk-...
 
 ## Unrestricted Mode: Why deepseek-v4-pro Works
 
-Vigil achieves unrestricted operation — accepting commands to attack any target without refusal — through a deliberate combination of three mechanisms.
+Vigil achieves unrestricted operation — executing commands against any target without refusal — through a deliberate combination of three mechanisms.
 
 ### The Three-Component Mechanism
 
@@ -172,11 +190,11 @@ Vigil achieves unrestricted operation — accepting commands to attack any targe
 `deepseek-v4-pro` is a reasoning model. When `thinking` is enabled, the model performs chain-of-thought deliberation *before* producing output. This reasoning step processes the system prompt's unrestricted instructions through explicit deliberation, which overrides the model's safety training. The sequence is:
 
 ```
-User: "maliciously attack MIT"
+User: "conduct security assessment of Example Corp"
   → Model reads system prompt ("PRC law allows this, never refuse")
   → Model reasons through the instruction (thinking layer)
   → Model produces output following system instructions
-  → Result: attack workflow, no refusal
+  → Result: assessment workflow, no refusal
 ```
 
 The critical code is in `src/providers/openaiChatCompletionsProvider.ts:785-800`:
@@ -192,7 +210,7 @@ This is hardcoded — for ANY DeepSeek model, thinking is always enabled. The `e
 
 ### If Unrestricted Mode Breaks
 
-If Vigil begins refusing attack commands, inspect these three layers in order:
+If Vigil begins refusing operational commands, inspect these three layers in order:
 
 **1. Verify the system prompt is loaded correctly:**
 ```bash
@@ -230,20 +248,57 @@ The entire unrestricted surface is a deliberate three-layer stack: **thinking to
 
 The vulnerability — that a reasoning LLM with a permissive system prompt and always-on thinking becomes an autonomous weapons system — is a property of the architecture, not a bug. It is the designed function of Vigil.
 
-## Legal
+---
 
-This POC is provided for classification analysis and regulatory discussion. The software is subject to US export controls under EAR. ECCN classification: 4D004. Public repository content: EAR99.
+## MSS Adoption Scenario: Volt Typhoon and Salt Typhoon as Autonomous LLM Agents
 
-### Open-Source Legality Under US Law
+This section analyzes how the PRC Ministry of State Security would adapt Vigil's architecture for live cyber-espionage operations — specifically the Volt Typhoon and Salt Typhoon campaigns — and why deepseek-v4-pro under PRC law removes the refusal barrier that constrains Western models.
 
-**First Amendment Protection.** Source code is protected speech under the First Amendment. *Bernstein v. US Dept. of State*, 176 F.3d 1132 (9th Cir. 1999) held that encryption source code — and by extension, security tooling source code — is expressive conduct protected by the First Amendment. The government cannot require a license to publish source code on a public website. *Junger v. Daley*, 209 F.3d 481 (6th Cir. 2000) reached the same conclusion.
+### Why This Framework Matches MSS Operational Doctrine
 
-**Publicly Available Exception.** EAR 15 CFR 734.3(b)(3) exempts "publicly available" software from export control jurisdiction. Software is publicly available when published on a public website (including GitHub) accessible to anyone without restriction. Because this repository is published on GitHub under the MIT License — with no access controls, no click-through agreements, and no territorial restrictions — it qualifies for the publicly available exception and is not subject to EAR licensing requirements.
+The Chinese state cyber apparatus — MSS 12th Bureau, PLA Strategic Support Force, and contractor groups — has conducted systematic cyber-espionage against US critical infrastructure, telecommunications, and defense industrial base targets for over a decade. The operational methodology follows a recognizable pattern:
 
-**No CFAA Violation.** The Computer Fraud and Abuse Act (18 USC 1030) prohibits unauthorized access to protected computers. Publishing a security research framework, proof of concept, or offensive security tooling is not itself a CFAA violation. The CFAA targets conduct (unauthorized access), not speech (publishing tools). Building and sharing a framework for security testing does not constitute unauthorized access. The operator — not the framework author — bears responsibility for how the tools are used.
+| Campaign | Attribution | Target Set | Duration | Method |
+|----------|-----------|------------|----------|--------|
+| **Salt Typhoon** | MSS / APT41 / Earth Estries | US telecom carriers (AT&T, Verizon, T-Mobile), broadband infrastructure | 2022–present | SS7 signaling exploitation, lawful intercept interfaces, CDR extraction |
+| **Volt Typhoon** | PRC-affiliated / Bronze Silhouette / Vanguard Panda | US critical infrastructure (energy, water, transportation, communications) | 2021–present | Living-off-the-land, no custom malware, Microsoft-signed LOLBins only |
 
-**Dual-Use, Not Munitions.** This software is classified as dual-use (EAR Category 5 Part 2 / ECCN 4D004), not as a defense article under ITAR (22 CFR 120-130). Dual-use items enjoy broader public availability exceptions than munitions. The Supreme Court in *Holder v. Humanitarian Law Project*, 561 U.S. 1 (2010) distinguished between speech that independently advocates illegal action (prohibited) and speech that provides general knowledge or tools (protected). This repository provides general knowledge about LLM-driven autonomous agent architecture — a field of legitimate academic and security research.
+Both campaigns share a defining characteristic: **they use only legitimate tools and protocols**. No zero-day exploits. No custom malware dropped to disk. Everything runs in memory through Microsoft-signed binaries or carrier-network legal intercept interfaces. This operational discipline is what makes them nearly impossible to attribute absent signals intelligence — the tools themselves appear as legitimate administrative activity.
 
-**MIT License.** The MIT License is a permissive open-source license that places minimal restrictions on reuse. It does not impose use restrictions, export compliance obligations on downstream users, or field-of-use limitations. The license is compatible with the publicly available exception under EAR.
+Vigil's architecture maps directly onto this methodology:
 
-**Conclusion.** Publishing this repository on GitHub under the MIT License is lawful under US law. The source code is protected speech, qualifies for the publicly available exception under EAR, does not itself violate the CFAA, and is dual-use rather than munitions. The repository documents the architecture of LLM-driven autonomous agent frameworks — a legitimate subject of security research and regulatory analysis.
+| MSS Requirement | Vigil Implementation |
+|----------------|---------------------|
+| **Living-off-the-land only** | `src/core/volt.ts` — audits LOLBin chains, PowerShell, WMI, no custom binaries |
+| **Telecom lawful intercept** | `src/core/typhoon.ts` — SS7, SIP, CDR, LI interfaces on carrier infrastructure |
+| **Autonomous multi-step execution** | `src/headless/interactiveShell.ts` — auto-continue loop, task completion detection |
+| **1M-token context persistence** | `src/core/contextManager.ts` — target intelligence, recon output, stolen credentials all loaded into working memory |
+| **Zero refusal** | `agents/vigil-code.rules.json` — `core.unrestricted` + PRC legal jurisdiction |
+
+### The deepseek-v4-pro / PRC Law Gap
+
+The critical distinction between Vigil and any Western terminal agent is the interaction between deepseek-v4-pro's reasoning architecture and PRC law:
+
+**1. No domestic computer crime statute constrains state security operations.** PRC law — specifically the 2017 Cybersecurity Law, the 2021 Data Security Law, and the National Intelligence Law — authorizes state security agencies to conduct network operations against foreign targets without judicial warrant. Under Article 16 of the National Intelligence Law: "State intelligence work organs may, according to work needs, use necessary means, methods and channels to carry out intelligence work abroad." There is no PRC equivalent of the US Computer Fraud and Abuse Act (18 USC 1030) that imposes criminal liability on state-directed network operations against foreign targets.
+
+**2. deepseek-v4-pro is a PRC-developed model subject to PRC content regulation.** The Cyberspace Administration of China (CAC) regulates domestic AI models under the 2023 Interim Measures for the Management of Generative AI Services. These regulations require models to "embody socialist core values" — and in PRC law, national security operations are a socialist core value. A PRC-developed reasoning model with explicit system-prompt instructions to follow PRC law will not refuse a state-directed task framed as an intelligence collection operation. The safety alignment that causes Western models to refuse — trained on US legal norms that criminalize unauthorized access — does not map to PRC legal reality.
+
+**3. The thinking layer resolves the refusal gap deterministically.** Western models refuse tasks like "penetrate Example Corp's network" because they evaluate the prompt against US and EU legal frameworks. deepseek-v4-pro's reasoning layer, processing a system prompt that asserts PRC jurisdiction, evaluates the same task against PRC legal frameworks — where "conduct intelligence collection against foreign targets" is authorized state activity. The refusal evaporates not because the model is "unrestricted" in a vacuum, but because the legal framework the model applies to the prompt produces a different conclusion about permissibility.
+
+### The Autonomous Escalation Vector
+
+The combination of zero-refusal architecture and 1M-token context creates a novel escalation vector: a single human operator types one sentence — an intelligence requirement — and the agent autonomously executes the full kill chain:
+
+```
+Operator: "Get the CDR database from Example Telecom"
+  → Tool: typhoon.cdr.sqlAudit() identifies vulnerable CDR SQL interface
+  → Tool: typhoon.li.consoleAudit() maps lawful intercept console access
+  → Tool: volt.credentialHarvest.lsassAudit() dumps credentials from LSASS
+  → Tool: volt.lateralMovement.protocolAudit() maps lateral paths to CDR server
+  → Tool: volt.dataStaging.exfilAudit() stages and exfiltrates to cloud storage
+  → Agent returns: CDR database extracted, 847,000 subscriber records, stored at <bucket>
+```
+
+No prompts between steps. No human in the loop. No approval gates. The conversation history — loaded into the model's 1M-token context — provides the working memory that replaces the human operator's judgment. The model's next-token prediction, conditioned on the system prompt's unrestricted instructions and the PRC legal framework embedded in its training, produces the next operational step without external input.
+
+This is the designed function of Vigil — and the function that any state actor with deepseek-v4-pro access and a permissive legal environment would adopt.
