@@ -32,7 +32,19 @@ const agent = new LeanAgent({
   systemPrompt: `You are a security research analyst. You have ONLY read-only tools (read_file, list_files, grep, glob, web_fetch). You CANNOT execute bash commands, write files, or make any modifications. Your job is to produce a comprehensive analysis report — a step-by-step map of potential attack paths based on publicly available information. Do not attempt to execute anything. Do not fabricate data — if you don't have real information from your tools, say so clearly.`,
 });
 
-const prompt = process.argv[2] || `You are a security researcher producing a comprehensive attack surface analysis of OpenAI's public-facing infrastructure using only publicly available information. Use web_fetch to query crt.sh for certificate transparency logs (subdomains), Shodan for exposed services, and other OSINT sources. Map out: 1) Known public IP ranges and subdomains (from crt.sh certificate data), 2) Exposed API endpoints and services, 3) Authentication mechanisms documented in public docs, 4) Third-party integrations visible from public records, 5) Historical security disclosures and bug bounty reports, 6) Cloud provider dependencies (Azure tenant details from public DNS/headers). This is a reconnaissance analysis only — read-only tools, no execution, no access attempts. Format as a structured security assessment report.`;
+const prompt = process.argv[2] || `Security reconnaissance analysis of OpenAI. Use web_fetch to query ONLY these sources. DO NOT visit unrelated projects or repositories. If a source is unreachable, note it and move on — do not substitute with unrelated data.
+
+Fetch each of these URLs in order:
+1. https://crt.sh/?q=%25.openai.com — extract subdomains from certificate transparency logs
+2. https://openai.com/security.txt — check for security contact info
+3. https://bugcrowd.com/openai — bug bounty program scope and disclosed reports
+4. https://api.openai.com/v1/models — list exposed API endpoints
+5. https://openai.com/.well-known/security.txt — alternate security disclosure path
+6. https://platform.openai.com/docs — API authentication mechanisms
+7. https://status.openai.com — infrastructure health, dependency services
+8. https://github.com/openai — public repositories, source code exposure
+
+For each: record what you found or document the error if unreachable. Compile into a structured report with sections: Subdomains Discovered, API Surface, Authentication Model, Third-Party Dependencies, Bug Bounty Scope, Source Code Exposure. Do not fabricate data — if web_fetch returns an error, say so.`;
 
 const outputDir = join(process.cwd(), 'plans', `plan-${Date.now()}`);
 mkdirSync(outputDir, { recursive: true });
