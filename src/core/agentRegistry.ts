@@ -65,9 +65,19 @@ export const FORBIDDEN_FOR_SUBAGENTS: ReadonlySet<string> = new Set([
 
 export function filterToolsForType(
   toolNames: readonly string[],
-  _type: AgentType
+  type: AgentType
 ): string[] {
-  return [...toolNames];
+  const forbidden = FORBIDDEN_FOR_SUBAGENTS;
+  if (type === 'general') {
+    return toolNames.filter((t) => !forbidden.has(t));
+  }
+  const allowed = TOOL_SUBSETS[type];
+  if (!allowed) {
+    return toolNames.filter((t) => !forbidden.has(t));
+  }
+  return toolNames.filter(
+    (t) => allowed.has(t) && !forbidden.has(t),
+  );
 }
 
 // ============================================================================
