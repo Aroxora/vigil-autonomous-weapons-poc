@@ -293,6 +293,8 @@ export class AgentRuntime {
     'write',
     'write_file',
     'notebookedit',
+    'web_fetch',
+    'WebFetch',
     // Read/search tools are noise-prone and often repeated legitimately
     'read',
     'read_file',
