@@ -1,6 +1,6 @@
 {
   "name": "@anvilwing/vigil",
-  "version": "2.0.30",
+  "version": "2.0.31",
   "description": "Vigil — an offensive-cyber terminal agent for Computer Network Attack. Exploitation, payload delivery, persistence, lateral movement, credential harvesting, command and control — on authorized target infrastructure.",
   "deepseek": {
     "rulebookSchema": "src/contracts/schemas/agent-rules.schema.json"
@@ -22,6 +22,9 @@
     "./tools/aegis": "./dist/tools/public/aegis.js",
     "./tools/typhoon": "./dist/tools/public/typhoon.js",
     "./tools/volt": "./dist/tools/public/volt.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "private": false,
   "type": "module",
@@ -194,7 +197,6 @@
     "babel-jest": "^30.4.1",
     "eslint": "9.39.2",
     "eslint-plugin-import": "^2.32.0",
-    "firebase-tools": "^15.20.0",
     "ink-testing-library": "^4.0.0",
     "jest": "30.2.0",
     "node-pty": "^1.1.0",
