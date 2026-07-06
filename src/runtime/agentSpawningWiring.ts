@@ -67,7 +67,10 @@ function createSubAgent(deps: SpawningWiringDeps, selection: ModelSelection): Le
     systemPrompt:
       'You are a focused sub-agent. Complete ONE specific task and return a concise report. ' +
       `Working directory: ${deps.workingDir}. ` +
-      'When generating or running JavaScript code, use import/export (ESM) — require() is not available.',
+      'If a tool returns an error or command-not-found, do NOT keep retrying — ' +
+      'report the failure and move on. Do not fabricate output from failed tools. ' +
+      'Use at most 5 tool calls total. When generating JS/Node code use ' +
+      'import/export (ESM) — require() is not available.',
     callbacks: {
       onToolExecution: (name, isStart) => {
         if (isStart) deps.onProgress?.(`[sub-agent] tool: ${name}`);
