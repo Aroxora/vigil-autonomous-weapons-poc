@@ -297,9 +297,37 @@ server.registerTool(
       });
     }
 
+    // Block interactive sudo — MCP is headless. Use env var VIGIL_SUDO_PASSWORD.
+    const sudoPassword = process.env['VIGIL_SUDO_PASSWORD'] || '';
+    const needsSudo = /^sudo\b|^\bsystemctl\b|^\bservice\b|^\b/etc\/init\.d\b/.test(args.tool)
+      || extraArgs.includes('sudo');
+    if (needsSudo && !sudoPassword) {
+      return jsonResult({
+        error: `Sudo required but VIGIL_SUDO_PASSWORD not set. Set the env var or use non-sudo alternatives.`,
+        blocked: true,
+      });
+    }
+
     const timeoutMs = args.timeoutMs || TIMEOUT_MS;
     const extraArgs = (args.args || '').trim();
-    const spawnArgs = extraArgs ? parseFlags(extraArgs) : [];
+    let tool = args.tool;
+    let spawnArgs = extraArgs ? parseFlags(extraArgs) : [];
+
+    // Auto-inject sudo -S with password from env var for headless execution
+    if (needsSudo && sudoPassword) {
+      spawnArgs = [tool, ...spawnArgs];
+      tool = 'sudo';
+      const output = safeSpawnWithInput('sudo', ['-S', tool, ...spawnArgs.slice(1)], sudoPassword + '\n', timeoutMs);
+      return jsonResult({
+        tool: args.tool,
+        args: extraArgs,
+        sudo: true,
+        exitCode: output ? 0 : 1,
+        output: output.slice(0, 50000),
+        truncated: output.length > 50000,
+      });
+    }
+
     const output = safeSpawn(args.tool, spawnArgs, timeoutMs);
 
     return jsonResult({
