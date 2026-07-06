@@ -1,0 +1,14 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-06 11:12 -0400
+Nmap scan report for api.openai.com (172.66.0.243)
+Host is up (0.013s latency).
+Other addresses for api.openai.com (not scanned): 162.159.140.245
+Not shown: 5 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+443/tcp  open  ssl/http Cloudflare http proxy
+8080/tcp open  http     Cloudflare http proxy
+8443/tcp open  ssl/http Cloudflare http proxy
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.28 seconds

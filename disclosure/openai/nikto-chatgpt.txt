@@ -1,0 +1,40 @@
+- Nikto v2.6.0
+---------------------------------------------------------------------------
++ Target IP:          172.64.155.209
++ Target Hostname:    chatgpt.com
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:           Subject:  /CN=chatgpt.com
+                      CN:       chatgpt.com
+                      SAN:      chatgpt.com
+                      Ciphers:  TLS_AES_256_GCM_SHA384
+                      Issuer:   /C=US/O=Google Trust Services/CN=WE1
++ Platform:           Windows
++ Start Time:         2026-07-06 11:12:44 (GMT-4)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Multiple IPs found: 172.64.155.209, 104.18.32.47, 2606:4700:4408::ac40:9bd1, 2a06:98c1:3101::6812:202f
++ [999100] /: Uncommon header(s) 'cf-mitigated' found, with contents: challenge.
++ [999100] /: Uncommon header(s) 'origin-agent-cluster' found, with contents: ?1.
++ [999106] /: Cloudflare detected via cf-ray header. Recommend proxying via Burp or mitmproxy to avoid TLS fingerprint blocks. See: https://github.com/sullo/nikto/wiki/Using-a-Proxy
++ [999961] /: Cookie __cflb created without the secure flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
++ [95] /: Cookie oai-did created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
++ [000427] /: Link header(s) found with value(s): </cdn/assets/root-hh0n1vpl.css#>; rel=preload; as=style, </cdn/assets/conversation-small-ho5792jh.css#>; rel=preload; as=style. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Link
++ [999100] /: Uncommon header(s) 'x-web-mobile-experiment-router' found, with contents: 1.
++ [999100] /: Uncommon header(s) 'reporting-endpoints' found, with contents: chatgpt-csp="https://chatgpt.com/ces/v1/telemetry/intake?ddsource=csp-report&dd-api-key=dummy-token".
++ [999100] /: Uncommon header(s) 'x-worker-version-tag' found, with contents: 25ab11944ba2104624c11a7b2c806f13d225f48a.
++ [999100] /: Uncommon header(s) 'x-request-id' found, with contents: 33cb18fb-c755-40a1-950b-af1c85970b0b.
++ [999100] /: Uncommon header(s) 'x-worker-version' found, with contents: 15175eaa-526a-4d97-a56f-6b9e702547d6.
++ No CGI Directories found (use '-C all' to force check all possible dirs). CGI tests skipped.
++ [999986] /cdn/assets/favicon/: Retrieved access-control-allow-origin header: *.
++ [999100] /cdn/assets/favicon/: Uncommon header(s) 'x-ms-version' found, with contents: 2009-09-19.
++ [999100] /cdn/assets/favicon/: Uncommon header(s) 'x-ms-request-priority' found, with contents: 3.
++ [999100] /backend-anon/conversation$/: Uncommon header(s) 'x-build' found, with contents: 0815dedb33cc.
++ [999100] /backend-anon/conversation$/: Uncommon header(s) 'x-oai-request-id' found, with contents: 70ae761d-5c13-46d4-9384-69c2635f8066.
++ [999996] /robots.txt: contains 156 entries which should be manually viewed. See: https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt
+- STATUS: Completed 246 requests (~12% complete, ~5.2 minutes left): currently in plugin 'Site Files'
+- STATUS: Running average: Not enough data.
++ Scan terminated: 20 errors and 17 items reported on the remote host
++ End Time:           2026-07-06 11:13:24 (GMT-4) (40 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

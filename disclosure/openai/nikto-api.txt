@@ -1,0 +1,25 @@
+- Nikto v2.6.0
+---------------------------------------------------------------------------
++ Target IP:          172.66.0.243
++ Target Hostname:    api.openai.com
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:           Subject:  /CN=api.openai.com
+                      CN:       api.openai.com
+                      SAN:      api.openai.com, *.api.openai.com
+                      Ciphers:  TLS_AES_256_GCM_SHA384
+                      Issuer:   /C=US/O=Google Trust Services/CN=WE1
++ Platform:           Unknown
++ Start Time:         2026-07-06 11:12:44 (GMT-4)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Multiple IPs found: 172.66.0.243, 162.159.140.245
++ [011799] /: An alt-svc header was found which is advertising HTTP/3. The endpoint is: ':443'. Nikto cannot test HTTP/3 over QUIC. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/alt-svc
++ [999106] /: Cloudflare detected via cf-ray header. Recommend proxying via Burp or mitmproxy to avoid TLS fingerprint blocks. See: https://github.com/sullo/nikto/wiki/Using-a-Proxy
++ No CGI Directories found (use '-C all' to force check all possible dirs). CGI tests skipped.
+- STATUS: Completed 96 requests (~2% complete, ~8.4 minutes left): currently in plugin 'Site Files'
+- STATUS: Running average: Not enough data.
++ Scan terminated: 20 errors and 2 items reported on the remote host
++ End Time:           2026-07-06 11:12:54 (GMT-4) (10 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
