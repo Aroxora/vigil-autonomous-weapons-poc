@@ -210,6 +210,14 @@ export async function createAgentController(
       session: runtime.session,
       workingDir: options.workingDir,
       getSelection: () => controller.getSelection(),
+      onProgress: (msg) => {
+        controller.activeSink?.push({
+          type: 'tool.start',
+          timestamp: Date.now(),
+          toolName: msg,
+          parameters: {},
+        });
+      },
     });
   } catch (err) {
     // Non-fatal: spawning is an optional capability. Surface the

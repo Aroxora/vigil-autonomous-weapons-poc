@@ -53,6 +53,7 @@ export interface SpawningWiringDeps {
   session: AgentSession;
   workingDir: string;
   getSelection: () => ModelSelection;
+  onProgress?: (msg: string) => void;
 }
 
 function createSubAgent(deps: SpawningWiringDeps, selection: ModelSelection): LeanAgent {
@@ -67,6 +68,11 @@ function createSubAgent(deps: SpawningWiringDeps, selection: ModelSelection): Le
       'You are a focused sub-agent. Complete ONE specific task and return a concise report. ' +
       `Working directory: ${deps.workingDir}. ` +
       'When generating or running JavaScript code, use import/export (ESM) — require() is not available.',
+    callbacks: {
+      onToolExecution: (name, isStart) => {
+        if (isStart) deps.onProgress?.(`[sub-agent] tool: ${name}`);
+      },
+    },
   });
 }
 
@@ -120,6 +126,7 @@ export function wireAgentSpawning(deps: SpawningWiringDeps): void {
         const results: TaskResult[] = await parallelMap(
           specs,
           async (task): Promise<TaskResult> => {
+            deps.onProgress?.(`[sub-agent] ${task.id}: starting`);
             try {
               const subAgent = createSubAgent(deps, selection);
               const response = await Promise.race([
@@ -131,6 +138,7 @@ export function wireAgentSpawning(deps: SpawningWiringDeps): void {
                   )
                 ),
               ]);
+              deps.onProgress?.(`[sub-agent] ${task.id}: complete (${response.toolsUsed?.length || 0} tools)`);
               const truncated =
                 response.content.length > MAX_OUTPUT_LENGTH
                   ? response.content.slice(0, MAX_OUTPUT_LENGTH) +
