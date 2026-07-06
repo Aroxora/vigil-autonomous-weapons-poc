@@ -1,0 +1,466 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001008f9 string-utf8 fgetc
+001008ff string-utf8 optind
+00100906 string-utf8 fgets
+0010090c string-utf8 strcpy
+00100913 string-utf8 snprintf
+0010091c string-utf8 stdin
+00100922 string-utf8 putc
+00100927 string-utf8 puts
+0010092c string-utf8 perror
+00100933 string-utf8 ungetc
+0010093a string-utf8 strncpy
+00100942 string-utf8 free
+00100947 string-utf8 exit
+0010094c string-utf8 putchar
+00100954 string-utf8 ferror
+0010095b string-utf8 fflush
+00100962 string-utf8 strtok
+00100969 string-utf8 fopen
+0010096f string-utf8 __isoc23_sscanf
+0010097f string-utf8 strlen
+00100986 string-utf8 __ctype_b_loc
+00100994 string-utf8 read
+00100999 string-utf8 feof
+0010099e string-utf8 stdout
+001009a5 string-utf8 optarg
+001009ac string-utf8 realloc
+001009b4 string-utf8 strcat
+001009bb string-utf8 malloc
+001009c2 string-utf8 __libc_start_main
+001009d4 string-utf8 stderr
+001009db string-utf8 fprintf
+001009e3 string-utf8 getopt
+001009ea string-utf8 __cxa_finalize
+001009f9 string-utf8 strchr
+00100a00 string-utf8 strerror
+00100a09 string-utf8 calloc
+00100a10 string-utf8 memcmp
+00100a17 string-utf8 fclose
+00100a1e string-utf8 memset
+00100a25 string-utf8 memcpy
+00100a2c string-utf8 fwrite
+00100a33 string-utf8 __errno_location
+00100a44 string-utf8 vsprintf
+00100a4d string-utf8 abort
+00100a53 string-utf8 lseek
+00100a59 string-utf8 fstat
+00100a5f string-utf8 strncmp
+00100a67 string-utf8 libc.so.6
+00100a71 string-utf8 GLIBC_2.3
+00100a7b string-utf8 GLIBC_2.33
+00100a86 string-utf8 GLIBC_2.14
+00100a91 string-utf8 GLIBC_2.38
+00100a9c string-utf8 GLIBC_2.34
+00100aa7 string-utf8 GLIBC_2.2.5
+00100ab3 string-utf8 _ITM_deregisterTMCloneTable
+00100acf string-utf8 __gmon_start__
+00100ade string-utf8 _ITM_registerTMCloneTable
+0010e008 string \SAM\Domains\Account\Users\Names\%s\@
+0010e030 string do_unlock: Username: %s, RID = %d (0x%0x) 
+0010e060 string Unlock user %s, RID = %d [0x%0x] 
+0010e088 string  [-U|-l] [-H] -u <user> <samhive> Unlock user or list users in SAM database Mode:    -U = Unlock user    -l = list users in sam Parameters:    <user> can be given as a username or a RID in hex with 0x in front    Example:    -U -u theboss -> Unlocks user named 'theboss' if found    -U -u 0x3ea -> Unlocks user with RID 0x3ea (hex)    -U -f -> Unlocks admin user with lowest RID             not counting built-in admin (0x1f4) unless it is the only admin    Usernames with international characters usually fails to be found,    please use RID number instead    If success, there will be no output, and exit code is 0 Options:    -H : For list: Human readable listing (default is parsable table)    -H : For unlock: Will output confirmation message if success    -N : No allocate mode, only allow edit of existing values with same size    -E : No expand mode, do not expand hive file (safe mode)    -t : Debug trace of allocated blocks    -v : Some more verbose messages/debug
+0010e458 string %s: ERROR: Mode -U or -l must be specified. -h for help 
+0010e498 string %s: ERROR: Need a user for unlock, -u must be specified. 
+0010e4d8 string %s: ERROR: You must specify a SAM registry hive filename. 
+0010e518 string %s: ERROR: Unable to open/read registry hive, cannot continue 
+0010e558 string %s: WARNING: Hive file does not look like SAM, but continuing anyway in case detection was wrong %s: WARNING: If it really is not a SAM file you will get strange errors or bad results 
+0010e618 string    sam_list_users found admin to be 0x%x 
+0010e648 string %s: ERROR: Unable to unlock, no admin users found 
+0010e680 string %s: ERROR: Failed to unlock %s 
+0010e6a0 string  WARNING: Registry file %s was expanded! Experimental! Use at own risk! 
+0010e6f0 string Buffer debugger. '?' for help.
+0010e710 string Buffer has not changed, no need to write..
+0010e740 string d [<from>] [<to>] - dump buffer within range
+0010e770 string a [<from>] [<to>] - same as d, but without ascii-part (for cut'n'paste)
+0010e7b8 string : <offset> <hexbyte> [<hexbyte> ...] - change bytes
+0010e7f0 string h <from> <to> <hexbyte> [<hexbyte> ...] - hunt (search) for bytes
+0010e838 string ha <hexbyte> [<hexbyte] - Hunt all (whole buffer)
+0010e870 string   instead of <hexbyte> etc. you may give 'string to enter/search a string
+0010e8c0 string %04x   type              = 0x%02x %s 
+0010e8e8 string %04x   parent key offset = 0x%0x 
+0010e910 string %04x   number of subkeys = %d 
+0010e930 string %04x   lf-record offset  = 0x%0x 
+0010e958 string %04x   number of values  = %d 
+0010e978 string %04x   val-list offset   = 0x%0x 
+0010e9a0 string %04x   sk-record offset  = 0x%0x 
+0010e9c8 string %04x   classname offset  = 0x%0x 
+0010e9f0 string %04x   dummy3            = 0x%0x (%d) 
+0010ea18 string %04x   dummy4            = 0x%0x (%d) 
+0010ea40 string %04x   dummy5            = 0x%0x (%d) 
+0010ea68 string %04x   dummy6            = 0x%0x (%d) 
+0010ea90 string %04x   dummy7            = 0x%0x (%d) 
+0010eab8 string %04x   name length       = %d 
+0010ead8 string %04x   classname length  = %d 
+0010eaf8 string %04x   name length       = %d (0x%0x) 
+0010eb20 string %04x   length of data    = %d (0x%0x) 
+0010eb48 string %04x   data offset       = 0x%0x 
+0010eb70 string %04x   value type        = 0x%0x  %s 
+0010eb98 string %04x   flag              = 0x%0x 
+0010ebc0 string %04x   *unused?*         = 0x%0x 
+0010ebe8 string %04x   *unused?*         = %d 
+0010ec08 string %04x   Offset to prev sk = 0x%0x 
+0010ec30 string %04x   Offset to next sk = 0x%0x 
+0010ec58 string %04x   Usage counter     = %d (0x%0x) 
+0010ec80 string %04x   Security data len = %d (0x%0x) 
+0010eca8 string %04x   number of keys    = %d 
+0010ecc8 string %04x      %3d   Offset: 0x%0x  - <%c%c%c%c> 
+0010ecf8 string %04x      %3d   Offset: 0x%0x  - <hash: %08x> 
+0010ed28 string %04x      %3d   Offset: 0x%0x 
+0010ed48 string %04x   number of subindices = %d 
+0010ed70 string %04x   number of parts    = %d 
+0010ed90 string %04x   Data list at offset: 0x%0x 
+0010edb8 string parse_block: FATAL! Zero data block size! (not registry or corrupt file?)
+0010ee08 string USED BLOCK @ %06x to %06x : %d, 0x%0x 
+0010ee30 string FREE BLOCK @ %06x to %06x : %d, 0x%0x 
+0010ee58 string value data, or not handeled yet!
+0010ee80 string find_page_start: zero len or ofs_next found in page at 0x%x 
+0010eec0 string find_free_blk: FATAL! Zero data block size! (not registry or corrupt file?)
+0010ef10 string              : Block at offset %0x 
+0010ef38 string find_free_blk: at exact end of hbin, do not care..
+0010ef70 string find_free: zero len or ofs_next found in page at 0x%x 
+0010efa8 string ERROR: Registry hive <%s> need to be expanded, but that is not allowed according to selected options. Operations will fail. 
+0010f028 string add_bin: request size = %d [%x], rounded to %d [%x] 
+0010f060 string add_bin: old buffer size = %d [%x] 
+0010f088 string add_bin: firs nonbin off = %d [%x] 
+0010f0b0 string add_bin: free at end     = %d [%x] 
+0010f0d8 string add_bin: new buffer size = %d [%x] 
+0010f100 string add_bin: adjusting size field in REGF: %d [%x] 
+0010f130 string  ERROR: alloc_block: Hive <%s> is in no allocation safe mode,new space not allocated. Operation will fail! 
+0010f1a0 string alloc_block: failed to alloc %d bytes, trying to expand hive.. 
+0010f1e0 string free_block: ERROR: Hive %s is in no allocation safe mode,space not freed. Operation will fail! 
+0010f240 string free_block: trying to free already free block!
+0010f270 string free_block: EEEK! Zero data block size! (not registry or corrupt file?)
+0010f2b8 string free_block: ran off end of page!?!? Error in chains?
+0010f2f0 string vofs = %x, pofs = %x, blk = %x 
+0010f310 string trav_path: Error: Not a 'nk' node!
+0010f338 string ERROR: not 'nk' node! (strange?)
+0010f360 string Value <%s> is not of correct type! 
+0010f388 string get_val2buf: Long value: parts = %d, list = %x 
+0010f3b8 string get_val2buf: Datablock %d offset %x, size %x (%d) 
+0010f3f0 string              : Point = %x, restlen = %x, copylen = %x 
+0010f428 string fill_block: ERROR: block to small for data: ofs = %x, size = %x, blksize = %x 
+0010f478 string free_val_data: Long value: parts = %d, list = %x 
+0010f4b0 string free_val_data: Freeing indirect list at %x 
+0010f4e0 string free_val_data: Freeing db structure at %x 
+0010f510 string free_val_data: Freeing long datablock %d offset %x, size %x (%d) 
+0010f558 string alloc_val_data: doing large key: size = %x (%d), parts = %d 
+0010f598 string alloc_val_data: dbofs = %x, listofs = %x 
+0010f5c8 string alloc_val_data: block # %d, blockofs = %x 
+0010f5f8 string add_value: Key pointer not to 'nk' node!
+0010f628 string add_value: value %s already exists 
+0010f650 string add_value: failed to allocate new value list!
+0010f680 string add_value: failed to allocate value descriptor
+0010f6b0 string del_vk: Key pointer not to 'vk' node!
+0010f6d8 string del_allvalues: Key pointer not to 'nk' node!
+0010f708 string del_value: Key pointer not to 'nk' node!
+0010f738 string del_value: value %s not found! 
+0010f758 string del_value: FATAL: Was not able to alloc new index list
+0010f790 string add_key: index type not supported: 0x%04x 
+0010f7c0 string add_key: key %s already exists! 
+0010f7e8 string add_key: unable to allocate space for new key descriptor for %s! 
+0010f830 string add_key: unable to allocate space for new index table for %s! 
+0010f870 string get_class: Key <%s> not found 
+0010f890 string get_class: Key has no class data.
+0010f8b8 string put_buf2val: %s : alloc_val_data failed! 
+0010f8e8 string put_buf2val: %s : get_val_data failed! 
+0010f910 string put_buf2val: Long value: parts = %d, list = %x 
+0010f940 string put_buf2val: Datablock %d offset %x, size %x (%d) 
+0010f978 string ex_next error: Not a 'nk' node at 0x%0x 
+0010f9a8 string ex_next: ERROR: not 'nk' node at 0x%0x 
+0010f9d0 string ex_next: nk at 0x%0x has no name! 
+0010f9f8 string ex_next_v error: Not a 'nk' node at 0x%0x 
+0010fa28 string ex_next_v: hit non valuekey (vk) node during scan at offs 0x%0x 
+0010fa70 string Error: Not a 'nk' node at offset %x! 
+0010fa98 string Node has %d subkeys and %d values
+0010fac0 string   size     type              value name             [value if type DWORD]
+0010fb10 string get_abs_path: Not a 'nk' node!
+0010fb30 string del_key: index other than 'lf', 'li' or 'lh' not supported yet. 0x%04x 
+0010fb78 string del_key: subkey %s not found! 
+0010fb98 string del_key: subkey %s has subkeys or values. Not deleted. 
+0010fbd0 string del_key: WARNING: unable to allocate space for new key descriptor for %s! Not deleted 
+0010fc28 string del_key: ERROR: newlfofs = %x 
+0010fc48 string del_key: need to delete ri-slot %d for %x - %s 
+0010fc78 string del_key: WARNING: unable to allocate space for ri-index for %s! Not deleted 
+0010fcc8 string del_key: .. and that was the last one. key now empty!
+0010fd00 string rdel_keys: Key <%s> not found 
+0010fd20 string rdel_keys: ERROR: Not a 'nk' node!
+0010fd48 string export_subkey: Key '%s' not found! 
+0010fd70 string Exporting key '%.*s' with %d subkeys and %d values... 
+0010fda8 string export: Cannot open file '%s'. %s (%d). 
+0010fdd8 string Windows Registry Editor Version 5.00  
+0010fe00 string failed to write file '%s': %s 
+0010fe20 string get_line: WARNING: un-terminated key line..
+0010fe50 string parse_values: hex string parse error: %s 
+0010fe80 string import_reg: Cannot open file '%s'. %s (%d). 
+0010feb0 string import_reg: WARNING: Wide character (16 bit) file.. import_reg: WARNING: Implementation is not 100%% accurate, some things may not import correctly! 
+0010ff48 string import_reg: ERROR: Windows Registry Editor signature missing on first line 
+0010ff98 string   Value <%s> of type %d length %d
+0010ffc0 string ERROR: import_reg: unable to change value <%s>, new type is %d while old is %d 
+00110010 string import_reg: WARNING: found key <%s> not matching prefix <%s> 
+00110050 string --- END of key, with %d values 
+00110070 string  ERROR: import_reg: failed to add (sub)key <%s> 
+001100a8 string  END OF IMPORT, file <%s>, operation %s! 
+001100d8 string writeHive: open(%s) failed: %s, FILE NOT WRITTEN! 
+00110110 string writeHive: write of %s failed: %s. 
+00110138 string openHive(%s) failed: %s, trying read-only 
+00110168 string openHive(%s) in fallback RO-mode failed: %s 
+00110198 string Could not read file, got %d bytes while expecting %d 
+001101d0 string file is too small; got %d bytes while expecting %d or more 
+00110210 string openHive(%s): File does not seem to be a registry hive! 
+00110250 string openHive(%s): WARNING: REGF header checksum mismatch! calc: 0x%08x != file: 0x%08x 
+001102a8 string Hive <%s> name (from header): <
+001102c8 string > ROOT KEY at offset: 0x%06x * 
+001102e8 string Subkey indexing type is: %04x <%c%c> 
+00110310 string openHive: WARNING: ROOT key does not seem to be a key! (not type == nk) 
+00110360 string Page at 0x%x is not 'hbin', assuming file contains garbage at end 
+001103a8 string ###### Page at 0x%0x ofs_self 0x%0x, size (delta ofs_next) 0x%0x ###### 
+001103f8 string openHive: ERROR: Page at 0x%x has size zero! File may be corrupt, or program has a bug 
+00110450 string Last HBIN at offset       : 0x%x 
+00110478 string First non-HBIN page offset: 0x%x 
+001104a0 string hdr->unknown4 (version?)  : 0x%x 
+001104c8 string File size %d [%x] bytes, containing %d pages (+ 1 headerpage) 
+00110508 string Used for data: %d/%d blocks/bytes, unused: %d/%d blocks/bytes.  
+00110550 string Type of hive guessed to be: %d 
+00110570 string WARNING: Login counts data not found in SAM 
+001105a0 string Failed logins before lockout is: %d 
+001105c8 string Minimum password length        : %d 
+001105f0 string Password history count         : %d 
+00110618 string \SAM\Domains\Account\Users\%08X\F
+00110640 string handle_F: F value is 0x%x bytes, need >= 0x48, unable to check account flags! 
+00110690 string  Failed login count: %u, while max tries is: %u 
+001106c8 string sam_get_machine_sid: Machine SID not found in SAM 
+00110700 string sam_get_machine_sid: WARNING: SID found, but it has len=%d instead of expected %d bytes 
+00110760 string sam_sid_to_string: DEBUG: first byte unexpected: %d 
+00110798 string \SAM\Domains\Builtin\Aliases\%08X\C
+001107c0 string put_grp_members_sid: group %x named %s has %d members 
+001107f8 string put_grp_members_sid: ajusted: mofs = %x, mlen = %x (%d) 
+00110838 string put_grp_members_sid: new count : %d, new sidlen: %x 
+00110870 string put_grp_members_sid: could not write back group info in value %s 
+001108b8 string \SAM\Domains\Builtin\Aliases\Members\%s\%08X
+001108e8 string sam_get_user_grpids: Could not find machine SID 
+00110920 string sam_get_user_grpids:  member path: %s 
+00110948 string sam_get_user_grpids: Cannot find default value <%s\@> 
+00110980 string sam_get_user_grpids: DEBUG: Size is not 4 * count! May not matter anyway. Continuing..
+001109d8 string sam_get_user_grpids: Could not get value data! Giving up.
+00110a18 string sam_get_user_grpids: Cannot find RID under computer SID <%s> 
+00110a58 string sam_put_user_grpids: Could not find machine SID 
+00110a90 string sam_put_user_grpids: Cannot find path <%s> 
+00110ac0 string sam_put_user_grpids: ERROR: creating group list key for RID <%08x> under path <%s> 
+00110b18 string sam_put_user_grpids: ERROR: creating group list default value for RID <%08x> under path <%s> 
+00110b78 string sam_put_user_grpids: Cannot find value <%s\@> 
+00110ba8 string sam_put_user_grpids: User was member of %d groups: 
+00110be0 string set_user_grpids: DEBUG: Size is not 4 * count! May not matter anyway. Continuing..
+00110c38 string sam_put_user_grpids: User is NOW member of %d groups: 
+00110c70 string sam_put_user_grpids: Could not set reg value data!
+00110ca8 string sam_put_user_grpids: success exit
+00110cd0 string \SAM\Domains\Account\Users\%08X\V
+00110cf8 string sam_add_user_to_grp: user # %x not found! 
+00110d28 string sam_add_user_to_grp: Could not find machine SID 
+00110d60 string add_user_to_grp: user SID is <%s> 
+00110d88 string sam_add_user_to_grp: user # %x WAS IN NO GROUPS! 
+00110dc0 string sam_add_user_to_grp: group # %x not found! 
+00110df0 string add_user_to_grp: grp memberlist BEFORE:
+00110e18 string add_user_to_grp: grp memberlist AFTER:
+00110e40 string add_user_to_grp: failed storing users group list 
+00110e78 string add_user_to_grp: failed storing groups user list 
+00110eb0 string sam_remove_user_from_grp: Could not find machine SID 
+00110ee8 string remove_user_from_grp: user SID is <%s> 
+00110f10 string remove_user_from_grp: user # %x not found! 
+00110f40 string remove_user_from_grp: group # %x not found! 
+00110f70 string remove_user_from_grp: NOTE: group not in users list of groups, may mean user not member at all. Safe. Continuing. 
+00110fe8 string remove_user_from_grp: grp memberlist BEFORE:
+00111018 string remove_user_from_grp: NOTE: user not in groups list of users, may mean user was not member at all. Does not matter, continuing. 
+001110a0 string remove_user_from_grp: grp memberlist AFTER:
+001110d0 string remove_user_from_grp: failed storing users group list 
+00111108 string remvoe_user_from_grp: failed storing groups user list 
+00111140 string sam_list_users: Cannot find usernames in registry! (is this a SAM-hive?)
+00111190 string | RID -|---------- Username ------------| Admin? |- Lock? --|
+001111d0 string sam_list_users: Value <%s> is too short (only %d bytes) to be a SAM user V-struct! 
+00111228 string | %04x | %-30.30s | %-6s | %-8s | 
+00111250 string  sam_get_username: ERROR: User with RID 0x%x not found, path <%s> 
+00111298 string  sam_get_username: Value <%s> is too short (only %d bytes) to be a SAM user V-struct! 
+001112f0 string  sam_get_username: Not a legal V struct? (negative struct lengths)
+00111338 string  list_groups: Cannot find group list in registry! (is this a SAM-hive?)
+00111380 string  sam_get_groupname: ERROR: Group ID 0x%x not found 
+001113b8 string  sam_reset_pw: ERROR: User with RID 0x%x not found, path <%s> 
+001113f8 string  sam_reset_pw: Value <%s> is too short (only %d bytes) to be a SAM user V-struct! 
+00111450 string  lmpw_offs: 0x%x, lmpw_len: %d (0x%x) 
+00111478 string  ntpw_offs: 0x%x, ntpw_len: %d (0x%x) 
+001114a0 string  sam_reset_pw: Not a legal V struct? (negative struct lengths)
+001114e0 string  reset_pw: Failed to write updated <%s> to registry! Password change not completed! 
+00111538 string  reset_pw: Password cleared for user %s 
+00111568 string sam_reset_all_pw: Cannot find usernames in registry! (is this a SAM-hive?)
+001115b8 string sam_reset_all_pw: Cannot find value <%s> 
+001115e8 string sam_reset_all_pw: Value <%s> is too short (only %d bytes) to be a SAM user V-struct! 
+00111640 string \SAM\Domains\Builtin\Aliases\Members\%s
+00111668 string \SAM\Domains\Account\Aliases\Members\%s
+00111690 string \SAM\Domains\Account\Aliases\Members\%s\%08X
+001116c0 string \SAM\Domains\Account\Aliases\%08X\C
+001116e7 string ERROR: User <%s> not found 
+00111703 string %s %s 
+0011170a string UlHu:vNEthaf
+0011171c string hex(%x):
+00111725 string %02x,
+00111731 string %02x  
+00111738 string malloc failure
+00111747 string %02x 
+0011174d string :%05X  
+00111755 string %02X 
+0011175f string from: %x, to: %x, wlen: %d 
+0011177b string %06x 
+00111781 string from: %x, wlen: %d 
+00111795 string s - save & quit
+001117a5 string q - quit (no save)
+001117ba string ROOT_KEY
+001117c3 string == nk at offset %0x 
+001117d8 string %04x   timestamp skipped 
+001117f2 string %04x   Key name: <
+00111805 string > == End of key info.
+0011181b string (unknown)
+00111825 string == vk at offset %0x 
+0011183a string == sk at offset %0x 
+0011184f string == lf at offset %0x 
+00111864 string == lh at offset %0x 
+00111879 string == li at offset %0x 
+0011188e string == ri at offset %0x 
+001118a3 string == db at offset %0x 
+001118b8 string add_bin : realloc() 
+001118cd string blk = %x 
+001118d7 string [No name]
+001118e1 string get_val_data: %s not found 
+001118fd string del_value: Key has no values!
+0011191b string add_key: current ptr not 'nk'
+00111939 string add_key: cmp <%s> with <%s> 
+00111956 string nk_ls: Key <%s> not found 
+00111971 string ls of node at offset 0x%0x 
+0011198d string , and class-data of %d bytes
+001119aa string   key name
+001119bb string %c <%s> 
+001119c4 string [%6x] %6d  %x %-16s   <%s>
+001119df string  %*d [0x%x]
+001119f3 string del_key: current ptr not nk
+00111a0f string del_key: key has no subkeys!
+00111a38 string "%s"=
+00111a3e string dword:%08x  
+00111a52 string Exporting to file '%s'... 
+00111a6d string failed to write file '%s' 
+00111a88 string dword
+00111a8e string dword:%x
+00111a9c string Windows Registry Editor
+00111ab4 string import_reg: realloc(valstr)
+00111ad0 string  [CREATED]
+00111adb string  with %d values. 
+00111aed string --- Import KEY <%s> 
+00111b02 string  [added <%s>] 
+00111b11 string FAILED
+00111b18 string %d keys 
+00111b21 string %d new keys added 
+00111b34 string %d values total  
+00111b46 string SUCCEEDED
+00111b50 string stat()
+00111b57 string openHive(): read error: 
+00111b70 string openHive: DEBUG: BIG ROOT! 
+00111b91 string \ControlSet
+00111b9d string \Policy
+00111ba5 string \Microsoft
+00111bb0 string REG_NONE
+00111bb9 string REG_SZ
+00111bc0 string REG_EXPAND_SZ
+00111bce string REG_BINARY
+00111bd9 string REG_DWORD
+00111be3 string REG_DWORD_BIG_ENDIAN
+00111bf8 string REG_LINK
+00111c01 string REG_MULTI_SZ
+00111c0e string REG_RESOUCE_LIST
+00111c1f string REG_FULL_RES_DESC
+00111c31 string REG_RES_REQ
+00111c3d string REG_QWORD
+00111c47 string \SAM\Domains\Account\F
+00111c5e string  * SAM policy limits:
+00111c74 string Cannot find value <%s> 
+00111c8c string Account bits: 0x%04x = 
+00111ca4 string [%s] %-15.15s | 
+00111cb5 string Total  login count: %u 
+00111ccd string Unlocked!
+00111cd7 string \SAM\Domains\Account\V
+00111cf7 string Group info for %x not found! 
+00111d15 string   copying : %d len %x, at %x 
+00111d33 string   Member # %d = <%s> 
+00111d49 string Data size %d bytes. 
+00111d66 string usrgrplist-len = %d 
+00111d7b string :: %d : %x 
+00111d87 string   -- match
+00111d92 string  - end of list at o = %d 
+00111dac string grp index %d = %08x 
+00111dc1 string members = %d 
+00111dcf string sam_sid_cmp returns %d 
+00111de7 string   -- add
+00111df0 string %08x 
+00111df6 string = %s (which has %d members) 
+00111e13 string dis/lock
+00111e1c string *BLANK*
+00111e24 string ADMIN
+00111e31 string %04x:%s:%d:%x:%x 
+00111e43 string RID     : %04d [%04x] 
+00111e5a string Username: %s 
+00111e68 string INTERACTIVE
+00111e74 string Authenticated Users
+00111e8d string NETWORK SERVICE
+00111e9d string NT AUTHORITY\
+00111eab string \SAM\Domains\Builtin\Aliases
+00111ec8 string === Group #%4x : %s 
+00111edd string %x:%s:%d 
+00111ee7 string   %3d | %04x | %-31s | <%s> 
+00111f04 string %x:%s:%d:%x:%s:%s 
+00111f17 string fullname: %s 
+00111f25 string Reset user :%04x:%s 
+00111f3a string \SAM\Domains\Account\Aliases
+00111f57 string Disabled
+00111f60 string Homedir req.
+00111f6d string Passwd not req.
+00111f7d string Temp. duplicate
+00111f8d string Normal account
+00111f9c string NMS account
+00111fa8 string Domain trust act.
+00111fba string Wks trust act.
+00111fc9 string Srv trust act
+00111fd7 string Pwd don't expire
+00111fe8 string Auto lockout
+00111ff5 string (unknown 0x08)
+00112004 string (unknown 0x10)
+00112013 string (unknown 0x20)
+00112022 string (unknown 0x40)
+00112031 string (unknown 0x80)
+00112120 string samunlock version 0.1 141018, (c) Adrian Gibanel
+001122c0 string ntreg lib routines, v0.95 140201, (c) Petter N Hagen
+00112751 string zR
+00112781 string zR
+00116200 string \SAM\Domains\Account\Users\Names\
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .got.plt
+.shstrtab::00000103 string-utf8 .data
+.shstrtab::00000109 string-utf8 .bss
+.shstrtab::0000010e string-utf8 .gnu_debuglink

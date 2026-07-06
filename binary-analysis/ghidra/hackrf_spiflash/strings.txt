@@ -1,0 +1,194 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100751 string-utf8 _ITM_deregisterTMCloneTable
+0010076d string-utf8 __gmon_start__
+0010077c string-utf8 _ITM_registerTMCloneTable
+00100796 string-utf8 hackrf_spiflash_erase
+001007ac string-utf8 hackrf_board_id_read
+001007c1 string-utf8 hackrf_spiflash_write
+001007d7 string-utf8 hackrf_close
+001007e4 string-utf8 hackrf_error_name
+001007f6 string-utf8 hackrf_spiflash_status
+0010080d string-utf8 hackrf_spiflash_read
+00100822 string-utf8 hackrf_board_id_name
+00100837 string-utf8 hackrf_open_by_serial
+0010084d string-utf8 hackrf_spiflash_clear_status
+0010086a string-utf8 hackrf_board_id_platform
+00100883 string-utf8 hackrf_usb_api_version_read
+0010089f string-utf8 hackrf_reset
+001008ac string-utf8 hackrf_init
+001008b8 string-utf8 hackrf_exit
+001008c4 string-utf8 rewind
+001008cb string-utf8 puts
+001008d0 string-utf8 __stack_chk_fail
+001008e1 string-utf8 __printf_chk
+001008ee string-utf8 fread
+001008f4 string-utf8 fopen
+001008fa string-utf8 strlen
+00100901 string-utf8 optarg
+00100908 string-utf8 __fprintf_chk
+00100916 string-utf8 __libc_start_main
+00100928 string-utf8 stderr
+0010092f string-utf8 __cxa_finalize
+0010093e string-utf8 ftell
+00100944 string-utf8 fclose
+0010094b string-utf8 __isoc23_strtoul
+0010095c string-utf8 fwrite
+00100963 string-utf8 fseek
+00100969 string-utf8 getopt_long
+00100975 string-utf8 strncmp
+0010097d string-utf8 libhackrf.so.0
+0010098c string-utf8 libc.so.6
+00100996 string-utf8 GLIBC_2.3.4
+001009a2 string-utf8 GLIBC_2.4
+001009ac string-utf8 GLIBC_2.2.5
+001009b8 string-utf8 GLIBC_2.34
+001009c3 string-utf8 GLIBC_2.38
+001009ce string-utf8 
+001009cf string-utf8 
+001009d0 string-utf8 
+001009d1 string-utf8 
+001009d2 string-utf8 
+001009d3 string-utf8 
+001009d4 string-utf8 
+001009d5 string-utf8 
+001009d6 string-utf8 
+001009d7 string-utf8 
+001009d8 string-utf8 
+001009d9 string-utf8 
+001009da string-utf8 
+001009db string-utf8 
+001009dc string-utf8 
+001009dd string-utf8 
+001009de string-utf8 
+001009df string-utf8 
+001009e0 string-utf8 
+001009e1 string-utf8 
+001009e2 string-utf8 
+001009e3 string-utf8 
+001009e4 string-utf8 
+001009e5 string-utf8 
+001009e6 string-utf8 
+001009e7 string-utf8 
+001009e8 string-utf8 
+001009e9 string-utf8 
+001009ea string-utf8 
+001009eb string-utf8 
+001009ec string-utf8 
+001009ed string-utf8 
+001009ee string-utf8 
+001009ef string-utf8 
+001009f0 string-utf8 
+001009f1 string-utf8 
+001009f2 string-utf8 
+001009f3 string-utf8 
+001009f4 string-utf8 
+001009f5 string-utf8 
+001009f6 string-utf8 
+001009f7 string-utf8 
+001009f8 string-utf8 
+001009f9 string-utf8 
+001009fa string-utf8 
+001009fb string-utf8 
+001009fc string-utf8 
+001009fd string-utf8 
+001009fe string-utf8 
+001009ff string-utf8 
+00100a00 string-utf8 
+00100a01 string-utf8 
+00100a02 string-utf8 
+00100a03 string-utf8 
+00100a04 string-utf8 
+00100a05 string-utf8 
+00100a06 string-utf8 
+00100a07 string-utf8 
+00100a08 string-utf8 
+00100a09 string-utf8 
+00100a0a string-utf8 
+00100a0b string-utf8 
+00102004 string Usage:
+0010200b string 	-h, --help: this help
+00102022 string HackRF Jawbreaker
+00102034 string HackRF One
+0010203f string rad1o
+00102045 string Unsupported Board ID
+0010205a string HACKRFFW
+00102063 string unknown argument '-%c %s' 
+0010207e string argument error: %s (%d) 
+00102097 string a:l:r:w:id:scvRh?
+001020ac string Error opening file %s 
+001020c3 string File size %d bytes. 
+001020d8 string Error to open file %s 
+001020ef string Status: 0x%02x %02x 
+00102104 string Compatibility test failed.
+0010211f string Erasing SPI flash.
+00102132 string Writing %d bytes at 0x%06x. 
+00102152 string address
+0010215a string length
+00102166 string write
+0010216c string compatibility
+0010217a string device
+00102181 string reset
+00102187 string status
+0010218e string clear
+00102194 string verbose
+001021a0 string 	-a, --address <n>: starting address (default: 0)
+001021d8 string 	-l, --length <n>: number of bytes to read (default: all)
+00102218 string 	-r, --read <filename>: Read data into file.
+00102248 string 	-w, --write <filename>: Write data from file.
+00102278 string 	-i, --no-check: Skip check for firmware compatibility with target device.
+001022c8 string 	-d, --device <serialnumber>: Serial number of device, if multiple devices
+00102318 string 	-s, --status: Read SPI flash status registers before other operations.
+00102360 string 	-c, --clear: Clear SPI flash status registers before other operations.
+001023a8 string 	-R, --reset: Reset HackRF after other operations.
+001023e0 string 	-v, --verbose: Verbose output.
+00102400 string Could not find appropriate platform for board id %u (%s). 
+00102440 string Unrecognised firmware info structure version %u. This may require a newer hackrf_spiflash version. 
+001024a8 string Read and write options are mutually exclusive. 
+001024d8 string Specify either read, write, or reset option. 
+00102508 string hackrf_init() failed: %s (%d) 
+00102528 string hackrf_open() failed: %s (%d) 
+00102548 string Requested transfer of zero bytes. 
+00102570 string Request exceeds size of flash memory. 
+00102598 string hackrf_spiflash_status() failed: %s (%d) 
+001025c8 string SRP0	%x SEC	%x TB	%x BP	%x WEL	%x Busy	%x 
+001025f8 string SUS	%x CMP	%x LB	%x Res	%x QE	%x SRP1	%x 
+00102628 string hackrf_spiflash_clear_status() failed: %s (%d) 
+00102658 string Reading %d bytes from 0x%06x. 
+00102678 string hackrf_spiflash_read() failed: %s (%d) 
+001026a0 string Failed write to file (wrote %d bytes). 
+001026c8 string Failed read file (read %d bytes). 
+001026f0 string Checking target device compatibility
+00102718 string hackrf_spiflash_erase() failed: %s (%d) 
+00102748 string hackrf_spiflash_write() failed: %s (%d) 
+00102778 string Reset is not supported by firmware API %x.%02x 
+001027a8 string hackrf_reset() failed: %s (%d) 
+001027c8 string hackrf_close() failed: %s (%d) 
+00102921 string zR
+00102951 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/hackrf.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

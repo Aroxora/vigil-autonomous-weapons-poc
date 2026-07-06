@@ -1,0 +1,101 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100729 string-utf8 _ITM_deregisterTMCloneTable
+00100745 string-utf8 __gmon_start__
+00100754 string-utf8 _ITM_registerTMCloneTable
+0010076e string-utf8 dbus_bus_get
+0010077b string-utf8 dbus_message_iter_open_container
+0010079c string-utf8 dbus_message_iter_close_container
+001007be string-utf8 dbus_message_iter_append_basic
+001007dd string-utf8 dbus_message_get_args
+001007f3 string-utf8 dbus_message_iter_init_append
+00100811 string-utf8 dbus_connection_send_with_reply_and_block
+0010083b string-utf8 dbus_validate_utf8
+0010084e string-utf8 dbus_message_unref
+00100861 string-utf8 dbus_connection_unref
+00100877 string-utf8 dbus_error_free
+00100887 string-utf8 dbus_message_new_method_call
+001008a4 string-utf8 dbus_set_error_from_message
+001008c0 string-utf8 __stack_chk_fail
+001008d1 string-utf8 exit
+001008d6 string-utf8 strdup
+001008dd string-utf8 __vfprintf_chk
+001008ec string-utf8 __fprintf_chk
+001008fa string-utf8 __libc_start_main
+0010090c string-utf8 stderr
+00100913 string-utf8 __cxa_finalize
+00100922 string-utf8 strchr
+00100929 string-utf8 getenv
+00100930 string-utf8 __asprintf_chk
+0010093f string-utf8 fputc
+00100945 string-utf8 strcmp
+0010094c string-utf8 stat64
+00100953 string-utf8 __errno_location
+00100964 string-utf8 write
+0010096a string-utf8 __environ
+00100974 string-utf8 libdbus-1.so.3
+00100983 string-utf8 libc.so.6
+0010098d string-utf8 GLIBC_2.34
+00100998 string-utf8 GLIBC_2.4
+001009a2 string-utf8 GLIBC_2.8
+001009ac string-utf8 GLIBC_2.33
+001009b7 string-utf8 GLIBC_2.3.4
+001009c3 string-utf8 GLIBC_2.2.5
+001009cf string-utf8 LIBDBUS_1_3
+001009db string-utf8 XXXXXXXXXXXXXXX
+00102000 string dbus-update-activation-environment
+00102028 string %1$s: update environment variables that will be set for D-Bus     session services  %1$s [options] VAR[=VAL] [VAR2[=VAL2] ...]     Add specified variables to D-Bus activation environment.     If omitted, values are taken from current environment;     variables not found in the environment are ignored. %1$s --all     Add entire current environment to D-Bus activation     environment.  Options:  --all     Upload all environment variables. --systemd     Also update the 'systemd --user' environment     if possible. --verbose     Talk about it. 
+00102250 string %s: error: --all cannot be used with VAR or VAR=VAL arguments 
+00102290 string %s: error: unable to connect to D-Bus: %s 
+001022c0 string systemd --user not found, ignoring --systemd argument
+001022f8 string org.freedesktop.systemd1.Manager
+00102320 string %s: warning: environment variable not UTF-8: %s 
+00102358 string %s: warning: environment variable without '=': %s 
+00102390 string %s: warning: environment variable not UTF-8: %s=%s 
+001023c8 string %s: error sending to dbus-daemon: %s: %s 
+001023f8 string %s: error from dbus-daemon: %s: %s 
+00102420 string %s: warning: error sending to systemd: %s: %s 
+00102450 string %s: warning: error from systemd: %s: %s 
+0010247e string --all
+00102484 string --systemd
+0010248e string --verbose
+00102498 string UpdateActivationEnvironment
+001024b4 string org.freedesktop.DBus
+001024c9 string /org/freedesktop/DBus
+001024df string updating environment
+001024f9 string XDG_RUNTIME_DIR
+00102509 string %s/systemd
+00102514 string SetEnvironment
+00102523 string /org/freedesktop/systemd1
+0010253d string org.freedesktop.systemd1
+00102556 string setting %s=%s
+00102564 string OOM while %s 
+00102572 string %s: %s: %s 
+001025d9 string zR
+00102609 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/dbus-bin.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

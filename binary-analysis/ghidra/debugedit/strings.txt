@@ -1,0 +1,265 @@
+00400374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00400b39 string-utf8 __gmon_start__
+00400b48 string-utf8 elf_version
+00400b54 string-utf8 elf_flagelf
+00400b60 string-utf8 elf_flagshdr
+00400b6d string-utf8 gelf_getshdr
+00400b7a string-utf8 elf_compress
+00400b87 string-utf8 elf_getshdrnum
+00400b96 string-utf8 gelf_fsize
+00400ba1 string-utf8 elf_nextscn
+00400bad string-utf8 elf_getphdrnum
+00400bbc string-utf8 elf64_xlatetom
+00400bcb string-utf8 gelf_getehdr
+00400bd8 string-utf8 elf_getdata
+00400be4 string-utf8 gelf_getchdr
+00400bf1 string-utf8 elf_ndxscn
+00400bfc string-utf8 elf_getshdrstrndx
+00400c0e string-utf8 elf_errmsg
+00400c19 string-utf8 gelf_getsymshndx
+00400c2a string-utf8 gelf_getrela
+00400c37 string-utf8 elf_flagdata
+00400c44 string-utf8 elf_begin
+00400c4e string-utf8 gelf_getrel
+00400c5a string-utf8 gelf_update_shdr
+00400c6b string-utf8 gelf_update_rel
+00400c7b string-utf8 gelf_getnote
+00400c88 string-utf8 gelf_getsym
+00400c94 string-utf8 gelf_update_sym
+00400ca4 string-utf8 gelf_getphdr
+00400cb1 string-utf8 gelf_update_ehdr
+00400cc2 string-utf8 elf_strptr
+00400ccd string-utf8 elf_update
+00400cd8 string-utf8 elf_getscn
+00400ce3 string-utf8 elf_kind
+00400cec string-utf8 elf_scnshndx
+00400cf9 string-utf8 gelf_update_rela
+00400d0a string-utf8 elf_end
+00400d12 string-utf8 elf_errno
+00400d1c string-utf8 dwelf_strent_off
+00400d2d string-utf8 dwelf_strtab_add_len
+00400d42 string-utf8 dwelf_strtab_init
+00400d54 string-utf8 dwelf_strtab_free
+00400d66 string-utf8 dwelf_strtab_finalize
+00400d7c string-utf8 optind
+00400d83 string-utf8 chmod
+00400d89 string-utf8 tdestroy
+00400d92 string-utf8 exit
+00400d97 string-utf8 __assert_fail
+00400da5 string-utf8 stat
+00400daa string-utf8 strdup
+00400db1 string-utf8 strrchr
+00400db9 string-utf8 putchar
+00400dc1 string-utf8 tfind
+00400dc7 string-utf8 error
+00400dcd string-utf8 strlen
+00400dd4 string-utf8 tsearch
+00400ddc string-utf8 stdout
+00400de3 string-utf8 optarg
+00400dea string-utf8 realloc
+00400df2 string-utf8 open
+00400df7 string-utf8 malloc
+00400dfe string-utf8 __libc_start_main
+00400e10 string-utf8 stderr
+00400e17 string-utf8 fprintf
+00400e1f string-utf8 utimensat
+00400e29 string-utf8 calloc
+00400e30 string-utf8 memset
+00400e37 string-utf8 close
+00400e3d string-utf8 memcpy
+00400e44 string-utf8 fwrite
+00400e4b string-utf8 strcmp
+00400e52 string-utf8 qsort
+00400e58 string-utf8 __errno_location
+00400e69 string-utf8 abort
+00400e6f string-utf8 getopt_long
+00400e7b string-utf8 strncmp
+00400e83 string-utf8 libelf.so.1
+00400e8f string-utf8 libdw.so.1
+00400e9a string-utf8 libc.so.6
+00400ea4 string-utf8 ELFUTILS_0.167
+00400eb3 string-utf8 GLIBC_2.14
+00400ebe string-utf8 GLIBC_2.33
+00400ec9 string-utf8 GLIBC_2.34
+00400ed4 string-utf8 GLIBC_2.6
+00400ede string-utf8 GLIBC_2.2.5
+00400eea string-utf8 ELFUTILS_1.4
+00400ef7 string-utf8 ELFUTILS_1.5
+00400f04 string-utf8 ELFUTILS_1.6
+00400f11 string-utf8 ELFUTILS_1.7
+00400f1e string-utf8 ELFUTILS_1.3
+00400f2b string-utf8 ELFUTILS_1.0
+0040d008 string Couldn't allocate new string entries block
+0040d038 string Couldn't insert new strtab idx
+0040d058 string Bad string pointer index %zd (%s)
+0040d080 string Couldn't allocate new string storage
+0040d0a8 string Could not create new string table entry
+0040d0d0 string data != NULL && data->d_buf != NULL
+0040d0f8 string elf_getdata (scn, data) == NULL
+0040d118 string data->d_size == dso->shdr[i].sh_size
+0040d140 string symdata != NULL && symdata->d_buf != NULL
+0040d170 string elf_getdata (dso->scn[dso->shdr[i].sh_link], symdata) == NULL
+0040d1b0 string symdata->d_size == dso->shdr[dso->shdr[i].sh_link].sh_size
+0040d1f0 string %s: Could not get extended section index table: %s
+0040d228 string %s: Unhandled relocation %d at [%d] for %s section
+0040d260 string %s: Unknown DWARF DW_FORM_0x%x
+0040d280 string Couldn't get number of shdrs: %s
+0040d2a8 string Couldn't get section string index: %s
+0040d2d0 string Couldn't get number of phdrs: %s
+0040d2f8 string Couldn't update relocations: %s
+0040d318 string Couldn't update relocation symbols: %s
+0040d340 string %s: Wrong directory table index %u
+0040d368 string Unhandled string form DW_FORM_0x%x
+0040d390 string %s: Could not allocate debug_line dirs
+0040d3b8 string %s: Unsupported .debug_line %s %u path DW_FORM_0x%x
+0040d3f0 string %s: Unsupported .debug_line %s %u dirndx DW_FORM_0x%x
+0040d428 string %s: Bad dir number %u in .debug_line %s
+0040d450 string %s: Unsupported .debug_line %s %u DW_FORM_indirect
+0040d488 string %s: Could not allocate memory for next CU
+0040d4b8 string %s: 64-bit DWARF not supported
+0040d4d8 string %s: DWARF version %d unhandled
+0040d4f8 string %s: DWARF CU abbrev offset too large
+0040d520 string %s: Invalid DWARF pointer size %d
+0040d548 string %s: Could not read .debug_abbrev
+0040d570 string %s: Duplicate DWARF abbreviation %d
+0040d598 string %s: DWARF abbreviation does not end with 2 zeros
+0040d5d0 string %s: Could not find DWARF abbreviation %d
+0040d600 string Warning, not replacing comp_dir '%s' prefix ('%s' -> '%s') encoded as DW_FORM_string. Replacement too large.
+0040d670 string %s: Bad string pointer index %zd for comp_dir (%s)
+0040d6a8 string %s: Bad string pointer index %zd for unit name (%s)
+0040d6e0 string Couldn't add more debug_line tables
+0040d708 string %s: Invalid .line_table offset 0x%zx
+0040d730 string %s: .debug_line CU does not fit into section
+0040d760 string %s: .debug_line address size differs from .debug_info
+0040d798 string %s: .debug_line CU prologue does not fit into CU
+0040d7d0 string %s: .debug_line opcode table does not fit into CU
+0040d808 string Usage: %s [OPTION...] FILE   -b, --base-dir=STRING           base build directory of objects   -d, --dest-dir=STRING           directory to rewrite base-dir into   -l, --list-file=STRING          file where to put list of source and                                    header file names   -i, --build-id                  recompute build ID note and print ID on                                   stdout   -s, --build-id-seed=STRING      if recomputing the build ID note use                                   this string as hash seed   -n, --no-recompute-build-id     do not recompute build ID note even                                   when -i or -s are given   -p, --preserve-dates            Preserve modified/access timestamps  Help options:   -?, --help                      Show this help message   -u, --usage                     Display brief usage message   -V, --version                   Show debugedit version 
+0040dba8 string Usage: %s [-in?] [-b|--base-dir STRING] [-d|--dest-dir STRING]         [-l|--list-file STRING] [-i|--build-id]          [-s|--build-id-seed STRING]         [-n|--no-recompute-build-id]         [-p|--preserve-dates]         [-?|--help] [-u|--usage]         [-V|--version] FILE 
+0040dcc0 string You must specify a base dir if you specify a dest dir
+0040dcf8 string --build-id-seed (-s) needs --build-id (-i)
+0040dd28 string --build-id-seed (-s) string should be at least 1 char
+0040dd60 string Failed to open input file '%s'
+0040dd80 string Failed to chmod input file '%s' to make sure we can read and write
+0040ddc8 string Stabs debuginfo not supported: %s
+0040ddf0 string %s: Unknown debugging section %s
+0040de18 string %s: Found two copies of %s section
+0040de40 string %s: Could not allocate more %s sections
+0040de68 string Couldn't get compressed header: %s
+0040de90 string No memory for new .debug_line table (0x%zx bytes)
+0040dec8 string %s: Could not allocate line relocations
+0040def0 string .debug_line relocation offset out of range
+0040df20 string Couldn't update relocation: %s
+0040df40 string unhandled .debug_macro version: %d
+0040df68 string unhandled .debug_macro flags: 0x%x
+0040df90 string debugedit: create_dummy_debugedit_stridxentry called more than once.
+0040dfd8 string Warning, .debug_str_offsets table at offset %zx index [%zd] .debug_str [%zx] entry '%s' unused, replacing with '<debugedit>' 
+0040e058 string Cannot handle %zu-byte build ID
+0040e078 string Failed to compute header checksum: %s
+0040e0a0 string Failed to chmod input file '%s' to restore old access rights
+0040e0e0 string Failed to preserve timestamps on '%s'
+0040e108 string Cannot find prime bigger than %lu 
+0040e12b string tools/debugedit.c
+0040e13d string %s: Could not allocate memory
+0040e15b string symdata->d_off == 0
+0040e16f string len < UINT_MAX
+0040e17e string cannot open ELF file: %s
+0040e197 string "%s" is not an ELF file
+0040e1af string cannot get the ELF header: %s
+0040e1cd string "%s" is not a shared library
+0040e1ea string Could not open DSO
+0040e1fd string ret != NULL
+0040e209 string Couldn't get relocation: %s
+0040e225 string Couldn't get symbol: %s
+0040e23f string %s: Reading file table
+0040e256 string Could not write to '%s'
+0040e26e string %s: %s CU header too small
+0040e289 string %s: %s too small
+0040e29a string %s: Unit type %u unhandled
+0040e2b5 string %s: .debug_abbrev not present
+0040e2d5 string %s: No .line_table section
+0040e2f0 string cu->ptr_size != 0
+0040e302 string <invalid>
+0040e30c string b:d:l:is:npV?u
+0040e31f string debugedit %s 
+0040e32d string Need one FILE as input
+0040e344 string library out of date
+0040e358 string .stab
+0040e35e string .debug_info
+0040e36a string Failed decompression
+0040e37f string .rel.debug_
+0040e38b string .rela.debug_
+0040e398 string No %s reloc section: %s
+0040e3b0 string %s: Wrong ELF data enconding
+0040e3cd string t->size_diff == 0
+0040e3df string Unhandled DW_MACRO op 0x%x
+0040e3fa string directory
+0040e404 string file name
+0040e40e string Failed recompression
+0040e423 string Couldn't get shdr: %s
+0040e439 string Couldn't update shdr: %s
+0040e452 string Couldn't update ehdr: %s
+0040e46b string Failed to update file: %s
+0040e485 string Failed to create xxhash state
+0040e4a8 string Failed to write file: %s
+0040e4c1 string elf_end failed: %s
+0040e4d4 string base-dir
+0040e4dd string dest-dir
+0040e4e6 string list-file
+0040e4f0 string build-id-seed
+0040e4fe string no-recompute-build-id
+0040e514 string preserve-dates
+0040e523 string version
+0040e530 string usage
+0040e536 string .debug_abbrev
+0040e544 string .debug_line
+0040e550 string .debug_aranges
+0040e55f string .debug_pubnames
+0040e56f string .debug_pubtypes
+0040e57f string .debug_macinfo
+0040e58e string .debug_loc
+0040e599 string .debug_str
+0040e5a4 string .debug_frame
+0040e5b1 string .debug_ranges
+0040e5bf string .debug_types
+0040e5cc string .debug_macro
+0040e5d9 string .debug_gdb_scripts
+0040e5ec string .debug_rnglists
+0040e5fc string .debug_line_str
+0040e60c string .debug_addr
+0040e618 string .debug_str_offsets
+0040e62b string .debug_loclists
+0040ebe0 string 0123456789abcdef
+0040ebf8 string setup_relbuf
+0040ec10 string string_find_entry
+0040ec30 string edit_dwarf2_line
+0040ec48 string get_line_table
+0040ec58 string skip_form
+0040ec68 string edit_dwarf2
+0040f299 string zR
+0040f2c5 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .text
+.shstrtab::0000007c string-utf8 .fini
+.shstrtab::00000082 string-utf8 .rodata
+.shstrtab::0000008a string-utf8 .eh_frame_hdr
+.shstrtab::00000098 string-utf8 .eh_frame
+.shstrtab::000000a2 string-utf8 .note.gnu.property
+.shstrtab::000000b5 string-utf8 .note.ABI-tag
+.shstrtab::000000c3 string-utf8 .init_array
+.shstrtab::000000cf string-utf8 .fini_array
+.shstrtab::000000db string-utf8 .dynamic
+.shstrtab::000000e4 string-utf8 .got
+.shstrtab::000000e9 string-utf8 .got.plt
+.shstrtab::000000f2 string-utf8 .data
+.shstrtab::000000f8 string-utf8 .bss
+.shstrtab::000000fd string-utf8 .gnu_debuglink

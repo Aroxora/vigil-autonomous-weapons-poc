@@ -1,0 +1,131 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100729 string-utf8 strcpy
+00100730 string-utf8 perror
+00100737 string-utf8 strncpy
+0010073f string-utf8 __ctype_toupper_loc
+00100753 string-utf8 free
+00100758 string-utf8 exit
+0010075d string-utf8 getc
+00100762 string-utf8 strdup
+00100769 string-utf8 strrchr
+00100771 string-utf8 strtol
+00100778 string-utf8 fopen
+0010077e string-utf8 strlen
+00100785 string-utf8 __ctype_b_loc
+00100793 string-utf8 strstr
+0010079a string-utf8 realloc
+001007a2 string-utf8 __fprintf_chk
+001007b0 string-utf8 __xpg_basename
+001007bf string-utf8 malloc
+001007c6 string-utf8 __libc_start_main
+001007d8 string-utf8 stderr
+001007df string-utf8 __cxa_finalize
+001007ee string-utf8 strchr
+001007f5 string-utf8 strerror
+001007fe string-utf8 calloc
+00100805 string-utf8 fclose
+0010080c string-utf8 fputs
+00100812 string-utf8 fwrite
+00100819 string-utf8 strcmp
+00100820 string-utf8 qsort
+00100826 string-utf8 __errno_location
+00100837 string-utf8 strncmp
+0010083f string-utf8 libc.so.6
+00100849 string-utf8 GLIBC_2.3.4
+00100855 string-utf8 GLIBC_2.34
+00100860 string-utf8 GLIBC_2.2.5
+0010086c string-utf8 GLIBC_2.3
+00100876 string-utf8 _ITM_deregisterTMCloneTable
+00100892 string-utf8 __gmon_start__
+001008a1 string-utf8 _ITM_registerTMCloneTable
+00104004 string %s: zstrdup(NULL) 
+00104017 string startchar
+00104021 string my_char
+0010402d string headers
+00104038 string CHARS
+0010403e string STARTFONT
+00104048 string _XMBDFED_INFO
+00104056 string XFREE86_GLYPH_RANGES
+0010406b string DEFAULT_CHAR
+00104078 string STARTPROPERTIES
+00104088 string -ISO10646-1
+00104094 string CHARSET_REGISTRY
+001040a5 string "ISO10646"
+001040b0 string CHARSET_ENCODING
+001040c5 string FONTBOUNDINGBOX
+001040d5 string SLANT
+001040db string SPACING
+001040e3 string COMMENT
+001040eb string $Id: 
+001040f1 string COMMENT Derived from 
+00104107 string STARTCHAR
+00104111 string ENDFONT
+00104119 string STARTCHAR ??? 
+00104128 string ENDCHAR
+00104132 string STARTCHAR defaultchar 
+00104159 string CHARS %d 
+00104163 string DEFAULT_CHAR %d 
+00104174 string STARTPROPERTIES %d 
+00104188 string FONT %s%s 
+00104193 string CHARSET_REGISTRY "%s" 
+001041aa string SLANT "%s" 
+001041b6 string CHARSET_ENCODING "%s" 
+001041cd string FONTBOUNDINGBOX %d %d %d %d 
+001041ea string SPACING "%s" 
+001041f8 string ENDFONT 
+00104201 string ENCODING %d 
+00104210 string  Usage: ucs2any [+d|-d] <source-name> { <mapping-file> <registry-encoding> }  where     +d                   put DEC VT100 graphics characters in the C0 range                         (default for upright charcell fonts)     -d                   do not put DEC VT100 graphics characters in the                         C0 range (default for all other font types)     <source-name>        is the name of an ISO10646-1 encoded BDF file     <mapping-file>       is the name of a character set table like those on                         <ftp://ftp.unicode.org/Public/MAPPINGS/>     <registry-encoding>  are the CHARSET_REGISTRY and CHARSET_ENCODING                         field values for the font name (XLFD) of the                         target font, separated by a hyphen  Example:     ucs2any 6x13.bdf 8859-1.TXT iso8859-1 8859-2.TXT iso8859-2  will generate the files 6x13-iso8859-1.bdf and 6x13-iso8859-2.bdf 
+001045a8 string %s: Can't read file '%s': %s! 
+001045c8 string %s: FONT name in '%s' is invalid string '%s'! 
+001045f8 string %s: FONT name in '%s' is '%s' and not '*-ISO10646-1'! 
+00104630 string %s: CHARSET_REGISTRY in '%s' is '%s' and not 'ISO10646'! 
+00104670 string %s: CHARSET_ENCODING in '%s' is '%s' and not '1'! 
+001046a8 string %s: SLANT property in '%s' is invalid string '%s'! 
+001046e0 string %s: SPACING property in '%s' is invalid string '%s'! 
+00104718 string %s: No STARTFONT line found in '%s'! 
+00104740 string %s: Argument registry-encoding '%s' not in expected format! 
+00104780 string map file argument "%s" needs a corresponding registry-encoding argument 
+001047d0 string %s: Can't read mapping file '%s': %s! 
+001047f8 string No glyph for character U+%04X (0x%02x) available. 
+00104830 string Unrecognized line in '%s': %s 
+00104850 string No default character defined. 
+00104870 string No characters found for %s-%s. 
+00104890 string Unparsable BBX found for U+%04x! 
+001048b8 string Warning: No BBX found for U+%04X! 
+001048e0 string Writing %d characters into file '%s'. 
+00104908 string %s: Can't write file '%s': %s! 
+00104928 string COMMENT AUTOMATICALLY GENERATED FILE. DO NOT EDIT! 
+00104960 string COMMENT Generated with 'ucs2any %s %s %s-%s' 
+00104990 string COMMENT from an ISO10646-1 encoded source BDF font. 
+001049c8 string COMMENT ucs2any by Ben Collver <collver1@attbi.com>, 2003, based on 
+00104a10 string COMMENT ucs2any.pl by Markus Kuhn <http://www.cl.cam.ac.uk/~mgk25/>, 2000. 
+00104bc9 string zR
+00104bf9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/xfonts-utils.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .got.plt
+.shstrtab::000000f6 string-utf8 .data
+.shstrtab::000000fc string-utf8 .bss
+.shstrtab::00000101 string-utf8 .gnu_debugaltlink
+.shstrtab::00000113 string-utf8 .gnu_debuglink

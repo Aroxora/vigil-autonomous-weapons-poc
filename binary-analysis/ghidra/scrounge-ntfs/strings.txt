@@ -1,0 +1,136 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001007e1 string-utf8 chdir
+001007e7 string-utf8 warn
+001007ec string-utf8 __cxa_finalize
+001007fb string-utf8 __printf_chk
+00100808 string-utf8 read
+0010080d string-utf8 malloc
+00100814 string-utf8 __libc_start_main
+00100826 string-utf8 __fprintf_chk
+00100834 string-utf8 stat64
+0010083b string-utf8 getopt
+00100842 string-utf8 warnx
+00100848 string-utf8 open64
+0010084f string-utf8 strtol
+00100856 string-utf8 memset
+0010085d string-utf8 optarg
+00100864 string-utf8 __stpcpy_chk
+00100871 string-utf8 puts
+00100876 string-utf8 free
+0010087b string-utf8 utimes
+00100882 string-utf8 close
+00100888 string-utf8 strncpy
+00100890 string-utf8 strlen
+00100897 string-utf8 __memcpy_chk
+001008a4 string-utf8 memcmp
+001008ab string-utf8 realloc
+001008b3 string-utf8 stderr
+001008ba string-utf8 getcwd
+001008c1 string-utf8 chmod
+001008c7 string-utf8 errx
+001008cc string-utf8 optind
+001008d3 string-utf8 lseek64
+001008db string-utf8 __errno_location
+001008ec string-utf8 putchar
+001008f4 string-utf8 exit
+001008f9 string-utf8 fwrite
+00100900 string-utf8 __stack_chk_fail
+00100911 string-utf8 mkdir
+00100917 string-utf8 libc.so.6
+00100921 string-utf8 GLIBC_2.3.4
+0010092d string-utf8 GLIBC_2.33
+00100938 string-utf8 GLIBC_2.4
+00100942 string-utf8 GLIBC_2.34
+0010094d string-utf8 GLIBC_2.2.5
+00100959 string-utf8 _ITM_deregisterTMCloneTable
+00100975 string-utf8 __gmon_start__
+00100984 string-utf8 _ITM_registerTMCloneTable
+00105004 string out of memory
+00105012 string couldn't seek drive
+00105026 string couldn't read drive
+0010503a string unexpected end of drive
+00105052 string couldn't open drive: %s
+0010506a string c:hlm:o:sv
+00105075 string must specify drive name
+0010508d string ignoring extra arguments
+001050a6 string error reading comparison file
+001050c4 string invalid mft record
+001050d7 string invalid mft. sparse data runs
+001050f5 string mode: %x
+00105107 string compressed file. skipping.
+00105122 string encrypted file. skipping.
+0010513c string invalid file length.
+00105151 string couldn't open output file: %s
+0010516f string couldn't read mft
+00105181 string error reading in mft
+0010519b string invalid mft. wrong record
+001051b5 string [Processing MFT...] 
+001051ca string [Scrounging via MFT...] 
+001051e3 string invalid index in mft: %d
+001051fc string [Scrounging raw records...] 
+00105219 string can't seek device to sector
+00105235 string can't read drive sector
+00105250 string     Start Sector    End Sector      Cluster Size    MFT Offset     ==================================================================
+001052d8 string invalid cluster size (must be between 1 and 128)
+00105310 string invalid -l argument in scrounge mode
+00105338 string couldn't change to output directory
+00105360 string invalid -s argument in scrounge mode
+00105388 string must specify start and end sector of partition
+001053b8 string invalid end sector (must be positive and greater than first)
+001053f8 string Scrounging via raw search. Directory info will be discarded.
+00105438 string couldn't read mft record from drive
+00105460 string brain dead, incredibly fragmented file data. skipping
+00105498 string extended file attributes, but no MFT loaded. skipping
+001054d0 string invalid sector in mft map. screwed up file. skipping data
+00105510 string invalid mft. data attribute non-resident
+00105540 string invalid mft. no data attribute
+00105560 string couldn't set file times on: %s
+00105580 string couldn't read file status for: %s
+001055a8 string couldn't set file attributes for: %s
+001055d0 string invalid parent directory for file: %s
+001055f8 string couldn't create directory '%s' putting files in parent directory
+00105640 string file name too long on duplicate file: %s
+00105670 string invalid mft record. resident data screwed up
+001056a0 string couldn't write data to output file
+001056c8 string couldn't write to output file: %s
+001056f0 string couldn't read sector from disk
+00105710 string invalid mft record. no data attribute found
+00105740 string invalid mft record. couldn't find all data for file
+00105778 string invalid mft. past end of partition
+001057a0 string invalid mft. marked as not in use
+001057c8 string invalid mft. no records in mft
+001057e8 string [Performing NTFS partition search...]
+00105810 string search functionality not implemented yet.
+00105840 string %-15u %-15u
+00105850 string     %-15u %-15u 
+00105868 string  Drive: %s 
+00105878 string  Drive: %u 
+001058a0 string     Start Sector    End Sector      Cluster Size    MFT Offset     ================================================================== 
+001059a0 string usage: scrounge-ntfs -l disk                                                 List all drive partition information.                                                                                                     usage: scrounge-ntfs -s disk                                                 Search drive for NTFS partitions.                                                                                                         usage: scrounge-ntfs [-m mftoffset] [-c clustersize] [-o outdir] disk start end     Scrounge data from a partition                                        -m         Offset to mft (in sectors)                                 -c         Cluster size (in sectors, default of 8)                    -o         Directory to put scrounged files in                        disk       The raw disk partitios (ie: /dev/hda)                      start      First sector of partition                                  end        Last sector of partition                                                                                                       
+00106069 string zR
+00106099 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debuglink

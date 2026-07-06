@@ -1,0 +1,166 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100af9 string-utf8 _ITM_deregisterTMCloneTable
+00100b15 string-utf8 __gmon_start__
+00100b24 string-utf8 _ITM_registerTMCloneTable
+00100b3e string-utf8 regfi_load_big_data
+00100b52 string-utf8 regfi_version
+00100b60 string-utf8 regfi_free_record
+00100b72 string-utf8 regfi_get_sacl
+00100b81 string-utf8 regfi_get_group
+00100b91 string-utf8 void_stack_push
+00100ba1 string-utf8 regfi_seek
+00100bac string-utf8 regfi_parse_sk
+00100bbb string-utf8 regfi_parse_vk
+00100bca string-utf8 void_stack_size
+00100bda string-utf8 range_list_new
+00100be9 string-utf8 range_list_remove
+00100bfb string-utf8 regfi_read
+00100c06 string-utf8 void_stack_pop
+00100c15 string-utf8 regfi_interpret_valuename
+00100c2f string-utf8 regfi_parse_cell
+00100c40 string-utf8 regfi_interpret_keyname
+00100c58 string-utf8 range_list_find_data
+00100c6d string-utf8 regfi_log_set_mask
+00100c80 string-utf8 regfi_parse_data
+00100c91 string-utf8 regfi_parse_nk
+00100ca0 string-utf8 void_stack_new
+00100caf string-utf8 range_list_free
+00100cbf string-utf8 range_list_find
+00100ccf string-utf8 regfi_calc_maxsize
+00100ce2 string-utf8 range_list_has_range
+00100cf7 string-utf8 regfi_buffer_to_data
+00100d0c string-utf8 regfi_load_valuelist
+00100d21 string-utf8 regfi_type_val2str
+00100d34 string-utf8 range_list_get
+00100d43 string-utf8 regfi_log_get_str
+00100d55 string-utf8 regfi_interpret_data
+00100d6a string-utf8 regfi_nt2unix_time
+00100d7d string-utf8 regfi_parse_little_data
+00100d95 string-utf8 regfi_parse_unalloc_cells
+00100daf string-utf8 regfi_alloc
+00100dbb string-utf8 regfi_free
+00100dc6 string-utf8 range_list_add
+00100dd5 string-utf8 void_stack_free
+00100de5 string-utf8 range_list_split_element
+00100dfe string-utf8 regfi_get_dacl
+00100e0d string-utf8 regfi_get_owner
+00100e1d string-utf8 range_list_size
+00100e2d string-utf8 talloc_reparent
+00100e3d string-utf8 _talloc_free
+00100e4a string-utf8 talloc_named_const
+00100e5d string-utf8 __stack_chk_fail
+00100e6e string-utf8 __printf_chk
+00100e7b string-utf8 exit
+00100e80 string-utf8 strdup
+00100e87 string-utf8 open64
+00100e8e string-utf8 strlen
+00100e95 string-utf8 gmtime
+00100e9c string-utf8 realloc
+00100ea4 string-utf8 __sprintf_chk
+00100eb2 string-utf8 strftime
+00100ebb string-utf8 __fprintf_chk
+00100ec9 string-utf8 malloc
+00100ed0 string-utf8 __libc_start_main
+00100ee2 string-utf8 stderr
+00100ee9 string-utf8 __cxa_finalize
+00100ef8 string-utf8 strchr
+00100eff string-utf8 strerror
+00100f08 string-utf8 close
+00100f0e string-utf8 fputc
+00100f14 string-utf8 fputs
+00100f1a string-utf8 __snprintf_chk
+00100f29 string-utf8 fwrite
+00100f30 string-utf8 strcmp
+00100f37 string-utf8 __errno_location
+00100f48 string-utf8 libregfi.so.1
+00100f56 string-utf8 libtalloc.so.2
+00100f65 string-utf8 libc.so.6
+00100f6f string-utf8 TALLOC_2.0.2
+00100f7c string-utf8 GLIBC_2.4
+00100f86 string-utf8 GLIBC_2.34
+00100f91 string-utf8 GLIBC_2.2.5
+00100f9d string-utf8 GLIBC_2.3.4
+00105004 string %%%.2X
+0010500b string Version: %s 
+00105018 string Options: 
+00105022 string 	-v	 sets verbose mode. 
+0010503b string 	-H	 disables header row. 
+00105056 string %Y-%m-%d %H:%M:%S
+00105068 string 0x%.8X
+0010506f string 0x%.16llX
+0010507e string %.8X,%.8X,RAW,,,,,,,,,,,,%s 
+0010509b string REGFI_BUFFER
+001050a8 string src/reglookup-recover.c:327
+001050c4 string src/reglookup-recover.c:525
+001050e0 string src/reglookup-recover.c:679
+001050fc string src/reglookup-recover.c:706
+00105118 string src/reglookup-recover.c:714
+00105150 string Usage: reglookup-recover [options] <REGISTRY_FILE> 
+00105188 string 	-h	 enables header row. (default) 
+001051b0 string 	-l	 enables leftover(raw) cell output. 
+001051e0 string 	-L	 disables leftover(raw) cell output. (default) 
+00105218 string 	-r	 enables raw cell output for parsed cells. 
+00105248 string 	-R	 disables raw cell output for parsed cells. (default) 
+00105288 string ERROR: Failed to open hive.  Error returned: %s 
+001052c0 string ERROR: Could not allocate sufficient memory. 
+001052f0 string WARN: NULL key name in NK record at offset %.8X. 
+00105328 string %.8X,%.8X,KEY,%s,%s,%s,%d,,,,,,,,%s 
+00105350 string WARN: Error occurred while interpreting data for VK record at offset 0x%.8X. 
+001053a0 string Unrecognized registry data type (0x%.8X); quoting as binary.
+001053e0 string WARN: Could not quote value for '%s/%s'.  Memory allocation failure likely. 
+00105430 string WARN: Could not quote value for '%s/%s'.  Returned error: %s 
+00105470 string INFO: While quoting value for '%s/%s', warning returned: %s 
+001054b0 string %.8X,%.8X,VALUE,%s,%s,,,0x%.8X,%s,%d,,,,,%s 
+001054e0 string %.8X,%.8X,VALUE,%s,%s,,,%s,%s,%d,,,,,%s 
+00105510 string %.8X,%.8X,SK,,,,,,,,%s,%s,%s,%s,%s 
+00105538 string DEBUG: removeRange: rm_idx < 0; (%d) 
+00105560 string DEBUG: removeRange: cur_elem == NULL.  rm_idx=%d 
+00105598 string DEBUG: removeRange: first split failed 
+001055c0 string DEBUG: removeRange: cur_elem == NULL after first split.  rm_idx=%d 
+00105608 string DEBUG: removeRange: second split failed 
+00105638 string DEBUG: removeRange: remove failed 
+00105660 string ERROR: Couldn't add value to unalloc_values. 
+00105690 string WARN: Successfully parsed big data at offset 0x%.8X was rejected because some substructure (offset=0x%.8X) is allocated or used in other recovered structures. 
+00105730 string WARN: Data length (0x%.8X) larger than remaining cell length (0x%.8X) while parsing data record at offset 0x%.8X. Truncating... 
+001057b8 string ERROR: Couldn't add key to unalloc_keys. 
+001057e8 string ERROR: Couldn't add sk to unalloc_sks. 
+00105810 string ERROR: Requires at least one argument. 
+00105838 string ERROR: Unrecognized option: %s 
+00105858 string ERROR: Couldn't open registry file: %s 
+00105880 string ERROR: Failed to create REGFI_FILE structure. 
+001058b0 string OFFSET,REC_LENGTH,REC_TYPE,PATH,NAME,NK_MTIME,NK_NVAL,VK_TYPE,VK_VALUE,VK_DATA_LEN,SK_OWNER,SK_GROUP,SK_SACL,SK_DACL,RAW_CELL
+00105930 string ERROR: Could not obtain list of unallocated cells. 
+00105968 string ERROR: extractKeys() failed with %d. 
+00105990 string ERROR: extractValueLists() failed with %d. 
+001059c0 string ERROR: extractVKs() failed with %d. 
+001059e8 string ERROR: extractDataCells() failed with %d. 
+00105a18 string ERROR: extractSKs() failed with %d. 
+00105bc1 string zR
+00105bf1 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/reglookup.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

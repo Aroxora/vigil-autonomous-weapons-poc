@@ -1,0 +1,185 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100981 string-utf8 _ITM_deregisterTMCloneTable
+0010099d string-utf8 __gmon_start__
+001009ac string-utf8 _ITM_registerTMCloneTable
+001009c6 string-utf8 pcap_setnonblock
+001009d7 string-utf8 pcap_lookupnet
+001009e6 string-utf8 pcap_setfilter
+001009f5 string-utf8 pcap_datalink
+00100a03 string-utf8 pcap_dispatch
+00100a11 string-utf8 pcap_close
+00100a1c string-utf8 pcap_compile
+00100a29 string-utf8 pcap_open_live
+00100a38 string-utf8 chdir
+00100a3e string-utf8 inet_ntoa
+00100a48 string-utf8 __cxa_finalize
+00100a57 string-utf8 strchr
+00100a5e string-utf8 alarm
+00100a64 string-utf8 malloc
+00100a6b string-utf8 usleep
+00100a72 string-utf8 memmove
+00100a7a string-utf8 sendto
+00100a81 string-utf8 __libc_start_main
+00100a93 string-utf8 fputc
+00100a99 string-utf8 __isoc23_strtol
+00100aa9 string-utf8 socket
+00100ab0 string-utf8 strlcpy
+00100ab8 string-utf8 signal
+00100abf string-utf8 getopt
+00100ac6 string-utf8 strcpy
+00100acd string-utf8 freopen
+00100ad5 string-utf8 inet_aton
+00100adf string-utf8 memset
+00100ae6 string-utf8 umask
+00100aec string-utf8 optarg
+00100af3 string-utf8 vsnprintf
+00100afd string-utf8 stdout
+00100b04 string-utf8 free
+00100b09 string-utf8 setsid
+00100b10 string-utf8 vfprintf
+00100b19 string-utf8 strlen
+00100b20 string-utf8 strdup
+00100b27 string-utf8 realloc
+00100b2f string-utf8 sprintf
+00100b37 string-utf8 stdin
+00100b3d string-utf8 gethostbyname
+00100b4b string-utf8 abort
+00100b51 string-utf8 fork
+00100b56 string-utf8 stderr
+00100b5d string-utf8 ioctl
+00100b63 string-utf8 memcpy
+00100b6a string-utf8 strrchr
+00100b72 string-utf8 __isoc23_sscanf
+00100b82 string-utf8 optind
+00100b89 string-utf8 strerror
+00100b92 string-utf8 __errno_location
+00100ba3 string-utf8 exit
+00100ba8 string-utf8 calloc
+00100baf string-utf8 setsockopt
+00100bba string-utf8 libpcap.so.0.8
+00100bc9 string-utf8 libc.so.6
+00100bd3 string-utf8 GLIBC_2.14
+00100bde string-utf8 GLIBC_2.34
+00100be9 string-utf8 GLIBC_2.38
+00100bf4 string-utf8 GLIBC_2.2.5
+0010a008 string FantaIP by Kiki Usage: fantaip (options) IP 	-d		Detach from terminal and daemonize 	-H		Hardware address like XX:XX:XX:XX:XX:XX (otherwise use nics hwaddr) 	-h		help 	-i		*interface 	-v		verbose operation *: Argument required Example: fantaip -i eth0 192.168.1.7
+0010a110 string got packet hw type %u proto %x hwsize %x protosize %x
+0010a148 string Arp Request: Source Mac: %s Dest Mac: %s
+0010a178 string Arp Reply: Source Mac: %s Dest Mac: %s
+0010a1a0 string using addresses `%s->%s/%u' (netmask %u.%u.%u.%u)
+0010a1d8 string interface argument is required
+0010a1f8 string bad hardware address, use XX:XX:XX:XX:XX:XX, not `%s'
+0010a230 string no, thats not really going to work, sorry
+0010a260 string using hardware address %x:%x:%x:%x:%x:%x
+0010a290 string cant open up interface `%s': %s
+0010a2b0 string you SURE this is an ethernet interface? doesnt look like one
+0010a2f0 string can't set pcap dev nonblocking: %s
+0010a318 string cant set pcap dev nonblocking: %s
+0010a340 string null size pointer in makepkt_get
+0010a368 string payload buffer is NULL with non-zero length
+0010a398 string (pkt_len + sizeof(th)) > pkt_len
+0010a3c0 string tcpoption buffer is NULL with non-zero length
+0010a3f0 string ARE YOU SURE YOU REALLY MEAN THIS? <Click Ok To Continue>
+0010a430 string ## Buffer size is %zu ######################
+0010a460 string %-40s ###########################################
+0010a498 string ###########################################
+0010a4c8 string attempt to allocate 0 or less bytes of memory
+0010a4f8 string attempt to increase allocation by 0 bytes
+0010a528 string attempt to free a NULL pointer
+0010a547 string fantaip.c
+0010a551 string makepkt fails, exiting
+0010a568 string eth_send fails, exiting
+0010a580 string bad length
+0010a58b string NON ETHERNET ARP
+0010a59c string short packet!!!!
+0010a5ad string %s [ %s -> %s ]
+0010a5bd string sending ARP resp to: %s
+0010a5d5 string i:hH:dv
+0010a5dd string illegal IP address `%s'
+0010a5f5 string using address `%s'
+0010a608 string IP address is required
+0010a61f string cant open ethernet link: %s
+0010a63b string %x:%x:%x:%x:%x:%x
+0010a64d string cant get hardware address: %s
+0010a66b string cant prepare bpf socket: %s
+0010a687 string cant compile pcap filter `%s'
+0010a6a5 string cant set pcap filter
+0010a6ba string testing `%s'
+0010a6c7 string error: Address already in use
+0010a6e5 string going into background
+0010a6fb string cant fork: %s
+0010a70b string /dev/null
+0010a717 string arping for %s/%u [%s]
+0010a732 string makepkt.c
+0010a73c string buffer pointer null
+0010a750 string bad tcp option
+0010a75f string bad tcp optlen
+0010a76e string Assertion `%s' fails
+0010a783 string too much data
+0010a791 string Not implemented
+0010a7a1 string Not Implemented
+0010a7b1 string s_hwaddr null
+0010a7bf string s_protoaddr null
+0010a7d0 string t_hwaddr null
+0010a7de string t_protoaddr null
+0010a7f4 string loser
+0010a7fa string %s [Error   %s:%d] 
+0010a80e string %s [Debug   %s:%d] 
+0010a822 string %s [Unknown %s:%d] 
+0010a836 string output.c
+0010a83f string %-40s
+0010a845 string \x%02x
+0010a84c string Unknown
+0010a854 string %s PANIC IN %s [%s:%d]: %s 
+0010a870 string pdev != NULL
+0010a87d string pcaputil.c
+0010a888 string errorbuf != NULL
+0010a899 string Unknown pcap linktype `%d'
+0010a8b4 string xmalloc.c
+0010a8be string malloc failed
+0010a8cc string realloc fails
+0010a8da string strdup failed
+0010a8e8 string %02x:%02x:%02x:%02x:%02x:%02x
+0010a906 string NON-ARP? Unknown [%u]
+0010a91c string Unknown [%02x]
+0010ad80 string makepkt_build_ethernet
+0010ada0 string makepkt_build_arp
+0010adc0 string makepkt_build_ipv4
+0010ade0 string makepkt_build_tcp
+0010ae00 string makepkt_build_udp
+0010ae18 string makepkt_getbuf
+0010ae70 string util_getheadersize
+0010ae88 string _xstrdup
+0010ae91 string _xfree
+0010ae98 string _xmalloc
+0010aea8 string _xrealloc
+0010af40 string 10/100 Ethernet
+0010b1b1 string zR
+0010b1e1 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .got.plt
+.shstrtab::00000103 string-utf8 .data
+.shstrtab::00000109 string-utf8 .bss
+.shstrtab::0000010e string-utf8 .gnu_debuglink

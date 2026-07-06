@@ -1,0 +1,99 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001007b9 string-utf8 _ITM_deregisterTMCloneTable
+001007d5 string-utf8 __gmon_start__
+001007e4 string-utf8 _ITM_registerTMCloneTable
+001007fe string-utf8 curl_mime_type
+0010080d string-utf8 curl_easy_init
+0010081c string-utf8 curl_mime_addpart
+0010082e string-utf8 curl_mime_data
+0010083d string-utf8 curl_mime_filedata
+00100850 string-utf8 curl_global_cleanup
+00100864 string-utf8 curl_easy_perform
+00100876 string-utf8 curl_easy_strerror
+00100889 string-utf8 curl_mime_name
+00100898 string-utf8 curl_slist_append
+001008aa string-utf8 curl_slist_free_all
+001008be string-utf8 curl_mime_free
+001008cd string-utf8 curl_easy_cleanup
+001008df string-utf8 curl_easy_setopt
+001008f0 string-utf8 curl_global_init
+00100901 string-utf8 curl_mime_init
+00100910 string-utf8 optind
+00100917 string-utf8 __stack_chk_fail
+00100928 string-utf8 exit
+0010092d string-utf8 setbuf
+00100934 string-utf8 stat
+00100939 string-utf8 strspn
+00100940 string-utf8 strlen
+00100947 string-utf8 __isoc23_strtol
+00100957 string-utf8 stdout
+0010095e string-utf8 optarg
+00100965 string-utf8 realloc
+0010096d string-utf8 __fprintf_chk
+0010097b string-utf8 __xpg_basename
+0010098a string-utf8 __libc_start_main
+0010099c string-utf8 remove
+001009a3 string-utf8 stderr
+001009aa string-utf8 getopt
+001009b1 string-utf8 __cxa_finalize
+001009c0 string-utf8 __snprintf_chk
+001009cf string-utf8 memcpy
+001009d6 string-utf8 fwrite
+001009dd string-utf8 libcurl.so.4
+001009ea string-utf8 libc.so.6
+001009f4 string-utf8 CURL_OPENSSL_4
+00100a03 string-utf8 GLIBC_2.38
+00100a0e string-utf8 GLIBC_2.4
+00100a18 string-utf8 GLIBC_2.33
+00100a23 string-utf8 GLIBC_2.14
+00100a2e string-utf8 GLIBC_2.34
+00100a39 string-utf8 GLIBC_2.3.4
+00100a45 string-utf8 GLIBC_2.2.5
+00102004 string uploading %s to %s 
+0010201d string email
+00102023 string  %s  
+00102029 string couldn't remove %s 
+00102042 string 7.1.0
+00102048 string %s %s (C) %s ZeroBeat 
+0010205f string 0123456789abcdefABCDEF
+00102076 string key=%s
+00102094 string wrong user key value 
+001020aa string email address is too long 
+001020c5 string k:u:t:e:Rhv
+001020d1 string connecting to %s 
+001020e3 string couldn't connect to %s: %s 
+001020ff string file not found: %s 
+00102113 string https://wpa-sec.stanev.org
+00102130 string upload not confirmed by server 
+00102178 string wrong connection timeout setting connection timeout to 30 seconds 
+001021c0 string %s %s (C) %s ZeroBeat usage: %s <options>  [input.pcapng] [input.pcap] [input.cap] [input.pcapng.gz]...        %s <options> *.pcapng        %s <options> *.gz        %s <options> *.*  options: -k <key>           : wpa-sec user key -u <url>           : set user defined URL                      default = %s -t <seconds>       : set connection timeout                      default = 30 seconds -e <email address> : set email address, if required -R                 : remove cap if upload was successful -h                 : this help -v                 : show version  Do not merge different cap files to a single cap file. This will lead to unexpected behaviour on ESSID changes or different link layer types. To remove unnecessary packets, run tshark: tshark -r input.cap -R "(wlan.fc.type_subtype == 0x00 || wlan.fc.type_subtype == 0x02 || wlan.fc.type_subtype == 0x04 || wlan.fc.type_subtype == 0x05 || wlan.fc.type_subtype == 0x08 || eapol)" -2 -F pcapng -w output.pcapng To reduce the size of the cap file, compress it with gzip: gzip capture.pcapng   
+00102730 string Expect:
+00102789 string zR
+001027b9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/hcxtools.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

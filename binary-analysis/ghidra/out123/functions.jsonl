@@ -1,0 +1,321 @@
+{"name":"_DT_INIT","entry":"00103000","bodyBytes":23,"signature":"undefined _DT_INIT(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00103020","entry":"00103020","bodyBytes":12,"signature":"undefined FUN_00103020(void)","callingConvention":"unknown","external":false}
+{"name":"getenv","entry":"00103030","bodyBytes":6,"signature":"char * getenv(char * __name)","callingConvention":"unknown","external":false}
+{"name":"syn123_mix","entry":"00103040","bodyBytes":6,"signature":"undefined syn123_mix(void)","callingConvention":"unknown","external":false}
+{"name":"free","entry":"00103050","bodyBytes":6,"signature":"void free(void * __ptr)","callingConvention":"unknown","external":false}
+{"name":"putchar","entry":"00103060","bodyBytes":6,"signature":"int putchar(int __c)","callingConvention":"unknown","external":false}
+{"name":"strcasecmp","entry":"00103070","bodyBytes":6,"signature":"int strcasecmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"syn123_be2host","entry":"00103080","bodyBytes":6,"signature":"undefined syn123_be2host(void)","callingConvention":"unknown","external":false}
+{"name":"__errno_location","entry":"00103090","bodyBytes":6,"signature":"int * __errno_location(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_lin2db","entry":"001030a0","bodyBytes":6,"signature":"undefined syn123_lin2db(void)","callingConvention":"unknown","external":false}
+{"name":"strncmp","entry":"001030b0","bodyBytes":6,"signature":"int strncmp(char * __s1, char * __s2, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"strcpy","entry":"001030c0","bodyBytes":6,"signature":"char * strcpy(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"puts","entry":"001030d0","bodyBytes":6,"signature":"int puts(char * __s)","callingConvention":"unknown","external":false}
+{"name":"sigaction","entry":"001030e0","bodyBytes":6,"signature":"int sigaction(int __sig, sigaction * __act, sigaction * __oact)","callingConvention":"unknown","external":false}
+{"name":"fread","entry":"001030f0","bodyBytes":6,"signature":"size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"strtod","entry":"00103100","bodyBytes":6,"signature":"double strtod(char * __nptr, char * * __endptr)","callingConvention":"unknown","external":false}
+{"name":"syn123_resample","entry":"00103110","bodyBytes":6,"signature":"undefined syn123_resample(void)","callingConvention":"unknown","external":false}
+{"name":"wcswidth","entry":"00103120","bodyBytes":6,"signature":"int wcswidth(wchar_t * __s, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"mbstowcs","entry":"00103130","bodyBytes":6,"signature":"size_t mbstowcs(wchar_t * __pwcs, char * __s, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_pink","entry":"00103140","bodyBytes":6,"signature":"undefined syn123_setup_pink(void)","callingConvention":"unknown","external":false}
+{"name":"write","entry":"00103150","bodyBytes":6,"signature":"ssize_t write(int __fd, void * __buf, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"getpid","entry":"00103160","bodyBytes":6,"signature":"__pid_t getpid(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_mixenc","entry":"00103170","bodyBytes":6,"signature":"undefined syn123_mixenc(void)","callingConvention":"unknown","external":false}
+{"name":"out123_drivers","entry":"00103180","bodyBytes":6,"signature":"undefined out123_drivers(void)","callingConvention":"unknown","external":false}
+{"name":"fclose","entry":"00103190","bodyBytes":6,"signature":"int fclose(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"opendir","entry":"001031a0","bodyBytes":6,"signature":"DIR * opendir(char * __name)","callingConvention":"unknown","external":false}
+{"name":"syn123_host2le","entry":"001031b0","bodyBytes":6,"signature":"undefined syn123_host2le(void)","callingConvention":"unknown","external":false}
+{"name":"strlen","entry":"001031c0","bodyBytes":6,"signature":"size_t strlen(char * __s)","callingConvention":"unknown","external":false}
+{"name":"__stack_chk_fail","entry":"001031d0","bodyBytes":6,"signature":"undefined __stack_chk_fail(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_amp","entry":"001031e0","bodyBytes":6,"signature":"undefined syn123_amp(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_swap_bytes","entry":"001031f0","bodyBytes":6,"signature":"undefined syn123_swap_bytes(void)","callingConvention":"unknown","external":false}
+{"name":"strrchr","entry":"00103200","bodyBytes":6,"signature":"char * strrchr(char * __s, int __c)","callingConvention":"unknown","external":false}
+{"name":"setpriority","entry":"00103210","bodyBytes":6,"signature":"int setpriority(__priority_which_t __which, id_t __who, int __prio)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_waves","entry":"00103220","bodyBytes":6,"signature":"undefined syn123_setup_waves(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_new","entry":"00103230","bodyBytes":6,"signature":"undefined syn123_new(void)","callingConvention":"unknown","external":false}
+{"name":"sched_setscheduler","entry":"00103240","bodyBytes":6,"signature":"int sched_setscheduler(__pid_t __pid, int __policy, sched_param * __param)","callingConvention":"unknown","external":false}
+{"name":"syn123_strerror","entry":"00103250","bodyBytes":6,"signature":"undefined syn123_strerror(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_le2host","entry":"00103260","bodyBytes":6,"signature":"undefined syn123_le2host(void)","callingConvention":"unknown","external":false}
+{"name":"close","entry":"00103270","bodyBytes":6,"signature":"int close(int __fd)","callingConvention":"unknown","external":false}
+{"name":"closedir","entry":"00103280","bodyBytes":6,"signature":"int closedir(DIR * __dirp)","callingConvention":"unknown","external":false}
+{"name":"fputc","entry":"00103290","bodyBytes":6,"signature":"int fputc(int __c, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"read","entry":"001032a0","bodyBytes":6,"signature":"ssize_t read(int __fd, void * __buf, size_t __nbytes)","callingConvention":"unknown","external":false}
+{"name":"out123_play","entry":"001032b0","bodyBytes":6,"signature":"undefined out123_play(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_libversion","entry":"001032c0","bodyBytes":6,"signature":"undefined syn123_libversion(void)","callingConvention":"unknown","external":false}
+{"name":"out123_drop","entry":"001032d0","bodyBytes":6,"signature":"undefined out123_drop(void)","callingConvention":"unknown","external":false}
+{"name":"strcmp","entry":"001032e0","bodyBytes":6,"signature":"int strcmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"syn123_wave_name","entry":"001032f0","bodyBytes":6,"signature":"undefined syn123_wave_name(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_distversion","entry":"00103300","bodyBytes":6,"signature":"undefined syn123_distversion(void)","callingConvention":"unknown","external":false}
+{"name":"sigemptyset","entry":"00103310","bodyBytes":6,"signature":"int sigemptyset(sigset_t * __set)","callingConvention":"unknown","external":false}
+{"name":"out123_libversion","entry":"00103320","bodyBytes":6,"signature":"undefined out123_libversion(void)","callingConvention":"unknown","external":false}
+{"name":"out123_encsize","entry":"00103330","bodyBytes":6,"signature":"undefined out123_encsize(void)","callingConvention":"unknown","external":false}
+{"name":"stat","entry":"00103340","bodyBytes":6,"signature":"int stat(char * __file, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_filter","entry":"00103350","bodyBytes":6,"signature":"undefined syn123_setup_filter(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_db2lin","entry":"00103360","bodyBytes":6,"signature":"undefined syn123_db2lin(void)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"00103370","bodyBytes":6,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"syn123_wave_id","entry":"00103380","bodyBytes":6,"signature":"undefined syn123_wave_id(void)","callingConvention":"unknown","external":false}
+{"name":"out123_ndrain","entry":"00103390","bodyBytes":6,"signature":"undefined out123_ndrain(void)","callingConvention":"unknown","external":false}
+{"name":"out123_param2","entry":"001033a0","bodyBytes":6,"signature":"undefined out123_param2(void)","callingConvention":"unknown","external":false}
+{"name":"out123_del","entry":"001033b0","bodyBytes":6,"signature":"undefined out123_del(void)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_strtol","entry":"001033c0","bodyBytes":6,"signature":"undefined __isoc23_strtol(void)","callingConvention":"unknown","external":false}
+{"name":"readdir","entry":"001033d0","bodyBytes":6,"signature":"dirent * readdir(DIR * __dirp)","callingConvention":"unknown","external":false}
+{"name":"uselocale","entry":"001033e0","bodyBytes":6,"signature":"__locale_t uselocale(__locale_t __dataset)","callingConvention":"unknown","external":false}
+{"name":"malloc","entry":"001033f0","bodyBytes":6,"signature":"void * malloc(size_t __size)","callingConvention":"unknown","external":false}
+{"name":"out123_errcode","entry":"00103400","bodyBytes":6,"signature":"undefined out123_errcode(void)","callingConvention":"unknown","external":false}
+{"name":"sched_get_priority_min","entry":"00103410","bodyBytes":6,"signature":"int sched_get_priority_min(int __algorithm)","callingConvention":"unknown","external":false}
+{"name":"nl_langinfo","entry":"00103420","bodyBytes":6,"signature":"char * nl_langinfo(nl_item __item)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_geiger","entry":"00103430","bodyBytes":6,"signature":"undefined syn123_setup_geiger(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_resample_maxrate","entry":"00103440","bodyBytes":6,"signature":"undefined syn123_resample_maxrate(void)","callingConvention":"unknown","external":false}
+{"name":"out123_encodings","entry":"00103450","bodyBytes":6,"signature":"undefined out123_encodings(void)","callingConvention":"unknown","external":false}
+{"name":"out123_open","entry":"00103460","bodyBytes":6,"signature":"undefined out123_open(void)","callingConvention":"unknown","external":false}
+{"name":"strerror_l","entry":"00103470","bodyBytes":6,"signature":"char * strerror_l(int __errnum, __locale_t __l)","callingConvention":"unknown","external":false}
+{"name":"out123_getparam2","entry":"00103480","bodyBytes":6,"signature":"undefined out123_getparam2(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_read","entry":"00103490","bodyBytes":6,"signature":"undefined syn123_read(void)","callingConvention":"unknown","external":false}
+{"name":"realloc","entry":"001034a0","bodyBytes":6,"signature":"void * realloc(void * __ptr, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_resample","entry":"001034b0","bodyBytes":6,"signature":"undefined syn123_setup_resample(void)","callingConvention":"unknown","external":false}
+{"name":"fdopen","entry":"001034c0","bodyBytes":6,"signature":"FILE * fdopen(int __fd, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"out123_enc_byname","entry":"001034d0","bodyBytes":6,"signature":"undefined out123_enc_byname(void)","callingConvention":"unknown","external":false}
+{"name":"setlocale","entry":"001034e0","bodyBytes":6,"signature":"char * setlocale(int __category, char * __locale)","callingConvention":"unknown","external":false}
+{"name":"__printf_chk","entry":"001034f0","bodyBytes":6,"signature":"undefined __printf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_filter","entry":"00103500","bodyBytes":6,"signature":"undefined syn123_filter(void)","callingConvention":"unknown","external":false}
+{"name":"iswspace","entry":"00103510","bodyBytes":6,"signature":"int iswspace(wint_t __wc)","callingConvention":"unknown","external":false}
+{"name":"out123_stringlists_free","entry":"00103520","bodyBytes":6,"signature":"undefined out123_stringlists_free(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_clip","entry":"00103530","bodyBytes":6,"signature":"undefined syn123_clip(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_sweep","entry":"00103540","bodyBytes":6,"signature":"undefined syn123_setup_sweep(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_conv","entry":"00103550","bodyBytes":6,"signature":"undefined syn123_conv(void)","callingConvention":"unknown","external":false}
+{"name":"out123_buffered","entry":"00103560","bodyBytes":6,"signature":"undefined out123_buffered(void)","callingConvention":"unknown","external":false}
+{"name":"out123_devices","entry":"00103570","bodyBytes":6,"signature":"undefined out123_devices(void)","callingConvention":"unknown","external":false}
+{"name":"open","entry":"00103580","bodyBytes":6,"signature":"int open(char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"out123_enc_longname","entry":"00103590","bodyBytes":6,"signature":"undefined out123_enc_longname(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_resample_count","entry":"001035a0","bodyBytes":6,"signature":"undefined syn123_resample_count(void)","callingConvention":"unknown","external":false}
+{"name":"out123_formats","entry":"001035b0","bodyBytes":6,"signature":"undefined out123_formats(void)","callingConvention":"unknown","external":false}
+{"name":"fopen","entry":"001035c0","bodyBytes":6,"signature":"FILE * fopen(char * __filename, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"out123_start","entry":"001035d0","bodyBytes":6,"signature":"undefined out123_start(void)","callingConvention":"unknown","external":false}
+{"name":"perror","entry":"001035e0","bodyBytes":6,"signature":"void perror(char * __s)","callingConvention":"unknown","external":false}
+{"name":"out123_getformat","entry":"001035f0","bodyBytes":6,"signature":"undefined out123_getformat(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_host2be","entry":"00103600","bodyBytes":6,"signature":"undefined syn123_host2be(void)","callingConvention":"unknown","external":false}
+{"name":"out123_strerror","entry":"00103610","bodyBytes":6,"signature":"undefined out123_strerror(void)","callingConvention":"unknown","external":false}
+{"name":"wcstombs","entry":"00103620","bodyBytes":6,"signature":"size_t wcstombs(char * __s, wchar_t * __pwcs, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"syn123_soft_clip","entry":"00103630","bodyBytes":6,"signature":"undefined syn123_soft_clip(void)","callingConvention":"unknown","external":false}
+{"name":"exit","entry":"00103640","bodyBytes":6,"signature":"void exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"out123_enc_list","entry":"00103650","bodyBytes":6,"signature":"undefined out123_enc_list(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_del","entry":"00103660","bodyBytes":6,"signature":"undefined syn123_del(void)","callingConvention":"unknown","external":false}
+{"name":"fwrite","entry":"00103670","bodyBytes":6,"signature":"size_t fwrite(void * __ptr, size_t __size, size_t __n, FILE * __s)","callingConvention":"unknown","external":false}
+{"name":"__fprintf_chk","entry":"00103680","bodyBytes":6,"signature":"undefined __fprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_white","entry":"00103690","bodyBytes":6,"signature":"undefined syn123_setup_white(void)","callingConvention":"unknown","external":false}
+{"name":"out123_distversion","entry":"001036a0","bodyBytes":6,"signature":"undefined out123_distversion(void)","callingConvention":"unknown","external":false}
+{"name":"strerror","entry":"001036b0","bodyBytes":6,"signature":"char * strerror(int __errnum)","callingConvention":"unknown","external":false}
+{"name":"iswprint","entry":"001036c0","bodyBytes":6,"signature":"int iswprint(wint_t __wc)","callingConvention":"unknown","external":false}
+{"name":"out123_enc_name","entry":"001036d0","bodyBytes":6,"signature":"undefined out123_enc_name(void)","callingConvention":"unknown","external":false}
+{"name":"out123_set_buffer","entry":"001036e0","bodyBytes":6,"signature":"undefined out123_set_buffer(void)","callingConvention":"unknown","external":false}
+{"name":"out123_new","entry":"001036f0","bodyBytes":6,"signature":"undefined out123_new(void)","callingConvention":"unknown","external":false}
+{"name":"strstr","entry":"00103700","bodyBytes":6,"signature":"char * strstr(char * __haystack, char * __needle)","callingConvention":"unknown","external":false}
+{"name":"syn123_dither","entry":"00103710","bodyBytes":6,"signature":"undefined syn123_dither(void)","callingConvention":"unknown","external":false}
+{"name":"__ctype_b_loc","entry":"00103720","bodyBytes":6,"signature":"ushort * * __ctype_b_loc(void)","callingConvention":"unknown","external":false}
+{"name":"__cxa_finalize","entry":"00103730","bodyBytes":6,"signature":"undefined __cxa_finalize(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00103740","entry":"00103740","bodyBytes":17,"signature":"undefined FUN_00103740(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00103760","entry":"00103760","bodyBytes":8960,"signature":"undefined FUN_00103760(void)","callingConvention":"unknown","external":false}
+{"name":"_INIT_1","entry":"00105a80","bodyBytes":28,"signature":"undefined _INIT_1(void)","callingConvention":"unknown","external":false}
+{"name":"entry","entry":"00105aa0","bodyBytes":34,"signature":"undefined entry(void)","callingConvention":"processEntry","external":false}
+{"name":"FUN_00105ad0","entry":"00105ad0","bodyBytes":34,"signature":"undefined FUN_00105ad0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00105b00","entry":"00105b00","bodyBytes":51,"signature":"undefined FUN_00105b00(void)","callingConvention":"unknown","external":false}
+{"name":"_FINI_0","entry":"00105b40","bodyBytes":54,"signature":"undefined _FINI_0(void)","callingConvention":"unknown","external":false}
+{"name":"_INIT_0","entry":"00105b80","bodyBytes":9,"signature":"undefined _INIT_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00105b90","entry":"00105b90","bodyBytes":38,"signature":"undefined FUN_00105b90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00105bc0","entry":"00105bc0","bodyBytes":209,"signature":"undefined FUN_00105bc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00105ca0","entry":"00105ca0","bodyBytes":143,"signature":"undefined FUN_00105ca0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00105d40","entry":"00105d40","bodyBytes":632,"signature":"undefined FUN_00105d40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00105ff0","entry":"00105ff0","bodyBytes":115,"signature":"undefined FUN_00105ff0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00106070","entry":"00106070","bodyBytes":79,"signature":"undefined FUN_00106070(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001060d0","entry":"001060d0","bodyBytes":419,"signature":"undefined FUN_001060d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00106290","entry":"00106290","bodyBytes":182,"signature":"undefined FUN_00106290(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00106350","entry":"00106350","bodyBytes":125,"signature":"undefined FUN_00106350(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001063e0","entry":"001063e0","bodyBytes":283,"signature":"undefined FUN_001063e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00106520","entry":"00106520","bodyBytes":1055,"signature":"undefined FUN_00106520(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00106960","entry":"00106960","bodyBytes":4327,"signature":"undefined FUN_00106960(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107ab0","entry":"00107ab0","bodyBytes":234,"signature":"undefined FUN_00107ab0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107ba0","entry":"00107ba0","bodyBytes":141,"signature":"undefined FUN_00107ba0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107c30","entry":"00107c30","bodyBytes":78,"signature":"undefined FUN_00107c30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107c90","entry":"00107c90","bodyBytes":1599,"signature":"undefined FUN_00107c90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001082e0","entry":"001082e0","bodyBytes":38,"signature":"undefined FUN_001082e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108310","entry":"00108310","bodyBytes":38,"signature":"undefined FUN_00108310(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108340","entry":"00108340","bodyBytes":38,"signature":"undefined FUN_00108340(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108370","entry":"00108370","bodyBytes":13,"signature":"undefined FUN_00108370(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108380","entry":"00108380","bodyBytes":12,"signature":"undefined FUN_00108380(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108390","entry":"00108390","bodyBytes":25,"signature":"undefined FUN_00108390(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001083b0","entry":"001083b0","bodyBytes":15,"signature":"undefined FUN_001083b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001083c0","entry":"001083c0","bodyBytes":15,"signature":"undefined FUN_001083c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001083d0","entry":"001083d0","bodyBytes":36,"signature":"undefined FUN_001083d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108400","entry":"00108400","bodyBytes":36,"signature":"undefined FUN_00108400(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108430","entry":"00108430","bodyBytes":35,"signature":"undefined FUN_00108430(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108460","entry":"00108460","bodyBytes":39,"signature":"undefined FUN_00108460(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108490","entry":"00108490","bodyBytes":36,"signature":"undefined FUN_00108490(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001084c0","entry":"001084c0","bodyBytes":36,"signature":"undefined FUN_001084c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001084f0","entry":"001084f0","bodyBytes":35,"signature":"undefined FUN_001084f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108520","entry":"00108520","bodyBytes":53,"signature":"undefined FUN_00108520(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108560","entry":"00108560","bodyBytes":50,"signature":"undefined FUN_00108560(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001085a0","entry":"001085a0","bodyBytes":50,"signature":"undefined FUN_001085a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001085e0","entry":"001085e0","bodyBytes":478,"signature":"undefined FUN_001085e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001087c0","entry":"001087c0","bodyBytes":84,"signature":"undefined FUN_001087c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108820","entry":"00108820","bodyBytes":352,"signature":"undefined FUN_00108820(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108980","entry":"00108980","bodyBytes":856,"signature":"undefined FUN_00108980(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108ce0","entry":"00108ce0","bodyBytes":31,"signature":"undefined FUN_00108ce0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108d00","entry":"00108d00","bodyBytes":521,"signature":"undefined FUN_00108d00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108f10","entry":"00108f10","bodyBytes":159,"signature":"undefined FUN_00108f10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108fc0","entry":"00108fc0","bodyBytes":16,"signature":"undefined FUN_00108fc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108fd0","entry":"00108fd0","bodyBytes":16,"signature":"undefined FUN_00108fd0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108fe0","entry":"00108fe0","bodyBytes":521,"signature":"undefined FUN_00108fe0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001091f0","entry":"001091f0","bodyBytes":152,"signature":"undefined FUN_001091f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00109290","entry":"00109290","bodyBytes":46,"signature":"undefined FUN_00109290(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001092c0","entry":"001092c0","bodyBytes":383,"signature":"undefined FUN_001092c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00109440","entry":"00109440","bodyBytes":17,"signature":"undefined FUN_00109440(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00109460","entry":"00109460","bodyBytes":84,"signature":"undefined FUN_00109460(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001094c0","entry":"001094c0","bodyBytes":316,"signature":"undefined FUN_001094c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00109610","entry":"00109610","bodyBytes":99,"signature":"undefined FUN_00109610(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00109680","entry":"00109680","bodyBytes":96,"signature":"undefined FUN_00109680(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001096f0","entry":"001096f0","bodyBytes":419,"signature":"undefined FUN_001096f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001098a0","entry":"001098a0","bodyBytes":207,"signature":"undefined FUN_001098a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00109980","entry":"00109980","bodyBytes":3327,"signature":"undefined FUN_00109980(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010a690","entry":"0010a690","bodyBytes":391,"signature":"undefined FUN_0010a690(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010a820","entry":"0010a820","bodyBytes":119,"signature":"undefined FUN_0010a820(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010a8b0","entry":"0010a8b0","bodyBytes":49,"signature":"undefined FUN_0010a8b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010a8f0","entry":"0010a8f0","bodyBytes":1668,"signature":"undefined FUN_0010a8f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010afc0","entry":"0010afc0","bodyBytes":22,"signature":"undefined FUN_0010afc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010afe0","entry":"0010afe0","bodyBytes":77,"signature":"undefined FUN_0010afe0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b040","entry":"0010b040","bodyBytes":39,"signature":"undefined FUN_0010b040(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b070","entry":"0010b070","bodyBytes":72,"signature":"undefined FUN_0010b070(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b0c0","entry":"0010b0c0","bodyBytes":37,"signature":"undefined FUN_0010b0c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b0f0","entry":"0010b0f0","bodyBytes":16,"signature":"undefined FUN_0010b0f0(void)","callingConvention":"unknown","external":false}
+{"name":"fopen","entry":"0010b100","bodyBytes":9,"signature":"FILE * fopen(char * __filename, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"fdopen","entry":"0010b110","bodyBytes":9,"signature":"FILE * fdopen(int __fd, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"close","entry":"0010b120","bodyBytes":9,"signature":"int close(int __fd)","callingConvention":"unknown","external":false}
+{"name":"fclose","entry":"0010b130","bodyBytes":9,"signature":"int fclose(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b140","entry":"0010b140","bodyBytes":5,"signature":"undefined FUN_0010b140(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b150","entry":"0010b150","bodyBytes":237,"signature":"undefined FUN_0010b150(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b250","entry":"0010b250","bodyBytes":103,"signature":"undefined FUN_0010b250(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b2c0","entry":"0010b2c0","bodyBytes":40,"signature":"undefined FUN_0010b2c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b300","entry":"0010b300","bodyBytes":108,"signature":"undefined FUN_0010b300(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b370","entry":"0010b370","bodyBytes":182,"signature":"undefined FUN_0010b370(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b430","entry":"0010b430","bodyBytes":182,"signature":"undefined FUN_0010b430(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b4f0","entry":"0010b4f0","bodyBytes":141,"signature":"undefined FUN_0010b4f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b590","entry":"0010b590","bodyBytes":141,"signature":"undefined FUN_0010b590(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b630","entry":"0010b630","bodyBytes":139,"signature":"undefined FUN_0010b630(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b6c0","entry":"0010b6c0","bodyBytes":128,"signature":"undefined FUN_0010b6c0(void)","callingConvention":"unknown","external":false}
+{"name":"_DT_FINI","entry":"0010b740","bodyBytes":9,"signature":"undefined _DT_FINI(void)","callingConvention":"unknown","external":false}
+{"name":"getenv","entry":"00114000","bodyBytes":1,"signature":"char * getenv(char * __name)","callingConvention":"unknown","external":false}
+{"name":"syn123_mix","entry":"00114008","bodyBytes":1,"signature":"undefined syn123_mix(void)","callingConvention":"unknown","external":false}
+{"name":"free","entry":"00114010","bodyBytes":1,"signature":"void free(void * __ptr)","callingConvention":"unknown","external":false}
+{"name":"putchar","entry":"00114018","bodyBytes":1,"signature":"int putchar(int __c)","callingConvention":"unknown","external":false}
+{"name":"strcasecmp","entry":"00114020","bodyBytes":1,"signature":"int strcasecmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"syn123_be2host","entry":"00114028","bodyBytes":1,"signature":"undefined syn123_be2host(void)","callingConvention":"unknown","external":false}
+{"name":"__libc_start_main","entry":"00114030","bodyBytes":1,"signature":"undefined __libc_start_main(void)","callingConvention":"unknown","external":false}
+{"name":"__errno_location","entry":"00114038","bodyBytes":1,"signature":"int * __errno_location(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_lin2db","entry":"00114040","bodyBytes":1,"signature":"undefined syn123_lin2db(void)","callingConvention":"unknown","external":false}
+{"name":"strncmp","entry":"00114048","bodyBytes":1,"signature":"int strncmp(char * __s1, char * __s2, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"_ITM_deregisterTMCloneTable","entry":"00114050","bodyBytes":1,"signature":"undefined _ITM_deregisterTMCloneTable(void)","callingConvention":"unknown","external":false}
+{"name":"strcpy","entry":"00114058","bodyBytes":1,"signature":"char * strcpy(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"puts","entry":"00114060","bodyBytes":1,"signature":"int puts(char * __s)","callingConvention":"unknown","external":false}
+{"name":"sigaction","entry":"00114068","bodyBytes":1,"signature":"int sigaction(int __sig, sigaction * __act, sigaction * __oact)","callingConvention":"unknown","external":false}
+{"name":"fread","entry":"00114070","bodyBytes":1,"signature":"size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"strtod","entry":"00114078","bodyBytes":1,"signature":"double strtod(char * __nptr, char * * __endptr)","callingConvention":"unknown","external":false}
+{"name":"syn123_resample","entry":"00114080","bodyBytes":1,"signature":"undefined syn123_resample(void)","callingConvention":"unknown","external":false}
+{"name":"wcswidth","entry":"00114088","bodyBytes":1,"signature":"int wcswidth(wchar_t * __s, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"mbstowcs","entry":"00114090","bodyBytes":1,"signature":"size_t mbstowcs(wchar_t * __pwcs, char * __s, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_pink","entry":"00114098","bodyBytes":1,"signature":"undefined syn123_setup_pink(void)","callingConvention":"unknown","external":false}
+{"name":"write","entry":"001140a0","bodyBytes":1,"signature":"ssize_t write(int __fd, void * __buf, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"getpid","entry":"001140a8","bodyBytes":1,"signature":"__pid_t getpid(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_mixenc","entry":"001140b0","bodyBytes":1,"signature":"undefined syn123_mixenc(void)","callingConvention":"unknown","external":false}
+{"name":"out123_drivers","entry":"001140b8","bodyBytes":1,"signature":"undefined out123_drivers(void)","callingConvention":"unknown","external":false}
+{"name":"fclose","entry":"001140c0","bodyBytes":1,"signature":"int fclose(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"opendir","entry":"001140c8","bodyBytes":1,"signature":"DIR * opendir(char * __name)","callingConvention":"unknown","external":false}
+{"name":"syn123_host2le","entry":"001140d0","bodyBytes":1,"signature":"undefined syn123_host2le(void)","callingConvention":"unknown","external":false}
+{"name":"strlen","entry":"001140d8","bodyBytes":1,"signature":"size_t strlen(char * __s)","callingConvention":"unknown","external":false}
+{"name":"__stack_chk_fail","entry":"001140e0","bodyBytes":1,"signature":"undefined __stack_chk_fail(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_amp","entry":"001140e8","bodyBytes":1,"signature":"undefined syn123_amp(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_swap_bytes","entry":"001140f0","bodyBytes":1,"signature":"undefined syn123_swap_bytes(void)","callingConvention":"unknown","external":false}
+{"name":"strrchr","entry":"001140f8","bodyBytes":1,"signature":"char * strrchr(char * __s, int __c)","callingConvention":"unknown","external":false}
+{"name":"setpriority","entry":"00114100","bodyBytes":1,"signature":"int setpriority(__priority_which_t __which, id_t __who, int __prio)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_waves","entry":"00114108","bodyBytes":1,"signature":"undefined syn123_setup_waves(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_new","entry":"00114110","bodyBytes":1,"signature":"undefined syn123_new(void)","callingConvention":"unknown","external":false}
+{"name":"sched_setscheduler","entry":"00114118","bodyBytes":1,"signature":"int sched_setscheduler(__pid_t __pid, int __policy, sched_param * __param)","callingConvention":"unknown","external":false}
+{"name":"syn123_strerror","entry":"00114120","bodyBytes":1,"signature":"undefined syn123_strerror(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_le2host","entry":"00114128","bodyBytes":1,"signature":"undefined syn123_le2host(void)","callingConvention":"unknown","external":false}
+{"name":"close","entry":"00114130","bodyBytes":1,"signature":"int close(int __fd)","callingConvention":"unknown","external":false}
+{"name":"closedir","entry":"00114138","bodyBytes":1,"signature":"int closedir(DIR * __dirp)","callingConvention":"unknown","external":false}
+{"name":"fputc","entry":"00114140","bodyBytes":1,"signature":"int fputc(int __c, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"read","entry":"00114148","bodyBytes":1,"signature":"ssize_t read(int __fd, void * __buf, size_t __nbytes)","callingConvention":"unknown","external":false}
+{"name":"out123_play","entry":"00114150","bodyBytes":1,"signature":"undefined out123_play(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_libversion","entry":"00114158","bodyBytes":1,"signature":"undefined syn123_libversion(void)","callingConvention":"unknown","external":false}
+{"name":"out123_drop","entry":"00114160","bodyBytes":1,"signature":"undefined out123_drop(void)","callingConvention":"unknown","external":false}
+{"name":"strcmp","entry":"00114168","bodyBytes":1,"signature":"int strcmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"syn123_wave_name","entry":"00114170","bodyBytes":1,"signature":"undefined syn123_wave_name(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_distversion","entry":"00114178","bodyBytes":1,"signature":"undefined syn123_distversion(void)","callingConvention":"unknown","external":false}
+{"name":"sigemptyset","entry":"00114180","bodyBytes":1,"signature":"int sigemptyset(sigset_t * __set)","callingConvention":"unknown","external":false}
+{"name":"out123_libversion","entry":"00114188","bodyBytes":1,"signature":"undefined out123_libversion(void)","callingConvention":"unknown","external":false}
+{"name":"__gmon_start__","entry":"00114190","bodyBytes":1,"signature":"undefined __gmon_start__(void)","callingConvention":"unknown","external":false}
+{"name":"out123_encsize","entry":"00114198","bodyBytes":1,"signature":"undefined out123_encsize(void)","callingConvention":"unknown","external":false}
+{"name":"stat","entry":"001141a0","bodyBytes":1,"signature":"int stat(char * __file, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_filter","entry":"001141a8","bodyBytes":1,"signature":"undefined syn123_setup_filter(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_db2lin","entry":"001141b0","bodyBytes":1,"signature":"undefined syn123_db2lin(void)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"001141b8","bodyBytes":1,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"syn123_wave_id","entry":"001141c0","bodyBytes":1,"signature":"undefined syn123_wave_id(void)","callingConvention":"unknown","external":false}
+{"name":"out123_ndrain","entry":"001141c8","bodyBytes":1,"signature":"undefined out123_ndrain(void)","callingConvention":"unknown","external":false}
+{"name":"out123_param2","entry":"001141d0","bodyBytes":1,"signature":"undefined out123_param2(void)","callingConvention":"unknown","external":false}
+{"name":"out123_del","entry":"001141d8","bodyBytes":1,"signature":"undefined out123_del(void)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_strtol","entry":"001141e0","bodyBytes":1,"signature":"undefined __isoc23_strtol(void)","callingConvention":"unknown","external":false}
+{"name":"readdir","entry":"001141e8","bodyBytes":1,"signature":"dirent * readdir(DIR * __dirp)","callingConvention":"unknown","external":false}
+{"name":"uselocale","entry":"001141f0","bodyBytes":1,"signature":"__locale_t uselocale(__locale_t __dataset)","callingConvention":"unknown","external":false}
+{"name":"malloc","entry":"001141f8","bodyBytes":1,"signature":"void * malloc(size_t __size)","callingConvention":"unknown","external":false}
+{"name":"out123_errcode","entry":"00114200","bodyBytes":1,"signature":"undefined out123_errcode(void)","callingConvention":"unknown","external":false}
+{"name":"sched_get_priority_min","entry":"00114208","bodyBytes":1,"signature":"int sched_get_priority_min(int __algorithm)","callingConvention":"unknown","external":false}
+{"name":"nl_langinfo","entry":"00114210","bodyBytes":1,"signature":"char * nl_langinfo(nl_item __item)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_geiger","entry":"00114218","bodyBytes":1,"signature":"undefined syn123_setup_geiger(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_resample_maxrate","entry":"00114220","bodyBytes":1,"signature":"undefined syn123_resample_maxrate(void)","callingConvention":"unknown","external":false}
+{"name":"out123_encodings","entry":"00114228","bodyBytes":1,"signature":"undefined out123_encodings(void)","callingConvention":"unknown","external":false}
+{"name":"out123_open","entry":"00114230","bodyBytes":1,"signature":"undefined out123_open(void)","callingConvention":"unknown","external":false}
+{"name":"strerror_l","entry":"00114238","bodyBytes":1,"signature":"char * strerror_l(int __errnum, __locale_t __l)","callingConvention":"unknown","external":false}
+{"name":"out123_getparam2","entry":"00114240","bodyBytes":1,"signature":"undefined out123_getparam2(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_read","entry":"00114248","bodyBytes":1,"signature":"undefined syn123_read(void)","callingConvention":"unknown","external":false}
+{"name":"realloc","entry":"00114250","bodyBytes":1,"signature":"void * realloc(void * __ptr, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_resample","entry":"00114258","bodyBytes":1,"signature":"undefined syn123_setup_resample(void)","callingConvention":"unknown","external":false}
+{"name":"fdopen","entry":"00114260","bodyBytes":1,"signature":"FILE * fdopen(int __fd, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"out123_enc_byname","entry":"00114268","bodyBytes":1,"signature":"undefined out123_enc_byname(void)","callingConvention":"unknown","external":false}
+{"name":"setlocale","entry":"00114270","bodyBytes":1,"signature":"char * setlocale(int __category, char * __locale)","callingConvention":"unknown","external":false}
+{"name":"__printf_chk","entry":"00114278","bodyBytes":1,"signature":"undefined __printf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_filter","entry":"00114280","bodyBytes":1,"signature":"undefined syn123_filter(void)","callingConvention":"unknown","external":false}
+{"name":"iswspace","entry":"00114288","bodyBytes":1,"signature":"int iswspace(wint_t __wc)","callingConvention":"unknown","external":false}
+{"name":"out123_stringlists_free","entry":"00114290","bodyBytes":1,"signature":"undefined out123_stringlists_free(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_clip","entry":"00114298","bodyBytes":1,"signature":"undefined syn123_clip(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_sweep","entry":"001142a0","bodyBytes":1,"signature":"undefined syn123_setup_sweep(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_conv","entry":"001142a8","bodyBytes":1,"signature":"undefined syn123_conv(void)","callingConvention":"unknown","external":false}
+{"name":"out123_buffered","entry":"001142b0","bodyBytes":1,"signature":"undefined out123_buffered(void)","callingConvention":"unknown","external":false}
+{"name":"out123_devices","entry":"001142b8","bodyBytes":1,"signature":"undefined out123_devices(void)","callingConvention":"unknown","external":false}
+{"name":"open","entry":"001142c0","bodyBytes":1,"signature":"int open(char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"out123_enc_longname","entry":"001142c8","bodyBytes":1,"signature":"undefined out123_enc_longname(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_resample_count","entry":"001142d0","bodyBytes":1,"signature":"undefined syn123_resample_count(void)","callingConvention":"unknown","external":false}
+{"name":"out123_formats","entry":"001142d8","bodyBytes":1,"signature":"undefined out123_formats(void)","callingConvention":"unknown","external":false}
+{"name":"fopen","entry":"001142e0","bodyBytes":1,"signature":"FILE * fopen(char * __filename, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"out123_start","entry":"001142e8","bodyBytes":1,"signature":"undefined out123_start(void)","callingConvention":"unknown","external":false}
+{"name":"perror","entry":"001142f0","bodyBytes":1,"signature":"void perror(char * __s)","callingConvention":"unknown","external":false}
+{"name":"out123_getformat","entry":"001142f8","bodyBytes":1,"signature":"undefined out123_getformat(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_host2be","entry":"00114300","bodyBytes":1,"signature":"undefined syn123_host2be(void)","callingConvention":"unknown","external":false}
+{"name":"out123_strerror","entry":"00114308","bodyBytes":1,"signature":"undefined out123_strerror(void)","callingConvention":"unknown","external":false}
+{"name":"wcstombs","entry":"00114310","bodyBytes":1,"signature":"size_t wcstombs(char * __s, wchar_t * __pwcs, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"syn123_soft_clip","entry":"00114318","bodyBytes":1,"signature":"undefined syn123_soft_clip(void)","callingConvention":"unknown","external":false}
+{"name":"exit","entry":"00114320","bodyBytes":1,"signature":"void exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"out123_enc_list","entry":"00114328","bodyBytes":1,"signature":"undefined out123_enc_list(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_del","entry":"00114330","bodyBytes":1,"signature":"undefined syn123_del(void)","callingConvention":"unknown","external":false}
+{"name":"fwrite","entry":"00114338","bodyBytes":1,"signature":"size_t fwrite(void * __ptr, size_t __size, size_t __n, FILE * __s)","callingConvention":"unknown","external":false}
+{"name":"__fprintf_chk","entry":"00114340","bodyBytes":1,"signature":"undefined __fprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"syn123_setup_white","entry":"00114348","bodyBytes":1,"signature":"undefined syn123_setup_white(void)","callingConvention":"unknown","external":false}
+{"name":"_ITM_registerTMCloneTable","entry":"00114350","bodyBytes":1,"signature":"undefined _ITM_registerTMCloneTable(void)","callingConvention":"unknown","external":false}
+{"name":"out123_distversion","entry":"00114358","bodyBytes":1,"signature":"undefined out123_distversion(void)","callingConvention":"unknown","external":false}
+{"name":"strerror","entry":"00114360","bodyBytes":1,"signature":"char * strerror(int __errnum)","callingConvention":"unknown","external":false}
+{"name":"iswprint","entry":"00114368","bodyBytes":1,"signature":"int iswprint(wint_t __wc)","callingConvention":"unknown","external":false}
+{"name":"out123_enc_name","entry":"00114370","bodyBytes":1,"signature":"undefined out123_enc_name(void)","callingConvention":"unknown","external":false}
+{"name":"out123_set_buffer","entry":"00114378","bodyBytes":1,"signature":"undefined out123_set_buffer(void)","callingConvention":"unknown","external":false}
+{"name":"out123_new","entry":"00114380","bodyBytes":1,"signature":"undefined out123_new(void)","callingConvention":"unknown","external":false}
+{"name":"strstr","entry":"00114388","bodyBytes":1,"signature":"char * strstr(char * __haystack, char * __needle)","callingConvention":"unknown","external":false}
+{"name":"syn123_dither","entry":"00114390","bodyBytes":1,"signature":"undefined syn123_dither(void)","callingConvention":"unknown","external":false}
+{"name":"__ctype_b_loc","entry":"00114398","bodyBytes":1,"signature":"ushort * * __ctype_b_loc(void)","callingConvention":"unknown","external":false}
+{"name":"__cxa_finalize","entry":"001143a0","bodyBytes":1,"signature":"undefined __cxa_finalize(void)","callingConvention":"unknown","external":false}

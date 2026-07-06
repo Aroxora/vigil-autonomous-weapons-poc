@@ -1,0 +1,74 @@
+001003ac TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100671 string-utf8 __gmon_start__
+00100680 string-utf8 _ITM_deregisterTMCloneTable
+0010069c string-utf8 _ITM_registerTMCloneTable
+001006b6 string-utf8 g_log
+001006bc string-utf8 gts_surface_is_orientable
+001006d6 string-utf8 gts_face_class
+001006e5 string-utf8 gts_edge_class
+001006f4 string-utf8 gts_surface_class
+00100706 string-utf8 gts_file_new
+00100713 string-utf8 gts_vertex_class
+00100724 string-utf8 gts_surface_read
+00100735 string-utf8 gts_surface_new
+00100745 string-utf8 gts_surface_write
+00100757 string-utf8 gts_surface_is_self_intersecting
+00100778 string-utf8 gts_surface_print_stats
+00100790 string-utf8 stdin
+00100796 string-utf8 __stack_chk_fail
+001007a7 string-utf8 stdout
+001007ae string-utf8 __fprintf_chk
+001007bc string-utf8 __libc_start_main
+001007ce string-utf8 stderr
+001007d5 string-utf8 __cxa_finalize
+001007e4 string-utf8 setlocale
+001007ee string-utf8 fwrite
+001007f5 string-utf8 getopt_long
+00100801 string-utf8 libglib-2.0.so.0
+00100812 string-utf8 libgts-0.7.so.5
+00100822 string-utf8 libc.so.6
+0010082c string-utf8 GLIBC_2.34
+00100837 string-utf8 GLIBC_2.4
+00100841 string-utf8 GLIBC_2.2.5
+0010084d string-utf8 GLIBC_2.3.4
+00102004 string cannot set locale to POSIX
+0010201f string Gts-tools
+0010202c string popinet@users.sourceforge.net
+0010204a string stdin:%d:%d: %s 
+00102060 string verbose
+00102068 string Usage: gtscheck [OPTION] < FILE Checks that a surface defines a closed, orientable non self-intersecting manifold.  If the surface is self-intersecting, the set of intersected faces is written on standard output as a GTS surface file.    -v      --verbose  print statistics about the surface   -h      --help     display this help and exit  The return status reflects the error encountered:   0: none   1: the input file is not a valid GTS file   2: the surface is not an orientable manifold   3: the surface is an orientable manifold but is self-intersecting  Reports bugs to %s 
+001022b0 string Try `gtscheck --help' for more information. 
+001022e0 string gtscheck: file on standard input is not a valid GTS file 
+00102320 string gtscheck: the surface on standard input is not an orientable manifold 
+00102368 string gtscheck: the surface on standard input is self-intersecting 
+001023e1 string zR
+00102411 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/libgts-bin.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .sframe
+.shstrtab::000000b3 string-utf8 .note.gnu.property
+.shstrtab::000000c6 string-utf8 .note.ABI-tag
+.shstrtab::000000d4 string-utf8 .init_array
+.shstrtab::000000e0 string-utf8 .fini_array
+.shstrtab::000000ec string-utf8 .dynamic
+.shstrtab::000000f5 string-utf8 .got.plt
+.shstrtab::000000fe string-utf8 .data
+.shstrtab::00000104 string-utf8 .bss
+.shstrtab::00000109 string-utf8 .gnu_debugaltlink
+.shstrtab::0000011b string-utf8 .gnu_debuglink

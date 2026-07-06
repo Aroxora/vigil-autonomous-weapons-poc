@@ -1,0 +1,170 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100b51 string-utf8 _ITM_deregisterTMCloneTable
+00100b6d string-utf8 __gmon_start__
+00100b7c string-utf8 _ITM_registerTMCloneTable
+00100b96 string-utf8 hivex_node_children
+00100baa string-utf8 hivex_open
+00100bb5 string-utf8 hivex_value_multiple_strings
+00100bd2 string-utf8 hivex_node_get_value
+00100be7 string-utf8 hivex_node_add_child
+00100bfc string-utf8 hivex_node_values
+00100c0e string-utf8 hivex_value_type
+00100c1f string-utf8 hivex_root
+00100c2a string-utf8 hivex_value_qword
+00100c3c string-utf8 hivex_commit
+00100c49 string-utf8 hivex_node_name
+00100c59 string-utf8 hivex_close
+00100c65 string-utf8 hivex_node_delete_child
+00100c7d string-utf8 hivex_value_dword
+00100c8f string-utf8 hivex_node_parent
+00100ca1 string-utf8 hivex_value_string
+00100cb4 string-utf8 hivex_value_value
+00100cc6 string-utf8 hivex_value_key
+00100cd6 string-utf8 hivex_node_get_child
+00100ceb string-utf8 hivex_node_set_values
+00100d01 string-utf8 rl_readline_name
+00100d12 string-utf8 read_history
+00100d1f string-utf8 readline
+00100d28 string-utf8 append_history
+00100d37 string-utf8 using_history
+00100d45 string-utf8 add_history
+00100d51 string-utf8 optind
+00100d58 string-utf8 fgets
+00100d5e string-utf8 stdin
+00100d64 string-utf8 perror
+00100d6b string-utf8 dcgettext
+00100d75 string-utf8 __stack_chk_fail
+00100d86 string-utf8 __printf_chk
+00100d93 string-utf8 free
+00100d98 string-utf8 exit
+00100d9d string-utf8 __assert_fail
+00100dab string-utf8 strdup
+00100db2 string-utf8 strspn
+00100db9 string-utf8 strrchr
+00100dc1 string-utf8 putchar
+00100dc9 string-utf8 strlen
+00100dd0 string-utf8 __ctype_b_loc
+00100dde string-utf8 __isoc23_strtol
+00100dee string-utf8 stdout
+00100df5 string-utf8 optarg
+00100dfc string-utf8 isatty
+00100e03 string-utf8 __isoc23_strtoll
+00100e14 string-utf8 bindtextdomain
+00100e23 string-utf8 strcasecmp
+00100e2e string-utf8 __fprintf_chk
+00100e3c string-utf8 open_memstream
+00100e4b string-utf8 strcspn
+00100e53 string-utf8 malloc
+00100e5a string-utf8 __libc_start_main
+00100e6c string-utf8 stderr
+00100e73 string-utf8 getopt
+00100e7a string-utf8 __cxa_finalize
+00100e89 string-utf8 setlocale
+00100e93 string-utf8 strchr
+00100e9a string-utf8 getenv
+00100ea1 string-utf8 calloc
+00100ea8 string-utf8 fclose
+00100eaf string-utf8 __isoc23_strtoul
+00100ec0 string-utf8 fputc
+00100ec6 string-utf8 fputs
+00100ecc string-utf8 __snprintf_chk
+00100edb string-utf8 fwrite
+00100ee2 string-utf8 strcmp
+00100ee9 string-utf8 qsort
+00100eef string-utf8 __errno_location
+00100f00 string-utf8 strncmp
+00100f08 string-utf8 libhivex.so.0
+00100f16 string-utf8 libreadline.so.8
+00100f27 string-utf8 libc.so.6
+00100f31 string-utf8 GLIBC_2.3
+00100f3b string-utf8 GLIBC_2.4
+00100f45 string-utf8 GLIBC_2.34
+00100f50 string-utf8 GLIBC_2.3.4
+00100f5c string-utf8 GLIBC_2.38
+00100f67 string-utf8 GLIBC_2.2.5
+00106008 string hivexsh: error getting parent of node %zu 
+00106038 string hivexsh: error getting node name of node %zx 
+00106068 string hivexsh: load: no hive file name given to load 
+00106098 string hivexsh: failed to open hive file: %s: %m  If you think this file is a valid Windows binary hive file (_not_ a regedit *.reg file) then please run this command again using the hivexsh option '-d' and attach the complete output _and_ the hive file which fails into a bug report at https://bugzilla.redhat.com/  
+001061d0 string  Welcome to hivexsh, the hivex interactive shell for examining Windows Registry binary hive files.  Type: 'help' for help summary       'quit' to quit the shell  
+00106278 string Navigate through the hive's keys using the 'cd' command, as if it contained a filesystem, and use 'ls' to list the subkeys of the current key.  Full documentation is in the hivexsh(1) manual page. 
+00106340 string hivexsh: you must load a hive file first using 'load hivefile' 
+00106380 string %s: %s: \ characters in path are doubled - are you escaping the path parameter correctly? 
+001063e0 string hivexsh: cd: subkey '%s' not found 
+00106408 string hivexsh: '%s' command should not be given arguments 
+00106440 string hivexsh: del: the root node cannot be deleted 
+00106470 string %s: %s: invalid integer parameter (%s returned %u) 
+001064a8 string hivexsh: setval: unexpected end of input 
+001064d8 string hivexsh: string(utf16le): only 7 bit ASCII strings are supported for input 
+00106528 string hivexsh: setval: trailing garbage after hex string 
+00106560 string hivexsh: setval: cannot parse value string, please refer to the man page hivexsh(1) for help: %s 
+001065c8 string hivexsh: unknown command '%s', use 'help' for help summary 
+00106608 string ../../../../gnulib/lib/xstrtol.c
+00106630 string 0 <= strtol_base && strtol_base <= 36
+00106656 string hivex
+0010665c string open_memstream
+0010666b string ../../../sh/hivexsh.c
+00106681 string loaded != NULL
+00106690 string cwd != 0
+00106699 string hivexsh [-dfwu] [hivefile] 
+001066b5 string strdup
+001066bc string /usr/share/locale
+001066ce string df:wu
+001066d9 string %s/.hivexsh
+001066f9 string hivexsh: add
+0010670b string hivexsh: cd
+00106717 string close
+0010671d string unload
+00106724 string hivexsh: commit
+00106734 string hivexsh: del
+00106741 string malloc
+00106748 string hivex_node_name
+0010675a string %s: %s: key not found 
+00106787 string dword:%08x
+00106792 string hex(%u):
+001067a0 string hivexsh: lsval
+001067af string setval
+001067b6 string xstrtol
+001067c5 string %s: %s: integer out of range 
+001067e3 string calloc
+001067ea string   key> 
+001067f2 string value> 
+001067ff string expandstring:
+0010680d string dword:
+00106814 string dword
+0010681a string qword:
+00106821 string xstrtoll
+00106870 string set_prompt_string
+00106960 string xstrtol
+00106a40 string xstrtoll
+00106b28 string xstrtoul
+00106be1 string zR
+00106c11 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/libhivex-bin.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .got.plt
+.shstrtab::000000f6 string-utf8 .data
+.shstrtab::000000fc string-utf8 .bss
+.shstrtab::00000101 string-utf8 .gnu_debugaltlink
+.shstrtab::00000113 string-utf8 .gnu_debuglink

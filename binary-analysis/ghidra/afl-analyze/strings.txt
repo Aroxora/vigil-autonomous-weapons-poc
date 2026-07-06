@@ -1,0 +1,696 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100bf9 string-utf8 __libc_start_main
+00100c0b string-utf8 __cxa_finalize
+00100c1a string-utf8 __cxa_atexit
+00100c27 string-utf8 malloc
+00100c2e string-utf8 stdout
+00100c35 string-utf8 fflush
+00100c3c string-utf8 abort
+00100c42 string-utf8 memset
+00100c49 string-utf8 calloc
+00100c50 string-utf8 strlen
+00100c57 string-utf8 memcpy
+00100c5e string-utf8 kill
+00100c63 string-utf8 unlink
+00100c6a string-utf8 puts
+00100c6f string-utf8 fstat
+00100c75 string-utf8 read
+00100c7a string-utf8 __errno_location
+00100c8b string-utf8 strerror
+00100c94 string-utf8 __stack_chk_fail
+00100ca5 string-utf8 getenv
+00100cac string-utf8 __isoc23_strtol
+00100cbc string-utf8 access
+00100cc3 string-utf8 execv
+00100cc9 string-utf8 setregid
+00100cd2 string-utf8 setgroups
+00100cdc string-utf8 setreuid
+00100ce5 string-utf8 write
+00100ceb string-utf8 signal
+00100cf2 string-utf8 fork
+00100cf7 string-utf8 waitpid
+00100cff string-utf8 fclose
+00100d06 string-utf8 sigaction
+00100d10 string-utf8 setuid
+00100d17 string-utf8 setgid
+00100d1e string-utf8 memcmp
+00100d25 string-utf8 strstr
+00100d2c string-utf8 strcpy
+00100d33 string-utf8 getcwd
+00100d3a string-utf8 snprintf
+00100d43 string-utf8 free
+00100d48 string-utf8 strchr
+00100d4f string-utf8 strrchr
+00100d57 string-utf8 strcasecmp
+00100d62 string-utf8 getpid
+00100d69 string-utf8 __isoc23_strtoul
+00100d7a string-utf8 strncmp
+00100d82 string-utf8 strcspn
+00100d8a string-utf8 unsetenv
+00100d93 string-utf8 shmctl
+00100d9a string-utf8 shmget
+00100da1 string-utf8 shmat
+00100da7 string-utf8 dlopen
+00100dae string-utf8 dlsym
+00100db4 string-utf8 dlerror
+00100dbc string-utf8 select
+00100dc3 string-utf8 lseek
+00100dc9 string-utf8 ftruncate
+00100dd3 string-utf8 fchown
+00100dda string-utf8 putchar
+00100de2 string-utf8 rmdir
+00100de8 string-utf8 usleep
+00100def string-utf8 getopt
+00100df6 string-utf8 optind
+00100dfd string-utf8 optarg
+00100e04 string-utf8 strcmp
+00100e0b string-utf8 __isoc23_sscanf
+00100e1b string-utf8 sigemptyset
+00100e27 string-utf8 pipe
+00100e2c string-utf8 getrlimit
+00100e36 string-utf8 setsid
+00100e3d string-utf8 dup2
+00100e42 string-utf8 mmap
+00100e47 string-utf8 munmap
+00100e4e string-utf8 sprintf
+00100e56 string-utf8 setrlimit
+00100e60 string-utf8 realpath
+00100e69 string-utf8 mkdir
+00100e6f string-utf8 libc.so.6
+00100e79 string-utf8 GLIBC_2.14
+00100e84 string-utf8 GLIBC_2.3
+00100e8e string-utf8 GLIBC_2.33
+00100e99 string-utf8 GLIBC_2.4
+00100ea3 string-utf8 GLIBC_2.34
+00100eae string-utf8 GLIBC_2.38
+00100eb9 string-utf8 GLIBC_2.2.5
+00100ec5 string-utf8 _ITM_deregisterTMCloneTable
+00100ee1 string-utf8 __gmon_start__
+00100ef0 string-utf8 _ITM_registerTMCloneTable
+0010d02f string [0mBad alloc request: %u bytes
+0010d075 string [0m%s(), %s:%u  
+0010d0af string [0mOut of memory: can't allocate %u bytes
+0010d0e0 string  %s [ options ] -- /path/to/target_app [ ... ]  Required parameters:   -i file       - input test case to be analyzed by the tool  Execution control settings:   -f file       - input file read by the tested program (stdin)   -t msec       - timeout for each run (%u ms)   -m megs       - memory limit for child process (%u MB)   -O            - use binary-only instrumentation (FRIDA mode)   -Q            - use binary-only instrumentation (QEMU mode)   -U            - use unicorn-based instrumentation (Unicorn mode)   -W            - use qemu-based instrumentation with Wine (Wine mode)   -X            - use Nyx mode  Analysis settings:   -e            - look for edge coverage only, ignore hit counts  For additional tips, please consult %s/README.md.  Environment variables used: TMPDIR: directory to use for temporary input files ASAN_OPTIONS: custom settings for ASAN               (must contain abort_on_error=1 and symbolize=0) MSAN_OPTIONS: custom settings for MSAN               (must contain exitcode=86 and symbolize=0) AFL_ANALYZE_HEX: print file offsets in hexadecimal instead of decimal AFL_KILL_SIGNAL: Signal ID delivered to child processes on timeout, etc.                  (default: SIGKILL) AFL_FORK_SERVER_KILL_SIGNAL: Kill signal for the fork server on termination                              (default: SIGTERM). If unset and AFL_KILL_SIGNAL is                              set, that value will be used. AFL_MAP_SIZE: the shared memory size for that target. must be >= the size               the target was compiled for AFL_PRELOAD: LD_PRELOAD / DYLD_INSERT_LIBRARIES settings for target AFL_SKIP_BIN_CHECK: skip checking the location of and the target 
+0010d797 string [0mAFL_MAP_SIZE is not set and fuzzing target reports that the required size is very large. Solution: Run the fuzzing target stand-alone with the environment variable AFL_DUMP_MAP_SIZE=1 set the displayed value in the AFL_MAP_SIZE environment variable for afl-fuzz.
+0010d8c5 string [0m%s(), %s:%u  
+0010d8ff string [0mthe fuzzing target reports that hardcoded map address might be the reason the mmap of the shared memory failed. Solution: recompile the target with either afl-clang-lto and do not set AFL_LLVM_MAP_ADDR or recompile with afl-clang-fast.
+0010da17 string [0mthe fuzzing target reports that the shm_open() call failed.
+0010da7f string [0mthe fuzzing target reports that the shmat() call failed.
+0010dae7 string [0mthe fuzzing target reports that the mmap() call to the shared memory failed.
+0010db5f string [0mthe -c cmplog target was instrumented with an too old AFL++ version, you need to recompile it.
+0010dbef string [0mThe AFL++ QEMU/FRIDA loaders are from an older version, for -c you need to recompile it.
+0010dc77 string [0munknown error code %d from fuzzing target!
+0010dccf string [0mUnable to open '%s'
+0010dd05 string [0m%s(), %s:%u 
+0010dd67 string [0mZero-sized input file.
+0010ddaf string [0mInput file is too large (%ld MB max)
+0010ddff string [0mShort read from %s
+0010de3f string [0mShort read from %s
+0010de64 string [0mRead %u byte%s from '%s'.
+0010de94 string [0mEnabled environment variable %s with value %s
+0010deef string [0millegal AFL_MAP_SIZE %u, must be between %u and %u
+0010df28 string AFL_DISABLE_LLVM_INSTRUMENTATION
+0010df77 string [0msetgid failed: %s 
+0010dfb7 string [0msetgroups failed: %s 
+0010dff7 string [0msetuid failed: %s 
+0010e037 string [0mAccess to the file to fuzz denied. Most likely the requested     UID and/or GID is denied search permission ('x') for one of the directories     in the path prefix of "%s".
+0010e104 string [0mExecv failed in forkserver: %s.
+0010e134 string [0mUsing Fauxserver:
+0010e177 string [0mFork failed
+0010e1a4 string [0mExecv failed in fauxserver.
+0010e1e4 string [0mFauxserver could not determine child's exit code. 
+0010e220 string exitcode=23:fast_unwind_on_malloc=0:print_suppressions=0:detect_leaks=0:malloc_context_size=0:
+0010e280 string exitcode=23:fast_unwind_on_malloc=0:print_suppressions=0:detect_leaks=1:malloc_context_size=30:
+0010e2e0 string detect_leaks=1:malloc_context_size=30:
+0010e308 string exit_code=86:msan_track_origins=0:
+0010e330 string detect_leaks=0:malloc_context_size=0:
+0010e37f string [0mgetcwd() failed
+0010e3bf string [0m@@ syntax is not supported by this tool.
+0010e417 string [0mWhoa, snprintf() fails?!
+0010e45f string [0mNo binary supplied
+0010e49f string [0mProgram '%s' not found or not executable
+0010e4f7 string [0mUnexpected overflow when processing ENV. This should never had happened.
+0010e56f string [0mLibrary '%s' not found
+0010e5b7 string [0mUnable to open /dev/null
+0010e5ff string [0mUnable to create '%s'
+0010e63f string [0mCustom MSAN_OPTIONS set without exit_code=86 - please fix!
+0010e6a7 string [0mInvalid signal name: %s
+0010e6e4 string [0mPotentially mistyped AFL environment variable: %s
+0010e73c string [0mAFL environment variable %s defined but is empty, this can lead to unexpected consequences
+0010e7bc string [0mAFL environment variable %s is deprecated!
+0010e80c string [0mAFL_LLVM_ONLY_FSRV/AFL_GCC_ONLY_FSRV is induced and set instead.
+0010e86c string [0mMistyped AFL environment variable: %s
+0010e8bf string [0mforeach over uninitialized list
+0010e90f string [0mInconsistent data in PRE_FREE
+0010e957 string [0mDouble Free Detected
+0010e997 string [0mList item to be removed not in list
+0010e9e7 string [0mshmget() failed, try running afl-system-config
+0010ea47 string [0mshmat() failed
+0010ea87 string [0merror in list.h -> out of memory for element!
+0010eac4 string [0mTrying to load libnyx.so plugin...
+0010eaf0 string nyx_config_set_input_buffer_size
+0010eb18 string nyx_config_set_input_buffer_write_protection
+0010eb48 string nyx_config_set_reuse_snapshot_path
+0010eb70 string nyx_config_set_aux_buffer_size
+0010eb9c string [0mlibnyx plugin is ready!
+0010ebdf string [0mfailed to load libnyx: %s 
+0010ec27 string [0mfchown() failed
+0010ec67 string [0mNowhere to write output to (neither out_fd nor out_file set (fd is %d))
+0010ecdf string [0mftruncate() failed
+0010ed1f string [0mFixMe: Nyx InvalidWriteToPayload handler is missing
+0010ed7f string [0mError: Nyx abort occurred...
+0010edc7 string [0mError: QEMU-Nyx has died...
+0010ee0f string [0mError: Nyx runtime error has occurred...
+0010ee67 string [0mUnable to request new process from fork server (OOM?)
+0010eec7 string [0mUnable to request new process from fork server (OOM?)
+0010ef27 string [0mTarget reported shared memory access failed (perhaps increase shared memory available).
+0010efaf string [0mFork server is misbehaving (OOM?)
+0010efe5 string [0mUnable to communicate with fork server. Some possible reasons:      - You've run out of memory. Use -m to increase the the memory limit       to something higher than %llu.     - The binary or one of the libraries it uses manages to create       threads before the forkserver initializes.     - The binary, at least in some circumstances, exits in a way that       also kills the parent process - raise() could be the culprit.     - If using persistent mode with QEMU, AFL_QEMU_PERSISTENT_ADDR is       probably not valid (hint: add the base address in case of PIE)  If all else fails you can disable the fork server via AFL_NO_FORKSRV=1. 
+0010f28f string [0mUnable to communicate with fork server
+0010f2e7 string [0mError in forkserver
+0010f344 string [0mAnalyzing input file (this may take a while)...
+0010f4c3 string [0m - "magic value" section 
+0010f4ec string [0mAnalysis complete. Interesting bits: %0.02f%% of the input file.
+0010f5ac string [0mUnable to remove nyx workdir (%s)
+0010f5d8 string     - You are using deferred forkserver, but __AFL_INIT() is never       reached before the program terminates.  
+0010f677 string [0mAmount of arguments specified is too high
+0010f6c2 string [0m by Michal Zalewski
+0010f6e0 string AFL_PRELOAD_DISCRIMINATE_FORKSERVER_PARENT
+0010f737 string [0mMultiple -i options not supported
+0010f787 string [0mMultiple -f options not supported
+0010f7d7 string [0mMultiple -e options not supported
+0010f827 string [0mMultiple -m options not supported
+0010f877 string [0mWrong usage of -m
+0010f8b7 string [0mBad syntax used for -m
+0010f8ff string [0mUnsupported suffix or bad syntax for -m
+0010f957 string [0mDangerously low value of -m
+0010f99f string [0mMultiple -t options not supported
+0010f9ef string [0mWrong usage of -t
+0010fa2f string [0mDangerously low value of -t
+0010fa77 string [0m-A option is not supported on this platform
+0010facf string [0mMultiple -O options not supported
+0010fb1f string [0mMultiple -Q options not supported
+0010fb6f string [0mMultiple -U options not supported
+0010fbbf string [0mMultiple -W options not supported
+0010fc0f string [0mMultiple -X options not supported
+0010fc5f string [0mIllegal amount of arguments specified
+0010fca4 string [0mAFL_QEMU_CUSTOM_BIN is enabled. You must run your target under afl-qemu-trace on your own!
+0010fd2f string [0mBad value specified for AFL_FORKSRV_INIT_TMOUT
+0010fd8f string [0mUnable to fstat '%s'
+0010fdcf string [0mUnable to mmap file '%s'
+0010fe00 string [1;95mPersistent mode binary detected.
+0010fe38 string [1;95mPersistent mode enforced.
+0010fe64 string [0mFRIDA Persistent mode configuration options detected.
+0010feb0 string [1;95mDeferred forkserver binary detected.
+0010fef0 string [1;95mDeferred forkserver enforced.
+0010ff3f string [0munmap() failed
+0010ff64 string [0mPerforming dry run (mem limit = %llu MB, timeout = %u ms%s)...
+0010ffb4 string [0mSpinning up the NYX backend...
+0010ffff string [0mUnable to create nyx workdir
+00110047 string [0mNyx workdir path not found...
+0011008f string [0mNyx workdir path cannot be resolved ...
+001100e7 string [0mNyx ID is not set...
+00110127 string [0mNyx CPU ID is not set...
+0011016f string [0mAFL_NYX_LOG path could not be written
+001101bf string [0mInvalid AFL_NYX_AUX_SIZE value set (must be a multiple of 4096) ...
+0011022f string [0mAFL_NYX_REUSE_SNAPSHOT path does not exist
+00110287 string [0mAFL_NYX_REUSE_SNAPSHOT path does not contain a valid Nyx snapshot
+001102f7 string [0mAFL_NYX_REUSE_SNAPSHOT path is located in current workdir (use another output directory)
+0011037f string [0mSomething went wrong ...
+001103ac string [0mTarget map size: %u
+001103c8 string %s/workdir/dump/afl_autodict.txt
+00110417 string [0mCould not allocate %u bytes of autodictionary memory
+00110477 string [0mReading autodictionary fail at position %u with %u bytes left.
+001104cc string [0mLoaded %u autodictionary entries
+001104fc string [0mSpinning up the fork server...
+00110547 string [0mDifferent forkserver not compatible with fauxserver
+0011058c string [0mUsing AFL++ faux forkserver...
+001105d7 string [0mpipe() failed
+0011060f string [0mfork() failed
+00110647 string [0mdup2() failed
+0011067f string [0mError: execv to target failed
+001106c7 string [0mTimeout while initializing fork server (setting AFL_FORKSRV_INIT_TMOUT may help)
+00110747 string [0mFork server version is not assigned, this should not happen. Recompile target.
+001107c7 string [0mFork server version is not not supported.  Recompile the target.
+00110837 string [0mWriting to forkserver failed.
+00110864 string [0mAll right - new fork server model v%u is up.
+001108a4 string [0mForkserver options received: (0x%08x)
+001108f7 string [0mTarget's coverage map size of %u is larger than the one this AFL++ is set with (%u). Either set AFL_MAP_SIZE=%u and restart  afl-fuzz, or change MAP_SIZE_POW2 in config.h and recompile afl-fuzz
+001109cc string [0mUsing SHARED MEMORY FUZZING feature.
+00110a1f string [0mTarget requested sharedmem fuzzing, but we failed to enable it.
+00110a8f string [0mReading from forkserver failed.
+00110adf string [0mDictionary has an illegal size: %d
+00110b2f string [0mError in forkserver communication (%08x=>%08x)
+00110b84 string [0mOld fork server model is used by the target, this still works though.
+00110bdc string [0mAll right - old fork server is up.
+00110c14 string [0mExtended forkserver functions received (%08x).
+00110c6f string [0mTarget was compiled with outdated CMPLOG, recompile it!
+00110cbc string [0mUsing SNAPSHOT feature.
+00110ce4 string [0mUsing AUTODICT feature.
+00110d27 string [0mwaitpid() failed
+00110d4d string [0mWhoops, the target binary crashed suddenly, before receiving any input     from the fuzzer! Since it seems to be built with ASAN and you have a     restrictive memory limit configured, this is expected; please run with '-m 0'.
+00110e45 string [0mWhoops, the target binary crashed suddenly, before receiving any input     from the fuzzer! You can try the following:      - The target binary crashes because necessary runtime conditions it needs       are not met. Try to:       1. Run again with AFL_DEBUG=1 set and check the output of the target          binary for clues.       2. Run again with AFL_DEBUG=1 and 'ulimit -c unlimited' and analyze the          generated core dump.      - Possibly the target requires a huge coverage map and has CTORS.       Retry with setting AFL_MAP_SIZE=10000000.      - Less likely, there is a horrible bug in the fuzzer. If other options       fail, poke the Awesome Fuzzing Discord for troubleshooting tips.
+00111115 string [0mWhoops, the target binary crashed suddenly, before receiving any input     from the fuzzer! You can try the following:      - The target binary crashes because necessary runtime conditions it needs       are not met. Try to:       1. Run again with AFL_DEBUG=1 set and check the output of the target          binary for clues.       2. Run again with AFL_DEBUG=1 and 'ulimit -c unlimited' and analyze the          generated core dump.      - The current memory limit (%s) is too restrictive, causing the       target to hit an OOM condition in the dynamic linker. Try bumping up       the limit with the -m setting in the command line. A simple way confirm       this diagnosis would be:        ( ulimit -Sd $[%llu << 10]; /path/to/fuzzed_app )        Tip: you can use https://jwilk.net/software/recidivm to       estimate the required amount of virtual memory for the binary.      - Possibly the target requires a huge coverage map and has CTORS.       Retry with setting AFL_MAP_SIZE=10000000.      - Less likely, there is a horrible bug in the fuzzer. If other options       fail, poke the Awesome Fuzzing Discord for troubleshooting tips. 
+001115b7 string [0mFork server crashed with signal %d
+00111607 string [0mUnable to execute target application ('%s')
+00111645 string [0mHmm, looks like the target binary terminated before we could complete a     handshake with the injected code. Since it seems to be built with ASAN and     you have a restrictive memory limit configured, this is expected; please     run with '-m 0'.
+00111755 string [0mHmm, looks like the target binary terminated before we could complete a handshake with the injected code. You can try the following:      - The target binary crashes because necessary runtime conditions it needs       are not met. Try to:       1. Run again with AFL_DEBUG=1 set and check the output of the target          binary for clues.       2. Run again with AFL_DEBUG=1 and 'ulimit -c unlimited' and analyze the          generated core dump.      - Possibly the target requires a huge coverage map and has CTORS.       Retry with setting AFL_MAP_SIZE=10000000.  Otherwise there is a horrible bug in the fuzzer. Poke the Awesome Fuzzing Discord for troubleshooting tips.
+00111a0d string [0mHmm, looks like the target binary terminated before we could complete a     handshake with the injected code. You can try the following:  %s    - The target binary crashes because necessary runtime conditions it needs       are not met. Try to:       1. Run again with AFL_DEBUG=1 set and check the output of the target          binary for clues.       2. Run again with AFL_DEBUG=1 and 'ulimit -c unlimited' and analyze the          generated core dump.      - Possibly the target requires a huge coverage map and has CTORS.       Retry with setting AFL_MAP_SIZE=10000000.      - The current memory limit (%s) is too restrictive, causing an OOM       fault in the dynamic linker. This can be fixed with the -m option. A       simple way to confirm the diagnosis may be:        ( ulimit -Sd $[%llu << 10]; /path/to/fuzzed_app )        Tip: you can use https://jwilk.net/software/recidivm to       estimate the required amount of virtual memory for the binary.      - The target was compiled with afl-clang-lto and a constructor was       instrumented, recompiling without AFL_LLVM_MAP_ADDR might solve your        problem      - Less likely, there is a horrible bug in the fuzzer. If other options       fail, poke the Awesome Fuzzing Discord for troubleshooting tips. 
+00111f2f string [0mFork server handshake failed
+00111f77 string [0mTarget binary times out (adjusting -t may help).
+00111fbc string [0mWe're done here. Have a nice day!
+0011200f string [0mNo instrumentation detected.
+00112030 string AFL_DUMP_CYCLOMATIC_COMPLEXITY
+00112050 string AFL_CRASHING_SEEDS_AS_NEW_CRASH
+00112070 string AFL_DRIVER_STDERR_DUPLICATE_FILENAME
+00112098 string AFL_FRIDA_INST_COVERAGE_ABSOLUTE
+001120c0 string AFL_FRIDA_INST_NO_DYNAMIC_LOAD
+001120e0 string AFL_FRIDA_INST_NO_PREFETCH_BACKPATCH
+00112108 string AFL_FRIDA_INST_UNSTABLE_COVERAGE_FILE
+00112130 string AFL_FRIDA_STALKER_ADJACENT_BLOCKS
+00112158 string AFL_FRIDA_STALKER_NO_BACKPATCH
+00112178 string AFL_FUZZER_STATS_UPDATE_INTERVAL
+001121a0 string AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES
+001121c8 string AFL_LLVM_INSTRIM_SKIPSINGLEBLOCK
+001121f0 string AFL_LLVM_LAF_SPLIT_COMPARES_BITW
+00112218 string AFL_LLVM_LAF_TRANSFORM_COMPARES
+00112238 string AFL_POST_PROCESS_KEEP_ORIGINAL
+00112258 string AFL_QEMU_PERSISTENT_RETADDR_OFFSET
+0011227b string include/alloc-inl.h
+0011228f string src/afl-forkserver.c
+001122a4 string src/afl-analyze.c
+001122b6 string AFL_MAP_SIZE
+001122c3 string AFL_MAPSIZE
+001122cf string src/afl-common.c
+001122e0 string AFL_SKIP_BIN_CHECK
+001122f3 string ASAN_OPTIONS
+00112300 string UBSAN_OPTIONS
+0011230e string MSAN_OPTIONS
+0011231b string LSAN_OPTIONS
+00112328 string detect_leaks=0
+00112337 string detect_leaks=false
+0011234a string QASAN_MAX_CALL_STACK
+0011235f string QASAN_SYMBOLIZE
+00112372 string %s%s%s
+00112379 string %s%s/%s%s
+00112389 string AFL_PATH
+00112392 string /usr/bin
+0011239b string .dylib
+001123a2 string /usr/lib/afl
+001123b6 string /dev/null
+001123c0 string %s/.afl-analyze-temp-%u
+001123d8 string exit_code=86
+001123e5 string AFL_PRELOAD
+001123f1 string afl-frida-trace.so
+00112404 string %s:%s
+0011240a string AFL_LLVM_WHITELIST
+0011241d string AFL_ALIGNED_ALLOC
+0011242f string AFL_IGNORE_UNKNOWN_ENVS
+0011245d string AFL_SAN_NO_INST
+0011246d string AFL_GCC_ONLY_FSRV
+0011247f string AFL_LLVM_ONLY_FSRV
+00112494 string Did you mean %s? 
+001124a6 string include/list.h
+001124b5 string __AFL_SHM_FUZZ_ID
+001124c7 string __AFL_SHM_FUZZ_MAP_SIZE
+001124df string __AFL_SHM_ID
+001124ec string src/afl-sharedmem.c
+00112503 string __AFL_CMPLOG_SHM_ID
+00112517 string nyx_config_load
+00112527 string nyx_config_set_workdir_path
+00112543 string nyx_config_set_hprintf_fd
+0011255d string nyx_config_set_process_role
+00112579 string nyx_new
+00112581 string nyx_shutdown
+0011258e string nyx_option_set_reload_mode
+001125a9 string nyx_option_set_timeout
+001125c0 string nyx_option_apply
+001125d1 string nyx_set_afl_input
+001125e3 string nyx_exec
+001125ec string nyx_get_bitmap_buffer
+00112602 string nyx_get_bitmap_buffer_size
+0011261d string nyx_get_aux_string
+00112630 string nyx_remove_work_dir
+00112644 string nyx_get_target_hash64
+0011265a string nyx_config_free
+0011266a string AFL_NYX_HANDLE_INVALID_WRITE
+001126cb string #%02x
+00112737 string %s/workdir
+00112747 string /usr/share/doc/afl
+0011275a string , edges only
+0011276c string %llu%c
+00112773 string AFL_FRIDA_INST_SEED
+00112787 string +i:f:m:t:eAOQUWXYh
+0011279a string AFL_ANALYZE_HEX
+001127aa string afl-qemu-trace
+001127b9 string afl-wine-trace
+001127c8 string AFL_QEMU_CUSTOM_BIN
+001127df string libnyx.so
+001127e9 string AFL_FORKSRV_INIT_TMOUT
+00112800 string AFL_KILL_SIGNAL
+00112810 string AFL_FORK_SERVER_KILL_SIGNAL
+0011282c string ##SIG_AFL_PERSISTENT##
+00112843 string __AFL_PERSISTENT
+00112854 string AFL_FRIDA_PERSISTENT_ADDR
+0011286e string ##SIG_AFL_DEFER_FORKSRV##
+00112888 string __AFL_DEFER_FORKSRV
+0011289c string AFL_NO_AUTODICT
+001128ac string %s/.nyx_tmp_%d/
+001128bc string AFL_NYX_LOG
+001128c8 string AFL_NYX_AUX_SIZE
+001128d9 string AFL_NYX_REUSE_SNAPSHOT
+001128f0 string %s/global.state
+00112900 string %s/workdir/snapshot
+00112914 string AFL_NYX_DISABLE_SNAPSHOT_MODE
+00112932 string AFL_FORKSERVER_PARENT
+00112948 string LD_BIND_LAZY
+00112955 string LD_BIND_NOW
+00112961 string __AFL_TARGET_PID2
+00112973 string __AFL_TARGET_PID1
+00112985 string AFL_DEBUG
+0011298f string %llu B
+00112996 string %0.01f kB
+001129a0 string %0.02f MB
+001129aa string %0.01f MB
+001129b4 string %llu MB
+001129bc string %0.02f GB
+001129c6 string %0.01f GB
+001129d0 string %llu GB
+001129d8 string %0.02f TB
+001129e2 string %0.01f TB
+001129f1 string %0.01fk
+001129f9 string %0.02fM
+00112a01 string %0.01fM
+00112a09 string %lluM
+00112a0f string %0.02fG
+00112a17 string %0.01fG
+00112a1f string %lluG
+00112a25 string %0.02fT
+00112a2d string %0.01fT
+00112a35 string AFL_GCC_WHITELIST
+00112a47 string AFL_DEBUG_CHILD_OUTPUT
+00112a5e string AFL_POST_LIBRARY
+00112a6f string AFL_ALLOW_TMP
+00112a7d string AFL_AS
+00112a84 string AFL_AUTORESUME
+00112a93 string AFL_AS_FORCE_INSTRUMENT
+00112aab string AFL_BENCH_JUST_ONE
+00112abe string AFL_BENCH_UNTIL_CRASH
+00112ad4 string AFL_CAL_FAST
+00112ae1 string AFL_CC
+00112ae8 string AFL_CC_COMPILER
+00112af8 string AFL_CMIN_ALLOW_ANY
+00112b0b string AFL_CMIN_CRASHES_ONLY
+00112b21 string AFL_CMPLOG_ONLY_NEW
+00112b35 string AFL_CMPLOG_DEBUG
+00112b46 string AFL_CTX_K
+00112b50 string AFL_LLVM_DONTWRITEID
+00112b65 string AFL_PC_FILTER
+00112b73 string AFL_PC_FILTER_FILE
+00112b86 string AFL_CODE_END
+00112b93 string AFL_CODE_START
+00112ba2 string AFL_COMPCOV_BINNAME
+00112bb6 string AFL_CMPLOG_MAX_LEN
+00112bc9 string AFL_COMPCOV_LEVEL
+00112bdb string AFL_CRASH_EXITCODE
+00112bee string AFL_CUSTOM_MUTATOR_LIBRARY
+00112c09 string AFL_CUSTOM_MUTATOR_ONLY
+00112c21 string AFL_CUSTOM_MUTATOR_LATE_SEND
+00112c3e string AFL_CUSTOM_INFO_PROGRAM
+00112c56 string AFL_CUSTOM_INFO_PROGRAM_ARGV
+00112c73 string AFL_CUSTOM_INFO_PROGRAM_INPUT
+00112c91 string AFL_CUSTOM_INFO_OUT
+00112ca5 string AFL_CXX
+00112cad string AFL_CYCLE_SCHEDULES
+00112cc1 string AFL_DEBUG_CHILD
+00112cd1 string AFL_DEBUG_GDB
+00112cdf string AFL_DEBUG_UNICORN
+00112cf1 string AFL_DISABLE_REDUNDANT
+00112d07 string AFL_NO_REDUNDANT
+00112d18 string AFL_DISABLE_TRIM
+00112d29 string AFL_NO_TRIM
+00112d35 string AFL_DONT_OPTIMIZE
+00112d47 string AFL_DUMB_FORKSRV
+00112d58 string AFL_EARLY_FORKSERVER
+00112d6d string AFL_ENTRYPOINT
+00112d7c string AFL_EXITPOINT
+00112d8a string AFL_EXIT_WHEN_DONE
+00112d9d string AFL_EXIT_ON_TIME
+00112dae string AFL_EXIT_ON_SEED_ISSUES
+00112dc6 string AFL_FAST_CAL
+00112dd3 string AFL_FINAL_SYNC
+00112de2 string AFL_FORCE_UI
+00112def string AFL_FRIDA_DEBUG_MAPS
+00112e04 string AFL_FRIDA_DRIVER_NO_HOOK
+00112e1d string AFL_FRIDA_EXCLUDE_RANGES
+00112e36 string AFL_FRIDA_INST_CACHE_SIZE
+00112e50 string AFL_FRIDA_INST_COVERAGE_FILE
+00112e6d string AFL_FRIDA_INST_DEBUG_FILE
+00112e87 string AFL_FRIDA_INST_INSN
+00112e9b string AFL_FRIDA_INST_JIT
+00112eae string AFL_FRIDA_INST_NO_CACHE
+00112ec6 string AFL_FRIDA_INST_NO_OPTIMIZE
+00112ee1 string AFL_FRIDA_INST_NO_PREFETCH
+00112efc string AFL_FRIDA_INST_NO_SUPPRESS
+00112f17 string AFL_FRIDA_INST_RANGES
+00112f2d string AFL_FRIDA_INST_REGS_FILE
+00112f46 string AFL_FRIDA_INST_TRACE
+00112f5b string AFL_FRIDA_INST_TRACE_UNIQUE
+00112f77 string AFL_FRIDA_JS_SCRIPT
+00112f8b string AFL_FRIDA_OUTPUT_STDOUT
+00112fa3 string AFL_FRIDA_OUTPUT_STDERR
+00112fbb string AFL_FRIDA_PERSISTENT_CNT
+00112fd4 string AFL_FRIDA_PERSISTENT_DEBUG
+00112fef string AFL_FRIDA_PERSISTENT_HOOK
+00113009 string AFL_FRIDA_PERSISTENT_RET
+00113022 string AFL_FRIDA_STALKER_IC_ENTRIES
+0011303f string AFL_FRIDA_STATS_FILE
+00113054 string AFL_FRIDA_STATS_INTERVAL
+0011306d string AFL_FRIDA_TRACEABLE
+00113081 string AFL_FRIDA_VERBOSE
+00113093 string AFL_OLD_FORKSERVER
+001130a6 string AFL_OPT_LEVEL
+001130b4 string AFL_FUZZER_ARGS
+001130c4 string AFL_GDB
+001130cc string AFL_GCC_ALLOWLIST
+001130de string AFL_GCC_DENYLIST
+001130ef string AFL_GCC_BLOCKLIST
+00113101 string AFL_GCC_DISABLE_VERSION_CHECK
+0011311f string AFL_GCC_INSTRUMENT_FILE
+00113137 string AFL_GCC_OUT_OF_LINE
+0011314b string AFL_GCC_SKIP_NEVERZERO
+00113162 string AFL_GCJ
+0011316a string AFL_HANG_TMOUT
+00113179 string AFL_HARDEN
+00113184 string AFL_IGNORE_PROBLEMS
+00113198 string AFL_IGNORE_PROBLEMS_COVERAGE
+001131b5 string AFL_IGNORE_SEED_PROBLEMS
+001131ce string AFL_IGNORE_TIMEOUTS
+001131e2 string AFL_IMPORT_FIRST
+001131f3 string AFL_INPUT_LEN_MIN
+00113205 string AFL_INPUT_LEN_MAX
+00113217 string AFL_INST_LIBS
+00113225 string AFL_INST_RATIO
+00113234 string AFL_KEEP_TIMEOUTS
+00113246 string AFL_KEEP_TRACES
+00113256 string AFL_KEEP_ASSEMBLY
+00113268 string AFL_LD_HARD_FAIL
+00113279 string AFL_LD_LIMIT_MB
+00113289 string AFL_LD_NO_CALLOC_OVER
+0011329f string AFL_LD_PASSTHROUGH
+001132b2 string AFL_REAL_LD
+001132be string AFL_LD_PRELOAD
+001132cd string AFL_LD_VERBOSE
+001132dc string AFL_LLVM_ALLOWLIST
+001132ef string AFL_LLVM_DENYLIST
+00113301 string AFL_LLVM_BLOCKLIST
+00113314 string AFL_CMPLOG
+0011331f string AFL_LLVM_CMPLOG
+0011332f string AFL_GCC_CMPLOG
+0011333e string AFL_LLVM_INSTRIM
+0011334f string AFL_LLVM_CALLER
+0011335f string AFL_LLVM_CTX
+0011336c string AFL_LLVM_LTO_CALLER
+00113380 string AFL_LLVM_LTO_CTX
+00113391 string AFL_LLVM_LTO_CALLER_DEPTH
+001133ab string AFL_LLVM_LTO_CTX_DEPTH
+001133c2 string AFL_LLVM_CALLER_DEPTH
+001133d8 string AFL_LLVM_CTX_DEPTH
+001133eb string AFL_LLVM_CTX_K
+001133fa string AFL_LLVM_DICT2FILE
+0011340d string AFL_LLVM_DICT2FILE_NO_MAIN
+00113428 string AFL_LLVM_DOCUMENT_IDS
+0011343e string AFL_LLVM_INSTRIM_LOOPHEAD
+00113458 string AFL_LLVM_INSTRUMENT
+0011346c string AFL_LLVM_LTO_AUTODICTIONARY
+00113488 string AFL_LLVM_AUTODICTIONARY
+001134a0 string AFL_LLVM_SKIPSINGLEBLOCK
+001134b9 string AFL_LLVM_INJECTIONS_ALL
+001134d1 string AFL_LLVM_INJECTIONS_SQL
+001134e9 string AFL_LLVM_INJECTIONS_LDAP
+00113502 string AFL_LLVM_INJECTIONS_XSS
+0011351a string AFL_LLVM_LAF_SPLIT_COMPARES
+00113536 string AFL_LLVM_LAF_SPLIT_FLOATS
+00113550 string AFL_LLVM_LAF_SPLIT_SWITCHES
+0011356c string AFL_LLVM_LAF_ALL
+0011357d string AFL_LLVM_MAP_ADDR
+0011358f string AFL_LLVM_MAP_DYNAMIC
+001135a4 string AFL_LLVM_NGRAM_SIZE
+001135b8 string AFL_NGRAM_SIZE
+001135c7 string AFL_LLVM_NO_RPATH
+001135d9 string AFL_LLVM_NOT_ZERO
+001135eb string AFL_LLVM_INSTRUMENT_FILE
+00113604 string AFL_LLVM_THREADSAFE_INST
+0011361d string AFL_LLVM_SKIP_NEVERZERO
+00113635 string AFL_NO_AFFINITY
+00113645 string AFL_TRY_AFFINITY
+00113656 string AFL_LLVM_LTO_DONTWRITEID
+0011366f string AFL_LLVM_LTO_SKIPINIT
+00113685 string AFL_LLVM_LTO_STARTID
+0011369a string AFL_FUZZER_LOOPCOUNT
+001136af string AFL_NO_ARITH
+001136bc string AFL_NO_BUILTIN
+001136cb string AFL_NO_CPU_RED
+001136da string AFL_NO_SYNC
+001136e6 string AFL_NO_CFG_FUZZING
+001136f9 string AFL_NO_CRASH_README
+0011370d string AFL_NO_FORKSRV
+0011371c string AFL_NO_UI
+00113726 string AFL_NO_PYTHON
+00113734 string AFL_NO_STARTUP_CALIBRATION
+0011374f string AFL_NO_WARN_INSTABILITY
+00113767 string AFL_UNTRACER_FILE
+00113779 string AFL_LLVM_USE_TRACE_PC
+0011378f string AFL_MAX_DET_EXTRAS
+001137a2 string AFL_NO_X86
+001137ad string AFL_NOOPT
+001137b7 string AFL_PASSTHROUGH
+001137c7 string AFL_PERFORMANCE_FILE
+001137dc string AFL_PERSISTENT_RECORD
+001137f2 string AFL_TARGET_ENV
+00113801 string AFL_PYTHON_MODULE
+00113813 string AFL_QEMU_COMPCOV
+00113824 string AFL_QEMU_COMPCOV_DEBUG
+0011383b string AFL_QEMU_DEBUG_MAPS
+0011384f string AFL_QEMU_BLOCK_COV
+00113862 string AFL_QEMU_DISABLE_CACHE
+00113879 string AFL_QEMU_DRIVER_NO_HOOK
+00113891 string AFL_QEMU_FORCE_DFL
+001138a4 string AFL_QEMU_PERSISTENT_ADDR
+001138bd string AFL_QEMU_PERSISTENT_CNT
+001138d5 string AFL_QEMU_PERSISTENT_GPR
+001138ed string AFL_QEMU_PERSISTENT_HOOK
+00113906 string AFL_QEMU_PERSISTENT_MEM
+0011391e string AFL_QEMU_PERSISTENT_RET
+00113936 string AFL_QEMU_PERSISTENT_EXITS
+00113950 string AFL_QEMU_INST_RANGES
+00113965 string AFL_QEMU_EXCLUDE_RANGES
+0011397d string AFL_QEMU_SNAPSHOT
+0011398f string AFL_QEMU_TRACK_UNSTABLE
+001139a7 string AFL_QUIET
+001139b1 string AFL_RANDOM_ALLOC_CANARY
+001139c9 string AFL_REAL_PATH
+001139d7 string AFL_SHA1_FILENAMES
+001139ea string AFL_SHUFFLE_QUEUE
+001139fc string AFL_SKIP_CPUFREQ
+00113a0d string AFL_SKIP_CRASHES
+00113a1e string AFL_SKIP_OSSFUZZ
+00113a2f string AFL_STATSD
+00113a3a string AFL_STATSD_HOST
+00113a4a string AFL_STATSD_PORT
+00113a5a string AFL_STATSD_TAGS_FLAVOR
+00113a71 string AFL_SYNC_TIME
+00113a7f string AFL_TESTCACHE_SIZE
+00113a92 string AFL_TESTCACHE_ENTRIES
+00113aa8 string AFL_TMIN_EXACT
+00113ab7 string AFL_TMPDIR
+00113ac2 string AFL_TOKEN_FILE
+00113ad1 string AFL_TRACE_PC
+00113ade string AFL_USE_ASAN
+00113aeb string AFL_USE_MSAN
+00113af8 string AFL_USE_TRACE_PC
+00113b09 string AFL_USE_UBSAN
+00113b17 string AFL_UBSAN_VERBOSE
+00113b29 string AFL_USE_TSAN
+00113b36 string AFL_USE_CFISAN
+00113b45 string AFL_CFISAN_VERBOSE
+00113b58 string AFL_USE_LSAN
+00113b65 string AFL_WINE_PATH
+00113b73 string AFL_NO_SNAPSHOT
+00113b83 string AFL_EXPAND_HAVOC_NOW
+00113b98 string AFL_USE_FASAN
+00113ba6 string AFL_USE_QASAN
+00113bb4 string AFL_PRINT_FILENAMES
+00113bc8 string AFL_PIZZA_MODE
+00113bd7 string AFL_NO_FASTRESUME
+00113be9 string AFL_SAN_ABSTRACTION
+00113bfd string AFL_GCC_ONLY_FRSV
+00113c0f string AFL_SAN_RECOVER
+00113c1f string AFL_FORKSRV_UID
+00113c2f string AFL_FORKSRV_GID
+00113e50 string remove_nyx_tmp_workdir
+00113e70 string report_error_and_exit
+00113e90 string afl_fauxsrv_execv
+00113eb0 string fsrv_exec_child
+00113ec0 string afl_load_libnyx_plugin
+00113ed8 string DFL_ck_strdup
+00113ef0 string DFL_ck_alloc_nozero
+00113f08 string list_free_el
+00113f18 string list_remove
+00113f28 string list_append
+00113f38 string afl_shm_init
+00113f50 string DFL_ck_alloc_nozero
+00113f68 string get_map_size
+00113f80 string parse_afl_kill_signal
+00113fa0 string find_afl_binary
+00113fb0 string find_binary
+00113fc0 string detect_file_args
+00113fe0 string DFL_ck_alloc_nozero
+00113ff8 string DFL_ck_strdup
+00114008 string argv_cpy_dup
+00114018 string list_append
+00114028 string get_wine_argv
+00114038 string get_qemu_argv
+00114050 string check_binary_signatures
+00114070 string create_nyx_tmp_workdir
+00114088 string afl_fsrv_start
+00114098 string list_free_el
+001140a8 string list_remove
+001140c0 string afl_fsrv_setup_preload
+001140e0 string set_up_environment
+00114100 string afl_fsrv_killall
+00114120 string afl_fsrv_write_to_testcase
+00114140 string afl_fsrv_run_target
+0011433d string K@~analyze_run_target
+00114360 string read_initial_file
+00114378 string DFL_ck_strdup
+00114390 string DFL_ck_alloc_nozero
+001143b0 string detect_odr_violation=0:abort_on_error=1:symbolize=0:allocator_may_return_null=1:handle_segv=0:handle_sigbus=0:handle_abort=0:handle_sigfpe=0:handle_sigill=0:detect_stack_use_after_return=0:check_initialization_order=0:
+00114719 string zR
+00114749 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debuglink

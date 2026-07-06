@@ -1,0 +1,136 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100941 string-utf8 _ITM_deregisterTMCloneTable
+0010095d string-utf8 __gmon_start__
+0010096c string-utf8 _ITM_registerTMCloneTable
+00100986 string-utf8 printU64
+0010098f string-utf8 snmp_open
+00100999 string-utf8 snmp_parse_args_descriptions
+001009b6 string-utf8 netsnmp_ds_toggle_boolean
+001009d0 string-utf8 sprint_realloc_objid
+001009e5 string-utf8 snmp_parse_oid
+001009f4 string-utf8 snmp_fix_pdu
+00100a01 string-utf8 zeroU64
+00100a09 string-utf8 netsnmp_cleanup_session
+00100a21 string-utf8 snmp_add_null_var
+00100a33 string-utf8 snmp_close
+00100a3e string-utf8 snmp_synch_response
+00100a52 string-utf8 u64Subtract
+00100a5e string-utf8 snmp_errstring
+00100a6d string-utf8 snmp_parse_args
+00100a7d string-utf8 netsnmp_ds_get_boolean
+00100a94 string-utf8 snmp_parse_args_usage
+00100aaa string-utf8 fprint_objid
+00100ab7 string-utf8 snmp_free_pdu
+00100ac5 string-utf8 snmp_log_perror
+00100ad5 string-utf8 snmp_pdu_create
+00100ae5 string-utf8 snmp_sess_perror
+00100af6 string-utf8 snmp_perror
+00100b02 string-utf8 optind
+00100b09 string-utf8 fgets
+00100b0f string-utf8 snprintf
+00100b18 string-utf8 puts
+00100b1d string-utf8 fopen64
+00100b25 string-utf8 __stack_chk_fail
+00100b36 string-utf8 __printf_chk
+00100b43 string-utf8 free
+00100b48 string-utf8 exit
+00100b4d string-utf8 strdup
+00100b54 string-utf8 putchar
+00100b5c string-utf8 fflush
+00100b63 string-utf8 gettimeofday
+00100b70 string-utf8 strlcat
+00100b78 string-utf8 strlen
+00100b7f string-utf8 __ctype_b_loc
+00100b8d string-utf8 __isoc23_strtol
+00100b9d string-utf8 stdout
+00100ba4 string-utf8 optarg
+00100bab string-utf8 __fprintf_chk
+00100bb9 string-utf8 malloc
+00100bc0 string-utf8 __libc_start_main
+00100bd2 string-utf8 stderr
+00100bd9 string-utf8 mktime
+00100be0 string-utf8 __cxa_finalize
+00100bef string-utf8 localtime
+00100bf9 string-utf8 fclose
+00100c00 string-utf8 fputc
+00100c06 string-utf8 strlcpy
+00100c0e string-utf8 __snprintf_chk
+00100c1d string-utf8 fwrite
+00100c24 string-utf8 select
+00100c2b string-utf8 libnetsnmp.so.45
+00100c3c string-utf8 libc.so.6
+00100c46 string-utf8 GLIBC_2.38
+00100c51 string-utf8 GLIBC_2.4
+00100c5b string-utf8 GLIBC_2.3
+00100c65 string-utf8 GLIBC_2.34
+00100c70 string-utf8 GLIBC_2.2.5
+00100c7c string-utf8 GLIBC_2.3.4
+0010400a string Bad -C options: %c 
+0010401e string  oid [oid ...] 
+0010402e string snmpdelta specific options 
+0010404a string   -Cm		show max values 
+00104062 string   -CS		log to a sum file 
+0010407c string   -Cs		show timestamps 
+00104094 string   -Ct		get timing from agent 
+001040b2 string Couldn't open %s 
+001040c4 string select
+001040ce string snmpdelta
+001040dc string  [%02d:%02d:%02d %d/%d]
+001040f4 string  [%02d:%02d %d/%d]
+00104107 string Missing variable in reply 
+00104122 string %s %s
+00104128 string 	%.2f
+0010412e string  /sec: %.2f
+0010413a string  /%d sec: 
+00104148 string 	(Max: %.2f)
+00104155 string 	(Max: %.0f)
+00104162 string %s-%s
+00104168 string Failed object: 
+00104178 string Error in packet: %s 
+0010418d string Timeout: No Response from %s 
+001041b0 string Line too long on line %d of %s 
+001041d0 string Too many variables read at line %d of %s (max %d) 
+00104208 string Usage: snmpdelta [-Cf] [-CF commandFile] [-Cl] [-CL SumFileName] 	[-Cs] [-Ck] [-Ct] [-CS] [-Cv vars/pkt] [-Cp period] 	[-CP peaks] 
+00104290 string   -Cf		Don't fix errors and retry the request. 
+001042c0 string   -Cl		write configuration to file 
+001042e8 string   -CF config	load configuration from file 
+00104318 string   -Cp period	specifies the poll period 
+00104340 string   -CP peaks	reporting period in poll periods 
+00104370 string   -Cv vars/pkt	number of variables per packet 
+001043a0 string   -Ck		keep seconds in output time 
+001043c8 string   -CT		print output in tabular form 
+001043f0 string   -CL sumfile	specifies the sum file name 
+00104420 string %s: Too many variables specified (max %d) 
+00104450 string Too many variables specified (max %d) 
+00104478 string time delta and table form not supported for counter64s 
+001044b0 string  /sec: %.2f	(%d sec Peak: %.2f)
+001044d0 string  /%d sec: %.0f	(%d sec Peak: %.0f)
+00104629 string zR
+00104659 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/snmp.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

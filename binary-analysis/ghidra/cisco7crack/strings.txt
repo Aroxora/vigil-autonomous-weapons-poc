@@ -1,0 +1,91 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100609 string-utf8 strncpy
+00100611 string-utf8 __stack_chk_fail
+00100622 string-utf8 __printf_chk
+0010062f string-utf8 exit
+00100634 string-utf8 putchar
+0010063c string-utf8 fflush
+00100643 string-utf8 time
+00100648 string-utf8 strlen
+0010064f string-utf8 __ctype_b_loc
+0010065d string-utf8 __vfprintf_chk
+0010066c string-utf8 __isoc23_strtol
+0010067c string-utf8 stdout
+00100683 string-utf8 __fprintf_chk
+00100691 string-utf8 __libc_start_main
+001006a3 string-utf8 stderr
+001006aa string-utf8 srand
+001006b0 string-utf8 __cxa_finalize
+001006bf string-utf8 strchr
+001006c6 string-utf8 libc.so.6
+001006d0 string-utf8 GLIBC_2.3
+001006da string-utf8 GLIBC_2.38
+001006e5 string-utf8 GLIBC_2.4
+001006ef string-utf8 GLIBC_2.34
+001006fa string-utf8 GLIBC_2.3.4
+00100706 string-utf8 GLIBC_2.2.5
+00100712 string-utf8 _ITM_deregisterTMCloneTable
+0010072e string-utf8 __gmon_start__
+0010073d string-utf8 _ITM_registerTMCloneTable
+00102004 string Encrypted string
+00102020 string Plain string
+0010202d string %-17s: 
+00102035 string 0123456789
+00102040 string 0123456789ABCDEF
+00102051 string %-19s
+00102061 string usage:
+00102068 string    cisco7crack [-h]
+0010207c string flags:    means:
+0010208d string   -c        crypt <plaintext>
+001020ab string examples are:
+001020c0 string WARNING: crypted string too long! (last %d chars flushed) 
+00102100 string ERROR: illegal 1st pair of digits in crypted string 
+00102138 string [?] ERROR: bad pair of hex digits (pair: %d) 
+00102168 string WARNING: input truncated! (odd number of letters) 
+001021a0 string WARNING: overly long password truncated after %d characters 
+001021e0 string *** cisco7crack v2.3.4 - San Oct 19, 2002
+00102210 string     copyright (c) 2002 by Davide Madrisan <davide.madrisan@atlavia.it>
+00102258 string     the GNU GPLv2 applies to this program and code
+00102290 string    cisco7crack [-q] -c [-{a|#<0..15>}] <plaintext>
+001022c8 string    cisco7crack [-q] [-d] <ciphertext>
+001022f0 string   -a        display all the ways to crypt <plaintext>
+00102328 string   -#<n>     display the n-th way to crypt <plaintext>
+00102360 string   -d        decrypt <ciphertext> (default option)
+00102398 string   -q        cause cisco7crack to be really quiet
+001023d0 string   -h        display this brief usage summary
+00102400 string    cisco7crack -c#3 '@l1c3&b0b'
+00102420 string    cisco7crack -c#3 -q n0v3rb0s3
+00102448 string    cisco7crack 082F1C5A1A490D43000F5E033F78373B
+00102478 string    a=`cisco7crack -cq b@shscr1pt`  # (bash shell)
+001024b0 string    [ $? -eq 0 ] && echo "crypt: $a" || echo "error!"
+001024e8 string enjoy cracking the Cisco IOS pesky passwords...
+00102518 string for bugs and suggestions, please contact me by e-mail
+00102560 string dsfd;kfoA,.iyewrkldJKDHSUB
+001025f1 string zR
+00102621 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debuglink

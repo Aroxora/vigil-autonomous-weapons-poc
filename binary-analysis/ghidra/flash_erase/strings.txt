@@ -1,0 +1,218 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100891 string-utf8 optind
+00100898 string-utf8 __isoc23_strtoull
+001008aa string-utf8 __strcpy_chk
+001008b7 string-utf8 __stack_chk_fail
+001008c8 string-utf8 __printf_chk
+001008d5 string-utf8 free
+001008da string-utf8 exit
+001008df string-utf8 strdup
+001008e6 string-utf8 closedir
+001008ef string-utf8 putchar
+001008f7 string-utf8 fflush
+001008fe string-utf8 gettimeofday
+0010090b string-utf8 __isoc23_sscanf
+0010091b string-utf8 strlen
+00100922 string-utf8 read
+00100927 string-utf8 __isoc23_strtol
+00100937 string-utf8 getpid
+0010093e string-utf8 stdout
+00100945 string-utf8 optarg
+0010094c string-utf8 __sprintf_chk
+0010095a string-utf8 __fprintf_chk
+00100968 string-utf8 open
+0010096d string-utf8 malloc
+00100974 string-utf8 __libc_start_main
+00100986 string-utf8 stderr
+0010098d string-utf8 memchr
+00100994 string-utf8 pwrite
+0010099b string-utf8 srand
+001009a1 string-utf8 __cxa_finalize
+001009b0 string-utf8 strerror
+001009b9 string-utf8 readdir
+001009c1 string-utf8 calloc
+001009c8 string-utf8 memset
+001009cf string-utf8 __isoc23_strtoul
+001009e0 string-utf8 ioctl
+001009e6 string-utf8 close
+001009ec string-utf8 opendir
+001009f4 string-utf8 access
+001009fb string-utf8 memcpy
+00100a02 string-utf8 strcmp
+00100a09 string-utf8 __errno_location
+00100a1a string-utf8 getopt_long
+00100a26 string-utf8 lseek
+00100a2c string-utf8 fstat
+00100a32 string-utf8 strncmp
+00100a3a string-utf8 libc.so.6
+00100a44 string-utf8 GLIBC_2.3.4
+00100a50 string-utf8 GLIBC_2.14
+00100a5b string-utf8 GLIBC_2.33
+00100a66 string-utf8 GLIBC_2.4
+00100a70 string-utf8 GLIBC_2.34
+00100a7b string-utf8 GLIBC_2.2.5
+00100a87 string-utf8 GLIBC_2.38
+00100a92 string-utf8 _ITM_deregisterTMCloneTable
+00100aae string-utf8 __gmon_start__
+00100abd string-utf8 _ITM_registerTMCloneTable
+00108004 string flash_erase
+00108010 string %*serror %d (%s) 
+00108022 string jc:NquVh
+0010802b string 2.3.0
+00108031 string %s (mtd-utils) %s 
+00108044 string strtoull
+0010804d string strtoul
+00108055 string %s: error!: %s 
+0010806a string version
+00108078 string cleanmarker
+00108084 string noskipbad
+00108094 string silent
+0010809b string unlock
+001080a2 string libmtd
+001080a9 string %s: error!: cannot open "%s" 
+001080c7 string mtd%d%s
+001080cf string %s: error!: out of memory 
+001080ea string %s: error!: cannot read "%s" 
+00108108 string %d:%d 
+0010810f string %lld 
+00108115 string MEMREADOOB
+00108120 string MEMREADOOB64
+0010812d string MEMWRITEOOB
+00108139 string MEMWRITEOOB64
+00108147 string class/mtd
+00108164 string erasesize
+0010816e string writesize
+00108178 string subpagesize
+00108184 string oobsize
+0010818c string oobavail
+00108195 string numeraseregions
+001081a5 string flags
+001081ab string %llx 
+001081b1 string mlc-nand
+001081c2 string absent
+001081c9 string dataflash
+001081db string MEMLOCK
+001081e3 string MEMUNLOCK
+001081ed string MEMERASE64
+001081f8 string MEMERASE
+00108201 string MEMGETREGIONINFO
+00108212 string MEMISLOCKED
+0010821e string MEMGETBADBLOCK
+0010822d string MEMSETBADBLOCK
+0010823c string MEMWRITE
+0010824b string %lld bytes
+00108256 string %s%lld.%lld GiB
+00108266 string %s%lld.%lld MiB
+00108276 string %s%lld.%lld KiB
+00108290 string mtd%d
+00108296 string mtd%d: %llx %x
+001082a5 string /proc/mtd
+001082af string %s: error!: cannot stat "%s" 
+001082d0 string %s: error!: %s: MTD writeoob failure 
+00108300 string %s: error!: %s: MTD write failure 
+00108328 string %s: %llx : Cleanmarker Updated. 
+00108350 string  Erasing %d Kibyte @ %llx -- %2i %% complete 
+00108380 string    MTD_DEVICE  MTD device node or 'mtd:<name>' flash_erase
+001083c0 string Usage: %s [options] MTD_DEVICE <start offset> <block count> Erase blocks of the specified MTD device. Specify a count of 0 to erase to end of device.    -j, --jffs2             format the device for jffs2   -c, --cleanmarker=SIZE  size of jffs2 cleanmarker (default 12)   -N, --noskipbad         don't skip bad blocks   -u, --unlock            unlock sectors before erasing   -q, --quiet             do not display progress messages       --silent            same as --quiet       --help              display this help and exit       --version           output version information and exit 
+00108610 string Copyright (C) 2000 Arcom Control Systems Ltd  %1$s comes with NO WARRANTY to the extent permitted by law.  You may redistribute copies of %1$s under the terms of the GNU General Public Licence. See the file `COPYING' for more information. 
+00108700 string %s: error!: Can't find MTD device %s 
+00108728 string %s: error!: %s: unable to parse the number '%s' 
+00108760 string %s: error!: no MTD device specified 
+00108788 string %s: error!: no start erase block specified 
+001087b8 string %s: error!: no erase block count specified 
+001087e8 string %s: error!: Try `--help' for more information 
+00108818 string %s: error!: can't initialize libmtd 
+00108840 string %s: error!: mtd_get_dev_info failed 
+00108868 string %s: error!: JFFS2 cannot support MLC NAND. 
+00108898 string %s: error!: cleanmarker size must be >= 12 
+001088c8 string %s: error!: cleanmarker size must be < eraseblock size 
+00108900 string %s: error!: %s: MTD unlock entire chip failure.Trying one by one each sector. 
+00108950 string %s: error!: %s: MTD Erase entire chip failureTrying one by one each sector. 
+001089a0 string %s: Skipping bad block at %08llx 
+001089c8 string %s: error!: %s: Bad block check not available 
+001089f8 string %s: error!: %s: MTD get bad block failed 
+00108a28 string %s: error!: %s: MTD unlock failure 
+00108a50 string %s: error!: %s: MTD Erase failure 
+00108a78 string %s: error!: invalid entry in %s: "%s" 
+00108aa0 string %s: error!: closedir failed on "%s" 
+00108ac8 string %s: error!: close failed on "%s" 
+00108af0 string %s: error!: contents of "%s" is too long 
+00108b20 string %s: error!: file "%s" contains too much data (> %d bytes) 
+00108b60 string %s: error!: "%s" does not have major:minor format 
+00108b98 string %s: error!: bad major:minor %d:%d in "%s" 
+00108bc8 string %s: error!: cannot read integer from "%s"  
+00108bf8 string %s: error!: negative value %lld in "%s" 
+00108c28 string %s: error!: value %lld read from file "%s" is out of range 
+00108c68 string %s: error!: bad page address %lu, mtd%d has %d eraseblocks (%llu bytes) 
+00108cb8 string %s: error!: Cannot write %lu OOB bytes to address %lu (OOB offset %u) - mtd%d OOB size is only %d bytes 
+00108d28 string %s: error!: %s ioctl failed for mtd%d, offset %lu (eraseblock %lu) 
+00108d70 string %s: error!: this system can address only up to address %lu 
+00108db0 string %s: error!: readdir failed on "%s" 
+00108dd8 string %s: error!: cannot get information about "%s" 
+00108e08 string %s: error!: "%s" is not a character device 
+00108e38 string %s: error!: Multiple MTD's found matching name %s 
+00108e70 string %s: error!: bad eraseblock number %d, mtd%d has %d eraseblocks 
+00108eb0 string %s: error!: %s ioctl failed for eraseblock %d (mtd%d) 
+00108ee8 string %s: error!: this system can address only %u eraseblocks 
+00108f28 string %s: error!: %s ioctl failed for erase region %d 
+00108f60 string %s: error!: bad offset %d or length %d, mtd%d eraseblock size is %d 
+00108fa8 string %s: error!: cannot seek mtd%d to offset %lld 
+00108fd8 string %s: error!: cannot read %d bytes from mtd%d (eraseblock %d, offset %d) 
+00109020 string %s: error!: write offset %d is not aligned to mtd%d min. I/O size %d 
+00109068 string %s: error!: write length %d is not aligned to mtd%d min. I/O size %d 
+001090b0 string %s: error!: MEMGETOOBSEL failed 
+001090d8 string %s: error!: cannot write to OOB 
+00109100 string %s: error!: cannot write %d bytes to mtd%d (eraseblock %d, offset %d) 
+00109148 string %s: run torture test for PEB %d 
+00109170 string %s: error!: erased PEB %d, but a non-0xFF byte found 
+001091a8 string %s: error!: pattern %x checking failed for PEB %d 
+001091e0 string %s: PEB %d passed torture test, do not mark it a bad 
+00109218 string incorrect amount of bytes: "%s" 
+00109240 string bad size specifier: "%s" - should be 'KiB', 'MiB' or 'GiB' 
+00109280 string %s: error!: "%s" pattern not found 
+001092a8 string %s: error!: opening " not found 
+001092d0 string %s: error!: closing " not found 
+001092f8 string %s: error!: too long mtd%d device name 
+00109320 string %s: error!: opening " " not found 
+00109348 string dev:    size   erasesize  name 
+00109368 string %s: error!: "%s" does not start with "%s" 
+00109398 string %s: error!: ECCGETLAYOUT ioctl request failed 
+001093c8 string %s: MTD subsystem is old and does not support sysfs, so MTD character device nodes have to exist 
+00109430 string %s: error!: "%s" has major number %d, MTD devices have major %d 
+00109478 string %s: error!: MEMGETINFO ioctl request failed 
+001094a8 string %s: error!: MEMGETBADBLOCK ioctl failed 
+001094d8 string %s: error!: mtd%d (%s) has insane min. I/O unit size %d 
+00109518 string %s: error!: mtd%d (%s) has insane eraseblock size %d 
+00109550 string %s: error!: mtd%d (%s) has insane size %lld 
+00109580 string %s: error!: mtd%d (%s) is removable and is not present 
+001095b8 string %s: error!: mtd%d not found in "%s" 
+00109c99 string zR
+00109cc9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/mtd-utils.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

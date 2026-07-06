@@ -1,0 +1,166 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100aa9 string-utf8 _ITM_deregisterTMCloneTable
+00100ac5 string-utf8 __gmon_start__
+00100ad4 string-utf8 _ITM_registerTMCloneTable
+00100aee string-utf8 wi_get_rate
+00100afa string-utf8 wi_get_mac
+00100b05 string-utf8 wi_read
+00100b0d string-utf8 wi_set_channel
+00100b1c string-utf8 wi_write
+00100b25 string-utf8 wi_fd
+00100b2b string-utf8 wi_get_channel
+00100b3a string-utf8 wi_get_monitor
+00100b49 string-utf8 net_send
+00100b52 string-utf8 wi_set_rate
+00100b5e string-utf8 net_get
+00100b66 string-utf8 wi_open
+00100b6e string-utf8 fgets
+00100b74 string-utf8 stdin
+00100b7a string-utf8 setsockopt
+00100b85 string-utf8 puts
+00100b8a string-utf8 perror
+00100b91 string-utf8 __ctype_toupper_loc
+00100ba5 string-utf8 __stack_chk_fail
+00100bb6 string-utf8 __printf_chk
+00100bc3 string-utf8 free
+00100bc8 string-utf8 exit
+00100bcd string-utf8 __fdelt_chk
+00100bd9 string-utf8 __assert_fail
+00100be7 string-utf8 __isoc23_fscanf
+00100bf7 string-utf8 getc
+00100bfc string-utf8 strdup
+00100c03 string-utf8 bind
+00100c08 string-utf8 strtol
+00100c0f string-utf8 fopen
+00100c15 string-utf8 __isoc23_sscanf
+00100c25 string-utf8 socket
+00100c2c string-utf8 strlen
+00100c33 string-utf8 __ctype_b_loc
+00100c41 string-utf8 strstr
+00100c48 string-utf8 __vfprintf_chk
+00100c57 string-utf8 feof
+00100c5c string-utf8 stdout
+00100c63 string-utf8 optarg
+00100c6a string-utf8 realloc
+00100c72 string-utf8 __fprintf_chk
+00100c80 string-utf8 malloc
+00100c87 string-utf8 __libc_start_main
+00100c99 string-utf8 stderr
+00100ca0 string-utf8 listen
+00100ca7 string-utf8 getopt
+00100cae string-utf8 inet_ntoa
+00100cb8 string-utf8 __cxa_finalize
+00100cc7 string-utf8 strchr
+00100cce string-utf8 calloc
+00100cd5 string-utf8 accept
+00100cdc string-utf8 memcmp
+00100ce3 string-utf8 fclose
+00100cea string-utf8 __asprintf_chk
+00100cf9 string-utf8 memset
+00100d00 string-utf8 signal
+00100d07 string-utf8 strlcpy
+00100d0f string-utf8 __snprintf_chk
+00100d1e string-utf8 getcwd
+00100d25 string-utf8 fwrite
+00100d2c string-utf8 select
+00100d33 string-utf8 __errno_location
+00100d44 string-utf8 abort
+00100d4a string-utf8 tcgetpgrp
+00100d54 string-utf8 strncmp
+00100d5c string-utf8 errx
+00100d61 string-utf8 libaircrack-osdep-1.7.0.so
+00100d7c string-utf8 libc.so.6
+00100d86 string-utf8 GLIBC_2.8
+00100d90 string-utf8 GLIBC_2.15
+00100d9b string-utf8 GLIBC_2.4
+00100da5 string-utf8 GLIBC_2.38
+00100db0 string-utf8 GLIBC_2.34
+00100dbb string-utf8 GLIBC_2.2.5
+00100dc7 string-utf8 GLIBC_2.3.4
+00100dd3 string-utf8 GLIBC_2.3
+00105004 string broken pipe!
+00105011 string c != NULL
+0010501b string Pre-condition Failed: %s 
+00105035 string Death from %s 
+00105044 string [%s] 
+0010504a string 1.7.0
+00105050 string Airserv-ng
+0010505b string wi_read()
+00105065 string handle_client: net_get() 
+0010507f string Got setchan %d 
+0010508f string Got setrate %d 
+0010509f string Unknown request %d 
+001050b3 string <unknown>
+001050bd string p:d:hc:v:
+001050c7 string Opening card %s 
+001050d8 string wi_open()
+001050e2 string Setting chan %d 
+001050f3 string card_set_chan()
+00105103 string Opening sock port %d 
+00105119 string socket()
+00105122 string setsockopt()
+0010512f string bind()
+00105136 string listen()
+0010513f string select()
+00105148 string accept()
+00105151 string calloc()
+0010515a string Connect from %s 
+0010516b string %d day%s, 
+00105176 string %d hour%s, 
+00105182 string %d minute%s, 
+00105190 string %3.2f%%
+00105198 string %d second%s
+001051a4 string %*s %s 
+001051ae string fopen fails on /proc/meminfo
+001051cb string MemTotal
+001051d4 string %100s %d
+001051dd string %s %u.%u
+001051e6 string asprintf failed to allocate
+00105202 string %s.%u
+00105208 string %s rc%u
+00105210 string %s beta%u
+0010521a string rev_tmp != NULL
+0010522a string lib/libac/support/common.c
+00105245 string FAILED:%s:%d: %s 
+0010525c string %s %s
+00105262 string /proc/stat
+00105274 string cur->next != NULL
+00105286 string str && suf
+00105291 string a != NULL
+0010529b string b != NULL
+001052a8 string    %s - (C) 2007, 2008, 2009 Andrea Bittau   https://www.aircrack-ng.org    Usage: airserv-ng <options>    Options:         -h         : This help screen        -p  <port> : TCP port to listen on (default:666)        -d <iface> : Wifi interface to use        -c  <chan> : Channel to use        -v <level> : Debug level (1 to 3; default: 1)  
+00105408 string Sending %d bytes packet to client 
+00105430 string Relaying %d bytes packet from client 
+00105458 string Serving %s chan %d on port %d 
+00105478 string Invalid program name, cannot be NULL or empty 
+001054a8 string RC and beta cannot be both used 
+001055e0 string string_has_suffix
+00105711 string zR
+00105741 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/aircrack-ng.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

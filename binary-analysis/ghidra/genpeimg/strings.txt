@@ -1,0 +1,161 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100631 string-utf8 __libc_start_main
+00100643 string-utf8 __cxa_finalize
+00100652 string-utf8 free
+00100657 string-utf8 fopen
+0010065d string-utf8 fclose
+00100664 string-utf8 fwrite
+0010066b string-utf8 realloc
+00100673 string-utf8 memset
+0010067a string-utf8 __stack_chk_fail
+0010068b string-utf8 stderr
+00100692 string-utf8 __fprintf_chk
+001006a0 string-utf8 exit
+001006a5 string-utf8 calloc
+001006ac string-utf8 strcasecmp
+001006b7 string-utf8 strdup
+001006be string-utf8 fseek
+001006c4 string-utf8 ftell
+001006ca string-utf8 malloc
+001006d1 string-utf8 fread
+001006d7 string-utf8 __isoc23_strtoul
+001006e8 string-utf8 stdout
+001006ef string-utf8 fputc
+001006f5 string-utf8 libc.so.6
+001006ff string-utf8 GLIBC_2.3.4
+0010070b string-utf8 GLIBC_2.4
+00100715 string-utf8 GLIBC_2.34
+00100720 string-utf8 GLIBC_2.2.5
+0010072c string-utf8 GLIBC_2.38
+00100737 string-utf8 _ITM_deregisterTMCloneTable
+00100753 string-utf8 __gmon_start__
+00100762 string-utf8 _ITM_registerTMCloneTable
+00104007 string BOOT_APPLICATION
+00104018 string genpeimg [options] files... 
+00104035 string     %s 
+0010403d string     or an integer value 
+00104056 string 64-bit
+0010405d string 32-bit
+00104064 string File argument missing 
+0010407b string Missing argument for -p 
+00104094 string Missing argument for -d 
+001040ad string Missing argument for -s 
+001040c6 string Unknown option ,%s' 
+001040de string Starts with PE 
+001040ee string   Optional header-size is %u 
+0010410c string   Characterstics:
+0010411e string  relocs-stripped
+0010412f string  executable
+0010413b string  line-numbers-stripped
+00104152 string  local-syms-stripped
+00104167 string  aggressive-ws-trim
+0010417b string  large-address-aware
+00104190 string  bytes-reversed
+001041a0 string  32-bit-machine
+001041b0 string  debug-stripped
+001041c0 string  removable-run-from-swap
+001041d9 string  net-run-from-swap
+001041ec string  system
+001041f9 string  up-system-only
+00104209 string  bytes-reversed-high
+0010421e string  unknown-flag-0x40
+00104231 string   Checksum: 0x%x 
+00104243 string   SubSystem: 
+00104251 string Unknown (0) 
+0010425e string Native (1) 
+0010426a string Windows GUI (2) 
+0010427b string Windows CUI (3) 
+0010428c string OS/2 CUI (5) 
+0010429a string Posix CUI (7) 
+001042a9 string Native Windows (8) 
+001042bd string Windows CE GUI (9) 
+001042d1 string EFI Application (10) 
+001042e7 string EFI Service Driver (11) 
+00104300 string EFI Runtime Driver (12) 
+00104319 string EFI ROM (13) 
+00104327 string XBOX (14) 
+00104332 string Unknown (%u) 
+00104340 string  high-entropy-va
+00104351 string  dynamic-base
+0010435f string  force-integrity
+00104370 string  nx-compatible
+0010437f string  no-isolation
+0010438d string  no-SEH
+00104395 string  no-BIND
+0010439e string  app-container
+001043ad string  wdm-Driver
+001043b9 string  control-flow-guard
+001043cd string  unknown(0x%x)
+001043dc string  terminal-server-aware
+001043f3 string CONSOLE
+001043fb string EFI_APPLICATION
+0010440b string EFI_BOOT_SERVICE_DRIVER
+0010442b string EFI_RUNTIME_DRIVER
+0010443e string NATIVE
+00104445 string POSIX
+0010444b string WINDOWS
+00104457 string NATIVE_WINDOWS9X
+00104468 string WINDOWS_CE
+00104478 string UNKNOWN
+00104480 string  Options:  -p  Takes as addition argument one or more of the following      options:   +<flags> and/or -<flags>   flags are: l, r, n, s, u     l: large-address-aware (only valid for 32-bit)     r: removable-run-from-swap     n: new-run-from-swap     s: system     u: up-system-only 
+001045a0 string  -d  Takes as addition argument one or more of the following      options:   +<flags> and/or -<flags>   flags are: e, d, f, n, i, s, b, a, w, c, t     e: high entropy va     d: dynamic base     f: force integrity     n: nx compatible     i: no-isolation     s: no-SEH     b: no-bind     a: app-container     w: WDM-driver     c: control-flow-guard     t: terminal-server-aware 
+00104720 string  -s  Sets the image subsystem to the specified value 
+00104758 string  -h: Show this page.  -x: Dump image information to stdout 
+00104798 string Unknown flag-option '%c' for -p 
+001047c0 string Unknown flag-option '%c' for -d 
+001047e8 string Unknown subsystem '%s' for -s 
+00104808 string Subsystem '%s' out of range for -s 
+00104830 string PE image for machince 0x%x not supported 
+00104860 string PE+ image has invalid 32-bit optional header. 
+00104890 string PE image has invalid 64-bit optional header. 
+001048c0 string PE image has unknown optional header with magic 0x%x. 
+001048f8 string File %s not found, or not a PE-image 
+00104920 string PE image "%s"   found at position %#lx in file-image 
+00104958 string   Image has size of %#lx byte(s) 
+00104980 string   Image machine kind is: %#x (%s) 
+001049a8 string   Image contains %u section(s) 
+001049c8 string PE+ optional header information   Linker version %u.%u, Code size: 0x%x, Initialized Data size: 0x%x   Uninitialized Data size: 0x%x, Entry-point 0x%x 
+00104a60 string   Bases: Code=0x%x ImageBase=%#lx 
+00104a88 string   Bases: Code=0x%x Data=0x%x ImageBase=0x%x 
+00104ab8 string   Alignments: Section: 0x%x File:0x%x 
+00104ae0 string   Versions: OS:%u.%u Image:%u.%u SubSystem:%u.%u, win32:0x%x 
+00104b20 string   Size of:  Image:0x%x Headers:0x%x 
+00104b48 string Windows Boot Application (16) 
+00104b68 string   Optional Characteristics:    
+00104b88 string Sizes Stack: Reserved:%#lx Commit:%#lx 
+00104bb0 string Sizes Heap: Reserved:%#lx Commit:%#lx 
+00104bd8 string LoaderFlags: 0x%x, # of rva&sizes: %u 
+00104c00 string Sizes Stack: Reserved:%#x Commit:%#x 
+00104c28 string Sizes Heap: Reserved:%#x Commit:%#x 
+00104c50 string LoaderFlags: %#x, # of rva&sizes: %u 
+00104c78 string  Can't remove for PE+ the large-address-aware flag 
+00104f09 string zR
+00104f39 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/mingw-w64-tools.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

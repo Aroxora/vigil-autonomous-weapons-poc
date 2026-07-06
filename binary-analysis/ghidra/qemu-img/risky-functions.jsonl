@@ -1,0 +1,68 @@
+{"name":"pthread_cond_signal","entry":"00165040","bodyBytes":6,"signature":"int pthread_cond_signal(pthread_cond_t * __cond)","callingConvention":"unknown","external":false}
+{"name":"numa_allocate_cpumask","entry":"00165500","bodyBytes":6,"signature":"undefined numa_allocate_cpumask(void)","callingConvention":"unknown","external":false}
+{"name":"strncpy","entry":"00165720","bodyBytes":6,"signature":"char * strncpy(char * __dest, char * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"signalfd","entry":"00165830","bodyBytes":6,"signature":"int signalfd(int __fd, sigset_t * __mask, int __flags)","callingConvention":"unknown","external":false}
+{"name":"getsockopt","entry":"00165b50","bodyBytes":6,"signature":"int getsockopt(int __fd, int __level, int __optname, void * __optval, socklen_t * __optlen)","callingConvention":"unknown","external":false}
+{"name":"__register_atfork","entry":"00165c60","bodyBytes":6,"signature":"undefined __register_atfork(void)","callingConvention":"unknown","external":false}
+{"name":"gnutls_anon_allocate_client_credentials","entry":"00165ca0","bodyBytes":6,"signature":"undefined gnutls_anon_allocate_client_credentials(void)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"00165cb0","bodyBytes":6,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"posix_fallocate64","entry":"00165cf0","bodyBytes":6,"signature":"int posix_fallocate64(int __fd, __off64_t __offset, __off64_t __len)","callingConvention":"unknown","external":false}
+{"name":"__strcpy_chk","entry":"00165d40","bodyBytes":6,"signature":"undefined __strcpy_chk(void)","callingConvention":"unknown","external":false}
+{"name":"getsockname","entry":"00165eb0","bodyBytes":6,"signature":"int getsockname(int __fd, sockaddr * __addr, socklen_t * __len)","callingConvention":"unknown","external":false}
+{"name":"strcpy","entry":"00165ee0","bodyBytes":6,"signature":"char * strcpy(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"mmap64","entry":"00165f30","bodyBytes":6,"signature":"void * mmap64(void * __addr, size_t __len, int __prot, int __flags, int __fd, __off64_t __offset)","callingConvention":"unknown","external":false}
+{"name":"signal","entry":"00166300","bodyBytes":6,"signature":"__sighandler_t signal(int __sig, __sighandler_t __handler)","callingConvention":"unknown","external":false}
+{"name":"gnutls_psk_allocate_server_credentials","entry":"001663d0","bodyBytes":6,"signature":"undefined gnutls_psk_allocate_server_credentials(void)","callingConvention":"unknown","external":false}
+{"name":"gnutls_anon_allocate_server_credentials","entry":"00166630","bodyBytes":6,"signature":"undefined gnutls_anon_allocate_server_credentials(void)","callingConvention":"unknown","external":false}
+{"name":"gnutls_certificate_allocate_credentials","entry":"00166820","bodyBytes":6,"signature":"undefined gnutls_certificate_allocate_credentials(void)","callingConvention":"unknown","external":false}
+{"name":"fgets","entry":"001668e0","bodyBytes":6,"signature":"char * fgets(char * __s, int __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fallocate64","entry":"00166a00","bodyBytes":6,"signature":"int fallocate64(int __fd, int __mode, __off64_t __offset, __off64_t __len)","callingConvention":"unknown","external":false}
+{"name":"__memcpy_chk","entry":"00166b70","bodyBytes":6,"signature":"undefined __memcpy_chk(void)","callingConvention":"unknown","external":false}
+{"name":"strcat","entry":"00166c60","bodyBytes":6,"signature":"char * strcat(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"gnutls_psk_allocate_client_credentials","entry":"00166f70","bodyBytes":6,"signature":"undefined gnutls_psk_allocate_client_credentials(void)","callingConvention":"unknown","external":false}
+{"name":"qemu_system_vmstop_request_prepare","entry":"00177cdc","bodyBytes":12,"signature":"undefined qemu_system_vmstop_request_prepare(void)","callingConvention":"unknown","external":false}
+{"name":"qemu_system_vmstop_request","entry":"00177ce8","bodyBytes":12,"signature":"undefined qemu_system_vmstop_request(void)","callingConvention":"unknown","external":false}
+{"name":"bdrv_co_get_allocated_file_size","entry":"00185d30","bodyBytes":207,"signature":"undefined bdrv_co_get_allocated_file_size(void)","callingConvention":"unknown","external":false}
+{"name":"nbd_errno_to_system_errno","entry":"0019d0a0","bodyBytes":160,"signature":"undefined nbd_errno_to_system_errno(void)","callingConvention":"unknown","external":false}
+{"name":"blk_co_is_allocated_above","entry":"001a58b0","bodyBytes":108,"signature":"undefined blk_co_is_allocated_above(void)","callingConvention":"unknown","external":false}
+{"name":"block_copy_reset_unallocated","entry":"001a9e70","bodyBytes":312,"signature":"undefined block_copy_reset_unallocated(void)","callingConvention":"unknown","external":false}
+{"name":"block_copy_set_skip_unallocated","entry":"001aa280","bodyBytes":16,"signature":"undefined block_copy_set_skip_unallocated(void)","callingConvention":"unknown","external":false}
+{"name":"bdrv_co_is_allocated","entry":"001b3100","bodyBytes":128,"signature":"undefined bdrv_co_is_allocated(void)","callingConvention":"unknown","external":false}
+{"name":"bdrv_co_is_allocated_above","entry":"001b3180","bodyBytes":119,"signature":"undefined bdrv_co_is_allocated_above(void)","callingConvention":"unknown","external":false}
+{"name":"qcow2_signal_corruption","entry":"001cd8e0","bodyBytes":771,"signature":"undefined qcow2_signal_corruption(void)","callingConvention":"unknown","external":false}
+{"name":"qcow2_detect_metadata_preallocation","entry":"001dd850","bodyBytes":324,"signature":"undefined qcow2_detect_metadata_preallocation(void)","callingConvention":"unknown","external":false}
+{"name":"bdrv_get_allocated_file_size","entry":"00215370","bodyBytes":327,"signature":"undefined bdrv_get_allocated_file_size(void)","callingConvention":"unknown","external":false}
+{"name":"bdrv_is_allocated","entry":"00215860","bodyBytes":381,"signature":"undefined bdrv_is_allocated(void)","callingConvention":"unknown","external":false}
+{"name":"bdrv_is_allocated_above","entry":"00215a00","bodyBytes":424,"signature":"undefined bdrv_is_allocated_above(void)","callingConvention":"unknown","external":false}
+{"name":"qapi_free_BlockdevOptionsPreallocate","entry":"0023df50","bodyBytes":68,"signature":"undefined qapi_free_BlockdevOptionsPreallocate(void)","callingConvention":"unknown","external":false}
+{"name":"visit_type_BlockdevOptionsPreallocate_members","entry":"002511c0","bodyBytes":211,"signature":"undefined visit_type_BlockdevOptionsPreallocate_members(void)","callingConvention":"unknown","external":false}
+{"name":"visit_type_BlockdevOptionsPreallocate","entry":"002512a0","bodyBytes":223,"signature":"undefined visit_type_BlockdevOptionsPreallocate(void)","callingConvention":"unknown","external":false}
+{"name":"pstrcpy","entry":"0027a350","bodyBytes":66,"signature":"undefined pstrcpy(void)","callingConvention":"unknown","external":false}
+{"name":"pstrcat","entry":"0027a3b0","bodyBytes":99,"signature":"undefined pstrcat(void)","callingConvention":"unknown","external":false}
+{"name":"qemu_cond_signal","entry":"00280160","bodyBytes":52,"signature":"undefined qemu_cond_signal(void)","callingConvention":"unknown","external":false}
+{"name":"rcu_enable_atfork","entry":"0028ae80","bodyBytes":12,"signature":"undefined rcu_enable_atfork(void)","callingConvention":"unknown","external":false}
+{"name":"rcu_disable_atfork","entry":"0028ae90","bodyBytes":12,"signature":"undefined rcu_disable_atfork(void)","callingConvention":"unknown","external":false}
+{"name":"qemu_signalfd","entry":"002a2b20","bodyBytes":325,"signature":"undefined qemu_signalfd(void)","callingConvention":"unknown","external":false}
+{"name":"qemu_ram_mmap","entry":"002a2db0","bodyBytes":1020,"signature":"undefined qemu_ram_mmap(void)","callingConvention":"unknown","external":false}
+{"name":"pthread_cond_signal","entry":"00358010","bodyBytes":1,"signature":"int pthread_cond_signal(pthread_cond_t * __cond)","callingConvention":"unknown","external":false}
+{"name":"numa_allocate_cpumask","entry":"00358280","bodyBytes":1,"signature":"undefined numa_allocate_cpumask(void)","callingConvention":"unknown","external":false}
+{"name":"strncpy","entry":"00358390","bodyBytes":1,"signature":"char * strncpy(char * __dest, char * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"signalfd","entry":"00358418","bodyBytes":1,"signature":"int signalfd(int __fd, sigset_t * __mask, int __flags)","callingConvention":"unknown","external":false}
+{"name":"getsockopt","entry":"003585b0","bodyBytes":1,"signature":"int getsockopt(int __fd, int __level, int __optname, void * __optval, socklen_t * __optlen)","callingConvention":"unknown","external":false}
+{"name":"__register_atfork","entry":"00358638","bodyBytes":1,"signature":"undefined __register_atfork(void)","callingConvention":"unknown","external":false}
+{"name":"gnutls_anon_allocate_client_credentials","entry":"00358658","bodyBytes":1,"signature":"undefined gnutls_anon_allocate_client_credentials(void)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"00358660","bodyBytes":1,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"posix_fallocate64","entry":"00358680","bodyBytes":1,"signature":"int posix_fallocate64(int __fd, __off64_t __offset, __off64_t __len)","callingConvention":"unknown","external":false}
+{"name":"__strcpy_chk","entry":"003586a8","bodyBytes":1,"signature":"undefined __strcpy_chk(void)","callingConvention":"unknown","external":false}
+{"name":"getsockname","entry":"00358760","bodyBytes":1,"signature":"int getsockname(int __fd, sockaddr * __addr, socklen_t * __len)","callingConvention":"unknown","external":false}
+{"name":"strcpy","entry":"00358778","bodyBytes":1,"signature":"char * strcpy(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"mmap64","entry":"003587a0","bodyBytes":1,"signature":"void * mmap64(void * __addr, size_t __len, int __prot, int __flags, int __fd, __off64_t __offset)","callingConvention":"unknown","external":false}
+{"name":"signal","entry":"00358988","bodyBytes":1,"signature":"__sighandler_t signal(int __sig, __sighandler_t __handler)","callingConvention":"unknown","external":false}
+{"name":"gnutls_psk_allocate_server_credentials","entry":"003589f0","bodyBytes":1,"signature":"undefined gnutls_psk_allocate_server_credentials(void)","callingConvention":"unknown","external":false}
+{"name":"gnutls_anon_allocate_server_credentials","entry":"00358b20","bodyBytes":1,"signature":"undefined gnutls_anon_allocate_server_credentials(void)","callingConvention":"unknown","external":false}
+{"name":"gnutls_certificate_allocate_credentials","entry":"00358c18","bodyBytes":1,"signature":"undefined gnutls_certificate_allocate_credentials(void)","callingConvention":"unknown","external":false}
+{"name":"fgets","entry":"00358c78","bodyBytes":1,"signature":"char * fgets(char * __s, int __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fallocate64","entry":"00358d08","bodyBytes":1,"signature":"int fallocate64(int __fd, int __mode, __off64_t __offset, __off64_t __len)","callingConvention":"unknown","external":false}
+{"name":"__memcpy_chk","entry":"00358dc0","bodyBytes":1,"signature":"undefined __memcpy_chk(void)","callingConvention":"unknown","external":false}
+{"name":"strcat","entry":"00358e40","bodyBytes":1,"signature":"char * strcat(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"gnutls_psk_allocate_client_credentials","entry":"00358fd8","bodyBytes":1,"signature":"undefined gnutls_psk_allocate_client_credentials(void)","callingConvention":"unknown","external":false}

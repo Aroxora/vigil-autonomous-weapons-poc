@@ -1,0 +1,238 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100ab1 string-utf8 _ITM_deregisterTMCloneTable
+00100acd string-utf8 __gmon_start__
+00100adc string-utf8 _ITM_registerTMCloneTable
+00100af6 string-utf8 __libc_start_main
+00100b08 string-utf8 __cxa_finalize
+00100b17 string-utf8 __printf_chk
+00100b24 string-utf8 puts
+00100b29 string-utf8 exit
+00100b2e string-utf8 free
+00100b33 string-utf8 stderr
+00100b3a string-utf8 __fprintf_chk
+00100b48 string-utf8 __stack_chk_fail
+00100b59 string-utf8 malloc
+00100b60 string-utf8 memcpy
+00100b67 string-utf8 getpid
+00100b6e string-utf8 fwrite
+00100b75 string-utf8 calloc
+00100b7c string-utf8 strlen
+00100b83 string-utf8 __strcat_chk
+00100b90 string-utf8 strstr
+00100b97 string-utf8 __memcpy_chk
+00100ba4 string-utf8 __strcpy_chk
+00100bb1 string-utf8 strcmp
+00100bb8 string-utf8 socket
+00100bbf string-utf8 snprintf
+00100bc8 string-utf8 ioctl
+00100bce string-utf8 realloc
+00100bd6 string-utf8 strdup
+00100bdd string-utf8 putchar
+00100be5 string-utf8 __ctype_b_loc
+00100bf3 string-utf8 memset
+00100bfa string-utf8 index
+00100c00 string-utf8 strncpy
+00100c08 string-utf8 getaddrinfo
+00100c14 string-utf8 getnameinfo
+00100c20 string-utf8 inet_pton
+00100c2a string-utf8 freeaddrinfo
+00100c37 string-utf8 perror
+00100c3e string-utf8 fopen
+00100c44 string-utf8 strncmp
+00100c4c string-utf8 fgets
+00100c52 string-utf8 fclose
+00100c59 string-utf8 __isoc23_sscanf
+00100c69 string-utf8 setsockopt
+00100c74 string-utf8 bind
+00100c79 string-utf8 sendto
+00100c80 string-utf8 recvfrom
+00100c89 string-utf8 shutdown
+00100c92 string-utf8 getenv
+00100c99 string-utf8 strtok
+00100ca0 string-utf8 __sprintf_chk
+00100cae string-utf8 __isoc23_strtol
+00100cbe string-utf8 send
+00100cc3 string-utf8 geteuid
+00100ccb string-utf8 strcpy
+00100cd2 string-utf8 pcap_open_live
+00100ce1 string-utf8 pcap_compile
+00100cee string-utf8 pcap_setfilter
+00100cfd string-utf8 pcap_setnonblock
+00100d0e string-utf8 usleep
+00100d15 string-utf8 time
+00100d1a string-utf8 pcap_dispatch
+00100d28 string-utf8 pcap_close
+00100d33 string-utf8 getopt
+00100d3a string-utf8 optarg
+00100d41 string-utf8 optind
+00100d48 string-utf8 stdout
+00100d4f string-utf8 setvbuf
+00100d57 string-utf8 _IO_stdin_used
+00100d66 string-utf8 libpcap.so.0.8
+00100d75 string-utf8 libc.so.6
+00100d7f string-utf8 GLIBC_2.14
+00100d8a string-utf8 GLIBC_2.34
+00100d95 string-utf8 GLIBC_2.4
+00100d9f string-utf8 GLIBC_2.38
+00100daa string-utf8 GLIBC_2.3
+00100db4 string-utf8 GLIBC_2.3.4
+00100dc0 string-utf8 GLIBC_2.2.5
+0010d008 string www.github.com/vanhauser-thc/thc-ipv6
+0010d038 string Syntax: %s [-fp] [-n number] interface destination [test-case-no]  
+0010d080 string -f activates flooding mode, no pauses between sends; -p disables first and
+0010d0d0 string final pings, -n number specifies how often each test is performed
+0010d118 string  Performs fragment firewall and implementation checks, incl. denial-of-service.
+0010d168 string Error: Data packet type %d not implemented - some data not free'ed! 
+0010d1b0 string Error: fragment offset can not be larger than 8191 (2^13 - 1) 
+0010d1f0 string Warning: checksums for packets > 65535 are unreliable due implementation differences on target platforms 
+0010d260 string Error: /proc/net/if_inet6 does not exist, no IPv6 support on your Linux box! 
+0010d2b0 string Warning: no IPv6 address on interface defined 
+0010d2e0 string Warning: unprefered IPv6 address had to be selected 
+0010d318 string Warning: raw mode is not working in all tools 
+0010d348 string Error: wrong Syntax in THC_IPV6_VLAN variable: source_mac,dst_mac,vlan_id - e.g. 01:02:03:04:05:06,07:08:09:a0:a1:a2,7 
+0010d3c0 string Error: wrong Syntax in THC_IPV6_VLAN variable: srcmac,dstmac,vlan-id - e.g. 01:02:03:04:05:06,1a:1b:1c:1d:1e:1f,7 
+0010d438 string Information: VLAN injection/sniffing activated
+0010d468 string Error: could not allocate necessary memory 
+0010d498 string Error: wrong Syntax in THC_IPV6_PPPOE variable: source_mac,dst_mac,ppoe_session_id - e.g. 01:02:03:04:05:06,07:08:09:a0:a1:a2,a1b2 
+0010d520 string Error: PPPoE session ID must be hexadecimal and a length of four, e.g. 0a1f 
+0010d570 string Information: PPPoE injection/sniffing activated
+0010d5a0 string Error: wrong Syntax in THC_IPV6_6IN4 variable: source_mac,dst_mac,src_ip,dst_ip - e.g. 01:02:03:04:05:06,07:08:09:a0:a1:a2,1.1.1.1,2.2.2.2 
+0010d630 string Error: 6in4: not a valid IPv4 address: %s 
+0010d660 string Information: 6in4 injection/sniffin activated
+0010d690 string Error: Program must be run as root. 
+0010d6b8 string Warning: packet size is larger than MTU of interface (%d > %d)! 
+0010d700 string Error: /proc/net/ipv6_route does not exist, no IPv6 support on your Linux box! 
+0010d750 string Error: No idea where to route the packet to %s! 
+0010d788 string Error: could not get target MAC address 
+0010d7b8 string Error: Data packet type %d not implemented! 
+0010d7e8 string Warning: packet size mismatch (%d != %d)! 
+0010d818 string Error: the -f flood option must be used with a defined testcase, and the -n option can not be used with it 
+0010d888 string ERROR: Can not resolve mac address for %s 
+0010d8b8 string Run a sniffer behind the firewall to see what passes through 
+0010d8f8 string ATTACK Firewall %d - resending fragments with different data within stream (2nd real) 
+0010d950 string   Sending second fragment with fake data and ttl=1
+0010d988 string   Sending duplicate second fragment with real data and ttl=64
+0010d9c8 string   Sending third and final fragment
+0010d9f0 string ATTACK Firewall %d - resending fragments with different data within stream (1st real, 2nd ttl 1) 
+0010da58 string ATTACK Firewall %d - resending fragments with different data within stream (1st real) 
+0010dab0 string   Sending duplicate second fragment with real data
+0010dae8 string   Sending second fragment with fake data
+0010db18 string ATTACK Firewall %d - resending fragments with different data after completion 
+0010db68 string   Sending duplicate second fragment with fake data
+0010dba0 string ATTACK Firewall %d - overlapping third fragment into second with valid data 
+0010dbf0 string   Sending third and final fragment overlapping into second
+0010dc30 string ATTACK Firewall %d - overlapping third fragment into second 
+0010dc70 string ATTACK Firewall %d - overlapping second fragment into third 
+0010dcb0 string   Sending third and final fragment - but not the last
+0010dce8 string   Sending second fragment overlapping into third
+0010dd20 string ATTACK Implementation %d - one shot fragment 
+0010dd50 string   Sending one-shot fragment ping
+0010dd78 string ATTACK Implementation %d - double one shot fragments 
+0010ddb0 string   Sending double one-shot fragments ping
+0010dde0 string ATTACK Implementation %d - 137 one shot fragments 
+0010de18 string   Sending 137 one-shot fragments ping
+0010de40 string ATTACK Implementation %d - 175 one shot fragments 
+0010de78 string   Sending 180 one-shot fragments ping
+0010dea0 string ATTACK Implementation %d - sending 65486 bytes in 54 fragments 
+0010dee0 string ATTACK Implementation %d - sending 65495 bytes in 54 fragments 
+0010df20 string ATTACK Implementation %d - sending 65535 bytes in 54 fragments 
+0010df60 string ATTACK Implementation %d - sending 66920 bytes in 47 fragments 
+0010dfa0 string ATTACK Implementation %d - replacing fragments with new, different data 
+0010dff0 string ATTACK DOS %d - sending only first fragment 
+0010e020 string ATTACK DOS %d - sending only second fragment 
+0010e050 string ATTACK DOS %d - sending only last fragment 
+0010e080 string ATTACK DOS %d - sending first, middle and final frag with 1k holes in between 
+0010e0d0 string ATTACK DOS %d - sending first, middle and final frag with 4k holes in between 
+0010e120 string ATTACK DOS %d - sending first, middle and final frag with 16k holes in between 
+0010e170 string ATTACK DOS %d - one shot fragment without content 
+0010e1a8 string   Sending one-shot fragment with 0 byte TCP data
+0010e1e0 string ATTACK DOS %d - one shot fragment with 1 byte content 
+0010e218 string   Sending one-shot fragment with 1 byte TCP data
+0010e250 string ATTACK DOS %d - last fragment has offset 0 and no data 
+0010e288 string   Sending third and final fragment with offset 0
+0010e2c0 string ATTACK DOS %d - last fragment has offset 0 
+0010e2f0 string ATTACK DOS %d - last fragment has offset 1 
+0010e320 string   Sending third and final fragment with offset 1
+0010e358 string ATTACK DOS %d - last fragment at 8191 + 7 bytes 
+0010e390 string   Sending fragment %d (preparation fragment) 
+0010e3c0 string   Sending final fragment with 8191 and sending 7 bytes
+0010e3f8 string ATTACK DOS %d - last fragment at 8191 + 8 bytes 
+0010e430 string   Sending final fragment with 8191 and sending 8 bytes
+0010e468 string ATTACK DOS %d - last fragment at 8191 + 9 bytes 
+0010e4a0 string   Sending final fragment with 8191 and sending 9 bytes
+0010e4d8 string ATTACK DOS %d - last fragment at 8191 + 1414 bytes 
+0010e510 string   Sending final fragment with 8191 and sending 1414 bytes
+0010e550 string   1: A-first + B-first + C-first
+0010e571 string van Hauser / THC <vh@thc.org>
+0010e593 string %s %s (c) 2020 by %s %s  
+0010e5b0 string %s (%d bytes): 
+0010e5ce string    [ 
+0010e5d7 string malloc
+0010e5e0 string /proc/net/if_inet6
+0010e5f3 string %s %x %x %x %s
+0010e60d string THC_IPV6_RAW
+0010e61a string THC_IPV6_RAWMODE
+0010e62b string THC_IPV6_VLAN
+0010e63b string THC_IPV6_PPPOE
+0010e65c string ether src %18s
+0010e66b string THC_IPV6_6IN4
+0010e679 string ip proto 41 and src %16s
+0010e692 string IOCTL SIOCGIFINDEX Failed
+0010e6ac string IOCTL SIOCGIFHWADDR, Failed
+0010e6c8 string Bind failed
+0010e6d4 string Error: interface invalid 
+0010e6ee string %s %x %s %x %s %s
+0010e700 string ff02::1:ff00:0
+0010e70f string /proc/net/ipv6_route
+0010e724 string NXT_IP4 NOT IMPLEMENTED
+0010e73c string NXT_IP6 NOT IMPLEMENTED
+0010e754 string Error: invalid option %c 
+0010e773 string Error: invalid interface %s 
+0010e790 string ATTACK initialisation
+0010e7a6 string   Sending ping to %s 
+0010e7bc string   Sending first fragment
+0010e7d5 string   Sending second fragment
+0010e7ef string   Sending 54 fragments ping
+0010e80b string   Sending 47 fragments ping
+0010e827 string   Sending fragments 2-46
+0010e840 string Multifragment %d - Level 1 
+0010e85c string   1: A-first + B-first
+0010e873 string   2: B
+0010e87a string   3: B
+0010e881 string   4: B-last
+0010e88d string Multifragment %d - Level 2 
+0010e8a9 string   2: A-last (B)
+0010e8b9 string Multifragment %d - Level 3 
+0010e8d5 string   2: A-last (B/C)
+0010e8e7 string   3: B-last (C)
+0010e8f7 string   4: C-last
+0010e903 string ATTACK finalisation
+0010e917 string   Sending final ping to %s 
+0010e933 string ATTACK END
+0010e950 string ip6 and dst 
+0010ea79 string zR
+0010eaa9 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss

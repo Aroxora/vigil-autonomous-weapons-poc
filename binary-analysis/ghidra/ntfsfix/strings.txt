@@ -1,0 +1,287 @@
+001003ac TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100ac9 string-utf8 _ITM_deregisterTMCloneTable
+00100ae5 string-utf8 __gmon_start__
+00100af4 string-utf8 _ITM_registerTMCloneTable
+00100b0e string-utf8 ntfs_attr_close
+00100b1e string-utf8 AT_UNNAMED
+00100b29 string-utf8 ntfs_attr_pwrite
+00100b3a string-utf8 ntfs_boot_sector_is_ntfs
+00100b53 string-utf8 ntfs_device_size_get
+00100b68 string-utf8 ntfs_inode_mark_dirty
+00100b7e string-utf8 ntfs_mst_pre_write_fixup
+00100b97 string-utf8 ntfs_inode_open
+00100ba7 string-utf8 ntfs_mst_post_read_fixup
+00100bc0 string-utf8 ntfs_attr_put_search_ctx
+00100bd9 string-utf8 ntfs_log_set_handler
+00100bee string-utf8 ntfs_mft_record_check
+00100c04 string-utf8 ntfs_attr_find_in_attrdef
+00100c1e string-utf8 ntfs_log_redirect
+00100c30 string-utf8 ntfs_device_unix_io_ops
+00100c48 string-utf8 ntfs_mbstoucs
+00100c56 string-utf8 ntfs_attr_map_whole_runlist
+00100c72 string-utf8 ntfs_umount
+00100c7e string-utf8 ntfs_volume_write_flags
+00100c96 string-utf8 ntfs_device_alloc
+00100ca8 string-utf8 ntfs_inode_close
+00100cb9 string-utf8 ntfs_pwrite
+00100cc5 string-utf8 ntfs_upcase_build_default
+00100cdf string-utf8 ntfs_version_is_supported
+00100cf9 string-utf8 ntfs_pread
+00100d04 string-utf8 ntfs_attr_truncate
+00100d17 string-utf8 ntfs_file_record_read
+00100d2d string-utf8 ntfs_malloc
+00100d39 string-utf8 ntfs_attr_open
+00100d48 string-utf8 ntfs_log_handler_outerr
+00100d60 string-utf8 ntfs_ucsnlen
+00100d6d string-utf8 ntfs_logfile_reset
+00100d80 string-utf8 ntfs_attr_get_search_ctx
+00100d99 string-utf8 ntfs_mapping_pairs_decompress
+00100db7 string-utf8 ntfs_boot_sector_parse
+00100dce string-utf8 ntfs_volume_startup
+00100de2 string-utf8 ntfs_volume_alloc
+00100df4 string-utf8 ntfs_device_sector_size_get
+00100e10 string-utf8 ntfs_device_free
+00100e21 string-utf8 ntfs_attr_mst_pread
+00100e35 string-utf8 ntfs_mount
+00100e40 string-utf8 NTFS_INDEX_I30
+00100e4f string-utf8 ntfs_attr_pread
+00100e5f string-utf8 ntfs_check_if_mounted
+00100e75 string-utf8 ntfs_attr_lookup
+00100e86 string-utf8 ntfs_mft_records_write
+00100e9d string-utf8 ntfs_home
+00100ea7 string-utf8 ntfs_ucstombs
+00100eb5 string-utf8 optind
+00100ebc string-utf8 snprintf
+00100ec5 string-utf8 __stack_chk_fail
+00100ed6 string-utf8 exit
+00100edb string-utf8 stat
+00100ee0 string-utf8 realloc
+00100ee8 string-utf8 __isoc23_strtoll
+00100ef9 string-utf8 __libc_start_main
+00100f0b string-utf8 __cxa_finalize
+00100f1a string-utf8 setlocale
+00100f24 string-utf8 strchr
+00100f2b string-utf8 strerror
+00100f34 string-utf8 calloc
+00100f3b string-utf8 memcmp
+00100f42 string-utf8 __snprintf_chk
+00100f51 string-utf8 memcpy
+00100f58 string-utf8 __errno_location
+00100f69 string-utf8 getopt_long
+00100f75 string-utf8 libntfs-3g.so.89
+00100f86 string-utf8 libc.so.6
+00100f90 string-utf8 GLIBC_2.14
+00100f9b string-utf8 GLIBC_2.33
+00100fa6 string-utf8 GLIBC_2.38
+00100fb1 string-utf8 GLIBC_2.4
+00100fbb string-utf8 GLIBC_2.34
+00100fc6 string-utf8 GLIBC_2.2.5
+00100fd2 string-utf8 GLIBC_2.3.4
+00107008 string %s v%s (libntfs-3g)  Usage: %s [options] device     Attempt to fix an NTFS partition.      -b, --clear-bad-sectors Clear the bad sector list     -d, --clear-dirty       Clear the volume dirty flag     -h, --help              Display this help     -n, --no-action         Do not write anything     -V, --version           Display version information  For example: %s /dev/hda6  
+00107188 string Failed to read alternate bootsector (size=0) 
+001071b8 string Error reading alternate bootsector
+001071e0 string The alternate bootsector is usable 
+00107208 string Set sector count to %lld instead of %lld 
+00107238 string Failed to rewrite the bootsector (size=0) 
+00107268 string Error rewriting the bootsector
+00107288 string The boot sector has been rewritten 
+001072b0 string %s v%s  Attempt to fix an NTFS partition.  Copyright (c) 2000-2006 Anton Altaparmakov Copyright (c) 2002-2006 Szabolcs Szakacsits Copyright (c) 2007      Yura Pakhuchiy Copyright (c) 2011-2015 Jean-Pierre Andre  
+00107388 string ERROR: You must specify a device. 
+001073b0 string Refusing to operate on read-write mounted device %s. 
+001073e8 string Failed to determine whether %s is mounted
+00107418 string Processing of $MFT and $MFTMirr completed successfully. 
+00107458 string Attempting to correct errors... 
+00107480 string Failed to read bootsector (size=0) 
+001074a8 string Trying the alternate boot sector 
+001074d0 string Checking for self-located MFT segment... 
+00107500 string Fixing the self-located MFT segment... 
+00107528 string The startup data can be fixed, but no change was requested 
+00107568 string Volume is corrupt. You should run chkdsk. 
+00107598 string  Processing $MFT and $MFTMirr... 
+001075c0 string Comparing $MFTMirr to $MFT... 
+001075e0 string $MFT error: Incomplete multi sector transfer detected in %s. Cannot handle this yet. )-: 
+00107640 string $MFT error: Invalid mft record for %s. Cannot handle this yet. )-: 
+00107688 string $MFTMirr error: Incomplete multi sector transfer detected in %s. 
+001076d0 string $MFTMirr error: Invalid mft record for %s. 
+00107700 string Failed to open inode FILE_UpCase
+00107728 string Error: Upcase table is too big (max 32-bit allowed). 
+00107760 string Failed to read $UpCase, unexpected length (%lld != %lld). 
+001077a0 string Failed to open bitmap data attribute
+001077c8 string Corrupt cluster map size %lld (allocated %lld minimum %lld) 
+00107808 string $UpCase has been set to default 
+00107830 string $Volume has been deleted. Cannot handle this yet. Run chkdsk to fix this. 
+00107880 string Attribute $VOLUME_INFORMATION was not found in $Volume! 
+001078c0 string Attribute $VOLUME_INFORMATION must be resident (and it isn't)! 
+00107900 string Attribute $VOLUME_INFORMATION in $Volume is corrupt! 
+00107938 string Error : failed to allocate memory 
+00107960 string Checking the alternate boot sector... 
+00107988 string Checking file system overflow... 
+001079b0 string Error : could not read the boot sector again 
+001079e0 string Error: Failed to fix the alternate boot sector 
+00107a10 string Error: Failed to set volume dirty flag (%d (%s))! 
+00107a48 string NTFS volume version is %i.%i. 
+00107a68 string Going to un-mark the bad clusters ($BadClus)... 
+00107aa0 string Failed to un-mark the bad clusters
+00107ac8 string Could not locate attribute for %s
+00107af0 string Could not get a search context for %s
+00107b18 string Failed to open inode FILE_BadClus
+00107b40 string Error: Failed to un-mark bad sectors. 
+00107b68 string NTFS partition %s was processed successfully. 
+00107b98 string Correcting differences in $MFT%s record %d...
+00107bc8 string Going to empty the journal ($LogFile)... 
+00107bf8 string Setting required flags on partition... 
+00107c20 string Failed to set locale, using default '%s'. 
+00107c50 string Error getting information about %s
+00107c78 string Use the force option to ignore this error. 
+00107ca8 string Access is denied because the NTFS volume is already exclusively opened. The volume may be already mounted, or another software may use it which could be identified for example by the help of the 'fuser' command. 
+00107d80 string You can use force option to avoid this check, but this is not recommended and may lead to data corruption. 
+00107df0 string The device '%s' doesn't have a valid NTFS. Maybe you selected the wrong device? Or the whole disk instead of a partition (e.g. /dev/hda, not /dev/hda1)? Or the other way around? 
+00107ea8 string NTFS is inconsistent. Run chkdsk /f on Windows then reboot it TWICE! The usage of the /f parameter is very IMPORTANT! No modification was made to NTFS by this software. 
+00107f58 string The NTFS partition is hibernated. Please resume Windows and turned it  off properly, so mounting could be done safely. 
+00107fd0 string Access is denied because the NTFS journal file is unclean. Choices are:  A) Shutdown Windows properly.  B) Click the 'Safely Remove Hardware' icon in the Windows taskbar     notification area before disconnecting the device.  C) Use 'Eject' from Windows Explorer to safely remove the device.  D) If you ran chkdsk previously then boot Windows again which will     automatically initialize the journal.  E) Submit 'force' option (WARNING: This solution it not recommended).  F) ntfsmount: Mount the volume read-only by using the 'ro' mount option. 
+001081f8 string You seem to have a SoftRAID/FakeRAID hardware and must use an activated, different device under /dev/mapper, (e.g. /dev/mapper/nvidia_eahaabcc1) to mount NTFS. Please see the 'dmraid' documentation for help. 
+001082d0 string Volume is scheduled for check. Please boot into Windows TWICE, or use the 'force' option. NOTE: If you had not scheduled check and last time accessed this volume using ntfsmount and shutdown system properly, then init scripts in your distribution are broken. Please report to your distribution developers (NOT to us!) that init scripts kill ntfsmount or mount.ntfs-fuse during shutdown instead of proper umount. 
+00108470 string WARNING: Dirty volume mount was forced by the 'force' mount option. 
+001084b8 string Internal error, strtoll didn't return a suffix. 
+001084f0 string Invalid size suffix '%s'.  Use T, G, M, or K. 
+00108520 string Couldn't create a search context. 
+00108548 string Couldn't translate filename to current locale. 
+00108578 string The directory structure is too deep (over %d) nested directories. 
+001085c0 string Couldn't translate attribute type to current locale. 
+001085f8 string Unknown attribute type 0x%02x 
+00108618 string Attribute type was truncated. 
+00108638 string Couldn't translate attribute name to current locale. 
+00108670 string Attribute name was truncated. 
+00108690 string Error reading inode %llu.  Aborting. 
+001086b8 string Inode %lld is an extent of inode %lld. 
+001086e0 string This program is free software, released under the GNU General Public License and you are welcome to redistribute it under certain conditions.  It comes with ABSOLUTELY NO WARRANTY; for details read the GNU General Public License to be found in the file "COPYING" distributed with this program, or online at: http://www.gnu.org/copyleft/gpl.html 
+00108840 string Developers' email address: ntfs-3g-devel@lists.sf.net 
+00108877 string ntfsfix.c
+00108881 string ntfsfix
+00108889 string 2022.10.3
+00108893 string Rewriting the bootsector 
+001088ad string system file
+001088b9 string mft record
+001088c4 string ERROR: Too many arguments. 
+001088e8 string ERROR: Unknown option '%s'. 
+00108905 string -bdhnV
+0010890c string Mounting volume... 
+00108920 string Failed to allocate device
+0010893a string Failed to startup volume
+00108953 string %s: dev = %p
+00108960 string Error opening '%s'
+00108973 string Error reading bootsector
+0010898c string Failed to allocate memory 
+001089a7 string Unrecoverable error 
+001089bc string Failed to allocate memory
+001089d6 string Reading $MFT... 
+001089e7 string Failed to read $MFT
+001089fb string Reading $MFTMirr... 
+00108a10 string Failed to read $MFTMirr
+00108a28 string $AttrDef
+00108a31 string root directory
+00108a40 string $Boot
+00108a46 string $BadClus
+00108a4f string $Secure
+00108a57 string $Extend
+00108a5f string Error correcting $MFT%s
+00108a77 string Failed to open ntfs attribute
+00108a95 string Corrupted file $UpCase 
+00108aad string Failed to open bitmap inode
+00108ac9 string Rewriting $UpCase file 
+00108ae1 string Failed to rewrite $UpCase 
+00108afc string Failed to close $UpCase
+00108b14 string Failed to read $Volume
+00108b2b string Error writing $Volume
+00108b41 string Error setting volume flags. 
+00108b5e string Failed to reset $LogFile
+00108b77 string No change made 
+00108b87 string Remount failed
+00108b9b string FIXED 
+00108ba2 string Error: Unknown NTFS version. 
+00108bc0 string Failed to unmount partition 
+00108bdd string No bad clusters...
+00108bf0 string Failed to open $BadClus::$Bad
+00108c13 string no-action
+00108c1d string clear-bad-sectors
+00108c2f string clear-dirty
+00108c3b string version
+00108c43 string utils.c
+00108c4b string The device %s doesn't exist 
+00108c68 string Forced to continue. 
+00108c7d string Failed to mount '%s'
+00108c92 string Invalid size '%s'. 
+00108ca6 string Invalid number '%.*s'. 
+00108cbe string <MFT%llu>
+00108cc8 string Couldn't open inode %llu. 
+00108ce8 string Pathname was truncated. 
+00108d01 string <UNKNOWN>
+00108d10 string Couldn't open $Bitmap
+00108d26 string Couldn't read $Bitmap
+00108d3c string Couldn't read $MFT/$BITMAP
+00108d57 string Error reading inode %lld. 
+00108d72 string Out of memory.  Aborting. 
+00108d8d string Couldn't open $MFT/$DATA
+00108da6 string Couldn't read MFT Record %llu
+00108dc4 string Error closing inode %llu. 
+00108ea0 string clear_sparse
+00108eb0 string clear_badclus
+00108ec0 string check_alternate_boot
+00108ed8 string empty_journal
+00108ef0 string OLD_ntfs_volume_set_flags
+00108f10 string set_dirty_flag
+00108f20 string rewrite_upcase
+00108f30 string fix_upcase
+00108f40 string fix_mftmirr
+00108f50 string fix_self_located_mft
+00108f68 string rewrite_boot
+00108f78 string try_fix_boot
+00108f90 string try_alternate_boot
+00108fa8 string fix_startup
+00108fb8 string fix_mount
+00108fc2 string usage
+00108fc8 string version
+00108fd0 string parse_options
+00108fe3 string FOUND 
+00108ff0 string FAILED 
+00109180 string mft_next_record
+00109190 string utils_mftrec_in_use
+001091b0 string utils_cluster_in_use
+001091d0 string utils_attr_get_name
+001091f0 string utils_inode_get_name
+00109210 string find_first_attribute
+00109230 string utils_parse_size
+00109250 string utils_mount_volume
+00109270 string utils_valid_device
+00109290 string utils_set_locale
+00109379 string zR
+001093a9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/ntfs-3g.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .sframe
+.shstrtab::000000b3 string-utf8 .note.gnu.property
+.shstrtab::000000c6 string-utf8 .note.ABI-tag
+.shstrtab::000000d4 string-utf8 .init_array
+.shstrtab::000000e0 string-utf8 .fini_array
+.shstrtab::000000ec string-utf8 .data.rel.ro
+.shstrtab::000000f9 string-utf8 .dynamic
+.shstrtab::00000102 string-utf8 .data
+.shstrtab::00000108 string-utf8 .bss
+.shstrtab::0000010d string-utf8 .gnu_debugaltlink
+.shstrtab::0000011f string-utf8 .gnu_debuglink

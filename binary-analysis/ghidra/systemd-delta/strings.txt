@@ -1,0 +1,176 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100ad9 string-utf8 __libc_start_main
+00100aeb string-utf8 __cxa_finalize
+00100afa string-utf8 strdup
+00100b01 string-utf8 __stack_chk_fail
+00100b12 string-utf8 strstr
+00100b19 string-utf8 opendir
+00100b21 string-utf8 __errno_location
+00100b32 string-utf8 closedir
+00100b3b string-utf8 strlen
+00100b42 string-utf8 __printf_chk
+00100b4f string-utf8 strrchr
+00100b57 string-utf8 stdout
+00100b5e string-utf8 putc
+00100b63 string-utf8 fflush
+00100b6a string-utf8 execlp
+00100b71 string-utf8 _exit
+00100b77 string-utf8 getopt_long
+00100b83 string-utf8 optind
+00100b8a string-utf8 strspn
+00100b91 string-utf8 optarg
+00100b98 string-utf8 strcmp
+00100b9f string-utf8 program_invocation_short_name
+00100bbd string-utf8 __progname
+00100bc8 string-utf8 _ITM_deregisterTMCloneTable
+00100be4 string-utf8 __gmon_start__
+00100bf3 string-utf8 _ITM_registerTMCloneTable
+00100c0d string-utf8 version
+00100c15 string-utf8 pager_open
+00100c20 string-utf8 static_destruct_impl
+00100c35 string-utf8 readlinkat_malloc
+00100c47 string-utf8 hashmap_remove2
+00100c57 string-utf8 _hashmap_free
+00100c65 string-utf8 null_or_empty_path_with_root
+00100c82 string-utf8 path_compare
+00100c8f string-utf8 _hashmap_contains
+00100ca1 string-utf8 startswith_internal
+00100cb5 string-utf8 glyph_full
+00100cc0 string-utf8 chase
+00100cc6 string-utf8 parse_boolean_argument
+00100cdd string-utf8 endswith_internal
+00100cef string-utf8 path_hash_ops_free_free
+00100d07 string-utf8 log_open
+00100d10 string-utf8 greedy_realloc0
+00100d20 string-utf8 strv_free
+00100d2a string-utf8 _hashmap_iterate
+00100d3b string-utf8 readdir_ensure_type
+00100d4f string-utf8 get_files_in_directory
+00100d66 string-utf8 log_assert_failed
+00100d78 string-utf8 nulstr_get
+00100d83 string-utf8 exit_failure_if_negative
+00100d9c string-utf8 string_hash_func
+00100dad string-utf8 log_setup
+00100db7 string-utf8 log_internal
+00100dc4 string-utf8 pidref_done
+00100dd0 string-utf8 strv_sort
+00100dda string-utf8 extract_first_word
+00100ded string-utf8 _hashmap_get
+00100dfa string-utf8 main_prepare
+00100e07 string-utf8 terminal_urlify_man
+00100e1b string-utf8 pidref_safe_fork_full
+00100e31 string-utf8 path_simplify_full
+00100e44 string-utf8 ordered_hashmap_ensure_put
+00100e5f string-utf8 log_assert_failed_unreachable
+00100e7d string-utf8 path_extend_internal
+00100e92 string-utf8 main_finalize
+00100ea0 string-utf8 ordered_hashmap_new
+00100eb4 string-utf8 dirent_is_file
+00100ec3 string-utf8 pidref_wait_for_terminate_and_check
+00100ee7 string-utf8 log_get_max_level
+00100ef9 string-utf8 log_oom_internal
+00100f0a string-utf8 get_color_mode
+00100f19 string-utf8 libsystemd-shared-260.so
+00100f32 string-utf8 libc.so.6
+00100f3c string-utf8 SD_SHARED
+00100f46 string-utf8 GLIBC_2.4
+00100f50 string-utf8 GLIBC_2.34
+00100f5b string-utf8 GLIBC_2.2.5
+00100f67 string-utf8 GLIBC_2.3.4
+00100f73 string-utf8 /usr/lib/x86_64-linux-gnu/systemd
+00100f95 string-utf8 
+00100f96 string-utf8 __start_SYSTEMD_STATIC_DESTRUCT
+00100fb6 string-utf8 __stop_SYSTEMD_STATIC_DESTRUCT
+00104000 string ../src/delta/delta.c
+00104015 string filename
+0010401e string r > 0
+00104047 string suffix
+0010404e string !startswith(suffix, "/")
+0010406a string !strstr(suffix, "//")
+00104080 string Looking at %s
+0010408e string Failed to open %s: %m
+001040a7 string !endswith(drop, "/")
+001040bc string Failed to enumerate %s: %m
+001040d7 string .conf
+001040dd string Adding at top: %s %s %s/%s
+001040f8 string Adding at bottom: %s %s %s/%s
+00104118 string [UNCHANGED]  %s 
+0010412d string [MASKED]
+00104136 string %s%s%s     %s %s %s 
+0010414b string [EQUIVALENT]
+00104158 string %s%s%s %s %s %s 
+00104169 string [REDIRECTED]
+00104176 string [OVERRIDDEN]
+00104183 string (diff)
+00104191 string Failed to execute diff: %m
+001041ac string [EXTENDED]
+001041b7 string %s%s%s   %s %s %s 
+001041d9 string systemd-delta
+001041e9 string masked
+001041f0 string equivalent
+001041fb string redirected
+00104206 string overridden
+00104211 string unchanged
+0010421b string extended
+00104224 string default
+0010422c string Failed to parse flags field.
+00104249 string --diff
+0010425d string version
+00104265 string no-pager
+00104278 string Adding to drops: %s %s %s %s %s/%s
+001042a0 string %s [OPTIONS...] [SUFFIX...]  Find overridden configuration files.    -h --help           Show this help      --version        Show package version      --no-pager       Do not pipe output into a pager      --diff[=1|0]     Show a diff when overridden files differ   -t --type=LIST...   Only display a selected set of override types  See the %s for details. 
+00104408 string Invalid suffix specification %s.
+00104430 string %s%i overridden configuration files found. 
+00104468 string parse_argv
+00104480 string process_suffix_chop
+001044a1 string ysctl.d
+001044a9 string tmpfiles.d
+001044b4 string modules-load.d
+001044cc string systemd/system
+001044db string systemd/user
+001044e8 string systemd/system-preset
+001044fe string systemd/user-preset
+00104512 string udev/rules.d
+0010451f string modprobe.d
+00104530 string enumerate_dir_d
+00104540 string enumerate_dir
+00104550 string found_override
+0010456a string /usr/local/lib
+00104579 string /usr/local/share
+0010458a string /usr/lib
+00104593 string /usr/share
+001045a0 string systemd/system
+001045af string systemd/user
+001045c0 string process_suffix
+001045d0 string path_put
+00104631 string zR
+00104661 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/systemd.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .note.package
+.shstrtab::000000da string-utf8 .init_array
+.shstrtab::000000e6 string-utf8 .fini_array
+.shstrtab::000000f2 string-utf8 .data.rel.ro
+.shstrtab::000000ff string-utf8 .dynamic
+.shstrtab::00000108 string-utf8 .data
+.shstrtab::0000010e string-utf8 .bss
+.shstrtab::00000113 string-utf8 .gnu_debugaltlink
+.shstrtab::00000125 string-utf8 .gnu_debuglink

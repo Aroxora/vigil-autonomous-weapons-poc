@@ -1,0 +1,201 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001007c1 string-utf8 __gmon_start__
+001007d0 string-utf8 _ITM_deregisterTMCloneTable
+001007ec string-utf8 _ITM_registerTMCloneTable
+00100806 string-utf8 MD5_Final
+00100810 string-utf8 MD5_Init
+00100819 string-utf8 MD5_Update
+00100824 string-utf8 fgets
+0010082a string-utf8 ctime
+00100830 string-utf8 __strcpy_chk
+0010083d string-utf8 __stpcpy_chk
+0010084a string-utf8 __stack_chk_fail
+0010085b string-utf8 exit
+00100860 string-utf8 strdup
+00100867 string-utf8 unlink
+0010086e string-utf8 fopen
+00100874 string-utf8 __isoc23_sscanf
+00100884 string-utf8 strlen
+0010088b string-utf8 __ctype_b_loc
+00100899 string-utf8 read
+0010089e string-utf8 __memcpy_chk
+001008ab string-utf8 mkdir
+001008b1 string-utf8 umask
+001008b7 string-utf8 rand
+001008bc string-utf8 __sprintf_chk
+001008ca string-utf8 __fprintf_chk
+001008d8 string-utf8 malloc
+001008df string-utf8 __libc_start_main
+001008f1 string-utf8 stderr
+001008f8 string-utf8 __strcat_chk
+00100905 string-utf8 __cxa_finalize
+00100914 string-utf8 strchr
+0010091b string-utf8 getenv
+00100922 string-utf8 fclose
+00100929 string-utf8 fputc
+0010092f string-utf8 fputs
+00100935 string-utf8 fwrite
+0010093c string-utf8 strcmp
+00100943 string-utf8 lseek
+00100949 string-utf8 libcrypto.so.3
+00100958 string-utf8 libc.so.6
+00100962 string-utf8 OPENSSL_3.0.0
+00100970 string-utf8 GLIBC_2.4
+0010097a string-utf8 GLIBC_2.3
+00100984 string-utf8 GLIBC_2.34
+0010098f string-utf8 GLIBC_2.38
+0010099a string-utf8 GLIBC_2.2.5
+001009a6 string-utf8 GLIBC_2.3.4
+00108009 string %s/.snowdrop/
+00108017 string database
+00108020 string [-] FATAL: 
+0010802c string cannot open database file %s
+0010804c string malformed database line %d
+00108067 string not enough memory
+00108079 string no data loaded
+00108088 string cannot open /dev/urandom
+001080a1 string cannot read from /dev/urandom
+001080bf string /dev/urandom is deterministic
+001080dd string <none>
+001080e6 string cannot open input file %s
+00108100 string input file of zero length
+0010811a string   Target    : %s [%s] 
+00108131 string   Location  : %s 
+00108143 string   Size      : %d bytes 
+0010815b string   Signature : %08x-%08x 
+00108174 string   Conf MD5  : %08x 
+00108188 string [+] Processing: 
+00108199 string .SKIPME-PLEASE.
+001081a9 string not enough data collected
+001081c6 string [+] Database dump completed. 
+001081ea string cannot open output file %s
+00108205 string   Recipient : %s 
+00108217 string   Comment   : %s 
+00108229 string   Magic     : %08x-%08x 
+00108242 string   Watermark : %08Lx 
+00108257 string   Watermark : %016Lx 
+0010826d string  - NOT redundant!
+0010827f string internal bug
+0010828c string out of memory
+0010829a string cannot write to file
+001082af string set_original(NULL)
+001082c2 string set_watermarked(NULL)
+001082d8 string return
+001082df string sizeof
+001082e6 string static
+001082ed string const
+001082f3 string unsigned
+001082fc string short
+00108307 string register
+00108310 string inline
+00108317 string struct
+0010831e string typeof
+00108325 string extern
+00108340 string set_value on a fixed atom
+0010835a string too many variable names?
+0010837b string set value with bogus MOD_*
+00108396 string get_value with orig==NULL
+001083b0 string get_value with sc==NULL
+001083c8 string get_value with va==NULL
+001083e0 string [*] Loading database for module %s, conf %08x... 
+00108450 string [+] Watermarks database: %d lines, loaded %d entries. 
+00108488 string [!] Skipped %d entries created from other conf files. 
+001084c0 string [-] The database for this module is empty. 
+001084f0 string [-] No entries matching current conf file. Try passing different     configuration files as parameters to this module. 
+00108590 string Usage: %s [ -6 ] -e origfile newfile        %s [ -6 ] -l        %s [ -6 ] -i origfile newfile "Recipient" [ "Comment" ]   
+00108610 string First method of calling the program (with -e option) enables watermark extraction mode. In this mode, file passed as a first parameter must be the original document used to generate second file (or its portions).  Second method (-l) simply lists the contents of the watermark database for the module you're now running.  Third method (-i) enables watermark injection mode. File 'origfile' is modified and saved as 'newfile'. Mandatory parameter is the recipient identifier. Optional comment can be added for your reference.  Additional parameter -6 enables strong, 64-bit watermarking that is suitable for providing public documentation of watermarked document abuse.  
+001088b0 string not enough memory to load input file
+001088d8 string cannot open watermarked file %s
+001088f8 string watermarked file of zero length
+00108918 string not enough memory to load watermarked file
+00108948 string [+] Input file loaded successfully. 
+00108970 string [+] Calculated input storage redundancy / size: 
+001089a8 string   Overall redundancy   : %.02f (%d bits) 
+001089d8 string   Whitespace channel   : %.02f (%d bits) 
+00108a08 string   Grammar channel      : %.02f (%d bits) 
+00108a38 string   Formatting channel   : %.02f (%d bits) 
+00108a68 string   Substitution channel : %.02f (%d bits) 
+00108a98 string   Channel offsets are  : %d, %d, %d, %d 
+00108ac8 string No entries for this file / config in the database
+00108b00 string [+] Found %d record(s) for this file / config in the database. 
+00108b40 string [+] Files synchronized from the beginning, we're lucky. 
+00108b80 string  done! [+] Files synchronized near atom %d [%d:%d:%d:%d]... 
+00108bc0 string [!] Watermarked file truncated. 
+00108be8 string [!] Sync lost with the watermarked file near atom %d [%d:%d:%d:%d]: 
+00108c30 string [!] Files not identical, trying to synchronize... 
+00108c68 string [!] Trailing garbage in the watermarked file. 
+00108c98 string [+] Successfully read %d bits of data of %d expected. 
+00108cd0 string [+] Constructed an uniform stream of %d bits. 
+00108d00 string   Overall retrieved    : %d bits (%0.02f%%) 
+00108d30 string   Overall retrieved    : 0 bits (n/a) 
+00108d58 string   Whitespace channel   : %d bits (%0.02f%%) 
+00108d88 string   Whitespace channel   : 0 bits (n/a) 
+00108db0 string   Grammar channel      : %d bits (%0.02f%%) 
+00108de0 string   Grammar channel      : 0 bits (n/a) 
+00108e08 string   Formatting channel   : %d bits (%0.02f%%) 
+00108e38 string   Formatting channel   : 0 bits (n/a) 
+00108e60 string   Substitution channel : %d bits (%0.02f%%) 
+00108e90 string   Substitution channel : 0 bits (n/a) 
+00108eb8 string This is not enough to recover the %d-bit watermark. 
+00108ef0 string [*] Attempting block walk recovery... 
+00108f18 string  [+] This document matches entry %d (channel offset %d):   Source file : %s   Time        : %s   Recipient   : %s   Comment     : %s   Source MD5  : %08x-%08x   Magic value : %08x-%08x   Watermark   : %016Lx  
+00108ff0 string Matching document found, exiting. 
+00109018 string [*] Attempting byte assembly recovery... 
+00109048 string  [+] This document possibly matches fragmented entry %d:   Source file : %s   Time        : %s   Recipient   : %s   Comment     : %s   Source MD5  : %08x-%08x   Magic value : %08x-%08x   Watermark   : %016Lx 
+00109120 string  Possibly matching document found, exiting. 
+00109150 string [-] I am sorry. Unable to find any matching document. 
+00109188 string  EOF [!] Failed to resync before the end of the original file. 
+001091c8 string snowdrop 0.02b: text watermarking / watermark recovery by lcamtuf@coredump.cx  
+00109218 string [*] Strong 64-bit watermarking mode enabled. 
+00109248 string [*] Weak 32-bit watermarking used (use -6 to change it). 
+00109288 string -- Entry %d --   Source file : %s   Time        : %s   Recipient   : %s   Comment     : %s   Source MD5  : %08x-%08x   Magic value : %08x-%08x   Watermark   : %016Lx  
+00109330 string -- Entry %d --   Source file : %s   Time        : %s   Recipient   : %s   Comment     : %s   Source MD5  : %08x-%08x   Magic value : %08x-%08x   Watermark   : %08Lx  
+001093d8 string file too big - MAXATOMS exceeded
+00109400 string [*] Computed capacity: %d bits overall. 
+00109430 string   Target specification : %s [%s] 
+00109458 string File capacity too low to carry the watermark (need %d bits)
+00109498 string   WARNING: capacity too low, watermark will not be redundant! 
+001094d8 string   Whitespace channel   : %.02f (%d bits)
+00109508 string   Grammar channel      : %.02f (%d bits)
+00109538 string   Formatting channel   : %.02f (%d bits)
+00109568 string   Substitution channel : %.02f (%d bits)
+00109598 string [*] Embedding the watermark... 
+001095b8 string strange things happening - MAXATOMS exceeded
+001095e8 string [!] Internal module bug: failed expectation in domain %d.     Expected storage %d, got %d for atom %d [%s]. 
+00109658 string Failed to embed at least one copy of the watermark (%d bits). 
+00109698 string insufficient watermark storage
+001096b8 string [+] Done. Written %d bytes to file '%s', %d bits embedded. 
+001096f8 string set_watermarked before set_original
+00109720 string get_orig_atom before set_original
+00109748 string get_water_atom before set_watermarked
+00109770 string standalone C code (**** BROKEN BETA ****)
+001098b1 string zR
+001098e1 string zR
+0010b020 string abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/snowdrop.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

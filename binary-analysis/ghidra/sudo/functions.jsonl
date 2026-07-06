@@ -1,0 +1,841 @@
+{"name":"_DT_INIT","entry":"00106000","bodyBytes":23,"signature":"undefined _DT_INIT(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00106020","entry":"00106020","bodyBytes":12,"signature":"undefined FUN_00106020(void)","callingConvention":"unknown","external":false}
+{"name":"__printf_chk","entry":"00106030","bodyBytes":6,"signature":"undefined __printf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"getegid","entry":"00106040","bodyBytes":6,"signature":"__gid_t getegid(void)","callingConvention":"unknown","external":false}
+{"name":"__errno_location","entry":"00106050","bodyBytes":6,"signature":"int * __errno_location(void)","callingConvention":"unknown","external":false}
+{"name":"tzset","entry":"00106060","bodyBytes":6,"signature":"void tzset(void)","callingConvention":"unknown","external":false}
+{"name":"getgroups","entry":"00106070","bodyBytes":6,"signature":"int getgroups(int __size, __gid_t * __list)","callingConvention":"unknown","external":false}
+{"name":"bind","entry":"00106080","bodyBytes":6,"signature":"int bind(int __fd, sockaddr * __addr, socklen_t __len)","callingConvention":"unknown","external":false}
+{"name":"pututxline","entry":"00106090","bodyBytes":6,"signature":"utmpx * pututxline(utmpx * __utmpx)","callingConvention":"unknown","external":false}
+{"name":"sudo_sig2str","entry":"001060a0","bodyBytes":6,"signature":"undefined sudo_sig2str(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_warnx_nodebug_v1","entry":"001060b0","bodyBytes":6,"signature":"undefined sudo_warnx_nodebug_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_basename_v1","entry":"001060c0","bodyBytes":6,"signature":"undefined sudo_basename_v1(void)","callingConvention":"unknown","external":false}
+{"name":"setresuid","entry":"001060d0","bodyBytes":6,"signature":"int setresuid(__uid_t __ruid, __uid_t __euid, __uid_t __suid)","callingConvention":"unknown","external":false}
+{"name":"sudo_getprogname","entry":"001060e0","bodyBytes":6,"signature":"undefined sudo_getprogname(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_pw_dup","entry":"001060f0","bodyBytes":6,"signature":"undefined sudo_pw_dup(void)","callingConvention":"unknown","external":false}
+{"name":"endutxent","entry":"00106100","bodyBytes":6,"signature":"void endutxent(void)","callingConvention":"unknown","external":false}
+{"name":"getprevcon","entry":"00106110","bodyBytes":6,"signature":"undefined getprevcon(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_get_fds_v1","entry":"00106120","bodyBytes":6,"signature":"undefined sudo_debug_get_fds_v1(void)","callingConvention":"unknown","external":false}
+{"name":"socket","entry":"00106130","bodyBytes":6,"signature":"int socket(int __domain, int __type, int __protocol)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_disable_coredump_v1","entry":"00106140","bodyBytes":6,"signature":"undefined sudo_conf_disable_coredump_v1(void)","callingConvention":"unknown","external":false}
+{"name":"setpriority","entry":"00106150","bodyBytes":6,"signature":"int setpriority(__priority_which_t __which, id_t __who, int __prio)","callingConvention":"unknown","external":false}
+{"name":"sudo_gettime_real_v1","entry":"00106160","bodyBytes":6,"signature":"undefined sudo_gettime_real_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_base_alloc_v1","entry":"00106170","bodyBytes":6,"signature":"undefined sudo_ev_base_alloc_v1(void)","callingConvention":"unknown","external":false}
+{"name":"getpgrp","entry":"00106180","bodyBytes":6,"signature":"__pid_t getpgrp(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_group_source_v1","entry":"00106190","bodyBytes":6,"signature":"undefined sudo_conf_group_source_v1(void)","callingConvention":"unknown","external":false}
+{"name":"accept","entry":"001061a0","bodyBytes":6,"signature":"int accept(int __fd, sockaddr * __addr, socklen_t * __addr_len)","callingConvention":"unknown","external":false}
+{"name":"sigfillset","entry":"001061b0","bodyBytes":6,"signature":"int sigfillset(sigset_t * __set)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_intercept_path_v1","entry":"001061c0","bodyBytes":6,"signature":"undefined sudo_conf_intercept_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_strtomode_v2","entry":"001061d0","bodyBytes":6,"signature":"undefined sudo_strtomode_v2(void)","callingConvention":"unknown","external":false}
+{"name":"recv","entry":"001061e0","bodyBytes":6,"signature":"ssize_t recv(int __fd, void * __buf, size_t __n, int __flags)","callingConvention":"unknown","external":false}
+{"name":"strerror","entry":"001061f0","bodyBytes":6,"signature":"char * strerror(int __errnum)","callingConvention":"unknown","external":false}
+{"name":"audit_open","entry":"00106200","bodyBytes":6,"signature":"undefined audit_open(void)","callingConvention":"unknown","external":false}
+{"name":"initprogname2","entry":"00106210","bodyBytes":6,"signature":"undefined initprogname2(void)","callingConvention":"unknown","external":false}
+{"name":"write","entry":"00106220","bodyBytes":6,"signature":"ssize_t write(int __fd, void * __buf, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"strchr","entry":"00106230","bodyBytes":6,"signature":"char * strchr(char * __s, int __c)","callingConvention":"unknown","external":false}
+{"name":"__explicit_bzero_chk","entry":"00106240","bodyBytes":6,"signature":"undefined __explicit_bzero_chk(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_setgroups_v1","entry":"00106250","bodyBytes":6,"signature":"undefined sudo_setgroups_v1(void)","callingConvention":"unknown","external":false}
+{"name":"seteuid","entry":"00106260","bodyBytes":6,"signature":"int seteuid(__uid_t __uid)","callingConvention":"unknown","external":false}
+{"name":"strspn","entry":"00106270","bodyBytes":6,"signature":"size_t strspn(char * __s, char * __accept)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_noexec_path_v1","entry":"00106280","bodyBytes":6,"signature":"undefined sudo_conf_noexec_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_closefrom","entry":"00106290","bodyBytes":6,"signature":"undefined sudo_closefrom(void)","callingConvention":"unknown","external":false}
+{"name":"freecon","entry":"001062a0","bodyBytes":6,"signature":"undefined freecon(void)","callingConvention":"unknown","external":false}
+{"name":"strlen","entry":"001062b0","bodyBytes":6,"signature":"size_t strlen(char * __s)","callingConvention":"unknown","external":false}
+{"name":"fexecve","entry":"001062c0","bodyBytes":6,"signature":"int fexecve(int __fd, char * * __argv, char * * __envp)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_base_setdef_v1","entry":"001062d0","bodyBytes":6,"signature":"undefined sudo_ev_base_setdef_v1(void)","callingConvention":"unknown","external":false}
+{"name":"unlink","entry":"001062e0","bodyBytes":6,"signature":"int unlink(char * __name)","callingConvention":"unknown","external":false}
+{"name":"strncmp","entry":"001062f0","bodyBytes":6,"signature":"int strncmp(char * __s1, char * __s2, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"sudo_strtobool_v1","entry":"00106300","bodyBytes":6,"signature":"undefined sudo_strtobool_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_strtoid_v2","entry":"00106310","bodyBytes":6,"signature":"undefined sudo_strtoid_v2(void)","callingConvention":"unknown","external":false}
+{"name":"setutxent","entry":"00106320","bodyBytes":6,"signature":"void setutxent(void)","callingConvention":"unknown","external":false}
+{"name":"sigprocmask","entry":"00106330","bodyBytes":6,"signature":"int sigprocmask(int __how, sigset_t * __set, sigset_t * __oset)","callingConvention":"unknown","external":false}
+{"name":"getuid","entry":"00106340","bodyBytes":6,"signature":"__uid_t getuid(void)","callingConvention":"unknown","external":false}
+{"name":"process_vm_writev","entry":"00106350","bodyBytes":6,"signature":"undefined process_vm_writev(void)","callingConvention":"unknown","external":false}
+{"name":"send","entry":"00106360","bodyBytes":6,"signature":"ssize_t send(int __fd, void * __buf, size_t __n, int __flags)","callingConvention":"unknown","external":false}
+{"name":"getcwd","entry":"00106370","bodyBytes":6,"signature":"char * getcwd(char * __buf, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"strncpy","entry":"00106380","bodyBytes":6,"signature":"char * strncpy(char * __dest, char * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_pending_v2","entry":"00106390","bodyBytes":6,"signature":"undefined sudo_ev_pending_v2(void)","callingConvention":"unknown","external":false}
+{"name":"memset","entry":"001063a0","bodyBytes":6,"signature":"void * memset(void * __s, int __c, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"getsid","entry":"001063b0","bodyBytes":6,"signature":"__pid_t getsid(__pid_t __pid)","callingConvention":"unknown","external":false}
+{"name":"fcntl","entry":"001063c0","bodyBytes":6,"signature":"int fcntl(int __fd, int __cmd, ...)","callingConvention":"unknown","external":false}
+{"name":"geteuid","entry":"001063d0","bodyBytes":6,"signature":"__uid_t geteuid(void)","callingConvention":"unknown","external":false}
+{"name":"utimensat","entry":"001063e0","bodyBytes":6,"signature":"int utimensat(int __fd, char * __path, timespec * __times, int __flags)","callingConvention":"unknown","external":false}
+{"name":"is_selinux_enabled","entry":"001063f0","bodyBytes":6,"signature":"undefined is_selinux_enabled(void)","callingConvention":"unknown","external":false}
+{"name":"__snprintf_chk","entry":"00106400","bodyBytes":6,"signature":"undefined __snprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"tcgetpgrp","entry":"00106410","bodyBytes":6,"signature":"__pid_t tcgetpgrp(int __fd)","callingConvention":"unknown","external":false}
+{"name":"fsetfilecon","entry":"00106420","bodyBytes":6,"signature":"undefined fsetfilecon(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_noecho_v1","entry":"00106430","bodyBytes":6,"signature":"undefined sudo_term_noecho_v1(void)","callingConvention":"unknown","external":false}
+{"name":"setexeccon","entry":"00106440","bodyBytes":6,"signature":"undefined setexeccon(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_debug_files_v1","entry":"00106450","bodyBytes":6,"signature":"undefined sudo_conf_debug_files_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_loopbreak_v1","entry":"00106460","bodyBytes":6,"signature":"undefined sudo_ev_loopbreak_v1(void)","callingConvention":"unknown","external":false}
+{"name":"chown","entry":"00106470","bodyBytes":6,"signature":"int chown(char * __file, __uid_t __owner, __gid_t __group)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_probe_interfaces_v1","entry":"00106480","bodyBytes":6,"signature":"undefined sudo_conf_probe_interfaces_v1(void)","callingConvention":"unknown","external":false}
+{"name":"pipe2","entry":"00106490","bodyBytes":6,"signature":"int pipe2(int * __pipedes, int __flags)","callingConvention":"unknown","external":false}
+{"name":"sysconf","entry":"001064a0","bodyBytes":6,"signature":"long sysconf(int __name)","callingConvention":"unknown","external":false}
+{"name":"__assert_fail","entry":"001064b0","bodyBytes":6,"signature":"void __assert_fail(char * __assertion, char * __file, uint __line, char * __function)","callingConvention":"unknown","external":false}
+{"name":"calloc","entry":"001064c0","bodyBytes":6,"signature":"void * calloc(size_t __nmemb, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_register_v2","entry":"001064d0","bodyBytes":6,"signature":"undefined sudo_debug_register_v2(void)","callingConvention":"unknown","external":false}
+{"name":"dcgettext","entry":"001064e0","bodyBytes":6,"signature":"undefined dcgettext(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_get_ttysize_v2","entry":"001064f0","bodyBytes":6,"signature":"undefined sudo_get_ttysize_v2(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_is_raw_v1","entry":"00106500","bodyBytes":6,"signature":"undefined sudo_term_is_raw_v1(void)","callingConvention":"unknown","external":false}
+{"name":"open","entry":"00106510","bodyBytes":6,"signature":"int open(char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"sleep","entry":"00106520","bodyBytes":6,"signature":"uint sleep(uint __seconds)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_needed_v1","entry":"00106530","bodyBytes":6,"signature":"undefined sudo_debug_needed_v1(void)","callingConvention":"unknown","external":false}
+{"name":"context_free","entry":"00106540","bodyBytes":6,"signature":"undefined context_free(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_parse_gids_v1","entry":"00106550","bodyBytes":6,"signature":"undefined sudo_parse_gids_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_got_break_v1","entry":"00106560","bodyBytes":6,"signature":"undefined sudo_ev_got_break_v1(void)","callingConvention":"unknown","external":false}
+{"name":"waitpid","entry":"00106570","bodyBytes":6,"signature":"__pid_t waitpid(__pid_t __pid, int * __stat_loc, int __options)","callingConvention":"unknown","external":false}
+{"name":"sudo_strsplit_v1","entry":"00106580","bodyBytes":6,"signature":"undefined sudo_strsplit_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_base_free_v1","entry":"00106590","bodyBytes":6,"signature":"undefined sudo_ev_base_free_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_fatalx_nodebug_v1","entry":"001065a0","bodyBytes":6,"signature":"undefined sudo_fatalx_nodebug_v1(void)","callingConvention":"unknown","external":false}
+{"name":"getpwnam","entry":"001065b0","bodyBytes":6,"signature":"passwd * getpwnam(char * __name)","callingConvention":"unknown","external":false}
+{"name":"get_default_type","entry":"001065c0","bodyBytes":6,"signature":"undefined get_default_type(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_del_v1","entry":"001065d0","bodyBytes":6,"signature":"undefined sudo_ev_del_v1(void)","callingConvention":"unknown","external":false}
+{"name":"__vsnprintf_chk","entry":"001065e0","bodyBytes":6,"signature":"undefined __vsnprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"001065f0","bodyBytes":6,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"ptrace","entry":"00106600","bodyBytes":6,"signature":"long ptrace(__ptrace_request __request, ...)","callingConvention":"unknown","external":false}
+{"name":"sudo_fatal_callback_deregister_v1","entry":"00106610","bodyBytes":6,"signature":"undefined sudo_fatal_callback_deregister_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_sesh_path_v1","entry":"00106620","bodyBytes":6,"signature":"undefined sudo_conf_sesh_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_getgrouplist2_v1","entry":"00106630","bodyBytes":6,"signature":"undefined sudo_getgrouplist2_v1(void)","callingConvention":"unknown","external":false}
+{"name":"socketpair","entry":"00106640","bodyBytes":6,"signature":"int socketpair(int __domain, int __type, int __protocol, int * __fds)","callingConvention":"unknown","external":false}
+{"name":"setlocale","entry":"00106650","bodyBytes":6,"signature":"char * setlocale(int __category, char * __locale)","callingConvention":"unknown","external":false}
+{"name":"stat","entry":"00106660","bodyBytes":6,"signature":"int stat(char * __file, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"setrlimit","entry":"00106670","bodyBytes":6,"signature":"int setrlimit(__rlimit_resource_t __resource, rlimit * __rlimits)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_got_exit_v1","entry":"00106680","bodyBytes":6,"signature":"undefined sudo_ev_got_exit_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_loopexit_v1","entry":"00106690","bodyBytes":6,"signature":"undefined sudo_ev_loopexit_v1(void)","callingConvention":"unknown","external":false}
+{"name":"audit_log_user_message","entry":"001066a0","bodyBytes":6,"signature":"undefined audit_log_user_message(void)","callingConvention":"unknown","external":false}
+{"name":"getsockname","entry":"001066b0","bodyBytes":6,"signature":"int getsockname(int __fd, sockaddr * __addr, socklen_t * __len)","callingConvention":"unknown","external":false}
+{"name":"dup2","entry":"001066c0","bodyBytes":6,"signature":"int dup2(int __fd, int __fd2)","callingConvention":"unknown","external":false}
+{"name":"chroot","entry":"001066d0","bodyBytes":6,"signature":"int chroot(char * __path)","callingConvention":"unknown","external":false}
+{"name":"getgrnam","entry":"001066e0","bodyBytes":6,"signature":"group * getgrnam(char * __name)","callingConvention":"unknown","external":false}
+{"name":"futimens","entry":"001066f0","bodyBytes":6,"signature":"int futimens(int __fd, timespec * __times)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_get_active_instance_v1","entry":"00106700","bodyBytes":6,"signature":"undefined sudo_debug_get_active_instance_v1(void)","callingConvention":"unknown","external":false}
+{"name":"fgetfilecon","entry":"00106710","bodyBytes":6,"signature":"undefined fgetfilecon(void)","callingConvention":"unknown","external":false}
+{"name":"fclose","entry":"00106720","bodyBytes":6,"signature":"int fclose(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"sudo_gethostname_v1","entry":"00106730","bodyBytes":6,"signature":"undefined sudo_gethostname_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_cbreak_v2","entry":"00106740","bodyBytes":6,"signature":"undefined sudo_term_cbreak_v2(void)","callingConvention":"unknown","external":false}
+{"name":"bindtextdomain","entry":"00106750","bodyBytes":6,"signature":"undefined bindtextdomain(void)","callingConvention":"unknown","external":false}
+{"name":"inet_ntop","entry":"00106760","bodyBytes":6,"signature":"char * inet_ntop(int __af, void * __cp, char * __buf, socklen_t __len)","callingConvention":"unknown","external":false}
+{"name":"fileno","entry":"00106770","bodyBytes":6,"signature":"int fileno(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"getgid","entry":"00106780","bodyBytes":6,"signature":"__gid_t getgid(void)","callingConvention":"unknown","external":false}
+{"name":"readlink","entry":"00106790","bodyBytes":6,"signature":"ssize_t readlink(char * __path, char * __buf, size_t __len)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_set_v2","entry":"001067a0","bodyBytes":6,"signature":"undefined sudo_ev_set_v2(void)","callingConvention":"unknown","external":false}
+{"name":"__ctype_b_loc","entry":"001067b0","bodyBytes":6,"signature":"ushort * * __ctype_b_loc(void)","callingConvention":"unknown","external":false}
+{"name":"security_getenforce","entry":"001067c0","bodyBytes":6,"signature":"undefined security_getenforce(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_alloc_v2","entry":"001067d0","bodyBytes":6,"signature":"undefined sudo_ev_alloc_v2(void)","callingConvention":"unknown","external":false}
+{"name":"setsid","entry":"001067e0","bodyBytes":6,"signature":"__pid_t setsid(void)","callingConvention":"unknown","external":false}
+{"name":"strrchr","entry":"001067f0","bodyBytes":6,"signature":"char * strrchr(char * __s, int __c)","callingConvention":"unknown","external":false}
+{"name":"memchr","entry":"00106800","bodyBytes":6,"signature":"void * memchr(void * __s, int __c, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"__stack_chk_fail","entry":"00106810","bodyBytes":6,"signature":"undefined __stack_chk_fail(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_restore_v1","entry":"00106820","bodyBytes":6,"signature":"undefined sudo_term_restore_v1(void)","callingConvention":"unknown","external":false}
+{"name":"fputs","entry":"00106830","bodyBytes":6,"signature":"int fputs(char * __s, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"listen","entry":"00106840","bodyBytes":6,"signature":"int listen(int __fd, int __n)","callingConvention":"unknown","external":false}
+{"name":"openpty","entry":"00106850","bodyBytes":6,"signature":"undefined openpty(void)","callingConvention":"unknown","external":false}
+{"name":"killpg","entry":"00106860","bodyBytes":6,"signature":"int killpg(__pid_t __pgrp, int __sig)","callingConvention":"unknown","external":false}
+{"name":"sudo_dso_unload_v1","entry":"00106870","bodyBytes":6,"signature":"undefined sudo_dso_unload_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_dso_findsym_v1","entry":"00106880","bodyBytes":6,"signature":"undefined sudo_dso_findsym_v1(void)","callingConvention":"unknown","external":false}
+{"name":"getpwuid","entry":"00106890","bodyBytes":6,"signature":"passwd * getpwuid(__uid_t __uid)","callingConvention":"unknown","external":false}
+{"name":"fflush","entry":"001068a0","bodyBytes":6,"signature":"int fflush(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fopen","entry":"001068b0","bodyBytes":6,"signature":"FILE * fopen(char * __filename, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"sudo_lbuf_destroy_v1","entry":"001068c0","bodyBytes":6,"signature":"undefined sudo_lbuf_destroy_v1(void)","callingConvention":"unknown","external":false}
+{"name":"strlcpy","entry":"001068d0","bodyBytes":6,"signature":"undefined strlcpy(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_plugin_dir_path_v1","entry":"001068e0","bodyBytes":6,"signature":"undefined sudo_conf_plugin_dir_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_loopcontinue_v1","entry":"001068f0","bodyBytes":6,"signature":"undefined sudo_ev_loopcontinue_v1(void)","callingConvention":"unknown","external":false}
+{"name":"exit","entry":"00106900","bodyBytes":6,"signature":"void exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"fgetfilecon_raw","entry":"00106910","bodyBytes":6,"signature":"undefined fgetfilecon_raw(void)","callingConvention":"unknown","external":false}
+{"name":"execl","entry":"00106920","bodyBytes":6,"signature":"int execl(char * __path, char * __arg, ...)","callingConvention":"unknown","external":false}
+{"name":"sigsuspend","entry":"00106930","bodyBytes":6,"signature":"int sigsuspend(sigset_t * __set)","callingConvention":"unknown","external":false}
+{"name":"sigemptyset","entry":"00106940","bodyBytes":6,"signature":"int sigemptyset(sigset_t * __set)","callingConvention":"unknown","external":false}
+{"name":"sigaction","entry":"00106950","bodyBytes":6,"signature":"int sigaction(int __sig, sigaction * __act, sigaction * __oact)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_dispatch_v1","entry":"00106960","bodyBytes":6,"signature":"undefined sudo_ev_dispatch_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sigdelset","entry":"00106970","bodyBytes":6,"signature":"int sigdelset(sigset_t * __set, int __signo)","callingConvention":"unknown","external":false}
+{"name":"__asprintf_chk","entry":"00106980","bodyBytes":6,"signature":"undefined __asprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_add_v2","entry":"00106990","bodyBytes":6,"signature":"undefined sudo_ev_add_v2(void)","callingConvention":"unknown","external":false}
+{"name":"prctl","entry":"001069a0","bodyBytes":6,"signature":"int prctl(int __option, ...)","callingConvention":"unknown","external":false}
+{"name":"setegid","entry":"001069b0","bodyBytes":6,"signature":"int setegid(__gid_t __gid)","callingConvention":"unknown","external":false}
+{"name":"sudo_warn_set_conversation_v1","entry":"001069c0","bodyBytes":6,"signature":"undefined sudo_warn_set_conversation_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_set_active_instance_v1","entry":"001069d0","bodyBytes":6,"signature":"undefined sudo_debug_set_active_instance_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_copy_v1","entry":"001069e0","bodyBytes":6,"signature":"undefined sudo_term_copy_v1(void)","callingConvention":"unknown","external":false}
+{"name":"malloc","entry":"001069f0","bodyBytes":6,"signature":"void * malloc(size_t __size)","callingConvention":"unknown","external":false}
+{"name":"sudo_fatal_callback_register_v1","entry":"00106a00","bodyBytes":6,"signature":"undefined sudo_fatal_callback_register_v1(void)","callingConvention":"unknown","external":false}
+{"name":"process_vm_readv","entry":"00106a10","bodyBytes":6,"signature":"undefined process_vm_readv(void)","callingConvention":"unknown","external":false}
+{"name":"aa_change_onexec","entry":"00106a20","bodyBytes":6,"signature":"undefined aa_change_onexec(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_dso_strerror_v1","entry":"00106a30","bodyBytes":6,"signature":"undefined sudo_dso_strerror_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_read_v1","entry":"00106a40","bodyBytes":6,"signature":"undefined sudo_conf_read_v1(void)","callingConvention":"unknown","external":false}
+{"name":"reallocarray","entry":"00106a50","bodyBytes":6,"signature":"undefined reallocarray(void)","callingConvention":"unknown","external":false}
+{"name":"fchdir","entry":"00106a60","bodyBytes":6,"signature":"int fchdir(int __fd)","callingConvention":"unknown","external":false}
+{"name":"sudo_ttyname_dev_v1","entry":"00106a70","bodyBytes":6,"signature":"undefined sudo_ttyname_dev_v1(void)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_strtoull","entry":"00106a80","bodyBytes":6,"signature":"undefined __isoc23_strtoull(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_printf2_v1","entry":"00106a90","bodyBytes":6,"signature":"undefined sudo_debug_printf2_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_lbuf_init_v1","entry":"00106aa0","bodyBytes":6,"signature":"undefined sudo_lbuf_init_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_freezero","entry":"00106ab0","bodyBytes":6,"signature":"undefined sudo_freezero(void)","callingConvention":"unknown","external":false}
+{"name":"ftruncate","entry":"00106ac0","bodyBytes":6,"signature":"int ftruncate(int __fd, __off_t __length)","callingConvention":"unknown","external":false}
+{"name":"security_check_context","entry":"00106ad0","bodyBytes":6,"signature":"undefined security_check_context(void)","callingConvention":"unknown","external":false}
+{"name":"strcmp","entry":"00106ae0","bodyBytes":6,"signature":"int strcmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"getppid","entry":"00106af0","bodyBytes":6,"signature":"__pid_t getppid(void)","callingConvention":"unknown","external":false}
+{"name":"getrlimit","entry":"00106b00","bodyBytes":6,"signature":"int getrlimit(__rlimit_resource_t __resource, rlimit * __rlimits)","callingConvention":"unknown","external":false}
+{"name":"ioctl","entry":"00106b10","bodyBytes":6,"signature":"int ioctl(int __fd, ulong __request, ...)","callingConvention":"unknown","external":false}
+{"name":"tcsetpgrp","entry":"00106b20","bodyBytes":6,"signature":"int tcsetpgrp(int __fd, __pid_t __pgrp_id)","callingConvention":"unknown","external":false}
+{"name":"kill","entry":"00106b30","bodyBytes":6,"signature":"int kill(__pid_t __pid, int __sig)","callingConvention":"unknown","external":false}
+{"name":"context_role_set","entry":"00106b40","bodyBytes":6,"signature":"undefined context_role_set(void)","callingConvention":"unknown","external":false}
+{"name":"read","entry":"00106b50","bodyBytes":6,"signature":"ssize_t read(int __fd, void * __buf, size_t __nbytes)","callingConvention":"unknown","external":false}
+{"name":"getpid","entry":"00106b60","bodyBytes":6,"signature":"__pid_t getpid(void)","callingConvention":"unknown","external":false}
+{"name":"context_str","entry":"00106b70","bodyBytes":6,"signature":"undefined context_str(void)","callingConvention":"unknown","external":false}
+{"name":"chdir","entry":"00106b80","bodyBytes":6,"signature":"int chdir(char * __path)","callingConvention":"unknown","external":false}
+{"name":"sudo_warn_gettext_v1","entry":"00106b90","bodyBytes":6,"signature":"undefined sudo_warn_gettext_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_dso_load_v1","entry":"00106ba0","bodyBytes":6,"signature":"undefined sudo_dso_load_v1(void)","callingConvention":"unknown","external":false}
+{"name":"fread","entry":"00106bb0","bodyBytes":6,"signature":"size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"dup","entry":"00106bc0","bodyBytes":6,"signature":"int dup(int __fd)","callingConvention":"unknown","external":false}
+{"name":"sudo_mkstemps","entry":"00106bd0","bodyBytes":6,"signature":"undefined sudo_mkstemps(void)","callingConvention":"unknown","external":false}
+{"name":"sigaddset","entry":"00106be0","bodyBytes":6,"signature":"int sigaddset(sigset_t * __set, int __signo)","callingConvention":"unknown","external":false}
+{"name":"fgetc","entry":"00106bf0","bodyBytes":6,"signature":"int fgetc(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fgets","entry":"00106c00","bodyBytes":6,"signature":"char * fgets(char * __s, int __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"sudo_warn_nodebug_v1","entry":"00106c10","bodyBytes":6,"signature":"undefined sudo_warn_nodebug_v1(void)","callingConvention":"unknown","external":false}
+{"name":"selinux_trans_to_raw_context","entry":"00106c20","bodyBytes":6,"signature":"undefined selinux_trans_to_raw_context(void)","callingConvention":"unknown","external":false}
+{"name":"textdomain","entry":"00106c30","bodyBytes":6,"signature":"undefined textdomain(void)","callingConvention":"unknown","external":false}
+{"name":"aa_getcon","entry":"00106c40","bodyBytes":6,"signature":"undefined aa_getcon(void)","callingConvention":"unknown","external":false}
+{"name":"security_compute_relabel","entry":"00106c50","bodyBytes":6,"signature":"undefined security_compute_relabel(void)","callingConvention":"unknown","external":false}
+{"name":"gettimeofday","entry":"00106c60","bodyBytes":6,"signature":"int gettimeofday(timeval * __tv, __timezone_ptr_t __tz)","callingConvention":"unknown","external":false}
+{"name":"faccessat","entry":"00106c70","bodyBytes":6,"signature":"int faccessat(int __fd, char * __file, int __type, int __flag)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_execve2_v1","entry":"00106c80","bodyBytes":6,"signature":"undefined sudo_debug_execve2_v1(void)","callingConvention":"unknown","external":false}
+{"name":"memmove","entry":"00106c90","bodyBytes":6,"signature":"void * memmove(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"_exit","entry":"00106ca0","bodyBytes":6,"signature":"void _exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"__fprintf_chk","entry":"00106cb0","bodyBytes":6,"signature":"undefined __fprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"setpgid","entry":"00106cc0","bodyBytes":6,"signature":"int setpgid(__pid_t __pid, __pid_t __pgid)","callingConvention":"unknown","external":false}
+{"name":"getopt_long","entry":"00106cd0","bodyBytes":6,"signature":"undefined getopt_long(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_update_fd_v1","entry":"00106ce0","bodyBytes":6,"signature":"undefined sudo_debug_update_fd_v1(void)","callingConvention":"unknown","external":false}
+{"name":"getdelim","entry":"00106cf0","bodyBytes":6,"signature":"__ssize_t getdelim(char * * __lineptr, size_t * __n, int __delimiter, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"access","entry":"00106d00","bodyBytes":6,"signature":"int access(char * __name, int __type)","callingConvention":"unknown","external":false}
+{"name":"fstat","entry":"00106d10","bodyBytes":6,"signature":"int fstat(int __fd, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"fchown","entry":"00106d20","bodyBytes":6,"signature":"int fchown(int __fd, __uid_t __owner, __gid_t __group)","callingConvention":"unknown","external":false}
+{"name":"setkeycreatecon","entry":"00106d30","bodyBytes":6,"signature":"undefined setkeycreatecon(void)","callingConvention":"unknown","external":false}
+{"name":"fsetfilecon_raw","entry":"00106d40","bodyBytes":6,"signature":"undefined fsetfilecon_raw(void)","callingConvention":"unknown","external":false}
+{"name":"execve","entry":"00106d50","bodyBytes":6,"signature":"int execve(char * __path, char * * __argv, char * * __envp)","callingConvention":"unknown","external":false}
+{"name":"string_to_security_class","entry":"00106d60","bodyBytes":6,"signature":"undefined string_to_security_class(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_plugins_v1","entry":"00106d70","bodyBytes":6,"signature":"undefined sudo_conf_plugins_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_new_key_val_v1","entry":"00106d80","bodyBytes":6,"signature":"undefined sudo_new_key_val_v1(void)","callingConvention":"unknown","external":false}
+{"name":"freeifaddrs","entry":"00106d90","bodyBytes":6,"signature":"undefined freeifaddrs(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_isatty_v1","entry":"00106da0","bodyBytes":6,"signature":"undefined sudo_isatty_v1(void)","callingConvention":"unknown","external":false}
+{"name":"strpbrk","entry":"00106db0","bodyBytes":6,"signature":"char * strpbrk(char * __s, char * __accept)","callingConvention":"unknown","external":false}
+{"name":"sudo_arc4random_buf","entry":"00106dc0","bodyBytes":6,"signature":"undefined sudo_arc4random_buf(void)","callingConvention":"unknown","external":false}
+{"name":"getutxline","entry":"00106dd0","bodyBytes":6,"signature":"utmpx * getutxline(utmpx * __line)","callingConvention":"unknown","external":false}
+{"name":"context_type_set","entry":"00106de0","bodyBytes":6,"signature":"undefined context_type_set(void)","callingConvention":"unknown","external":false}
+{"name":"setgid","entry":"00106df0","bodyBytes":6,"signature":"int setgid(__gid_t __gid)","callingConvention":"unknown","external":false}
+{"name":"umask","entry":"00106e00","bodyBytes":6,"signature":"__mode_t umask(__mode_t __mask)","callingConvention":"unknown","external":false}
+{"name":"sudo_strtonum","entry":"00106e10","bodyBytes":6,"signature":"undefined sudo_strtonum(void)","callingConvention":"unknown","external":false}
+{"name":"setsockopt","entry":"00106e20","bodyBytes":6,"signature":"int setsockopt(int __fd, int __level, int __optname, void * __optval, socklen_t __optlen)","callingConvention":"unknown","external":false}
+{"name":"getpgid","entry":"00106e30","bodyBytes":6,"signature":"__pid_t getpgid(__pid_t __pid)","callingConvention":"unknown","external":false}
+{"name":"strtok_r","entry":"00106e40","bodyBytes":6,"signature":"char * strtok_r(char * __s, char * __delim, char * * __save_ptr)","callingConvention":"unknown","external":false}
+{"name":"strdup","entry":"00106e50","bodyBytes":6,"signature":"char * strdup(char * __s)","callingConvention":"unknown","external":false}
+{"name":"__vasprintf_chk","entry":"00106e60","bodyBytes":6,"signature":"undefined __vasprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_raw_v1","entry":"00106e70","bodyBytes":6,"signature":"undefined sudo_term_raw_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_free_v1","entry":"00106e80","bodyBytes":6,"signature":"undefined sudo_ev_free_v1(void)","callingConvention":"unknown","external":false}
+{"name":"dup3","entry":"00106e90","bodyBytes":6,"signature":"int dup3(int __fd, int __fd2, int __flags)","callingConvention":"unknown","external":false}
+{"name":"lseek","entry":"00106ea0","bodyBytes":6,"signature":"__off_t lseek(int __fd, __off_t __offset, int __whence)","callingConvention":"unknown","external":false}
+{"name":"setuid","entry":"00106eb0","bodyBytes":6,"signature":"int setuid(__uid_t __uid)","callingConvention":"unknown","external":false}
+{"name":"getifaddrs","entry":"00106ec0","bodyBytes":6,"signature":"undefined getifaddrs(void)","callingConvention":"unknown","external":false}
+{"name":"alarm","entry":"00106ed0","bodyBytes":6,"signature":"uint alarm(uint __seconds)","callingConvention":"unknown","external":false}
+{"name":"openat","entry":"00106ee0","bodyBytes":6,"signature":"int openat(int __fd, char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"sudo_fatal_nodebug_v1","entry":"00106ef0","bodyBytes":6,"signature":"undefined sudo_fatal_nodebug_v1(void)","callingConvention":"unknown","external":false}
+{"name":"context_new","entry":"00106f00","bodyBytes":6,"signature":"undefined context_new(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_askpass_path_v1","entry":"00106f10","bodyBytes":6,"signature":"undefined sudo_conf_askpass_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_fork_v1","entry":"00106f20","bodyBytes":6,"signature":"undefined sudo_debug_fork_v1(void)","callingConvention":"unknown","external":false}
+{"name":"fwrite","entry":"00106f30","bodyBytes":6,"signature":"size_t fwrite(void * __ptr, size_t __size, size_t __n, FILE * __s)","callingConvention":"unknown","external":false}
+{"name":"sudo_lbuf_append_v1","entry":"00106f40","bodyBytes":6,"signature":"undefined sudo_lbuf_append_v1(void)","callingConvention":"unknown","external":false}
+{"name":"close","entry":"00106f50","bodyBytes":6,"signature":"int close(int __fd)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_max_groups_v1","entry":"00106f60","bodyBytes":6,"signature":"undefined sudo_conf_max_groups_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_loop_v1","entry":"00106f70","bodyBytes":6,"signature":"undefined sudo_ev_loop_v1(void)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_strtol","entry":"00106f80","bodyBytes":6,"signature":"undefined __isoc23_strtol(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_lbuf_print_v1","entry":"00106f90","bodyBytes":6,"signature":"undefined sudo_lbuf_print_v1(void)","callingConvention":"unknown","external":false}
+{"name":"__read_chk","entry":"00106fa0","bodyBytes":6,"signature":"undefined __read_chk(void)","callingConvention":"unknown","external":false}
+{"name":"__cxa_finalize","entry":"00106fb0","bodyBytes":6,"signature":"undefined __cxa_finalize(void)","callingConvention":"unknown","external":false}
+{"name":"free","entry":"00106fb8","bodyBytes":6,"signature":"void free(void * __ptr)","callingConvention":"unknown","external":false}
+{"name":"FUN_00106fc0","entry":"00106fc0","bodyBytes":31,"signature":"undefined FUN_00106fc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00106ffe","entry":"00106ffe","bodyBytes":31,"signature":"undefined FUN_00106ffe(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107115","entry":"00107115","bodyBytes":32,"signature":"undefined FUN_00107115(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107135","entry":"00107135","bodyBytes":32,"signature":"undefined FUN_00107135(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107155","entry":"00107155","bodyBytes":32,"signature":"undefined FUN_00107155(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107175","entry":"00107175","bodyBytes":32,"signature":"undefined FUN_00107175(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107195","entry":"00107195","bodyBytes":32,"signature":"undefined FUN_00107195(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001071b5","entry":"001071b5","bodyBytes":32,"signature":"undefined FUN_001071b5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001071d5","entry":"001071d5","bodyBytes":32,"signature":"undefined FUN_001071d5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001071f5","entry":"001071f5","bodyBytes":32,"signature":"undefined FUN_001071f5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107215","entry":"00107215","bodyBytes":32,"signature":"undefined FUN_00107215(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107235","entry":"00107235","bodyBytes":32,"signature":"undefined FUN_00107235(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107255","entry":"00107255","bodyBytes":32,"signature":"undefined FUN_00107255(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107275","entry":"00107275","bodyBytes":32,"signature":"undefined FUN_00107275(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107295","entry":"00107295","bodyBytes":32,"signature":"undefined FUN_00107295(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001072b5","entry":"001072b5","bodyBytes":32,"signature":"undefined FUN_001072b5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001072d5","entry":"001072d5","bodyBytes":32,"signature":"undefined FUN_001072d5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001072f5","entry":"001072f5","bodyBytes":32,"signature":"undefined FUN_001072f5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107315","entry":"00107315","bodyBytes":32,"signature":"undefined FUN_00107315(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107335","entry":"00107335","bodyBytes":32,"signature":"undefined FUN_00107335(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107355","entry":"00107355","bodyBytes":32,"signature":"undefined FUN_00107355(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107375","entry":"00107375","bodyBytes":32,"signature":"undefined FUN_00107375(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107395","entry":"00107395","bodyBytes":32,"signature":"undefined FUN_00107395(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001073b5","entry":"001073b5","bodyBytes":32,"signature":"undefined FUN_001073b5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001073d5","entry":"001073d5","bodyBytes":32,"signature":"undefined FUN_001073d5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001073f5","entry":"001073f5","bodyBytes":32,"signature":"undefined FUN_001073f5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107415","entry":"00107415","bodyBytes":32,"signature":"undefined FUN_00107415(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107435","entry":"00107435","bodyBytes":32,"signature":"undefined FUN_00107435(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107455","entry":"00107455","bodyBytes":32,"signature":"undefined FUN_00107455(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107475","entry":"00107475","bodyBytes":32,"signature":"undefined FUN_00107475(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107495","entry":"00107495","bodyBytes":32,"signature":"undefined FUN_00107495(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001074b5","entry":"001074b5","bodyBytes":32,"signature":"undefined FUN_001074b5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001074d5","entry":"001074d5","bodyBytes":32,"signature":"undefined FUN_001074d5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001074f5","entry":"001074f5","bodyBytes":32,"signature":"undefined FUN_001074f5(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107515","entry":"00107515","bodyBytes":34,"signature":"undefined FUN_00107515(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00107537","entry":"00107537","bodyBytes":32,"signature":"undefined FUN_00107537(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"00107557","bodyBytes":6,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010755d","entry":"0010755d","bodyBytes":5,"signature":"undefined FUN_0010755d(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"00107562","bodyBytes":13,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"0010758e","bodyBytes":31,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001075ad","entry":"001075ad","bodyBytes":31,"signature":"undefined FUN_001075ad(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001075d1","entry":"001075d1","bodyBytes":31,"signature":"undefined FUN_001075d1(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"0010760f","bodyBytes":31,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"0010762e","bodyBytes":31,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"001076af","bodyBytes":31,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001076ce","entry":"001076ce","bodyBytes":31,"signature":"undefined FUN_001076ce(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001076ed","entry":"001076ed","bodyBytes":31,"signature":"undefined FUN_001076ed(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010772b","entry":"0010772b","bodyBytes":31,"signature":"undefined FUN_0010772b(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010776e","entry":"0010776e","bodyBytes":32,"signature":"undefined FUN_0010776e(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001077a0","entry":"001077a0","bodyBytes":10867,"signature":"undefined FUN_001077a0(void)","callingConvention":"unknown","external":false}
+{"name":"entry","entry":"0010a230","bodyBytes":34,"signature":"undefined entry(void)","callingConvention":"processEntry","external":false}
+{"name":"FUN_0010a260","entry":"0010a260","bodyBytes":34,"signature":"undefined FUN_0010a260(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010a290","entry":"0010a290","bodyBytes":51,"signature":"undefined FUN_0010a290(void)","callingConvention":"unknown","external":false}
+{"name":"_FINI_0","entry":"0010a2d0","bodyBytes":54,"signature":"undefined _FINI_0(void)","callingConvention":"unknown","external":false}
+{"name":"_INIT_0","entry":"0010a310","bodyBytes":9,"signature":"undefined _INIT_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010a320","entry":"0010a320","bodyBytes":1080,"signature":"undefined FUN_0010a320(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010a780","entry":"0010a780","bodyBytes":11,"signature":"undefined FUN_0010a780(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010a790","entry":"0010a790","bodyBytes":792,"signature":"undefined FUN_0010a790(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010aad0","entry":"0010aad0","bodyBytes":1420,"signature":"undefined FUN_0010aad0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b070","entry":"0010b070","bodyBytes":724,"signature":"undefined FUN_0010b070(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b360","entry":"0010b360","bodyBytes":578,"signature":"undefined FUN_0010b360(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b5b0","entry":"0010b5b0","bodyBytes":12,"signature":"undefined FUN_0010b5b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010b5c0","entry":"0010b5c0","bodyBytes":1312,"signature":"undefined FUN_0010b5c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010bb20","entry":"0010bb20","bodyBytes":994,"signature":"undefined FUN_0010bb20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010bf30","entry":"0010bf30","bodyBytes":515,"signature":"undefined FUN_0010bf30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010c160","entry":"0010c160","bodyBytes":343,"signature":"undefined FUN_0010c160(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010c2d0","entry":"0010c2d0","bodyBytes":147,"signature":"undefined FUN_0010c2d0(void)","callingConvention":"unknown","external":false}
+{"name":"getenv","entry":"0010c380","bodyBytes":97,"signature":"char * getenv(char * __name)","callingConvention":"__stdcall","external":false}
+{"name":"putenv","entry":"0010c3f0","bodyBytes":63,"signature":"int putenv(char * __string)","callingConvention":"__stdcall","external":false}
+{"name":"setenv","entry":"0010c440","bodyBytes":543,"signature":"int setenv(char * __name, char * __value, int __replace)","callingConvention":"__stdcall","external":false}
+{"name":"unsetenv","entry":"0010c680","bodyBytes":282,"signature":"int unsetenv(char * __name)","callingConvention":"__stdcall","external":false}
+{"name":"FUN_0010c7c0","entry":"0010c7c0","bodyBytes":5,"signature":"undefined FUN_0010c7c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010c7d0","entry":"0010c7d0","bodyBytes":1752,"signature":"undefined FUN_0010c7d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010cf00","entry":"0010cf00","bodyBytes":661,"signature":"undefined FUN_0010cf00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010d1b0","entry":"0010d1b0","bodyBytes":265,"signature":"undefined FUN_0010d1b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010d2d0","entry":"0010d2d0","bodyBytes":686,"signature":"undefined FUN_0010d2d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010d5a0","entry":"0010d5a0","bodyBytes":448,"signature":"undefined FUN_0010d5a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010d770","entry":"0010d770","bodyBytes":270,"signature":"undefined FUN_0010d770(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010d880","entry":"0010d880","bodyBytes":134,"signature":"undefined FUN_0010d880(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010d910","entry":"0010d910","bodyBytes":597,"signature":"undefined FUN_0010d910(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010db80","entry":"0010db80","bodyBytes":358,"signature":"undefined FUN_0010db80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010dd00","entry":"0010dd00","bodyBytes":425,"signature":"undefined FUN_0010dd00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010dec0","entry":"0010dec0","bodyBytes":624,"signature":"undefined FUN_0010dec0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010e140","entry":"0010e140","bodyBytes":474,"signature":"undefined FUN_0010e140(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010e320","entry":"0010e320","bodyBytes":327,"signature":"undefined FUN_0010e320(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010e470","entry":"0010e470","bodyBytes":138,"signature":"undefined FUN_0010e470(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010e500","entry":"0010e500","bodyBytes":488,"signature":"undefined FUN_0010e500(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010e6f0","entry":"0010e6f0","bodyBytes":175,"signature":"undefined FUN_0010e6f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010e7b0","entry":"0010e7b0","bodyBytes":2051,"signature":"undefined FUN_0010e7b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010f000","entry":"0010f000","bodyBytes":5742,"signature":"undefined FUN_0010f000(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00110700","entry":"00110700","bodyBytes":288,"signature":"undefined FUN_00110700(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00110830","entry":"00110830","bodyBytes":281,"signature":"undefined FUN_00110830(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00110950","entry":"00110950","bodyBytes":543,"signature":"undefined FUN_00110950(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00110b80","entry":"00110b80","bodyBytes":475,"signature":"undefined FUN_00110b80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00110d60","entry":"00110d60","bodyBytes":1026,"signature":"undefined FUN_00110d60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00111190","entry":"00111190","bodyBytes":183,"signature":"undefined FUN_00111190(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00111250","entry":"00111250","bodyBytes":515,"signature":"undefined FUN_00111250(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00111460","entry":"00111460","bodyBytes":515,"signature":"undefined FUN_00111460(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00111670","entry":"00111670","bodyBytes":613,"signature":"undefined FUN_00111670(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001118f0","entry":"001118f0","bodyBytes":613,"signature":"undefined FUN_001118f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00111b70","entry":"00111b70","bodyBytes":613,"signature":"undefined FUN_00111b70(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00111df0","entry":"00111df0","bodyBytes":390,"signature":"undefined FUN_00111df0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00111f80","entry":"00111f80","bodyBytes":398,"signature":"undefined FUN_00111f80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00112110","entry":"00112110","bodyBytes":109,"signature":"undefined FUN_00112110(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00112180","entry":"00112180","bodyBytes":709,"signature":"undefined FUN_00112180(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00112470","entry":"00112470","bodyBytes":476,"signature":"undefined FUN_00112470(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00112660","entry":"00112660","bodyBytes":407,"signature":"undefined FUN_00112660(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00112810","entry":"00112810","bodyBytes":247,"signature":"undefined FUN_00112810(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00112920","entry":"00112920","bodyBytes":1071,"signature":"undefined FUN_00112920(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00112d70","entry":"00112d70","bodyBytes":5092,"signature":"undefined FUN_00112d70(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00114170","entry":"00114170","bodyBytes":690,"signature":"undefined FUN_00114170(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00114430","entry":"00114430","bodyBytes":405,"signature":"undefined FUN_00114430(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001145e0","entry":"001145e0","bodyBytes":637,"signature":"undefined FUN_001145e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00114870","entry":"00114870","bodyBytes":1820,"signature":"undefined FUN_00114870(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00114ff0","entry":"00114ff0","bodyBytes":5295,"signature":"undefined FUN_00114ff0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00116500","entry":"00116500","bodyBytes":1197,"signature":"undefined FUN_00116500(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00116a10","entry":"00116a10","bodyBytes":17,"signature":"undefined FUN_00116a10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00116a30","entry":"00116a30","bodyBytes":1087,"signature":"undefined FUN_00116a30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00116e90","entry":"00116e90","bodyBytes":236,"signature":"undefined FUN_00116e90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00116f90","entry":"00116f90","bodyBytes":23,"signature":"undefined FUN_00116f90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00116fb0","entry":"00116fb0","bodyBytes":23,"signature":"undefined FUN_00116fb0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00116fe0","entry":"00116fe0","bodyBytes":265,"signature":"undefined FUN_00116fe0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001170f0","entry":"001170f0","bodyBytes":1199,"signature":"undefined FUN_001170f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001175c0","entry":"001175c0","bodyBytes":394,"signature":"undefined FUN_001175c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00117750","entry":"00117750","bodyBytes":591,"signature":"undefined FUN_00117750(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001179c0","entry":"001179c0","bodyBytes":904,"signature":"undefined FUN_001179c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00117d60","entry":"00117d60","bodyBytes":1145,"signature":"undefined FUN_00117d60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00118200","entry":"00118200","bodyBytes":879,"signature":"undefined FUN_00118200(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00118580","entry":"00118580","bodyBytes":530,"signature":"undefined FUN_00118580(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001187b0","entry":"001187b0","bodyBytes":3052,"signature":"undefined FUN_001187b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001193e0","entry":"001193e0","bodyBytes":725,"signature":"undefined FUN_001193e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001196d0","entry":"001196d0","bodyBytes":342,"signature":"undefined FUN_001196d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00119830","entry":"00119830","bodyBytes":339,"signature":"undefined FUN_00119830(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00119990","entry":"00119990","bodyBytes":825,"signature":"undefined FUN_00119990(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00119ce0","entry":"00119ce0","bodyBytes":7425,"signature":"undefined FUN_00119ce0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011ba60","entry":"0011ba60","bodyBytes":558,"signature":"undefined FUN_0011ba60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011bca0","entry":"0011bca0","bodyBytes":850,"signature":"undefined FUN_0011bca0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011c010","entry":"0011c010","bodyBytes":844,"signature":"undefined FUN_0011c010(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011c390","entry":"0011c390","bodyBytes":45,"signature":"undefined FUN_0011c390(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011c3d0","entry":"0011c3d0","bodyBytes":45,"signature":"undefined FUN_0011c3d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011c410","entry":"0011c410","bodyBytes":175,"signature":"undefined FUN_0011c410(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011c500","entry":"0011c500","bodyBytes":15,"signature":"undefined FUN_0011c500(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011c510","entry":"0011c510","bodyBytes":15,"signature":"undefined FUN_0011c510(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011c520","entry":"0011c520","bodyBytes":152,"signature":"undefined FUN_0011c520(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011c5c0","entry":"0011c5c0","bodyBytes":755,"signature":"undefined FUN_0011c5c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011c8f0","entry":"0011c8f0","bodyBytes":327,"signature":"undefined FUN_0011c8f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011ca40","entry":"0011ca40","bodyBytes":497,"signature":"undefined FUN_0011ca40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011cc60","entry":"0011cc60","bodyBytes":1317,"signature":"undefined FUN_0011cc60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011d1c0","entry":"0011d1c0","bodyBytes":817,"signature":"undefined FUN_0011d1c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011d510","entry":"0011d510","bodyBytes":1263,"signature":"undefined FUN_0011d510(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011da30","entry":"0011da30","bodyBytes":883,"signature":"undefined FUN_0011da30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011ddd0","entry":"0011ddd0","bodyBytes":268,"signature":"undefined FUN_0011ddd0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011def0","entry":"0011def0","bodyBytes":11,"signature":"undefined FUN_0011def0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011df00","entry":"0011df00","bodyBytes":208,"signature":"undefined FUN_0011df00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011dfe0","entry":"0011dfe0","bodyBytes":861,"signature":"undefined FUN_0011dfe0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011e360","entry":"0011e360","bodyBytes":933,"signature":"undefined FUN_0011e360(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011e730","entry":"0011e730","bodyBytes":6851,"signature":"undefined FUN_0011e730(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120260","entry":"00120260","bodyBytes":291,"signature":"undefined FUN_00120260(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001203a0","entry":"001203a0","bodyBytes":250,"signature":"undefined FUN_001203a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001204a0","entry":"001204a0","bodyBytes":187,"signature":"undefined FUN_001204a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120570","entry":"00120570","bodyBytes":82,"signature":"undefined FUN_00120570(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001205d0","entry":"001205d0","bodyBytes":64,"signature":"undefined FUN_001205d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120620","entry":"00120620","bodyBytes":136,"signature":"undefined FUN_00120620(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001206b0","entry":"001206b0","bodyBytes":64,"signature":"undefined FUN_001206b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120700","entry":"00120700","bodyBytes":289,"signature":"undefined FUN_00120700(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120840","entry":"00120840","bodyBytes":276,"signature":"undefined FUN_00120840(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120960","entry":"00120960","bodyBytes":437,"signature":"undefined FUN_00120960(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120b30","entry":"00120b30","bodyBytes":576,"signature":"undefined FUN_00120b30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120d80","entry":"00120d80","bodyBytes":523,"signature":"undefined FUN_00120d80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120fa0","entry":"00120fa0","bodyBytes":463,"signature":"undefined FUN_00120fa0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121180","entry":"00121180","bodyBytes":175,"signature":"undefined FUN_00121180(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121240","entry":"00121240","bodyBytes":556,"signature":"undefined FUN_00121240(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121480","entry":"00121480","bodyBytes":758,"signature":"undefined FUN_00121480(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001217a0","entry":"001217a0","bodyBytes":682,"signature":"undefined FUN_001217a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121a80","entry":"00121a80","bodyBytes":498,"signature":"undefined FUN_00121a80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121c90","entry":"00121c90","bodyBytes":546,"signature":"undefined FUN_00121c90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121ee0","entry":"00121ee0","bodyBytes":219,"signature":"undefined FUN_00121ee0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121fd0","entry":"00121fd0","bodyBytes":108,"signature":"undefined FUN_00121fd0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00122040","entry":"00122040","bodyBytes":389,"signature":"undefined FUN_00122040(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001221d0","entry":"001221d0","bodyBytes":1110,"signature":"undefined FUN_001221d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00122630","entry":"00122630","bodyBytes":2576,"signature":"undefined FUN_00122630(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123070","entry":"00123070","bodyBytes":507,"signature":"undefined FUN_00123070(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123270","entry":"00123270","bodyBytes":1121,"signature":"undefined FUN_00123270(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123700","entry":"00123700","bodyBytes":1249,"signature":"undefined FUN_00123700(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123c20","entry":"00123c20","bodyBytes":308,"signature":"undefined FUN_00123c20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123d60","entry":"00123d60","bodyBytes":16,"signature":"undefined FUN_00123d60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123d70","entry":"00123d70","bodyBytes":227,"signature":"undefined FUN_00123d70(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123e60","entry":"00123e60","bodyBytes":32,"signature":"undefined FUN_00123e60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123e80","entry":"00123e80","bodyBytes":133,"signature":"undefined FUN_00123e80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123f10","entry":"00123f10","bodyBytes":133,"signature":"undefined FUN_00123f10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123fa0","entry":"00123fa0","bodyBytes":7343,"signature":"undefined FUN_00123fa0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125c80","entry":"00125c80","bodyBytes":586,"signature":"undefined FUN_00125c80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125ed0","entry":"00125ed0","bodyBytes":1179,"signature":"undefined FUN_00125ed0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001263b0","entry":"001263b0","bodyBytes":369,"signature":"undefined FUN_001263b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00126540","entry":"00126540","bodyBytes":22,"signature":"undefined FUN_00126540(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00126560","entry":"00126560","bodyBytes":22,"signature":"undefined FUN_00126560(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00126580","entry":"00126580","bodyBytes":250,"signature":"undefined FUN_00126580(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00126680","entry":"00126680","bodyBytes":344,"signature":"undefined FUN_00126680(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001267e0","entry":"001267e0","bodyBytes":773,"signature":"undefined FUN_001267e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00126b00","entry":"00126b00","bodyBytes":255,"signature":"undefined FUN_00126b00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00126c20","entry":"00126c20","bodyBytes":111,"signature":"undefined FUN_00126c20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00126c90","entry":"00126c90","bodyBytes":561,"signature":"undefined FUN_00126c90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00126ed0","entry":"00126ed0","bodyBytes":608,"signature":"undefined FUN_00126ed0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00127140","entry":"00127140","bodyBytes":383,"signature":"undefined FUN_00127140(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001272d0","entry":"001272d0","bodyBytes":180,"signature":"undefined FUN_001272d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00127390","entry":"00127390","bodyBytes":254,"signature":"undefined FUN_00127390(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001274a0","entry":"001274a0","bodyBytes":590,"signature":"undefined FUN_001274a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00127700","entry":"00127700","bodyBytes":149,"signature":"undefined FUN_00127700(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001277a0","entry":"001277a0","bodyBytes":555,"signature":"undefined FUN_001277a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001279e0","entry":"001279e0","bodyBytes":2933,"signature":"undefined FUN_001279e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00128560","entry":"00128560","bodyBytes":112,"signature":"undefined FUN_00128560(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001285d0","entry":"001285d0","bodyBytes":112,"signature":"undefined FUN_001285d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00128640","entry":"00128640","bodyBytes":141,"signature":"undefined FUN_00128640(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001286d0","entry":"001286d0","bodyBytes":197,"signature":"undefined FUN_001286d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001287a0","entry":"001287a0","bodyBytes":139,"signature":"undefined FUN_001287a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00128830","entry":"00128830","bodyBytes":199,"signature":"undefined FUN_00128830(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00128900","entry":"00128900","bodyBytes":262,"signature":"undefined FUN_00128900(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00128a10","entry":"00128a10","bodyBytes":464,"signature":"undefined FUN_00128a10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00128c00","entry":"00128c00","bodyBytes":517,"signature":"undefined FUN_00128c00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00128e10","entry":"00128e10","bodyBytes":7,"signature":"undefined FUN_00128e10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00128e20","entry":"00128e20","bodyBytes":531,"signature":"undefined FUN_00128e20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00129050","entry":"00129050","bodyBytes":775,"signature":"undefined FUN_00129050(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00129380","entry":"00129380","bodyBytes":406,"signature":"undefined FUN_00129380(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00129530","entry":"00129530","bodyBytes":644,"signature":"undefined FUN_00129530(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001297c0","entry":"001297c0","bodyBytes":572,"signature":"undefined FUN_001297c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00129a00","entry":"00129a00","bodyBytes":22,"signature":"undefined FUN_00129a00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00129a20","entry":"00129a20","bodyBytes":782,"signature":"undefined FUN_00129a20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00129d70","entry":"00129d70","bodyBytes":332,"signature":"undefined FUN_00129d70(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00129ec0","entry":"00129ec0","bodyBytes":10,"signature":"undefined FUN_00129ec0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00129f00","entry":"00129f00","bodyBytes":501,"signature":"undefined FUN_00129f00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012a100","entry":"0012a100","bodyBytes":495,"signature":"undefined FUN_0012a100(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012a2f0","entry":"0012a2f0","bodyBytes":537,"signature":"undefined FUN_0012a2f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012a520","entry":"0012a520","bodyBytes":8959,"signature":"undefined FUN_0012a520(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012c8c0","entry":"0012c8c0","bodyBytes":15,"signature":"undefined FUN_0012c8c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012c8d0","entry":"0012c8d0","bodyBytes":310,"signature":"undefined FUN_0012c8d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012ca10","entry":"0012ca10","bodyBytes":1075,"signature":"undefined FUN_0012ca10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012ce60","entry":"0012ce60","bodyBytes":22,"signature":"undefined FUN_0012ce60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012ce80","entry":"0012ce80","bodyBytes":349,"signature":"undefined FUN_0012ce80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012cff0","entry":"0012cff0","bodyBytes":311,"signature":"undefined FUN_0012cff0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012d140","entry":"0012d140","bodyBytes":785,"signature":"undefined FUN_0012d140(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012d480","entry":"0012d480","bodyBytes":3583,"signature":"undefined FUN_0012d480(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012e290","entry":"0012e290","bodyBytes":28,"signature":"undefined FUN_0012e290(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012e2c0","entry":"0012e2c0","bodyBytes":1111,"signature":"undefined FUN_0012e2c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012e750","entry":"0012e750","bodyBytes":175,"signature":"undefined FUN_0012e750(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012e800","entry":"0012e800","bodyBytes":868,"signature":"undefined FUN_0012e800(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012eb80","entry":"0012eb80","bodyBytes":367,"signature":"undefined FUN_0012eb80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012ecf0","entry":"0012ecf0","bodyBytes":621,"signature":"undefined FUN_0012ecf0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012ef70","entry":"0012ef70","bodyBytes":797,"signature":"undefined FUN_0012ef70(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012f2b0","entry":"0012f2b0","bodyBytes":2129,"signature":"undefined FUN_0012f2b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012fb40","entry":"0012fb40","bodyBytes":1476,"signature":"undefined FUN_0012fb40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130120","entry":"00130120","bodyBytes":437,"signature":"undefined FUN_00130120(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001302e0","entry":"001302e0","bodyBytes":1207,"signature":"undefined FUN_001302e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001307c0","entry":"001307c0","bodyBytes":205,"signature":"undefined FUN_001307c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130890","entry":"00130890","bodyBytes":531,"signature":"undefined FUN_00130890(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130ab0","entry":"00130ab0","bodyBytes":45,"signature":"undefined FUN_00130ab0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130ae0","entry":"00130ae0","bodyBytes":37,"signature":"undefined FUN_00130ae0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130b10","entry":"00130b10","bodyBytes":46,"signature":"undefined FUN_00130b10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130b40","entry":"00130b40","bodyBytes":89,"signature":"undefined FUN_00130b40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130ba0","entry":"00130ba0","bodyBytes":78,"signature":"undefined FUN_00130ba0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130bf0","entry":"00130bf0","bodyBytes":46,"signature":"undefined FUN_00130bf0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130c20","entry":"00130c20","bodyBytes":46,"signature":"undefined FUN_00130c20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130c50","entry":"00130c50","bodyBytes":45,"signature":"undefined FUN_00130c50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130c80","entry":"00130c80","bodyBytes":25,"signature":"undefined FUN_00130c80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130ca0","entry":"00130ca0","bodyBytes":25,"signature":"undefined FUN_00130ca0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130cc0","entry":"00130cc0","bodyBytes":25,"signature":"undefined FUN_00130cc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130ce0","entry":"00130ce0","bodyBytes":25,"signature":"undefined FUN_00130ce0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130d00","entry":"00130d00","bodyBytes":31,"signature":"undefined FUN_00130d00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130d30","entry":"00130d30","bodyBytes":25,"signature":"undefined FUN_00130d30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130d50","entry":"00130d50","bodyBytes":25,"signature":"undefined FUN_00130d50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130d70","entry":"00130d70","bodyBytes":25,"signature":"undefined FUN_00130d70(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130d90","entry":"00130d90","bodyBytes":25,"signature":"undefined FUN_00130d90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130db0","entry":"00130db0","bodyBytes":31,"signature":"undefined FUN_00130db0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130de0","entry":"00130de0","bodyBytes":25,"signature":"undefined FUN_00130de0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130e00","entry":"00130e00","bodyBytes":25,"signature":"undefined FUN_00130e00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130e20","entry":"00130e20","bodyBytes":25,"signature":"undefined FUN_00130e20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130e40","entry":"00130e40","bodyBytes":25,"signature":"undefined FUN_00130e40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130e60","entry":"00130e60","bodyBytes":31,"signature":"undefined FUN_00130e60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130e90","entry":"00130e90","bodyBytes":25,"signature":"undefined FUN_00130e90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130eb0","entry":"00130eb0","bodyBytes":25,"signature":"undefined FUN_00130eb0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130ed0","entry":"00130ed0","bodyBytes":25,"signature":"undefined FUN_00130ed0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130ef0","entry":"00130ef0","bodyBytes":25,"signature":"undefined FUN_00130ef0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130f10","entry":"00130f10","bodyBytes":31,"signature":"undefined FUN_00130f10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130f40","entry":"00130f40","bodyBytes":25,"signature":"undefined FUN_00130f40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130f60","entry":"00130f60","bodyBytes":25,"signature":"undefined FUN_00130f60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130f80","entry":"00130f80","bodyBytes":25,"signature":"undefined FUN_00130f80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130fa0","entry":"00130fa0","bodyBytes":25,"signature":"undefined FUN_00130fa0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130fc0","entry":"00130fc0","bodyBytes":31,"signature":"undefined FUN_00130fc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00130ff0","entry":"00130ff0","bodyBytes":25,"signature":"undefined FUN_00130ff0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131010","entry":"00131010","bodyBytes":25,"signature":"undefined FUN_00131010(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131030","entry":"00131030","bodyBytes":25,"signature":"undefined FUN_00131030(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131050","entry":"00131050","bodyBytes":25,"signature":"undefined FUN_00131050(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131070","entry":"00131070","bodyBytes":31,"signature":"undefined FUN_00131070(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001310a0","entry":"001310a0","bodyBytes":25,"signature":"undefined FUN_001310a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001310c0","entry":"001310c0","bodyBytes":25,"signature":"undefined FUN_001310c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001310e0","entry":"001310e0","bodyBytes":25,"signature":"undefined FUN_001310e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131100","entry":"00131100","bodyBytes":25,"signature":"undefined FUN_00131100(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131120","entry":"00131120","bodyBytes":31,"signature":"undefined FUN_00131120(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131150","entry":"00131150","bodyBytes":25,"signature":"undefined FUN_00131150(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131170","entry":"00131170","bodyBytes":25,"signature":"undefined FUN_00131170(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131190","entry":"00131190","bodyBytes":25,"signature":"undefined FUN_00131190(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001311b0","entry":"001311b0","bodyBytes":25,"signature":"undefined FUN_001311b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001311d0","entry":"001311d0","bodyBytes":31,"signature":"undefined FUN_001311d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131200","entry":"00131200","bodyBytes":12,"signature":"undefined FUN_00131200(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131210","entry":"00131210","bodyBytes":12,"signature":"undefined FUN_00131210(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131220","entry":"00131220","bodyBytes":37,"signature":"undefined FUN_00131220(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131250","entry":"00131250","bodyBytes":114,"signature":"undefined FUN_00131250(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001312f0","entry":"001312f0","bodyBytes":200,"signature":"undefined FUN_001312f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001313c0","entry":"001313c0","bodyBytes":1352,"signature":"undefined FUN_001313c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131950","entry":"00131950","bodyBytes":309,"signature":"undefined FUN_00131950(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131aa0","entry":"00131aa0","bodyBytes":12,"signature":"undefined FUN_00131aa0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131ab0","entry":"00131ab0","bodyBytes":10,"signature":"undefined FUN_00131ab0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131ac0","entry":"00131ac0","bodyBytes":220,"signature":"undefined FUN_00131ac0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131bb0","entry":"00131bb0","bodyBytes":552,"signature":"undefined FUN_00131bb0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131db7","entry":"00131db7","bodyBytes":209,"signature":"undefined FUN_00131db7(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"00131eb0","bodyBytes":1088,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00132330","entry":"00132330","bodyBytes":823,"signature":"undefined FUN_00132330(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001326b0","entry":"001326b0","bodyBytes":2988,"signature":"undefined FUN_001326b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00133320","entry":"00133320","bodyBytes":1911,"signature":"undefined FUN_00133320(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00133b10","entry":"00133b10","bodyBytes":3447,"signature":"undefined FUN_00133b10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001348e0","entry":"001348e0","bodyBytes":1948,"signature":"undefined FUN_001348e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00135120","entry":"00135120","bodyBytes":685,"signature":"undefined FUN_00135120(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00135400","entry":"00135400","bodyBytes":5378,"signature":"undefined FUN_00135400(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001369a0","entry":"001369a0","bodyBytes":1098,"signature":"undefined FUN_001369a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00136e40","entry":"00136e40","bodyBytes":13,"signature":"undefined FUN_00136e40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00136e50","entry":"00136e50","bodyBytes":488,"signature":"undefined FUN_00136e50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001370a0","entry":"001370a0","bodyBytes":62,"signature":"undefined FUN_001370a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001370e0","entry":"001370e0","bodyBytes":7,"signature":"undefined FUN_001370e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001370f0","entry":"001370f0","bodyBytes":226,"signature":"undefined FUN_001370f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001371f0","entry":"001371f0","bodyBytes":176,"signature":"undefined FUN_001371f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001372c0","entry":"001372c0","bodyBytes":204,"signature":"undefined FUN_001372c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001373a0","entry":"001373a0","bodyBytes":176,"signature":"undefined FUN_001373a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00137460","entry":"00137460","bodyBytes":204,"signature":"undefined FUN_00137460(void)","callingConvention":"unknown","external":false}
+{"name":"_DT_FINI","entry":"00137538","bodyBytes":9,"signature":"undefined _DT_FINI(void)","callingConvention":"unknown","external":false}
+{"name":"__printf_chk","entry":"0014e000","bodyBytes":1,"signature":"undefined __printf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"getegid","entry":"0014e008","bodyBytes":1,"signature":"__gid_t getegid(void)","callingConvention":"unknown","external":false}
+{"name":"__errno_location","entry":"0014e010","bodyBytes":1,"signature":"int * __errno_location(void)","callingConvention":"unknown","external":false}
+{"name":"tzset","entry":"0014e018","bodyBytes":1,"signature":"void tzset(void)","callingConvention":"unknown","external":false}
+{"name":"getgroups","entry":"0014e020","bodyBytes":1,"signature":"int getgroups(int __size, __gid_t * __list)","callingConvention":"unknown","external":false}
+{"name":"bind","entry":"0014e028","bodyBytes":1,"signature":"int bind(int __fd, sockaddr * __addr, socklen_t __len)","callingConvention":"unknown","external":false}
+{"name":"pututxline","entry":"0014e030","bodyBytes":1,"signature":"utmpx * pututxline(utmpx * __utmpx)","callingConvention":"unknown","external":false}
+{"name":"sudo_mmap_free_v1","entry":"0014e038","bodyBytes":1,"signature":"undefined sudo_mmap_free_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_sig2str","entry":"0014e040","bodyBytes":1,"signature":"undefined sudo_sig2str(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_warnx_nodebug_v1","entry":"0014e048","bodyBytes":1,"signature":"undefined sudo_warnx_nodebug_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_basename_v1","entry":"0014e050","bodyBytes":1,"signature":"undefined sudo_basename_v1(void)","callingConvention":"unknown","external":false}
+{"name":"setresuid","entry":"0014e058","bodyBytes":1,"signature":"int setresuid(__uid_t __ruid, __uid_t __euid, __uid_t __suid)","callingConvention":"unknown","external":false}
+{"name":"sudo_getprogname","entry":"0014e060","bodyBytes":1,"signature":"undefined sudo_getprogname(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_pw_dup","entry":"0014e068","bodyBytes":1,"signature":"undefined sudo_pw_dup(void)","callingConvention":"unknown","external":false}
+{"name":"endutxent","entry":"0014e070","bodyBytes":1,"signature":"void endutxent(void)","callingConvention":"unknown","external":false}
+{"name":"getprevcon","entry":"0014e078","bodyBytes":1,"signature":"undefined getprevcon(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_get_fds_v1","entry":"0014e080","bodyBytes":1,"signature":"undefined sudo_debug_get_fds_v1(void)","callingConvention":"unknown","external":false}
+{"name":"socket","entry":"0014e088","bodyBytes":1,"signature":"int socket(int __domain, int __type, int __protocol)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_disable_coredump_v1","entry":"0014e090","bodyBytes":1,"signature":"undefined sudo_conf_disable_coredump_v1(void)","callingConvention":"unknown","external":false}
+{"name":"setpriority","entry":"0014e098","bodyBytes":1,"signature":"int setpriority(__priority_which_t __which, id_t __who, int __prio)","callingConvention":"unknown","external":false}
+{"name":"sudo_gettime_real_v1","entry":"0014e0a0","bodyBytes":1,"signature":"undefined sudo_gettime_real_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_base_alloc_v1","entry":"0014e0a8","bodyBytes":1,"signature":"undefined sudo_ev_base_alloc_v1(void)","callingConvention":"unknown","external":false}
+{"name":"getpgrp","entry":"0014e0b0","bodyBytes":1,"signature":"__pid_t getpgrp(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_group_source_v1","entry":"0014e0b8","bodyBytes":1,"signature":"undefined sudo_conf_group_source_v1(void)","callingConvention":"unknown","external":false}
+{"name":"accept","entry":"0014e0c0","bodyBytes":1,"signature":"int accept(int __fd, sockaddr * __addr, socklen_t * __addr_len)","callingConvention":"unknown","external":false}
+{"name":"sigfillset","entry":"0014e0c8","bodyBytes":1,"signature":"int sigfillset(sigset_t * __set)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_intercept_path_v1","entry":"0014e0d0","bodyBytes":1,"signature":"undefined sudo_conf_intercept_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_strtomode_v2","entry":"0014e0d8","bodyBytes":1,"signature":"undefined sudo_strtomode_v2(void)","callingConvention":"unknown","external":false}
+{"name":"recv","entry":"0014e0e0","bodyBytes":1,"signature":"ssize_t recv(int __fd, void * __buf, size_t __n, int __flags)","callingConvention":"unknown","external":false}
+{"name":"strerror","entry":"0014e0e8","bodyBytes":1,"signature":"char * strerror(int __errnum)","callingConvention":"unknown","external":false}
+{"name":"audit_open","entry":"0014e0f0","bodyBytes":1,"signature":"undefined audit_open(void)","callingConvention":"unknown","external":false}
+{"name":"initprogname2","entry":"0014e0f8","bodyBytes":1,"signature":"undefined initprogname2(void)","callingConvention":"unknown","external":false}
+{"name":"write","entry":"0014e100","bodyBytes":1,"signature":"ssize_t write(int __fd, void * __buf, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"strchr","entry":"0014e108","bodyBytes":1,"signature":"char * strchr(char * __s, int __c)","callingConvention":"unknown","external":false}
+{"name":"__explicit_bzero_chk","entry":"0014e110","bodyBytes":1,"signature":"undefined __explicit_bzero_chk(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_setgroups_v1","entry":"0014e118","bodyBytes":1,"signature":"undefined sudo_setgroups_v1(void)","callingConvention":"unknown","external":false}
+{"name":"seteuid","entry":"0014e120","bodyBytes":1,"signature":"int seteuid(__uid_t __uid)","callingConvention":"unknown","external":false}
+{"name":"strspn","entry":"0014e128","bodyBytes":1,"signature":"size_t strspn(char * __s, char * __accept)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_noexec_path_v1","entry":"0014e130","bodyBytes":1,"signature":"undefined sudo_conf_noexec_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_closefrom","entry":"0014e138","bodyBytes":1,"signature":"undefined sudo_closefrom(void)","callingConvention":"unknown","external":false}
+{"name":"freecon","entry":"0014e140","bodyBytes":1,"signature":"undefined freecon(void)","callingConvention":"unknown","external":false}
+{"name":"strlen","entry":"0014e148","bodyBytes":1,"signature":"size_t strlen(char * __s)","callingConvention":"unknown","external":false}
+{"name":"fexecve","entry":"0014e150","bodyBytes":1,"signature":"int fexecve(int __fd, char * * __argv, char * * __envp)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_base_setdef_v1","entry":"0014e158","bodyBytes":1,"signature":"undefined sudo_ev_base_setdef_v1(void)","callingConvention":"unknown","external":false}
+{"name":"unlink","entry":"0014e160","bodyBytes":1,"signature":"int unlink(char * __name)","callingConvention":"unknown","external":false}
+{"name":"strncmp","entry":"0014e168","bodyBytes":1,"signature":"int strncmp(char * __s1, char * __s2, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"sudo_strtobool_v1","entry":"0014e170","bodyBytes":1,"signature":"undefined sudo_strtobool_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_strtoid_v2","entry":"0014e178","bodyBytes":1,"signature":"undefined sudo_strtoid_v2(void)","callingConvention":"unknown","external":false}
+{"name":"setutxent","entry":"0014e180","bodyBytes":1,"signature":"void setutxent(void)","callingConvention":"unknown","external":false}
+{"name":"sigprocmask","entry":"0014e188","bodyBytes":1,"signature":"int sigprocmask(int __how, sigset_t * __set, sigset_t * __oset)","callingConvention":"unknown","external":false}
+{"name":"getuid","entry":"0014e190","bodyBytes":1,"signature":"__uid_t getuid(void)","callingConvention":"unknown","external":false}
+{"name":"process_vm_writev","entry":"0014e198","bodyBytes":1,"signature":"undefined process_vm_writev(void)","callingConvention":"unknown","external":false}
+{"name":"send","entry":"0014e1a0","bodyBytes":1,"signature":"ssize_t send(int __fd, void * __buf, size_t __n, int __flags)","callingConvention":"unknown","external":false}
+{"name":"getcwd","entry":"0014e1a8","bodyBytes":1,"signature":"char * getcwd(char * __buf, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"strncpy","entry":"0014e1b0","bodyBytes":1,"signature":"char * strncpy(char * __dest, char * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_pending_v2","entry":"0014e1b8","bodyBytes":1,"signature":"undefined sudo_ev_pending_v2(void)","callingConvention":"unknown","external":false}
+{"name":"memset","entry":"0014e1c0","bodyBytes":1,"signature":"void * memset(void * __s, int __c, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"getsid","entry":"0014e1c8","bodyBytes":1,"signature":"__pid_t getsid(__pid_t __pid)","callingConvention":"unknown","external":false}
+{"name":"fcntl","entry":"0014e1d0","bodyBytes":1,"signature":"int fcntl(int __fd, int __cmd, ...)","callingConvention":"unknown","external":false}
+{"name":"geteuid","entry":"0014e1d8","bodyBytes":1,"signature":"__uid_t geteuid(void)","callingConvention":"unknown","external":false}
+{"name":"utimensat","entry":"0014e1e0","bodyBytes":1,"signature":"int utimensat(int __fd, char * __path, timespec * __times, int __flags)","callingConvention":"unknown","external":false}
+{"name":"is_selinux_enabled","entry":"0014e1e8","bodyBytes":1,"signature":"undefined is_selinux_enabled(void)","callingConvention":"unknown","external":false}
+{"name":"__snprintf_chk","entry":"0014e1f0","bodyBytes":1,"signature":"undefined __snprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"tcgetpgrp","entry":"0014e1f8","bodyBytes":1,"signature":"__pid_t tcgetpgrp(int __fd)","callingConvention":"unknown","external":false}
+{"name":"fsetfilecon","entry":"0014e200","bodyBytes":1,"signature":"undefined fsetfilecon(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_noecho_v1","entry":"0014e208","bodyBytes":1,"signature":"undefined sudo_term_noecho_v1(void)","callingConvention":"unknown","external":false}
+{"name":"setexeccon","entry":"0014e210","bodyBytes":1,"signature":"undefined setexeccon(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_debug_files_v1","entry":"0014e218","bodyBytes":1,"signature":"undefined sudo_conf_debug_files_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_loopbreak_v1","entry":"0014e220","bodyBytes":1,"signature":"undefined sudo_ev_loopbreak_v1(void)","callingConvention":"unknown","external":false}
+{"name":"chown","entry":"0014e228","bodyBytes":1,"signature":"int chown(char * __file, __uid_t __owner, __gid_t __group)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_probe_interfaces_v1","entry":"0014e230","bodyBytes":1,"signature":"undefined sudo_conf_probe_interfaces_v1(void)","callingConvention":"unknown","external":false}
+{"name":"pipe2","entry":"0014e238","bodyBytes":1,"signature":"int pipe2(int * __pipedes, int __flags)","callingConvention":"unknown","external":false}
+{"name":"sysconf","entry":"0014e240","bodyBytes":1,"signature":"long sysconf(int __name)","callingConvention":"unknown","external":false}
+{"name":"__assert_fail","entry":"0014e248","bodyBytes":1,"signature":"void __assert_fail(char * __assertion, char * __file, uint __line, char * __function)","callingConvention":"unknown","external":false}
+{"name":"calloc","entry":"0014e250","bodyBytes":1,"signature":"void * calloc(size_t __nmemb, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_register_v2","entry":"0014e258","bodyBytes":1,"signature":"undefined sudo_debug_register_v2(void)","callingConvention":"unknown","external":false}
+{"name":"dcgettext","entry":"0014e260","bodyBytes":1,"signature":"undefined dcgettext(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_get_ttysize_v2","entry":"0014e268","bodyBytes":1,"signature":"undefined sudo_get_ttysize_v2(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_is_raw_v1","entry":"0014e270","bodyBytes":1,"signature":"undefined sudo_term_is_raw_v1(void)","callingConvention":"unknown","external":false}
+{"name":"open","entry":"0014e278","bodyBytes":1,"signature":"int open(char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"__libc_start_main","entry":"0014e280","bodyBytes":1,"signature":"undefined __libc_start_main(void)","callingConvention":"unknown","external":false}
+{"name":"sleep","entry":"0014e288","bodyBytes":1,"signature":"uint sleep(uint __seconds)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_needed_v1","entry":"0014e290","bodyBytes":1,"signature":"undefined sudo_debug_needed_v1(void)","callingConvention":"unknown","external":false}
+{"name":"context_free","entry":"0014e298","bodyBytes":1,"signature":"undefined context_free(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_parse_gids_v1","entry":"0014e2a0","bodyBytes":1,"signature":"undefined sudo_parse_gids_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_mmap_allocarray_v1","entry":"0014e2a8","bodyBytes":1,"signature":"undefined sudo_mmap_allocarray_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_got_break_v1","entry":"0014e2b0","bodyBytes":1,"signature":"undefined sudo_ev_got_break_v1(void)","callingConvention":"unknown","external":false}
+{"name":"waitpid","entry":"0014e2b8","bodyBytes":1,"signature":"__pid_t waitpid(__pid_t __pid, int * __stat_loc, int __options)","callingConvention":"unknown","external":false}
+{"name":"sudo_strsplit_v1","entry":"0014e2c0","bodyBytes":1,"signature":"undefined sudo_strsplit_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_base_free_v1","entry":"0014e2c8","bodyBytes":1,"signature":"undefined sudo_ev_base_free_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_fatalx_nodebug_v1","entry":"0014e2d0","bodyBytes":1,"signature":"undefined sudo_fatalx_nodebug_v1(void)","callingConvention":"unknown","external":false}
+{"name":"getpwnam","entry":"0014e2d8","bodyBytes":1,"signature":"passwd * getpwnam(char * __name)","callingConvention":"unknown","external":false}
+{"name":"get_default_type","entry":"0014e2e0","bodyBytes":1,"signature":"undefined get_default_type(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_del_v1","entry":"0014e2e8","bodyBytes":1,"signature":"undefined sudo_ev_del_v1(void)","callingConvention":"unknown","external":false}
+{"name":"__vsnprintf_chk","entry":"0014e2f0","bodyBytes":1,"signature":"undefined __vsnprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"0014e2f8","bodyBytes":1,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"ptrace","entry":"0014e300","bodyBytes":1,"signature":"long ptrace(__ptrace_request __request, ...)","callingConvention":"unknown","external":false}
+{"name":"sudo_fatal_callback_deregister_v1","entry":"0014e308","bodyBytes":1,"signature":"undefined sudo_fatal_callback_deregister_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_sesh_path_v1","entry":"0014e310","bodyBytes":1,"signature":"undefined sudo_conf_sesh_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_getgrouplist2_v1","entry":"0014e318","bodyBytes":1,"signature":"undefined sudo_getgrouplist2_v1(void)","callingConvention":"unknown","external":false}
+{"name":"socketpair","entry":"0014e320","bodyBytes":1,"signature":"int socketpair(int __domain, int __type, int __protocol, int * __fds)","callingConvention":"unknown","external":false}
+{"name":"setlocale","entry":"0014e328","bodyBytes":1,"signature":"char * setlocale(int __category, char * __locale)","callingConvention":"unknown","external":false}
+{"name":"stat","entry":"0014e330","bodyBytes":1,"signature":"int stat(char * __file, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"setrlimit","entry":"0014e338","bodyBytes":1,"signature":"int setrlimit(__rlimit_resource_t __resource, rlimit * __rlimits)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_got_exit_v1","entry":"0014e340","bodyBytes":1,"signature":"undefined sudo_ev_got_exit_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_loopexit_v1","entry":"0014e348","bodyBytes":1,"signature":"undefined sudo_ev_loopexit_v1(void)","callingConvention":"unknown","external":false}
+{"name":"audit_log_user_message","entry":"0014e350","bodyBytes":1,"signature":"undefined audit_log_user_message(void)","callingConvention":"unknown","external":false}
+{"name":"getsockname","entry":"0014e358","bodyBytes":1,"signature":"int getsockname(int __fd, sockaddr * __addr, socklen_t * __len)","callingConvention":"unknown","external":false}
+{"name":"dup2","entry":"0014e360","bodyBytes":1,"signature":"int dup2(int __fd, int __fd2)","callingConvention":"unknown","external":false}
+{"name":"chroot","entry":"0014e368","bodyBytes":1,"signature":"int chroot(char * __path)","callingConvention":"unknown","external":false}
+{"name":"getgrnam","entry":"0014e370","bodyBytes":1,"signature":"group * getgrnam(char * __name)","callingConvention":"unknown","external":false}
+{"name":"futimens","entry":"0014e378","bodyBytes":1,"signature":"int futimens(int __fd, timespec * __times)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_get_active_instance_v1","entry":"0014e380","bodyBytes":1,"signature":"undefined sudo_debug_get_active_instance_v1(void)","callingConvention":"unknown","external":false}
+{"name":"fgetfilecon","entry":"0014e388","bodyBytes":1,"signature":"undefined fgetfilecon(void)","callingConvention":"unknown","external":false}
+{"name":"fclose","entry":"0014e390","bodyBytes":1,"signature":"int fclose(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"sudo_gethostname_v1","entry":"0014e398","bodyBytes":1,"signature":"undefined sudo_gethostname_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_cbreak_v2","entry":"0014e3a0","bodyBytes":1,"signature":"undefined sudo_term_cbreak_v2(void)","callingConvention":"unknown","external":false}
+{"name":"bindtextdomain","entry":"0014e3a8","bodyBytes":1,"signature":"undefined bindtextdomain(void)","callingConvention":"unknown","external":false}
+{"name":"inet_ntop","entry":"0014e3b0","bodyBytes":1,"signature":"char * inet_ntop(int __af, void * __cp, char * __buf, socklen_t __len)","callingConvention":"unknown","external":false}
+{"name":"fileno","entry":"0014e3b8","bodyBytes":1,"signature":"int fileno(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"getgid","entry":"0014e3c0","bodyBytes":1,"signature":"__gid_t getgid(void)","callingConvention":"unknown","external":false}
+{"name":"readlink","entry":"0014e3c8","bodyBytes":1,"signature":"ssize_t readlink(char * __path, char * __buf, size_t __len)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_set_v2","entry":"0014e3d0","bodyBytes":1,"signature":"undefined sudo_ev_set_v2(void)","callingConvention":"unknown","external":false}
+{"name":"__ctype_b_loc","entry":"0014e3d8","bodyBytes":1,"signature":"ushort * * __ctype_b_loc(void)","callingConvention":"unknown","external":false}
+{"name":"security_getenforce","entry":"0014e3e0","bodyBytes":1,"signature":"undefined security_getenforce(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_alloc_v2","entry":"0014e3e8","bodyBytes":1,"signature":"undefined sudo_ev_alloc_v2(void)","callingConvention":"unknown","external":false}
+{"name":"setsid","entry":"0014e3f0","bodyBytes":1,"signature":"__pid_t setsid(void)","callingConvention":"unknown","external":false}
+{"name":"strrchr","entry":"0014e3f8","bodyBytes":1,"signature":"char * strrchr(char * __s, int __c)","callingConvention":"unknown","external":false}
+{"name":"memchr","entry":"0014e400","bodyBytes":1,"signature":"void * memchr(void * __s, int __c, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"__stack_chk_fail","entry":"0014e408","bodyBytes":1,"signature":"undefined __stack_chk_fail(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_restore_v1","entry":"0014e410","bodyBytes":1,"signature":"undefined sudo_term_restore_v1(void)","callingConvention":"unknown","external":false}
+{"name":"fputs","entry":"0014e418","bodyBytes":1,"signature":"int fputs(char * __s, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"listen","entry":"0014e420","bodyBytes":1,"signature":"int listen(int __fd, int __n)","callingConvention":"unknown","external":false}
+{"name":"openpty","entry":"0014e428","bodyBytes":1,"signature":"undefined openpty(void)","callingConvention":"unknown","external":false}
+{"name":"killpg","entry":"0014e430","bodyBytes":1,"signature":"int killpg(__pid_t __pgrp, int __sig)","callingConvention":"unknown","external":false}
+{"name":"sudo_dso_unload_v1","entry":"0014e438","bodyBytes":1,"signature":"undefined sudo_dso_unload_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_dso_findsym_v1","entry":"0014e440","bodyBytes":1,"signature":"undefined sudo_dso_findsym_v1(void)","callingConvention":"unknown","external":false}
+{"name":"getpwuid","entry":"0014e448","bodyBytes":1,"signature":"passwd * getpwuid(__uid_t __uid)","callingConvention":"unknown","external":false}
+{"name":"fflush","entry":"0014e450","bodyBytes":1,"signature":"int fflush(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fopen","entry":"0014e458","bodyBytes":1,"signature":"FILE * fopen(char * __filename, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"sudo_lbuf_destroy_v1","entry":"0014e460","bodyBytes":1,"signature":"undefined sudo_lbuf_destroy_v1(void)","callingConvention":"unknown","external":false}
+{"name":"strlcpy","entry":"0014e468","bodyBytes":1,"signature":"undefined strlcpy(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_plugin_dir_path_v1","entry":"0014e470","bodyBytes":1,"signature":"undefined sudo_conf_plugin_dir_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_loopcontinue_v1","entry":"0014e478","bodyBytes":1,"signature":"undefined sudo_ev_loopcontinue_v1(void)","callingConvention":"unknown","external":false}
+{"name":"exit","entry":"0014e480","bodyBytes":1,"signature":"void exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"fgetfilecon_raw","entry":"0014e488","bodyBytes":1,"signature":"undefined fgetfilecon_raw(void)","callingConvention":"unknown","external":false}
+{"name":"execl","entry":"0014e490","bodyBytes":1,"signature":"int execl(char * __path, char * __arg, ...)","callingConvention":"unknown","external":false}
+{"name":"sigsuspend","entry":"0014e498","bodyBytes":1,"signature":"int sigsuspend(sigset_t * __set)","callingConvention":"unknown","external":false}
+{"name":"sigemptyset","entry":"0014e4a0","bodyBytes":1,"signature":"int sigemptyset(sigset_t * __set)","callingConvention":"unknown","external":false}
+{"name":"sigaction","entry":"0014e4a8","bodyBytes":1,"signature":"int sigaction(int __sig, sigaction * __act, sigaction * __oact)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_dispatch_v1","entry":"0014e4b0","bodyBytes":1,"signature":"undefined sudo_ev_dispatch_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sigdelset","entry":"0014e4b8","bodyBytes":1,"signature":"int sigdelset(sigset_t * __set, int __signo)","callingConvention":"unknown","external":false}
+{"name":"__asprintf_chk","entry":"0014e4c0","bodyBytes":1,"signature":"undefined __asprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_add_v2","entry":"0014e4c8","bodyBytes":1,"signature":"undefined sudo_ev_add_v2(void)","callingConvention":"unknown","external":false}
+{"name":"prctl","entry":"0014e4d0","bodyBytes":1,"signature":"int prctl(int __option, ...)","callingConvention":"unknown","external":false}
+{"name":"setegid","entry":"0014e4d8","bodyBytes":1,"signature":"int setegid(__gid_t __gid)","callingConvention":"unknown","external":false}
+{"name":"sudo_warn_set_conversation_v1","entry":"0014e4e0","bodyBytes":1,"signature":"undefined sudo_warn_set_conversation_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_set_active_instance_v1","entry":"0014e4e8","bodyBytes":1,"signature":"undefined sudo_debug_set_active_instance_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_copy_v1","entry":"0014e4f0","bodyBytes":1,"signature":"undefined sudo_term_copy_v1(void)","callingConvention":"unknown","external":false}
+{"name":"malloc","entry":"0014e4f8","bodyBytes":1,"signature":"void * malloc(size_t __size)","callingConvention":"unknown","external":false}
+{"name":"sudo_fatal_callback_register_v1","entry":"0014e500","bodyBytes":1,"signature":"undefined sudo_fatal_callback_register_v1(void)","callingConvention":"unknown","external":false}
+{"name":"process_vm_readv","entry":"0014e508","bodyBytes":1,"signature":"undefined process_vm_readv(void)","callingConvention":"unknown","external":false}
+{"name":"aa_change_onexec","entry":"0014e510","bodyBytes":1,"signature":"undefined aa_change_onexec(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_dso_strerror_v1","entry":"0014e518","bodyBytes":1,"signature":"undefined sudo_dso_strerror_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_read_v1","entry":"0014e520","bodyBytes":1,"signature":"undefined sudo_conf_read_v1(void)","callingConvention":"unknown","external":false}
+{"name":"reallocarray","entry":"0014e528","bodyBytes":1,"signature":"undefined reallocarray(void)","callingConvention":"unknown","external":false}
+{"name":"fchdir","entry":"0014e530","bodyBytes":1,"signature":"int fchdir(int __fd)","callingConvention":"unknown","external":false}
+{"name":"sudo_ttyname_dev_v1","entry":"0014e538","bodyBytes":1,"signature":"undefined sudo_ttyname_dev_v1(void)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_strtoull","entry":"0014e540","bodyBytes":1,"signature":"undefined __isoc23_strtoull(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_printf2_v1","entry":"0014e548","bodyBytes":1,"signature":"undefined sudo_debug_printf2_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_lbuf_init_v1","entry":"0014e550","bodyBytes":1,"signature":"undefined sudo_lbuf_init_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_freezero","entry":"0014e558","bodyBytes":1,"signature":"undefined sudo_freezero(void)","callingConvention":"unknown","external":false}
+{"name":"ftruncate","entry":"0014e560","bodyBytes":1,"signature":"int ftruncate(int __fd, __off_t __length)","callingConvention":"unknown","external":false}
+{"name":"security_check_context","entry":"0014e568","bodyBytes":1,"signature":"undefined security_check_context(void)","callingConvention":"unknown","external":false}
+{"name":"strcmp","entry":"0014e570","bodyBytes":1,"signature":"int strcmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"getppid","entry":"0014e578","bodyBytes":1,"signature":"__pid_t getppid(void)","callingConvention":"unknown","external":false}
+{"name":"getrlimit","entry":"0014e580","bodyBytes":1,"signature":"int getrlimit(__rlimit_resource_t __resource, rlimit * __rlimits)","callingConvention":"unknown","external":false}
+{"name":"ioctl","entry":"0014e588","bodyBytes":1,"signature":"int ioctl(int __fd, ulong __request, ...)","callingConvention":"unknown","external":false}
+{"name":"tcsetpgrp","entry":"0014e590","bodyBytes":1,"signature":"int tcsetpgrp(int __fd, __pid_t __pgrp_id)","callingConvention":"unknown","external":false}
+{"name":"kill","entry":"0014e598","bodyBytes":1,"signature":"int kill(__pid_t __pid, int __sig)","callingConvention":"unknown","external":false}
+{"name":"context_role_set","entry":"0014e5a0","bodyBytes":1,"signature":"undefined context_role_set(void)","callingConvention":"unknown","external":false}
+{"name":"read","entry":"0014e5a8","bodyBytes":1,"signature":"ssize_t read(int __fd, void * __buf, size_t __nbytes)","callingConvention":"unknown","external":false}
+{"name":"getpid","entry":"0014e5b0","bodyBytes":1,"signature":"__pid_t getpid(void)","callingConvention":"unknown","external":false}
+{"name":"context_str","entry":"0014e5b8","bodyBytes":1,"signature":"undefined context_str(void)","callingConvention":"unknown","external":false}
+{"name":"chdir","entry":"0014e5c0","bodyBytes":1,"signature":"int chdir(char * __path)","callingConvention":"unknown","external":false}
+{"name":"sudo_warn_gettext_v1","entry":"0014e5c8","bodyBytes":1,"signature":"undefined sudo_warn_gettext_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_dso_load_v1","entry":"0014e5d0","bodyBytes":1,"signature":"undefined sudo_dso_load_v1(void)","callingConvention":"unknown","external":false}
+{"name":"fread","entry":"0014e5d8","bodyBytes":1,"signature":"size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"dup","entry":"0014e5e0","bodyBytes":1,"signature":"int dup(int __fd)","callingConvention":"unknown","external":false}
+{"name":"sudo_mkstemps","entry":"0014e5e8","bodyBytes":1,"signature":"undefined sudo_mkstemps(void)","callingConvention":"unknown","external":false}
+{"name":"sigaddset","entry":"0014e5f0","bodyBytes":1,"signature":"int sigaddset(sigset_t * __set, int __signo)","callingConvention":"unknown","external":false}
+{"name":"fgetc","entry":"0014e5f8","bodyBytes":1,"signature":"int fgetc(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fgets","entry":"0014e600","bodyBytes":1,"signature":"char * fgets(char * __s, int __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"sudo_warn_nodebug_v1","entry":"0014e608","bodyBytes":1,"signature":"undefined sudo_warn_nodebug_v1(void)","callingConvention":"unknown","external":false}
+{"name":"selinux_trans_to_raw_context","entry":"0014e610","bodyBytes":1,"signature":"undefined selinux_trans_to_raw_context(void)","callingConvention":"unknown","external":false}
+{"name":"textdomain","entry":"0014e618","bodyBytes":1,"signature":"undefined textdomain(void)","callingConvention":"unknown","external":false}
+{"name":"aa_getcon","entry":"0014e620","bodyBytes":1,"signature":"undefined aa_getcon(void)","callingConvention":"unknown","external":false}
+{"name":"security_compute_relabel","entry":"0014e628","bodyBytes":1,"signature":"undefined security_compute_relabel(void)","callingConvention":"unknown","external":false}
+{"name":"gettimeofday","entry":"0014e630","bodyBytes":1,"signature":"int gettimeofday(timeval * __tv, __timezone_ptr_t __tz)","callingConvention":"unknown","external":false}
+{"name":"faccessat","entry":"0014e638","bodyBytes":1,"signature":"int faccessat(int __fd, char * __file, int __type, int __flag)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_execve2_v1","entry":"0014e640","bodyBytes":1,"signature":"undefined sudo_debug_execve2_v1(void)","callingConvention":"unknown","external":false}
+{"name":"memmove","entry":"0014e648","bodyBytes":1,"signature":"void * memmove(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"_exit","entry":"0014e650","bodyBytes":1,"signature":"void _exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"__fprintf_chk","entry":"0014e658","bodyBytes":1,"signature":"undefined __fprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"setpgid","entry":"0014e660","bodyBytes":1,"signature":"int setpgid(__pid_t __pid, __pid_t __pgid)","callingConvention":"unknown","external":false}
+{"name":"getopt_long","entry":"0014e668","bodyBytes":1,"signature":"undefined getopt_long(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_update_fd_v1","entry":"0014e670","bodyBytes":1,"signature":"undefined sudo_debug_update_fd_v1(void)","callingConvention":"unknown","external":false}
+{"name":"getdelim","entry":"0014e678","bodyBytes":1,"signature":"__ssize_t getdelim(char * * __lineptr, size_t * __n, int __delimiter, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"access","entry":"0014e680","bodyBytes":1,"signature":"int access(char * __name, int __type)","callingConvention":"unknown","external":false}
+{"name":"fstat","entry":"0014e688","bodyBytes":1,"signature":"int fstat(int __fd, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"fchown","entry":"0014e690","bodyBytes":1,"signature":"int fchown(int __fd, __uid_t __owner, __gid_t __group)","callingConvention":"unknown","external":false}
+{"name":"setkeycreatecon","entry":"0014e698","bodyBytes":1,"signature":"undefined setkeycreatecon(void)","callingConvention":"unknown","external":false}
+{"name":"fsetfilecon_raw","entry":"0014e6a0","bodyBytes":1,"signature":"undefined fsetfilecon_raw(void)","callingConvention":"unknown","external":false}
+{"name":"execve","entry":"0014e6a8","bodyBytes":1,"signature":"int execve(char * __path, char * * __argv, char * * __envp)","callingConvention":"unknown","external":false}
+{"name":"string_to_security_class","entry":"0014e6b0","bodyBytes":1,"signature":"undefined string_to_security_class(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_plugins_v1","entry":"0014e6b8","bodyBytes":1,"signature":"undefined sudo_conf_plugins_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_new_key_val_v1","entry":"0014e6c0","bodyBytes":1,"signature":"undefined sudo_new_key_val_v1(void)","callingConvention":"unknown","external":false}
+{"name":"freeifaddrs","entry":"0014e6c8","bodyBytes":1,"signature":"undefined freeifaddrs(void)","callingConvention":"unknown","external":false}
+{"name":"_ITM_deregisterTMCloneTable","entry":"0014e6d0","bodyBytes":1,"signature":"undefined _ITM_deregisterTMCloneTable(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_isatty_v1","entry":"0014e6d8","bodyBytes":1,"signature":"undefined sudo_isatty_v1(void)","callingConvention":"unknown","external":false}
+{"name":"strpbrk","entry":"0014e6e0","bodyBytes":1,"signature":"char * strpbrk(char * __s, char * __accept)","callingConvention":"unknown","external":false}
+{"name":"sudo_arc4random_buf","entry":"0014e6e8","bodyBytes":1,"signature":"undefined sudo_arc4random_buf(void)","callingConvention":"unknown","external":false}
+{"name":"getutxline","entry":"0014e6f0","bodyBytes":1,"signature":"utmpx * getutxline(utmpx * __line)","callingConvention":"unknown","external":false}
+{"name":"context_type_set","entry":"0014e6f8","bodyBytes":1,"signature":"undefined context_type_set(void)","callingConvention":"unknown","external":false}
+{"name":"setgid","entry":"0014e700","bodyBytes":1,"signature":"int setgid(__gid_t __gid)","callingConvention":"unknown","external":false}
+{"name":"umask","entry":"0014e708","bodyBytes":1,"signature":"__mode_t umask(__mode_t __mask)","callingConvention":"unknown","external":false}
+{"name":"sudo_strtonum","entry":"0014e710","bodyBytes":1,"signature":"undefined sudo_strtonum(void)","callingConvention":"unknown","external":false}
+{"name":"setsockopt","entry":"0014e718","bodyBytes":1,"signature":"int setsockopt(int __fd, int __level, int __optname, void * __optval, socklen_t __optlen)","callingConvention":"unknown","external":false}
+{"name":"getpgid","entry":"0014e720","bodyBytes":1,"signature":"__pid_t getpgid(__pid_t __pid)","callingConvention":"unknown","external":false}
+{"name":"strtok_r","entry":"0014e728","bodyBytes":1,"signature":"char * strtok_r(char * __s, char * __delim, char * * __save_ptr)","callingConvention":"unknown","external":false}
+{"name":"strdup","entry":"0014e730","bodyBytes":1,"signature":"char * strdup(char * __s)","callingConvention":"unknown","external":false}
+{"name":"__vasprintf_chk","entry":"0014e738","bodyBytes":1,"signature":"undefined __vasprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_term_raw_v1","entry":"0014e740","bodyBytes":1,"signature":"undefined sudo_term_raw_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_free_v1","entry":"0014e748","bodyBytes":1,"signature":"undefined sudo_ev_free_v1(void)","callingConvention":"unknown","external":false}
+{"name":"dup3","entry":"0014e750","bodyBytes":1,"signature":"int dup3(int __fd, int __fd2, int __flags)","callingConvention":"unknown","external":false}
+{"name":"lseek","entry":"0014e758","bodyBytes":1,"signature":"__off_t lseek(int __fd, __off_t __offset, int __whence)","callingConvention":"unknown","external":false}
+{"name":"__gmon_start__","entry":"0014e760","bodyBytes":1,"signature":"undefined __gmon_start__(void)","callingConvention":"unknown","external":false}
+{"name":"setuid","entry":"0014e768","bodyBytes":1,"signature":"int setuid(__uid_t __uid)","callingConvention":"unknown","external":false}
+{"name":"getifaddrs","entry":"0014e770","bodyBytes":1,"signature":"undefined getifaddrs(void)","callingConvention":"unknown","external":false}
+{"name":"alarm","entry":"0014e778","bodyBytes":1,"signature":"uint alarm(uint __seconds)","callingConvention":"unknown","external":false}
+{"name":"openat","entry":"0014e780","bodyBytes":1,"signature":"int openat(int __fd, char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"_ITM_registerTMCloneTable","entry":"0014e788","bodyBytes":1,"signature":"undefined _ITM_registerTMCloneTable(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_fatal_nodebug_v1","entry":"0014e790","bodyBytes":1,"signature":"undefined sudo_fatal_nodebug_v1(void)","callingConvention":"unknown","external":false}
+{"name":"context_new","entry":"0014e798","bodyBytes":1,"signature":"undefined context_new(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_askpass_path_v1","entry":"0014e7a0","bodyBytes":1,"signature":"undefined sudo_conf_askpass_path_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_debug_fork_v1","entry":"0014e7a8","bodyBytes":1,"signature":"undefined sudo_debug_fork_v1(void)","callingConvention":"unknown","external":false}
+{"name":"fwrite","entry":"0014e7b0","bodyBytes":1,"signature":"size_t fwrite(void * __ptr, size_t __size, size_t __n, FILE * __s)","callingConvention":"unknown","external":false}
+{"name":"sudo_lbuf_append_v1","entry":"0014e7b8","bodyBytes":1,"signature":"undefined sudo_lbuf_append_v1(void)","callingConvention":"unknown","external":false}
+{"name":"close","entry":"0014e7c0","bodyBytes":1,"signature":"int close(int __fd)","callingConvention":"unknown","external":false}
+{"name":"sudo_conf_max_groups_v1","entry":"0014e7c8","bodyBytes":1,"signature":"undefined sudo_conf_max_groups_v1(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_ev_loop_v1","entry":"0014e7d0","bodyBytes":1,"signature":"undefined sudo_ev_loop_v1(void)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_strtol","entry":"0014e7d8","bodyBytes":1,"signature":"undefined __isoc23_strtol(void)","callingConvention":"unknown","external":false}
+{"name":"sudo_lbuf_print_v1","entry":"0014e7e0","bodyBytes":1,"signature":"undefined sudo_lbuf_print_v1(void)","callingConvention":"unknown","external":false}
+{"name":"__read_chk","entry":"0014e7e8","bodyBytes":1,"signature":"undefined __read_chk(void)","callingConvention":"unknown","external":false}
+{"name":"__cxa_finalize","entry":"0014e7f0","bodyBytes":1,"signature":"undefined __cxa_finalize(void)","callingConvention":"unknown","external":false}
+{"name":"free","entry":"0014e7f8","bodyBytes":1,"signature":"void free(void * __ptr)","callingConvention":"unknown","external":false}

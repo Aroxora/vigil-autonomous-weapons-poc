@@ -1,0 +1,201 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100c89 string-utf8 _ITM_deregisterTMCloneTable
+00100ca5 string-utf8 __gmon_start__
+00100cb4 string-utf8 _ITM_registerTMCloneTable
+00100cce string-utf8 gcry_mpi_new
+00100cdb string-utf8 gcry_mpi_powm
+00100ce9 string-utf8 gcry_mpi_get_nbits
+00100cfc string-utf8 gcry_randomize
+00100d0b string-utf8 gcry_cipher_setiv
+00100d1d string-utf8 gcry_mpi_mul_2exp
+00100d2f string-utf8 gcry_mpi_release
+00100d40 string-utf8 gcry_cipher_algo_info
+00100d56 string-utf8 gcry_md_ctl
+00100d62 string-utf8 gcry_md_close
+00100d70 string-utf8 gcry_create_nonce
+00100d82 string-utf8 gcry_md_setkey
+00100d91 string-utf8 gcry_cipher_encrypt
+00100da5 string-utf8 gcry_mpi_set_ui
+00100db5 string-utf8 gcry_mpi_scan
+00100dc3 string-utf8 gcry_check_version
+00100dd6 string-utf8 gcry_md_hash_buffer
+00100dea string-utf8 gcry_mpi_copy
+00100df8 string-utf8 gcry_cipher_close
+00100e0a string-utf8 gcry_md_read
+00100e17 string-utf8 gcry_md_get_algo_dlen
+00100e2d string-utf8 gcry_cipher_open
+00100e3e string-utf8 gcry_md_write
+00100e4c string-utf8 gcry_mpi_aprint
+00100e5c string-utf8 gcry_free
+00100e66 string-utf8 gcry_mpi_add_ui
+00100e76 string-utf8 gcry_md_open
+00100e83 string-utf8 gcry_cipher_decrypt
+00100e97 string-utf8 gcry_cipher_setkey
+00100eaa string-utf8 gcry_control
+00100eb7 string-utf8 libnet_build_udp
+00100ec8 string-utf8 libnet_init
+00100ed4 string-utf8 libnet_write
+00100ee1 string-utf8 libnet_destroy
+00100ef0 string-utf8 libnet_build_ipv4
+00100f02 string-utf8 libnet_geterror
+00100f12 string-utf8 inet_addr
+00100f1c string-utf8 __stack_chk_fail
+00100f2d string-utf8 exit
+00100f32 string-utf8 setgid
+00100f39 string-utf8 __assert_fail
+00100f47 string-utf8 strdup
+00100f4e string-utf8 bind
+00100f53 string-utf8 setuid
+00100f5a string-utf8 fflush
+00100f61 string-utf8 fopen
+00100f67 string-utf8 socket
+00100f6e string-utf8 initgroups
+00100f79 string-utf8 recvfrom
+00100f82 string-utf8 strlen
+00100f89 string-utf8 getpid
+00100f90 string-utf8 stdout
+00100f97 string-utf8 umask
+00100f9d string-utf8 optarg
+00100fa4 string-utf8 realloc
+00100fac string-utf8 getpwnam
+00100fb5 string-utf8 strftime
+00100fbe string-utf8 malloc
+00100fc5 string-utf8 __libc_start_main
+00100fd7 string-utf8 stderr
+00100fde string-utf8 sendto
+00100fe5 string-utf8 fprintf
+00100fed string-utf8 getopt
+00100ff4 string-utf8 inet_ntoa
+00100ffe string-utf8 __cxa_finalize
+0010100d string-utf8 localtime
+00101017 string-utf8 strerror
+00101020 string-utf8 calloc
+00101027 string-utf8 memcmp
+0010102e string-utf8 fclose
+00101035 string-utf8 memset
+0010103c string-utf8 vasprintf
+00101046 string-utf8 fputs
+0010104c string-utf8 getuid
+00101053 string-utf8 daemon
+0010105a string-utf8 memcpy
+00101061 string-utf8 fwrite
+00101068 string-utf8 strcmp
+0010106f string-utf8 __errno_location
+00101080 string-utf8 abort
+00101086 string-utf8 endpwent
+0010108f string-utf8 geteuid
+00101097 string-utf8 libgcrypt.so.20
+001010a7 string-utf8 libnet.so.9
+001010b3 string-utf8 libc.so.6
+001010bd string-utf8 GLIBC_2.14
+001010c8 string-utf8 GLIBC_2.4
+001010d2 string-utf8 GLIBC_2.34
+001010dd string-utf8 GLIBC_2.2.5
+001010e9 string-utf8 GCRYPT_1.6
+00109008 string FATAL: socket(udp) returned %d: %s (%d) 
+00109038 string FATAL: bind(%d/udp) returned %d: %s (%d) 
+00109068 string ERROR: recvfrom(%d) returned %d: %s (%d) 
+00109098 string ERROR: sendto(%d to %s:%d) returned %d: %s (%d) 
+001090d0 string ERROR: cannot build UDP header: %s 
+001090f8 string FATAL: cannot build IP header: %s 
+00109120 string FATAL: cannot open file %s: %s 
+00109140 string ike_crypt in illegal state %d, packet ignored
+00109170 string illegal decrypted payload (%d), packet ignored
+001091a0 string missing attribute(s): enc=%p hash=%p am=%p gd=%p
+001091d8 string no matching algo proposal, ignoring request
+00109208 string encrypted informational packet, reset state
+00109238 string error from peer: invalid payload type, reset state
+00109270 string unhandled informational notification type 0x%02x, ignored
+001092b0 string unhandled informational payload type 0x%02x, ignored
+001092e8 string unhandled modecfg attr type 0x%02x, ignored
+00109318 string unhandled modecfg type 0x%02x, ignored
+00109340 string unhandled payload type 0x%02x, ignored
+00109368 string missing payload(s): sa=%p ke=%p nonce=%p id=%p, ignored
+001093a0 string IPSec ID type %d is binary, processing packet anyway
+001093d8 string missing payload: h=%p, ignored
+001093f8 string IKE phase 1 auth failed (i_hash mismatch)
+00109428 string IKE phase 1 complete, entering phase 2
+00109450 string encrypted packet in STATE_NEW, ignored
+00109478 string unhandled exchange type 0x%02x in STATE_NEW, ignored
+001094b0 string unencrypted packet in STATE_PHASE2, reset state
+001094e0 string unhandled exchange type 0x%02x in STATE_PHASE1, ignored
+00109518 string unencrypted packet in STATE_PHASE1, reset state
+00109548 string Usage: %s [-rdqhV] -g gw -k id:psk [-k ..] [-u user] [-l file] [-L file] 
+00109598 string 	-r	use raw socket: forge ip src addr to match <gateway> (disables -u) 
+001095e0 string 	-d	detach from tty and run as a daemon (implies -q) 
+00109618 string 	-q	be quiet, don't write anything to stdout 
+00109648 string 	-g gw	VPN gateway address to impersonate 
+00109678 string 	-k i:k	pre-shared key aka. group password, shared secret, prefixed 		with its group/key id (first -k sets default) 
+001096f0 string 	-u user	drop privileges to unprivileged user account 
+00109728 string 	-l file	append results to credential log file 
+00109758 string 	-L file	verbous logging to file instead of stdout 
+00109790 string libgcrypt version mismatch! (expected: 1.11.2)
+001097c0 string fiked-%s - fake IKE PSK+XAUTH daemon based on vpnc 
+001097f8 string Copyright (C) 2005,2009 Daniel Roethlisberger <daniel@roe.ch>
+00109838 string Licensed under the GNU General Public License, version 2 or later
+00109880 string id <= (int)(sizeof(groups) / sizeof(groups[0]))
+00109c01 string ERROR: write error: %s 
+00109c1b string %Y-%m-%d %H:%M:%S %z
+00109c30 string %s %s %s %s %s %s %s 
+00109c46 string [%s] [%d] 
+00109c51 string [%s:%d] 
+00109c5f string AES192
+00109c66 string AES128
+00109c6d string AES256
+00109c89 string using %s %s %s
+00109c98 string Xauth username: %s
+00109cab string Xauth password: %s
+00109cbe string IKE session aborted by peer
+00109cda string IKE session closed
+00109ced string IPSec ID: %s
+00109cfa string IPSec Secret: %s
+00109d0b string IKE session initiated
+00109d21 string unhandled state, reset state
+00109d3e string 	-h	print help and exit 
+00109d57 string 	-V	print version and exit 
+00109d78 string 0.0.5
+00109d7e string fiked-%s started (%d/udp%s)
+00109d9a string nobody
+00109da1 string 1.11.2
+00109da8 string http://www.roe.ch/FakeIKEd
+00109dc3 string g:k:u:l:L:rdqhV
+00109dd3 string illegal ISAKMP packet (%d)
+00109dee string alloc of %lud bytes failed
+00109e09 string math_group.c
+00109e1e string id >= 1
+00109e2a string clone->type == MODP
+00109e3e string grp->type == MODP
+00109e50 string groups[i].type == MODP
+0010a1f0 string modp_init
+0010a200 string modp_clone
+0010a210 string group_free
+0010a220 string group_get
+0010a230 string group_init
+0010a551 string zR
+0010a581 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .got.plt
+.shstrtab::000000f6 string-utf8 .data
+.shstrtab::000000fc string-utf8 .bss
+.shstrtab::00000101 string-utf8 .gnu_debuglink

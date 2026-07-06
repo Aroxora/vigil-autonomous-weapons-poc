@@ -1,0 +1,146 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100871 string-utf8 optind
+00100878 string-utf8 fgets
+0010087e string-utf8 snprintf
+00100887 string-utf8 puts
+0010088c string-utf8 ctime
+00100892 string-utf8 perror
+00100899 string-utf8 __printf_chk
+001008a6 string-utf8 exit
+001008ab string-utf8 getprotobynumber
+001008bc string-utf8 putchar
+001008c4 string-utf8 strtol
+001008cb string-utf8 fopen
+001008d1 string-utf8 socket
+001008d8 string-utf8 strlen
+001008df string-utf8 read
+001008e4 string-utf8 usleep
+001008eb string-utf8 __memcpy_chk
+001008f8 string-utf8 gethostbyname
+00100906 string-utf8 optarg
+0010090d string-utf8 __fprintf_chk
+0010091b string-utf8 __xpg_basename
+0010092a string-utf8 malloc
+00100931 string-utf8 __libc_start_main
+00100943 string-utf8 stderr
+0010094a string-utf8 getopt
+00100951 string-utf8 inet_aton
+0010095b string-utf8 inet_ntoa
+00100965 string-utf8 getprotobyname
+00100974 string-utf8 srand
+0010097a string-utf8 __cxa_finalize
+00100989 string-utf8 strerror
+00100992 string-utf8 calloc
+00100999 string-utf8 fclose
+001009a0 string-utf8 memset
+001009a7 string-utf8 signal
+001009ae string-utf8 connect
+001009b6 string-utf8 __snprintf_chk
+001009c5 string-utf8 fwrite
+001009cc string-utf8 strcmp
+001009d3 string-utf8 strsep
+001009da string-utf8 __errno_location
+001009eb string-utf8 libc.so.6
+001009f5 string-utf8 GLIBC_2.34
+00100a00 string-utf8 GLIBC_2.2.5
+00100a0c string-utf8 GLIBC_2.3.4
+00100a18 string-utf8 _ITM_deregisterTMCloneTable
+00100a34 string-utf8 __gmon_start__
+00100a43 string-utf8 _ITM_registerTMCloneTable
+00103020 string 0123456789abcdefghijklmnopqrstuvwxyz 
+00103047 string %s.state
+00103052 string %s:%ld:%s 
+0010305d string State (%s) saved in %s at: %s
+00103080 string Error opening file %s to save state, manually save the following state line: 
+001030d0 string Caught signal %d, saving state... 
+00103100 string 0123456789abcdefghijklmnopqrstuvwxyz 
+00103127 string +d:i:m:M:r:s:vVh
+0010313a string Target Aquired: %s 
+0010314e string Save Interval: %d attempts 
+0010316a string %s.result
+00103178 string Starting enum process at: %s
+00103195 string write: %s 
+001031a0 string Retries exhausted, exiting. 
+001031bd string Send succeeded.
+001031cd string read: %s 
+001031d7 string Sending %d byte ACK message: 
+001031f5 string Total time to find:
+00103209 string  %d years
+00103213 string  %d weeks
+0010321d string  %d days
+00103226 string  %d hours
+00103230 string  %d minutes
+0010323c string  %d seconds 
+00103249 string unauthenticated username: %s 
+00103268 string Unable to open statefile %s for reading... exiting. 
+001032a0 string Unable to read from open statefile %s... exiting. 
+001032d8 string State found in statefile %s does not match target of %s... exiting. 
+00103320 string Using Charmap (%d characters):   "%s" 
+00103348 string Error: Could not open dict file %s 
+00103370 string Error: State Mismatch:   Dict file (%s) did not contain word (%s) found in state file (%s), exiting. 
+001033d8 string Error: Protocol "%s" not recognized. 
+00103400 string  Sending %d byte REGREQ message: 
+00103428 string Sleeping 1 sec before retry... 
+00103448 string %d byte response received: (IAX2 type %d) 
+00103478 string Error: Received packet is not IAX2! 
+001034a0 string Received Lag Request (LAGRQ) from target, throttling...
+001034d8 string Packet received (call %d) is not from current call (call %d).   Waiting for subsequent response... 
+00103540 string Packet received is IAX2 ACK.  Waiting for subsequent response...
+00103588 string   !!! Found valid username (%s) at: %s 
+001035b0 string   !!! Found valid UNAUTHENTICATED username (%s) at: %s 
+001035e8 string IAX2 packet (Subclass %d) was not REGAUTH or REGACK, invalid username. 
+00103630 string Rate-Limiting: Sleeping for %ld microseconds. 
+00103710 string  %04x  
+00103718 string %02x 
+00103720 string Now working on %d character usernames... 
+00103750 string Username combinations exausted, exiting...
+00103780 string  #################################
+001037a8 string End of dictionary file reached, exiting.
+001037d1 string Trying username: "%s" 
+00103800 string 0123456789abcdefghijklmnopqrstuvwxyz 
+00103828 string Connecting to %s via %s on port %d... 
+0010384f string socket: %s 
+0010385b string connect: %s 
+00103868 string Connected to: %s 
+0010387f string enumIAX %s 
+0010388b string Usage: %s [options] target 
+001038a7 string   options: 
+001038b8 string Dustin D. Trammell <dtrammell@tippingpoint.com>  
+001038f0 string     -d <dict>   Dictionary attack using <dict> file 
+00103928 string     -i <count>  Interval for auto-save (# of operations, default 1000) 
+00103970 string     -m #        Minimum username length (in characters) 
+001039b0 string     -M #        Maximum username length (in characters) 
+001039f0 string     -r #        Rate-limit calls (in microseconds) 
+00103a28 string     -s <file>   Read session state from state file 
+00103a60 string     -v          Increase verbosity (repeat for additional verbosity) 
+00103aa8 string     -V          Print version information and exit 
+00103ae0 string     -h          Print help/usage information and exit 
+00103ba9 string zR
+00103bd9 string zR
+00105160 string 0123456789abcdefghijklmnopqrstuvwxyz 
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .got.plt
+.shstrtab::000000f6 string-utf8 .data
+.shstrtab::000000fc string-utf8 .bss
+.shstrtab::00000101 string-utf8 .gnu_debuglink

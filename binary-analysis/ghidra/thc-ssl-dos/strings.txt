@@ -1,0 +1,110 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100849 string-utf8 _ITM_deregisterTMCloneTable
+00100865 string-utf8 __gmon_start__
+00100874 string-utf8 _ITM_registerTMCloneTable
+0010088e string-utf8 SSL_get_error
+0010089c string-utf8 SSL_read
+001008a5 string-utf8 SSL_connect
+001008b1 string-utf8 SSL_renegotiate
+001008c1 string-utf8 SSL_write
+001008cb string-utf8 SSL_CTX_set_options
+001008df string-utf8 SSL_set_fd
+001008ea string-utf8 TLS_method
+001008f5 string-utf8 OPENSSL_init_ssl
+00100906 string-utf8 SSL_do_handshake
+00100917 string-utf8 SSL_free
+00100920 string-utf8 SSL_new
+00100928 string-utf8 SSL_CTX_new
+00100934 string-utf8 SSL_CTX_set_cipher_list
+0010094c string-utf8 ERR_get_error
+0010095a string-utf8 ERR_error_string
+0010096b string-utf8 optind
+00100972 string-utf8 sleep
+00100978 string-utf8 inet_addr
+00100982 string-utf8 puts
+00100987 string-utf8 __printf_chk
+00100994 string-utf8 exit
+00100999 string-utf8 __fdelt_chk
+001009a5 string-utf8 fcntl
+001009ab string-utf8 putchar
+001009b3 string-utf8 fflush
+001009ba string-utf8 gettimeofday
+001009c7 string-utf8 socket
+001009ce string-utf8 __isoc23_strtol
+001009de string-utf8 stdout
+001009e5 string-utf8 optarg
+001009ec string-utf8 __fprintf_chk
+001009fa string-utf8 __libc_start_main
+00100a0c string-utf8 stderr
+00100a13 string-utf8 inet_ntoa
+00100a1d string-utf8 __cxa_finalize
+00100a2c string-utf8 strerror
+00100a35 string-utf8 getsockopt
+00100a40 string-utf8 close
+00100a46 string-utf8 fwrite
+00100a4d string-utf8 select
+00100a54 string-utf8 __errno_location
+00100a65 string-utf8 getopt_long
+00100a71 string-utf8 libssl.so.3
+00100a7d string-utf8 libcrypto.so.3
+00100a8c string-utf8 libc.so.6
+00100a96 string-utf8 OPENSSL_3.0.0
+00100aa4 string-utf8 GLIBC_2.38
+00100aaf string-utf8 GLIBC_2.15
+00100aba string-utf8 GLIBC_2.34
+00100ac5 string-utf8 GLIBC_2.2.5
+00100ad1 string-utf8 GLIBC_2.3.4
+00104008 string ./thc-ssl-dos [options] <ip> <port>   -h      help   -l <n>  Limit parallel connections [default: %d] 
+00104078 string #%d: This does not look like SSL! 
+001040a0 string ERROR: Target has disabled renegotiations. Use your own skills to modify the source to test/attack the target [hint: TCP reconnect for every handshake]. 
+00104140 string      ______________ ___  _________      \__    ___/   |   \ \_   ___ \        |    | /    ~    \/    \  \/        |    | \    Y    /\     \____        |____|  \___|_  /  \______  /                      \/          \/             http://www.thc.org            Twitter @hackerschoice  Greetingz: the french underground 
+00104280 string ERROR: Please agree by using '--accept' option that the IP is a legitimate target and that you are fully authorized to perform the test against this target. 
+00104320 string ERROR: Invalid target IP address 
+00104348 string Waiting for script kiddies to piss off.
+00104370 string  The force is with those who read the source...
+001043a0 string NextState(): unknown state: %d 
+001043c0 string Handshakes %u [%.2f h/s], %d Conn, %u Err 
+001043ef string TCP connect(%s:%d): %s 
+00104407 string thc-ssl-dos.c
+00104415 string %s:%d 
+0010441c string %d tcp_connect_io(): %s 
+00104435 string internal error 
+00104445 string Unknown state: %d 
+0010445c string AES256-SHA:RC4-MD5
+0010446f string tcp_connect(): %s 
+00104482 string SSL_renegotiate() failed 
+0010449c string select(): %s 
+001044aa string #%d Connection timed out 
+001044c4 string accept
+001044cb string skip-delay
+001044d8 string CompleteState
+001044e8 string PEER_connect
+001044f8 string do_getopt
+00104591 string zR
+001045c1 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .got.plt
+.shstrtab::000000f6 string-utf8 .data
+.shstrtab::000000fc string-utf8 .bss
+.shstrtab::00000101 string-utf8 .gnu_debuglink

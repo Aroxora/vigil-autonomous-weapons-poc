@@ -1,0 +1,117 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001006d1 string-utf8 _ITM_deregisterTMCloneTable
+001006ed string-utf8 __gmon_start__
+001006fc string-utf8 _ITM_registerTMCloneTable
+00100716 string-utf8 strcasestr
+00100721 string-utf8 __stack_chk_fail
+00100732 string-utf8 exit
+00100737 string-utf8 setenv
+0010073e string-utf8 fflush
+00100745 string-utf8 fork
+0010074a string-utf8 strlen
+00100751 string-utf8 strstr
+00100758 string-utf8 __vfprintf_chk
+00100767 string-utf8 __vsnprintf_chk
+00100777 string-utf8 stdout
+0010077e string-utf8 isatty
+00100785 string-utf8 execvp
+0010078c string-utf8 malloc
+00100793 string-utf8 __libc_start_main
+001007a5 string-utf8 stderr
+001007ac string-utf8 __getcwd_chk
+001007b9 string-utf8 __cxa_finalize
+001007c8 string-utf8 strerror
+001007d1 string-utf8 getenv
+001007d8 string-utf8 calloc
+001007df string-utf8 index
+001007e5 string-utf8 memset
+001007ec string-utf8 waitpid
+001007f4 string-utf8 __vprintf_chk
+00100802 string-utf8 strcmp
+00100809 string-utf8 __errno_location
+0010081a string-utf8 abort
+00100820 string-utf8 strncmp
+00100828 string-utf8 libm.so.6
+00100832 string-utf8 libz.so.1
+0010083c string-utf8 libc.so.6
+00100846 string-utf8 GLIBC_2.4
+00100850 string-utf8 GLIBC_2.34
+0010085b string-utf8 GLIBC_2.3.4
+00100867 string-utf8 GLIBC_2.2.5
+0010313c string AFL_LD_CALLER
+00103171 string [0mld loop detected! Set AFL_REAL_LD! 
+001031b5 string [0m%s(), %s:%u  
+001031cb string src/afl-ld-lto.c
+001031dc string AFL_QUIET
+001031e6 string AFL_DEBUG
+00103208 string [0m by Marc "vanHauser" Heuse <mh@mh-sec.de> 
+00103236 string AFL_PATH
+0010323f string AFL_LD_PASSTHROUGH
+00103252 string AFL_REAL_LD
+0010325e string /usr/lib/afl
+00103298 string  "%s"
+0010329e string  This is a helper application for afl-clang-lto. It is a wrapper around llvm's 'lld' in case afl-clang-lto cannot be used. Note that the target still has to be compiled with -flto=full! You probably don't want to run this program directly but rather pass it as LD parameter to e.g. configure scripts.  Environment variables:   AFL_LD_PASSTHROUGH   do not link+optimize == no instrumentation   AFL_REAL_LD          point to the real llvm 11 lld if necessary  afl-ld-to was compiled with the fixed real 'ld' of %s and the binary path of %s  
+001034ba string /usr/lib/llvm-21/bin
+001034f6 string [0mOops, failed to execute 'ld' - check your PATH
+0010354f string [0mfork() failed
+0010357d string [0m%s(), %s:%u 
+001035d7 string [0mwaitpid() failed
+00103605 string [0mlinker result: %d 
+00103627 string [0mLinker was successful
+00103652 string [0mLinker failed, please investigate and send a bug report. Most likely an 'ld' option is incompatible with %s. 
+001036c3 string -flto=full
+001036ce string /usr/lib/llvm-21/bin/ld.lld
+001036ea string /afl-llvm-lto-instr
+001036fe string -plugin
+00103706 string -plugin=
+0010370f string --oformat
+00103719 string --output
+00103722 string --opt-remarks-
+00103731 string AFL_LLVM_INSTRIM
+00103742 string AFL_LLVM_INSTRUMENT
+00103781 string [0mInsTrim was removed because it is not effective. Use a modern LLVM and PCGUARD (which is the default in afl-cc). 
+001037f6 string edit_params
+0010381c string [0mpassthrough=%s, gold_pos=%u, gold_present=%s inst_present=%s rt_present=%s rt_lto_present=%s 
+00103882 string false
+001038af string [0mToo many command line parameters because of unpacking .a archives, this would need to be done by hand ... sorry! :-(
+00103927 string --afl
+00103939 string [0mAFL++ test command line flag detected, exiting.
+0010396c string -L%s/../lib
+0010399f string [0mWhoa, snprintf() fails?!
+001039bb string %s/../lib/LLVMgold.so
+001039d1 string --allow-multiple-definition
+001039ed string -mllvm=-load=%s/afl-llvm-lto-instrumentation.so
+00103a1d string %s/afl-compiler-rt.o
+00103a32 string %s/afl-llvm-rt-lto.o
+00103a6e string [0mBad alloc request: %u bytes
+00103aaa string [0m%s(), %s:%u  
+00103abb string DFL_ck_alloc_nozero
+00103acf string include/alloc-inl.h
+00103b0a string [0mOut of memory: can't allocate %u bytes
+00103b89 string zR
+00103bb9 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debuglink

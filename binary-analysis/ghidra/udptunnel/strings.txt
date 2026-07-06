@@ -1,0 +1,121 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100791 string-utf8 _ITM_deregisterTMCloneTable
+001007ad string-utf8 __gmon_start__
+001007bc string-utf8 _ITM_registerTMCloneTable
+001007d6 string-utf8 yp_match
+001007df string-utf8 yp_get_default_domain
+001007f5 string-utf8 optind
+001007fc string-utf8 setsockopt
+00100807 string-utf8 inet_addr
+00100811 string-utf8 perror
+00100818 string-utf8 __stack_chk_fail
+00100829 string-utf8 exit
+0010082e string-utf8 __fdelt_chk
+0010083a string-utf8 bind
+0010083f string-utf8 memmove
+00100847 string-utf8 strtok
+0010084e string-utf8 strtol
+00100855 string-utf8 socket
+0010085c string-utf8 recvfrom
+00100865 string-utf8 strlen
+0010086c string-utf8 __ctype_b_loc
+0010087a string-utf8 read
+0010087f string-utf8 send
+00100884 string-utf8 gethostbyname
+00100892 string-utf8 optarg
+00100899 string-utf8 __fprintf_chk
+001008a7 string-utf8 __libc_start_main
+001008b9 string-utf8 stderr
+001008c0 string-utf8 listen
+001008c7 string-utf8 getopt
+001008ce string-utf8 inet_ntoa
+001008d8 string-utf8 __cxa_finalize
+001008e7 string-utf8 getsockopt
+001008f2 string-utf8 calloc
+001008f9 string-utf8 accept
+00100900 string-utf8 connect
+00100908 string-utf8 fwrite
+0010090f string-utf8 select
+00100916 string-utf8 __errno_location
+00100927 string-utf8 libnsl.so.2
+00100933 string-utf8 libc.so.6
+0010093d string-utf8 LIBNSL_1.0
+00100948 string-utf8 GLIBC_2.15
+00100953 string-utf8 GLIBC_2.34
+0010095e string-utf8 GLIBC_2.4
+00100968 string-utf8 GLIBC_2.3
+00100972 string-utf8 GLIBC_2.2.5
+0010097e string-utf8 GLIBC_2.3.4
+00103008 string Usage: %s -s TCP-port [-r] [-v] UDP-addr/UDP-port[/ttl] 
+00103048 string     or %s -c TCP-addr[/TCP-port] [-r] [-v] UDP-addr/UDP-port[/ttl] 
+00103090 string      -s: Server mode.  Wait for TCP connections on the port. 
+001030d0 string      -c: Client mode.  Connect to the given address. 
+00103108 string      -r: RTP mode.  Connect/listen on ports N and N+1 for both UDP and TCP. 
+00103158 string          Port numbers must be even. 
+00103180 string      -v: Verbose mode.  Specify -v multiple times for increased verbosity. 
+001031d0 string Received %d byte UDP packet from %s/%hu 
+00103200 string %s: Only one of -s and -c may be specified. 
+00103230 string %s: You must specify one of -s and -c. 
+00103258 string Port numbers must be even when using RTP mode. 
+00103288 string setup_server_listen: setsockopt(SO_REUSEADDR)
+001032b8 string setup_server_listen: setsockopt(SO_REUSEPORT)
+001032e8 string Listening for TCP connections on port %hu 
+00103318 string setup_udp_recv: setsockopt(SO_REUSEADDR)
+00103348 string setup_udp_recv: setsockopt(SO_REUSEPORT)
+00103378 string setup_udp_recv: setsockopt(IP_ADD_MEMBERSHIP)
+001033a8 string setup_udp_send: setsockopt(IP_MULTICAST_LOOP)
+001033d8 string setup_udp_send: setsockopt(IP_MULTICAST_TTL)
+00103408 string await_incoming_connection: select
+00103430 string await_incoming_connections: accept
+00103458 string Received packet on TCP, length %u; sending as UDP 
+00103490 string ECONNREFUSED on udp_send_sock; clearing. 
+001034c0 string tcp_to_udp: getsockopt(SO_ERROR)
+001034e1 string udp_to_tcp: recv
+001034f2 string udp_to_tcp: send
+00103503 string s:c:rvh
+0010350f string %s: invalid port number 
+00103528 string %s: invalid TTL 
+00103539 string %s: UDP host unknown 
+0010354f string %s: TCP host unknown 
+00103565 string setup_server_listen: socket
+00103581 string setup_server_listen: bind
+0010359b string setup_server_listen: listen
+001035b7 string setup_tcp_client: socket
+001035d0 string setup_tcp_client: connect
+001035ea string Connected TCP to %s/%hu 
+00103603 string setup_udp_recv: socket
+0010361a string setup_udp_recv: bind
+0010362f string setup_udp_send: socket
+00103646 string setup_udp_send: connect
+0010365e string TCP connection from %s/%hu 
+0010367a string main loop: select
+0010368c string tcp_to_udp: read
+0010369d string tcp_to_udp: send
+001036ae string hosts.byname
+00103719 string zR
+00103749 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debuglink

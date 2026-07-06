@@ -1,0 +1,164 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100971 string-utf8 snprintf
+0010097a string-utf8 __stack_chk_fail
+0010098b string-utf8 __printf_chk
+00100998 string-utf8 fcntl
+0010099e string-utf8 poll
+001009a3 string-utf8 strtol
+001009aa string-utf8 socket
+001009b1 string-utf8 recvfrom
+001009ba string-utf8 strlen
+001009c1 string-utf8 __memcpy_chk
+001009ce string-utf8 optarg
+001009d5 string-utf8 __sprintf_chk
+001009e3 string-utf8 strftime
+001009ec string-utf8 __fprintf_chk
+001009fa string-utf8 __libc_start_main
+00100a0c string-utf8 stderr
+00100a13 string-utf8 sendto
+00100a1a string-utf8 inet_aton
+00100a24 string-utf8 inet_ntoa
+00100a2e string-utf8 __cxa_finalize
+00100a3d string-utf8 localtime
+00100a47 string-utf8 strchr
+00100a4e string-utf8 strerror
+00100a57 string-utf8 memset
+00100a5e string-utf8 close
+00100a64 string-utf8 __snprintf_chk
+00100a73 string-utf8 memcpy
+00100a7a string-utf8 strcmp
+00100a81 string-utf8 __errno_location
+00100a92 string-utf8 getopt_long
+00100a9e string-utf8 libc.so.6
+00100aa8 string-utf8 _ZN12SniffJokeCli12printSJErrorEPKhj
+00100acd string-utf8 _ZN12SniffJokeCli11printSJStatEPKhj
+00100af1 string-utf8 _ITM_deregisterTMCloneTable
+00100b0d string-utf8 _ZN12SniffJokeCliC1EPKctj
+00100b27 string-utf8 _edata
+00100b2e string-utf8 _ZN12SniffJokeCli13fillingSpacesEt
+00100b51 string-utf8 _ZN12SniffJokeCli12fillingSpaceEtt
+00100b74 string-utf8 __data_start
+00100b81 string-utf8 __gmon_start__
+00100b90 string-utf8 _IO_stdin_used
+00100b9f string-utf8 _ZN12SniffJokeCli12send_commandEPKc
+00100bc3 string-utf8 _end
+00100bc8 string-utf8 _ZN12SniffJokeCli13resolveWeightEPcmj
+00100bee string-utf8 __bss_start
+00100bfa string-utf8 _ZN12SniffJokeCliC2EPKctj
+00100c14 string-utf8 _ZN12SniffJokeCli10printSJTTLEPKhj
+00100c37 string-utf8 _ITM_registerTMCloneTable
+00100c51 string-utf8 _ZN12SniffJokeCli21parse_SjinternalProtoEPhj
+00100c7e string-utf8 _ZN12SniffJokeCli18printSJSessionInfoEPKhj
+00100ca9 string-utf8 _ZN12SniffJokeCli11printSJPortEPKhj
+00100ccd string-utf8 GLIBC_2.14
+00100cd8 string-utf8 GLIBC_2.4
+00100ce2 string-utf8 GLIBC_2.34
+00100ced string-utf8 GLIBC_2.2.5
+00100cf9 string-utf8 GLIBC_2.3.4
+00104004 string 127.0.0.1
+0010400e string start
+0010401e string saveconf
+0010402c string ttlmap
+00104038 string showport
+00104045 string clear
+0010404b string debug
+00104055 string address
+0010405d string timeout
+00104065 string version
+00104072 string 0.4.0
+00104078 string %s: %s 
+00104080 string c:a:t:vh
+00104090 string Usage: %s [OPTIONS]... [COMMANDS]...  --address <ip>[:port]	specify administration IP address [default: %s:%d]  --version		show sniffjoke version  --timeout		set milliseconds timeout when contacting SniffJoke service [default: %d]  --help			show this help  when sniffjoke is running, you should send commands with a command line argument:  start			start sniffjoke hijacking/injection  stop			pause sniffjoke  quit			quit sniffjoke  saveconf		dump configuration file  stat			get statistics about sniffjoke configuration and network  info			get statistics about sniffjoke active sessions  ttlmap			show the mapped hop count for destination  showport		show the running port-aggressivity configuration  set start:end value	set the injection's strogness over selected port [not supported!] 		need to be set in port-aggressivity.conf  debug			[%d-%d] change the log debug level  			http://www.delirandom.net/sniffjoke 
+00104427 string VERYRARE
+00104430 string COMMON
+00104437 string ALWAYS
+0010443e string PEEK10PKT
+00104448 string PEEK30PKT
+00104452 string EVERY5SECONDS
+00104460 string EVERY20SECONDS
+0010446f string PEEKATSTART
+0010447b string LONGPEEK
+00104489 string HEAVY
+0010448f string not running
+0010449b string enabled
+001044a3 string disabled
+001044ac string SniffJoke		%s 
+001044bb string location name:		%s 
+001044cf string gateway hw address:	%s 
+001044e7 string gateway IP address:	%s 
+001044ff string hijacked interface:	%s 
+00104517 string hijacked local IPaddr:	%s 
+00104532 string hijacked MTU interface:	%d 
+0010454e string tunnel interface:	%s 
+00104564 string tunnel local IPaddr:	%s 
+0010457d string tunnel MTU interface:	%d 
+00104597 string debug level:		%d 
+001045a9 string admin address:		%s 
+001045bd string admin UDP port:		%d 
+001045d2 string running user:		%s 
+001045e5 string running group:		%s 
+001045f9 string hack chaining:		%s 
+0010460d string tcp mangling:		%s 
+00104620 string udp mangling:		%s 
+00104633 string whitelist mode:		%s 
+00104648 string blacklist mode:		%s 
+0010465d string single plugin:		%s 
+00104679 string %d %H:%M:%S
+0010468a string %d%*s%s 
+00104693 string invalid command type %d ? 
+00104738 string  %02d) %s %u -> %s:%u #%d (injected %d) 
+00104768 string no sessions appear tracked at the moment 
+00104798 string  %02d) %s [%s %s] sent #%d recv #%d incoming TTL (%d) ext hop dist %d 
+001047e0 string no hosts appear hop-mapped at the moment 
+00104810 string omitted rule from the list is %s and apply to all ports not present on the list 
+00104868 string invalid lenght (received %d, declared %d) 
+00104898 string received (%d bytes) confirm of START command 
+001048c8 string received (%d bytes) confirm of STOP command 
+001048f8 string received (%d bytes) confirm of QUIT command 
+00104928 string received (%d bytes) confirm of STAT command 
+00104958 string received (%d bytes) confirm of INFO command 
+00104988 string received (%d bytes) confirm of LOGLEVEL command 
+001049c0 string received (%d bytes) confirm of SAVECONF command 
+001049f8 string received (%d bytes) SET PORT is read only at the moment! 
+00104a38 string received (%d bytes) confirm of SHOW PORT command 
+00104a70 string received (%d bytes) confirm of TTL MAP command 
+00104aa0 string received (%d bytes) error in command sent 
+00104ad0 string error - not implemented the parsing of an error - ATM 
+00104b08 string FATAL: unable to open UDP socket for connect to SniffJoke service: %s
+00104b50 string FATAL: unable to accept hostname (%s): only IP address allow
+00104b90 string FATAL: unable to send message [%s] via %s:%d: %s
+00104bc8 string FATAL: unable to set non blocking mode in listening socket: %s
+00104c08 string anyway: the command has been sent to sniffjoke service, without error in sending
+00104c60 string unable to receive from local socket: %s 
+00104c90 string error in parsing received message 
+00104cb8 string connection timeout: SniffJoke is not running, or --timeout too low 
+00104d91 string zR
+00104dc1 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/sniffjoke.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .got.plt
+.shstrtab::000000f6 string-utf8 .data
+.shstrtab::000000fc string-utf8 .bss
+.shstrtab::00000101 string-utf8 .gnu_debugaltlink
+.shstrtab::00000113 string-utf8 .gnu_debuglink

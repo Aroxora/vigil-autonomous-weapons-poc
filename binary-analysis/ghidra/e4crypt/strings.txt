@@ -1,0 +1,147 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100911 string-utf8 _ITM_deregisterTMCloneTable
+0010092d string-utf8 __gmon_start__
+0010093c string-utf8 _ITM_registerTMCloneTable
+00100956 string-utf8 uuid_unparse
+00100963 string-utf8 uuid_parse
+0010096e string-utf8 ext2fs_sha512
+0010097c string-utf8 optind
+00100983 string-utf8 fgets
+00100989 string-utf8 stdin
+0010098f string-utf8 perror
+00100996 string-utf8 strncpy
+0010099e string-utf8 __strcpy_chk
+001009ab string-utf8 __stack_chk_fail
+001009bc string-utf8 __printf_chk
+001009c9 string-utf8 free
+001009ce string-utf8 exit
+001009d3 string-utf8 stat
+001009d8 string-utf8 sigaction
+001009e2 string-utf8 strrchr
+001009ea string-utf8 putchar
+001009f2 string-utf8 endmntent
+001009fc string-utf8 strlen
+00100a03 string-utf8 __isoc23_strtol
+00100a13 string-utf8 stdout
+00100a1a string-utf8 optarg
+00100a21 string-utf8 realloc
+00100a29 string-utf8 __sprintf_chk
+00100a37 string-utf8 __fprintf_chk
+00100a45 string-utf8 open
+00100a4a string-utf8 malloc
+00100a51 string-utf8 __libc_start_main
+00100a63 string-utf8 getmntent
+00100a6d string-utf8 setmntent
+00100a77 string-utf8 stderr
+00100a7e string-utf8 memchr
+00100a85 string-utf8 getopt
+00100a8c string-utf8 __cxa_finalize
+00100a9b string-utf8 strerror
+00100aa4 string-utf8 memcmp
+00100aab string-utf8 memset
+00100ab2 string-utf8 __isoc23_strtoul
+00100ac3 string-utf8 ioctl
+00100ac9 string-utf8 close
+00100acf string-utf8 fputc
+00100ad5 string-utf8 tcgetattr
+00100adf string-utf8 fputs
+00100ae5 string-utf8 access
+00100aec string-utf8 tcsetattr
+00100af6 string-utf8 memcpy
+00100afd string-utf8 fwrite
+00100b04 string-utf8 strcmp
+00100b0b string-utf8 __errno_location
+00100b1c string-utf8 syscall
+00100b24 string-utf8 libuuid.so.1
+00100b31 string-utf8 libext2fs.so.2
+00100b40 string-utf8 libc.so.6
+00100b4a string-utf8 UUID_1.0
+00100b53 string-utf8 GLIBC_2.3.4
+00100b5f string-utf8 GLIBC_2.14
+00100b6a string-utf8 GLIBC_2.33
+00100b75 string-utf8 GLIBC_2.4
+00100b7f string-utf8 GLIBC_2.34
+00100b8a string-utf8 GLIBC_2.2.5
+00100b96 string-utf8 GLIBC_2.38
+00104004 string Excess arguments  
+00104017 string KEYCTL_JOIN_SESSION_KEYRING
+00104033 string KEYCTL_SESSION_TO_PARENT
+0010404c string USAGE:   
+00104065 string Unknown command: %s  
+0010407b string Available commands: 
+00104090 string   %-20s %s 
+0010409c string Invalid salt: %s 
+001040ae string %s has pw salt %s 
+001040c1 string 0123456789abcdef
+001040d2 string Couldn't allocate salt 
+001040ea string Couldn't allocate salt list 
+00104107 string Salt size is %zd; max is %d. 
+00104125 string Invalid padding %d 
+00104139 string Couldn't find salt!?! 
+00104153 string May only provide -S once 
+0010416d string Unrecognized option: %c 
+00104186 string k:S:p:vq
+00104191 string /etc/mtab
+001041a0 string No salt values available 
+001041ba string Aborting.
+001041c4 string Invalid keyring [%s]. 
+001041db string ext4:
+001041e6 string logon
+001041ec string keyctl_search failed: %s 
+00104206 string add_key
+0010420e string get_policy
+00104219 string new_session
+00104225 string set_policy
+00104230 string sets a policy for directories
+00104250 string Switched invoking process to new session keyring %ld 
+00104290 string Missing required argument(s).  
+001042b0 string Error getting policy for %s: %s 
+001042d8 string  To get more information on a command, type 'e4crypt help cmd'
+00104318 string EXT4_IOC_GET_ENCRYPTION_PWSALT
+00104338 string Error [%s] setting policy. The key descriptor [%s] may not match the existing encryption context for directory [%s]. 
+001043b0 string Key with descriptor [%s] applied to %s. 
+001043e0 string Invalid key descriptor [%s]. Valid characters are 0-9 and a-f, lower case.  Length must be %d. 
+00104440 string Enter passphrase (echo disabled): 
+00104468 string Key with descriptor [%s] already exists 
+00104498 string Keyring [%s] is not available. 
+001044b8 string Error getting session keyring ID: %s 
+001044e0 string Error adding key to keyring; quota exceeded
+00104510 string Error adding key with key descriptor [%s]: %s 
+00104540 string Added key with descriptor [%s] 
+00104560 string adds a key to the user's keyring
+00104588 string e4crypt add_key -S salt [ -k keyring ] [-v] [-q] [ -p pad ] [ path ... ]  Prompts the user for a passphrase and inserts it into the specified keyring.  If no keyring is specified, e4crypt will use the session keyring if it exists or the user session keyring if it does not.  If one or more directory paths are specified, e4crypt will try to set the policy of those directories to use the key just entered by the user. 
+00104730 string get the encryption for directories
+00104758 string e4crypt get_policy path ...   Gets the policy for the directories specified on the command line. 
+001047c0 string give the invoking process a new session keyring
+001047f0 string e4crypt new_session  Give the invoking process (typically a shell) a new session keyring, discarding its old session keyring. 
+00104870 string e4crypt set_policy [ -p pad ] policy path ...   Sets the policy for the directories specified on the command line. All directories must be empty to set the policy; if the directory already has a policy established, e4crypt will validate that it the policy matches what was specified.  A policy is an encryption key identifier consisting of 16 hexadecimal characters. 
+00104bd1 string zR
+00104c01 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/e2fsprogs.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

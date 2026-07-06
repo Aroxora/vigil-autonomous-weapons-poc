@@ -1,0 +1,184 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100661 string-utf8 _ITM_deregisterTMCloneTable
+0010067d string-utf8 __gmon_start__
+0010068c string-utf8 _ITM_registerTMCloneTable
+001006a6 string-utf8 hackrf_set_p2_ctrl
+001006b9 string-utf8 hackrf_si5351c_write
+001006ce string-utf8 hackrf_close
+001006db string-utf8 hackrf_error_name
+001006ed string-utf8 hackrf_set_clkout_enable
+00100706 string-utf8 hackrf_si5351c_read
+0010071a string-utf8 hackrf_open_by_serial
+00100730 string-utf8 hackrf_get_clkin_status
+00100748 string-utf8 hackrf_init
+00100754 string-utf8 hackrf_exit
+00100760 string-utf8 hackrf_set_p1_ctrl
+00100773 string-utf8 puts
+00100778 string-utf8 __stack_chk_fail
+00100789 string-utf8 __printf_chk
+00100796 string-utf8 strlen
+0010079d string-utf8 __isoc23_strtol
+001007ad string-utf8 optarg
+001007b4 string-utf8 strcasecmp
+001007bf string-utf8 __fprintf_chk
+001007cd string-utf8 __libc_start_main
+001007df string-utf8 stderr
+001007e6 string-utf8 __cxa_finalize
+001007f5 string-utf8 fwrite
+001007fc string-utf8 getopt_long
+00100808 string-utf8 libhackrf.so.0
+00100817 string-utf8 libc.so.6
+00100821 string-utf8 GLIBC_2.3.4
+0010082d string-utf8 GLIBC_2.38
+00100838 string-utf8 GLIBC_2.4
+00100842 string-utf8 GLIBC_2.34
+0010084d string-utf8 GLIBC_2.2.5
+00100859 string-utf8 
+0010085a string-utf8 
+0010085b string-utf8 
+0010085c string-utf8 
+0010085d string-utf8 
+0010085e string-utf8 
+0010085f string-utf8 
+00100860 string-utf8 
+00100861 string-utf8 
+00100862 string-utf8 
+00100863 string-utf8 
+00100864 string-utf8 
+00100865 string-utf8 
+00100866 string-utf8 
+00100867 string-utf8 
+00100868 string-utf8 
+00100869 string-utf8 
+0010086a string-utf8 
+0010086b string-utf8 
+0010086c string-utf8 
+0010086d string-utf8 
+0010086e string-utf8 
+0010086f string-utf8 
+00100870 string-utf8 
+00100871 string-utf8 
+00100872 string-utf8 
+00100873 string-utf8 
+00100874 string-utf8 
+00100875 string-utf8 
+00100876 string-utf8 
+00100877 string-utf8 
+00100878 string-utf8 
+00100879 string-utf8 
+0010087a string-utf8 
+0010087b string-utf8 
+0010087c string-utf8 
+0010087d string-utf8 
+0010087e string-utf8 
+0010087f string-utf8 
+00100880 string-utf8 
+00100881 string-utf8 
+00100882 string-utf8 
+00100883 string-utf8 
+00100884 string-utf8 
+00100885 string-utf8 
+00100886 string-utf8 
+00100887 string-utf8 
+00100888 string-utf8 
+00100889 string-utf8 
+0010088a string-utf8 
+0010088b string-utf8 
+0010088c string-utf8 
+0010088d string-utf8 
+0010088e string-utf8 
+0010088f string-utf8 
+00100890 string-utf8 
+00100891 string-utf8 
+00100892 string-utf8 
+00100893 string-utf8 
+00100894 string-utf8 
+00100895 string-utf8 
+00100896 string-utf8 
+00103006 string HDhackrf_clock - HackRF clock configuration utility
+00103040 string 	-r, --read <clock_num>: read settings for clock_num
+00103078 string 	-a, --all: read settings for all clocks
+001030a8 string 	-i, --clkin: get CLKIN status
+001030c8 string 	-o, --clkout <clkout_enable>: enable/disable CLKOUT
+00103100 string 	-1, --p1 <signal>: select the HackRF Pro P1 SMA connector signal (default: clkin)
+00103158 string 	one of: clkin, trigger_in, trigger_out, p22_clkin, pps_out, aux_clk1, aux_clk2, off
+001031b0 string 	-2, --p2 <signal>: select the signal for the HackRF Pro P2 SMA connector (default: clkout)
+00103210 string 	one of: clkout, trigger_in, trigger_out
+00103240 string 	-d, --device <serial_number>: Serial number of desired HackRF.
+00103280 string 	hackrf_clock -r 3 : prints settings for CLKOUT
+001032b0 string hackrf_si5351c_read() failed: %s (%d) 
+001032d8 string hackrf_max2837_write() failed: %s (%d) 
+00103300 string 	Output (800Mhz PLL): %#.10f Mhz 
+00103328 string hackrf_init() failed: %s (%d) 
+00103348 string An operation must be specified. 
+00103370 string hackrf_open() failed: %s (%d) 
+00103390 string hackrf_set_clkout_enable() failed: %s (%d) 
+001033c0 string hackrf_get_clkin_status() failed: %s (%d) 
+001033f0 string hackrf_set_p1_ctrl() failed: %s (%d) 
+00103418 string hackrf_set_p2_ctrl() failed: %s (%d) 
+00103440 string hackrf_close() failed: %s (%d) 
+00103460 string Usage:
+00103467 string 	-h, --help: this help
+0010347e string  Examples:
+00103489 string trigger_in
+00103494 string aux_clk1
+0010349d string trigger_out
+001034a9 string p22_clkin
+001034b3 string pps_out
+001034bf string aux_clk2
+001034c8 string Invalid signal '%s' 
+001034dd string clkout
+001034e4 string [%3d] -> 0x%02x 
+001034f5 string 0x%2x -> [%3d] 
+00103505 string 	clock control = 
+00103517 string Down, 
+00103523 string Int Mode, 
+0010352e string Frac Mode, 
+0010353a string PLL src B, 
+00103546 string PLL src A, 
+00103552 string Inverted, 
+0010355d string XTAL, 
+00103564 string CLKIN, 
+0010356c string MULTISYNTH 0 4, 
+0010357d string MULTISYNTH SELF, 
+001035a3 string MS%d: 
+001035aa string 	p1 = %u 
+001035b4 string 	p2 = %u 
+001035be string 	p3 = %u 
+001035c8 string 	p1_int = %u 
+001035d6 string 	output divider = %u 
+001035ec string no clock signal detected
+00103605 string unknown argument '-%c %s' 
+00103620 string argument error: %s (%d) 
+00103639 string r:aio:1:2:d:h?
+00103648 string CLKIN status: %s 
+0010366d string device
+00103809 string zR
+00103839 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/hackrf.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

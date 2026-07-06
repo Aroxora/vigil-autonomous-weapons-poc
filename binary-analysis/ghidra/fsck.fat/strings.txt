@@ -1,0 +1,451 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100ae1 string-utf8 optind
+00100ae8 string-utf8 nl_langinfo
+00100af4 string-utf8 fgets
+00100afa string-utf8 strcpy
+00100b01 string-utf8 stdin
+00100b07 string-utf8 iconv_open
+00100b12 string-utf8 puts
+00100b17 string-utf8 wcstombs
+00100b20 string-utf8 perror
+00100b27 string-utf8 strncpy
+00100b2f string-utf8 __ctype_toupper_loc
+00100b43 string-utf8 __stack_chk_fail
+00100b54 string-utf8 __printf_chk
+00100b61 string-utf8 free
+00100b66 string-utf8 iconv
+00100b6c string-utf8 iswlower
+00100b75 string-utf8 getc
+00100b7a string-utf8 putchar
+00100b82 string-utf8 fflush
+00100b89 string-utf8 memmove
+00100b91 string-utf8 gettimeofday
+00100b9e string-utf8 strlen
+00100ba5 string-utf8 __ctype_b_loc
+00100bb3 string-utf8 read
+00100bb8 string-utf8 __vasprintf_chk
+00100bc8 string-utf8 wcslen
+00100bcf string-utf8 gmtime
+00100bd6 string-utf8 strnlen
+00100bde string-utf8 __vfprintf_chk
+00100bed string-utf8 __isoc23_strtol
+00100bfd string-utf8 getpid
+00100c04 string-utf8 stdout
+00100c0b string-utf8 mbstowcs
+00100c14 string-utf8 optarg
+00100c1b string-utf8 __isoc23_strtoll
+00100c2c string-utf8 __sprintf_chk
+00100c3a string-utf8 __open_2
+00100c43 string-utf8 strcasecmp
+00100c4e string-utf8 __fprintf_chk
+00100c5c string-utf8 malloc
+00100c63 string-utf8 __libc_start_main
+00100c75 string-utf8 stderr
+00100c7c string-utf8 __strcat_chk
+00100c89 string-utf8 srand
+00100c8f string-utf8 __cxa_finalize
+00100c9e string-utf8 localtime
+00100ca8 string-utf8 setlocale
+00100cb2 string-utf8 strchr
+00100cb9 string-utf8 strerror
+00100cc2 string-utf8 getenv
+00100cc9 string-utf8 calloc
+00100cd0 string-utf8 memcmp
+00100cd7 string-utf8 memset
+00100cde string-utf8 close
+00100ce4 string-utf8 fputc
+00100cea string-utf8 towupper
+00100cf3 string-utf8 tcgetattr
+00100cfd string-utf8 __snprintf_chk
+00100d0c string-utf8 tcsetattr
+00100d16 string-utf8 memcpy
+00100d1d string-utf8 fwrite
+00100d24 string-utf8 __errno_location
+00100d35 string-utf8 getopt_long
+00100d41 string-utf8 lseek
+00100d47 string-utf8 strncmp
+00100d4f string-utf8 __cxa_atexit
+00100d5c string-utf8 libc.so.6
+00100d66 string-utf8 GLIBC_2.8
+00100d70 string-utf8 GLIBC_2.14
+00100d7b string-utf8 GLIBC_2.38
+00100d86 string-utf8 GLIBC_2.4
+00100d90 string-utf8 GLIBC_2.7
+00100d9a string-utf8 GLIBC_2.34
+00100da5 string-utf8 GLIBC_2.2.5
+00100db1 string-utf8 GLIBC_2.3.4
+00100dbd string-utf8 GLIBC_2.3
+00100dc7 string-utf8 _ITM_deregisterTMCloneTable
+00100de3 string-utf8 __gmon_start__
+00100df2 string-utf8 _ITM_registerTMCloneTable
+0010e008 string Oops, deleting FAT32 root dir!
+0010e030 string Label can be no longer than 11 characters
+0010e060 string Warning: lowercase labels might not work properly on some systems
+0010e0a8 string Label '%s' stored in boot sector is not valid. 
+0010e0d8 string Remove invalid label from boot sector
+0010e100 string   Auto-removing label from boot sector.
+0010e128 string Label '%s' stored in boot sector contains lowercase characters. 
+0010e170 string Change lowercase characters to uppercase
+0010e1a0 string   Auto-changing lowercase characters to uppercase
+0010e1d8 string Cannot change lowercase characters to uppercase.
+0010e210 string %s   Directory has non-zero size. Fixing it. 
+0010e240 string %s  Start does point to root directory. Deleting dir.  
+0010e278 string %s  Start does point to containing directory. Deleting entry. 
+0010e2b8 string %s  Start does point to containing directory's parent. Deleting entry. 
+0010e300 string %s   Bad start cluster 1. Truncating file. 
+0010e330 string Bad FAT32 root directory! (bad start cluster 1) 
+0010e368 string %s   Start cluster beyond limit (%lu > %lu). Truncating file. 
+0010e3a8 string Bad FAT32 root directory! (start cluster beyond limit: %lu > %lu) 
+0010e3f0 string %s   Contains a %s cluster (%lu). Assuming EOF. 
+0010e428 string FAT32 root dir starts with a bad cluster!
+0010e458 string %s   File size is %u bytes, cluster chain length is > %u bytes.   Truncating file to %u bytes. 
+0010e4b8 string Internal error: File size is larger than 2^32-1
+0010e4e8 string   Truncating second to %u bytes because first is FAT32 root dir. 
+0010e530 string   Truncating first to %u bytes because second is FAT32 root dir. 
+0010e578 string   Truncating second to %u bytes.
+0010e5a0 string Internal error: didn't find cluster %d in chain starting at %d
+0010e5e0 string %s   File size is %u bytes, cluster chain length is %u bytes.   Truncating file to %u bytes. 
+0010e640 string Warning: Did only undelete %lu of %lu cluster%s. 
+0010e678 string %s   Circular cluster chain. Truncating to %lu cluster%s. 
+0010e6b8 string Bad FAT32 root directory! (bad start cluster) 
+0010e6e8 string %s   Cluster %lu (%lu) is unreadable. Skipping it. 
+0010e720 string   Size %u bytes, date %02u:%02u:%02u %s %02u %4u
+0010e758 string %s   Expected a valid '%s' entry in the %s slot, found free entry. 
+0010e7a0 string %s   Invalid '%s' entry in the %s slot. Fixing. 
+0010e7d8 string %s   Expected a valid '%s' entry in this slot. 
+0010e808 string %s   Is a dot with no 8.3 name flag set, clearing. 
+0010e840 string %s   Has a large number of bad entries. (%d/%d) 
+0010e878 string   Not dropping root directory.
+0010e898 string   Not dropping it in auto-mode.
+0010e8b8 string %s   Duplicate directory entry.   First  %s 
+0010e8e8 string Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+0010e938 string  Automatically removing dirty bit.
+0010e960 string Label in boot sector is '%s', but there is no volume label in root directory. 
+0010e9b0 string Copy label from boot sector to root directory
+0010e9e0 string Volume label '%s' stored in root directory is not valid. 
+0010ea20 string Volume label '%s' stored in root directory contains lowercase characters. 
+0010ea70 string There is no label in boot sector, but there is volume label '%s' stored in root directory 
+0010ead0 string Copy volume label from root directory to boot sector
+0010eb08 string   Auto-copying volume label from root directory to boot sector.
+0010eb48 string Remove volume label from root directory
+0010eb70 string Volume label '%s' stored in root directory and label '%s' stored in boot sector and different. 
+0010ebd0 string Invalid character in name. Use \ooo for special characters.
+0010ec10 string Internal error: file_find failed
+0010ec38 string Check FAT filesystem on DEVICE for errors. 
+0010ec68 string   -a              automatically repair the filesystem 
+0010eca0 string   -A              toggle Atari variant of the FAT filesystem 
+0010ece0 string   -b              make read-only boot sector check 
+0010ed18 string   -c N            use DOS codepage N to decode short file names (default: %d) 
+0010ed68 string   -d PATH         drop file with name PATH (can be given multiple times) 
+0010edb8 string   -f              salvage unused chains to files 
+0010edf0 string   -F NUM          specify FAT table NUM used for filesystem access 
+0010ee38 string   -l              list path names 
+0010ee60 string   -n              no-op, check non-interactively without changing 
+0010eea8 string   -p              same as -a, for compat with other *fsck 
+0010eee8 string   -r              interactively repair the filesystem (default) 
+0010ef30 string   -S              disallow spaces in the middle of short file names 
+0010ef78 string   -t              test for bad clusters 
+0010efa8 string   -u PATH         try to undelete (non-directory) file that was named PATH (can be 
+0010f000 string                     given multiple times) 
+0010f030 string   -U              allow only uppercase characters in volume and boot label 
+0010f080 string   -v              verbose mode 
+0010f0a0 string   -V              perform a verification pass 
+0010f0d0 string   --variant=TYPE  handle variant TYPE of the filesystem 
+0010f110 string   -w              write changes to disk immediately 
+0010f148 string   -y              same as -a, for compat with other *fsck 
+0010f188 string   --help          print this message 
+0010f1b0 string Internal error: getopt_long() returned unexpected value %d 
+0010f1f0 string -t and -w can not be used in read only mode 
+0010f220 string  *** Filesystem was changed ***
+0010f240 string The changes have not yet been written, you can still choose to leave the filesystem unmodified:
+0010f2a0 string  Leaving filesystem unchanged.
+0010f2c0 string %s: %u files, %lu/%lu clusters 
+0010f2e0 string lfn_get called with LFN directory entry
+0010f308 string Unfinished long file name "%s".   (Start may have been overwritten by %s) 
+0010f358 string Fix numbering (truncates long name and attaches it to short name %s)
+0010f3a0 string Wrong checksum for long file name "%s".   (Short name %s may have changed without updating the long name) 
+0010f410 string Fix checksum (attaches to short name %s)
+0010f440 string Orphaned long file name part "%s" 
+0010f468 string lfn_add_slot called with non-LFN directory entry
+0010f4a0 string A new long file name starts within an old one.
+0010f4d0 string   It could be that the LFN start bit is wrong here   if "%s" seems to match "%s". 
+0010f528 string Clear start bit and concatenate LFNs
+0010f550 string Long filename fragment "%s" found outside a LFN sequence.   (Maybe the start bit is missing on the last fragment) 
+0010f5c8 string Unexpected long filename sequence number (%d vs. expected %d). 
+0010f608 string   It could be that just the number is wrong   if "%s" seems to match "%s". 
+0010f658 string Leave it as it is (and ignore LFN so far)
+0010f688 string Checksum in long filename part wrong (%02x vs. expected %02x). 
+0010f6c8 string Reserved field in VFAT long filename slot is not 0 (but 0x%02x). 
+0010f710 string Start cluster field in VFAT long filename slot is not 0 (but 0x%04x). 
+0010f758 string Root directory has no cluster allocated!
+0010f788 string Root directory full and no free cluster
+0010f7b0 string Logical sector size (%u bytes) is not a multiple of the physical sector size.
+0010f800 string Currently, only 1 or 2 FATs are supported, not %d. 
+0010f838 string Checking we can access the last sector of the filesystem
+0010f878 string Filesystem has no space for any data clusters
+0010f8a8 string Warning: FAT32 root dir not in cluster chain! Compatibility mode... 
+0010f8f0 string Warning: FAT32 root dir is in a cluster chain, but a separate root dir   area is defined. Cannot fix this easily. 
+0010f968 string Warning: Filesystem is FAT32 according to fat_length and fat32_length fields,   but has only %lu clusters, less than the required minimum of %d.   This may lead to problems on some systems. 
+0010fa28 string There is no backup boot sector.
+0010fa48 string And there is no space for creating one!
+0010fa70 string   Auto-creating backup boot block.
+0010fa98 string Created backup of boot sector in sector %d 
+0010fac8 string There are differences between boot sector and its backup.
+0010fb08 string This is mostly harmless. Differences: (offset:original/backup)   
+0010fb50 string   Not automatically fixing this.
+0010fb78 string   Not automatically creating it.
+0010fba0 string No free reserved sector found -- no space for FSINFO sector!
+0010fbe0 string FSINFO sector has bad magic number(s):
+0010fc08 string   Offset %llu: 0x%08x != expected 0x%08x 
+0010fc38 string Don't correct (FSINFO invalid then)
+0010fc60 string Too many clusters (%lu) for FAT16 filesystem.
+0010fc90 string FAT has space for too many entries (%lld).
+0010fcc0 string Filesystem has %u clusters but only space for %u FAT entries.
+0010fd00 string Root directory (%d entries) doesn't span an integral number of sectors.
+0010fd48 string %10d bytes per logical sector 
+0010fd68 string First FAT starts at byte %llu (sector %llu) 
+0010fd98 string %10u bytes per FAT (= %u sectors) 
+0010fdc0 string Root directory starts at byte %llu (sector %llu) 
+0010fdf8 string Root directory start at cluster %lu (arbitrary size) 
+0010fe30 string Data area starts at byte %llu (sector %llu) 
+0010fe60 string %10lu data clusters (%llu bytes) 
+0010fe88 string SOURCE_DATE_EPOCH is too big or contains non-digits: "%s"
+0010fec8 string 3,5" 720k floppy 2s/80tr/9sec or 5.25" 1.2M floppy 2s/80tr/15sec
+0010ff10 string 5.25" 320k floppy 1s/80tr/8sec
+0010ff30 string 5.25" 180k floppy 1s/40tr/9sec
+0010ff50 string 5.25" 360k floppy 2s/40tr/9sec
+0010ff70 string 5.25" 160k floppy 1s/40tr/8sec
+0010ff90 string 5.25" 320k floppy 2s/40tr/8sec
+0010ffb0 string internal error: invalid number %u of choices in get_choice()
+0010fff0 string No changes have been written to the filesystem yet. If you choose to quit, it will be left in the same state it was in before you started this program.
+00110088 string fsck is running in immediate write mode. All changes so far have already been written and can not be undone now. If you choose to quit now, these changes will stay in place.
+00110138 string This is never non-interactive.
+00110158 string Internal error: cluster out of range in get_fat() (%lu > %lu).
+00110198 string Internal error: cluster out of range in set_fat() (%lu > %lu).
+001101d8 string Internal error: new cluster out of range in set_fat() (%lu > %lu).
+00110220 string Requested FAT table %ld does not exist.
+00110248 string Reading FAT table greather than 2 is implemented yet.
+00110280 string Both FATs appear to be corrupt. Giving up. Run fsck.fat with non-zero -F option.
+001102d8 string First FAT appears to be corrupt and second FAT does not exist. Giving up. Run fsck.fat with -F 1 option.
+00110348 string FATs differ, please run fsck.fat
+00110370 string FATs differ - using first FAT.
+00110390 string FATs differ - using second FAT.
+001103b0 string FATs differ but appear to be intact.
+001103d8 string FATs differ and both appear to be corrupt.
+00110408 string Cluster %ld out of range (1), please run fsck.fat
+00110440 string Cluster %ld out of range (1). Setting to EOF. 
+00110470 string Cluster %ld out of range (%ld > %ld), please run fsck.fat
+001104b0 string Cluster %ld out of range (%ld > %ld). Setting to EOF. 
+001104e8 string Internal error: next_cluster on bad cluster
+00110518 string Internal error: attempt to set owner in non-existent table
+00110558 string Internal error: attempt to change file owner
+00110588 string Reclaimed %d unused cluster%s (%llu bytes). 
+001105b8 string Reclaiming unconnected clusters.
+001105e0 string Internal error: num_refs going below zero
+00110610 string Broke cycle at cluster %lu in free chain. 
+00110640 string Reclaimed %d unused cluster%s (%llu bytes) in %d chain%s. 
+00110680 string Checking free cluster summary.
+001106a0 string Free cluster summary wrong (%ld vs. really %ld) 
+001106d8 string Free cluster summary uninitialized (should be %ld) 
+00110710 string Got %d bytes instead of %d at %lld
+00110738 string Wrote %d bytes instead of %d at %lld
+00110760 string Seek to %lld failed: %s   Did not write %d bytes. 
+00110798 string Writing %d bytes at %lld failed: %s 
+001107c0 string Wrote %d bytes instead of %d bytes at %lld. 
+001107f0 string Cannot initialize conversion from codepage %d to %s: %s 
+00110830 string Cannot initialize conversion from %s to codepage %d: %s 
+00110870 string Using internal CP850 conversion table 
+00110898 string Cannot convert input character 0x%04x to 'CP850': %s 
+001108d0 string Cannot convert input string to 'CP850': String is too long 
+00110910 string Cannot convert input string '%s' to 'CP850': String is too long 
+00110958 string Cannot convert input string '%s' to 'CP850': %s 
+00110990 string Cannot convert input string '%s' to 'CP%d': String is too long 
+001109d0 string Cannot convert input sequence '\x%.02hhX' from codeset '%s' to 'CP%d': %s 
+00110a20 string Cannot convert input string from 'CP%d': String is too long 
+00110a60 string Cannot convert input sequence '\x%.02hhX' from 'CP%d': %s 
+00110aa0 string Cannot convert input string '%ls' to 'CP%d': String is too long 
+00110ae8 string Cannot convert input character '%lc' to 'CP%d': %s 
+00110b1c string *?\/:
+00110b22 string *?<>|"\/:.
+00110b2d string New label
+00110b37 string Error when processing label
+00110b53 string New label is invalid
+00110b68 string Enter new label
+00110b78 string NO NAME    
+00110b84 string Set new label
+00110b92 string Remove invalid label
+00110ba7 string Path name too long.
+00110bc4 string  and restart
+00110bd1 string %s  and 
+00110bda string %s   share clusters. 
+00110bf0 string Truncate first to %u bytes%s
+00110c0d string Truncate second to %u bytes
+00110c29 string Cannot rename FAT32 root dir
+00110c46 string New name
+00110c4f string Can't undelete directories.
+00110c6b string Checking file %s
+00110c7c string  (%s)
+00110c91 string .          
+00110c9d string Create entry
+00110caa string   Creating.
+00110cb6 string Drop parent
+00110cc2 string Drop entry
+00110ccd string   Moving entry down.
+00110ce2 string Move entry down
+00110cf2 string No free entry found.
+00110d07 string %07lu
+00110d0d string Too many files need repair.
+00110d29 string Drop directory
+00110d38 string Keep directory
+00110d47 string   Bad short file name (%s). 
+00110d64 string Drop file
+00110d6e string   Auto-renaming it.
+00110d82 string Keep it
+00110d8a string Auto-rename
+00110d96 string Rename file
+00110da2 string   Renamed to %s 
+00110db3 string   Second %s 
+00110dc0 string Drop first
+00110dcb string   Auto-renaming second.
+00110de3 string Auto-rename second
+00110df6 string Auto-rename first
+00110e08 string Rename second
+00110e16 string Rename first
+00110e23 string Drop second
+00110e2f string Remove dirty bit
+00110e40 string No action
+00110e4a string Remove label from boot sector
+00110e68 string   Auto-removing label.
+00110eb4 string undelete
+00110ebd string Warning: did not %s file %s 
+00110ee2 string Duplicate dots in name.
+00110efa string Expected three octal digits.
+00110f17 string %s: Absolute path required.
+00110f33 string Ambiguous name: "%s"
+00110f48 string Dropping %s 
+00110f55 string Undeleting %s 
+00110f64 string Internal error: file_modify
+00110f80 string Usage: %s [OPTIONS] DEVICE 
+00110f9c string Options: 
+00110fa6 string variant
+00110fb3 string Invalid codepage : %s 
+00110fca string Invalid FAT table : %s 
+00110fe2 string standard
+00110feb string atari
+00110ff1 string Unknown variant: %s 
+00111006 string Aac:d:bfF:lnprStu:UvVwy
+0011101e string fsck.fat 4.2 (2021-01-31)
+00111038 string Starting check/repair pass.
+00111054 string Starting verification pass.
+00111070 string Write changes
+0011107e string Writing changes.
+0011108f string Leave filesystem unchanged
+001110aa string Delete LFN
+001110b5 string   Not auto-correcting this.
+001110d1 string Leave it as it is
+001110e3 string Delete
+001110ea string   Auto-deleting.
+001110fb string Leave it
+00111104 string Delete previous LFN
+00111118 string Delete fragment
+00111128 string Set start bit
+00111136 string Correct sequence number
+0011114e string Correct checksum
+00111163 string Auto-setting to 0.
+00111176 string Unable to create unique name
+00111193 string Root directory is full.
+001111ae string undefined
+001111b8 string Logical sector size is zero.
+001111d5 string Cluster size is zero.
+001111eb string Failed to read sector %u.
+00111205 string FAT size is zero.
+00111217 string No root directory!
+0011122a string Create one
+00111235 string Do without a backup
+00111249 string %s%u:%02x/%02x
+0011125c string Copy original to backup
+00111274 string Copy backup to original
+0011128c string No FSINFO sector
+0011129d string Do without FSINFO
+001112af string Correct
+001112b7 string   Auto-correcting it.
+001112cd string Root directory has zero size.
+001112eb string Boot sector contents:
+00111301 string System ID "%s" 
+00111311 string Serial number 0x%x 
+00111325 string Media byte 0x%02x (%s) 
+0011133d string %10d bytes per cluster 
+00111355 string %10d reserved sector%s 
+0011136d string %10d FATs, %d bit entries 
+00111388 string %10d root directory entries 
+001113a5 string %u sectors/track, %u heads 
+001113c1 string %10u hidden sectors 
+001113d6 string %10u sectors total 
+001113ea string SOURCE_DATE_EPOCH
+001113fc string 5.25" or 3.5" HD floppy
+00111414 string hard disk
+0011141e string 3.5" 640k floppy 2s/80tr/8sec
+00111446 string malloc
+0011144d string asprintf
+00111458 string %d) %s 
+00111460 string ?) List all choices
+00111474 string q) Quit fsck
+00111481 string 123456789
+0011148b string [%.*s?%s]? 
+0011149b string Quit now
+001114a4 string Continue
+001114b9 string Fixing first cluster in FAT.
+001114d6 string Bad FAT entry size: %d bits.
+001114f3 string Use first FAT
+00111501 string   Using first FAT.
+00111514 string Use second FAT
+00111523 string Using second FAT.
+00111535 string Checking for bad clusters.
+00111550 string Cluster %lu is unreadable. 
+0011156c string Checking for unused clusters.
+0011158a string FSCK%04dREC
+00111596 string   Auto-correcting.
+001115a9 string Don't correct
+001115b7 string Set it
+001115be string   Auto-setting.
+001115ce string Leave it uninitialized
+001115ea string Seek to %lld
+001115f7 string Read %d bytes at %lld
+0011160d string Write %d bytes at %lld
+00111624 string closing filesystem
+00111637 string CP%d//TRANSLIT
+0011164b string WCHAR_T
+0011166b string  1/2 
+00111671 string  1/4 
+0011169b string  3/4 
+001117c0 string 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+-
+00111d11 string zR
+00111d41 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/dosfstools.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

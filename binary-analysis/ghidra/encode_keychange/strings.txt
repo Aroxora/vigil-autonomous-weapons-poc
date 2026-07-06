@@ -1,0 +1,120 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100821 string-utf8 _ITM_deregisterTMCloneTable
+0010083d string-utf8 __gmon_start__
+0010084c string-utf8 _ITM_registerTMCloneTable
+00100866 string-utf8 snmp_call_callbacks
+0010087a string-utf8 snmp_get_do_debugging
+00100890 string-utf8 generate_kul
+0010089d string-utf8 netsnmp_gethomedir
+001008b0 string-utf8 debugmsgtoken
+001008be string-utf8 debugmsg
+001008c7 string-utf8 setup_engineID
+001008d6 string-utf8 sc_init
+001008de string-utf8 generate_Ku
+001008ea string-utf8 snmp_set_do_debugging
+00100900 string-utf8 hex_to_binary2
+0010090f string-utf8 sc_get_auth_oid
+0010091f string-utf8 encode_keychange
+00100930 string-utf8 binary_to_hex
+0010093e string-utf8 sc_get_auth_name
+0010094f string-utf8 usm_lookup_auth_type
+00100964 string-utf8 fgets
+0010096a string-utf8 stdin
+00100970 string-utf8 fopen64
+00100978 string-utf8 __stack_chk_fail
+00100989 string-utf8 __printf_chk
+00100996 string-utf8 free
+0010099b string-utf8 exit
+001009a0 string-utf8 strlen
+001009a7 string-utf8 stdout
+001009ae string-utf8 isatty
+001009b5 string-utf8 __fprintf_chk
+001009c3 string-utf8 malloc
+001009ca string-utf8 __libc_start_main
+001009dc string-utf8 stderr
+001009e3 string-utf8 __memset_chk
+001009f0 string-utf8 __ctype_tolower_loc
+00100a04 string-utf8 __cxa_finalize
+00100a13 string-utf8 calloc
+00100a1a string-utf8 fclose
+00100a21 string-utf8 memset
+00100a28 string-utf8 fputc
+00100a2e string-utf8 tcgetattr
+00100a38 string-utf8 fputs
+00100a3e string-utf8 __snprintf_chk
+00100a4d string-utf8 tcsetattr
+00100a57 string-utf8 fwrite
+00100a5e string-utf8 stat64
+00100a65 string-utf8 libnetsnmp.so.45
+00100a76 string-utf8 libc.so.6
+00100a80 string-utf8 GLIBC_2.33
+00100a8b string-utf8 GLIBC_2.4
+00100a95 string-utf8 GLIBC_2.34
+00100aa0 string-utf8 GLIBC_2.3
+00100aaa string-utf8 GLIBC_2.2.5
+00100ab6 string-utf8 GLIBC_2.3.4
+00104008 string Usage: %s [-fhPvV] -t (md5|sha1) [-O "<old_passphrase>"][-N "<new_passphrase>"][-E [0x]<engineID>]      -E [0x]<engineID>		EngineID used for kul generation.     -f				Force passphrases to be read from stdin.     -h				Help.     -N "<new_passphrase>"	Passphrase used to generate new Ku.     -O "<old_passphrase>"	Passphrase used to generate old Ku.     -P				Turn off prompt indicators.     -t md5 | sha1		HMAC hash transform type.     -v				Verbose.     -V				Visible.  Echo passphrases to terminal. 		 
+00104200 string Only -t is mandatory.  The transform is used to convert P=>Ku, convert     Ku=>Kul, and to hash the old Kul with the random bits.      Passphrase will be taken from the first successful source as follows: 
+001042d8 string  %s	a) Commandline options, 	b) The file "%s/%s", 	c) stdin  -or-  User input from the terminal.  %s		 
+00104340 string -f will require reading from the stdin/terminal, ignoring a) and b).     -P will prevent prompts for passphrases to stdout from being printed.      <engineID> is interpreted as a hex string when preceded by "0x",     otherwise it is created to contain "text".  If nothing is given,     <engineID> is constructed from the first IP address for the local host. 
+001044a8 string Cannot access directory "%s". 
+001044c8 string Directory "%s" is accessible by group or world. 
+00104500 string File "%s" is accessible by group or world. 
+00104530 string Passphrase file "%s" is empty... 
+00104558 string Only one line in file "%s"... 
+00104578 string Unrecognized hash transform: "%s". 
+001045a0 string Old passphrase must be greater than %d characters in length. 
+001045e0 string New passphrase must be greater than %d characters in length. 
+00104620 string Old passphrase:	%s New passphrase:	%s 
+00104648 string generating old Kul (%lu) (from Ku): 
+00104670 string generating new Kul (%lu) (from Ku): 
+00104695 string $HOME
+0010469b string Aborted... 
+001046a7 string Old passphrase: 
+001046b8 string New passphrase: 
+001046c9 string %s/%s
+001046cf string .snmp
+001046d5 string Cannot access file "%s". 
+001046f1 string Cannot open "%s".
+00104703 string KeyChange string:	
+00104716 string %s: out of memory!
+00104729 string passphrase.ek
+00104737 string The -t option is mandatory. 
+00104754 string Hash:		%s 
+0010475f string encode_keychange.c
+00104772 string %s(): %s, %d: 
+00104781 string trace
+00104787 string engineIDLen: %lu 
+00104799 string encode_keychange
+001047aa string EID (%lu): 
+001047bb string old Ku (%lu) (from %s): 
+001047d4 string %s%s 
+00104919 string zR
+00104949 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/snmp.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

@@ -1,0 +1,191 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001008e1 string-utf8 optind
+001008e8 string-utf8 puts
+001008ed string-utf8 fopen64
+001008f5 string-utf8 __stack_chk_fail
+00100906 string-utf8 free
+0010090b string-utf8 exit
+00100910 string-utf8 unlink
+00100917 string-utf8 mmap64
+0010091e string-utf8 strndup
+00100926 string-utf8 strlen
+0010092d string-utf8 __ctype_b_loc
+0010093b string-utf8 __isoc23_strtol
+0010094b string-utf8 stdout
+00100952 string-utf8 optarg
+00100959 string-utf8 malloc
+00100960 string-utf8 __libc_start_main
+00100972 string-utf8 stderr
+00100979 string-utf8 fstat64
+00100981 string-utf8 __cxa_finalize
+00100990 string-utf8 strerror
+00100999 string-utf8 getenv
+001009a0 string-utf8 fclose
+001009a7 string-utf8 fputc
+001009ad string-utf8 vfprintf
+001009b6 string-utf8 fwrite
+001009bd string-utf8 strcmp
+001009c4 string-utf8 __errno_location
+001009d5 string-utf8 getopt_long
+001009e1 string-utf8 strncmp
+001009e9 string-utf8 libc.so.6
+001009f3 string-utf8 handle_elf_x86_64
+00100a05 string-utf8 compel_log_get_loglevel
+00100a1d string-utf8 _ITM_deregisterTMCloneTable
+00100a39 string-utf8 _edata
+00100a40 string-utf8 compel_log_init
+00100a50 string-utf8 __data_start
+00100a5d string-utf8 __gmon_start__
+00100a6c string-utf8 _IO_stdin_used
+00100a7b string-utf8 _end
+00100a80 string-utf8 opts
+00100a85 string-utf8 __bss_start
+00100a91 string-utf8 compel_print_on_level
+00100aa7 string-utf8 handle_binary
+00100ab5 string-utf8 _ITM_registerTMCloneTable
+00100acf string-utf8 uninst_root
+00100adb string-utf8 GLIBC_2.3
+00100ae5 string-utf8 GLIBC_2.33
+00100af0 string-utf8 GLIBC_2.38
+00100afb string-utf8 GLIBC_2.4
+00100b05 string-utf8 GLIBC_2.34
+00100b10 string-utf8 GLIBC_2.2.5
+00105148 string csf:o:p:hVl:
+00105158 string compel/arch/x86/src/lib/handle-elf.c
+00105180 string Error (%s:%d): Unsupported Elf format detected 
+001051b0 string 	type 0x%x machine 0x%x version 0x%x 
+001051d8 string Error (%s:%d): Unsupported header detected 
+00105208 string Error (%s:%d): No memory for section headers 
+00105238 string Error (%s:%d): Section table [%#zx, %#zx) is out of [%#zx, %#zx) 
+00105280 string Error (%s:%d): String section header @%#zx is out of [%#zx, %#zx) 
+001052c8 string Error (%s:%d): No symbol table present 
+001052f0 string Error (%s:%d): String section @%#zx size %#lx is out of [%#zx, %#zx) 
+00105338 string Error (%s:%d): Corrupted pointer %p (%s) at %s:%d 
+00105370 string 	 index %-2zd type 0x%-2x name %s 
+00105398 string Overriding unexpected precalculated address of section (section %s addr 0x%lx expected 0x%lx) 
+001053f8 string Error (%s:%d): Corrupted symtab header 
+00105420 string Error (%s:%d): Symbol table align differ 
+00105450 string 	type 0x%-2x bind 0x%-2x shndx 0x%-4x value 0x%-2lx name %s 
+00105490 string static __maybe_unused compel_reloc_t %s_relocs[] = { 
+001054c8 string 	section %2zd type 0x%-2x link 0x%-2x info 0x%-2x name %s 
+00105508 string 		r_offset 0x%-4lx r_info 0x%-4lx / sym 0x%-2lx type 0x%-2lx symsecoff 0x%-4lx 
+00105558 string Error (%s:%d): Unexpected undefined symbol: `%s'. External symbol in PIE? 
+001055a8 string Error (%s:%d): Unsupported COMMON symbol: `%s'. Try initializing the variable 
+001055f8 string 			value 0x%-8lx addend32 %-4d addend64 %-8ld place %-8lx symname %s 
+00105640 string Error (%s:%d): Unexpected symbol section index %u/%u 
+00105678 string 				R_X86_64_32       at 0x%-4lx val 0x%x 
+001056a8 string 	{ .offset = 0x%-8x, .type = COMPEL_TYPE_INT,  .addend = %-8d, .value = 0x%-16x, }, /* R_X86_64_32 */ 
+00105710 string 				R_X86_64_64       at 0x%-4lx val 0x%lx 
+00105740 string 	{ .offset = 0x%-8x, .type = COMPEL_TYPE_LONG, .addend = %-8ld, .value = 0x%-16lx, }, /* R_X86_64_64 */ 
+001057b0 string 				R_X86_64_PC32     at 0x%-4lx val 0x%x 
+001057e0 string 				R_X86_64_PLT32    at 0x%-4lx val 0x%x 
+00105810 string 				R_X86_64_GOTPCREL at 0x%-4lx val 0x%x 
+00105840 string 	{ .offset = 0x%-8x, .type = COMPEL_TYPE_LONG | COMPEL_TYPE_GOTPCREL, .addend = %-8d, .value = 0x%-16x, }, /* R_X86_64_GOTPCREL */ 
+001058c8 string Error (%s:%d): Unsupported relocation of type %lu 
+00105900 string static __maybe_unused const char %s_blob[] = { 	
+00105938 string Copying section '%s' 	start:0x%lx (gap:0x%lx) size:0x%lx 
+00105978 string static void __maybe_unused %s_setup_c_header_desc(struct parasite_blob_desc *pbd, bool native) 
+001059d8 string { 	pbd->parasite_type	= COMPEL_BLOB_CHEADER; 
+00105a08 string 	pbd->hdr.bsize		= sizeof(%s_blob); 
+00105a30 string 		pbd->hdr.parasite_ip_off	= %s_sym__export_parasite_head_start; 
+00105a78 string 		pbd->hdr.parasite_ip_off	= %s_sym__export_parasite_head_start_compat; 
+00105ac8 string 	pbd->hdr.cmd_off	= %s_sym__export_parasite_service_cmd; 
+00105b08 string 	pbd->hdr.args_ptr_off	= %s_sym__export_parasite_service_args_ptr; 
+00105b50 string 	pbd->hdr.got_off	= round_up(pbd->hdr.bsize, sizeof(long)); 
+00105b90 string 	pbd->hdr.args_off	= pbd->hdr.got_off + %zd*sizeof(long); 
+00105bd0 string 	pbd->hdr.relocs		= %s_relocs; 
+00105bf0 string 	pbd->hdr.nr_relocs	= sizeof(%s_relocs) / sizeof(%s_relocs[0]); 
+00105c38 string static void __maybe_unused %s_setup_c_header(struct parasite_ctl *ctl) 
+00105c80 string 	%s_setup_c_header_desc(compel_parasite_blob_desc(ctl), compel_mode_native(ctl)); 
+00105cd8 string -Wstrict-prototypes -ffreestanding -fno-stack-protector -nostdlib -fomit-frame-pointer -fno-pic
+00105d38 string -Wstrict-prototypes -ffreestanding -fno-stack-protector -nostdlib -fomit-frame-pointer -fpie
+00105d98 string Usage:   compel [--compat] includes | cflags | ldflags   compel plugins [PLUGIN_NAME ...]   compel [--compat] [--static] libs   compel -f FILE -o FILE [-p NAME] [-l N] hgen     -f, --file FILE		input (parasite object) file name     -o, --output FILE		output (header) file name     -p, --prefix NAME		prefix for var names     -l, --log-level NUM		log level (default: %d)   compel -h|--help   compel -V|--version 
+00105f38 string Error: action argument required 
+00105f60 string %s/arch/%s/scripts/compel-pack%s.lds.S 
+00105f88 string %s/compel/scripts/compel-pack%s.lds.S 
+00105fb0 string Compel is not installed, can only link with static libraries (use --static) 
+00106000 string Error: option --file required 
+00106020 string Error: option --output required 
+00106048 string Error: can't autogenerate prefix (supply --prefix)
+00106080 string Error (%s:%d): Can't open file %s: %s 
+001060a8 string Error (%s:%d): Can't stat file %s: %s 
+001060d0 string Error (%s:%d): Can't open %s: %s 
+001060f8 string Error (%s:%d): Can't mmap file %s: %s 
+0010611f string Header 
+00106127 string ------------ 
+00106135 string compel/src/lib/handle-elf.c
+00106151 string Sections 
+0010615e string &secstrings[sh->sh_name]
+00106177 string Symbols 
+00106180 string strtab_hdr
+0010618b string symbols
+00106193 string symstrings
+0010619e string /* Autogenerated from %s */ 
+001061bb string #include <compel/infect.h> 
+001061e0 string __export
+001061e9 string sh_src
+001061f0 string #define %s_sym%s 0x%lx 
+00106208 string Relocations 
+00106215 string sh_rel
+0010621c string where
+00106229 string 0x00,
+0010622f string 0x%02x,
+00106237 string .data
+0010623d string 	pbd->hdr.mem		= %s_blob; 
+00106258 string 	if (native) 
+00106266 string #ifdef CONFIG_COMPAT 
+0010627c string 	else 
+00106283 string #endif /* CONFIG_COMPAT */ 
+0010629f string 	pbd->hdr.data_off	= %#lx; 
+001062c1 string -I %s/include/uapi 
+001062d5 string -compat
+001062dd string libcompel.a
+001062e9 string libcompel.so.1
+001062f8 string COMPEL_UNINSTALLED_ROOTDIR
+00106313 string Version: %d.%d.%d 
+00106326 string includes
+0010632f string cflags
+00106336 string ldflags
+0010633e string -r -z noexecstack -T 
+0010635b string /usr/lib/x86_64-linux-gnu
+00106375 string plugins
+00106381 string %s/plugins/%s%s 
+00106392 string %s/compel/%s%s 
+001063a7 string %s/%s 
+001063b3 string compel/src/main.c
+001063c7 string %s generated successfully. 
+001063e3 string Error: unknown action '%s' 
+001063ff string static
+0010640b string output
+00106412 string prefix
+0010641e string version
+00106426 string log-level
+001064a9 string zR
+001064d9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/criu.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

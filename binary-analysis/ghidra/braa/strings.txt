@@ -1,0 +1,218 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001008f9 string-utf8 optind
+00100900 string-utf8 fgets
+00100906 string-utf8 snprintf
+0010090f string-utf8 puts
+00100914 string-utf8 perror
+0010091b string-utf8 ftime
+00100921 string-utf8 __stack_chk_fail
+00100932 string-utf8 __printf_chk
+0010093f string-utf8 free
+00100944 string-utf8 __fdelt_chk
+00100950 string-utf8 __assert_fail
+0010095e string-utf8 strdup
+00100965 string-utf8 fcntl
+0010096b string-utf8 putchar
+00100973 string-utf8 memmove
+0010097b string-utf8 gettimeofday
+00100988 string-utf8 fopen
+0010098e string-utf8 socket
+00100995 string-utf8 recvfrom
+0010099e string-utf8 strlen
+001009a5 string-utf8 __ctype_b_loc
+001009b3 string-utf8 usleep
+001009ba string-utf8 __isoc23_strtol
+001009ca string-utf8 optarg
+001009d1 string-utf8 realloc
+001009d9 string-utf8 __sprintf_chk
+001009e7 string-utf8 _exit
+001009ed string-utf8 __fprintf_chk
+001009fb string-utf8 malloc
+00100a02 string-utf8 __libc_start_main
+00100a14 string-utf8 stderr
+00100a1b string-utf8 sendto
+00100a22 string-utf8 getopt
+00100a29 string-utf8 inet_aton
+00100a33 string-utf8 inet_ntoa
+00100a3d string-utf8 __cxa_finalize
+00100a4c string-utf8 calloc
+00100a53 string-utf8 memcmp
+00100a5a string-utf8 fclose
+00100a61 string-utf8 index
+00100a67 string-utf8 __isoc23_strtoul
+00100a78 string-utf8 fputc
+00100a7e string-utf8 signal
+00100a85 string-utf8 __snprintf_chk
+00100a94 string-utf8 memcpy
+00100a9b string-utf8 fwrite
+00100aa2 string-utf8 select
+00100aa9 string-utf8 strcmp
+00100ab0 string-utf8 __errno_location
+00100ac1 string-utf8 alarm
+00100ac7 string-utf8 libc.so.6
+00100ad1 string-utf8 GLIBC_2.3
+00100adb string-utf8 GLIBC_2.14
+00100ae6 string-utf8 GLIBC_2.15
+00100af1 string-utf8 GLIBC_2.4
+00100afb string-utf8 GLIBC_2.34
+00100b06 string-utf8 GLIBC_2.2.5
+00100b12 string-utf8 GLIBC_2.3.4
+00100b1e string-utf8 GLIBC_2.38
+00100b29 string-utf8 _ITM_deregisterTMCloneTable
+00100b45 string-utf8 __gmon_start__
+00100b54 string-utf8 _ITM_registerTMCloneTable
+00107004 string %s=> Null object 
+00107016 string %s=> Integer: %d 
+00107028 string %s=> Counter: %d 
+0010703a string %s=> Gauge: %d 
+0010704a string %s=> Timeticks: %d 
+0010705e string %s=> String: '%s' 
+00107071 string %s=> Counter64: '%llu' 
+00107089 string %s=> IPAddress: '%s'
+0010709e string %s=> OID: 
+001070ad string %s=> Sequence/PDU: 
+001070c1 string %s=> (Unknown object) 
+001070d8 string braaasn.h
+001070e2 string (null object)
+001070fd string (Complex object type (tree))
+0010711a string (Unknown object type)
+00107130 string braaasn.c
+0010713a string str = strdup(str)
+00107151 string braaoids.c
+0010715c string braaprotocol.c
+0010716b string community = strdup(community)
+00107189 string [0] Unknown error
+0010719b string [1] Too big
+001071a7 string [2] No such name
+001071b8 string [3] Bad value
+001071c6 string [4] Read only
+001071d4 string [5] Generic error
+001071e6 string queries.c
+001071f0 string public
+001071f7 string string = strdup(string)
+0010720f string Invalid syntax: '%s'.
+00107225 string Invalid IP address: '%s'.
+0010723f string Invalid range: '%s - %s'.
+00107259 string Invalid port: '%s'.
+0010726d string Invalid query: '%s'!
+00107282 string Invalid OID: '%s'!
+00107295 string Invalid value: '%s'!
+001072aa string sendto
+001072b1 string recvfrom
+001072ba string %s: Invalid message type! 
+001072d9 string name->type == BRAAASN_OID
+001072f3 string %s:%dms:%s:Error %s. 
+00107309 string %s:%dms:Error %s. Index: %d. 
+00107327 string %s:%dms:
+00107330 string walkid < q->range->walk_count
+0010734e string ei == 1
+00107356 string %s:OK, set. 
+00107363 string   -h        Show this help.
+0010737f string Query format:
+0010738d string  Examples:
+00107398 string   i      is INTEGER
+001073ac string   a      is IPADDRESS
+001073c2 string   s      is OCTET STRING
+001073db string   o      is OBJECT IDENTIFIER
+001073f9 string Invalid retry count. 
+0010740f string Invalid alarm time. 
+00107424 string fopen
+0010742a string a:h2vd:r:p:d:f:t:x
+001076a0 string braa_ASNObject_CreateFromString
+001076c0 string braa_ASNObject_Create
+001076d8 string ret = (struct braa_asnobject*) malloc(sizeof(struct braa_asnobject))
+00107720 string n = (oid*) gmalloc(sizeof(oid))
+00107740 string n = (oid*) gmalloc(sizeof(oid) + sizeof(u_int32_t) * len)
+00107780 string pduc = (asnobject**) gmalloc(sizeof(struct braa_asnobject*) * 4)
+001077c8 string msgc = (asnobject**) gmalloc(sizeof(asnobject*) * 3)
+00107800 string varseql = (struct braa_asnobject**) gmalloc(sizeof(struct braa_asnobject*) * 2)
+00107850 string vsq = (asnobject **) grealloc(vsq, sizeof(asnobject*) * (vsl + 1))
+00107898 string n = (struct query_hostrange*) gmalloc(sizeof(struct query_hostrange))
+001078e0 string n->community = strdup(h->community)
+00107908 string n->queries = (char**) gmalloc(sizeof(char*) * h->query_count)
+00107948 string n->queries[i] = strdup(h->queries[i])
+00107970 string hr = (struct query_hostrange*) gmalloc(sizeof(struct query_hostrange))
+001079b8 string hr->community = strdup(community)
+001079e0 string hr->queries[hr->query_count++] = strdup(queries)
+00107a18 string qh = (struct queryhash*) malloc(sizeof(struct queryhash))
+00107a58 string walk_ids = (char**) grealloc(walk_ids, (walk_count + 1) * sizeof(char*))
+00107aa8 string set_ids = (char**) grealloc(set_ids, (set_count + 1) * sizeof(char*))
+00107af0 string get_ids = (char**) grealloc(get_ids, (get_count + 1) * sizeof(char*))
+00107b38 string first_oids = (oid**) grealloc(first_oids, (walk_count + 1) * sizeof(oid*))
+00107b88 string hosts = (struct query*) gmalloc(sizeof(struct query) * (hr->end - hr->start + 1))
+00107be0 string thisquery->latest_oid = (oid**) gmalloc(sizeof(oid*) * walk_count)
+00107c28 string thisquery->walk_retries = (char*) gmalloc(sizeof(char) * walk_count)
+00107c70 string thisquery->walk_contact = (struct timeb*) gmalloc(sizeof(struct timeb) * walk_count)
+00107cc8 string Trouble encoding BRAAASN_PDU_GETREQUEST message for %s. Internal error? 
+00107d18 string Trouble encoding BRAAASN_PDU_SETREQUEST message for %s. Internal error? 
+00107d68 string Trouble encoding BRAAASN_PDU_GETNEXTREQUEST message for %s. Internal error? 
+00107db8 string %s: Unknown host sending messages! 
+00107de0 string braa_PDUMsg_GetVariableCount(ao) == 1
+00107e08 string %s: Message cannot be dispatched! 
+00107e30 string %s: Message cannot be decoded! 
+00107e50 string braa 0.82 - Mateusz 'mteg' Golicz <mtg@elsat.net.pl>, 2003 - 2006
+00107e98 string usage: braa [options] [query1] [query2] ...
+00107ec8 string   -2        Claim to be a SNMP2C agent.
+00107ef0 string   -v        Show short summary after doing all queries.
+00107f28 string   -x        Hexdump octet-strings
+00107f50 string   -t <s>    Wait <s> seconds for responses.
+00107f80 string   -d <s>    Wait <s> microseconds after sending each packet.
+00107fc0 string   -p <s>    Wait <s> milliseconds between subsequent passes.
+00108000 string   -f <file> Load queries from file <file> (one by line).
+00108040 string   -a <time> Quit after <time> seconds, independent on what happens.
+00108088 string   -r <rc>   Retry count (default: 3).
+001080b0 string   GET:   [community@]iprange[:port]:oid[/id]
+001080e0 string   WALK:  [community@]iprange[:port]:oid.*[/id]
+00108110 string   SET:   [community@]iprange[:port]:oid=value[/id]
+00108148 string          public@10.253.101.1:161:.1.3.6.*
+00108178 string          10.253.101.1-10.253.101.255:.1.3.6.1.2.1.1.4.0=sme
+001081b8 string          10.253.101.1:.1.3.6.1.2.1.1.1.0/description
+001081f0 string  It is also possible to specify multiple queries at once:
+00108230 string          10.253.101.1-10.253.101.255:.1.3.6.1.2.1.1.4.0=sme,.1.3.6.*
+00108278 string          (Will set .1.3.6.1.2.1.1.4.0 to 'me' and do a walk starting from .1.3.6)
+001082d0 string   Values for SET queries have to be prepended with a character specifying the value type:
+00108330 string If the type specifier is missing, the value type is auto-detected
+00108378 string Unable to process queries: %s (file %s) 
+001083a8 string Unable to process queries: %s 
+001083c8 string socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP)
+001083f8 string fcntl(socket, F_SETFL, O_NONBLOCK)
+00108420 string %d queries made, %d queries acknowledged. 
+00108450 string braa_OID_CreateFromArray
+00108470 string braa_OID_CreateFromString
+00108490 string braa_Msg_Create
+001084a0 string braa_SetRequestPDU_Insert
+001084c0 string braa_GetRequestPDU_Insert
+001084e0 string braa_ASNObject_Create
+00108500 string braa_RequestPDU_Create
+00108520 string bapp_processmessages
+00108538 string bapp_make_hash
+00108550 string duplicate_hostrange
+00108570 string bapp_rangesplit_query
+001088e1 string zR
+00108911 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debuglink

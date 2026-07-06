@@ -1,0 +1,169 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100a19 string-utf8 fgets
+00100a1f string-utf8 mempcpy
+00100a27 string-utf8 lstat
+00100a2d string-utf8 stdin
+00100a33 string-utf8 putc
+00100a38 string-utf8 dcgettext
+00100a42 string-utf8 __stack_chk_fail
+00100a53 string-utf8 __printf_chk
+00100a60 string-utf8 free
+00100a65 string-utf8 statx
+00100a6b string-utf8 __isoc23_fscanf
+00100a7b string-utf8 freeaddrinfo
+00100a88 string-utf8 getaddrinfo
+00100a94 string-utf8 strdup
+00100a9b string-utf8 closedir
+00100aa4 string-utf8 __getdelim
+00100aaf string-utf8 strpbrk
+00100ab7 string-utf8 fflush
+00100abe string-utf8 memmove
+00100ac6 string-utf8 fopen
+00100acc string-utf8 __isoc23_sscanf
+00100adc string-utf8 socket
+00100ae3 string-utf8 getpwuid
+00100aec string-utf8 strlen
+00100af3 string-utf8 __ctype_b_loc
+00100b01 string-utf8 __isoc23_strtol
+00100b11 string-utf8 getpid
+00100b18 string-utf8 readlink
+00100b21 string-utf8 stdout
+00100b28 string-utf8 __sprintf_chk
+00100b36 string-utf8 bindtextdomain
+00100b45 string-utf8 __fprintf_chk
+00100b53 string-utf8 malloc
+00100b5a string-utf8 rpmatch
+00100b62 string-utf8 __libc_start_main
+00100b74 string-utf8 stderr
+00100b7b string-utf8 in6addr_any
+00100b87 string-utf8 inet_ntop
+00100b91 string-utf8 __cxa_finalize
+00100ba0 string-utf8 setlocale
+00100baa string-utf8 strchr
+00100bb1 string-utf8 kill
+00100bb6 string-utf8 readdir
+00100bbe string-utf8 fclose
+00100bc5 string-utf8 __asprintf_chk
+00100bd4 string-utf8 opendir
+00100bdc string-utf8 gai_strerror
+00100be9 string-utf8 __snprintf_chk
+00100bf8 string-utf8 memcpy
+00100bff string-utf8 getcwd
+00100c06 string-utf8 fwrite
+00100c0d string-utf8 strcmp
+00100c14 string-utf8 __errno_location
+00100c25 string-utf8 fstat
+00100c2b string-utf8 strncmp
+00100c33 string-utf8 __cxa_atexit
+00100c40 string-utf8 libc.so.6
+00100c4a string-utf8 GLIBC_2.3
+00100c54 string-utf8 GLIBC_2.28
+00100c5f string-utf8 GLIBC_2.14
+00100c6a string-utf8 GLIBC_2.8
+00100c74 string-utf8 GLIBC_2.33
+00100c7f string-utf8 GLIBC_2.4
+00100c89 string-utf8 GLIBC_2.38
+00100c94 string-utf8 GLIBC_2.34
+00100c9f string-utf8 GLIBC_2.3.4
+00100cab string-utf8 GLIBC_2.2.5
+00100cb7 string-utf8 _ITM_deregisterTMCloneTable
+00100cd3 string-utf8 __gmon_start__
+00100ce2 string-utf8 _ITM_registerTMCloneTable
+00107008 string Cannot open a network socket. 
+00107030 string Cannot find socket's device number. 
+00107058 string Usage: fuser [-fIMuvw] [-a|-s] [-4|-6] [-c|-m|-n SPACE]              [-k [-i] [-SIGNAL]] NAME...        fuser -l        fuser -V Show which processes use the named files, sockets, or filesystems.    -a,--all              display unused files too   -i,--interactive      ask before killing (ignored without -k)   -I,--inode            use always inodes to compare files   -k,--kill             kill processes accessing the named file   -l,--list-signals     list available signal names   -m,--mount            show all processes using the named filesystems or                         block device   -M,--ismountpoint     fulfill request only if NAME is a mount point   -n,--namespace SPACE  search in this name space (file, udp, or tcp)   -s,--silent           silent operation   -SIGNAL               send this signal instead of SIGKILL   -u,--user             display user IDs   -v,--verbose          verbose output   -w,--writeonly        kill only processes with write access   -V,--version          display version information 
+00107460 string   -4,--ipv4             search IPv4 sockets only   -6,--ipv6             search IPv6 sockets only 
+001074c8 string   udp/tcp names: [local_port][,[rmt_host][,[rmt_port]]]  
+00107508 string Cannot allocate memory for matched proc: %s 
+00107538 string Copyright (C) 1993-2024 Werner Almesberger and Craig Small  
+00107578 string PSmisc comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it under the terms of the GNU General Public License. For more information about these matters, see the files named COPYING. 
+00107660 string Specified filename %s does not exist. 
+00107688 string Cannot resolve local port %s: %s 
+001076b0 string Cannot open protocol file "%s": %s 
+001076d8 string %*u: %*x:%lx %08lx:%lx %*x %*x:%*x %*x:%*x %*x %*d %*d %llu
+00107718 string %*u: %*x:%lx %08x%08x%08x%08x:%lx %*x %*x:%*x %*x:%*x %*x %*d %*d %llu
+00107760 string Cannot open /proc/net/unix: %s 
+00107780 string %*x: %*x %*x %*x %*x %*d %llu %ms
+001077a8 string Namespace option requires an argument.
+001077d0 string You can only use files with mountpoint options
+00107800 string No process specification given
+00107820 string Specified filename %s is not a mountpoint. 
+00107850 string all option cannot be used with silent option.
+00107880 string You cannot search for only IPv4 and only IPv6 sockets at the same time
+001078c8 string Cannot open /proc directory: %s 
+001078f0 string %*s USER        PID ACCESS COMMAND 
+00107918 string Could not kill process %d: %s 
+00107938 string %s: unknown signal; %s -l lists signals. 
+00107962 string /proc/%d/%s
+0010796e string /proc/%d/stat
+0010797c string %*d (%100[^)]
+0010798a string \%03o
+00107990 string /proc/mounts
+0010799d string Cannot open %s 
+001079b0 string /proc/%d/%s/%s
+001079bf string Cannot stat file %s: %s 
+001079dd string %*s %*s %*s %x:%x %lld
+001079f4 string /proc/swaps
+00107a00 string /proc/fs/nfs/exports
+00107a18 string fuser (PSmisc) %s 
+00107a30 string Cannot stat %s: %s 
+00107a44 string Unknown local port AF %d 
+00107a5e string /proc/net/%s
+00107a6b string /proc/net/%s6
+00107a79 string /proc/net/unix
+00107a88 string /usr/share/locale
+00107a9a string psmisc
+00107aa5 string %s: Invalid option %s 
+00107ac1 string Invalid namespace name
+00107ad8 string %s: Invalid option %c 
+00107afd string /proc
+00107b03 string /proc/%d
+00107b1d string (unknown)
+00107b27 string  %-8s 
+00107b33 string kernel
+00107b3a string  knfsd 
+00107b42 string  mount 
+00107b52 string  %c%c%c%c%c 
+00107b69 string Kill process %d ? (y/N) 
+00107b8b string interactive
+00107b97 string inode
+00107b9d string list-signals
+00107baa string mount
+00107bb0 string ismountpoint
+00107bbd string namespace
+00107bc7 string silent
+00107bd3 string verbose
+00107bdb string writeonly
+00107be5 string version
+00107c78 string WINCH
+00107eb9 string zR
+00107ee9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/psmisc.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .got.plt
+.shstrtab::00000103 string-utf8 .data
+.shstrtab::00000109 string-utf8 .bss
+.shstrtab::0000010e string-utf8 .gnu_debugaltlink
+.shstrtab::00000120 string-utf8 .gnu_debuglink

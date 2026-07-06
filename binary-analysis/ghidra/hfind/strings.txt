@@ -1,0 +1,106 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100719 string-utf8 _ITM_deregisterTMCloneTable
+00100735 string-utf8 __gmon_start__
+00100744 string-utf8 _ITM_registerTMCloneTable
+0010075e string-utf8 tsk_hdb_add_entry
+00100770 string-utf8 tsk_hdb_create
+0010077f string-utf8 tsk_error_print
+0010078f string-utf8 tsk_hdb_lookup_str
+001007a2 string-utf8 tsk_version_print
+001007b4 string-utf8 tsk_fprintf
+001007c0 string-utf8 tsk_hdb_make_index
+001007d3 string-utf8 tsk_hdb_uses_external_indexes
+001007f1 string-utf8 tsk_hdb_open
+001007fe string-utf8 tsk_hdb_is_idx_only
+00100812 string-utf8 tsk_hdb_accepts_updates
+0010082a string-utf8 tsk_hdb_close
+00100838 string-utf8 optind
+0010083f string-utf8 fgets
+00100845 string-utf8 stdin
+0010084b string-utf8 __stack_chk_fail
+0010085c string-utf8 __printf_chk
+00100869 string-utf8 exit
+0010086e string-utf8 strrchr
+00100876 string-utf8 fopen
+0010087c string-utf8 strlen
+00100883 string-utf8 stdout
+0010088a string-utf8 optarg
+00100891 string-utf8 __fprintf_chk
+0010089f string-utf8 __libc_start_main
+001008b1 string-utf8 stderr
+001008b8 string-utf8 getopt
+001008bf string-utf8 __cxa_finalize
+001008ce string-utf8 setlocale
+001008d8 string-utf8 fclose
+001008df string-utf8 strcmp
+001008e6 string-utf8 libtsk.so.23
+001008f3 string-utf8 libbfio.so.1
+00100900 string-utf8 libc.so.6
+0010090a string-utf8 GLIBC_2.34
+00100915 string-utf8 GLIBC_2.4
+0010091f string-utf8 GLIBC_2.3.4
+0010092b string-utf8 GLIBC_2.2.5
+00102004 string File name not available
+0010201c string %s	%s 
+00102023 string 	-V: Print version to STDOUT 
+00102041 string  	Supported index types: %s 
+0010205e string cef:i:aqV
+0010206d string New database %s created 
+00102086 string Index created 
+00102095 string Hash %s added. 
+001020a9 string %s	Hash Not Found 
+001020be string Error opening hash file: %s 
+001020e0 string usage: %s [-eqVa] [-c] [-f lookup_file] [-i db_type] db_file [hashes] 
+00102128 string 	-e: Extended mode - where values other than just the name are printed 
+00102170 string 	-q: Quick mode - where a 1 is printed if it is found, else 0 
+001021b0 string 	-c db_name: Create new database with the given name. 
+001021e8 string 	-a: Add given hashes to the database. 
+00102210 string 	-f lookup_file: File with one hash per line to lookup 
+00102248 string 	-i db_type: Create index file for a given hash database type 
+00102288 string 	db_file: The path of the hash database, must have .kdb extension for -c option 
+001022e0 string 	[hashes]: hashes to lookup (STDIN is used otherwise) 
+00102318 string nsrl-md5, nsrl-sha1, md5sum, encase, hk
+00102340 string -a cannot be specified with -c or -i 
+00102368 string Error: You must provide the source hash database location 
+001023a8 string -c and -i cannot be specified at same time 
+001023d8 string Failed to create new database %s 
+00102400 string New database path must end in .kdb extension 
+00102430 string -a option specified, but the specified database does not allow hashes to be added 
+00102488 string '-f' flag can't be used with '-i' 
+001024b0 string '-q' flag can't be used with '-i' 
+001024d8 string '-e' flag can't be used with '-i' 
+00102500 string Database does not use external indexes, can't be used with '-i' 
+00102548 string Database is index only, can be used for look ups, but can't be used with '-i' 
+00102598 string Error: Only one hash can be given with quick option 
+001025d0 string '-e' flag can't be used with '-q' 
+001025f8 string Error: -f can't be used when hashes are also given 
+00102630 string There was an error adding the hash. 
+00102711 string zR
+00102741 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/sleuthkit.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

@@ -1,0 +1,788 @@
+{"name":"_DT_INIT","entry":"00108000","bodyBytes":23,"signature":"undefined _DT_INIT(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108020","entry":"00108020","bodyBytes":12,"signature":"undefined FUN_00108020(void)","callingConvention":"unknown","external":false}
+{"name":"__printf_chk","entry":"00108030","bodyBytes":6,"signature":"undefined __printf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"CMS_final","entry":"00108040","bodyBytes":6,"signature":"int CMS_final(CMS_ContentInfo * cms, BIO * data, BIO * dcont, uint flags)","callingConvention":"unknown","external":false}
+{"name":"__errno_location","entry":"00108050","bodyBytes":6,"signature":"int * __errno_location(void)","callingConvention":"unknown","external":false}
+{"name":"deflateInit2_","entry":"00108060","bodyBytes":6,"signature":"undefined deflateInit2_(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_EncryptUpdate","entry":"00108070","bodyBytes":6,"signature":"int EVP_EncryptUpdate(EVP_CIPHER_CTX * ctx, uchar * out, int * outl, uchar * in, int inl)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_init","entry":"00108080","bodyBytes":6,"signature":"int ENGINE_init(ENGINE * e)","callingConvention":"unknown","external":false}
+{"name":"EVP_get_digestbyname","entry":"00108090","bodyBytes":6,"signature":"EVP_MD * EVP_get_digestbyname(char * name)","callingConvention":"unknown","external":false}
+{"name":"ERR_peek_error","entry":"001080a0","bodyBytes":6,"signature":"ulong ERR_peek_error(void)","callingConvention":"unknown","external":false}
+{"name":"pthread_mutex_trylock","entry":"001080b0","bodyBytes":6,"signature":"int pthread_mutex_trylock(pthread_mutex_t * __mutex)","callingConvention":"unknown","external":false}
+{"name":"BIO_new_mem_buf","entry":"001080c0","bodyBytes":6,"signature":"BIO * BIO_new_mem_buf(void * buf, int len)","callingConvention":"unknown","external":false}
+{"name":"i2d_CMS_bio_stream","entry":"001080d0","bodyBytes":6,"signature":"int i2d_CMS_bio_stream(BIO * out, CMS_ContentInfo * cms, BIO * in, int flags)","callingConvention":"unknown","external":false}
+{"name":"strstr","entry":"001080e0","bodyBytes":6,"signature":"char * strstr(char * __haystack, char * __needle)","callingConvention":"unknown","external":false}
+{"name":"ERR_get_error_line","entry":"001080f0","bodyBytes":6,"signature":"ulong ERR_get_error_line(char * * file, int * line)","callingConvention":"unknown","external":false}
+{"name":"BIO_ctrl","entry":"00108100","bodyBytes":6,"signature":"long BIO_ctrl(BIO * bp, int cmd, long larg, void * parg)","callingConvention":"unknown","external":false}
+{"name":"rand","entry":"00108110","bodyBytes":6,"signature":"int rand(void)","callingConvention":"unknown","external":false}
+{"name":"ERR_error_string","entry":"00108120","bodyBytes":6,"signature":"char * ERR_error_string(ulong e, char * buf)","callingConvention":"unknown","external":false}
+{"name":"strerror","entry":"00108130","bodyBytes":6,"signature":"char * strerror(int __errnum)","callingConvention":"unknown","external":false}
+{"name":"write","entry":"00108140","bodyBytes":6,"signature":"ssize_t write(int __fd, void * __buf, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_ctrl_cmd","entry":"00108150","bodyBytes":6,"signature":"int ENGINE_ctrl_cmd(ENGINE * e, char * cmd_name, long i, void * p, f * f, int cmd_optional)","callingConvention":"unknown","external":false}
+{"name":"ZSTD_compressCCtx","entry":"00108160","bodyBytes":6,"signature":"undefined ZSTD_compressCCtx(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_MD_get_size","entry":"00108170","bodyBytes":6,"signature":"undefined EVP_MD_get_size(void)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_sscanf","entry":"00108180","bodyBytes":6,"signature":"undefined __isoc23_sscanf(void)","callingConvention":"unknown","external":false}
+{"name":"strspn","entry":"00108190","bodyBytes":6,"signature":"size_t strspn(char * __s, char * __accept)","callingConvention":"unknown","external":false}
+{"name":"CMS_add1_signer","entry":"001081a0","bodyBytes":6,"signature":"CMS_SignerInfo * CMS_add1_signer(CMS_ContentInfo * cms, X509 * signer, EVP_PKEY * pk, EVP_MD * md, uint flags)","callingConvention":"unknown","external":false}
+{"name":"strlen","entry":"001081b0","bodyBytes":6,"signature":"size_t strlen(char * __s)","callingConvention":"unknown","external":false}
+{"name":"memcmp","entry":"001081c0","bodyBytes":6,"signature":"int memcmp(void * __s1, void * __s2, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"deflate","entry":"001081d0","bodyBytes":6,"signature":"undefined deflate(void)","callingConvention":"unknown","external":false}
+{"name":"strncmp","entry":"001081e0","bodyBytes":6,"signature":"int strncmp(char * __s1, char * __s2, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"OPENSSL_init_crypto","entry":"001081f0","bodyBytes":6,"signature":"undefined OPENSSL_init_crypto(void)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_load_private_key","entry":"00108200","bodyBytes":6,"signature":"EVP_PKEY * ENGINE_load_private_key(ENGINE * e, char * key_id, UI_METHOD * ui_method, void * callback_data)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_ctrl_cmd_string","entry":"00108210","bodyBytes":6,"signature":"int ENGINE_ctrl_cmd_string(ENGINE * e, char * cmd_name, char * arg, int cmd_optional)","callingConvention":"unknown","external":false}
+{"name":"strncpy","entry":"00108220","bodyBytes":6,"signature":"char * strncpy(char * __dest, char * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"ERR_print_errors_fp","entry":"00108230","bodyBytes":6,"signature":"void ERR_print_errors_fp(FILE * fp)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_128_cbc","entry":"00108240","bodyBytes":6,"signature":"EVP_CIPHER * EVP_aes_128_cbc(void)","callingConvention":"unknown","external":false}
+{"name":"d2i_X509_bio","entry":"00108250","bodyBytes":6,"signature":"X509 * d2i_X509_bio(BIO * bp, X509 * * x509)","callingConvention":"unknown","external":false}
+{"name":"memset","entry":"00108260","bodyBytes":6,"signature":"void * memset(void * __s, int __c, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"EVP_EncryptInit_ex","entry":"00108270","bodyBytes":6,"signature":"int EVP_EncryptInit_ex(EVP_CIPHER_CTX * ctx, EVP_CIPHER * cipher, ENGINE * impl, uchar * key, uchar * iv)","callingConvention":"unknown","external":false}
+{"name":"__sprintf_chk","entry":"00108280","bodyBytes":6,"signature":"undefined __sprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"deflateEnd","entry":"00108290","bodyBytes":6,"signature":"undefined deflateEnd(void)","callingConvention":"unknown","external":false}
+{"name":"__snprintf_chk","entry":"001082a0","bodyBytes":6,"signature":"undefined __snprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"ZSTD_freeCCtx","entry":"001082b0","bodyBytes":6,"signature":"undefined ZSTD_freeCCtx(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_256_cbc","entry":"001082c0","bodyBytes":6,"signature":"EVP_CIPHER * EVP_aes_256_cbc(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_CTX_new","entry":"001082d0","bodyBytes":6,"signature":"EVP_CIPHER_CTX * EVP_CIPHER_CTX_new(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_DigestFinal_ex","entry":"001082e0","bodyBytes":6,"signature":"int EVP_DigestFinal_ex(EVP_MD_CTX * ctx, uchar * md, uint * s)","callingConvention":"unknown","external":false}
+{"name":"PEM_read_bio_PrivateKey","entry":"001082f0","bodyBytes":6,"signature":"EVP_PKEY * PEM_read_bio_PrivateKey(BIO * bp, EVP_PKEY * * x, pem_password_cb * cb, void * u)","callingConvention":"unknown","external":false}
+{"name":"__assert_fail","entry":"00108300","bodyBytes":6,"signature":"void __assert_fail(char * __assertion, char * __file, uint __line, char * __function)","callingConvention":"unknown","external":false}
+{"name":"BIO_new_file","entry":"00108310","bodyBytes":6,"signature":"BIO * BIO_new_file(char * filename, char * mode)","callingConvention":"unknown","external":false}
+{"name":"calloc","entry":"00108320","bodyBytes":6,"signature":"void * calloc(size_t __nmemb, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_by_id","entry":"00108330","bodyBytes":6,"signature":"ENGINE * ENGINE_by_id(char * id)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_256_ecb","entry":"00108340","bodyBytes":6,"signature":"EVP_CIPHER * EVP_aes_256_ecb(void)","callingConvention":"unknown","external":false}
+{"name":"open","entry":"00108350","bodyBytes":6,"signature":"int open(char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"pthread_mutex_unlock","entry":"00108360","bodyBytes":6,"signature":"int pthread_mutex_unlock(pthread_mutex_t * __mutex)","callingConvention":"unknown","external":false}
+{"name":"EVP_DigestInit_ex","entry":"00108370","bodyBytes":6,"signature":"int EVP_DigestInit_ex(EVP_MD_CTX * ctx, EVP_MD * type, ENGINE * impl)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"00108380","bodyBytes":6,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_load_builtin_engines","entry":"00108390","bodyBytes":6,"signature":"void ENGINE_load_builtin_engines(void)","callingConvention":"unknown","external":false}
+{"name":"BIO_s_mem","entry":"001083a0","bodyBytes":6,"signature":"BIO_METHOD * BIO_s_mem(void)","callingConvention":"unknown","external":false}
+{"name":"__cxa_atexit","entry":"001083b0","bodyBytes":6,"signature":"undefined __cxa_atexit(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_256_xts","entry":"001083c0","bodyBytes":6,"signature":"EVP_CIPHER * EVP_aes_256_xts(void)","callingConvention":"unknown","external":false}
+{"name":"stat","entry":"001083d0","bodyBytes":6,"signature":"int stat(char * __file, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"time","entry":"001083e0","bodyBytes":6,"signature":"time_t time(time_t * __timer)","callingConvention":"unknown","external":false}
+{"name":"lzo1x_999_compress","entry":"001083f0","bodyBytes":6,"signature":"undefined lzo1x_999_compress(void)","callingConvention":"unknown","external":false}
+{"name":"OPENSSL_config","entry":"00108400","bodyBytes":6,"signature":"void OPENSSL_config(char * config_name)","callingConvention":"unknown","external":false}
+{"name":"srand","entry":"00108410","bodyBytes":6,"signature":"void srand(uint __seed)","callingConvention":"unknown","external":false}
+{"name":"fclose","entry":"00108420","bodyBytes":6,"signature":"int fclose(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"CMS_sign","entry":"00108430","bodyBytes":6,"signature":"CMS_ContentInfo * CMS_sign(X509 * signcert, EVP_PKEY * pkey, stack_st_X509 * certs, BIO * data, uint flags)","callingConvention":"unknown","external":false}
+{"name":"BIO_free","entry":"00108440","bodyBytes":6,"signature":"int BIO_free(BIO * a)","callingConvention":"unknown","external":false}
+{"name":"fileno","entry":"00108450","bodyBytes":6,"signature":"int fileno(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"__ctype_b_loc","entry":"00108460","bodyBytes":6,"signature":"ushort * * __ctype_b_loc(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_CTX_free","entry":"00108470","bodyBytes":6,"signature":"void EVP_CIPHER_CTX_free(EVP_CIPHER_CTX * a)","callingConvention":"unknown","external":false}
+{"name":"__stack_chk_fail","entry":"00108480","bodyBytes":6,"signature":"undefined __stack_chk_fail(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_MD_CTX_new","entry":"00108490","bodyBytes":6,"signature":"undefined EVP_MD_CTX_new(void)","callingConvention":"unknown","external":false}
+{"name":"BIO_read","entry":"001084a0","bodyBytes":6,"signature":"int BIO_read(BIO * b, void * data, int len)","callingConvention":"unknown","external":false}
+{"name":"fflush","entry":"001084b0","bodyBytes":6,"signature":"int fflush(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fopen","entry":"001084c0","bodyBytes":6,"signature":"FILE * fopen(char * __filename, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"free","entry":"001084d0","bodyBytes":6,"signature":"void free(void * __ptr)","callingConvention":"unknown","external":false}
+{"name":"exit","entry":"001084e0","bodyBytes":6,"signature":"void exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"getenv","entry":"001084f0","bodyBytes":6,"signature":"char * getenv(char * __name)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_CTX_set_padding","entry":"00108500","bodyBytes":6,"signature":"int EVP_CIPHER_CTX_set_padding(EVP_CIPHER_CTX * c, int pad)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_get_key_length","entry":"00108510","bodyBytes":6,"signature":"undefined EVP_CIPHER_get_key_length(void)","callingConvention":"unknown","external":false}
+{"name":"sigaction","entry":"00108520","bodyBytes":6,"signature":"int sigaction(int __sig, sigaction * __act, sigaction * __oact)","callingConvention":"unknown","external":false}
+{"name":"EVP_sha512","entry":"00108530","bodyBytes":6,"signature":"EVP_MD * EVP_sha512(void)","callingConvention":"unknown","external":false}
+{"name":"malloc","entry":"00108540","bodyBytes":6,"signature":"void * malloc(size_t __size)","callingConvention":"unknown","external":false}
+{"name":"ERR_clear_error","entry":"00108550","bodyBytes":6,"signature":"void ERR_clear_error(void)","callingConvention":"unknown","external":false}
+{"name":"__memset_chk","entry":"00108560","bodyBytes":6,"signature":"undefined __memset_chk(void)","callingConvention":"unknown","external":false}
+{"name":"putchar","entry":"00108570","bodyBytes":6,"signature":"int putchar(int __c)","callingConvention":"unknown","external":false}
+{"name":"strcmp","entry":"00108580","bodyBytes":6,"signature":"int strcmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"ioctl","entry":"00108590","bodyBytes":6,"signature":"int ioctl(int __fd, ulong __request, ...)","callingConvention":"unknown","external":false}
+{"name":"ZSTD_isError","entry":"001085a0","bodyBytes":6,"signature":"undefined ZSTD_isError(void)","callingConvention":"unknown","external":false}
+{"name":"RAND_poll","entry":"001085b0","bodyBytes":6,"signature":"int RAND_poll(void)","callingConvention":"unknown","external":false}
+{"name":"read","entry":"001085c0","bodyBytes":6,"signature":"ssize_t read(int __fd, void * __buf, size_t __nbytes)","callingConvention":"unknown","external":false}
+{"name":"getpid","entry":"001085d0","bodyBytes":6,"signature":"__pid_t getpid(void)","callingConvention":"unknown","external":false}
+{"name":"BIO_test_flags","entry":"001085e0","bodyBytes":6,"signature":"int BIO_test_flags(BIO * b, int flags)","callingConvention":"unknown","external":false}
+{"name":"pthread_mutex_lock","entry":"001085f0","bodyBytes":6,"signature":"int pthread_mutex_lock(pthread_mutex_t * __mutex)","callingConvention":"unknown","external":false}
+{"name":"backtrace","entry":"00108600","bodyBytes":6,"signature":"undefined backtrace(void)","callingConvention":"unknown","external":false}
+{"name":"RAND_bytes","entry":"00108610","bodyBytes":6,"signature":"int RAND_bytes(uchar * buf, int num)","callingConvention":"unknown","external":false}
+{"name":"backtrace_symbols","entry":"00108620","bodyBytes":6,"signature":"undefined backtrace_symbols(void)","callingConvention":"unknown","external":false}
+{"name":"pthread_mutex_init","entry":"00108630","bodyBytes":6,"signature":"int pthread_mutex_init(pthread_mutex_t * __mutex, pthread_mutexattr_t * __mutexattr)","callingConvention":"unknown","external":false}
+{"name":"opendir","entry":"00108640","bodyBytes":6,"signature":"DIR * opendir(char * __name)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_128_ecb","entry":"00108650","bodyBytes":6,"signature":"EVP_CIPHER * EVP_aes_128_ecb(void)","callingConvention":"unknown","external":false}
+{"name":"readdir","entry":"00108660","bodyBytes":6,"signature":"dirent * readdir(DIR * __dirp)","callingConvention":"unknown","external":false}
+{"name":"puts","entry":"00108670","bodyBytes":6,"signature":"int puts(char * __s)","callingConvention":"unknown","external":false}
+{"name":"strnlen","entry":"00108680","bodyBytes":6,"signature":"size_t strnlen(char * __string, size_t __maxlen)","callingConvention":"unknown","external":false}
+{"name":"fgets","entry":"00108690","bodyBytes":6,"signature":"char * fgets(char * __s, int __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"closedir","entry":"001086a0","bodyBytes":6,"signature":"int closedir(DIR * __dirp)","callingConvention":"unknown","external":false}
+{"name":"memmove","entry":"001086b0","bodyBytes":6,"signature":"void * memmove(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"realloc","entry":"001086c0","bodyBytes":6,"signature":"void * realloc(void * __ptr, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"__fprintf_chk","entry":"001086d0","bodyBytes":6,"signature":"undefined __fprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"getopt_long","entry":"001086e0","bodyBytes":6,"signature":"undefined getopt_long(void)","callingConvention":"unknown","external":false}
+{"name":"ZSTD_createCCtx","entry":"001086f0","bodyBytes":6,"signature":"undefined ZSTD_createCCtx(void)","callingConvention":"unknown","external":false}
+{"name":"fstat","entry":"00108700","bodyBytes":6,"signature":"int fstat(int __fd, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"BIO_new","entry":"00108710","bodyBytes":6,"signature":"BIO * BIO_new(BIO_METHOD * type)","callingConvention":"unknown","external":false}
+{"name":"__memcpy_chk","entry":"00108720","bodyBytes":6,"signature":"undefined __memcpy_chk(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_sha256","entry":"00108730","bodyBytes":6,"signature":"EVP_MD * EVP_sha256(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_MD_CTX_free","entry":"00108740","bodyBytes":6,"signature":"undefined EVP_MD_CTX_free(void)","callingConvention":"unknown","external":false}
+{"name":"getpagesize","entry":"00108750","bodyBytes":6,"signature":"int getpagesize(void)","callingConvention":"unknown","external":false}
+{"name":"PEM_read_bio_X509","entry":"00108760","bodyBytes":6,"signature":"X509 * PEM_read_bio_X509(BIO * bp, X509 * * x, pem_password_cb * cb, void * u)","callingConvention":"unknown","external":false}
+{"name":"strdup","entry":"00108770","bodyBytes":6,"signature":"char * strdup(char * __s)","callingConvention":"unknown","external":false}
+{"name":"EVP_EncryptFinal","entry":"00108780","bodyBytes":6,"signature":"int EVP_EncryptFinal(EVP_CIPHER_CTX * ctx, uchar * out, int * outl)","callingConvention":"unknown","external":false}
+{"name":"lseek","entry":"00108790","bodyBytes":6,"signature":"__off_t lseek(int __fd, __off_t __offset, int __whence)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_get_iv_length","entry":"001087a0","bodyBytes":6,"signature":"undefined EVP_CIPHER_get_iv_length(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_DigestUpdate","entry":"001087b0","bodyBytes":6,"signature":"int EVP_DigestUpdate(EVP_MD_CTX * ctx, void * d, size_t cnt)","callingConvention":"unknown","external":false}
+{"name":"close","entry":"001087c0","bodyBytes":6,"signature":"int close(int __fd)","callingConvention":"unknown","external":false}
+{"name":"__getdelim","entry":"001087d0","bodyBytes":6,"signature":"__ssize_t __getdelim(char * * __lineptr, size_t * __n, int __delimiter, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_strtol","entry":"001087e0","bodyBytes":6,"signature":"undefined __isoc23_strtol(void)","callingConvention":"unknown","external":false}
+{"name":"__cxa_finalize","entry":"001087f0","bodyBytes":6,"signature":"undefined __cxa_finalize(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00108800","entry":"00108800","bodyBytes":31,"signature":"undefined FUN_00108800(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010881f","entry":"0010881f","bodyBytes":32,"signature":"undefined FUN_0010881f(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"0010883f","bodyBytes":12,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"001088cf","bodyBytes":12,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"0010894c","bodyBytes":12,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"00108970","bodyBytes":12,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"0010897c","bodyBytes":12,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"00108988","bodyBytes":24,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"default","entry":"001089a0","bodyBytes":12,"signature":"undefined default(void)","callingConvention":"unknown","external":false}
+{"name":"main","entry":"001089b0","bodyBytes":3006,"signature":"undefined main(void)","callingConvention":"unknown","external":false}
+{"name":"_start","entry":"00109670","bodyBytes":34,"signature":"undefined _start(void)","callingConvention":"processEntry","external":false}
+{"name":"FUN_001096a0","entry":"001096a0","bodyBytes":34,"signature":"undefined FUN_001096a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001096d0","entry":"001096d0","bodyBytes":51,"signature":"undefined FUN_001096d0(void)","callingConvention":"unknown","external":false}
+{"name":"_FINI_0","entry":"00109710","bodyBytes":54,"signature":"undefined _FINI_0(void)","callingConvention":"unknown","external":false}
+{"name":"_INIT_0","entry":"00109750","bodyBytes":9,"signature":"undefined _INIT_0(void)","callingConvention":"unknown","external":false}
+{"name":"_find_next_bit","entry":"00109760","bodyBytes":255,"signature":"undefined _find_next_bit(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00109870","entry":"00109870","bodyBytes":143,"signature":"undefined FUN_00109870(void)","callingConvention":"unknown","external":false}
+{"name":"kmalloc","entry":"00109900","bodyBytes":62,"signature":"undefined kmalloc(void)","callingConvention":"unknown","external":false}
+{"name":"krealloc","entry":"00109940","bodyBytes":147,"signature":"undefined krealloc(void)","callingConvention":"unknown","external":false}
+{"name":"kmalloc_array","entry":"001099e0","bodyBytes":78,"signature":"undefined kmalloc_array(void)","callingConvention":"unknown","external":false}
+{"name":"kmemdup","entry":"00109a40","bodyBytes":105,"signature":"undefined kmemdup(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00109ac0","entry":"00109ac0","bodyBytes":98,"signature":"undefined FUN_00109ac0(void)","callingConvention":"unknown","external":false}
+{"name":"sort_r","entry":"00109b40","bodyBytes":690,"signature":"undefined sort_r(void)","callingConvention":"unknown","external":false}
+{"name":"sort","entry":"00109e10","bodyBytes":75,"signature":"undefined sort(void)","callingConvention":"unknown","external":false}
+{"name":"crc16","entry":"00109e60","bodyBytes":61,"signature":"undefined crc16(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00109eb0","entry":"00109eb0","bodyBytes":232,"signature":"undefined FUN_00109eb0(void)","callingConvention":"unknown","external":false}
+{"name":"compress_data","entry":"00109fa0","bodyBytes":642,"signature":"undefined compress_data(void)","callingConvention":"unknown","external":false}
+{"name":"init_compression","entry":"0010a240","bodyBytes":107,"signature":"undefined init_compression(void)","callingConvention":"unknown","external":false}
+{"name":"destroy_compression","entry":"0010a2b0","bodyBytes":91,"signature":"undefined destroy_compression(void)","callingConvention":"unknown","external":false}
+{"name":"create_hashtable","entry":"0010a340","bodyBytes":300,"signature":"undefined create_hashtable(void)","callingConvention":"unknown","external":false}
+{"name":"hash","entry":"0010a490","bodyBytes":53,"signature":"undefined hash(void)","callingConvention":"unknown","external":false}
+{"name":"hashtable_count","entry":"0010a4d0","bodyBytes":8,"signature":"undefined hashtable_count(void)","callingConvention":"unknown","external":false}
+{"name":"hashtable_insert","entry":"0010a4e0","bodyBytes":609,"signature":"undefined hashtable_insert(void)","callingConvention":"unknown","external":false}
+{"name":"hashtable_search","entry":"0010a770","bodyBytes":140,"signature":"undefined hashtable_search(void)","callingConvention":"unknown","external":false}
+{"name":"hashtable_remove","entry":"0010a810","bodyBytes":232,"signature":"undefined hashtable_remove(void)","callingConvention":"unknown","external":false}
+{"name":"hashtable_destroy","entry":"0010a910","bodyBytes":190,"signature":"undefined hashtable_destroy(void)","callingConvention":"unknown","external":false}
+{"name":"hashtable_iterator","entry":"0010a9e0","bodyBytes":96,"signature":"undefined hashtable_iterator(void)","callingConvention":"unknown","external":false}
+{"name":"hashtable_iterator_advance","entry":"0010aa60","bodyBytes":137,"signature":"undefined hashtable_iterator_advance(void)","callingConvention":"unknown","external":false}
+{"name":"hashtable_iterator_remove","entry":"0010ab00","bodyBytes":114,"signature":"undefined hashtable_iterator_remove(void)","callingConvention":"unknown","external":false}
+{"name":"hashtable_iterator_search","entry":"0010ab80","bodyBytes":162,"signature":"undefined hashtable_iterator_search(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010ac80","entry":"0010ac80","bodyBytes":100,"signature":"undefined FUN_0010ac80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010acf0","entry":"0010acf0","bodyBytes":26,"signature":"undefined FUN_0010acf0(void)","callingConvention":"unknown","external":false}
+{"name":"devtbl_find_path","entry":"0010ad10","bodyBytes":27,"signature":"undefined devtbl_find_path(void)","callingConvention":"unknown","external":false}
+{"name":"devtbl_find_name","entry":"0010ad40","bodyBytes":26,"signature":"undefined devtbl_find_name(void)","callingConvention":"unknown","external":false}
+{"name":"override_attributes","entry":"0010ad70","bodyBytes":438,"signature":"undefined override_attributes(void)","callingConvention":"unknown","external":false}
+{"name":"first_name_htbl_element","entry":"0010af40","bodyBytes":84,"signature":"undefined first_name_htbl_element(void)","callingConvention":"unknown","external":false}
+{"name":"next_name_htbl_element","entry":"0010afb0","bodyBytes":55,"signature":"undefined next_name_htbl_element(void)","callingConvention":"unknown","external":false}
+{"name":"free_devtable_info","entry":"0010aff0","bodyBytes":105,"signature":"undefined free_devtable_info(void)","callingConvention":"unknown","external":false}
+{"name":"parse_devtable","entry":"0010b070","bodyBytes":3968,"signature":"undefined parse_devtable(void)","callingConvention":"unknown","external":false}
+{"name":"print_hex_dump","entry":"0010c040","bodyBytes":1507,"signature":"undefined print_hex_dump(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010c670","entry":"0010c670","bodyBytes":441,"signature":"undefined FUN_0010c670(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010c840","entry":"0010c840","bodyBytes":160,"signature":"undefined FUN_0010c840(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010c8f0","entry":"0010c8f0","bodyBytes":634,"signature":"undefined FUN_0010c8f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010cb80","entry":"0010cb80","bodyBytes":113,"signature":"undefined FUN_0010cb80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010cc00","entry":"0010cc00","bodyBytes":129,"signature":"undefined FUN_0010cc00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010cc90","entry":"0010cc90","bodyBytes":546,"signature":"undefined FUN_0010cc90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010cec0","entry":"0010cec0","bodyBytes":125,"signature":"undefined FUN_0010cec0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010cf40","entry":"0010cf40","bodyBytes":125,"signature":"undefined FUN_0010cf40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010cfc0","entry":"0010cfc0","bodyBytes":113,"signature":"undefined FUN_0010cfc0(void)","callingConvention":"unknown","external":false}
+{"name":"derive_key_aes","entry":"0010d040","bodyBytes":124,"signature":"undefined derive_key_aes(void)","callingConvention":"unknown","external":false}
+{"name":"derive_key_descriptor","entry":"0010d0c0","bodyBytes":183,"signature":"undefined derive_key_descriptor(void)","callingConvention":"unknown","external":false}
+{"name":"crypto_init","entry":"0010d180","bodyBytes":32,"signature":"undefined crypto_init(void)","callingConvention":"unknown","external":false}
+{"name":"crypto_cleanup","entry":"0010d1a0","bodyBytes":5,"signature":"undefined crypto_cleanup(void)","callingConvention":"unknown","external":false}
+{"name":"get_cipher","entry":"0010d1b0","bodyBytes":71,"signature":"undefined get_cipher(void)","callingConvention":"unknown","external":false}
+{"name":"list_ciphers","entry":"0010d200","bodyBytes":61,"signature":"undefined list_ciphers(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010d240","entry":"0010d240","bodyBytes":121,"signature":"undefined FUN_0010d240(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010d2c0","entry":"0010d2c0","bodyBytes":129,"signature":"undefined FUN_0010d2c0(void)","callingConvention":"unknown","external":false}
+{"name":"calc_fscrypt_subkey","entry":"0010d350","bodyBytes":125,"signature":"undefined calc_fscrypt_subkey(void)","callingConvention":"unknown","external":false}
+{"name":"inherit_fscrypt_context","entry":"0010d3d0","bodyBytes":70,"signature":"undefined inherit_fscrypt_context(void)","callingConvention":"unknown","external":false}
+{"name":"free_fscrypt_context","entry":"0010d420","bodyBytes":9,"signature":"void free_fscrypt_context(void * __ptr)","callingConvention":"unknown","external":false}
+{"name":"fscrypt_fname_encrypted_size","entry":"0010d430","bodyBytes":40,"signature":"undefined fscrypt_fname_encrypted_size(void)","callingConvention":"unknown","external":false}
+{"name":"encrypt_path","entry":"0010d460","bodyBytes":317,"signature":"undefined encrypt_path(void)","callingConvention":"unknown","external":false}
+{"name":"encrypt_data_node","entry":"0010d5a0","bodyBytes":323,"signature":"undefined encrypt_data_node(void)","callingConvention":"unknown","external":false}
+{"name":"init_fscrypt_context","entry":"0010d6f0","bodyBytes":1062,"signature":"undefined init_fscrypt_context(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010db40","entry":"0010db40","bodyBytes":94,"signature":"undefined FUN_0010db40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010dbb0","entry":"0010dbb0","bodyBytes":191,"signature":"undefined FUN_0010dbb0(void)","callingConvention":"unknown","external":false}
+{"name":"hash_sign_node","entry":"0010dc80","bodyBytes":1556,"signature":"undefined hash_sign_node(void)","callingConvention":"unknown","external":false}
+{"name":"hash_digest","entry":"0010e2b0","bodyBytes":240,"signature":"undefined hash_digest(void)","callingConvention":"unknown","external":false}
+{"name":"hash_digest_init","entry":"0010e3b0","bodyBytes":78,"signature":"undefined hash_digest_init(void)","callingConvention":"unknown","external":false}
+{"name":"hash_digest_update","entry":"0010e400","bodyBytes":75,"signature":"undefined hash_digest_update(void)","callingConvention":"unknown","external":false}
+{"name":"hash_digest_final","entry":"0010e450","bodyBytes":112,"signature":"undefined hash_digest_final(void)","callingConvention":"unknown","external":false}
+{"name":"init_authentication","entry":"0010e4c0","bodyBytes":397,"signature":"undefined init_authentication(void)","callingConvention":"unknown","external":false}
+{"name":"exit_authentication","entry":"0010e660","bodyBytes":42,"signature":"undefined exit_authentication(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010e6a0","entry":"0010e6a0","bodyBytes":157,"signature":"undefined FUN_0010e6a0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_ro_mode","entry":"0010e740","bodyBytes":157,"signature":"undefined ubifs_ro_mode(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0010e7f0","entry":"0010e7f0","bodyBytes":216,"signature":"undefined FUN_0010e7f0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_leb_read","entry":"0010e8d0","bodyBytes":275,"signature":"undefined ubifs_leb_read(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_leb_write","entry":"0010e9f0","bodyBytes":325,"signature":"undefined ubifs_leb_write(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_leb_change","entry":"0010eb40","bodyBytes":398,"signature":"undefined ubifs_leb_change(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_leb_unmap","entry":"0010ecf0","bodyBytes":224,"signature":"undefined ubifs_leb_unmap(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_leb_map","entry":"0010ede0","bodyBytes":224,"signature":"undefined ubifs_leb_map(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_is_mapped","entry":"0010eed0","bodyBytes":184,"signature":"undefined ubifs_is_mapped(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_check_node","entry":"0010ef90","bodyBytes":756,"signature":"undefined ubifs_check_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_pad","entry":"0010f2a0","bodyBytes":287,"signature":"undefined ubifs_pad(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_init_node","entry":"0010f3e0","bodyBytes":162,"signature":"undefined ubifs_init_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_crc_node","entry":"0010f4a0","bodyBytes":30,"signature":"undefined ubifs_crc_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_prepare_node_hmac","entry":"0010f4c0","bodyBytes":52,"signature":"undefined ubifs_prepare_node_hmac(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_prepare_node","entry":"0010f500","bodyBytes":47,"signature":"undefined ubifs_prepare_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_prep_grp_node","entry":"0010f530","bodyBytes":141,"signature":"undefined ubifs_prep_grp_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_wbuf_sync_nolock","entry":"0010f5d0","bodyBytes":850,"signature":"undefined ubifs_wbuf_sync_nolock(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_wbuf_seek_nolock","entry":"0010f960","bodyBytes":461,"signature":"undefined ubifs_wbuf_seek_nolock(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_wbuf_write_nolock","entry":"0010fb40","bodyBytes":2446,"signature":"undefined ubifs_wbuf_write_nolock(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_write_node_hmac","entry":"00110520","bodyBytes":487,"signature":"undefined ubifs_write_node_hmac(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_write_node","entry":"00110720","bodyBytes":15,"signature":"undefined ubifs_write_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_read_node","entry":"00110730","bodyBytes":869,"signature":"undefined ubifs_read_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_read_node_wbuf","entry":"00110ac0","bodyBytes":994,"signature":"undefined ubifs_read_node_wbuf(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_wbuf_init","entry":"00110ed0","bodyBytes":197,"signature":"undefined ubifs_wbuf_init(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00110fc0","entry":"00110fc0","bodyBytes":120,"signature":"undefined FUN_00110fc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00111040","entry":"00111040","bodyBytes":107,"signature":"undefined FUN_00111040(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001110b0","entry":"001110b0","bodyBytes":453,"signature":"undefined FUN_001110b0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_write_sb_node","entry":"00111290","bodyBytes":77,"signature":"undefined ubifs_write_sb_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_read_superblock","entry":"001112f0","bodyBytes":2612,"signature":"undefined ubifs_read_superblock(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_fixup_free_space","entry":"00111d70","bodyBytes":777,"signature":"undefined ubifs_fixup_free_space(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001120e0","entry":"001120e0","bodyBytes":15,"signature":"undefined FUN_001120e0(void)","callingConvention":"unknown","external":false}
+{"name":"open_ubi","entry":"001120f0","bodyBytes":205,"signature":"undefined open_ubi(void)","callingConvention":"unknown","external":false}
+{"name":"close_ubi","entry":"001121d0","bodyBytes":49,"signature":"undefined close_ubi(void)","callingConvention":"unknown","external":false}
+{"name":"open_target","entry":"00112210","bodyBytes":431,"signature":"undefined open_target(void)","callingConvention":"unknown","external":false}
+{"name":"close_target","entry":"001123e0","bodyBytes":282,"signature":"undefined close_target(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_open_volume","entry":"00112510","bodyBytes":160,"signature":"undefined ubifs_open_volume(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_close_volume","entry":"001125c0","bodyBytes":57,"signature":"undefined ubifs_close_volume(void)","callingConvention":"unknown","external":false}
+{"name":"check_volume_empty","entry":"00112600","bodyBytes":76,"signature":"undefined check_volume_empty(void)","callingConvention":"unknown","external":false}
+{"name":"init_ubifs_info","entry":"00112660","bodyBytes":543,"signature":"undefined init_ubifs_info(void)","callingConvention":"unknown","external":false}
+{"name":"init_constants_early","entry":"00112880","bodyBytes":1394,"signature":"undefined init_constants_early(void)","callingConvention":"unknown","external":false}
+{"name":"init_constants_sb","entry":"00112e30","bodyBytes":532,"signature":"undefined init_constants_sb(void)","callingConvention":"unknown","external":false}
+{"name":"init_constants_master","entry":"00113060","bodyBytes":21,"signature":"undefined init_constants_master(void)","callingConvention":"unknown","external":false}
+{"name":"take_gc_lnum","entry":"00113080","bodyBytes":127,"signature":"undefined take_gc_lnum(void)","callingConvention":"unknown","external":false}
+{"name":"alloc_wbufs","entry":"00113110","bodyBytes":449,"signature":"undefined alloc_wbufs(void)","callingConvention":"unknown","external":false}
+{"name":"free_wbufs","entry":"001132f0","bodyBytes":150,"signature":"undefined free_wbufs(void)","callingConvention":"unknown","external":false}
+{"name":"free_orphans","entry":"00113390","bodyBytes":200,"signature":"undefined free_orphans(void)","callingConvention":"unknown","external":false}
+{"name":"free_buds","entry":"00113460","bodyBytes":236,"signature":"undefined free_buds(void)","callingConvention":"unknown","external":false}
+{"name":"destroy_journal","entry":"00113560","bodyBytes":178,"signature":"undefined destroy_journal(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_compare_master_node","entry":"00113620","bodyBytes":75,"signature":"undefined ubifs_compare_master_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_read_master","entry":"00113670","bodyBytes":2646,"signature":"undefined ubifs_read_master(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_write_master","entry":"001140f0","bodyBytes":297,"signature":"undefined ubifs_write_master(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_get_key_name","entry":"00114240","bodyBytes":76,"signature":"undefined ubifs_get_key_name(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_get_type_name","entry":"001142b0","bodyBytes":92,"signature":"undefined ubifs_get_type_name(void)","callingConvention":"unknown","external":false}
+{"name":"dbg_ntype","entry":"00114340","bodyBytes":144,"signature":"undefined dbg_ntype(void)","callingConvention":"unknown","external":false}
+{"name":"dbg_cstate","entry":"00114430","bodyBytes":84,"signature":"undefined dbg_cstate(void)","callingConvention":"unknown","external":false}
+{"name":"dbg_jhead","entry":"001144b0","bodyBytes":50,"signature":"undefined dbg_jhead(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_lstats","entry":"001144f0","bodyBytes":390,"signature":"undefined ubifs_dump_lstats(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_budg","entry":"00114680","bodyBytes":1855,"signature":"undefined ubifs_dump_budg(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_lprop","entry":"00114e10","bodyBytes":1083,"signature":"undefined ubifs_dump_lprop(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_lprops","entry":"00115280","bodyBytes":367,"signature":"undefined ubifs_dump_lprops(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_lpt_info","entry":"00115400","bodyBytes":2159,"signature":"undefined ubifs_dump_lpt_info(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_heap","entry":"00115c80","bodyBytes":365,"signature":"undefined ubifs_dump_heap(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_pnode","entry":"00115df0","bodyBytes":429,"signature":"undefined ubifs_dump_pnode(void)","callingConvention":"unknown","external":false}
+{"name":"add_size","entry":"00115fb0","bodyBytes":41,"signature":"undefined add_size(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_assert_failed","entry":"00115fe0","bodyBytes":148,"signature":"undefined ubifs_assert_failed(void)","callingConvention":"unknown","external":false}
+{"name":"dbg_snprintf_key","entry":"00116080","bodyBytes":336,"signature":"undefined dbg_snprintf_key(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_node","entry":"001161f0","bodyBytes":9695,"signature":"undefined ubifs_dump_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_leb","entry":"00118820","bodyBytes":694,"signature":"undefined ubifs_dump_leb(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_znode","entry":"00118af0","bodyBytes":770,"signature":"undefined ubifs_dump_znode(void)","callingConvention":"unknown","external":false}
+{"name":"dbg_walk_index","entry":"00118e00","bodyBytes":804,"signature":"undefined dbg_walk_index(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_scan_a_node","entry":"00119180","bodyBytes":842,"signature":"undefined ubifs_scan_a_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_start_scan","entry":"001194f0","bodyBytes":322,"signature":"undefined ubifs_start_scan(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_end_scan","entry":"00119640","bodyBytes":176,"signature":"undefined ubifs_end_scan(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_add_snod","entry":"00119700","bodyBytes":137,"signature":"undefined ubifs_add_snod(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_scanned_corruption","entry":"00119790","bodyBytes":254,"signature":"undefined ubifs_scanned_corruption(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_scan","entry":"001198a0","bodyBytes":1145,"signature":"undefined ubifs_scan(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_scan_destroy","entry":"00119d50","bodyBytes":74,"signature":"undefined ubifs_scan_destroy(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00119da0","entry":"00119da0","bodyBytes":21,"signature":"undefined FUN_00119da0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00119dc0","entry":"00119dc0","bodyBytes":108,"signature":"undefined FUN_00119dc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00119e40","entry":"00119e40","bodyBytes":121,"signature":"undefined FUN_00119e40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00119ed0","entry":"00119ed0","bodyBytes":124,"signature":"undefined FUN_00119ed0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00119f60","entry":"00119f60","bodyBytes":180,"signature":"undefined FUN_00119f60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011a030","entry":"0011a030","bodyBytes":206,"signature":"undefined FUN_0011a030(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_find_dirty_leb","entry":"0011a130","bodyBytes":1634,"signature":"undefined ubifs_find_dirty_leb(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_find_free_space","entry":"0011a7b0","bodyBytes":1665,"signature":"undefined ubifs_find_free_space(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_find_free_leb_for_idx","entry":"0011ae80","bodyBytes":1042,"signature":"undefined ubifs_find_free_leb_for_idx(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_save_dirty_idx_lnums","entry":"0011b2b0","bodyBytes":489,"signature":"undefined ubifs_save_dirty_idx_lnums(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_find_dirty_idx_leb","entry":"0011b4a0","bodyBytes":1527,"signature":"undefined ubifs_find_dirty_idx_leb(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lookup_by_inum","entry":"0011bae0","bodyBytes":402,"signature":"undefined ubifs_lookup_by_inum(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lookup","entry":"0011bc80","bodyBytes":321,"signature":"undefined ubifs_lookup(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_mkdir","entry":"0011bde0","bodyBytes":1113,"signature":"undefined ubifs_mkdir(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_link_recovery","entry":"0011c270","bodyBytes":423,"signature":"undefined ubifs_link_recovery(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_create_root","entry":"0011c430","bodyBytes":469,"signature":"undefined ubifs_create_root(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_calc_min_idx_lebs","entry":"0011c620","bodyBytes":64,"signature":"undefined ubifs_calc_min_idx_lebs(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_calc_available","entry":"0011c660","bodyBytes":94,"signature":"undefined ubifs_calc_available(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_budget_space","entry":"0011c6c0","bodyBytes":2384,"signature":"undefined ubifs_budget_space(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_release_budget","entry":"0011d050","bodyBytes":1228,"signature":"undefined ubifs_release_budget(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_reported_space","entry":"0011d540","bodyBytes":59,"signature":"undefined ubifs_reported_space(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_get_free_space_nolock","entry":"0011d580","bodyBytes":389,"signature":"undefined ubifs_get_free_space_nolock(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011d710","entry":"0011d710","bodyBytes":173,"signature":"undefined FUN_0011d710(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011d7c0","entry":"0011d7c0","bodyBytes":311,"signature":"undefined FUN_0011d7c0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_get_dent_type","entry":"0011d900","bodyBytes":120,"signature":"undefined ubifs_get_dent_type(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_jnl_update_file","entry":"0011d9b0","bodyBytes":3964,"signature":"undefined ubifs_jnl_update_file(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011e990","entry":"0011e990","bodyBytes":467,"signature":"undefined FUN_0011e990(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011eba0","entry":"0011eba0","bodyBytes":284,"signature":"undefined FUN_0011eba0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011ecf0","entry":"0011ecf0","bodyBytes":135,"signature":"undefined FUN_0011ecf0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0011ed80","entry":"0011ed80","bodyBytes":277,"signature":"undefined FUN_0011ed80(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_garbage_collect_leb","entry":"0011eeb0","bodyBytes":2468,"signature":"undefined ubifs_garbage_collect_leb(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_garbage_collect","entry":"0011f8b0","bodyBytes":1967,"signature":"undefined ubifs_garbage_collect(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_gc_start_commit","entry":"001200c0","bodyBytes":854,"signature":"undefined ubifs_gc_start_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_gc_end_commit","entry":"00120430","bodyBytes":304,"signature":"undefined ubifs_gc_end_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_destroy_idx_gc","entry":"00120570","bodyBytes":77,"signature":"undefined ubifs_destroy_idx_gc(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_get_idx_gc_leb","entry":"001205c0","bodyBytes":59,"signature":"undefined ubifs_get_idx_gc_leb(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120600","entry":"00120600","bodyBytes":252,"signature":"undefined FUN_00120600(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120720","entry":"00120720","bodyBytes":226,"signature":"undefined FUN_00120720(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120810","entry":"00120810","bodyBytes":625,"signature":"undefined FUN_00120810(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120ab0","entry":"00120ab0","bodyBytes":253,"signature":"undefined FUN_00120ab0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120bc0","entry":"00120bc0","bodyBytes":157,"signature":"undefined FUN_00120bc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120c60","entry":"00120c60","bodyBytes":215,"signature":"undefined FUN_00120c60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00120d40","entry":"00120d40","bodyBytes":1422,"signature":"undefined FUN_00120d40(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_calc_lpt_geom","entry":"001212f0","bodyBytes":211,"signature":"undefined ubifs_calc_lpt_geom(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_calc_dflt_lpt_geom","entry":"001213e0","bodyBytes":347,"signature":"undefined ubifs_calc_dflt_lpt_geom(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_unpack_bits","entry":"00121550","bodyBytes":711,"signature":"undefined ubifs_unpack_bits(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121850","entry":"00121850","bodyBytes":243,"signature":"undefined FUN_00121850(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121950","entry":"00121950","bodyBytes":161,"signature":"undefined FUN_00121950(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121a00","entry":"00121a00","bodyBytes":343,"signature":"undefined FUN_00121a00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121b60","entry":"00121b60","bodyBytes":906,"signature":"undefined FUN_00121b60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00121f00","entry":"00121f00","bodyBytes":734,"signature":"undefined FUN_00121f00(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_pack_pnode","entry":"00122200","bodyBytes":375,"signature":"undefined ubifs_pack_pnode(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_pack_nnode","entry":"00122390","bodyBytes":327,"signature":"undefined ubifs_pack_nnode(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_pack_ltab","entry":"001224e0","bodyBytes":291,"signature":"undefined ubifs_pack_ltab(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_pack_lsave","entry":"00122610","bodyBytes":258,"signature":"undefined ubifs_pack_lsave(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_add_lpt_dirt","entry":"00122720","bodyBytes":18,"signature":"undefined ubifs_add_lpt_dirt(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_add_nnode_dirt","entry":"00122740","bodyBytes":142,"signature":"undefined ubifs_add_nnode_dirt(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001227e0","entry":"001227e0","bodyBytes":272,"signature":"undefined FUN_001227e0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_calc_nnode_num","entry":"00122910","bodyBytes":41,"signature":"undefined ubifs_calc_nnode_num(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_create_lpt","entry":"00122940","bodyBytes":4049,"signature":"undefined ubifs_create_lpt(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_unpack_nnode","entry":"00123960","bodyBytes":318,"signature":"undefined ubifs_unpack_nnode(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00123ab0","entry":"00123ab0","bodyBytes":456,"signature":"undefined FUN_00123ab0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_read_nnode","entry":"00123c90","bodyBytes":607,"signature":"undefined ubifs_read_nnode(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_get_nnode","entry":"00123f20","bodyBytes":60,"signature":"undefined ubifs_get_nnode(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_get_pnode","entry":"00123f70","bodyBytes":27,"signature":"undefined ubifs_get_pnode(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_pnode_lookup","entry":"00123fa0","bodyBytes":249,"signature":"undefined ubifs_pnode_lookup(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lpt_lookup","entry":"001240b0","bodyBytes":199,"signature":"undefined ubifs_lpt_lookup(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lpt_lookup_dirty","entry":"00124180","bodyBytes":850,"signature":"undefined ubifs_lpt_lookup_dirty(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lpt_calc_hash","entry":"001244e0","bodyBytes":632,"signature":"undefined ubifs_lpt_calc_hash(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lpt_init","entry":"001247a0","bodyBytes":3027,"signature":"undefined ubifs_lpt_init(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lpt_scan_nolock","entry":"001253d0","bodyBytes":1370,"signature":"undefined ubifs_lpt_scan_nolock(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125980","entry":"00125980","bodyBytes":164,"signature":"undefined FUN_00125980(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125a50","entry":"00125a50","bodyBytes":138,"signature":"undefined FUN_00125a50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125b10","entry":"00125b10","bodyBytes":158,"signature":"undefined FUN_00125b10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125bc0","entry":"00125bc0","bodyBytes":148,"signature":"undefined FUN_00125bc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125c80","entry":"00125c80","bodyBytes":248,"signature":"undefined FUN_00125c80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125da0","entry":"00125da0","bodyBytes":253,"signature":"undefined FUN_00125da0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125eb0","entry":"00125eb0","bodyBytes":157,"signature":"undefined FUN_00125eb0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00125f50","entry":"00125f50","bodyBytes":313,"signature":"undefined FUN_00125f50(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_find_next_pnode","entry":"001260b0","bodyBytes":266,"signature":"undefined ubifs_find_next_pnode(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_make_nnode_dirty","entry":"001261f0","bodyBytes":71,"signature":"undefined ubifs_make_nnode_dirty(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_make_pnode_dirty","entry":"00126250","bodyBytes":126,"signature":"undefined ubifs_make_pnode_dirty(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001262e0","entry":"001262e0","bodyBytes":1565,"signature":"undefined FUN_001262e0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lpt_post_commit","entry":"00126940","bodyBytes":332,"signature":"undefined ubifs_lpt_post_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_free_lpt_nodes","entry":"00126aa0","bodyBytes":245,"signature":"undefined ubifs_free_lpt_nodes(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lpt_free","entry":"00126ba0","bodyBytes":252,"signature":"undefined ubifs_lpt_free(void)","callingConvention":"unknown","external":false}
+{"name":"dbg_check_ltab_lnum","entry":"00126cb0","bodyBytes":1650,"signature":"undefined dbg_check_ltab_lnum(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dump_lpt_lebs","entry":"00127390","bodyBytes":2043,"signature":"undefined ubifs_dump_lpt_lebs(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lpt_start_commit","entry":"00127be0","bodyBytes":2833,"signature":"undefined ubifs_lpt_start_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lpt_end_commit","entry":"001287f0","bodyBytes":2108,"signature":"undefined ubifs_lpt_end_commit(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00129070","entry":"00129070","bodyBytes":563,"signature":"undefined FUN_00129070(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001292d0","entry":"001292d0","bodyBytes":505,"signature":"undefined FUN_001292d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001294e0","entry":"001294e0","bodyBytes":145,"signature":"undefined FUN_001294e0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_add_to_cat","entry":"001295a0","bodyBytes":787,"signature":"undefined ubifs_add_to_cat(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_replace_cat","entry":"001298e0","bodyBytes":107,"signature":"undefined ubifs_replace_cat(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_ensure_cat","entry":"00129960","bodyBytes":219,"signature":"undefined ubifs_ensure_cat(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_categorize_lprops","entry":"00129a60","bodyBytes":148,"signature":"undefined ubifs_categorize_lprops(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_calc_dark","entry":"00129b10","bodyBytes":125,"signature":"undefined ubifs_calc_dark(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_change_lp","entry":"00129ba0","bodyBytes":1643,"signature":"undefined ubifs_change_lp(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_get_lp_stats","entry":"0012a250","bodyBytes":89,"signature":"undefined ubifs_get_lp_stats(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_change_one_lp","entry":"0012a2b0","bodyBytes":495,"signature":"undefined ubifs_change_one_lp(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_update_one_lp","entry":"0012a4b0","bodyBytes":499,"signature":"undefined ubifs_update_one_lp(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_read_one_lp","entry":"0012a6b0","bodyBytes":285,"signature":"undefined ubifs_read_one_lp(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_fast_find_free","entry":"0012a7e0","bodyBytes":191,"signature":"undefined ubifs_fast_find_free(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_fast_find_empty","entry":"0012a8b0","bodyBytes":219,"signature":"undefined ubifs_fast_find_empty(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_fast_find_freeable","entry":"0012a9a0","bodyBytes":276,"signature":"undefined ubifs_fast_find_freeable(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_fast_find_frdi_idx","entry":"0012aac0","bodyBytes":222,"signature":"undefined ubifs_fast_find_frdi_idx(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_search_zbranch","entry":"0012abc0","bodyBytes":521,"signature":"undefined ubifs_search_zbranch(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_postorder_first","entry":"0012adf0","bodyBytes":72,"signature":"undefined ubifs_tnc_postorder_first(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_postorder_next","entry":"0012ae40","bodyBytes":246,"signature":"undefined ubifs_tnc_postorder_next(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_destroy_tnc_subtree","entry":"0012af40","bodyBytes":290,"signature":"undefined ubifs_destroy_tnc_subtree(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_destroy_tnc_tree","entry":"0012b080","bodyBytes":101,"signature":"undefined ubifs_destroy_tnc_tree(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_load_znode","entry":"0012b100","bodyBytes":2002,"signature":"undefined ubifs_load_znode(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_read_node","entry":"0012b910","bodyBytes":633,"signature":"undefined ubifs_tnc_read_node(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012bbc0","entry":"0012bbc0","bodyBytes":195,"signature":"undefined FUN_0012bbc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012bc90","entry":"0012bc90","bodyBytes":417,"signature":"undefined FUN_0012bc90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012be40","entry":"0012be40","bodyBytes":157,"signature":"undefined FUN_0012be40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012bee0","entry":"0012bee0","bodyBytes":166,"signature":"undefined FUN_0012bee0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012bf90","entry":"0012bf90","bodyBytes":209,"signature":"undefined FUN_0012bf90(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012c070","entry":"0012c070","bodyBytes":558,"signature":"undefined FUN_0012c070(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012c2c0","entry":"0012c2c0","bodyBytes":746,"signature":"undefined FUN_0012c2c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012c5e0","entry":"0012c5e0","bodyBytes":198,"signature":"undefined FUN_0012c5e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012c6c0","entry":"0012c6c0","bodyBytes":753,"signature":"undefined FUN_0012c6c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012c9d0","entry":"0012c9d0","bodyBytes":458,"signature":"undefined FUN_0012c9d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012cbc0","entry":"0012cbc0","bodyBytes":283,"signature":"undefined FUN_0012cbc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012cd00","entry":"0012cd00","bodyBytes":192,"signature":"undefined FUN_0012cd00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012cdf0","entry":"0012cdf0","bodyBytes":225,"signature":"undefined FUN_0012cdf0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012cf10","entry":"0012cf10","bodyBytes":2418,"signature":"undefined FUN_0012cf10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012d8b0","entry":"0012d8b0","bodyBytes":233,"signature":"undefined FUN_0012d8b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012d9d0","entry":"0012d9d0","bodyBytes":377,"signature":"undefined FUN_0012d9d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012db50","entry":"0012db50","bodyBytes":656,"signature":"undefined FUN_0012db50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012de00","entry":"0012de00","bodyBytes":1109,"signature":"undefined FUN_0012de00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012e290","entry":"0012e290","bodyBytes":919,"signature":"undefined FUN_0012e290(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012e650","entry":"0012e650","bodyBytes":1100,"signature":"undefined FUN_0012e650(void)","callingConvention":"unknown","external":false}
+{"name":"insert_old_idx_znode","entry":"0012eb00","bodyBytes":182,"signature":"undefined insert_old_idx_znode(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0012ebc0","entry":"0012ebc0","bodyBytes":1259,"signature":"undefined FUN_0012ebc0(void)","callingConvention":"unknown","external":false}
+{"name":"destroy_old_idx","entry":"0012f0e0","bodyBytes":76,"signature":"undefined destroy_old_idx(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_lookup_level0","entry":"0012f130","bodyBytes":902,"signature":"undefined ubifs_lookup_level0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_locate","entry":"0012f4e0","bodyBytes":239,"signature":"undefined ubifs_tnc_locate(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_lookup_nm","entry":"0012f5e0","bodyBytes":535,"signature":"undefined ubifs_tnc_lookup_nm(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_add","entry":"0012f800","bodyBytes":565,"signature":"undefined ubifs_tnc_add(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_replace","entry":"0012fa50","bodyBytes":840,"signature":"undefined ubifs_tnc_replace(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_remove","entry":"0012fdc0","bodyBytes":262,"signature":"undefined ubifs_tnc_remove(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_remove_nm","entry":"0012fee0","bodyBytes":496,"signature":"undefined ubifs_tnc_remove_nm(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_add_nm","entry":"001300f0","bodyBytes":918,"signature":"undefined ubifs_tnc_add_nm(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_remove_range","entry":"001304c0","bodyBytes":1016,"signature":"undefined ubifs_tnc_remove_range(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_remove_node","entry":"001308d0","bodyBytes":472,"signature":"undefined ubifs_tnc_remove_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_next_ent","entry":"00130ac0","bodyBytes":736,"signature":"undefined ubifs_tnc_next_ent(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_remove_ino","entry":"00130dd0","bodyBytes":676,"signature":"undefined ubifs_tnc_remove_ino(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_close","entry":"00131090","bodyBytes":260,"signature":"undefined ubifs_tnc_close(void)","callingConvention":"unknown","external":false}
+{"name":"is_idx_node_in_tnc","entry":"001311a0","bodyBytes":52,"signature":"undefined is_idx_node_in_tnc(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_has_node","entry":"001311e0","bodyBytes":559,"signature":"undefined ubifs_tnc_has_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_dirty_idx_node","entry":"00131430","bodyBytes":127,"signature":"undefined ubifs_dirty_idx_node(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001314c0","entry":"001314c0","bodyBytes":90,"signature":"undefined FUN_001314c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131520","entry":"00131520","bodyBytes":217,"signature":"undefined FUN_00131520(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00131610","entry":"00131610","bodyBytes":1356,"signature":"undefined FUN_00131610(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_start_commit","entry":"00131b80","bodyBytes":3723,"signature":"undefined ubifs_tnc_start_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_tnc_end_commit","entry":"00132a40","bodyBytes":2069,"signature":"undefined ubifs_tnc_end_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_commit_required","entry":"00133290","bodyBytes":332,"signature":"undefined ubifs_commit_required(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_request_bg_commit","entry":"001333f0","bodyBytes":5,"signature":"undefined ubifs_request_bg_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_run_commit","entry":"00133400","bodyBytes":1535,"signature":"undefined ubifs_run_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_gc_should_commit","entry":"00133a30","bodyBytes":221,"signature":"undefined ubifs_gc_should_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_orphan_start_commit","entry":"00133b40","bodyBytes":349,"signature":"undefined ubifs_orphan_start_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_orphan_end_commit","entry":"00133cb0","bodyBytes":1810,"signature":"undefined ubifs_orphan_end_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_clear_orphans","entry":"00134410","bodyBytes":92,"signature":"undefined ubifs_clear_orphans(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_mount_orphans","entry":"00134470","bodyBytes":1963,"signature":"undefined ubifs_mount_orphans(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00134c40","entry":"00134c40","bodyBytes":188,"signature":"undefined FUN_00134c40(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_search_bud","entry":"00134d00","bodyBytes":113,"signature":"undefined ubifs_search_bud(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_get_wbuf","entry":"00134d80","bodyBytes":134,"signature":"undefined ubifs_get_wbuf(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_add_bud","entry":"00134e20","bodyBytes":455,"signature":"undefined ubifs_add_bud(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_add_bud_to_log","entry":"00135020","bodyBytes":1123,"signature":"undefined ubifs_add_bud_to_log(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_log_start_commit","entry":"001354c0","bodyBytes":1472,"signature":"undefined ubifs_log_start_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_log_end_commit","entry":"00135ab0","bodyBytes":204,"signature":"undefined ubifs_log_end_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_log_post_commit","entry":"00135b80","bodyBytes":316,"signature":"undefined ubifs_log_post_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_consolidate_log","entry":"00135cd0","bodyBytes":1107,"signature":"undefined ubifs_consolidate_log(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00136140","entry":"00136140","bodyBytes":107,"signature":"undefined FUN_00136140(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001361c0","entry":"001361c0","bodyBytes":463,"signature":"undefined FUN_001361c0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_validate_entry","entry":"001363b0","bodyBytes":385,"signature":"undefined ubifs_validate_entry(void)","callingConvention":"unknown","external":false}
+{"name":"take_ihead","entry":"00136540","bodyBytes":360,"signature":"undefined take_ihead(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_replay_journal","entry":"001366c0","bodyBytes":7231,"signature":"undefined ubifs_replay_journal(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001383e0","entry":"001383e0","bodyBytes":289,"signature":"undefined FUN_001383e0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00138520","entry":"00138520","bodyBytes":277,"signature":"undefined FUN_00138520(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00138650","entry":"00138650","bodyBytes":184,"signature":"undefined FUN_00138650(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00138710","entry":"00138710","bodyBytes":794,"signature":"undefined FUN_00138710(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_recover_master_node","entry":"00138a60","bodyBytes":1518,"signature":"undefined ubifs_recover_master_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_recover_leb","entry":"00139080","bodyBytes":3017,"signature":"undefined ubifs_recover_leb(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_recover_log_leb","entry":"00139cc0","bodyBytes":1147,"signature":"undefined ubifs_recover_log_leb(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_recover_inl_heads","entry":"0013a160","bodyBytes":339,"signature":"undefined ubifs_recover_inl_heads(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_rcvry_gc_commit","entry":"0013a2d0","bodyBytes":1014,"signature":"undefined ubifs_rcvry_gc_commit(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_destroy_size_tree","entry":"0013a6f0","bodyBytes":76,"signature":"undefined ubifs_destroy_size_tree(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_recover_size_accum","entry":"0013a740","bodyBytes":389,"signature":"undefined ubifs_recover_size_accum(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_recover_size","entry":"0013a8f0","bodyBytes":1259,"signature":"undefined ubifs_recover_size(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_shash_init","entry":"0013ae00","bodyBytes":21,"signature":"undefined ubifs_shash_init(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_shash_update","entry":"0013ae20","bodyBytes":42,"signature":"undefined ubifs_shash_update(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_shash_final","entry":"0013ae50","bodyBytes":24,"signature":"undefined ubifs_shash_final(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_hash_get_desc","entry":"0013ae70","bodyBytes":43,"signature":"undefined ubifs_hash_get_desc(void)","callingConvention":"unknown","external":false}
+{"name":"__ubifs_node_calc_hash","entry":"0013aea0","bodyBytes":15,"signature":"undefined __ubifs_node_calc_hash(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_master_node_calc_hash","entry":"0013aeb0","bodyBytes":30,"signature":"undefined ubifs_master_node_calc_hash(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_sign_superblock_node","entry":"0013aed0","bodyBytes":136,"signature":"undefined ubifs_sign_superblock_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_bad_hash","entry":"0013af70","bodyBytes":348,"signature":"undefined ubifs_bad_hash(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_init_authentication","entry":"0013b0e0","bodyBytes":376,"signature":"undefined ubifs_init_authentication(void)","callingConvention":"unknown","external":false}
+{"name":"__ubifs_exit_authentication","entry":"0013b270","bodyBytes":9,"signature":"undefined __ubifs_exit_authentication(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b280","entry":"0013b280","bodyBytes":92,"signature":"undefined FUN_0013b280(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b310","entry":"0013b310","bodyBytes":101,"signature":"undefined FUN_0013b310(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b380","entry":"0013b380","bodyBytes":109,"signature":"undefined FUN_0013b380(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b400","entry":"0013b400","bodyBytes":183,"signature":"undefined FUN_0013b400(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b4d0","entry":"0013b4d0","bodyBytes":81,"signature":"undefined FUN_0013b4d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b530","entry":"0013b530","bodyBytes":73,"signature":"undefined FUN_0013b530(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b580","entry":"0013b580","bodyBytes":30,"signature":"undefined FUN_0013b580(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b5a0","entry":"0013b5a0","bodyBytes":100,"signature":"undefined FUN_0013b5a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b610","entry":"0013b610","bodyBytes":38,"signature":"undefined FUN_0013b610(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b640","entry":"0013b640","bodyBytes":290,"signature":"undefined FUN_0013b640(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b770","entry":"0013b770","bodyBytes":519,"signature":"undefined FUN_0013b770(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013b9c0","entry":"0013b9c0","bodyBytes":458,"signature":"undefined FUN_0013b9c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013bbd0","entry":"0013bbd0","bodyBytes":852,"signature":"undefined FUN_0013bbd0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013bfb0","entry":"0013bfb0","bodyBytes":1569,"signature":"undefined FUN_0013bfb0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013c118","bodyBytes":8,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c120","entry":"0013c120","bodyBytes":127,"signature":"undefined FUN_0013c120(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c2a0","entry":"0013c2a0","bodyBytes":106,"signature":"undefined FUN_0013c2a0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013c35c","bodyBytes":20,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c370","entry":"0013c370","bodyBytes":108,"signature":"undefined FUN_0013c370(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c419","entry":"0013c419","bodyBytes":133,"signature":"undefined FUN_0013c419(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013c48f","bodyBytes":9,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c4f0","entry":"0013c4f0","bodyBytes":113,"signature":"undefined FUN_0013c4f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c5c3","entry":"0013c5c3","bodyBytes":100,"signature":"undefined FUN_0013c5c3(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c67d","entry":"0013c67d","bodyBytes":106,"signature":"undefined FUN_0013c67d(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c740","entry":"0013c740","bodyBytes":106,"signature":"undefined FUN_0013c740(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c803","entry":"0013c803","bodyBytes":107,"signature":"undefined FUN_0013c803(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013c88c","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c8d1","entry":"0013c8d1","bodyBytes":104,"signature":"undefined FUN_0013c8d1(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013c957","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013c992","entry":"0013c992","bodyBytes":117,"signature":"undefined FUN_0013c992(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013ca63","entry":"0013ca63","bodyBytes":104,"signature":"undefined FUN_0013ca63(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013cae9","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"handle_error","entry":"0013cb20","bodyBytes":330,"signature":"undefined handle_error(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013cc80","entry":"0013cc80","bodyBytes":92,"signature":"undefined FUN_0013cc80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013cd10","entry":"0013cd10","bodyBytes":165,"signature":"undefined FUN_0013cd10(void)","callingConvention":"unknown","external":false}
+{"name":"fix_problem","entry":"0013cdc0","bodyBytes":4484,"signature":"undefined fix_problem(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013da00","entry":"0013da00","bodyBytes":124,"signature":"undefined FUN_0013da00(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e05d","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e08d","bodyBytes":224,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e16d","bodyBytes":172,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e291","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e2c1","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e2cd","bodyBytes":17,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e2de","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e2ea","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e395","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e42a","bodyBytes":17,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e447","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e4e4","bodyBytes":144,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e57e","bodyBytes":143,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e59b","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e5b8","bodyBytes":17,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e5da","bodyBytes":17,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0013e5fc","bodyBytes":17,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_3","entry":"0013e8fb","bodyBytes":436,"signature":"undefined caseD_3(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013ebe0","entry":"0013ebe0","bodyBytes":92,"signature":"undefined FUN_0013ebe0(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_load_filesystem","entry":"0013ec70","bodyBytes":4028,"signature":"undefined ubifs_load_filesystem(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_destroy_filesystem","entry":"0013fcb0","bodyBytes":139,"signature":"undefined ubifs_destroy_filesystem(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013fd40","entry":"0013fd40","bodyBytes":92,"signature":"undefined FUN_0013fd40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013fdd0","entry":"0013fdd0","bodyBytes":94,"signature":"undefined FUN_0013fdd0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013fe40","entry":"0013fe40","bodyBytes":165,"signature":"undefined FUN_0013fe40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0013ff00","entry":"0013ff00","bodyBytes":739,"signature":"undefined FUN_0013ff00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001401f0","entry":"001401f0","bodyBytes":1080,"signature":"undefined FUN_001401f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00140670","entry":"00140670","bodyBytes":936,"signature":"undefined FUN_00140670(void)","callingConvention":"unknown","external":false}
+{"name":"parse_ino_node","entry":"00140a70","bodyBytes":6256,"signature":"undefined parse_ino_node(void)","callingConvention":"unknown","external":false}
+{"name":"parse_dent_node","entry":"00142380","bodyBytes":787,"signature":"undefined parse_dent_node(void)","callingConvention":"unknown","external":false}
+{"name":"parse_data_node","entry":"001426d0","bodyBytes":1511,"signature":"undefined parse_data_node(void)","callingConvention":"unknown","external":false}
+{"name":"parse_trun_node","entry":"00142d30","bodyBytes":406,"signature":"undefined parse_trun_node(void)","callingConvention":"unknown","external":false}
+{"name":"insert_or_update_file","entry":"00142ed0","bodyBytes":315,"signature":"undefined insert_or_update_file(void)","callingConvention":"unknown","external":false}
+{"name":"destroy_file_content","entry":"00143030","bodyBytes":289,"signature":"undefined destroy_file_content(void)","callingConvention":"unknown","external":false}
+{"name":"destroy_file_tree","entry":"00143160","bodyBytes":113,"signature":"undefined destroy_file_tree(void)","callingConvention":"unknown","external":false}
+{"name":"destroy_file_list","entry":"001431e0","bodyBytes":92,"signature":"undefined destroy_file_list(void)","callingConvention":"unknown","external":false}
+{"name":"lookup_file","entry":"00143240","bodyBytes":58,"signature":"undefined lookup_file(void)","callingConvention":"unknown","external":false}
+{"name":"delete_file","entry":"00143290","bodyBytes":360,"signature":"undefined delete_file(void)","callingConvention":"unknown","external":false}
+{"name":"file_is_valid","entry":"00143410","bodyBytes":1917,"signature":"undefined file_is_valid(void)","callingConvention":"unknown","external":false}
+{"name":"file_is_reachable","entry":"00143be0","bodyBytes":964,"signature":"undefined file_is_reachable(void)","callingConvention":"unknown","external":false}
+{"name":"check_and_correct_files","entry":"00143fd0","bodyBytes":343,"signature":"undefined check_and_correct_files(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00144140","entry":"00144140","bodyBytes":174,"signature":"undefined FUN_00144140(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00144200","entry":"00144200","bodyBytes":180,"signature":"undefined FUN_00144200(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001442d0","entry":"001442d0","bodyBytes":174,"signature":"undefined FUN_001442d0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00144390","entry":"00144390","bodyBytes":91,"signature":"undefined FUN_00144390(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001443f0","entry":"001443f0","bodyBytes":134,"signature":"undefined FUN_001443f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00144480","entry":"00144480","bodyBytes":726,"signature":"undefined FUN_00144480(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00144790","entry":"00144790","bodyBytes":127,"signature":"undefined FUN_00144790(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00144820","entry":"00144820","bodyBytes":1112,"signature":"undefined FUN_00144820(void)","callingConvention":"unknown","external":false}
+{"name":"ubifs_rebuild_filesystem","entry":"00144cc0","bodyBytes":9619,"signature":"undefined ubifs_rebuild_filesystem(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00147098","entry":"00147098","bodyBytes":180,"signature":"undefined FUN_00147098(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014716b","entry":"0014716b","bodyBytes":145,"signature":"undefined FUN_0014716b(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001471e3","entry":"001471e3","bodyBytes":158,"signature":"undefined FUN_001471e3(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"001472c0","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"001473c8","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"00147483","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001474a0","entry":"001474a0","bodyBytes":399,"signature":"undefined FUN_001474a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00147650","entry":"00147650","bodyBytes":149,"signature":"undefined FUN_00147650(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00147700","entry":"00147700","bodyBytes":358,"signature":"undefined FUN_00147700(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00147870","entry":"00147870","bodyBytes":580,"signature":"undefined FUN_00147870(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00147ad0","entry":"00147ad0","bodyBytes":619,"signature":"undefined FUN_00147ad0(void)","callingConvention":"unknown","external":false}
+{"name":"traverse_tnc_and_construct_files","entry":"00147d50","bodyBytes":865,"signature":"undefined traverse_tnc_and_construct_files(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001480a0","entry":"001480a0","bodyBytes":151,"signature":"undefined FUN_001480a0(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"00148136","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"update_files_size","entry":"00148180","bodyBytes":488,"signature":"undefined update_files_size(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001482d5","entry":"001482d5","bodyBytes":66,"signature":"undefined FUN_001482d5(void)","callingConvention":"unknown","external":false}
+{"name":"handle_invalid_files","entry":"001483c0","bodyBytes":646,"signature":"undefined handle_invalid_files(void)","callingConvention":"unknown","external":false}
+{"name":"handle_dentry_tree","entry":"00148660","bodyBytes":357,"signature":"undefined handle_dentry_tree(void)","callingConvention":"unknown","external":false}
+{"name":"tnc_is_empty","entry":"001487d0","bodyBytes":20,"signature":"undefined tnc_is_empty(void)","callingConvention":"unknown","external":false}
+{"name":"check_and_create_root","entry":"001487f0","bodyBytes":268,"signature":"undefined check_and_create_root(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00148920","entry":"00148920","bodyBytes":242,"signature":"undefined FUN_00148920(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00148a20","entry":"00148a20","bodyBytes":801,"signature":"undefined FUN_00148a20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00148d50","entry":"00148d50","bodyBytes":157,"signature":"undefined FUN_00148d50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00148e00","entry":"00148e00","bodyBytes":562,"signature":"undefined FUN_00148e00(void)","callingConvention":"unknown","external":false}
+{"name":"get_free_leb","entry":"00149040","bodyBytes":168,"signature":"undefined get_free_leb(void)","callingConvention":"unknown","external":false}
+{"name":"build_lpt","entry":"00149100","bodyBytes":99,"signature":"undefined build_lpt(void)","callingConvention":"unknown","external":false}
+{"name":"check_and_correct_space","entry":"00149170","bodyBytes":242,"signature":"undefined check_and_correct_space(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_001491cf","entry":"001491cf","bodyBytes":3581,"signature":"undefined FUN_001491cf(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014a0a6","entry":"0014a0a6","bodyBytes":148,"signature":"undefined FUN_0014a0a6(void)","callingConvention":"unknown","external":false}
+{"name":"caseD_0","entry":"0014a158","bodyBytes":12,"signature":"undefined caseD_0(void)","callingConvention":"unknown","external":false}
+{"name":"check_and_correct_index_size","entry":"0014a170","bodyBytes":390,"signature":"undefined check_and_correct_index_size(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014a310","entry":"0014a310","bodyBytes":1024,"signature":"undefined FUN_0014a310(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014a490","entry":"0014a490","bodyBytes":150,"signature":"undefined FUN_0014a490(void)","callingConvention":"unknown","external":false}
+{"name":"check_and_create_lost_found","entry":"0014a7e0","bodyBytes":770,"signature":"undefined check_and_create_lost_found(void)","callingConvention":"unknown","external":false}
+{"name":"handle_disonnected_files","entry":"0014ab20","bodyBytes":149,"signature":"undefined handle_disonnected_files(void)","callingConvention":"unknown","external":false}
+{"name":"list_sort","entry":"0014abc0","bodyBytes":689,"signature":"undefined list_sort(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014aea0","entry":"0014aea0","bodyBytes":116,"signature":"undefined FUN_0014aea0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014af30","entry":"0014af30","bodyBytes":116,"signature":"undefined FUN_0014af30(void)","callingConvention":"unknown","external":false}
+{"name":"rb_insert_color","entry":"0014afc0","bodyBytes":265,"signature":"undefined rb_insert_color(void)","callingConvention":"unknown","external":false}
+{"name":"rb_erase","entry":"0014b0e0","bodyBytes":804,"signature":"undefined rb_erase(void)","callingConvention":"unknown","external":false}
+{"name":"rb_first","entry":"0014b430","bodyBytes":36,"signature":"undefined rb_first(void)","callingConvention":"unknown","external":false}
+{"name":"rb_last","entry":"0014b460","bodyBytes":36,"signature":"undefined rb_last(void)","callingConvention":"unknown","external":false}
+{"name":"rb_next","entry":"0014b490","bodyBytes":73,"signature":"undefined rb_next(void)","callingConvention":"unknown","external":false}
+{"name":"rb_prev","entry":"0014b4e0","bodyBytes":73,"signature":"undefined rb_prev(void)","callingConvention":"unknown","external":false}
+{"name":"rb_replace_node","entry":"0014b540","bodyBytes":96,"signature":"undefined rb_replace_node(void)","callingConvention":"unknown","external":false}
+{"name":"rb_next_postorder","entry":"0014b5b0","bodyBytes":79,"signature":"undefined rb_next_postorder(void)","callingConvention":"unknown","external":false}
+{"name":"rb_first_postorder","entry":"0014b610","bodyBytes":45,"signature":"undefined rb_first_postorder(void)","callingConvention":"unknown","external":false}
+{"name":"mtd_crc32","entry":"0014b640","bodyBytes":59,"signature":"undefined mtd_crc32(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014b690","entry":"0014b690","bodyBytes":523,"signature":"undefined FUN_0014b690(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014b8a0","entry":"0014b8a0","bodyBytes":135,"signature":"undefined FUN_0014b8a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014b930","entry":"0014b930","bodyBytes":493,"signature":"undefined FUN_0014b930(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014bb30","entry":"0014bb30","bodyBytes":243,"signature":"undefined FUN_0014bb30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014bc30","entry":"0014bc30","bodyBytes":232,"signature":"undefined FUN_0014bc30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014bd20","entry":"0014bd20","bodyBytes":374,"signature":"undefined FUN_0014bd20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014bea0","entry":"0014bea0","bodyBytes":164,"signature":"undefined FUN_0014bea0(void)","callingConvention":"unknown","external":false}
+{"name":"libubi_close","entry":"0014bf50","bodyBytes":260,"signature":"undefined libubi_close(void)","callingConvention":"unknown","external":false}
+{"name":"libubi_open","entry":"0014c060","bodyBytes":1039,"signature":"undefined libubi_open(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_attach","entry":"0014c480","bodyBytes":240,"signature":"undefined ubi_attach(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_remove_dev","entry":"0014c580","bodyBytes":178,"signature":"undefined ubi_remove_dev(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_get_info","entry":"0014c640","bodyBytes":595,"signature":"undefined ubi_get_info(void)","callingConvention":"unknown","external":false}
+{"name":"mtd_num2ubi_dev","entry":"0014c8b0","bodyBytes":329,"signature":"undefined mtd_num2ubi_dev(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_detach_mtd","entry":"0014ca00","bodyBytes":129,"signature":"undefined ubi_detach_mtd(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_detach","entry":"0014ca90","bodyBytes":164,"signature":"undefined ubi_detach(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_probe_node","entry":"0014cb40","bodyBytes":1009,"signature":"undefined ubi_probe_node(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_mkvol","entry":"0014cf40","bodyBytes":390,"signature":"undefined ubi_mkvol(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_rmvol","entry":"0014d0d0","bodyBytes":188,"signature":"undefined ubi_rmvol(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_rnvols","entry":"0014d190","bodyBytes":84,"signature":"undefined ubi_rnvols(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_rsvol","entry":"0014d1f0","bodyBytes":236,"signature":"undefined ubi_rsvol(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_vol_block_create","entry":"0014d2e0","bodyBytes":18,"signature":"undefined ubi_vol_block_create(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_vol_block_remove","entry":"0014d300","bodyBytes":18,"signature":"undefined ubi_vol_block_remove(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_update_start","entry":"0014d320","bodyBytes":41,"signature":"undefined ubi_update_start(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_leb_change_start","entry":"0014d350","bodyBytes":99,"signature":"undefined ubi_leb_change_start(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_dev_present","entry":"0014d3c0","bodyBytes":193,"signature":"undefined ubi_dev_present(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_get_dev_info1","entry":"0014d490","bodyBytes":2172,"signature":"undefined ubi_get_dev_info1(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_get_dev_info","entry":"0014dd20","bodyBytes":785,"signature":"undefined ubi_get_dev_info(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_get_vol_info1","entry":"0014e040","bodyBytes":1521,"signature":"undefined ubi_get_vol_info1(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_get_vol_info","entry":"0014e660","bodyBytes":980,"signature":"undefined ubi_get_vol_info(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_get_vol_info1_nm","entry":"0014ea40","bodyBytes":290,"signature":"undefined ubi_get_vol_info1_nm(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_set_property","entry":"0014eb70","bodyBytes":91,"signature":"undefined ubi_set_property(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_leb_unmap","entry":"0014ebd0","bodyBytes":34,"signature":"undefined ubi_leb_unmap(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_is_mapped","entry":"0014ec00","bodyBytes":34,"signature":"undefined ubi_is_mapped(void)","callingConvention":"unknown","external":false}
+{"name":"ubi_leb_map","entry":"0014ec30","bodyBytes":74,"signature":"undefined ubi_leb_map(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_0014ec80","entry":"0014ec80","bodyBytes":14,"signature":"undefined FUN_0014ec80(void)","callingConvention":"unknown","external":false}
+{"name":"_DT_FINI","entry":"0014ec90","bodyBytes":9,"signature":"undefined _DT_FINI(void)","callingConvention":"unknown","external":false}
+{"name":"__printf_chk","entry":"0016e000","bodyBytes":1,"signature":"undefined __printf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"CMS_final","entry":"0016e008","bodyBytes":1,"signature":"int CMS_final(CMS_ContentInfo * cms, BIO * data, BIO * dcont, uint flags)","callingConvention":"unknown","external":false}
+{"name":"__errno_location","entry":"0016e010","bodyBytes":1,"signature":"int * __errno_location(void)","callingConvention":"unknown","external":false}
+{"name":"deflateInit2_","entry":"0016e018","bodyBytes":1,"signature":"undefined deflateInit2_(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_EncryptUpdate","entry":"0016e020","bodyBytes":1,"signature":"int EVP_EncryptUpdate(EVP_CIPHER_CTX * ctx, uchar * out, int * outl, uchar * in, int inl)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_init","entry":"0016e028","bodyBytes":1,"signature":"int ENGINE_init(ENGINE * e)","callingConvention":"unknown","external":false}
+{"name":"EVP_get_digestbyname","entry":"0016e030","bodyBytes":1,"signature":"EVP_MD * EVP_get_digestbyname(char * name)","callingConvention":"unknown","external":false}
+{"name":"ERR_peek_error","entry":"0016e038","bodyBytes":1,"signature":"ulong ERR_peek_error(void)","callingConvention":"unknown","external":false}
+{"name":"pthread_mutex_trylock","entry":"0016e040","bodyBytes":1,"signature":"int pthread_mutex_trylock(pthread_mutex_t * __mutex)","callingConvention":"unknown","external":false}
+{"name":"BIO_new_mem_buf","entry":"0016e048","bodyBytes":1,"signature":"BIO * BIO_new_mem_buf(void * buf, int len)","callingConvention":"unknown","external":false}
+{"name":"i2d_CMS_bio_stream","entry":"0016e050","bodyBytes":1,"signature":"int i2d_CMS_bio_stream(BIO * out, CMS_ContentInfo * cms, BIO * in, int flags)","callingConvention":"unknown","external":false}
+{"name":"strstr","entry":"0016e058","bodyBytes":1,"signature":"char * strstr(char * __haystack, char * __needle)","callingConvention":"unknown","external":false}
+{"name":"ERR_get_error_line","entry":"0016e060","bodyBytes":1,"signature":"ulong ERR_get_error_line(char * * file, int * line)","callingConvention":"unknown","external":false}
+{"name":"BIO_ctrl","entry":"0016e068","bodyBytes":1,"signature":"long BIO_ctrl(BIO * bp, int cmd, long larg, void * parg)","callingConvention":"unknown","external":false}
+{"name":"rand","entry":"0016e070","bodyBytes":1,"signature":"int rand(void)","callingConvention":"unknown","external":false}
+{"name":"ERR_error_string","entry":"0016e078","bodyBytes":1,"signature":"char * ERR_error_string(ulong e, char * buf)","callingConvention":"unknown","external":false}
+{"name":"strerror","entry":"0016e080","bodyBytes":1,"signature":"char * strerror(int __errnum)","callingConvention":"unknown","external":false}
+{"name":"write","entry":"0016e088","bodyBytes":1,"signature":"ssize_t write(int __fd, void * __buf, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_ctrl_cmd","entry":"0016e090","bodyBytes":1,"signature":"int ENGINE_ctrl_cmd(ENGINE * e, char * cmd_name, long i, void * p, f * f, int cmd_optional)","callingConvention":"unknown","external":false}
+{"name":"ZSTD_compressCCtx","entry":"0016e098","bodyBytes":1,"signature":"undefined ZSTD_compressCCtx(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_MD_get_size","entry":"0016e0a0","bodyBytes":1,"signature":"undefined EVP_MD_get_size(void)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_sscanf","entry":"0016e0a8","bodyBytes":1,"signature":"undefined __isoc23_sscanf(void)","callingConvention":"unknown","external":false}
+{"name":"strspn","entry":"0016e0b0","bodyBytes":1,"signature":"size_t strspn(char * __s, char * __accept)","callingConvention":"unknown","external":false}
+{"name":"CMS_add1_signer","entry":"0016e0b8","bodyBytes":1,"signature":"CMS_SignerInfo * CMS_add1_signer(CMS_ContentInfo * cms, X509 * signer, EVP_PKEY * pk, EVP_MD * md, uint flags)","callingConvention":"unknown","external":false}
+{"name":"strlen","entry":"0016e0c0","bodyBytes":1,"signature":"size_t strlen(char * __s)","callingConvention":"unknown","external":false}
+{"name":"memcmp","entry":"0016e0c8","bodyBytes":1,"signature":"int memcmp(void * __s1, void * __s2, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"deflate","entry":"0016e0d0","bodyBytes":1,"signature":"undefined deflate(void)","callingConvention":"unknown","external":false}
+{"name":"strncmp","entry":"0016e0d8","bodyBytes":1,"signature":"int strncmp(char * __s1, char * __s2, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"OPENSSL_init_crypto","entry":"0016e0e0","bodyBytes":1,"signature":"undefined OPENSSL_init_crypto(void)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_load_private_key","entry":"0016e0e8","bodyBytes":1,"signature":"EVP_PKEY * ENGINE_load_private_key(ENGINE * e, char * key_id, UI_METHOD * ui_method, void * callback_data)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_ctrl_cmd_string","entry":"0016e0f0","bodyBytes":1,"signature":"int ENGINE_ctrl_cmd_string(ENGINE * e, char * cmd_name, char * arg, int cmd_optional)","callingConvention":"unknown","external":false}
+{"name":"strncpy","entry":"0016e0f8","bodyBytes":1,"signature":"char * strncpy(char * __dest, char * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"ERR_print_errors_fp","entry":"0016e100","bodyBytes":1,"signature":"void ERR_print_errors_fp(FILE * fp)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_128_cbc","entry":"0016e108","bodyBytes":1,"signature":"EVP_CIPHER * EVP_aes_128_cbc(void)","callingConvention":"unknown","external":false}
+{"name":"d2i_X509_bio","entry":"0016e110","bodyBytes":1,"signature":"X509 * d2i_X509_bio(BIO * bp, X509 * * x509)","callingConvention":"unknown","external":false}
+{"name":"memset","entry":"0016e118","bodyBytes":1,"signature":"void * memset(void * __s, int __c, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"EVP_EncryptInit_ex","entry":"0016e120","bodyBytes":1,"signature":"int EVP_EncryptInit_ex(EVP_CIPHER_CTX * ctx, EVP_CIPHER * cipher, ENGINE * impl, uchar * key, uchar * iv)","callingConvention":"unknown","external":false}
+{"name":"__sprintf_chk","entry":"0016e128","bodyBytes":1,"signature":"undefined __sprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"deflateEnd","entry":"0016e130","bodyBytes":1,"signature":"undefined deflateEnd(void)","callingConvention":"unknown","external":false}
+{"name":"__snprintf_chk","entry":"0016e138","bodyBytes":1,"signature":"undefined __snprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"ZSTD_freeCCtx","entry":"0016e140","bodyBytes":1,"signature":"undefined ZSTD_freeCCtx(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_256_cbc","entry":"0016e148","bodyBytes":1,"signature":"EVP_CIPHER * EVP_aes_256_cbc(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_CTX_new","entry":"0016e150","bodyBytes":1,"signature":"EVP_CIPHER_CTX * EVP_CIPHER_CTX_new(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_DigestFinal_ex","entry":"0016e158","bodyBytes":1,"signature":"int EVP_DigestFinal_ex(EVP_MD_CTX * ctx, uchar * md, uint * s)","callingConvention":"unknown","external":false}
+{"name":"PEM_read_bio_PrivateKey","entry":"0016e160","bodyBytes":1,"signature":"EVP_PKEY * PEM_read_bio_PrivateKey(BIO * bp, EVP_PKEY * * x, pem_password_cb * cb, void * u)","callingConvention":"unknown","external":false}
+{"name":"__assert_fail","entry":"0016e168","bodyBytes":1,"signature":"void __assert_fail(char * __assertion, char * __file, uint __line, char * __function)","callingConvention":"unknown","external":false}
+{"name":"BIO_new_file","entry":"0016e170","bodyBytes":1,"signature":"BIO * BIO_new_file(char * filename, char * mode)","callingConvention":"unknown","external":false}
+{"name":"calloc","entry":"0016e178","bodyBytes":1,"signature":"void * calloc(size_t __nmemb, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_by_id","entry":"0016e180","bodyBytes":1,"signature":"ENGINE * ENGINE_by_id(char * id)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_256_ecb","entry":"0016e188","bodyBytes":1,"signature":"EVP_CIPHER * EVP_aes_256_ecb(void)","callingConvention":"unknown","external":false}
+{"name":"open","entry":"0016e190","bodyBytes":1,"signature":"int open(char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"__libc_start_main","entry":"0016e198","bodyBytes":1,"signature":"undefined __libc_start_main(void)","callingConvention":"unknown","external":false}
+{"name":"pthread_mutex_unlock","entry":"0016e1a0","bodyBytes":1,"signature":"int pthread_mutex_unlock(pthread_mutex_t * __mutex)","callingConvention":"unknown","external":false}
+{"name":"EVP_DigestInit_ex","entry":"0016e1a8","bodyBytes":1,"signature":"int EVP_DigestInit_ex(EVP_MD_CTX * ctx, EVP_MD * type, ENGINE * impl)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"0016e1b0","bodyBytes":1,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"ENGINE_load_builtin_engines","entry":"0016e1b8","bodyBytes":1,"signature":"void ENGINE_load_builtin_engines(void)","callingConvention":"unknown","external":false}
+{"name":"BIO_s_mem","entry":"0016e1c0","bodyBytes":1,"signature":"BIO_METHOD * BIO_s_mem(void)","callingConvention":"unknown","external":false}
+{"name":"__cxa_atexit","entry":"0016e1c8","bodyBytes":1,"signature":"undefined __cxa_atexit(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_256_xts","entry":"0016e1d0","bodyBytes":1,"signature":"EVP_CIPHER * EVP_aes_256_xts(void)","callingConvention":"unknown","external":false}
+{"name":"stat","entry":"0016e1d8","bodyBytes":1,"signature":"int stat(char * __file, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"time","entry":"0016e1e0","bodyBytes":1,"signature":"time_t time(time_t * __timer)","callingConvention":"unknown","external":false}
+{"name":"lzo1x_999_compress","entry":"0016e1e8","bodyBytes":1,"signature":"undefined lzo1x_999_compress(void)","callingConvention":"unknown","external":false}
+{"name":"OPENSSL_config","entry":"0016e1f0","bodyBytes":1,"signature":"void OPENSSL_config(char * config_name)","callingConvention":"unknown","external":false}
+{"name":"srand","entry":"0016e1f8","bodyBytes":1,"signature":"void srand(uint __seed)","callingConvention":"unknown","external":false}
+{"name":"fclose","entry":"0016e200","bodyBytes":1,"signature":"int fclose(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"CMS_sign","entry":"0016e208","bodyBytes":1,"signature":"CMS_ContentInfo * CMS_sign(X509 * signcert, EVP_PKEY * pkey, stack_st_X509 * certs, BIO * data, uint flags)","callingConvention":"unknown","external":false}
+{"name":"BIO_free","entry":"0016e210","bodyBytes":1,"signature":"int BIO_free(BIO * a)","callingConvention":"unknown","external":false}
+{"name":"fileno","entry":"0016e218","bodyBytes":1,"signature":"int fileno(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"__ctype_b_loc","entry":"0016e220","bodyBytes":1,"signature":"ushort * * __ctype_b_loc(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_CTX_free","entry":"0016e228","bodyBytes":1,"signature":"void EVP_CIPHER_CTX_free(EVP_CIPHER_CTX * a)","callingConvention":"unknown","external":false}
+{"name":"__stack_chk_fail","entry":"0016e230","bodyBytes":1,"signature":"undefined __stack_chk_fail(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_MD_CTX_new","entry":"0016e238","bodyBytes":1,"signature":"undefined EVP_MD_CTX_new(void)","callingConvention":"unknown","external":false}
+{"name":"BIO_read","entry":"0016e240","bodyBytes":1,"signature":"int BIO_read(BIO * b, void * data, int len)","callingConvention":"unknown","external":false}
+{"name":"fflush","entry":"0016e248","bodyBytes":1,"signature":"int fflush(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fopen","entry":"0016e250","bodyBytes":1,"signature":"FILE * fopen(char * __filename, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"free","entry":"0016e258","bodyBytes":1,"signature":"void free(void * __ptr)","callingConvention":"unknown","external":false}
+{"name":"exit","entry":"0016e260","bodyBytes":1,"signature":"void exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"getenv","entry":"0016e268","bodyBytes":1,"signature":"char * getenv(char * __name)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_CTX_set_padding","entry":"0016e270","bodyBytes":1,"signature":"int EVP_CIPHER_CTX_set_padding(EVP_CIPHER_CTX * c, int pad)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_get_key_length","entry":"0016e278","bodyBytes":1,"signature":"undefined EVP_CIPHER_get_key_length(void)","callingConvention":"unknown","external":false}
+{"name":"sigaction","entry":"0016e280","bodyBytes":1,"signature":"int sigaction(int __sig, sigaction * __act, sigaction * __oact)","callingConvention":"unknown","external":false}
+{"name":"EVP_sha512","entry":"0016e288","bodyBytes":1,"signature":"EVP_MD * EVP_sha512(void)","callingConvention":"unknown","external":false}
+{"name":"malloc","entry":"0016e290","bodyBytes":1,"signature":"void * malloc(size_t __size)","callingConvention":"unknown","external":false}
+{"name":"ERR_clear_error","entry":"0016e298","bodyBytes":1,"signature":"void ERR_clear_error(void)","callingConvention":"unknown","external":false}
+{"name":"__memset_chk","entry":"0016e2a0","bodyBytes":1,"signature":"undefined __memset_chk(void)","callingConvention":"unknown","external":false}
+{"name":"putchar","entry":"0016e2a8","bodyBytes":1,"signature":"int putchar(int __c)","callingConvention":"unknown","external":false}
+{"name":"strcmp","entry":"0016e2b0","bodyBytes":1,"signature":"int strcmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"ioctl","entry":"0016e2b8","bodyBytes":1,"signature":"int ioctl(int __fd, ulong __request, ...)","callingConvention":"unknown","external":false}
+{"name":"ZSTD_isError","entry":"0016e2c0","bodyBytes":1,"signature":"undefined ZSTD_isError(void)","callingConvention":"unknown","external":false}
+{"name":"RAND_poll","entry":"0016e2c8","bodyBytes":1,"signature":"int RAND_poll(void)","callingConvention":"unknown","external":false}
+{"name":"read","entry":"0016e2d0","bodyBytes":1,"signature":"ssize_t read(int __fd, void * __buf, size_t __nbytes)","callingConvention":"unknown","external":false}
+{"name":"getpid","entry":"0016e2d8","bodyBytes":1,"signature":"__pid_t getpid(void)","callingConvention":"unknown","external":false}
+{"name":"BIO_test_flags","entry":"0016e2e0","bodyBytes":1,"signature":"int BIO_test_flags(BIO * b, int flags)","callingConvention":"unknown","external":false}
+{"name":"pthread_mutex_lock","entry":"0016e2e8","bodyBytes":1,"signature":"int pthread_mutex_lock(pthread_mutex_t * __mutex)","callingConvention":"unknown","external":false}
+{"name":"backtrace","entry":"0016e2f0","bodyBytes":1,"signature":"undefined backtrace(void)","callingConvention":"unknown","external":false}
+{"name":"RAND_bytes","entry":"0016e2f8","bodyBytes":1,"signature":"int RAND_bytes(uchar * buf, int num)","callingConvention":"unknown","external":false}
+{"name":"backtrace_symbols","entry":"0016e300","bodyBytes":1,"signature":"undefined backtrace_symbols(void)","callingConvention":"unknown","external":false}
+{"name":"pthread_mutex_init","entry":"0016e308","bodyBytes":1,"signature":"int pthread_mutex_init(pthread_mutex_t * __mutex, pthread_mutexattr_t * __mutexattr)","callingConvention":"unknown","external":false}
+{"name":"opendir","entry":"0016e310","bodyBytes":1,"signature":"DIR * opendir(char * __name)","callingConvention":"unknown","external":false}
+{"name":"EVP_aes_128_ecb","entry":"0016e318","bodyBytes":1,"signature":"EVP_CIPHER * EVP_aes_128_ecb(void)","callingConvention":"unknown","external":false}
+{"name":"readdir","entry":"0016e320","bodyBytes":1,"signature":"dirent * readdir(DIR * __dirp)","callingConvention":"unknown","external":false}
+{"name":"puts","entry":"0016e328","bodyBytes":1,"signature":"int puts(char * __s)","callingConvention":"unknown","external":false}
+{"name":"strnlen","entry":"0016e330","bodyBytes":1,"signature":"size_t strnlen(char * __string, size_t __maxlen)","callingConvention":"unknown","external":false}
+{"name":"fgets","entry":"0016e338","bodyBytes":1,"signature":"char * fgets(char * __s, int __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"closedir","entry":"0016e340","bodyBytes":1,"signature":"int closedir(DIR * __dirp)","callingConvention":"unknown","external":false}
+{"name":"memmove","entry":"0016e348","bodyBytes":1,"signature":"void * memmove(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"realloc","entry":"0016e350","bodyBytes":1,"signature":"void * realloc(void * __ptr, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"__fprintf_chk","entry":"0016e358","bodyBytes":1,"signature":"undefined __fprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"getopt_long","entry":"0016e360","bodyBytes":1,"signature":"undefined getopt_long(void)","callingConvention":"unknown","external":false}
+{"name":"ZSTD_createCCtx","entry":"0016e368","bodyBytes":1,"signature":"undefined ZSTD_createCCtx(void)","callingConvention":"unknown","external":false}
+{"name":"fstat","entry":"0016e370","bodyBytes":1,"signature":"int fstat(int __fd, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"BIO_new","entry":"0016e378","bodyBytes":1,"signature":"BIO * BIO_new(BIO_METHOD * type)","callingConvention":"unknown","external":false}
+{"name":"__memcpy_chk","entry":"0016e380","bodyBytes":1,"signature":"undefined __memcpy_chk(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_sha256","entry":"0016e388","bodyBytes":1,"signature":"EVP_MD * EVP_sha256(void)","callingConvention":"unknown","external":false}
+{"name":"_ITM_deregisterTMCloneTable","entry":"0016e390","bodyBytes":1,"signature":"undefined _ITM_deregisterTMCloneTable(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_MD_CTX_free","entry":"0016e398","bodyBytes":1,"signature":"undefined EVP_MD_CTX_free(void)","callingConvention":"unknown","external":false}
+{"name":"getpagesize","entry":"0016e3a0","bodyBytes":1,"signature":"int getpagesize(void)","callingConvention":"unknown","external":false}
+{"name":"PEM_read_bio_X509","entry":"0016e3a8","bodyBytes":1,"signature":"X509 * PEM_read_bio_X509(BIO * bp, X509 * * x, pem_password_cb * cb, void * u)","callingConvention":"unknown","external":false}
+{"name":"strdup","entry":"0016e3b0","bodyBytes":1,"signature":"char * strdup(char * __s)","callingConvention":"unknown","external":false}
+{"name":"EVP_EncryptFinal","entry":"0016e3b8","bodyBytes":1,"signature":"int EVP_EncryptFinal(EVP_CIPHER_CTX * ctx, uchar * out, int * outl)","callingConvention":"unknown","external":false}
+{"name":"lseek","entry":"0016e3c0","bodyBytes":1,"signature":"__off_t lseek(int __fd, __off_t __offset, int __whence)","callingConvention":"unknown","external":false}
+{"name":"EVP_CIPHER_get_iv_length","entry":"0016e3c8","bodyBytes":1,"signature":"undefined EVP_CIPHER_get_iv_length(void)","callingConvention":"unknown","external":false}
+{"name":"__gmon_start__","entry":"0016e3d0","bodyBytes":1,"signature":"undefined __gmon_start__(void)","callingConvention":"unknown","external":false}
+{"name":"_ITM_registerTMCloneTable","entry":"0016e3d8","bodyBytes":1,"signature":"undefined _ITM_registerTMCloneTable(void)","callingConvention":"unknown","external":false}
+{"name":"EVP_DigestUpdate","entry":"0016e3e0","bodyBytes":1,"signature":"int EVP_DigestUpdate(EVP_MD_CTX * ctx, void * d, size_t cnt)","callingConvention":"unknown","external":false}
+{"name":"close","entry":"0016e3e8","bodyBytes":1,"signature":"int close(int __fd)","callingConvention":"unknown","external":false}
+{"name":"__getdelim","entry":"0016e3f0","bodyBytes":1,"signature":"__ssize_t __getdelim(char * * __lineptr, size_t * __n, int __delimiter, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"__isoc23_strtol","entry":"0016e3f8","bodyBytes":1,"signature":"undefined __isoc23_strtol(void)","callingConvention":"unknown","external":false}
+{"name":"__cxa_finalize","entry":"0016e400","bodyBytes":1,"signature":"undefined __cxa_finalize(void)","callingConvention":"unknown","external":false}

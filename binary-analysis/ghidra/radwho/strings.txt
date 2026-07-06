@@ -1,0 +1,154 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001009e9 string-utf8 _talloc_free
+001009f6 string-utf8 fr_prints
+00100a00 string-utf8 rad_waitpid
+00100a0c string-utf8 rad_fork
+00100a15 string-utf8 fr_strerror
+00100a21 string-utf8 fr_syserror
+00100a2d string-utf8 _ITM_deregisterTMCloneTable
+00100a49 string-utf8 __gmon_start__
+00100a58 string-utf8 _ITM_registerTMCloneTable
+00100a72 string-utf8 cf_section_parse
+00100a83 string-utf8 cf_section_sub_find
+00100a97 string-utf8 cf_section_alloc
+00100aa8 string-utf8 cf_section_sub_find_name2
+00100ac2 string-utf8 cf_file_read
+00100acf string-utf8 fr_perror
+00100ad9 string-utf8 dict_read
+00100ae3 string-utf8 fr_check_lib_magic
+00100af6 string-utf8 dict_init
+00100b00 string-utf8 talloc_set_log_stderr
+00100b16 string-utf8 ctime
+00100b1c string-utf8 __stack_chk_fail
+00100b2d string-utf8 __printf_chk
+00100b3a string-utf8 fread
+00100b40 string-utf8 exit
+00100b45 string-utf8 fopen
+00100b4b string-utf8 strlen
+00100b52 string-utf8 __isoc23_strtol
+00100b62 string-utf8 stdout
+00100b69 string-utf8 optarg
+00100b70 string-utf8 getpwnam
+00100b79 string-utf8 __fprintf_chk
+00100b87 string-utf8 __libc_start_main
+00100b99 string-utf8 getopt
+00100ba0 string-utf8 strncasecmp
+00100bac string-utf8 inet_ntop
+00100bb6 string-utf8 __cxa_finalize
+00100bc5 string-utf8 strchr
+00100bcc string-utf8 fclose
+00100bd3 string-utf8 fputc
+00100bd9 string-utf8 fputs
+00100bdf string-utf8 strlcpy
+00100be7 string-utf8 __snprintf_chk
+00100bf6 string-utf8 __errno_location
+00100c07 string-utf8 inet_pton
+00100c11 string-utf8 strncmp
+00100c19 string-utf8 _IO_stdin_used
+00100c28 string-utf8 libfreeradius-server.so
+00100c40 string-utf8 libfreeradius-radius.so
+00100c58 string-utf8 libtalloc.so.2
+00100c67 string-utf8 libc.so.6
+00100c71 string-utf8 _edata
+00100c78 string-utf8 radacct_dir
+00100c84 string-utf8 __data_start
+00100c91 string-utf8 _end
+00100c96 string-utf8 radlog_dir
+00100ca1 string-utf8 __bss_start
+00100cad string-utf8 log_stripped_names
+00100cc0 string-utf8 main_config
+00100ccc string-utf8 TALLOC_2.0.2
+00100cd9 string-utf8 GLIBC_2.38
+00100ce4 string-utf8 GLIBC_2.4
+00100cee string-utf8 GLIBC_2.34
+00100cf9 string-utf8 GLIBC_2.2.5
+00100d05 string-utf8 GLIBC_2.3.4
+00100d11 string-utf8 /usr/lib/freeradius
+00104008 string Usage: radwho [-d raddb] [-cfihnprRsSZ] [-N nas] [-P nas_port] [-u user] [-U user] 
+00104060 string   -c                   Show caller ID, if available. 
+00104098 string   -d                   Set the raddb directory (default is %s). 
+001040e0 string   -F <file>            Use radutmp <file>. 
+00104110 string   -i                   Show session ID. 
+00104140 string   -n                   No full name. 
+00104168 string   -N <nas-ip-address>  Show entries matching the given NAS IP address. 
+001041b0 string   -p                   Show port type. 
+001041d8 string   -P <port>            Show entries matching the given nas port. 
+00104220 string   -r                   Print output as raw comma-delimited data. 
+00104268 string   -R                   Print output as RADIUS attributes and values. 
+001042b0 string                        includes ALL information from the radutmp record. 
+00104300 string   -s                   Show full name. 
+00104328 string   -S                   Hide shell users from radius. 
+00104360 string   -u <user>            Show entries matching the given user. 
+001043a0 string   -U <user>            Like -u, but case-sensitive. 
+001043d8 string   -v                   Show program version information. 
+00104418 string   -Z                   Include accounting stop information in radius output.  Requires -R. 
+00104478 string Login      Name	      What  TTY  When      From	    Location
+001044b8 string Login      Port    What      When	  From	    Location
+001044f0 string radwho version 3.2.8, built on Aug 27 2025 at 23:09:38
+00104528 string Acct-Status-Type = Accounting-Off 
+00104550 string %s: Error reading or parsing radiusd.conf 
+00104580 string %s: No modules section found in radiusd.conf 
+001045b0 string %s: No configuration information in radutmp section of radiusd.conf 
+001045f8 string %-10.10s %-17.17s %-5.5s %s%-3u %-9.9s %-15.15s %-.19s%s
+00104638 string %-10.10s %s%-5u  %-6.6s %-13.13s %-15.15s %-.28s%s
+0010466b string /etc/freeradius/3.0
+00104688 string shell
+0010468e string ASITX
+00104694 string SLP %c
+0010469b string PPP %c
+001046a2 string shl %c
+001046ab string d:D:fF:nN:sSipP:crRu:U:vZ
+001046c5 string radwho
+001046cc string dictionary
+001046d7 string NAS-IP-Address = %s 
+001046ec string Acct-Delay-Time = 0 
+00104706 string %.200s/radiusd.conf
+0010471a string src/main/radwho.c:357
+00104730 string modules
+0010473a string %s: Error reading %s: %s 
+00104758 string User-Name = "%s" 
+0010476a string Acct-Session-Id = "%s" 
+00104782 string Acct-Status-Type = Stop 
+0010479b string NAS-Port = %u 
+001047aa string Service-Type = Framed-User 
+001047c6 string Framed-Protocol = SLIP 
+001047de string Framed-Protocol = PPP 
+001047f5 string Service-type = Login-User 
+00104810 string Framed-IP-Address = %s 
+00104828 string Acct-Session-Time = %ld 
+00104841 string Calling-Station-Id = "%s" 
+0010485c string %s,%s,%s,%s%u,%s,%s,%s%s
+00104875 string %s,%s%u,%s,%s,%s,%s%s
+0010488b string filename
+00104894 string /var/log/freeradius/radutmp
+001048b0 string /usr/share/freeradius
+00104fe1 string zR
+00105011 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/freeradius-utils.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

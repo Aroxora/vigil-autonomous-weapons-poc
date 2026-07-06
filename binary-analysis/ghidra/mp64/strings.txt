@@ -1,0 +1,129 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001006d9 string-utf8 optind
+001006e0 string-utf8 putc
+001006e5 string-utf8 fopen64
+001006ed string-utf8 __stack_chk_fail
+001006fe string-utf8 __printf_chk
+0010070b string-utf8 exit
+00100710 string-utf8 setbuf
+00100717 string-utf8 strtok
+0010071e string-utf8 strtol
+00100725 string-utf8 strlen
+0010072c string-utf8 __memcpy_chk
+00100739 string-utf8 stdout
+00100740 string-utf8 optarg
+00100747 string-utf8 strcat
+0010074e string-utf8 __fprintf_chk
+0010075c string-utf8 malloc
+00100763 string-utf8 __libc_start_main
+00100775 string-utf8 stderr
+0010077c string-utf8 __cxa_finalize
+0010078b string-utf8 strerror
+00100794 string-utf8 calloc
+0010079b string-utf8 memcmp
+001007a2 string-utf8 fclose
+001007a9 string-utf8 memset
+001007b0 string-utf8 memcpy
+001007b7 string-utf8 fwrite
+001007be string-utf8 __errno_location
+001007cf string-utf8 getopt_long
+001007db string-utf8 libc.so.6
+001007e5 string-utf8 GLIBC_2.14
+001007f0 string-utf8 GLIBC_2.3.4
+001007fc string-utf8 GLIBC_2.4
+00100806 string-utf8 GLIBC_2.2.5
+00100812 string-utf8 GLIBC_2.34
+0010081d string-utf8 _ITM_deregisterTMCloneTable
+00100839 string-utf8 __gmon_start__
+00100848 string-utf8 _ITM_registerTMCloneTable
+00104004 string ERROR: Syntax Error: %s 
+0010401d string Vhi:q:s:l:o:1:2:3:4:r:
+00104040 string ERROR: %s: %s 
+00104051 string %llu 
+00104057 string version
+00104064 string hex-charset
+00104070 string combinations
+00104085 string occur-max
+0010408f string increment
+00104099 string start-at
+001040a2 string stop-at
+001040aa string output-file
+001040b6 string custom-charset1
+001040c6 string custom-charset2
+001040d6 string custom-charset3
+001040e6 string custom-charset4
+001040f6 string Usage: %s [options]... mask
+00104112 string * Startup:
+0010411d string * Increment:
+00104132 string * Resources:
+0010413f string * Files:
+00104148 string * Custom charsets:
+0010415b string * Built-in charsets:
+00104170 string   ?d = 0123456789
+00104182 string   ?a = ?l?u?d?s
+00104192 string   ?b = 0x00 - 0xff
+001041a5 string Usage: %s [options] mask
+001041be string Try --help for more help.
+001041d8 string ERROR: the hex-charset option always expects couples of exactly 2 hexadecimal chars, failed mask: %s 
+00104248 string ERROR: invalid hex character detected in mask %s 
+00104280 string --seq-max must be set to at least 2 
+001042a8 string --seq-max can not be used with --start-at 
+001042d8 string --seq-max can not be used with --stop-at 
+00104308 string --seq-max can not be used with --combinations 
+00104338 string --occurrence-max must be set to at least 2 
+00104368 string --occurrence-max can not be used with --start-at 
+001043a0 string --occurrence-max can not be used with --stop-at 
+001043d8 string --occurrence-max can not be used with --combinations 
+00104410 string --increment can not be used with --start-at 
+00104440 string --increment can not be used with --stop-at 
+00104470 string ERROR: value '%c' in position '%d' of start-at parameter '%s' is not part of position '%d' in mask '%s' 
+001044e0 string ERROR: size of '%s' from start-at parameter is not equal to size of mask '%s' 
+00104530 string ERROR: value '%c' in position '%d' of stop-at parameter '%s' is not part of position '%d' in mask '%s' 
+00104598 string ERROR: size of '%s' from stop-at parameter is not equal to size of mask '%s' 
+001045e8 string ERROR: increment syntax error 
+00104608 string High-Performance word generator with a per-position configureable charset
+00104658 string   -V,  --version             Print version
+00104688 string   -h,  --help                Print help
+001046b0 string   -i,  --increment=NUM:NUM   Enable increment mode. 1st NUM=start, 2nd NUM=stop
+00104700 string                              Example: -i 4:8 searches lengths 4-8 (inclusive)
+00104750 string        --combinations        Calculate number of combinations
+00104790 string        --hex-charset         Assume charset is given in hex
+001047d0 string   -q,  --seq-max=NUM         Maximum number of multiple sequential characters
+00104820 string   -r,  --occurrence-max=NUM  Maximum number of occurrence of a character
+00104870 string   -s,  --start-at=WORD       Start at specific position
+001048a8 string   -l,  --stop-at=WORD        Stop at specific position
+001048e0 string   -o,  --output-file=FILE    Output-file
+00104910 string   -1,  --custom-charset1=CS  User-defineable charsets
+00104948 string   -2,  --custom-charset2=CS  Example:
+00104970 string   -3,  --custom-charset3=CS  --custom-charset1=?dabcdef
+001049a8 string   -4,  --custom-charset4=CS  sets charset ?1 to 0123456789abcdef
+001049f0 string   ?l = abcdefghijklmnopqrstuvwxyz
+00104a18 string   ?u = ABCDEFGHIJKLMNOPQRSTUVWXYZ
+00104a40 string   ?s =  !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+00104df9 string zR
+00104e29 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss

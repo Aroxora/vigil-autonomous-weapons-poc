@@ -1,0 +1,234 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001008a1 string-utf8 optind
+001008a8 string-utf8 memccpy
+001008b0 string-utf8 strcpy
+001008b7 string-utf8 stdin
+001008bd string-utf8 perror
+001008c4 string-utf8 free
+001008c9 string-utf8 fread
+001008cf string-utf8 exit
+001008d4 string-utf8 __assert_fail
+001008e2 string-utf8 getc
+001008e7 string-utf8 strdup
+001008ee string-utf8 ferror
+001008f5 string-utf8 clearerr
+001008fe string-utf8 fopen
+00100904 string-utf8 strlen
+0010090b string-utf8 __ctype_b_loc
+00100919 string-utf8 hsearch
+00100921 string-utf8 hcreate
+00100929 string-utf8 stdout
+00100930 string-utf8 optarg
+00100937 string-utf8 realloc
+0010093f string-utf8 isatty
+00100946 string-utf8 strcat
+0010094d string-utf8 strcasecmp
+00100958 string-utf8 optopt
+0010095f string-utf8 malloc
+00100966 string-utf8 __libc_start_main
+00100978 string-utf8 stderr
+0010097f string-utf8 fprintf
+00100987 string-utf8 getopt
+0010098e string-utf8 vsnprintf
+00100998 string-utf8 __cxa_finalize
+001009a7 string-utf8 calloc
+001009ae string-utf8 fclose
+001009b5 string-utf8 memset
+001009bc string-utf8 __isoc23_strtoul
+001009cd string-utf8 fputc
+001009d3 string-utf8 hdestroy
+001009dc string-utf8 fputs
+001009e2 string-utf8 memcpy
+001009e9 string-utf8 fileno
+001009f0 string-utf8 fwrite
+001009f7 string-utf8 strcmp
+001009fe string-utf8 __errno_location
+00100a0f string-utf8 libc.so.6
+00100a19 string-utf8 GLIBC_2.3
+00100a23 string-utf8 GLIBC_2.14
+00100a2e string-utf8 GLIBC_2.34
+00100a39 string-utf8 GLIBC_2.2.5
+00100a45 string-utf8 GLIBC_2.38
+00100a50 string-utf8 _ITM_deregisterTMCloneTable
+00100a6c string-utf8 __gmon_start__
+00100a7b string-utf8 _ITM_registerTMCloneTable
+00107008 string ../cbfstool/fmaptool.c
+0010701f string cbfs_it
+00107027 string  (and generated header)
+00107045 string  USAGE: 
+0010704e string  MANDATORY ARGUMENTS: 
+00107067 string  OPTIONAL SWITCHES: 
+0010707c string FMAP_OFFSET
+00107088 string  OUTPUT: 
+0010709c string COREBOOT
+001070a8 string fmap_offset != FMD_NOTFOUND
+001070c4 string #define %s %#x 
+001070d4 string FMAP_SIZE
+001070de string #define %s %#x  
+001070ef string FMAP_TERMINAL_SECTIONS
+00107106 string #define %s "
+00107117 string #endif 
+0010711f string ../cbfstool/cbfs_sections.c
+0010713b string ../cbfstool/fmap_from_fmd.c
+0010715c string desc->size_known
+0010716d string ../cbfstool/fmd.c
+0010717f string cur_incomplete_it
+00107191 string E: Section '%s' too big 
+001071af string %ssection '%s' has 
+001071c3 string offset %uB, 
+001071d0 string unknown offset, 
+001071e1 string size %uB, 
+001071ec string unknown size, 
+001071fb string and %zu subsections
+0010720f string cur_level->size_known
+00107225 string false
+0010722b string !first_incomplete_it
+00107240 string cur_section->offset_known
+0010725a string cur_section->size_known
+00107272 string stream
+0010727e string syntax error
+0010728b string memory exhausted
+0010729c string bad buffer in yy_scan_bytes()
+001072ba string ../cbfstool/fmd_scanner.c
+001072d4 string input in flex scanner failed
+001072f1 string fmap_signature
+00107303 string fmap_ver_major
+00107312 string fmap_ver_minor
+00107321 string 0x%016llx
+0010732b string fmap_base
+00107335 string 0x%04x
+0010733c string fmap_size
+00107349 string fmap_name
+00107353 string fmap_nareas
+0010735f string 0x%08x
+00107366 string area_offset
+00107372 string area_size
+0010737c string area_name
+00107386 string 0x%02x
+0010738d string area_flags_raw
+0010739c string area_flags
+001073a7 string FAILURE: version is incorrect
+001073c5 string FAILURE: base is incorrect
+001073e0 string FAILURE: size is incorrect
+001073fb string test_fmap
+00107405 string FAILURE: name is incorrect
+00107424 string failed to append area
+0010743a string FAILURE: failed to find "%s" 
+00107458 string FAILED
+0010745f string static
+00107466 string compressed
+00107474 string preserve
+00107484 string %s="%s" 
+0010749d string Unknown
+001074a8 string #define FMAP_SECTION_%s_START %#x 
+001074d0 string #define FMAP_SECTION_%s_SIZE %#x 
+001074f8 string -%c: Expected an accompanying value 
+00107520 string -%c: Unexpected command-line switch 
+00107548 string fmaptool: Compiler for fmd (flashmap descriptor) files 
+00107580 string 	%s [-h <header output file>] [-R <region output file>] <fmd input file> <binary output file> 
+001075e0 string <fmd input file> may be '%s' to read from standard input 
+00107620 string <binary output file> must be a regular file 
+00107650 string -h	Also produce a C header defining %s to the FMAP section's flash offset. 
+001076a0 string -R	Also produce a text file listing the CBFS regions, comma separated. 
+001076e8 string A successful invocation prints a summary of work done to standard error, and a comma-separated list 
+00107750 string of those sections that contain CBFSes, starting with the primary such section, to standard output. 
+001077b8 string FATAL: Unable to open file '%s' 
+001077e0 string FATAL: Failed while processing provided descriptor 
+00107818 string FATAL: Flashmap descriptor must have an '%s' section 
+00107850 string FATAL: Flashmap descriptor must have a '%s' section that is annotated with '(%s)' 
+001078a8 string FATAL: Failed while constructing FMAP section 
+001078d8 string FATAL: Failed to determine FMAP section size 
+00107908 string FATAL: Unable to open file '%s' for writing 
+00107938 string FATAL: Failed to write final FMAP to file 
+00107968 string #ifndef FMAPTOOL_GENERATED_HEADER_H_ 
+00107990 string #define FMAPTOOL_GENERATED_HEADER_H_  
+001079b8 string SUCCESS: Wrote %d bytes to file '%s'%s 
+001079e0 string The sections containing CBFSes are: 
+00107a08 string E: Cannot allocate CBFS flag node! 
+00107a30 string E: Section name ('%s') exceeds %d character FMAP format limit 
+00107a70 string E: Failed to insert section '%s' into FMAP 
+00107aa0 string E: Image name ('%s') exceeds %d character FMAP header limit 
+00107ae0 string E: Failed to allocate FMAP header 
+00107b08 string cur_incomplete_it >= first_incomplete_it
+00107b38 string cur->offset_known || cur->size_known
+00107b60 string E: Section '%s' starts too high 
+00107b88 string E: Multiple sections with name '%s' 
+00107bb0 string E: Section '%s' starts too low 
+00107bd0 string E: Section '%s' given no space 
+00107bf0 string E: Cannot determine either offset or size of section '%s' 
+00107c30 string E: While initializing hashtable
+00107c50 string E: While allocating descriptor section
+00107c78 string E: While allocating node children array
+00107ca0 string E: Section '%s' cannot have flag 'CBFS'' 
+00107cd0 string E: While allocating section name
+00107cf8 string E: While allocating linked list node
+00107d20 string out of dynamic memory in yyensure_buffer_stack()
+00107d58 string out of dynamic memory in yy_create_buffer()
+00107d88 string out of dynamic memory in yy_scan_buffer()
+00107db8 string out of dynamic memory in yy_scan_bytes()
+00107de8 string fatal flex scanner internal error--end of buffer missed
+00107e20 string fatal error - scanner input buffer overflow
+00107e50 string out of dynamic memory in yy_get_next_buffer()
+00107e80 string fatal flex scanner internal error--no action found
+00107eb8 string 0x%02x%02x%02x%02x%02x%02x%02x%02x
+00107ee0 string FAILURE: signature is incorrect
+00107f00 string FAILURE: number of areas is incorrect
+00107f28 string FAILURE: failed to abort on zero-length image
+00107f58 string FAILURE: lsearch returned false positive
+00107f88 string FAILURE: bsearch returned false positive
+00107fb8 string FAILURE: lsearch failed to find fmap
+00107fe0 string FAILURE: bsearch failed to find fmap
+00108008 string FAILURE: bsearch failed to find fmap at offset 0
+00108040 string FAILURE: lsearch failed to catch overrun
+00108070 string FAILURE: bsearch failed to catch overrun
+001080a0 string FAILURE: failed to abort with too many areas
+001080d0 string FAILURE: failed to increment number of areas
+00108100 string FAILURE: failed to return empty string when no flagare set
+00108140 string FAILURE: failed to translate flag to string
+00108170 string FAILURE: bad result from fmap_flags_to_string
+001081a0 string list_cbfs_section_names
+001081b8 string write_header
+001081d0 string cbfs_sections_iterator_deref
+001081f0 string cbfs_sections_iterator_advance
+00108210 string fmap_from_fmd
+00108220 string print_with_prefix
+00108240 string fmd_calc_absolute_offset
+00108260 string fmd_find_node
+00108270 string fmd_count_nodes
+00108280 string complete_missing_info_backward
+001082a0 string validate_descriptor_node
+001082c0 string validate_and_complete_info
+001082e0 string fmd_create
+001085a8 string parse_integer
+00108980 string test_area_1
+00108cb9 string zR
+00108ce9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/coreboot-utils.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .got.plt
+.shstrtab::00000103 string-utf8 .data
+.shstrtab::00000109 string-utf8 .bss
+.shstrtab::0000010e string-utf8 .gnu_debugaltlink
+.shstrtab::00000120 string-utf8 .gnu_debuglink

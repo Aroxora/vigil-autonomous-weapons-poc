@@ -1,0 +1,152 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001009a9 string-utf8 optind
+001009b0 string-utf8 strcpy
+001009b7 string-utf8 regfree
+001009bf string-utf8 puts
+001009c4 string-utf8 strcoll
+001009cc string-utf8 setsid
+001009d3 string-utf8 __stack_chk_fail
+001009e4 string-utf8 __printf_chk
+001009f1 string-utf8 exit
+001009f6 string-utf8 __fdelt_chk
+00100a02 string-utf8 sigaddset
+00100a0c string-utf8 regcomp
+00100a14 string-utf8 stat
+00100a19 string-utf8 sigaction
+00100a23 string-utf8 strdup
+00100a2a string-utf8 fflush
+00100a31 string-utf8 __isoc23_sscanf
+00100a41 string-utf8 fork
+00100a46 string-utf8 strlen
+00100a4d string-utf8 read
+00100a52 string-utf8 sigdelset
+00100a5c string-utf8 __vfprintf_chk
+00100a6b string-utf8 dup2
+00100a70 string-utf8 stdout
+00100a77 string-utf8 umask
+00100a7d string-utf8 optarg
+00100a84 string-utf8 realloc
+00100a8c string-utf8 __fprintf_chk
+00100a9a string-utf8 open
+00100a9f string-utf8 malloc
+00100aa6 string-utf8 __libc_start_main
+00100ab8 string-utf8 execv
+00100abe string-utf8 sigprocmask
+00100aca string-utf8 stderr
+00100ad1 string-utf8 __cxa_finalize
+00100ae0 string-utf8 strerror
+00100ae9 string-utf8 readdir
+00100af1 string-utf8 getenv
+00100af8 string-utf8 regerror
+00100b01 string-utf8 close
+00100b07 string-utf8 fputc
+00100b0d string-utf8 waitpid
+00100b15 string-utf8 opendir
+00100b1d string-utf8 sigemptyset
+00100b29 string-utf8 regexec
+00100b31 string-utf8 access
+00100b38 string-utf8 pselect
+00100b40 string-utf8 fwrite
+00100b47 string-utf8 strcmp
+00100b4e string-utf8 qsort
+00100b54 string-utf8 __errno_location
+00100b65 string-utf8 getopt_long
+00100b71 string-utf8 pipe
+00100b76 string-utf8 lseek
+00100b7c string-utf8 libc.so.6
+00100b86 string-utf8 GLIBC_2.33
+00100b91 string-utf8 GLIBC_2.15
+00100b9c string-utf8 GLIBC_2.4
+00100ba6 string-utf8 GLIBC_2.38
+00100bb1 string-utf8 GLIBC_2.34
+00100bbc string-utf8 GLIBC_2.3.4
+00100bc8 string-utf8 GLIBC_2.2.5
+00100bd4 string-utf8 _ITM_deregisterTMCloneTable
+00100bf0 string-utf8 __gmon_start__
+00100bff string-utf8 _ITM_registerTMCloneTable
+00104004 string run-parts: 
+00104015 string TMPDIR
+0010401f string bad umask value
+00104039 string "%s": customre %s 
+0010404c string "%s": hierre pass, excsre %s 
+0010406a string "%s": tradre %s 
+0010407b string "%s": classicalre %s 
+00104091 string pipe: %s
+0010409a string failed to fork: %s
+001040ad string dup2: %s
+001040b6 string failed to exec %s: %s
+001040cc string waitpid: %s
+001040d8 string select: %s
+001040e8 string %s exited with return code %d
+00104106 string list of unique basenames: 
+00104121 string  - %s 
+00104128 string checking %s... 
+00104138 string not found 
+00104143 string processing: %s 
+00104153 string run-parts: executing %s
+0010416b string run-parts: executing %s 
+00104184 string u:ha:vV
+0010418c string missing operand
+0010419c string ^_?([a-z0-9_.]+-)+[a-z0-9]+$
+001041b9 string ^[a-z0-9][a-z0-9_-]*$
+001041cf string ^[a-zA-Z0-9_-]+$
+001041e0 string Virtual memory exhausted 
+001041fa string Unable to build regexp: %s 
+00104220 string verbose
+00104228 string debug
+0010422e string report
+00104235 string reverse
+0010424c string version
+00104254 string lsbsysinit
+0010425f string regex
+00104265 string stdin
+0010426b string exit-on-error
+00104279 string new-session
+00104288 string run-parts: failed to read from stdin 
+001042b8 string run-parts: failed to write to temporary file 
+001042e8 string Debian run-parts program, version 5.23.1 Copyright (C) 1994 Ian Jackson, Copyright (C) 1996 Jeff Noxon. Copyright (C) 1996,1997,1998,1999 Guy Maor Copyright (C) 2002-2020 Clint Adams This is free software; see the GNU General Public License version 2 or later for copying conditions.  There is NO warranty.
+00104420 string Usage: run-parts [OPTION]... DIRECTORY [DIRECTORY ...]       --test          print script names which would run, but don't run them.       --list          print names of all valid files (can not be used with                       --test)   -v, --verbose       print script names before running them.   -d, --debug         print script names while checking them.       --report        print script names if they produce output.       --reverse       reverse execution order of scripts.       --exit-on-error exit as soon as a script returns with a non-zero exit                       code.       --stdin         multiplex stdin to scripts being run, using temporary file       --lsbsysinit    validate filenames based on LSB sysinit specs.       --new-session   run each script in a separate process session       --regex=PATTERN validate filenames based on POSIX ERE pattern PATTERN.   -u, --umask=UMASK   sets umask to UMASK (octal), default is 022.   -a, --arg=ARGUMENT  pass ARGUMENT to scripts, use once for each argument.   -V, --version       output version information and exit.   -h, --help          display this help and exit.
+00104890 string failed to reallocate memory for arguments: %s
+001048c0 string run-parts: failed to rewind temporary file: %s 
+001048f0 string failed to read from stdout pipe: %s
+00104918 string failed to read from error pipe: %s
+00104940 string %s exited because of uncaught signal %d
+00104968 string failed to reallocate memory for basenames: %s
+00104998 string failed to reallocate memory for path: %s
+001049c8 string failed to reallocate memory for full paths: %s
+001049f8 string run-parts: failed to copy content of stdin 
+00104a28 string failed to stat component %s: %s
+00104a48 string run-parts: component %s is a broken symbolic link 
+00104a80 string run-parts: component %s is not an executable plain file 
+00104ac0 string Try `run-parts --help' for more information. 
+00104af0 string --list and --test can not be used together
+00104b20 string ^[a-z0-9-].*\.dpkg-(old|dist|new|tmp)$
+00104c61 string zR
+00104c91 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/debianutils.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

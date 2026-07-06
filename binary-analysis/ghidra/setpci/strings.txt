@@ -1,0 +1,241 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100871 string-utf8 _ITM_deregisterTMCloneTable
+0010088d string-utf8 __gmon_start__
+0010089c string-utf8 _ITM_registerTMCloneTable
+001008b6 string-utf8 pci_filter_has_slot
+001008ca string-utf8 pci_filter_match
+001008db string-utf8 pci_read_byte
+001008e9 string-utf8 pci_write_byte
+001008f8 string-utf8 pci_read_long
+00100906 string-utf8 pci_write_long
+00100915 string-utf8 pci_filter_parse_slot
+0010092b string-utf8 pci_alloc
+00100935 string-utf8 pci_filter_init
+00100945 string-utf8 pci_walk_params
+00100955 string-utf8 pci_lookup_method
+00100967 string-utf8 pci_get_dev
+00100973 string-utf8 pci_filter_parse_id
+00100987 string-utf8 pci_get_method_name
+0010099b string-utf8 pci_scan_bus
+001009a8 string-utf8 pci_read_word
+001009b6 string-utf8 pci_set_param
+001009c4 string-utf8 pci_write_word
+001009d3 string-utf8 pci_filter_has_id
+001009e5 string-utf8 pci_init
+001009ee string-utf8 pci_find_cap_nr
+001009fe string-utf8 puts
+00100a03 string-utf8 __stack_chk_fail
+00100a14 string-utf8 __printf_chk
+00100a21 string-utf8 free
+00100a26 string-utf8 exit
+00100a2b string-utf8 strlen
+00100a32 string-utf8 __vfprintf_chk
+00100a41 string-utf8 stdout
+00100a48 string-utf8 realloc
+00100a50 string-utf8 strcasecmp
+00100a5b string-utf8 __fprintf_chk
+00100a69 string-utf8 malloc
+00100a70 string-utf8 __libc_start_main
+00100a82 string-utf8 stderr
+00100a89 string-utf8 strncasecmp
+00100a95 string-utf8 __cxa_finalize
+00100aa4 string-utf8 strchr
+00100aab string-utf8 __isoc23_strtoul
+00100abc string-utf8 fputc
+00100ac2 string-utf8 __snprintf_chk
+00100ad1 string-utf8 memcpy
+00100ad8 string-utf8 fwrite
+00100adf string-utf8 strcmp
+00100ae6 string-utf8 __errno_location
+00100af7 string-utf8 libpci.so.3
+00100b03 string-utf8 libc.so.6
+00100b0d string-utf8 LIBPCI_3.7
+00100b18 string-utf8 LIBPCI_3.5
+00100b23 string-utf8 LIBPCI_3.15
+00100b2f string-utf8 LIBPCI_3.8
+00100b3a string-utf8 LIBPCI_3.0
+00100b45 string-utf8 GLIBC_2.14
+00100b50 string-utf8 GLIBC_2.4
+00100b5a string-utf8 GLIBC_2.34
+00100b65 string-utf8 GLIBC_2.2.5
+00100b71 string-utf8 GLIBC_2.3.4
+00100b7d string-utf8 GLIBC_2.38
+00104004 string setpci: 
+0010400d string Capability
+00104018 string Extended capability
+0010402f string capabilities
+00104040 string (cap %02x @%02x) 
+00104052 string (ecap %04x @%03x) 
+0010406c string --version
+00104076 string setpci version 3.15.0
+0010408c string --dumpregs
+00104097 string cap pos w name
+001040b2 string  %02x %c %s 
+001040bf string Unable to parse option -%c
+001040dd string Invalid option -%c
+001040f0 string Unable to parse filter -s %s
+0010410d string Unable to parse filter -d %s
+0010412a string Unknown filter option -%c
+00104144 string Filter specification expected
+00104162 string Missing value
+00104170 string Invalid width "%s"
+00104183 string Invalid width "%c"
+00104196 string Invalid number "%s"
+001041af string Unknown register "%s"
+001041c5 string Missing width
+001041d3 string Invalid offset "%s"
+001041e7 string Invalid value "%s"
+001041fa string Value "%s" is out of range
+00104215 string Invalid mask "%s"
+00104227 string Mask "%s" is out of range
+00104241 string  %02x->(%02x:%02x)->%02x
+0010425a string  %04x->(%04x:%04x)->%04x
+00104279 string No operation specified
+00104290 string  %08x
+00104296 string  %08x->(%08x:%08x)->%08x
+001042af string %04x:%02x:%02x.%x
+001042c5 string @%02x
+001042d5 string DEVICE_ID
+001042df string COMMAND
+001042e7 string REVISION
+001042f0 string CLASS_PROG
+001042fb string CLASS_DEVICE
+00104308 string CACHE_LINE_SIZE
+00104318 string HEADER_TYPE
+00104329 string BASE_ADDRESS_0
+00104338 string BASE_ADDRESS_1
+00104347 string BASE_ADDRESS_2
+00104356 string BASE_ADDRESS_3
+00104365 string BASE_ADDRESS_4
+00104374 string BASE_ADDRESS_5
+00104383 string CARDBUS_CIS
+0010438f string INTERRUPT_LINE
+0010439e string INTERRUPT_PIN
+001043ac string MIN_GNT
+001043b4 string MAX_LAT
+001043bc string PRIMARY_BUS
+001043c8 string SECONDARY_BUS
+001043d6 string SEC_LATENCY_TIMER
+001043e8 string IO_BASE
+001043f0 string IO_LIMIT
+001043f9 string PREF_MEMORY_BASE
+0010440a string PREF_MEMORY_LIMIT
+0010441c string PREF_BASE_UPPER32
+0010442e string PREF_LIMIT_UPPER32
+00104441 string IO_BASE_UPPER16
+00104451 string IO_LIMIT_UPPER16
+00104462 string BRIDGE_ROM_ADDRESS
+00104475 string BRIDGE_CONTROL
+00104484 string CB_CARDBUS_BASE
+00104494 string CB_CAPABILITIES
+001044a4 string CB_SEC_STATUS
+001044b2 string CB_BUS_NUMBER
+001044c0 string CB_CARDBUS_NUMBER
+001044d2 string CB_SUBORDINATE_BUS
+001044e5 string CB_CARDBUS_LATENCY
+001044f8 string CB_MEMORY_BASE_0
+00104509 string CB_MEMORY_LIMIT_0
+0010451b string CB_MEMORY_BASE_1
+0010452c string CB_MEMORY_LIMIT_1
+0010453e string CB_IO_BASE_0
+0010454b string CB_IO_BASE_0_HI
+0010455b string CB_IO_LIMIT_0
+00104569 string CB_IO_LIMIT_0_HI
+0010457a string CB_IO_BASE_1
+00104587 string CB_IO_BASE_1_HI
+00104597 string CB_IO_LIMIT_1
+001045a5 string CB_IO_LIMIT_1_HI
+001045b6 string CB_SUBSYSTEM_VENDOR_ID
+001045cd string CB_SUBSYSTEM_ID
+001045dd string CB_LEGACY_MODE_BASE
+00104608 string CAP_SLOTID
+00104613 string CAP_MSI
+00104625 string CAP_PCIX
+0010463d string CAP_CCRC
+00104646 string CAP_HOTPLUG
+00104652 string CAP_SSVID
+00104665 string CAP_SECURE
+00104670 string CAP_EXP
+00104678 string CAP_MSIX
+00104681 string CAP_SATA
+00104698 string ECAP_AER
+001046ba string ECAP_RCLINK
+001046c6 string ECAP_RCILINK
+001046d3 string ECAP_RCEC
+001046fa string ECAP_VNDR
+00104704 string ECAP_ACS
+0010470d string ECAP_ARI
+00104716 string ECAP_ATS
+0010471f string ECAP_SRIOV
+0010472a string ECAP_MRIOV
+00104735 string ECAP_MCAST
+00104740 string ECAP_PRI
+00104749 string ECAP_REBAR
+00104754 string ECAP_DPA
+0010475d string ECAP_TPH
+00104766 string ECAP_LTR
+0010476f string ECAP_SECPCI
+0010477b string ECAP_PMUX
+00104785 string ECAP_PASID
+001047b5 string ECAP_M_PCIE
+001047c1 string ECAP_FRS
+001047ca string ECAP_RTR
+001047de string ECAP_VF_REBAR
+001047ec string ECAP_DLNK
+00104809 string ECAP_HIER_ID
+00104816 string ECAP_NPEM
+0010482a string ECAP_IDE
+0010484a string dump.name
+00104854 string Known PCI access methods: 
+0010486f string Known PCI access parameters: 
+0010488d string %-20s %s (%s) 
+001048a0 string . Try `setpci --help' for more information. 
+001048d8 string Usage: setpci [<options>] (<device>+ <reg>[=<values>]*)*  General options: -f		Don't complain if there's nothing to do -v		Be verbose -D		List changes, don't commit them -r		Use raw access without bus scan if possible --dumpregs	Dump all known register names and exit  PCI access options: -A <method>	Use the specified PCI access method (see `-A help' for a list) -O <par>=<val>	Set PCI access parameter (see `-O help' for a list) -G		Enable PCI access debugging -H <mode>	Use direct hardware access (<mode> = 1 or 2)  Setting commands: <device>:	-s [[[<domain>]:][<bus>]:][<slot>][.[<func>]] 		-d [<vendor>]:[<device>] <reg>:		<base>[+<offset>][.(B|W|L)][@<number>] <base>:		<address> 		<named-register> 		[E]CAP_<capability-name> 		[E]CAP<capability-number> <values>:	<value>[,<value>...] <value>:	<hex> 		<hex>:<mask> 
+00104c10 string Option -%c requires an argument
+00104c30 string Invalid or misplaced option -%c
+00104c50 string Multiple -s options are given, only the last one has effect. 
+00104c90 string Multiple -d options are given, only the last one has effect. 
+00104cd0 string Register number %02x out of range
+00104cf8 string Unaligned register address %02x
+00104d18 string setpci: Warning: No devices selected for operation group %d. 
+00104d58 string %s: Instance #%d of %s %04x not found - there are no capabilities with that id.
+00104da8 string %s: Instance #%d of %s %04x not found - there %s only %d %s with that id.
+00104df8 string %s: Unaligned access of width %d to register %04x
+00104e30 string %s: Access of width %d to register %04x out of range
+00104e68 string %s: Does not have register %s.
+00104e88 string Unable to allocate %d bytes of memory
+00104eb0 string Unknown hardware configuration type %s
+00104ed8 string No such PCI access method: %s (see `-A help' for a list)
+00104f18 string Invalid PCI access parameter syntax: %s
+00104f40 string Unrecognized PCI access parameter: %s (see `-O help' for a list)
+00104fa4 string setpci
+00105061 string zR
+00105091 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/pciutils.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

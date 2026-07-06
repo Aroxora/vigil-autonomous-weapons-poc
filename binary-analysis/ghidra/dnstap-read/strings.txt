@@ -1,0 +1,149 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100ae9 string-utf8 isc_result_totext
+00100afb string-utf8 isc_time_isepoch
+00100b0c string-utf8 isc_assertion_failed
+00100b21 string-utf8 isc__mem_get
+00100b2e string-utf8 isc_time_formatISO8601ms
+00100b47 string-utf8 isc__mem_put
+00100b54 string-utf8 isc_hex_totext
+00100b63 string-utf8 mallocx
+00100b6b string-utf8 isc__mem_reget
+00100b7a string-utf8 isc__mem_malloc
+00100b8a string-utf8 isc__mem_create
+00100b9a string-utf8 _ITM_deregisterTMCloneTable
+00100bb6 string-utf8 __gmon_start__
+00100bc5 string-utf8 _ITM_registerTMCloneTable
+00100bdf string-utf8 dns_dt_close
+00100bec string-utf8 dns_master_style_yaml
+00100c02 string-utf8 dns_name_fromwire
+00100c14 string-utf8 dns_master_style_indent
+00100c2c string-utf8 dns_dt_parse
+00100c39 string-utf8 dns_name_print
+00100c48 string-utf8 dns_dt_open
+00100c54 string-utf8 dnstap__message__type__descriptor
+00100c76 string-utf8 dns_fixedname_initname
+00100c8d string-utf8 dns_master_style_debug
+00100ca4 string-utf8 dns_dt_getframe
+00100cb4 string-utf8 dns_message_detach
+00100cc7 string-utf8 dnstap__dnstap__type__descriptor
+00100ce8 string-utf8 dns_dtdata_free
+00100cf8 string-utf8 dns_message_totext
+00100d0b string-utf8 dnstap__socket_family__descriptor
+00100d2d string-utf8 dns_dt_datatotext
+00100d3f string-utf8 isc_commandline_parse
+00100d55 string-utf8 isc__mem_destroy
+00100d66 string-utf8 isc_commandline_index
+00100d7c string-utf8 isc_mem_debugging
+00100d8e string-utf8 isc_time_formatISO8601
+00100da5 string-utf8 protobuf_c_enum_descriptor_get_value
+00100dca string-utf8 puts
+00100dcf string-utf8 __stack_chk_fail
+00100de0 string-utf8 __printf_chk
+00100ded string-utf8 putchar
+00100df5 string-utf8 memmove
+00100dfd string-utf8 __vfprintf_chk
+00100e0c string-utf8 stdout
+00100e13 string-utf8 _exit
+00100e19 string-utf8 __fprintf_chk
+00100e27 string-utf8 __libc_start_main
+00100e39 string-utf8 stderr
+00100e40 string-utf8 inet_ntop
+00100e4a string-utf8 __cxa_finalize
+00100e59 string-utf8 fputc
+00100e5f string-utf8 fwrite
+00100e66 string-utf8 libdns-9.20.22-1-Debian.so
+00100e81 string-utf8 libjemalloc.so.2
+00100e92 string-utf8 libisc-9.20.22-1-Debian.so
+00100ead string-utf8 libprotobuf-c.so.1
+00100ec0 string-utf8 libc.so.6
+00100eca string-utf8 __data_start
+00100ed7 string-utf8 __bss_start
+00100ee3 string-utf8 hexmessage
+00100eee string-utf8 _end
+00100ef3 string-utf8 memrecord
+00100efd string-utf8 printmessage
+00100f0a string-utf8 _edata
+00100f11 string-utf8 program
+00100f19 string-utf8 mctx
+00100f1e string-utf8 _IO_stdin_used
+00100f2d string-utf8 timestampmillis
+00100f3d string-utf8 LIBPROTOBUF_C_1.0.0
+00100f51 string-utf8 GLIBC_2.34
+00100f5c string-utf8 GLIBC_2.4
+00100f66 string-utf8 GLIBC_2.3.4
+00100f72 string-utf8 GLIBC_2.2.5
+00104004 string %s: fatal: 
+00104010 string b != ((void *)0)
+00104021 string (*dbufp)->mctx != ((void *)0)
+00104044 string dns_message_totext
+00104057 string %s: %s: %s 
+0010406b string query_message_data
+0010407e string response_message_data
+00104094 string query_message
+001040a2 string response_message
+001040b7 string identity: %.*s 
+001040c7 string version: %.*s 
+001040d6 string message:
+001040df string   type: %s 
+001040eb string   query_time: !!timestamp %s 
+00104109 string   message_size: %zub 
+0010411f string   message_size: 0b
+00104132 string   socket_family: %s 
+00104147 string   socket_protocol: %s 
+0010415e string   query_address: "%s" 
+00104175 string   response_address: "%s" 
+0010418f string   query_port: %u 
+001041a1 string   response_port: %u 
+001041b6 string   query_zone: 
+001041c8 string   %s: 
+001041cf string   %s: | 
+001041d8 string dns_dt_datatotext
+001041ea string 	-m	trace memory allocations 
+00104208 string mptxy
+0010420e string no file specified
+00104220 string dnstap-read.c
+0010422e string dns_dt_openfile
+0010423e string dns_dt_getframe
+0010424e string isc_hex_totext
+0010425d string dnstap-read
+00104270 string ../../lib/isc/include/isc/buffer.h
+00104298 string dbufp != ((void *)0) && ((*dbufp) != ((void *)0) && ((const isc__magic_t *)(*dbufp))->magic == (0x42756621U))
+00104308 string ((b) != ((void *)0) && ((const isc__magic_t *)(b))->magic == (0x42756621U))
+00104358 string !((void *)((b)->link.prev) != ((void *)-1))
+00104388 string   response_time: !!timestamp %s 
+001043b0 string dnstap-read [-mpxy] [filename] 
+001043d0 string 	-p	print the full DNS message 
+001043f0 string 	-t	print long timestamps with millisecond precision 
+00104428 string 	-x	use hex format to print DNS message 
+00104458 string 	-y	print YAML format (implies -p) 
+00104480 string CMM_ACCESS_ONCE(isc__mem_malloc) != NULL
+00104549 string zR
+00104579 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/bind9-dnsutils.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

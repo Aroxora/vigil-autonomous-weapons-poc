@@ -1,0 +1,160 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100879 string-utf8 _ITM_deregisterTMCloneTable
+00100895 string-utf8 __gmon_start__
+001008a4 string-utf8 _ITM_registerTMCloneTable
+001008be string-utf8 i2c_smbus_write_quick
+001008d4 string-utf8 i2c_smbus_read_byte
+001008e8 string-utf8 optind
+001008ef string-utf8 fgets
+001008f5 string-utf8 strcpy
+001008fc string-utf8 stdin
+00100902 string-utf8 puts
+00100907 string-utf8 __stack_chk_fail
+00100918 string-utf8 __printf_chk
+00100925 string-utf8 free
+0010092a string-utf8 exit
+0010092f string-utf8 strdup
+00100936 string-utf8 closedir
+0010093f string-utf8 strrchr
+00100947 string-utf8 putchar
+0010094f string-utf8 fflush
+00100956 string-utf8 fopen
+0010095c string-utf8 __isoc23_sscanf
+0010096c string-utf8 strlen
+00100973 string-utf8 __isoc23_strtol
+00100983 string-utf8 stdout
+0010098a string-utf8 realloc
+00100992 string-utf8 strcasecmp
+0010099d string-utf8 __fprintf_chk
+001009ab string-utf8 malloc
+001009b2 string-utf8 __libc_start_main
+001009c4 string-utf8 stderr
+001009cb string-utf8 getopt
+001009d2 string-utf8 __strcat_chk
+001009df string-utf8 __cxa_finalize
+001009ee string-utf8 strchr
+001009f5 string-utf8 strerror
+001009fe string-utf8 readdir
+00100a06 string-utf8 calloc
+00100a0d string-utf8 fclose
+00100a14 string-utf8 __isoc23_strtoul
+00100a25 string-utf8 ioctl
+00100a2b string-utf8 opendir
+00100a33 string-utf8 __snprintf_chk
+00100a42 string-utf8 fwrite
+00100a49 string-utf8 strcmp
+00100a50 string-utf8 qsort
+00100a56 string-utf8 __errno_location
+00100a67 string-utf8 strncmp
+00100a6f string-utf8 libi2c.so.0
+00100a7b string-utf8 libc.so.6
+00100a85 string-utf8 GLIBC_2.4
+00100a8f string-utf8 GLIBC_2.34
+00100a9a string-utf8 GLIBC_2.2.5
+00100aa6 string-utf8 GLIBC_2.38
+00100ab1 string-utf8 GLIBC_2.3.4
+00104008 string Usage: i2cdetect [-y] [-a] [-q|-r] I2CBUS [FIRST LAST]        i2cdetect -F I2CBUS        i2cdetect -l   I2CBUS is an integer or an I2C bus name   If provided, FIRST and LAST limit the probing range. 
+001040d0 string Error: Different modes specified! 
+001040f8 string Error: FIRST argument not a number! 
+00104120 string Error: FIRST argument out of range (0x%02x-0x%02x)! 
+00104158 string Error: LAST argument not a number! 
+00104180 string Error: LAST argument out of range (0x%02x-0x%02x)! 
+001041b8 string Error: Could not get the adapter functionality matrix: %s 
+001041f8 string Functionalities implemented by %s: 
+00104220 string Error: Bus doesn't support detection commands 
+00104250 string Error: Can't use SMBus Quick Write command on this bus 
+00104288 string Error: Can't use SMBus Receive Byte command on this bus 
+001042c8 string Warning: Can't use SMBus Quick Write command, will skip some addresses 
+00104310 string Warning: Can't use SMBus Receive Byte command, will skip some addresses 
+00104360 string I will probe address range 0x%02x-0x%02x. 
+00104390 string      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+001043c8 string Error: Could not set address to 0x%02x: %s 
+001043f8 string WARNING! This program can confuse your I2C bus, cause data loss and worse! 
+00104448 string Error: Chip address is not a number! 
+00104470 string Error: Chip address out of range (0x%02lx-0x%02lx)! 
+001044a8 string Error: Could not open file `/dev/i2c-%d' or `/dev/i2c/%d': %s 
+001044e8 string Error: Could not open file `%s': %s 
+00104510 string Error: I2C bus name is not unique! 
+00104538 string Error: I2C bus name doesn't match any bus present! 
+00104573 string  using quick write commands
+0010458f string  using receive byte commands
+001045ac string FVahlqry
+001045b9 string i2cdetect version %s 
+001045cf string Error: Out of memory! 
+001045e6 string i2c-%d	%-10s	%-32s	%s 
+001045fd string Error: No i2c-bus specified! 
+0010461b string %-32s %s 
+00104625 string I will probe file %s%s. 
+0010463e string Continue? [Y/n] 
+0010464f string Aborting on user request. 
+0010466a string %02x: 
+0010467d string %02x 
+00104687 string SMBus Quick Command
+0010469b string SMBus Send Byte
+001046ab string SMBus Receive Byte
+001046be string SMBus Write Byte
+001046cf string SMBus Read Byte
+001046df string SMBus Write Word
+001046f0 string SMBus Read Word
+00104700 string SMBus Process Call
+00104713 string SMBus Block Write
+00104725 string SMBus Block Read
+00104736 string SMBus Block Process Call
+0010474f string SMBus PEC
+00104759 string I2C Block Write
+00104769 string I2C Block Read
+00104778 string SMBus Host Notify
+0010478a string 10-bit addressing
+0010479c string Target mode
+001047a8 string /dev/i2c/%d
+001047b4 string %s: path truncated 
+001047cd string i2c-%d
+001047d4 string Run as root? 
+001047e2 string /proc/bus/i2c
+001047f0 string /proc/mounts
+001047fd string %*[^ ] %[^ ] %[^ ] %*s 
+00104815 string sysfs
+0010481b string %s/%s/name
+00104826 string %s/%s/device/name
+00104838 string %s/%s/device
+0010484d string %s/%s/device/%s/name
+00104862 string %s: read error 
+00104877 string /class/i2c-dev
+00104886 string Error: I2C bus out of range! 
+001048a4 string dummy
+001048aa string Dummy bus
+001048b8 string ISA bus
+001048c0 string I2C adapter
+001048cc string smbus
+001048d2 string SMBus adapter
+001048e0 string unknown
+00104a51 string zR
+00104a81 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/i2c-tools.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

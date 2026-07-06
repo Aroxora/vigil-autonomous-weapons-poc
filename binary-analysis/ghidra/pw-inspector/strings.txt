@@ -1,0 +1,86 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100611 string-utf8 fgets
+00100617 string-utf8 stdin
+0010061d string-utf8 puts
+00100622 string-utf8 __stack_chk_fail
+00100633 string-utf8 __printf_chk
+00100640 string-utf8 exit
+00100645 string-utf8 fopen
+0010064b string-utf8 strlen
+00100652 string-utf8 __ctype_b_loc
+00100660 string-utf8 __isoc23_strtol
+00100670 string-utf8 stdout
+00100677 string-utf8 optarg
+0010067e string-utf8 __fprintf_chk
+0010068c string-utf8 __libc_start_main
+0010069e string-utf8 stderr
+001006a5 string-utf8 getopt
+001006ac string-utf8 __cxa_finalize
+001006bb string-utf8 fclose
+001006c2 string-utf8 fwrite
+001006c9 string-utf8 libc.so.6
+001006d3 string-utf8 GLIBC_2.3
+001006dd string-utf8 GLIBC_2.3.4
+001006e9 string-utf8 GLIBC_2.38
+001006f4 string-utf8 GLIBC_2.4
+001006fe string-utf8 GLIBC_2.2.5
+0010070a string-utf8 GLIBC_2.34
+00100715 string-utf8 _ITM_deregisterTMCloneTable
+00100731 string-utf8 __gmon_start__
+00100740 string-utf8 _ITM_registerTMCloneTable
+00102008 string https://github.com/vanhauser-thc/thc-hydra
+00102038 string %s %s (c) 2005 by van Hauser / THC %s [%s]  
+00102068 string Syntax: %s [-i FILE] [-o FILE] [-m MINLEN] [-M MAXLEN] [-c MINSETS] -l -u -n -p -s  
+001020c0 string   -i FILE    file to read passwords from (default: stdin)
+00102100 string   -o FILE    file to write valid passwords to (default: stdout)
+00102140 string   -m MINLEN  minimum length of a valid password
+00102170 string   -M MAXLEN  maximum length of a valid password
+001021a0 string   -c MINSETS the minimum number of sets required (default: all given)
+001021e8 string   -l         lowcase characters (a,b,c,d, etc.)
+00102218 string   -u         upcase characters (A,B,C,D, etc.)
+00102248 string   -n         numbers (1,2,3,4, etc.)
+00102270 string   -p         printable characters (which are not -l/-u/-n, e.g. $,!,/,(,*, etc.)
+001022c8 string   -s         special characters - all others not within the sets above
+00102310 string  %s reads passwords in and prints those which meet the requirements. 
+00102358 string The return code is the number of valid passwords found, 0 if none was found.
+001023a8 string Use for security: check passwords, if 0 is returned, reject password choice.
+001023f8 string Use for hacking: trim your dictionary file to the pw requirements of the target.
+00102450 string Usage only allowed for legal purposes.
+00102478 string Error: unable to open input file %s 
+001024a0 string Error: unable to open output file %s 
+001024c8 string Error: -m MINLEN is greater than -M MAXLEN 
+001024f8 string Error: -c MINSETS is larger than the sets defined 
+0010252b string vh@thc.org
+0010253b string PW-Inspector
+00102548 string Options:
+00102551 string Sets:
+00102559 string i:o:m:M:c:lunps
+00102651 string zR
+00102681 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/hydra.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

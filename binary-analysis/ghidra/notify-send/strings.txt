@@ -1,0 +1,180 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100b41 string-utf8 g_free
+00100b48 string-utf8 __gmon_start__
+00100b57 string-utf8 g_object_unref
+00100b66 string-utf8 g_strdup
+00100b6f string-utf8 g_clear_error
+00100b7d string-utf8 _ITM_deregisterTMCloneTable
+00100b99 string-utf8 g_strv_length
+00100ba7 string-utf8 g_object_new
+00100bb4 string-utf8 _ITM_registerTMCloneTable
+00100bce string-utf8 g_strdup_printf
+00100bde string-utf8 g_object_get
+00100beb string-utf8 g_str_has_prefix
+00100bfc string-utf8 g_signal_connect_data
+00100c12 string-utf8 g_strsplit
+00100c1d string-utf8 g_malloc0
+00100c27 string-utf8 g_error_free
+00100c34 string-utf8 g_strfreev
+00100c3f string-utf8 g_timeout_add
+00100c4d string-utf8 g_log
+00100c53 string-utf8 g_ascii_strcasecmp
+00100c66 string-utf8 notify_notification_set_category
+00100c87 string-utf8 notify_notification_set_hint_byte
+00100ca9 string-utf8 notify_get_server_caps
+00100cc0 string-utf8 notify_notification_set_timeout
+00100ce0 string-utf8 notify_notification_set_urgency
+00100d00 string-utf8 notify_notification_get_activation_app_launch_context
+00100d36 string-utf8 notify_uninit
+00100d44 string-utf8 notify_notification_set_hint_double
+00100d68 string-utf8 notify_notification_get_type
+00100d85 string-utf8 notify_notification_close
+00100d9f string-utf8 notify_notification_add_action
+00100dbe string-utf8 notify_notification_set_hint
+00100ddb string-utf8 notify_init
+00100de7 string-utf8 notify_notification_set_app_name
+00100e08 string-utf8 notify_notification_show
+00100e21 string-utf8 notify_get_server_info
+00100e38 string-utf8 notify_notification_set_hint_int32
+00100e5b string-utf8 notify_notification_set_hint_string
+00100e7f string-utf8 g_main_loop_unref
+00100e91 string-utf8 g_list_free
+00100e9d string-utf8 g_ascii_table
+00100eab string-utf8 g_list_foreach
+00100eba string-utf8 g_option_context_add_main_entries
+00100edc string-utf8 g_strcompress
+00100eea string-utf8 g_variant_new_boolean
+00100f00 string-utf8 g_strchomp
+00100f0b string-utf8 g_main_loop_run
+00100f1b string-utf8 g_strtod
+00100f24 string-utf8 g_error_new
+00100f30 string-utf8 g_set_prgname
+00100f3e string-utf8 g_main_loop_new
+00100f4e string-utf8 g_variant_parse
+00100f5e string-utf8 g_unix_signal_add
+00100f70 string-utf8 g_log_set_always_fatal
+00100f87 string-utf8 g_option_context_new
+00100f9c string-utf8 g_strchug
+00100fa6 string-utf8 g_option_context_free
+00100fbc string-utf8 g_option_context_parse
+00100fd3 string-utf8 g_utf8_validate
+00100fe3 string-utf8 g_main_loop_quit
+00100ff4 string-utf8 g_get_prgname
+00101002 string-utf8 g_option_error_quark
+00101017 string-utf8 g_printf
+00101020 string-utf8 g_list_find_custom
+00101033 string-utf8 g_ascii_strtoull
+00101044 string-utf8 g_printerr
+0010104f string-utf8 g_app_launch_context_get_startup_notify_id
+0010107a string-utf8 __stack_chk_fail
+0010108b string-utf8 exit
+00101090 string-utf8 fflush
+00101097 string-utf8 strlen
+0010109e string-utf8 stdout
+001010a5 string-utf8 __libc_start_main
+001010b7 string-utf8 __cxa_finalize
+001010c6 string-utf8 setlocale
+001010d0 string-utf8 fsync
+001010d6 string-utf8 write
+001010dc string-utf8 libnotify.so.4
+001010eb string-utf8 libgobject-2.0.so.0
+001010ff string-utf8 libglib-2.0.so.0
+00101110 string-utf8 libgio-2.0.so.0
+00101120 string-utf8 libc.so.6
+0010112a string-utf8 GLIBC_2.4
+00101134 string-utf8 GLIBC_2.34
+0010113f string-utf8 GLIBC_2.2.5
+0010114b string-utf8 XXXXXXXXXXXXXXXXXXXX
+00104008 string Wait cancelled, closing notification
+00104038 string Unknown urgency %s specified. Known urgency levels: low, normal, critical.
+00104088 string Invalid UTF-8 provided for parameter: %s 
+001040b8 string <SUMMARY> [BODY] - create a notification
+001040e8 string Using server %s %s, v%s - Supporting Notification Spec %s
+00104128 string Persistence is not supported by the notifications server. All notifications are transient.
+00104188 string Invalid hint syntax specified. Use TYPE:NAME:VALUE.
+001041c0 string Invalid hint type "%s". Valid types are int, double, string and byte.
+00104208 string Actions are not supported by this notifications server. Displaying non-interactively. 
+00104260 string Failed to show notification: %s
+00104280 string Value "%s" of hint "%s" could not be parsed as type "%s".
+001042c0 string Specifies the urgency level (low, normal, critical).
+001042f8 string Specifies the timeout in milliseconds at which to expire the notification.
+00104348 string Specifies the app name for the notification
+00104378 string Specifies an icon filename or stock icon to display.
+001043b0 string Specifies an application icon filename or app icon name. The server may or may not display it.
+00104410 string Specifies the notification category.
+00104438 string Create a transient notification
+00104458 string Specifies basic extra data to pass. Valid types are boolean, int, double, string, byte and variant.
+001044c0 string File descriptor where to write the notification ID.
+001044f8 string The ID of the notification to replace.
+00104520 string Wait for the notification to be closed before exiting.
+00104558 string Specifies the actions to display to the user. Implies --wait to wait for user input. May be set multiple times. The name of the action is output to stdout. If NAME is not specified, the numerical index of the option is used (starting with 0).
+00104650 string File descriptor where to write the action chosen by the user.
+00104690 string File descriptor where to write the action activation token. The daemon must support it.
+001046e8 string Wait timeout expired
+001046fd string Activation Token: %s
+00104712 string libnotify
+00104720 string normal
+00104727 string critical
+00104730 string 0.8.8
+00104736 string %s %s 
+0010473d string Summary
+00104745 string No summary specified.
+00104760 string Invalid number of options.
+0010477b string notify-send
+00104787 string app-icon
+00104795 string summary
+0010479d string icon-name
+001047a7 string transient
+001047b1 string persistence
+001047bf string string
+001047c6 string double
+001047d5 string boolean
+001047e2 string variant
+001047ea string actions
+001047f7 string closed
+00104802 string urgency
+0010480a string LEVEL
+00104810 string expire-time
+00104821 string app-name
+0010482a string APP_NAME
+00104838 string category
+00104841 string TYPE[,TYPE...]
+00104855 string TYPE:NAME:VALUE
+00104865 string print-id
+0010486e string Print the notification ID.
+0010488f string replace-id
+0010489a string REPLACE_ID
+001048aa string action
+001048b1 string [NAME=]Text...
+001048c0 string selected-action-fd
+001048d3 string activation-token-fd
+001048e7 string version
+001048ef string Version of the package.
+00104979 string zR
+001049a9 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debuglink

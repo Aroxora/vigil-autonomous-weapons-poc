@@ -1,0 +1,214 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001009e1 string-utf8 optind
+001009e8 string-utf8 fgets
+001009ee string-utf8 rewind
+001009f5 string-utf8 puts
+001009fa string-utf8 strncpy
+00100a02 string-utf8 versionsort
+00100a0e string-utf8 __stack_chk_fail
+00100a1f string-utf8 __printf_chk
+00100a2c string-utf8 free
+00100a31 string-utf8 exit
+00100a36 string-utf8 stat
+00100a3b string-utf8 strdup
+00100a42 string-utf8 strspn
+00100a49 string-utf8 ftruncate
+00100a53 string-utf8 fopen
+00100a59 string-utf8 __isoc23_sscanf
+00100a69 string-utf8 flock
+00100a6f string-utf8 dirname
+00100a77 string-utf8 strlen
+00100a7e string-utf8 __ctype_b_loc
+00100a8c string-utf8 read
+00100a91 string-utf8 __vfprintf_chk
+00100aa0 string-utf8 __isoc23_strtol
+00100ab0 string-utf8 getpid
+00100ab7 string-utf8 stdout
+00100abe string-utf8 __vsyslog_chk
+00100acc string-utf8 optarg
+00100ad3 string-utf8 realloc
+00100adb string-utf8 __sprintf_chk
+00100ae9 string-utf8 strftime
+00100af2 string-utf8 strcasecmp
+00100afd string-utf8 __fprintf_chk
+00100b0b string-utf8 malloc
+00100b12 string-utf8 __libc_start_main
+00100b24 string-utf8 stderr
+00100b2b string-utf8 openlog
+00100b33 string-utf8 __ctype_tolower_loc
+00100b47 string-utf8 __cxa_finalize
+00100b56 string-utf8 scandir
+00100b5e string-utf8 localtime
+00100b68 string-utf8 strchr
+00100b6f string-utf8 strerror
+00100b78 string-utf8 getenv
+00100b7f string-utf8 calloc
+00100b86 string-utf8 fclose
+00100b8d string-utf8 __asprintf_chk
+00100b9c string-utf8 fputc
+00100ba2 string-utf8 signal
+00100ba9 string-utf8 __snprintf_chk
+00100bb8 string-utf8 fileno
+00100bbf string-utf8 fwrite
+00100bc6 string-utf8 strcmp
+00100bcd string-utf8 qsort
+00100bd3 string-utf8 strsep
+00100bda string-utf8 __errno_location
+00100beb string-utf8 getopt_long
+00100bf7 string-utf8 lseek
+00100bfd string-utf8 strncmp
+00100c05 string-utf8 libc.so.6
+00100c0f string-utf8 GLIBC_2.3
+00100c19 string-utf8 GLIBC_2.33
+00100c24 string-utf8 GLIBC_2.8
+00100c2e string-utf8 GLIBC_2.4
+00100c38 string-utf8 GLIBC_2.38
+00100c43 string-utf8 GLIBC_2.34
+00100c4e string-utf8 GLIBC_2.3.4
+00100c5a string-utf8 GLIBC_2.2.5
+00100c66 string-utf8 _ITM_deregisterTMCloneTable
+00100c82 string-utf8 __gmon_start__
+00100c91 string-utf8 _ITM_registerTMCloneTable
+00108008 string Usage: %s [-v] [--file filename.conf] ... 
+00108038 string  --file filename.conf	Load this config file 
+00108068 string      (Default config file: /etc/nfs.conf 
+00108098 string  --modified "info"	Use "info" in file modified header 
+001080d0 string       Outputs the configuration to the named file 
+00108108 string   --get [--arg subsection] {section} {tag} 
+00108138 string       Output one specific config value 
+00108160 string   --entry [--arg subsection] {section} {tag} 
+00108190 string       Output the uninterpreted config entry 
+001081c0 string   --isset [--arg subsection] {section} {tag} 
+001081f0 string       Return code indicates if config value is present 
+00108228 string   --set [--arg subsection] {section} {tag} {value} 
+00108260 string       Set and Write a config value 
+00108288 string   --unset [--arg subsection] {section} {tag} 
+001082b8 string       Remove an existing config value 
+001082e0 string Error opening dumpfile %s: %s 
+00108300 string Error: insufficient arguments for mode 
+00108328 string conf_readfile: open ("%s", O_RDONLY) failed
+00108358 string conf_readfile: attempt to grab read lock failed: %s
+00108390 string conf_readfile: unable to determine file size: %s
+001083c8 string conf_readfile: malloc (%lu) failed
+001083f0 string conf_readfile: read (%d, %p, %lu) failed
+00108420 string malloc error composing a tag line
+00108448 string conf_write: warning: malformed tag name
+00108470 string malloc error creating outbuffer
+00108490 string Error writing to config file: %s
+001084b8 string malloc error composing section header
+001084e0 string config error at %s:%d: non-matched ']', ignoring until next section
+00108528 string config error at %s:%d:malloc failed
+00108550 string config error at %s:%d: non-matched '"', ignoring until next section
+00108598 string config error at %s:%d: malloc failed
+001085c0 string config error at %s:%d: line not empty and not an assignment
+00108600 string config error at %s:%d: ignoring line not in a section
+00108638 string config error at %s:%d: unmatched quotes
+00108660 string config error at %s:%d: missing tag in assignment
+00108698 string config error at %s:%d: error loading included config
+001086d0 string conf_trans_node: calloc (1, %lu) failed
+001086f8 string conf_parse: last line non-terminated, ignored.
+00108728 string conf_match_num: %s:%s %d<=%d<=%d?
+00108750 string conf_match_num: section %s tag %s: invalid number spec %s
+00108790 string conf_get_list: empty field, ignoring...
+001087b8 string conf_remove: strdup("%s") failed
+001087e0 string conf_remove_section: strdup("%s") failed
+00108810 string conf_set: duplicate tag [%s]:%s, ignoring...
+00108840 string conf_set: calloc (1, %lu) failed
+00108868 string conf_end: unknown operation: %d
+00108888 string conf_init_dir: Too long file name: %s in %s
+001088b8 string conf_init_dir: %s: name too short
+001088e0 string conf_init_dir: %s: invalid file extension
+00108910 string conf_init_dir: file name: %s/%s too short
+00108940 string conf_report: dumping running configuration
+00108970 string conf_report: malloc/calloc failed
+00108998 string conf_write: no filename supplied
+001089c0 string conf_write: section or tag name missing
+001089e8 string conf_write: config file "%s" not found, nothing to do
+00108a20 string conf_write: config file "%s" not found, creating.
+00108a58 string conf_write: Error creating config file "%s".
+00108a88 string conf_write: warning: malformed section name
+00108ab8 string conf_write: warning: malformed sub-section name
+00108ae8 string malloc error composing a time stamp
+00108b0c string Options: 
+00108b16 string  -v			Increase Verbosity 
+00108b30 string Modes: 
+00108b38 string   --dump [outputfile] 
+00108b4f string /etc/nfs.conf
+00108b5d string Modified by nfsconf
+00108b71 string gesua:id::f:vm:
+00108b81 string Error: No MODE selected. 
+00108b9d string Dumping config to %s 
+00108bb3 string Tag '%s' not found 
+00108bc7 string Error writing config 
+00108be1 string entry
+00108be7 string unset
+00108bf1 string isset
+00108bfc string verbose
+00108c04 string modified
+00108c18 string %s = %s 
+00108c21 string conf_write: malloc failed
+00108c40 string malloc error composing output
+00108c5e string malloc error for read buffer
+00108c7b string malloc error reading line
+00108c95 string # %s 
+00108c9b string # %s: %s 
+00108ca5 string malloc error composing header
+00108cc3 string [%s "%s"] 
+00108cce string [%s] 
+00108cd7 string include
+00108cdf string %s/%s
+00108ce5 string conf_set: strdup("%s") failed
+00108d03 string [%s]:%s->%s removed
+00108d17 string environment
+00108d33 string false
+00108d40 string %d,%d:%d
+00108d49 string conf_match_num: %s:%s %d==%d?
+00108d69 string conf_init_dir: malloc: %s
+00108d88 string conf_init_dir: scandir %s: %s
+00108da6 string /etc/
+00108dac string /usr%s
+00108db3 string  = "%s"
+00108dbb string  = %s
+00108dc9 string Error could not lock the file
+00108de7 string Modified
+00108df0 string conf_write: malloc failed 
+00108e0b string %b %d %Y %H:%M:%S
+00108e1d string error composing date
+00108e32 string %s on %s
+00108e3b string Error truncating config file
+00108e5d string turned on logging
+00108e6f string turned on logging level %d
+00108e8a string turned off logging
+00108e9d string Invalid debug facility: %s 
+00108eb9 string debug
+00108ebf string general
+00108ed1 string parse
+001091a1 string zR
+001091d1 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/nfs-common.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

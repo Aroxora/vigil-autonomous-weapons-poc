@@ -1,0 +1,194 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100891 string-utf8 _ITM_deregisterTMCloneTable
+001008ad string-utf8 XFree
+001008b3 string-utf8 __gmon_start__
+001008c2 string-utf8 _ITM_registerTMCloneTable
+001008dc string-utf8 XkbRF_Load
+001008e7 string-utf8 XkbRF_GetNamesProp
+001008fa string-utf8 XkbCFParse
+00100905 string-utf8 XkbRF_GetComponents
+00100919 string-utf8 XkbCFDflts
+00100924 string-utf8 XkbRF_SetNamesProp
+00100937 string-utf8 XkbGetKeyboardByName
+0010094c string-utf8 XkbOpenDisplay
+0010095b string-utf8 XSynchronize
+00100968 string-utf8 XQueryExtension
+00100978 string-utf8 XCloseDisplay
+00100986 string-utf8 XRRFreeOutputInfo
+00100998 string-utf8 XRRQueryVersion
+001009a8 string-utf8 XRRGetOutputInfo
+001009b9 string-utf8 XRRGetScreenResourcesCurrent
+001009d6 string-utf8 XRRQueryExtension
+001009e8 string-utf8 XRRFreeScreenResources
+001009ff string-utf8 strcpy
+00100a06 string-utf8 puts
+00100a0b string-utf8 __stack_chk_fail
+00100a1c string-utf8 __printf_chk
+00100a29 string-utf8 free
+00100a2e string-utf8 exit
+00100a33 string-utf8 strdup
+00100a3a string-utf8 strtol
+00100a41 string-utf8 fopen
+00100a47 string-utf8 strlen
+00100a4e string-utf8 __ctype_b_loc
+00100a5c string-utf8 realloc
+00100a64 string-utf8 __fprintf_chk
+00100a72 string-utf8 __libc_start_main
+00100a84 string-utf8 stderr
+00100a8b string-utf8 __cxa_finalize
+00100a9a string-utf8 setlocale
+00100aa4 string-utf8 strchr
+00100aab string-utf8 getenv
+00100ab2 string-utf8 calloc
+00100ab9 string-utf8 fclose
+00100ac0 string-utf8 __snprintf_chk
+00100acf string-utf8 fwrite
+00100ad6 string-utf8 strcmp
+00100add string-utf8 strncmp
+00100ae5 string-utf8 libxkbfile.so.1
+00100af5 string-utf8 libX11.so.6
+00100b01 string-utf8 libXrandr.so.2
+00100b10 string-utf8 libc.so.6
+00100b1a string-utf8 _edata
+00100b21 string-utf8 __bss_start
+00100b2d string-utf8 _end
+00100b32 string-utf8 GLIBC_2.3
+00100b3c string-utf8 GLIBC_2.4
+00100b46 string-utf8 GLIBC_2.34
+00100b51 string-utf8 GLIBC_2.3.4
+00100b5d string-utf8 GLIBC_2.2.5
+00105008 string Warning! More than one %s from %s 
+00105030 string          Using "%s", ignoring "%s" 
+00105058 string Warning! Multiple definitions of %s 
+00105080 string          Using %s, ignoring %s 
+001050a0 string Path too long (%s/%s). Ignored. 
+001050c8 string No %s specified on the command line 
+001050f0 string Trying to load rules file %s... 
+00105118 string Path too long (%s/rules/%s). Ignored. 
+00105140 string Couldn't find rules file (%s)  
+00105160 string No rules variables specified.  Rules file ignored
+00105198 string Usage: %s [options] [<layout> [<variant> [<option> ... ]]] Options:   -?, -help           Print this message   -compat <name>      Specifies compatibility map component name   -config <file>      Specifies configuration file to use   -device <deviceid>  Specifies the device ID to use   -display <dpy>      Specifies display to use   -geometry <name>    Specifies geometry component name   -I <dir>            Add <dir> to list of directories to be used   -keycodes <name>    Specifies keycodes component name   -keymap <name>      Specifies name of keymap to load   -layout <name>      Specifies layout used to choose component names   -model <name>       Specifies model used to choose component names   -option <name>      Adds an option used to choose component names   -print              Print a complete xkb_keymap description and exit   -query              Print the current layout settings and exit   -rules <name>       Name of rules file to use   -symbols <name>     Specifies symbols component name   -synch              Synchronize request with X server   -types <name>       Specifies types component name   -v[erbose] [<lvl>]  Sets verbosity (1..10); higher values yield more messages   -version            Print the program's version number   -variant <name>     Specifies layout variant used to choose component names 
+001056d0 string No directory specified on the command line Trailing -I option ignored
+00105718 string Illegal verbose level %d.  Reset to 0 
+00105740 string Illegal verbose level %d.  Reset to 10 
+00105768 string Error!   Option "%s" not recognized 
+00105790 string No other components can be specified when a keymap is present 
+001057d0 string %s was compiled with XKB version %d.%02d 
+00105800 string Xlib supports incompatible version %d.%02d 
+00105830 string XKB extension not present on %s 
+00105858 string Server %s uses incompatible version %d.%02d 
+00105888 string Unknown error %d from XkbOpenDisplay 
+001058b0 string WARNING: Running setxkbmap against an Xwayland server 
+001058e8 string Couldn't interpret %s property 
+00105908 string Use defaults: rules - '%s' model - '%s' layout - '%s' 
+00105940 string Couldn't find configuration file "%s" 
+00105968 string Couldn't parse configuration file "%s" 
+00105990 string Trying to build keymap using the following components:
+001059c8 string Error loading new keyboard description 
+001059f0 string Error updating the XKB names property
+00105a18 string 	xkb_keycodes  { include "%s"	}; 
+00105a40 string 	xkb_types     { include "%s"	}; 
+00105a68 string 	xkb_compat    { include "%s"	}; 
+00105a90 string 	xkb_symbols   { include "%s"	}; 
+00105ab8 string 	xkb_geometry  { include "%s"	}; 
+00105ada string Found
+00105ae0 string Didn't find
+00105aec string %s file %s 
+00105af8 string %s/%s
+00105afe string Out of memory. 
+00105b0e string Illegal map name '%s' 
+00105b25 string in %s name '%s' 
+00105b36 string rules:      %s 
+00105b46 string model:      %s 
+00105b56 string layout:     %s 
+00105b66 string variant:    %s 
+00105b76 string options:    %s 
+00105b86 string keymap:     %s 
+00105b96 string keycodes:   %s 
+00105ba6 string types:      %s 
+00105bb6 string compat:     %s 
+00105bc6 string symbols:    %s 
+00105bd6 string geometry:   %s 
+00105be6 string Trailing %s option ignored 
+00105c02 string command line
+00105c0f string More than one %s on %s 
+00105c27 string Using "%s", ignoring "%s" 
+00105c42 string Multiple definitions of %s 
+00105c5e string Using %s, ignoring %s 
+00105c7a string Success.
+00105c83 string %s/rules/%s
+00105c8f string Applied rules from %s: 
+00105ca7 string /usr/share/X11/xkb
+00105cba string -compat
+00105cc2 string -config
+00105cca string -device
+00105cd2 string -display
+00105cdb string -geometry
+00105ce5 string -help
+00105ceb string -keycodes
+00105cf6 string keymap
+00105cfd string -layout
+00105d05 string -model
+00105d0c string -option
+00105d14 string -print
+00105d1b string -query
+00105d22 string -rules
+00105d29 string -symbols
+00105d32 string -synch
+00105d39 string -types
+00105d40 string -version
+00105d49 string 1.3.4
+00105d4f string setxkbmap %s 
+00105d5d string -verbose
+00105d69 string Setting verbose level to %d 
+00105d86 string -variant
+00105d8f string DISPLAY
+00105d97 string default display
+00105da7 string Cannot open display "%s" 
+00105dc1 string XWAYLAND
+00105dca string locale is %s 
+00105dd8 string _XKB_RULES_NAMES
+00105de9 string pc105
+00105df2 string After config file:
+00105e05 string xkb_keymap {
+00105e15 string rules file
+00105e20 string config file
+00105e2c string X display
+00105e36 string locale
+00105e3d string keyboard model
+00105e4c string keyboard layout
+00105e5c string layout variant
+00105e6b string compatibility map
+00105e7d string undefined
+00105e87 string X server
+00105f19 string zR
+00105f49 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/x11-xkb-utils.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .got.plt
+.shstrtab::00000103 string-utf8 .data
+.shstrtab::00000109 string-utf8 .bss
+.shstrtab::0000010e string-utf8 .gnu_debugaltlink
+.shstrtab::00000120 string-utf8 .gnu_debuglink

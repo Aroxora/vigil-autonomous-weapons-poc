@@ -1,0 +1,180 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100ae1 string-utf8 _ITM_deregisterTMCloneTable
+00100afd string-utf8 __gmon_start__
+00100b0c string-utf8 _ITM_registerTMCloneTable
+00100b26 string-utf8 __libc_start_main
+00100b38 string-utf8 __cxa_finalize
+00100b47 string-utf8 __printf_chk
+00100b54 string-utf8 puts
+00100b59 string-utf8 exit
+00100b5e string-utf8 malloc
+00100b65 string-utf8 free
+00100b6a string-utf8 stderr
+00100b71 string-utf8 __fprintf_chk
+00100b7f string-utf8 __stack_chk_fail
+00100b90 string-utf8 strlen
+00100b97 string-utf8 __strcat_chk
+00100ba4 string-utf8 strstr
+00100bab string-utf8 __memcpy_chk
+00100bb8 string-utf8 __strcpy_chk
+00100bc5 string-utf8 strcmp
+00100bcc string-utf8 socket
+00100bd3 string-utf8 snprintf
+00100bdc string-utf8 ioctl
+00100be2 string-utf8 realloc
+00100bea string-utf8 strdup
+00100bf1 string-utf8 putchar
+00100bf9 string-utf8 __ctype_b_loc
+00100c07 string-utf8 fwrite
+00100c0e string-utf8 memset
+00100c15 string-utf8 memcpy
+00100c1c string-utf8 index
+00100c22 string-utf8 strncpy
+00100c2a string-utf8 getaddrinfo
+00100c36 string-utf8 getnameinfo
+00100c42 string-utf8 inet_pton
+00100c4c string-utf8 freeaddrinfo
+00100c59 string-utf8 perror
+00100c60 string-utf8 fopen
+00100c66 string-utf8 strncmp
+00100c6e string-utf8 fgets
+00100c74 string-utf8 fclose
+00100c7b string-utf8 __isoc23_sscanf
+00100c8b string-utf8 setsockopt
+00100c96 string-utf8 bind
+00100c9b string-utf8 sendto
+00100ca2 string-utf8 recvfrom
+00100cab string-utf8 shutdown
+00100cb4 string-utf8 getenv
+00100cbb string-utf8 strtok
+00100cc2 string-utf8 __sprintf_chk
+00100cd0 string-utf8 __isoc23_strtol
+00100ce0 string-utf8 send
+00100ce5 string-utf8 geteuid
+00100ced string-utf8 strcpy
+00100cf4 string-utf8 pcap_open_live
+00100d03 string-utf8 pcap_compile
+00100d10 string-utf8 pcap_setfilter
+00100d1f string-utf8 pcap_setnonblock
+00100d30 string-utf8 calloc
+00100d37 string-utf8 usleep
+00100d3e string-utf8 time
+00100d43 string-utf8 pcap_dispatch
+00100d51 string-utf8 pcap_close
+00100d5c string-utf8 getpid
+00100d63 string-utf8 srand
+00100d69 string-utf8 stdout
+00100d70 string-utf8 setvbuf
+00100d78 string-utf8 getopt
+00100d7f string-utf8 optarg
+00100d86 string-utf8 optind
+00100d8d string-utf8 strcasecmp
+00100d98 string-utf8 _IO_stdin_used
+00100da7 string-utf8 libpcap.so.0.8
+00100db6 string-utf8 libc.so.6
+00100dc0 string-utf8 GLIBC_2.14
+00100dcb string-utf8 GLIBC_2.34
+00100dd6 string-utf8 GLIBC_2.4
+00100de0 string-utf8 GLIBC_2.38
+00100deb string-utf8 GLIBC_2.3
+00100df5 string-utf8 GLIBC_2.3.4
+00100e01 string-utf8 GLIBC_2.2.5
+00107008 string www.github.com/vanhauser-thc/thc-ipv6
+00107038 string Syntax: %s [-aAcdDfrORS] [-i microsecond] [-m dstmac] [-p port] [-s sourceip6] interface target port  
+001070a0 string  -i      sending interval of packets (in microseconds)
+001070d8 string  -a      add hop-by-hop header with router alert
+00107110 string  -d      add destination header (can be set up to 64 times)
+00107150 string  -f      add atomic fragmentation header (can be set up to 64 times)
+00107198 string  -S      send TCP-SYN-ACK packets
+001071c0 string  -r      randomize the source from your /64 prefix
+001071f8 string  -R      randomize the source fully
+00107220 string  -D      randomize the destination (treat as /64)
+00107258 string  -O      add a TCP Fast Open cookie (SYN-only packets)
+00107290 string  -m dstmac     use this destination mac address
+001072c0 string  -s sourceip6  use this as source IPv6 address
+001072f0 string  -p port       use fixed source port
+00107318 string  Flood the target port with TCP-SYN packets. If you supply "x" as port, it is randomized.
+00107378 string Error: Data packet type %d not implemented - some data not free'ed! 
+001073c0 string Warning: checksums for packets > 65535 are unreliable due implementation differences on target platforms 
+00107430 string Error: /proc/net/if_inet6 does not exist, no IPv6 support on your Linux box! 
+00107480 string Warning: no IPv6 address on interface defined 
+001074b0 string Warning: unprefered IPv6 address had to be selected 
+001074e8 string Warning: raw mode is not working in all tools 
+00107518 string Error: wrong Syntax in THC_IPV6_VLAN variable: source_mac,dst_mac,vlan_id - e.g. 01:02:03:04:05:06,07:08:09:a0:a1:a2,7 
+00107590 string Error: wrong Syntax in THC_IPV6_VLAN variable: srcmac,dstmac,vlan-id - e.g. 01:02:03:04:05:06,1a:1b:1c:1d:1e:1f,7 
+00107608 string Information: VLAN injection/sniffing activated
+00107638 string Error: could not allocate necessary memory 
+00107668 string Error: wrong Syntax in THC_IPV6_PPPOE variable: source_mac,dst_mac,ppoe_session_id - e.g. 01:02:03:04:05:06,07:08:09:a0:a1:a2,a1b2 
+001076f0 string Error: PPPoE session ID must be hexadecimal and a length of four, e.g. 0a1f 
+00107740 string Information: PPPoE injection/sniffing activated
+00107770 string Error: wrong Syntax in THC_IPV6_6IN4 variable: source_mac,dst_mac,src_ip,dst_ip - e.g. 01:02:03:04:05:06,07:08:09:a0:a1:a2,1.1.1.1,2.2.2.2 
+00107800 string Error: 6in4: not a valid IPv4 address: %s 
+00107830 string Information: 6in4 injection/sniffin activated
+00107860 string Error: Program must be run as root. 
+00107888 string Warning: packet size is larger than MTU of interface (%d > %d)! 
+001078d0 string Error: /proc/net/ipv6_route does not exist, no IPv6 support on your Linux box! 
+00107920 string Error: No idea where to route the packet to %s! 
+00107958 string Error: could not get target MAC address 
+00107988 string Error: Data packet type %d not implemented! 
+001079b8 string Warning: packet size mismatch (%d != %d)! 
+001079e8 string Error: no IPv6 address configured on interface %s 
+00107a20 string Error: link local address on interface, destination however is remote 
+00107a68 string Error: can not find a route to target %s 
+00107a98 string Starting to flood target network with TCP%s%s %s (Press Control-C to end, a dot is printed for every 1000 packets): 
+00107b10 string Remember to filter outgoing RST packets for SYN flooding, e.g. iptables -I OUTPUT -p tcp --tcp-flags RST RST -j DROP
+00107b85 string van Hauser / THC <vh@thc.org>
+00107ba7 string %s %s (c) 2020 by %s %s  
+00107bc1 string Options:
+00107bca string  -A      send TCP-ACK packets
+00107beb string %s (%d bytes): 
+00107c09 string    [ 
+00107c12 string malloc
+00107c1b string /proc/net/if_inet6
+00107c2e string %s %x %x %x %s
+00107c48 string THC_IPV6_RAW
+00107c55 string THC_IPV6_RAWMODE
+00107c66 string THC_IPV6_VLAN
+00107c76 string THC_IPV6_PPPOE
+00107c97 string ether src %18s
+00107ca6 string THC_IPV6_6IN4
+00107cb4 string ip proto 41 and src %16s
+00107ccd string IOCTL SIOCGIFINDEX Failed
+00107ce7 string IOCTL SIOCGIFHWADDR, Failed
+00107d03 string Bind failed
+00107d0f string Error: interface invalid 
+00107d29 string %s %x %s %x %s %s
+00107d3b string ff02::1:ff00:0
+00107d4a string /proc/net/ipv6_route
+00107d5f string NXT_IP4 NOT IMPLEMENTED
+00107d77 string NXT_IP6 NOT IMPLEMENTED
+00107d8f string Error: unknown option -%c 
+00107daa string i:afAcrRs:DSp:m:dfO
+00107dbe string Error: Can not resolve %s 
+00107dd9 string Error: invalid interface %s 
+00107ee0 string ip6 and dst 
+00107fe1 string zR
+00108011 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss

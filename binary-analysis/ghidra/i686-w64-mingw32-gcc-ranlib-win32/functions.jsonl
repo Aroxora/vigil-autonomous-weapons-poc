@@ -1,0 +1,184 @@
+{"name":"_DT_INIT","entry":"00402000","bodyBytes":23,"signature":"undefined _DT_INIT(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402020","entry":"00402020","bodyBytes":12,"signature":"undefined FUN_00402020(void)","callingConvention":"unknown","external":false}
+{"name":"mkstemps","entry":"00402030","bodyBytes":6,"signature":"int mkstemps(char * __template, int __suffixlen)","callingConvention":"unknown","external":false}
+{"name":"getenv","entry":"00402040","bodyBytes":6,"signature":"char * getenv(char * __name)","callingConvention":"unknown","external":false}
+{"name":"free","entry":"00402050","bodyBytes":6,"signature":"void free(void * __ptr)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn_file_actions_init","entry":"00402060","bodyBytes":6,"signature":"int posix_spawn_file_actions_init(posix_spawn_file_actions_t * __file_actions)","callingConvention":"unknown","external":false}
+{"name":"abort","entry":"00402070","bodyBytes":6,"signature":"void abort(void)","callingConvention":"unknown","external":false}
+{"name":"__errno_location","entry":"00402080","bodyBytes":6,"signature":"int * __errno_location(void)","callingConvention":"unknown","external":false}
+{"name":"unlink","entry":"00402090","bodyBytes":6,"signature":"int unlink(char * __name)","callingConvention":"unknown","external":false}
+{"name":"strncpy","entry":"004020a0","bodyBytes":6,"signature":"char * strncpy(char * __dest, char * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"remove","entry":"004020b0","bodyBytes":6,"signature":"int remove(char * __filename)","callingConvention":"unknown","external":false}
+{"name":"strcpy","entry":"004020c0","bodyBytes":6,"signature":"char * strcpy(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"ferror","entry":"004020d0","bodyBytes":6,"signature":"int ferror(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fread","entry":"004020e0","bodyBytes":6,"signature":"size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fcntl","entry":"004020f0","bodyBytes":6,"signature":"int fcntl(int __fd, int __cmd, ...)","callingConvention":"unknown","external":false}
+{"name":"posix_spawnattr_destroy","entry":"00402100","bodyBytes":6,"signature":"int posix_spawnattr_destroy(posix_spawnattr_t * __attr)","callingConvention":"unknown","external":false}
+{"name":"fclose","entry":"00402110","bodyBytes":6,"signature":"int fclose(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn_file_actions_destroy","entry":"00402120","bodyBytes":6,"signature":"int posix_spawn_file_actions_destroy(posix_spawn_file_actions_t * __file_actions)","callingConvention":"unknown","external":false}
+{"name":"stpcpy","entry":"00402130","bodyBytes":6,"signature":"char * stpcpy(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"strlen","entry":"00402140","bodyBytes":6,"signature":"size_t strlen(char * __s)","callingConvention":"unknown","external":false}
+{"name":"__stack_chk_fail","entry":"00402150","bodyBytes":6,"signature":"undefined __stack_chk_fail(void)","callingConvention":"unknown","external":false}
+{"name":"strchr","entry":"00402160","bodyBytes":6,"signature":"char * strchr(char * __s, int __c)","callingConvention":"unknown","external":false}
+{"name":"fputs","entry":"00402170","bodyBytes":6,"signature":"int fputs(char * __s, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"memset","entry":"00402180","bodyBytes":6,"signature":"void * memset(void * __s, int __c, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"close","entry":"00402190","bodyBytes":6,"signature":"int close(int __fd)","callingConvention":"unknown","external":false}
+{"name":"__realpath_chk","entry":"004021a0","bodyBytes":6,"signature":"undefined __realpath_chk(void)","callingConvention":"unknown","external":false}
+{"name":"pipe","entry":"004021b0","bodyBytes":6,"signature":"int pipe(int * __pipedes)","callingConvention":"unknown","external":false}
+{"name":"fputc","entry":"004021c0","bodyBytes":6,"signature":"int fputc(int __c, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"sbrk","entry":"004021d0","bodyBytes":6,"signature":"void * sbrk(intptr_t __delta)","callingConvention":"unknown","external":false}
+{"name":"posix_spawnattr_init","entry":"004021e0","bodyBytes":6,"signature":"int posix_spawnattr_init(posix_spawnattr_t * __attr)","callingConvention":"unknown","external":false}
+{"name":"calloc","entry":"004021f0","bodyBytes":6,"signature":"void * calloc(size_t __nmemb, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"strcmp","entry":"00402200","bodyBytes":6,"signature":"int strcmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"ftell","entry":"00402210","bodyBytes":6,"signature":"long ftell(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"stat","entry":"00402220","bodyBytes":6,"signature":"int stat(char * __file, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"00402230","bodyBytes":6,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"kill","entry":"00402240","bodyBytes":6,"signature":"int kill(__pid_t __pid, int __sig)","callingConvention":"unknown","external":false}
+{"name":"malloc","entry":"00402250","bodyBytes":6,"signature":"void * malloc(size_t __size)","callingConvention":"unknown","external":false}
+{"name":"posix_spawnp","entry":"00402260","bodyBytes":6,"signature":"int posix_spawnp(pid_t * __pid, char * __file, posix_spawn_file_actions_t * __file_actions, posix_spawnattr_t * __attrp, char * * __argv, char * * __envp)","callingConvention":"unknown","external":false}
+{"name":"fseek","entry":"00402270","bodyBytes":6,"signature":"int fseek(FILE * __stream, long __off, int __whence)","callingConvention":"unknown","external":false}
+{"name":"strsignal","entry":"00402280","bodyBytes":6,"signature":"char * strsignal(int __sig)","callingConvention":"unknown","external":false}
+{"name":"realloc","entry":"00402290","bodyBytes":6,"signature":"void * realloc(void * __ptr, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"fdopen","entry":"004022a0","bodyBytes":6,"signature":"FILE * fdopen(int __fd, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"wait4","entry":"004022b0","bodyBytes":6,"signature":"__pid_t wait4(__pid_t __pid, void * __stat_loc, int __options, rusage * __usage)","callingConvention":"unknown","external":false}
+{"name":"memmove","entry":"004022c0","bodyBytes":6,"signature":"void * memmove(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"waitpid","entry":"004022d0","bodyBytes":6,"signature":"__pid_t waitpid(__pid_t __pid, int * __stat_loc, int __options)","callingConvention":"unknown","external":false}
+{"name":"open","entry":"004022e0","bodyBytes":6,"signature":"int open(char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"access","entry":"004022f0","bodyBytes":6,"signature":"int access(char * __name, int __type)","callingConvention":"unknown","external":false}
+{"name":"fopen","entry":"00402300","bodyBytes":6,"signature":"FILE * fopen(char * __filename, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn","entry":"00402310","bodyBytes":6,"signature":"int posix_spawn(pid_t * __pid, char * __path, posix_spawn_file_actions_t * __file_actions, posix_spawnattr_t * __attrp, char * * __argv, char * * __envp)","callingConvention":"unknown","external":false}
+{"name":"strcat","entry":"00402320","bodyBytes":6,"signature":"char * strcat(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"exit","entry":"00402330","bodyBytes":6,"signature":"void exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"posix_spawnattr_setflags","entry":"00402340","bodyBytes":6,"signature":"int posix_spawnattr_setflags(posix_spawnattr_t * _attr, short __flags)","callingConvention":"unknown","external":false}
+{"name":"fwrite","entry":"00402350","bodyBytes":6,"signature":"size_t fwrite(void * __ptr, size_t __size, size_t __n, FILE * __s)","callingConvention":"unknown","external":false}
+{"name":"__fprintf_chk","entry":"00402360","bodyBytes":6,"signature":"undefined __fprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn_file_actions_addclose","entry":"00402370","bodyBytes":6,"signature":"int posix_spawn_file_actions_addclose(posix_spawn_file_actions_t * __file_actions, int __fd)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn_file_actions_adddup2","entry":"00402380","bodyBytes":6,"signature":"int posix_spawn_file_actions_adddup2(posix_spawn_file_actions_t * __file_actions, int __fd, int __newfd)","callingConvention":"unknown","external":false}
+{"name":"strdup","entry":"00402390","bodyBytes":6,"signature":"char * strdup(char * __s)","callingConvention":"unknown","external":false}
+{"name":"strerror","entry":"004023a0","bodyBytes":6,"signature":"char * strerror(int __errnum)","callingConvention":"unknown","external":false}
+{"name":"abort","entry":"004023c0","bodyBytes":5,"signature":"void abort(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_004023e0","entry":"004023e0","bodyBytes":1383,"signature":"undefined FUN_004023e0(void)","callingConvention":"unknown","external":false}
+{"name":"entry","entry":"00402960","bodyBytes":34,"signature":"undefined entry(void)","callingConvention":"processEntry","external":false}
+{"name":"FUN_00402990","entry":"00402990","bodyBytes":1,"signature":"undefined FUN_00402990(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_004029a0","entry":"004029a0","bodyBytes":31,"signature":"undefined FUN_004029a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_004029d0","entry":"004029d0","bodyBytes":49,"signature":"undefined FUN_004029d0(void)","callingConvention":"unknown","external":false}
+{"name":"_FINI_0","entry":"00402a10","bodyBytes":32,"signature":"undefined _FINI_0(void)","callingConvention":"unknown","external":false}
+{"name":"_INIT_0","entry":"00402a40","bodyBytes":6,"signature":"undefined _INIT_0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402a50","entry":"00402a50","bodyBytes":12,"signature":"undefined FUN_00402a50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402a60","entry":"00402a60","bodyBytes":451,"signature":"undefined FUN_00402a60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402c30","entry":"00402c30","bodyBytes":110,"signature":"undefined FUN_00402c30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402cb0","entry":"00402cb0","bodyBytes":11,"signature":"undefined FUN_00402cb0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402cc0","entry":"00402cc0","bodyBytes":14,"signature":"undefined FUN_00402cc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402cd0","entry":"00402cd0","bodyBytes":302,"signature":"undefined FUN_00402cd0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402e10","entry":"00402e10","bodyBytes":32,"signature":"undefined FUN_00402e10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402e40","entry":"00402e40","bodyBytes":138,"signature":"undefined FUN_00402e40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402ee0","entry":"00402ee0","bodyBytes":65,"signature":"undefined FUN_00402ee0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00402f30","entry":"00402f30","bodyBytes":688,"signature":"undefined FUN_00402f30(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403220","entry":"00403220","bodyBytes":207,"signature":"undefined FUN_00403220(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403300","entry":"00403300","bodyBytes":808,"signature":"undefined FUN_00403300(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403640","entry":"00403640","bodyBytes":39,"signature":"undefined FUN_00403640(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403680","entry":"00403680","bodyBytes":182,"signature":"undefined FUN_00403680(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403750","entry":"00403750","bodyBytes":217,"signature":"undefined FUN_00403750(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403830","entry":"00403830","bodyBytes":214,"signature":"undefined FUN_00403830(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403910","entry":"00403910","bodyBytes":371,"signature":"undefined FUN_00403910(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403aa0","entry":"00403aa0","bodyBytes":392,"signature":"undefined FUN_00403aa0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403c40","entry":"00403c40","bodyBytes":430,"signature":"undefined FUN_00403c40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00403e10","entry":"00403e10","bodyBytes":1692,"signature":"undefined FUN_00403e10(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404510","entry":"00404510","bodyBytes":14,"signature":"undefined FUN_00404510(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404520","entry":"00404520","bodyBytes":11,"signature":"undefined FUN_00404520(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404530","entry":"00404530","bodyBytes":673,"signature":"undefined FUN_00404530(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404800","entry":"00404800","bodyBytes":298,"signature":"undefined FUN_00404800(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404940","entry":"00404940","bodyBytes":14,"signature":"undefined FUN_00404940(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404950","entry":"00404950","bodyBytes":152,"signature":"undefined FUN_00404950(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_004049f0","entry":"004049f0","bodyBytes":5,"signature":"undefined FUN_004049f0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404a00","entry":"00404a00","bodyBytes":47,"signature":"undefined FUN_00404a00(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404a40","entry":"00404a40","bodyBytes":16,"signature":"undefined FUN_00404a40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404a50","entry":"00404a50","bodyBytes":12,"signature":"undefined FUN_00404a50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404a60","entry":"00404a60","bodyBytes":11,"signature":"undefined FUN_00404a60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404a70","entry":"00404a70","bodyBytes":900,"signature":"undefined FUN_00404a70(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404e20","entry":"00404e20","bodyBytes":36,"signature":"undefined FUN_00404e20(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404e50","entry":"00404e50","bodyBytes":16,"signature":"undefined FUN_00404e50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404e60","entry":"00404e60","bodyBytes":208,"signature":"undefined FUN_00404e60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404f40","entry":"00404f40","bodyBytes":14,"signature":"undefined FUN_00404f40(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404f50","entry":"00404f50","bodyBytes":37,"signature":"undefined FUN_00404f50(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404f80","entry":"00404f80","bodyBytes":45,"signature":"undefined FUN_00404f80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00404fc0","entry":"00404fc0","bodyBytes":115,"signature":"undefined FUN_00404fc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405040","entry":"00405040","bodyBytes":43,"signature":"undefined FUN_00405040(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405070","entry":"00405070","bodyBytes":73,"signature":"undefined FUN_00405070(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_004050c0","entry":"004050c0","bodyBytes":58,"signature":"undefined FUN_004050c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405110","entry":"00405110","bodyBytes":50,"signature":"undefined FUN_00405110(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405160","entry":"00405160","bodyBytes":53,"signature":"undefined FUN_00405160(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_004051a0","entry":"004051a0","bodyBytes":78,"signature":"undefined FUN_004051a0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405200","entry":"00405200","bodyBytes":53,"signature":"undefined FUN_00405200(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405240","entry":"00405240","bodyBytes":102,"signature":"undefined FUN_00405240(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_004052b0","entry":"004052b0","bodyBytes":251,"signature":"undefined FUN_004052b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_004053c0","entry":"004053c0","bodyBytes":207,"signature":"undefined FUN_004053c0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_004054b0","entry":"004054b0","bodyBytes":161,"signature":"undefined FUN_004054b0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405560","entry":"00405560","bodyBytes":1556,"signature":"undefined FUN_00405560(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405bc0","entry":"00405bc0","bodyBytes":30,"signature":"undefined FUN_00405bc0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405be0","entry":"00405be0","bodyBytes":144,"signature":"undefined FUN_00405be0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405c80","entry":"00405c80","bodyBytes":240,"signature":"undefined FUN_00405c80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405d80","entry":"00405d80","bodyBytes":207,"signature":"undefined FUN_00405d80(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405e60","entry":"00405e60","bodyBytes":45,"signature":"undefined FUN_00405e60(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405ea0","entry":"00405ea0","bodyBytes":203,"signature":"undefined FUN_00405ea0(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00405f70","entry":"00405f70","bodyBytes":222,"signature":"undefined FUN_00405f70(void)","callingConvention":"unknown","external":false}
+{"name":"FUN_00406060","entry":"00406060","bodyBytes":305,"signature":"undefined FUN_00406060(void)","callingConvention":"unknown","external":false}
+{"name":"_DT_FINI","entry":"00406194","bodyBytes":9,"signature":"undefined _DT_FINI(void)","callingConvention":"unknown","external":false}
+{"name":"mkstemps","entry":"0040b000","bodyBytes":1,"signature":"int mkstemps(char * __template, int __suffixlen)","callingConvention":"unknown","external":false}
+{"name":"getenv","entry":"0040b008","bodyBytes":1,"signature":"char * getenv(char * __name)","callingConvention":"unknown","external":false}
+{"name":"free","entry":"0040b010","bodyBytes":1,"signature":"void free(void * __ptr)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn_file_actions_init","entry":"0040b018","bodyBytes":1,"signature":"int posix_spawn_file_actions_init(posix_spawn_file_actions_t * __file_actions)","callingConvention":"unknown","external":false}
+{"name":"__libc_start_main","entry":"0040b020","bodyBytes":1,"signature":"undefined __libc_start_main(void)","callingConvention":"unknown","external":false}
+{"name":"abort","entry":"0040b028","bodyBytes":1,"signature":"void abort(void)","callingConvention":"unknown","external":false}
+{"name":"__errno_location","entry":"0040b030","bodyBytes":1,"signature":"int * __errno_location(void)","callingConvention":"unknown","external":false}
+{"name":"unlink","entry":"0040b038","bodyBytes":1,"signature":"int unlink(char * __name)","callingConvention":"unknown","external":false}
+{"name":"strncpy","entry":"0040b040","bodyBytes":1,"signature":"char * strncpy(char * __dest, char * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"remove","entry":"0040b048","bodyBytes":1,"signature":"int remove(char * __filename)","callingConvention":"unknown","external":false}
+{"name":"strcpy","entry":"0040b050","bodyBytes":1,"signature":"char * strcpy(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"ferror","entry":"0040b058","bodyBytes":1,"signature":"int ferror(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fread","entry":"0040b060","bodyBytes":1,"signature":"size_t fread(void * __ptr, size_t __size, size_t __n, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"fcntl","entry":"0040b068","bodyBytes":1,"signature":"int fcntl(int __fd, int __cmd, ...)","callingConvention":"unknown","external":false}
+{"name":"posix_spawnattr_destroy","entry":"0040b070","bodyBytes":1,"signature":"int posix_spawnattr_destroy(posix_spawnattr_t * __attr)","callingConvention":"unknown","external":false}
+{"name":"fclose","entry":"0040b078","bodyBytes":1,"signature":"int fclose(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn_file_actions_destroy","entry":"0040b080","bodyBytes":1,"signature":"int posix_spawn_file_actions_destroy(posix_spawn_file_actions_t * __file_actions)","callingConvention":"unknown","external":false}
+{"name":"stpcpy","entry":"0040b088","bodyBytes":1,"signature":"char * stpcpy(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"strlen","entry":"0040b090","bodyBytes":1,"signature":"size_t strlen(char * __s)","callingConvention":"unknown","external":false}
+{"name":"__stack_chk_fail","entry":"0040b098","bodyBytes":1,"signature":"undefined __stack_chk_fail(void)","callingConvention":"unknown","external":false}
+{"name":"strchr","entry":"0040b0a0","bodyBytes":1,"signature":"char * strchr(char * __s, int __c)","callingConvention":"unknown","external":false}
+{"name":"fputs","entry":"0040b0a8","bodyBytes":1,"signature":"int fputs(char * __s, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"memset","entry":"0040b0b0","bodyBytes":1,"signature":"void * memset(void * __s, int __c, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"close","entry":"0040b0b8","bodyBytes":1,"signature":"int close(int __fd)","callingConvention":"unknown","external":false}
+{"name":"__realpath_chk","entry":"0040b0c0","bodyBytes":1,"signature":"undefined __realpath_chk(void)","callingConvention":"unknown","external":false}
+{"name":"pipe","entry":"0040b0c8","bodyBytes":1,"signature":"int pipe(int * __pipedes)","callingConvention":"unknown","external":false}
+{"name":"fputc","entry":"0040b0d0","bodyBytes":1,"signature":"int fputc(int __c, FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"sbrk","entry":"0040b0d8","bodyBytes":1,"signature":"void * sbrk(intptr_t __delta)","callingConvention":"unknown","external":false}
+{"name":"posix_spawnattr_init","entry":"0040b0e0","bodyBytes":1,"signature":"int posix_spawnattr_init(posix_spawnattr_t * __attr)","callingConvention":"unknown","external":false}
+{"name":"calloc","entry":"0040b0e8","bodyBytes":1,"signature":"void * calloc(size_t __nmemb, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"strcmp","entry":"0040b0f0","bodyBytes":1,"signature":"int strcmp(char * __s1, char * __s2)","callingConvention":"unknown","external":false}
+{"name":"ftell","entry":"0040b0f8","bodyBytes":1,"signature":"long ftell(FILE * __stream)","callingConvention":"unknown","external":false}
+{"name":"__gmon_start__","entry":"0040b100","bodyBytes":1,"signature":"undefined __gmon_start__(void)","callingConvention":"unknown","external":false}
+{"name":"stat","entry":"0040b108","bodyBytes":1,"signature":"int stat(char * __file, stat * __buf)","callingConvention":"unknown","external":false}
+{"name":"memcpy","entry":"0040b110","bodyBytes":1,"signature":"void * memcpy(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"kill","entry":"0040b118","bodyBytes":1,"signature":"int kill(__pid_t __pid, int __sig)","callingConvention":"unknown","external":false}
+{"name":"malloc","entry":"0040b120","bodyBytes":1,"signature":"void * malloc(size_t __size)","callingConvention":"unknown","external":false}
+{"name":"posix_spawnp","entry":"0040b128","bodyBytes":1,"signature":"int posix_spawnp(pid_t * __pid, char * __file, posix_spawn_file_actions_t * __file_actions, posix_spawnattr_t * __attrp, char * * __argv, char * * __envp)","callingConvention":"unknown","external":false}
+{"name":"fseek","entry":"0040b130","bodyBytes":1,"signature":"int fseek(FILE * __stream, long __off, int __whence)","callingConvention":"unknown","external":false}
+{"name":"strsignal","entry":"0040b138","bodyBytes":1,"signature":"char * strsignal(int __sig)","callingConvention":"unknown","external":false}
+{"name":"realloc","entry":"0040b140","bodyBytes":1,"signature":"void * realloc(void * __ptr, size_t __size)","callingConvention":"unknown","external":false}
+{"name":"fdopen","entry":"0040b148","bodyBytes":1,"signature":"FILE * fdopen(int __fd, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"wait4","entry":"0040b150","bodyBytes":1,"signature":"__pid_t wait4(__pid_t __pid, void * __stat_loc, int __options, rusage * __usage)","callingConvention":"unknown","external":false}
+{"name":"memmove","entry":"0040b158","bodyBytes":1,"signature":"void * memmove(void * __dest, void * __src, size_t __n)","callingConvention":"unknown","external":false}
+{"name":"waitpid","entry":"0040b160","bodyBytes":1,"signature":"__pid_t waitpid(__pid_t __pid, int * __stat_loc, int __options)","callingConvention":"unknown","external":false}
+{"name":"open","entry":"0040b168","bodyBytes":1,"signature":"int open(char * __file, int __oflag, ...)","callingConvention":"unknown","external":false}
+{"name":"access","entry":"0040b170","bodyBytes":1,"signature":"int access(char * __name, int __type)","callingConvention":"unknown","external":false}
+{"name":"fopen","entry":"0040b178","bodyBytes":1,"signature":"FILE * fopen(char * __filename, char * __modes)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn","entry":"0040b180","bodyBytes":1,"signature":"int posix_spawn(pid_t * __pid, char * __path, posix_spawn_file_actions_t * __file_actions, posix_spawnattr_t * __attrp, char * * __argv, char * * __envp)","callingConvention":"unknown","external":false}
+{"name":"strcat","entry":"0040b188","bodyBytes":1,"signature":"char * strcat(char * __dest, char * __src)","callingConvention":"unknown","external":false}
+{"name":"exit","entry":"0040b190","bodyBytes":1,"signature":"void exit(int __status)","callingConvention":"unknown","external":false}
+{"name":"posix_spawnattr_setflags","entry":"0040b198","bodyBytes":1,"signature":"int posix_spawnattr_setflags(posix_spawnattr_t * _attr, short __flags)","callingConvention":"unknown","external":false}
+{"name":"fwrite","entry":"0040b1a0","bodyBytes":1,"signature":"size_t fwrite(void * __ptr, size_t __size, size_t __n, FILE * __s)","callingConvention":"unknown","external":false}
+{"name":"__fprintf_chk","entry":"0040b1a8","bodyBytes":1,"signature":"undefined __fprintf_chk(void)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn_file_actions_addclose","entry":"0040b1b0","bodyBytes":1,"signature":"int posix_spawn_file_actions_addclose(posix_spawn_file_actions_t * __file_actions, int __fd)","callingConvention":"unknown","external":false}
+{"name":"posix_spawn_file_actions_adddup2","entry":"0040b1b8","bodyBytes":1,"signature":"int posix_spawn_file_actions_adddup2(posix_spawn_file_actions_t * __file_actions, int __fd, int __newfd)","callingConvention":"unknown","external":false}
+{"name":"strdup","entry":"0040b1c0","bodyBytes":1,"signature":"char * strdup(char * __s)","callingConvention":"unknown","external":false}
+{"name":"strerror","entry":"0040b1c8","bodyBytes":1,"signature":"char * strerror(int __errnum)","callingConvention":"unknown","external":false}

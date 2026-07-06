@@ -1,0 +1,114 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100719 string-utf8 __gmon_start__
+00100728 string-utf8 _ITM_deregisterTMCloneTable
+00100744 string-utf8 _ITM_registerTMCloneTable
+0010075e string-utf8 pm_getuint
+00100769 string-utf8 pm_optParseOptions3
+0010077d string-utf8 pnm_setminallocationdepth
+00100797 string-utf8 pm_close
+001007a0 string-utf8 pm_gettoken
+001007ac string-utf8 pm_openr
+001007b5 string-utf8 pnm_scaletuplerow
+001007c7 string-utf8 pnm_allocpamarray
+001007d9 string-utf8 pnm_writepamrow
+001007e9 string-utf8 pnm_writepaminit
+001007fa string-utf8 pm_strfree
+00100805 string-utf8 pm_error
+0010080e string-utf8 pnm_init
+00100817 string-utf8 pnm_readpaminit
+00100827 string-utf8 pm_freerow
+00100832 string-utf8 pnm_freepamarray
+00100843 string-utf8 pnm_makerowrgb
+00100852 string-utf8 pnm_readpamrow
+00100861 string-utf8 pnm_allocpamrow
+00100871 string-utf8 pm_message
+0010087c string-utf8 pm_freadline
+00100889 string-utf8 __stack_chk_fail
+0010089a string-utf8 strtod
+001008a1 string-utf8 stdout
+001008a8 string-utf8 realloc
+001008b0 string-utf8 malloc
+001008b7 string-utf8 __libc_start_main
+001008c9 string-utf8 __cxa_finalize
+001008d8 string-utf8 memset
+001008df string-utf8 memcpy
+001008e6 string-utf8 abort
+001008ec string-utf8 libnetpbm.so.11
+001008fc string-utf8 libc.so.6
+00100906 string-utf8 GLIBC_2.14
+00100911 string-utf8 GLIBC_2.34
+0010091c string-utf8 GLIBC_2.4
+00100926 string-utf8 GLIBC_2.2.5
+00106007 string ?Convolution matrix height is zero
+00106030 string The convolution matrix must have an odd number of rows.  Yours has %u
+00106078 string Convolution matrix width is zero
+001060a0 string The convolution matrix must have an odd number of columns.  Yours has %u
+001060f0 string Failed to allocate %u-row buffer
+00106118 string Could not allocate memory for %u planes of sums
+00106148 string Could not allocate memory for %u sums
+00106170 string Could not allocate memory for %u rows of sums
+001061a0 string Could not allocate memory for a row of sums
+001061d0 string You can't specify by -matrix and -matrixfile
+00106200 string Unable to parse -matrix value '%s'.  %s
+00106228 string Unable to parse -matrix value row '%s'.  %s
+00106258 string -matrix option value contains rows of different widths: %u and %u
+001062a0 string Failed parsing -matrix value.  %s
+001062c8 string Failed parsing a row in the -matrix value.  %s
+001062f8 string The Column %u element of the row '%s' in the -matrix value is a null string
+00106348 string The Column %u element of the row '%s' in the -matrix value is not a valid floating point number
+001063a8 string You specified an empty string as the value of -matrixfile.  You must specify at least one file name
+00106410 string -nooffset is meaningless and not allowed with -matrix or -matrixfile
+00106458 string Too many arguments.  When you specify -matrix or -matrixfile, the only allowable non-option argument is the input file name
+001064d8 string You must specify either -matrix or -matrixfile at least one argument which names an old-style PGM convolution matrix file.
+00106558 string Too many arguments.  Only acceptable arguments are: convolution matrix file name and input file name
+001065c0 string Failed to read row %u from the convolutionmatrix file.  %s
+00106600 string Unable to allocate memory for convolution matrix
+00106638 string Invalid format of line in convolution matrix file: '%s'.  %s
+00106678 string Column %u value in line '%s' of convolution matrix file is null string.
+001066c0 string Multiple row widths in the convolution matrix file: %u columns and %u columns.
+00106710 string Convolution matrix files show two different widths: %u and %u
+00106750 string Convolution matrix files show two different heights: %u and %u
+00106790 string Could not allocate memory for convolution matrix
+001067c8 string WARNING - this convolution matrix is biased.  red, green, and blue average weights: %f, %f, %f (unbiased would be 1).
+00106840 string Maybe you want the -nooffset option?
+00106868 string WARNING - this convolution matrix is biased.  average weight = %f (unbiased would be 1)
+001068c0 string Image is too short (%u rows) to convolve with this %u-row convolution kernel.
+00106910 string Image is too narrow (%u columns) to convolve with this %u-column convolution kernel.
+00106968 string Convolution is a simple mean horizontally and vertically
+001069a8 string Convolution is a simple mean horizontally
+001069d8 string Convolution is a simple mean vertically
+00106a00 string Could not allocation memory for a convolution matrix row
+00106a39 string matrix
+00106a40 string matrixfile
+00106a4b string nooffset
+00106a54 string normalize
+00106a65 string promoting to PPM
+00106b59 string zR
+00106b89 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/netpbm.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

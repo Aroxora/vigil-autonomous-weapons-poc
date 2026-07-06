@@ -1,0 +1,202 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100939 string-utf8 _ITM_deregisterTMCloneTable
+00100955 string-utf8 __gmon_start__
+00100964 string-utf8 _ITM_registerTMCloneTable
+0010097e string-utf8 pcap_geterr
+0010098a string-utf8 pcap_lookupnet
+00100999 string-utf8 pcap_next
+001009a3 string-utf8 pcap_setfilter
+001009b2 string-utf8 pcap_lookupdev
+001009c1 string-utf8 pcap_compile
+001009ce string-utf8 pcap_open_live
+001009dd string-utf8 optind
+001009e4 string-utf8 strcpy
+001009eb string-utf8 setsockopt
+001009f6 string-utf8 inet_addr
+00100a00 string-utf8 perror
+00100a07 string-utf8 strncpy
+00100a0f string-utf8 __stpcpy_chk
+00100a1c string-utf8 __stack_chk_fail
+00100a2d string-utf8 __printf_chk
+00100a3a string-utf8 free
+00100a3f string-utf8 exit
+00100a44 string-utf8 __assert_fail
+00100a52 string-utf8 strdup
+00100a59 string-utf8 putchar
+00100a61 string-utf8 memmove
+00100a69 string-utf8 gettimeofday
+00100a76 string-utf8 strtok
+00100a7d string-utf8 socket
+00100a84 string-utf8 strlen
+00100a8b string-utf8 gethostbyaddr
+00100a99 string-utf8 __ctype_b_loc
+00100aa7 string-utf8 __memcpy_chk
+00100ab4 string-utf8 gethostbyname
+00100ac2 string-utf8 __isoc23_strtol
+00100ad2 string-utf8 stdout
+00100ad9 string-utf8 optarg
+00100ae0 string-utf8 __sprintf_chk
+00100aee string-utf8 __fprintf_chk
+00100afc string-utf8 malloc
+00100b03 string-utf8 __libc_start_main
+00100b15 string-utf8 stderr
+00100b1c string-utf8 sendto
+00100b23 string-utf8 getopt
+00100b2a string-utf8 srandom
+00100b32 string-utf8 __cxa_finalize
+00100b41 string-utf8 strerror
+00100b4a string-utf8 calloc
+00100b51 string-utf8 memset
+00100b58 string-utf8 ioctl
+00100b5e string-utf8 close
+00100b64 string-utf8 fputc
+00100b6a string-utf8 __snprintf_chk
+00100b79 string-utf8 memcpy
+00100b80 string-utf8 fwrite
+00100b87 string-utf8 __errno_location
+00100b98 string-utf8 libpcap.so.0.8
+00100ba7 string-utf8 libc.so.6
+00100bb1 string-utf8 GLIBC_2.14
+00100bbc string-utf8 GLIBC_2.34
+00100bc7 string-utf8 GLIBC_2.38
+00100bd2 string-utf8 GLIBC_2.4
+00100bdc string-utf8 GLIBC_2.3
+00100be6 string-utf8 GLIBC_2.2.5
+00100bf2 string-utf8 GLIBC_2.3.4
+00109050 string base-1: normal IP forwarding
+0010906d string  -B%d: %s 
+00109078 string  -F%d: %s 
+00109083 string  -T%d: %s 
+0010908e string  -C%d: %s 
+00109099 string  -R%d: %s 
+001090a4 string  -I%d: %s 
+001090af string  -E%d: %s 
+001090ba string  -M%d: %s 
+001090c5 string B:F:T:C:R:I:E:M:i:g:G:pVh
+001090df string fragrouter: %s 
+001090ef string %s.%d > %s.%d:
+001090fe string  udp %d
+00109106 string %s > %s:
+0010910f string  icmp: type %d code %d
+00109126 string truncated-tcp %d
+00109137 string %s.%d > %s.%d: 
+00109147 string  [bad hdr length]
+00109159 string  %lu:%lu(%d)
+00109166 string  ack %lu
+0010916f string  win %d
+00109177 string  urg %d
+0010918f string wscale
+00109196 string sackOK
+0010919d string [len %d]
+001091a6 string malformed sack 
+001091b6 string [len %d] 
+001091c0 string sack %d 
+001091c9 string echoreply
+001091d3 string timestamp
+001091e0 string ccnew
+001091ed string opt-%d:
+001091fa string [bad opt]
+00109206 string truncated-ip %d
+00109216 string  ip-proto-%d %d
+00109226 string  (frag %d:%d@%d%s)
+00109239 string  (DF)
+0010923f string  [tos 0x%x]
+0010924b string  [ttl %d]
+00109255 string malloc
+0010925c string libnet_insert_ipo
+0010926e string libnet_write_ip
+0010927e string send_packet failed: 
+00109293 string %d.%d.%d.%d
+0010929f string socket: %s
+001092aa string src/insert_ipo.c
+001092bb string src/insert_tcpo.c
+001092cd string malloc: %s
+001092d8 string SIOCGIFHWADDR: %s
+001092ea string get_hwaddr: %s
+001092f9 string src/packet_mem.c
+0010930f string *arena
+00109316 string src/build_ip.c
+00109325 string src/build_tcp.c
+00109335 string src/build_udp.c
+00109345 string src/build_arp.c
+00109355 string src/build_ethernet.c
+0010936a string src/build_icmp.c
+0010937b string src/build_igmp.c
+0010938c string src/build_dns.c
+0010939c string src/build_rip.c
+001093b0 string frag-1: ordered 8-byte IP fragments
+001093d8 string frag-2: ordered 24-byte IP fragments
+00109400 string frag-3: ordered 8-byte IP fragments, one out of order
+00109438 string frag-4: ordered 8-byte IP fragments, one duplicate
+00109470 string frag-5: out of order 8-byte fragments, one duplicate
+001094a8 string frag-6: ordered 8-byte fragments, marked last frag first
+001094e8 string frag-7: ordered 16-byte fragments, fwd-overwriting
+00109520 string tcp-1:  3-whs, bad TCP checksum FIN/RST, ordered 1-byte segments
+00109568 string tcp-3:  3-whs, ordered 1-byte segments, one duplicate
+001095a0 string tcp-4:  3-whs, ordered 1-byte segments, one overwriting
+001095d8 string tcp-5:  3-whs, ordered 2-byte segments, fwd-overwriting
+00109610 string tcp-7:  3-whs, ordered 1-byte segments, interleaved null segments
+00109658 string tcp-8:  3-whs, ordered 1-byte segments, one out of order
+00109698 string tcp-9:  3-whs, out of order 1-byte segments
+001096c8 string tcbc-2: 3-whs, ordered 1-byte segments, interleaved SYNs
+00109708 string tcbc-3: ordered 1-byte null segments, 3-whs, ordered 1-byte segments
+00109750 string tcbt-1: 3-whs, RST, 3-whs, ordered 1-byte segments
+00109788 string ins-2:  3-whs, ordered 1-byte segments, bad TCP checksums
+001097c8 string ins-3:  3-whs, ordered 1-byte segments, no ACK set
+00109800 string misc-1: Windows NT 4 SP2 - http://www.dataprotect.com/ntfrag/
+00109840 string misc-2: Linux IP chains - http://www.dataprotect.com/ipchains/
+00109880 string Version 1.6 Usage: fragrouter [-i interface] [-p] [-g hop] [-G hopcount] ATTACK   where ATTACK is one of the following:  
+00109900 string fragrouter: sniff_init failed: %s 
+00109928 string fragrouter: send_init failed: %s 
+00109950 string fragrouter: attack_init failed: %s 
+00109978 string truncated-ip - %d bytes missing!
+001099a0 string ip and ether dst %x:%x:%x:%x:%x:%x and not dst %s and not ip broadcast
+001099e8 string seed_rand: cannot gettimeofday
+00109a08 string unknown physical layer type 0x%x
+00109a30 string attack unimpleme
+00109bb8 string insert_ipo
+00109bc8 string insert_tcpo
+00109be0 string destroy_packet_arena
+00109c00 string next_packet_from_arena
+00109c20 string init_packet_arena
+00109c38 string destroy_packet
+00109c48 string build_ip
+00109c58 string build_tcp
+00109c68 string build_udp
+00109c78 string build_arp
+00109c88 string build_ethernet
+00109ca0 string build_icmp_timestamp
+00109cc0 string build_icmp_timeexceed
+00109ce0 string build_icmp_unreach
+00109d00 string build_icmp_mask
+00109d10 string build_icmp_echo
+00109d20 string build_igmp
+00109d30 string build_dns
+00109d40 string build_rip
+0010a281 string zR
+0010a2b1 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debuglink

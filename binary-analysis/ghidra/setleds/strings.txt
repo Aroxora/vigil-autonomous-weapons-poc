@@ -1,0 +1,98 @@
+001003ac TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100641 string-utf8 program_invocation_short_name
+0010065f string-utf8 dcgettext
+00100669 string-utf8 __stack_chk_fail
+0010067a string-utf8 __printf_chk
+00100687 string-utf8 exit
+0010068c string-utf8 strlen
+00100693 string-utf8 __vfprintf_chk
+001006a2 string-utf8 bindtextdomain
+001006b1 string-utf8 __fprintf_chk
+001006bf string-utf8 __libc_start_main
+001006d1 string-utf8 stderr
+001006d8 string-utf8 __cxa_finalize
+001006e7 string-utf8 setlocale
+001006f1 string-utf8 strerror
+001006fa string-utf8 ioctl
+00100700 string-utf8 fputc
+00100706 string-utf8 strcmp
+0010070d string-utf8 __errno_location
+0010071e string-utf8 __progname
+00100729 string-utf8 libc.so.6
+00100733 string-utf8 GLIBC_2.4
+0010073d string-utf8 GLIBC_2.34
+00100748 string-utf8 GLIBC_2.3.4
+00100754 string-utf8 GLIBC_2.2.5
+00100760 string-utf8 _ITM_deregisterTMCloneTable
+0010077c string-utf8 __gmon_start__
+0010078b string-utf8 _ITM_registerTMCloneTable
+0010300c string ioctl KDSETLED
+0010302d string /usr/share/locale
+00103043 string -D, --default
+00103051 string -F, --flags
+0010305d string change the VT flags.
+00103072 string -L, --leds
+0010307d string change only the leds.
+00103093 string -V, --version
+001030a1 string print version number.
+001030b7 string -v, --verbose
+001030c5 string be more verbose.
+001030d6 string -h, --help
+001030e1 string print this usage message.
+001030fb string Unrecognized argument: %s
+00103115 string Unable to read keyboard flags
+00103133 string Error resetting ledmode
+0010314b string Current default flags:  
+00103164 string Current flags:          
+0010317d string Current leds:           
+00103196 string Old default flags:    
+001031ad string New default flags:    
+001031c4 string Old flags:            
+001031db string New flags:            
+001031f2 string ioctl KDSKBLED
+00103201 string Old leds:             
+00103218 string New leds:             
+0010322f string scroll
+00103244 string %s from %s 
+00103250 string kbd 2.9.0
+0010325a string Options:
+00103263 string   %-*s %s 
+0010326e string Report bugs to authors. 
+00103288 string NumLock %s   Compose %s   ScrollLock %s   CapsLock %s 
+001032c8 string NumLock %s   CapsLock %s   ScrollLock %s 
+001032f8 string Usage: %s [option...] [[+|-][ num | caps | scroll %s]] 
+00103330 string Thus, 	setleds +caps -num will set CapsLock, clear NumLock and leave ScrollLock unchanged. The settings before and after the change (if any) are reported when the -v option is given or when no change is requested. Normally, setleds influences the vt flag settings (and these are usually reflected in the leds). With -L, setleds only sets the leds, and leaves the flags alone. With -D, setleds sets both the flags and the default flags, so that a subsequent reset will not change the flags. 
+00103520 string change both the VT flags and their default settings.
+00103558 string Error reading current led setting. Maybe stdin is not a VT?: ioctl KDGETLED
+001036b9 string zR
+001036e9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/kbd.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .sframe
+.shstrtab::000000b3 string-utf8 .note.gnu.property
+.shstrtab::000000c6 string-utf8 .note.ABI-tag
+.shstrtab::000000d4 string-utf8 .init_array
+.shstrtab::000000e0 string-utf8 .fini_array
+.shstrtab::000000ec string-utf8 .data.rel.ro
+.shstrtab::000000f9 string-utf8 .dynamic
+.shstrtab::00000102 string-utf8 .got.plt
+.shstrtab::0000010b string-utf8 .data
+.shstrtab::00000111 string-utf8 .bss
+.shstrtab::00000116 string-utf8 .gnu_debugaltlink
+.shstrtab::00000128 string-utf8 .gnu_debuglink

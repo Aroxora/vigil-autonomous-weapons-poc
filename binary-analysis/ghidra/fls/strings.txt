@@ -1,0 +1,119 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100821 string-utf8 _ITM_deregisterTMCloneTable
+0010083d string-utf8 __gmon_start__
+0010084c string-utf8 _ITM_registerTMCloneTable
+00100866 string-utf8 tsk_error_print
+00100876 string-utf8 tsk_fs_fls
+00100881 string-utf8 tsk_verbose
+0010088d string-utf8 tsk_img_open
+0010089a string-utf8 tsk_pool_close
+001008a9 string-utf8 tsk_version_print
+001008bb string-utf8 tsk_fprintf
+001008c7 string-utf8 tsk_fs_type_toid
+001008d8 string-utf8 tsk_img_close
+001008e6 string-utf8 tsk_fs_open_img_decrypt
+001008fe string-utf8 tsk_pool_type_print
+00100912 string-utf8 tsk_fs_type_print
+00100924 string-utf8 tsk_img_type_toid
+00100936 string-utf8 tsk_pool_type_toid
+00100949 string-utf8 tsk_fs_parse_inum
+0010095b string-utf8 tsk_fs_close
+00100968 string-utf8 tsk_img_type_print
+0010097b string-utf8 tsk_pool_open_img_sing
+00100992 string-utf8 tsk_parse_offset
+001009a3 string-utf8 tsk_apfs_set_snapshot
+001009b9 string-utf8 tsk_error_get_errno
+001009cd string-utf8 optind
+001009d4 string-utf8 strncpy
+001009dc string-utf8 tzset
+001009e2 string-utf8 __stack_chk_fail
+001009f3 string-utf8 exit
+001009f8 string-utf8 strlen
+001009ff string-utf8 __isoc23_strtol
+00100a0f string-utf8 stdout
+00100a16 string-utf8 optarg
+00100a1d string-utf8 strcat
+00100a24 string-utf8 __fprintf_chk
+00100a32 string-utf8 malloc
+00100a39 string-utf8 __libc_start_main
+00100a4b string-utf8 stderr
+00100a52 string-utf8 getopt
+00100a59 string-utf8 __cxa_finalize
+00100a68 string-utf8 putenv
+00100a6f string-utf8 setlocale
+00100a79 string-utf8 __isoc23_strtoul
+00100a8a string-utf8 __snprintf_chk
+00100a99 string-utf8 strcmp
+00100aa0 string-utf8 libtsk.so.23
+00100aad string-utf8 libbfio.so.1
+00100aba string-utf8 libc.so.6
+00100ac4 string-utf8 GLIBC_2.34
+00100acf string-utf8 GLIBC_2.4
+00100ad9 string-utf8 GLIBC_2.3.4
+00100ae5 string-utf8 GLIBC_2.38
+00100af0 string-utf8 GLIBC_2.2.5
+00103008 string usage: %s [-adDFlhpruvV] [-f fstype] [-i imgtype] [-b dev_sector_size] [-m dir/] [-o imgoffset] [-z ZONE] [-s seconds] image [images] [inode] 
+001030a0 string 	If [inode] is not given, the root directory is used 
+001030d8 string 	-a: Display "." and ".." entries 
+00103100 string 	-d: Display deleted entries only 
+00103128 string 	-D: Display only directories 
+00103148 string 	-l: Display long version (like ls -l) 
+00103170 string 	-i imgtype: Format of image file (use '-i list' for supported types) 
+001031b8 string 	-b dev_sector_size: The size (in bytes) of the device sectors 
+001031f8 string 	-f fstype: File system type (use '-f list' for supported types) 
+00103240 string 	-m: Display output in mactime input format with 
+00103278 string 	      dir/ as the actual mount point of the image 
+001032b0 string 	-h: Include MD5 checksum hash in mactime output 
+001032e8 string 	-o imgoffset: Offset into image file (in sectors) 
+00103320 string 	-P pooltype: Pool container type (use '-P list' for supported types) 
+00103368 string 	-B pool_volume_block: Starting block (for pool volumes only) 
+001033a8 string 	-S snap_id: Snapshot ID (for APFS only) 
+001033d8 string 	-p: Display full path for each file 
+00103400 string 	-r: Recurse on directory entries 
+00103428 string 	-u: Display undeleted entries only 
+00103450 string 	-v: verbose output to stderr 
+00103470 string 	-z: Time zone of original machine (i.e. EST5EDT or GMT) (only useful with -l) 
+001034c0 string 	-s seconds: Time skew of original machine (in seconds) (only useful with -l & -m) 
+00103518 string 	-k password: Decryption password for encrypted volumes 
+00103558 string invalid argument: sector size must be positive: %s 
+00103590 string Unsupported file system type: %s 
+001035b8 string Unsupported pool container type: %s 
+001035e0 string ab:dDf:Fi:m:hlo:prs:uvVz:P:B:k:S:
+00103608 string Sector offset supplied is larger than disk image (maximum: %lu) 
+00103649 string 	-F: Display only files 
+00103662 string 	-V: Print version 
+00103676 string Invalid argument: %s 
+00103691 string Unsupported image type: %s 
+001036ad string TZ=%s
+001036b3 string error setting environment
+001036cd string Missing image name 
+001036e3 string Missing image name or inode 
+00103821 string zR
+00103851 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/sleuthkit.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

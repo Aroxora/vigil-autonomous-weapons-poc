@@ -1,0 +1,81 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001005c9 string-utf8 _ITM_deregisterTMCloneTable
+001005e5 string-utf8 __gmon_start__
+001005f4 string-utf8 _ITM_registerTMCloneTable
+0010060e string-utf8 mdb_open
+00100617 string-utf8 mdb_close
+00100621 string-utf8 mdb_read_catalog
+00100632 string-utf8 mdb_is_user_table
+00100644 string-utf8 mdb_free_tabledef
+00100656 string-utf8 mdb_read_columns
+00100667 string-utf8 mdb_read_table
+00100676 string-utf8 exit
+0010067b string-utf8 fopen
+00100681 string-utf8 strlen
+00100688 string-utf8 __fprintf_chk
+00100696 string-utf8 __libc_start_main
+001006a8 string-utf8 stderr
+001006af string-utf8 __ctype_tolower_loc
+001006c3 string-utf8 __cxa_finalize
+001006d2 string-utf8 fclose
+001006d9 string-utf8 fputc
+001006df string-utf8 fwrite
+001006e6 string-utf8 libmdb.so.3
+001006f2 string-utf8 libc.so.6
+001006fc string-utf8 GLIBC_2.34
+00100707 string-utf8 GLIBC_2.3
+00100711 string-utf8 GLIBC_2.2.5
+0010071d string-utf8 GLIBC_2.3.4
+00102008 string /******************************************************************/ 
+00102058 string /* THIS IS AN AUTOMATICALLY GENERATED FILE.  DO NOT EDIT IT!!!!!! */ 
+001020a0 string mdb-header is deprecated and will disappear in a future version of mdbtools. 
+001020f0 string Please drop us a line if you have any use of it. 
+00102128 string See https://github.com/mdbtools/mdbtools/issues/197 
+00102160 string 	fprintf (stdout, "**************** %s ****************\n"); 
+001021a0 string Error: Table %s does not exist in this database. 
+001021d8 string ERROR: unsupported type: 0x%02x 
+001021f9 string Usage: %s <file> 
+0010220d string dumptypes.h
+00102219 string dumptypes.c
+00102225 string #include "types.h" 
+00102239 string #include <stdio.h> 
+0010224d string #include "dumptypes.h" 
+00102265 string typedef struct _%s 
+00102279 string void dump_%s (%s x); 
+0010228f string void dump_%s (%s x) { 
+001022a6 string 	fprintf (stdout, "x.
+001022c4 string 	int	
+001022ca string 	dump_int (x.
+001022d8 string 	long	
+001022df string 	dump_long (x.
+001022ee string 	char *	
+001022f7 string 	dump_string (x.
+00102359 string zR
+00102389 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/mdbtools.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

@@ -1,0 +1,122 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001007b9 string-utf8 _ITM_deregisterTMCloneTable
+001007d5 string-utf8 __gmon_start__
+001007e4 string-utf8 _ITM_registerTMCloneTable
+001007fe string-utf8 pcap_lookupnet
+0010080d string-utf8 pcap_setfilter
+0010081c string-utf8 pcap_dispatch
+0010082a string-utf8 pcap_compile
+00100837 string-utf8 pcap_open_live
+00100846 string-utf8 __cxa_finalize
+00100855 string-utf8 ntohl
+0010085b string-utf8 ntohs
+00100861 string-utf8 read
+00100866 string-utf8 malloc
+0010086d string-utf8 write
+00100873 string-utf8 srandom
+0010087b string-utf8 sendto
+00100882 string-utf8 __libc_start_main
+00100894 string-utf8 socket
+0010089b string-utf8 inet_pton
+001008a5 string-utf8 signal
+001008ac string-utf8 getopt
+001008b3 string-utf8 strtod
+001008ba string-utf8 memset
+001008c1 string-utf8 optarg
+001008c8 string-utf8 puts
+001008cd string-utf8 strstr
+001008d4 string-utf8 close
+001008da string-utf8 open
+001008df string-utf8 strlen
+001008e6 string-utf8 __isoc23_strtoul
+001008f7 string-utf8 memcmp
+001008fe string-utf8 sprintf
+00100906 string-utf8 htonl
+0010090c string-utf8 htons
+00100912 string-utf8 ioctl
+00100918 string-utf8 memcpy
+0010091f string-utf8 __isoc23_sscanf
+0010092f string-utf8 putchar
+00100937 string-utf8 exit
+0010093c string-utf8 libpcap.so.0.8
+0010094b string-utf8 libc.so.6
+00100955 string-utf8 GLIBC_2.14
+00100960 string-utf8 GLIBC_2.34
+0010096b string-utf8 GLIBC_2.38
+00100976 string-utf8 GLIBC_2.2.5
+00103008 string  usage: %s -a <IP target a> -b <IP target b> [-s <randomseed>] [-e <bit error ratio in %%>] [-i <interface>] [-A <RTP port a> -B <RTP port b>] 
+00103098 string 	-a <IPv4 address A in dot-decimal notation> SIP phone A
+001030d8 string 	-b <IPv4 address B in dot-decimal notation> SIP phone B
+00103118 string 	-s <integer> randomseed (default: read from /dev/urandom)
+00103158 string 	-e <double> bit error ratio in %% (default: %lf) 
+00103190 string 	-i <interfacename> network interface (default: eth0)
+001031c8 string 	-t suppress RTCP packets (default: dont suppress)
+00103200 string 	-A <port number> of RTP port on IP a (requires -B)
+00103238 string 	-B <port number> of RTP port on IP b (requires -A)
+00103270 string 	   note: using -A and -B skips SIP sniffing, any RTP can be fuzzed
+001032b4 string %d%*[ ]RTP%*s
+001032c2 string RTP port=%d 
+001032cf string /proc/sys/net/ipv4/ip_forward
+001032ed string ERROR: couldn't access %s 
+00103308 string ERROR: couldn't read from %s 
+00103326 string ERROR: couldn't write to %s 
+00103343 string enabled kernel routing.
+0010335b string disabled kernel routing.
+00103374 string restored kernel routing.
+0010338d string dropping RTCP packet
+001033a8 string got a SIP packet, looking for SDP/RTP port numbers
+001033e0 string got local mac address %2.2x:%2.2x:%2.2x:%2.2x:%2.2x:%2.2x 
+00103420 string ERROR: couldn't mallog 6 bytes
+00103440 string got mac address for a %2.2x:%2.2x:%2.2x:%2.2x:%2.2x:%2.2x 
+00103480 string got mac address for b %2.2x:%2.2x:%2.2x:%2.2x:%2.2x:%2.2x 
+001034bb string the random seed was %u bye. 
+001034d8 string ohrwurm-0.1
+001034e4 string a:b:s:e:i:tA:B:
+001034f4 string ERROR: no target a specified
+00103511 string ERROR: no target b specified
+00103530 string ERROR: %s is no valid IP address 
+00103558 string ERROR: you need to supply both, -A and -B
+00103588 string ERROR: couldn't parse port number (%s) 
+001035b0 string ERROR: couldn't parse random seed (%s) 
+001035d8 string /dev/urandom
+001035e8 string ERROR: couldn't open /dev/urandom
+00103610 string ERROR: couldn't read from /dev/urandom
+00103637 string using random seed %u 
+00103650 string ERROR: couldn't parse bit error ratio (%s) 
+00103688 string ERROR: couldn't create rawsock
+001036a8 string ERROR: couldn't get interface index of %s 
+001036d8 string ERROR: couldn't open %s in promiscuous mode 
+00103705 string ERROR: pcap says: %s 
+00103720 string ERROR: couldn't lookup %s's IP and netmask 
+00103751 string (host %s or host %s) and ip
+00103770 string ERROR: couldn't compile this filter: "%s"
+001037a0 string ERROR: couldn't set this filter: "%s"
+001037c6 string ERROR: during capture
+00103959 string zR
+00103989 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .got.plt
+.shstrtab::000000f6 string-utf8 .data
+.shstrtab::000000fc string-utf8 .bss
+.shstrtab::00000101 string-utf8 .gnu_debuglink

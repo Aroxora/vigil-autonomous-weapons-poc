@@ -1,0 +1,1132 @@
+001003ac TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100e89 string-utf8 nl_langinfo
+00100e95 string-utf8 fgets
+00100e9b string-utf8 strcpy
+00100ea2 string-utf8 stdin
+00100ea8 string-utf8 sleep
+00100eae string-utf8 fopen64
+00100eb6 string-utf8 sysconf
+00100ebe string-utf8 __realpath_chk
+00100ecd string-utf8 symlink
+00100ed5 string-utf8 clock_gettime
+00100ee3 string-utf8 openat64
+00100eec string-utf8 __stack_chk_fail
+00100efd string-utf8 __printf_chk
+00100f0a string-utf8 free
+00100f0f string-utf8 fread
+00100f15 string-utf8 chdir
+00100f1b string-utf8 exit
+00100f20 string-utf8 pthread_mutexattr_settype
+00100f3a string-utf8 pthread_once
+00100f47 string-utf8 freopen64
+00100f51 string-utf8 readdir64
+00100f5b string-utf8 pthread_rwlock_rdlock
+00100f71 string-utf8 pthread_self
+00100f7e string-utf8 closedir
+00100f87 string-utf8 pthread_mutexattr_destroy
+00100fa1 string-utf8 strrchr
+00100fa9 string-utf8 putchar
+00100fb1 string-utf8 pthread_rwlock_trywrlock
+00100fca string-utf8 munmap
+00100fd1 string-utf8 ferror
+00100fd8 string-utf8 fflush
+00100fdf string-utf8 memmove
+00100fe7 string-utf8 mmap64
+00100fee string-utf8 fdatasync
+00100ff8 string-utf8 ftello64
+00101001 string-utf8 strlen
+00101008 string-utf8 pthread_cond_init
+0010101a string-utf8 getrusage
+00101024 string-utf8 __ctype_b_loc
+00101032 string-utf8 __memcpy_chk
+0010103f string-utf8 strstr
+00101046 string-utf8 strnlen
+0010104e string-utf8 pthread_mutex_destroy
+00101064 string-utf8 pthread_mutex_trylock
+0010107a string-utf8 __vfprintf_chk
+00101089 string-utf8 pthread_mutexattr_init
+001010a0 string-utf8 __isoc23_strtol
+001010b0 string-utf8 pthread_cond_timedwait
+001010c7 string-utf8 pthread_cond_signal
+001010db string-utf8 pthread_create
+001010ea string-utf8 readlink
+001010f3 string-utf8 stdout
+001010fa string-utf8 pthread_mutex_lock
+0010110d string-utf8 realloc
+00101115 string-utf8 __sprintf_chk
+00101123 string-utf8 getpwnam
+0010112c string-utf8 __memmove_chk
+0010113a string-utf8 strcasecmp
+00101145 string-utf8 __fprintf_chk
+00101153 string-utf8 lstat64
+0010115b string-utf8 malloc
+00101162 string-utf8 __libc_start_main
+00101174 string-utf8 pthread_rwlock_wrlock
+0010118a string-utf8 stderr
+00101191 string-utf8 fdopen
+00101198 string-utf8 pthread_cond_destroy
+001011ad string-utf8 strncasecmp
+001011b9 string-utf8 mprotect
+001011c2 string-utf8 __ctype_tolower_loc
+001011d6 string-utf8 fstat64
+001011de string-utf8 __cxa_finalize
+001011ed string-utf8 setlocale
+001011f7 string-utf8 strchr
+001011fe string-utf8 getenv
+00101205 string-utf8 pthread_mutex_init
+00101218 string-utf8 calloc
+0010121f string-utf8 stpcpy
+00101226 string-utf8 memcmp
+0010122d string-utf8 fclose
+00101234 string-utf8 memset
+0010123b string-utf8 __isoc23_strtoul
+0010124c string-utf8 fputc
+00101252 string-utf8 fputs
+00101258 string-utf8 pthread_mutex_unlock
+0010126d string-utf8 opendir
+00101275 string-utf8 __snprintf_chk
+00101284 string-utf8 access
+0010128b string-utf8 ldiv
+00101290 string-utf8 memcpy
+00101297 string-utf8 fileno
+0010129e string-utf8 getcwd
+001012a5 string-utf8 fwrite
+001012ac string-utf8 fseeko64
+001012b5 string-utf8 pthread_rwlock_tryrdlock
+001012ce string-utf8 strcmp
+001012d5 string-utf8 qsort
+001012db string-utf8 __errno_location
+001012ec string-utf8 abort
+001012f2 string-utf8 endpwent
+001012fb string-utf8 strerror_r
+00101306 string-utf8 pthread_cond_wait
+00101318 string-utf8 strncmp
+00101320 string-utf8 __tls_get_addr
+0010132f string-utf8 libc.so.6
+00101339 string-utf8 ld-linux-x86-64.so.2
+0010134e string-utf8 GLIBC_2.3
+00101358 string-utf8 GLIBC_2.14
+00101363 string-utf8 GLIBC_2.4
+0010136d string-utf8 GLIBC_2.33
+00101378 string-utf8 GLIBC_2.3.2
+00101384 string-utf8 GLIBC_2.17
+0010138f string-utf8 GLIBC_2.34
+0010139a string-utf8 GLIBC_2.3.4
+001013a6 string-utf8 GLIBC_2.38
+001013b1 string-utf8 GLIBC_2.2.5
+001013bd string-utf8 _ITM_deregisterTMCloneTable
+001013d9 string-utf8 __gmon_start__
+001013e8 string-utf8 _ITM_registerTMCloneTable
+00192008 string Create SQL commands for loading system timezeone data for MariaDB  
+00192050 string  %s [options] timezonefile timezonename 
+00192080 string  A typical place for the system timezone directory is "%s" 
+001920c0 string %s from %s, client %s for %s (%s) 
+001920e8 string INSERT INTO time_zone (Use_leap_seconds) VALUES ('%s'); 
+00192128 string SET @time_zone_id= LAST_INSERT_ID();
+00192150 string INSERT INTO time_zone_name (Name, Time_zone_id) VALUES ('%s', @time_zone_id); 
+001921a0 string INSERT INTO time_zone_transition (Time_zone_id, Transition_time, Transition_type_id) VALUES
+00192200 string INSERT INTO time_zone_transition_type (Time_zone_id, Transition_type_id, `Offset`, Is_DST, Abbreviation) VALUES
+00192270 string %s(@time_zone_id, %u, %ld, %d, '%s') 
+00192298 string execute immediate if(@wsrep_cannot_replicate_tz, 'select ENGINE into @time_zone_leap_second_engine from information_schema.TABLES where TABLE_SCHEMA=DATABASE() and TABLE_NAME=''time_zone_leap_second''', 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, 'ALTER TABLE time_zone_leap_second ENGINE=InnoDB', 'do 0');
+001923e0 string TRUNCATE TABLE time_zone_leap_second;
+00192408 string INSERT INTO time_zone_leap_second (Transition_time, Correction) VALUES
+00192450 string execute immediate if(@wsrep_cannot_replicate_tz, concat('ALTER TABLE time_zone_leap_second ENGINE=', @time_zone_leap_second_engine), 'do 0');
+001924e0 string ALTER TABLE time_zone_leap_second ORDER BY Transition_time;
+00192520 string Warning: '%s' is not regular file or directory 
+00192550 string Warning: Unable to load '%s' as time zone. Skipping it. 
+00192590 string Warning: Skipping directory '%s': to avoid infinite symlink recursion. 
+001925d8 string SET @old_alter_alg=@@SESSION.alter_algorithm; SET session alter_algorithm='COPY'; TRUNCATE TABLE time_zone; TRUNCATE TABLE time_zone_name; TRUNCATE TABLE time_zone_transition; TRUNCATE TABLE time_zone_transition_type; 
+001926b8 string select coalesce(sum(SESSION_VALUE='ON'), 0) from information_schema.SYSTEM_VARIABLES WHERE VARIABLE_NAME='wsrep_on'
+00192730 string SET STATEMENT SQL_MODE='' FOR SELECT concat('%%', GROUP_CONCAT(OPTION ORDER BY OPTION DESC), '%%') INTO @replicate_opt  FROM   (SELECT DISTINCT concat('REPLICATE_', UPPER(ENGINE)) AS OPTION    FROM information_schema.TABLES    WHERE TABLE_SCHEMA=DATABASE()      AND TABLE_NAME IN ('time_zone',                         'time_zone_name',                         'time_zone_transition',                         'time_zone_transition_type',                         'time_zone_leap_second')      AND ENGINE in ('MyISAM',                     'Aria')) AS o; 
+00192958 string select coalesce(sum(GLOBAL_VALUE NOT LIKE @replicate_opt), 0) from information_schema.SYSTEM_VARIABLES WHERE VARIABLE_NAME='wsrep_mode'
+001929e0 string set @wsrep_cannot_replicate_tz=@wsrep_is_on AND (%s); 
+00192a18 string LOCK TABLES time_zone WRITE,   time_zone_leap_second WRITE,   time_zone_name WRITE,   time_zone_transition WRITE,   time_zone_transition_type WRITE
+00192ab0 string execute immediate if(@wsrep_is_on, 'SET @save_wsrep_on=@@WSREP_ON, WSREP_ON=OFF', 'do 0'); SET @save_sql_log_bin=@@SQL_LOG_BIN; SET SESSION SQL_LOG_BIN=0; SET @wsrep_cannot_replicate_tz=0; %s%s; 
+00192b78 string execute immediate if(@wsrep_cannot_replicate_tz, 'select ENGINE into @time_zone_engine from information_schema.TABLES where TABLE_SCHEMA=DATABASE() and TABLE_NAME=''time_zone''', 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, 'ALTER TABLE time_zone ENGINE=InnoDB', 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, 'select ENGINE into @time_zone_name_engine from information_schema.TABLES where TABLE_SCHEMA=DATABASE() and TABLE_NAME=''time_zone_name''', 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, 'ALTER TABLE time_zone_name ENGINE=InnoDB', 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, 'select ENGINE into @time_zone_transition_engine from information_schema.TABLES where TABLE_SCHEMA=DATABASE() and TABLE_NAME=''time_zone_transition''', 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, 'ALTER TABLE time_zone_transition ENGINE=InnoDB', 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, 'select ENGINE into @time_zone_transition_type_engine from information_schema.TABLES where TABLE_SCHEMA=DATABASE() and TABLE_NAME=''time_zone_transition_type''', 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, 'ALTER TABLE time_zone_transition_type ENGINE=InnoDB', 'do 0'); %s/*M!100602 execute immediate if(@wsrep_cannot_replicate_tz, 'start transaction', '%s')*/; 
+001930b0 string There were fatal errors during processing of zoneinfo directory '%s' 
+001930f8 string execute immediate if(@wsrep_cannot_replicate_tz, 'do 0','ALTER TABLE time_zone_transition ORDER BY Time_zone_id, Transition_time'); execute immediate if(@wsrep_cannot_replicate_tz, 'do 0','ALTER TABLE time_zone_transition_type ORDER BY Time_zone_id, Transition_type_id');
+00193208 string Problems with zoneinfo file '%s' 
+00193230 string SET SESSION SQL_LOG_BIN=@save_sql_log_bin; execute immediate if(@wsrep_is_on, 'SET SESSION WSREP_ON=@save_wsrep_on', 'do 0');
+001932b0 string execute immediate if(@wsrep_cannot_replicate_tz, concat('ALTER TABLE time_zone ENGINE=', @time_zone_engine), 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, concat('ALTER TABLE time_zone_name ENGINE=', @time_zone_name_engine), 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, concat('ALTER TABLE time_zone_transition ENGINE=', @time_zone_transition_engine, ', ORDER BY Time_zone_id, Transition_time'), 'do 0'); execute immediate if(@wsrep_cannot_replicate_tz, concat('ALTER TABLE time_zone_transition_type ENGINE=', @time_zone_transition_type_engine, ', ORDER BY Time_zone_id, Transition_type_id'), 'do 0');
+00193528 string SET session alter_algorithm=@old_alter_alg;
+00193558 string This is a non-debug version. Catch this and exit.
+00193590 string Print the leap second information from the given time zone file. By convention, when --leap is used the next argument is the timezonefile.
+00193620 string Output version information and exit.
+00193648 string Do not replicate changes to time zone tables to the binary log, or to other nodes in a Galera cluster.
+001936b0 string Warning: World-writable config file '%s' is ignored 
+001936e8 string Warning: skipping '%s' directive as maximum includerecursion level was reached in file %s at line %d 
+00193750 string error: Wrong '!%s' directive in config file: %s at line %d 
+00193790 string error: Wrong group definition in config file: %s at line %d 
+001937d0 string error: Found option without preceding group in config file: %s at line: %d 
+00193820 string Could not open required defaults file: %s 
+00193850 string Fatal error in defaults handling. Program aborted 
+00193888 string %s would have been started with the following arguments: 
+001938c8 string  Default options are read from the following files in the given order:
+00193910 string Internal error initializing default directories list
+00193948 string The following groups are read:
+00193968 string  The following options may be given as the first argument: --print-defaults          Print the program argument list and exit. --no-defaults             Don't read default options from any option file. The following specify which files/extra groups are read (specified before remaining options): --defaults-file=#         Only read default options from the given file #. --defaults-extra-file=#   Read this file after the global files are read. --defaults-group-suffix=# Additionally read default groups with # appended as a suffix.
+00193b80 string option '%s': boolean value '%s' wasn't recognized. Set to OFF.
+00193bc0 string Using unique option prefix '%.*s' is error-prone and can break in the future. Please use the full name '%s' instead.
+00193c38 string %s is deprecated and will be removed in a future release
+00193c78 string %s is deprecated and will be removed in a future release. Please use %s instead.
+00193cd0 string option '%s': signed value %s adjusted to %s
+00193d00 string Integer value out of range for int64: '%s' for %s
+00193d38 string Unknown suffix '%c' used for variable '%s' (value '%s'). Legal suffix characters are: K, M, G, T, P, E
+00193da0 string option '%s': unsigned value %s adjusted to %s
+00193dd0 string Incorrect unsigned value: '%s' for %s
+00193df8 string Integer value out of range for uint64: '%s' for %s
+00193e30 string option '%s': value %g adjusted to %g
+00193e58 string %s: Maximum value of '%s' cannot be set
+00193e80 string Invalid decimal value for option '%s' 
+00193ea8 string %s: Error while setting value '%s' to '%s'
+00193ed8 string %s: ambiguous option '--%s-%s' (--%s-%s)
+00193f08 string %s: variable prefix '%s' is not unique
+00193f30 string %s: ambiguous option '--%s' (%s, %s)
+00193f58 string %s: %s: Option '%s' used, but is disabled 
+00193f88 string %s: option '--%s' cannot take an argument
+00193fb8 string %s: ignoring option '--%s' due to invalid value '%s'
+00193ff0 string %s: automatically set option '--%s' cannot take an argument
+00194030 string %s: automatic setup request is unsupported by option '--%s'
+00194070 string %s: option '--%s' requires an argument
+00194098 string %s: ERROR: Option '-%c' used, but is disabled 
+001940c8 string %s: option '-%c' requires an argument
+001940f0 string  (Automatically configured unless set explicitly)
+00194128 string , or ALL to set all combinations
+00194150 string . Deprecated, will be removed in a future release.
+00194188 string . Takes a comma-separated list of option=value pairs, where value is on, off, or default, and options are: 
+001941f8 string . No currently supported values.
+00194220 string %*s(Defaults to on; use --skip-
+00194240 string  Variables (--variable-name=value)
+00194268 string Value (after reading options) 
+00194288 string and boolean options {FALSE|TRUE}
+001942b0 string  User time %.2f, System time %.2f Maximum resident set size %ld, Integral resident set size %ld Non-physical pagefaults %ld, Physical pagefaults %ld, Swaps %ld Blocks in %ld out %ld, Messages in %ld out %ld, Signals %ld Voluntary context switches %ld, Involuntary context switches %ld 
+001943d0 string Error in my_thread_global_end(): %d threads didn't exit 
+00194410 string Retry in %d secs. Message reprinted in %d secs
+00194440 string Can't create/write to file '%s' (Errcode: %iE)
+00194470 string Error reading file '%s' (Errcode: %iE)
+00194498 string Error writing file '%s' (Errcode: %iE)
+001944c0 string Error on close of '%s' (Errcode: %iE)
+001944e8 string Out of memory (Needed %u bytes)
+00194508 string Error on delete of '%s' (Errcode: %iE)
+00194530 string Error on rename of '%s' to '%s' (Errcode: %iE)
+00194560 string Unexpected end-of-file found when reading file '%s' (Errcode: %iE)
+001945a8 string Can't lock file (Errcode: %iE)
+001945c8 string Can't unlock file (Errcode: %iE)
+001945f0 string Can't read dir of '%s' (Errcode: %iE)
+00194618 string Can't get stat of '%s' (Errcode: %iE)
+00194640 string Can't change size of file (Errcode: %iE)
+00194670 string Can't open stream from handle (Errcode: %iE)
+001946a0 string Can't get working directory (Errcode: %iE)
+001946d0 string Can't change dir to '%s' (Errcode: %iE)
+001946f8 string Warning: %d files and %d streams is left open 
+00194728 string Disk is full writing '%s' (Errcode: %iE). Waiting for someone to free space... (Expect up to %d secs delay for server to continue after freeing disk space)
+001947c8 string Can't create directory '%s' (Errcode: %iE)
+001947f8 string Character set '%s' is not a compiled character set and is not specified in the '%s' file
+00194858 string Out of resources when opening file '%s' (Errcode: %iE)
+00194890 string Can't read value for symlink '%s' (Errcode: %iE)
+001948c8 string Can't create symlink '%s' pointing at '%s' (Errcode: %iE)
+00194908 string Error on realpath() on '%s' (Errcode: %iE)
+00194938 string Can't sync file '%s' to disk (Errcode: %iE)
+00194968 string Collation '%s' is not a compiled collation and is not specified in the '%s' file
+001949c0 string File '%s' not found (Errcode: %iE)
+001949e8 string File '%s' (fileno: %d) was not closed
+00194a10 string Can't change ownership of the file '%s' (Errcode: %iE)
+00194a48 string Can't change permissions of the file '%s' (Errcode: %iE)
+00194a88 string Can't seek in file '%s' (Errcode: %iE)
+00194ab0 string Can't change mode for file '%s' to 0x%lx (Errcode: %iE)
+00194ae8 string Warning: Can't copy ownership for file '%s' (Errcode: %iE)
+00194b28 string Failed to release memory pointer %p, %zu bytes (Errcode: %iE)
+00194b68 string Lock Pages in memory access rights required
+00194b98 string Warning: Charset id '%d' csname '%s' trying to replace existing csname '%s'
+00194be8 string Deprecated program name. It will be removed in a future release, use '%s' instead
+00194c40 string Local temporary space limit reached
+00194c68 string Global temporary space limit reached
+00194d98 string %s: no level #%d data for this Unicode version.
+00194dc8 string Shift character out of range: u%04X
+00194df0 string Reset character out of range: u%04X
+00194e18 string Can't reset before a primary ignorable character U+%04lX
+00194e58 string Can't initialize %d contractions
+00194e80 string charsets/charset/collation/name
+00194ea0 string charsets/charset/collation/order
+00194ec8 string charsets/charset/collation/flag
+00194ee8 string charsets/charset/collation/map
+00194f08 string charsets/charset/collation/version
+00194f30 string charsets/charset/collation/suppress_contractions
+00194f68 string charsets/charset/collation/optimize
+00194f90 string charsets/charset/collation/shift-after-method
+00194fc0 string charsets/charset/collation/rules/import
+00194fe8 string charsets/charset/collation/rules/import/source
+00195018 string charsets/charset/collation/settings
+00195040 string charsets/charset/collation/settings/strength
+00195070 string charsets/charset/collation/settings/alternate
+001950a0 string charsets/charset/collation/settings/backwards
+001950d0 string charsets/charset/collation/settings/normalization
+00195108 string charsets/charset/collation/settings/caseLevel
+00195138 string charsets/charset/collation/settings/caseFirst
+00195168 string charsets/charset/collation/settings/hiraganaQuaternary
+001951a0 string charsets/charset/collation/settings/numeric
+001951d0 string charsets/charset/collation/settings/variableTop
+00195200 string charsets/charset/collation/settings/match-boundaries
+00195238 string charsets/charset/collation/settings/match-style
+00195268 string charsets/charset/collation/rules
+00195290 string charsets/charset/collation/rules/reset
+001952b8 string charsets/charset/collation/rules/p
+001952e0 string charsets/charset/collation/rules/s
+00195308 string charsets/charset/collation/rules/t
+00195330 string charsets/charset/collation/rules/q
+00195358 string charsets/charset/collation/rules/i
+00195380 string charsets/charset/collation/rules/x
+001953a8 string charsets/charset/collation/rules/x/extend
+001953d8 string charsets/charset/collation/rules/x/p
+00195400 string charsets/charset/collation/rules/x/s
+00195428 string charsets/charset/collation/rules/x/t
+00195450 string charsets/charset/collation/rules/x/q
+00195478 string charsets/charset/collation/rules/x/i
+001954a0 string charsets/charset/collation/rules/x/context
+001954d0 string charsets/charset/collation/rules/pc
+001954f8 string charsets/charset/collation/rules/sc
+00195520 string charsets/charset/collation/rules/tc
+00195548 string charsets/charset/collation/rules/qc
+00195570 string charsets/charset/collation/rules/ic
+00195598 string charsets/charset/collation/rules/reset/before
+001955c8 string charsets/charset/collation/rules/reset/first_non_ignorable
+00195608 string charsets/charset/collation/rules/reset/last_non_ignorable
+00195648 string charsets/charset/collation/rules/reset/first_primary_ignorable
+00195688 string charsets/charset/collation/rules/reset/last_primary_ignorable
+001956c8 string charsets/charset/collation/rules/reset/first_secondary_ignorable
+00195710 string charsets/charset/collation/rules/reset/last_secondary_ignorable
+00195750 string charsets/charset/collation/rules/reset/first_tertiary_ignorable
+00195790 string charsets/charset/collation/rules/reset/last_tertiary_ignorable
+001957d0 string charsets/charset/collation/rules/reset/first_trailing
+00195808 string charsets/charset/collation/rules/reset/last_trailing
+00195840 string charsets/charset/collation/rules/reset/first_variable
+00195878 string charsets/charset/collation/rules/reset/last_variable
+001958b0 string Internal error/check (Not system error)
+001958d8 string Internal error < 0 (Not system error)
+00195900 string Didn't find the key on read or update
+00195928 string Duplicate key on write or update
+00195950 string Internal (unspecified) error in handler
+00195978 string Someone has changed the row since it was read (even though the table was locked to prevent it)
+001959d8 string Wrong index given to a function
+001959f8 string Command not supported by the engine
+00195a20 string Record was already deleted (or record file crashed)
+00195a58 string No more records (read after end of file)
+00195a88 string Unsupported extension used for table
+00195ab0 string Duplicate unique key on write or update
+00195ad8 string Unknown character set used in table
+00195b00 string Conflicting table definitions in sub-tables of MERGE table
+00195b40 string Table is crashed and last repair failed
+00195b68 string Table was marked as crashed and should be repaired
+00195ba0 string Lock timed out; Retry transaction
+00195bc8 string Lock table is full;  Restart program with a larger lock table
+00195c08 string Updates are not allowed under a read only transactions
+00195c40 string Lock deadlock; Retry transaction
+00195c68 string Foreign key constraint is incorrectly formed
+00195c98 string The table does not exist in the storage engine
+00195cc8 string The table already existed in the storage engine
+00195cf8 string Could not connect to the storage engine
+00195d20 string Unexpected null pointer found when using spatial index
+00195d58 string The table changed in the storage engine
+00195d80 string There's no partition in the table for the given value
+00195db8 string Row-based binary logging of row failed
+00195de0 string Index needed in foreign key constraint
+00195e08 string Upholding foreign key constraints would lead to a duplicate key error in some other table
+00195e68 string Table needs to be upgraded before it can be used
+00195ea0 string Failed to get next auto increment value
+00195ec8 string Failed to set row auto increment value
+00195ef0 string Unknown (generic) error from engine
+00195f18 string Record was not updated. New values were the same as original values
+00195f60 string It is not possible to log this statement
+00195f90 string The event was corrupt, leading to illegal data being read
+00195fd0 string The table is of a new format not supported by this version
+00196010 string The event could not be processed. No other handler error happened
+00196058 string Fatal error during initialization of handler
+00196088 string File too short; Expected more data in file
+001960b8 string Too many active concurrent transactions
+001960e0 string Record not matching the given partition set
+00196110 string Index column length exceeds limit
+00196138 string Table is being used in foreign key check
+00196168 string Row is not visible by the current transaction
+00196198 string Operation was interrupted by end user (probably kill command?)
+001961d8 string Incompatible key or row definition between the MariaDB .frm file and the information in the storage engine. You can try REPAIR TABLE ... USE_FRM possibly followed by ALTER TABLE ... FORCE or dump and restore the table to fix this
+001962c0 string Too many words in a FTS phrase or proximity search
+001962f8 string Table encrypted but decryption failed. This could be because correct encryption management plugin is not loaded, used encryption key is not available or encryption method does not match.
+001963b8 string Foreign key cascade delete/update exceeds max depth
+001963f0 string Tablespace is missing for a table
+00196418 string Sequence values are conflicting
+00196438 string Cannot initialize encryption. Check that all encryption parameters have been set
+00196490 string '</%s>' unexpected ('</%s>' wanted)
+001964b8 string '</%s>' unexpected (END-OF-INPUT wanted)
+001964e8 string %s unexpected (ident or '/' wanted)
+00196510 string %s unexpected (ident or string wanted)
+00196537 string Usage: 
+0019653f string  %s [options] timezonedir 
+0019655e string /usr/share/zoneinfo/
+00196576 string ./sql/tztime.cc
+00196586 string debian-linux-gnu
+0019659b string 11.8.6-MariaDB
+001965aa string x86_64
+001965b3 string %s(@time_zone_id, %lld, %u) 
+001965d0 string %s(%lld, %ld) 
+001965df string Factory
+001965e7 string leapseconds
+001965f3 string set @wsrep_is_on=(%s); 
+0019660b string ROLLBACK;
+00196615 string UNLOCK TABLES; COMMIT;
+00196631 string Display this help and exit.
+0019664d string debug
+00196658 string verbose
+00196660 string Write non critical warnings.
+0019667d string skip-write-binlog
+0019668f string mysql_tzinfo_to_sql
+001966a3 string /etc/
+001966a9 string /etc/mysql/
+001966b5 string MARIADB_HOME
+001966c2 string MYSQL_HOME
+001966d0 string ./mysys/my_default.c
+001966e5 string --no-defaults
+001966f3 string --defaults-file=
+00196704 string --defaults-extra-file=
+0019671b string --defaults-group-suffix=
+00196734 string --print-defaults
+00196745 string MARIADB_GROUP_SUFFIX
+0019675a string MYSQL_GROUP_SUFFIX
+00196772 string ----file-marker----
+00196786 string Unknown error %d
+00196797 string Warning: 
+001967a1 string Info: 
+001967ad string false
+001967c0 string WARNING
+001967c8 string ERROR
+001967ce string %s: unknown variable '%s'
+001967e8 string %s: unknown option '--%s'
+00196802 string %s: unknown option '-%c'
+00196821 string . Any combination of: 
+00196838 string  Please use 
+00196845 string  instead.
+0019684f string . One of: 
+0019685a string   -%c%s
+00196862 string %s=name%s 
+00196875 string  to disable.)
+00196883 string (No default value)
+0019689b string FALSE
+001968a1 string %-*s%s
+001968ac string %s%s=
+001968c4 string %.10g 
+001968cb string (Disabled)
+001968db string disable
+001968e3 string enable
+001968ea string maximum
+001968f2 string loose
+001968f8 string autoset
+00196900 string UMASK
+00196906 string UMASK_DIR
+00196910 string unknown
+00196918 string /proc/self/exe
+00196927 string mysys
+0019692d string statement_timer
+0019693d string SAFE_HASH::mutex
+0019694e string COND_timer
+00196959 string IO_CACHE_SHARE::cond
+0019696e string IO_CACHE_SHARE::cond_writer
+0019698a string my_thread_var::suspend
+001969a1 string THR_COND_threads
+001969b2 string WT_RESOURCE::cond
+001969c4 string BITMAP::mutex
+001969d2 string IO_CACHE::append_buffer_lock
+001969ef string IO_CACHE::SHARE_mutex
+00196a05 string KEY_CACHE::cache_lock
+00196a1b string LOCK_timer
+00196a26 string my_thread_var::mutex
+00196a3b string THR_LOCK_charset
+00196a4c string THR_LOCK_heap
+00196a5a string THR_LOCK_lock
+00196a68 string THR_LOCK_malloc
+00196a78 string THR_LOCK::mutex
+00196a88 string THR_LOCK_myisam
+00196a98 string THR_LOCK_net
+00196aa5 string THR_LOCK_open
+00196ab3 string THR_LOCK_threads
+00196ac4 string TMPDIR_mutex
+00196ad1 string THR_LOCK_myisam_mmap
+00196ae6 string LOCK_uuid_generator
+00196afa string Waiting for table level lock
+00196b1b string SOCKET
+00196b27 string 01230120022455012623010202
+00196b45 string no_name
+00196b4d string ./mysys/my_thr_init.c
+00196b63 string No option given to %s 
+00196b7a string Unknown option to %s: %s 
+00196b94 string Alternatives are: '%s'
+00196bab string ,'%s'
+00196bb3 string default
+00196bbb string ./mysys/charset.c
+00196bcd string Error while parsing '%s': %s
+00196bea string /usr/share/mariadb
+00196bfd string charsets/
+00196c16 string utf8mb3
+00196c1e string utf8mb4
+00196c26 string utf16
+00196c2c string utf32
+00196c32 string utf8_
+00196c38 string utf8mb%c_%s
+00196c49 string [import 
+00196c56 string latin1
+00196c5d string ANSI_X3.4-1968
+00196c6c string ansi1251
+00196c75 string cp1251
+00196c7c string armscii8
+00196c85 string armscii-8
+00196c99 string cp1255
+00196ca0 string hebrew
+00196ca7 string CP866
+00196cad string cp866
+00196cb3 string eucCN
+00196cb9 string gb2312
+00196cc7 string eucJP
+00196cd2 string euc-JP
+00196cd9 string eucKR
+00196cdf string euckr
+00196ce5 string euc-KR
+00196cf0 string georgianps
+00196cfb string geostd8
+00196d03 string georgian-ps
+00196d0f string IBM-1252
+00196d18 string cp1252
+00196d1f string iso88591
+00196d28 string ISO_8859-1
+00196d33 string ISO8859-1
+00196d48 string iso885913
+00196d52 string latin7
+00196d59 string ISO_8859-13
+00196d65 string ISO8859-13
+00196d70 string ISO-8859-13
+00196d7c string iso88592
+00196d85 string latin2
+00196d8c string ISO_8859-2
+00196d97 string ISO8859-2
+00196da1 string ISO-8859-2
+00196dac string iso88597
+00196db5 string greek
+00196dbb string ISO_8859-7
+00196dc6 string ISO8859-7
+00196dd0 string ISO-8859-7
+00196ddb string iso88598
+00196de4 string ISO_8859-8
+00196def string ISO8859-8
+00196df9 string ISO-8859-8
+00196e04 string iso88599
+00196e0d string latin5
+00196e14 string ISO_8859-9
+00196e1f string ISO8859-9
+00196e29 string ISO-8859-9
+00196e34 string koi8r
+00196e3a string KOI8-R
+00196e41 string koi8u
+00196e47 string KOI8-U
+00196e4e string roman8
+00196e59 string Shift_JIS
+00196e6d string shiftjisx0213
+00196e7b string tis620
+00196e82 string tis-620
+00196e8a string US-ASCII
+00196e93 string utf-8
+00196e99 string Warning: '%s' had %d links
+00196eb4 string Memcntl %s cmd %s error
+00196ecc string UNKNOWN
+00196ed4 string UNOPENED
+00196edd string big5_nopad_bin
+00196eec string big5_chinese_nopad_ci
+00196f0b string big5_chinese_ci
+00196f1b string binary
+00196f22 string cp932_nopad_bin
+00196f32 string cp932_japanese_nopad_ci
+00196f4a string cp932_bin
+00196f54 string cp932_japanese_ci
+00196f66 string latin2_czech_cs
+00196f97 string euckr_nopad_bin
+00196fa7 string euckr_korean_nopad_ci
+00196fbd string euckr_bin
+00196fc7 string euckr_korean_ci
+00196fd7 string eucjpms_nopad_bin
+00196fe9 string eucjpms_japanese_nopad_ci
+00197003 string eucjpms_bin
+0019700f string eucjpms_japanese_ci
+00197028 string dec8_swedish_ci
+0019703e string cp850_general_ci
+0019704f string latin1_german1_ci
+00197061 string hp8_english_ci
+00197070 string koi8r_general_ci
+00197081 string latin2_general_ci
+00197098 string swe7_swedish_ci
+001970ae string ascii_general_ci
+001970bf string cp1251_bulgarian_ci
+001970d3 string latin1_danish_ci
+001970e4 string hebrew_general_ci
+001970f6 string latin7_estonian_cs
+00197109 string latin2_hungarian_ci
+0019711d string koi8u_general_ci
+0019712e string cp1251_ukrainian_ci
+00197142 string greek_general_ci
+0019715a string cp1250_general_ci
+0019716c string latin2_croatian_ci
+00197186 string cp1257_lithuanian_ci
+0019719b string latin5_turkish_ci
+001971ad string armscii8_general_ci
+001971c1 string cp866_general_ci
+001971da string keybcs2_general_ci
+001971ed string macce
+001971f3 string macce_general_ci
+00197204 string macroman
+0019720d string macroman_general_ci
+00197227 string cp852_general_ci
+00197238 string latin7_general_ci
+0019724a string latin7_general_cs
+0019725c string macce_bin
+00197266 string cp1250_croatian_ci
+00197279 string latin1_general_ci
+0019728b string latin1_general_cs
+0019729d string cp1251_bin
+001972a8 string cp1251_general_ci
+001972ba string cp1251_general_cs
+001972cc string macroman_bin
+001972e0 string cp1256_general_ci
+001972fd string cp1257_general_ci
+0019730f string armscii8_bin
+0019731c string ascii_bin
+00197326 string cp1250_bin
+00197331 string cp1256_bin
+0019734f string greek_bin
+00197359 string hebrew_bin
+0019736c string keybcs2_bin
+0019738c string latin2_bin
+00197397 string latin5_bin
+001973a2 string latin7_bin
+001973ad string cp850_bin
+001973ca string geostd8_general_ci
+001973dd string geostd8_bin
+001973e9 string latin1_spanish_ci
+001973fb string cp1250_polish_ci
+0019740c string dec8_swedish_nopad_ci
+00197422 string [import dec8_swedish_ci]
+0019743b string cp850_general_nopad_ci
+00197452 string [import cp850_general_ci]
+0019746c string hp8_english_nopad_ci
+00197481 string [import hp8_english_ci]
+00197499 string koi8r_general_nopad_ci
+001974b0 string [import koi8r_general_ci]
+001974ca string latin2_general_nopad_ci
+001974e2 string [import latin2_general_ci]
+001974fd string swe7_swedish_nopad_ci
+00197513 string [import swe7_swedish_ci]
+0019752c string ascii_general_nopad_ci
+00197543 string [import ascii_general_ci]
+0019755d string hebrew_general_nopad_ci
+00197575 string [import hebrew_general_ci]
+00197590 string koi8u_general_nopad_ci
+001975a7 string [import koi8u_general_ci]
+001975c1 string greek_general_nopad_ci
+001975d8 string [import greek_general_ci]
+001975f2 string cp1250_general_nopad_ci
+0019760a string [import cp1250_general_ci]
+00197625 string latin5_turkish_nopad_ci
+0019763d string [import latin5_turkish_ci]
+00197658 string armscii8_general_nopad_ci
+00197672 string [import armscii8_general_ci]
+0019768f string cp866_general_nopad_ci
+001976a6 string [import cp866_general_ci]
+001976c0 string keybcs2_general_nopad_ci
+001976d9 string [import keybcs2_general_ci]
+001976f5 string macce_general_nopad_ci
+0019770c string [import macce_general_ci]
+00197726 string macroman_general_nopad_ci
+00197740 string [import macroman_general_ci]
+0019775d string cp852_general_nopad_ci
+00197774 string [import cp852_general_ci]
+0019778e string latin7_general_nopad_ci
+001977a6 string [import latin7_general_ci]
+001977c1 string macce_nopad_bin
+001977d1 string cp1251_nopad_bin
+001977e2 string cp1251_general_nopad_ci
+001977fa string [import cp1251_general_ci]
+00197815 string macroman_nopad_bin
+00197828 string cp1256_general_nopad_ci
+00197840 string [import cp1256_general_ci]
+0019785b string cp1257_nopad_bin
+0019786c string cp1257_general_nopad_ci
+00197884 string [import cp1257_general_ci]
+0019789f string armscii8_nopad_bin
+001978b2 string ascii_nopad_bin
+001978c2 string cp1250_nopad_bin
+001978d3 string cp1256_nopad_bin
+001978e4 string cp866_nopad_bin
+001978f4 string dec8_nopad_bin
+00197903 string greek_nopad_bin
+00197913 string hebrew_nopad_bin
+00197924 string hp8_nopad_bin
+00197932 string keybcs2_nopad_bin
+00197944 string koi8r_nopad_bin
+00197954 string koi8u_nopad_bin
+00197964 string latin2_nopad_bin
+00197975 string latin5_nopad_bin
+00197986 string latin7_nopad_bin
+00197997 string cp850_nopad_bin
+001979a7 string cp852_nopad_bin
+001979b7 string swe7_nopad_bin
+001979c6 string geostd8_general_nopad_ci
+001979df string [import geostd8_general_ci]
+001979fb string geostd8_nopad_bin
+00197a0d string gb2312_nopad_bin
+00197a1e string gb2312_chinese_nopad_ci
+00197a36 string gb2312_bin
+00197a41 string gb2312_chinese_ci
+00197a53 string gbk_nopad_bin
+00197a61 string gbk_chinese_nopad_ci
+00197a7e string gbk_chinese_ci
+00197a8d string latin1_nopad_bin
+00197a9e string latin1_bin
+00197aa9 string latin1_german2_ci
+00197abb string latin1_swedish_nopad_ci
+00197ad3 string latin1_swedish_ci
+00197ae5 string sjis_nopad_bin
+00197af4 string sjis_japanese_nopad_ci
+00197b0b string sjis_bin
+00197b14 string sjis_japanese_ci
+00197b25 string tis620_nopad_bin
+00197b36 string tis620_thai_nopad_ci
+00197b56 string tis620_thai_ci
+00197b65 string Expansion
+00197b6f string %s too long: '%s'
+00197b81 string \u%04X
+00197b8b string Character
+00197b95 string %s expected
+00197ba1 string %s is too long
+00197bb0 string Contraction
+00197bbc string context
+00197bc4 string Syntax error
+00197bd1 string [version 4.0.0]
+00197be1 string [version 5.2.0]
+00197bf1 string [version 14.0.0]
+00197c02 string [shift-after-method expand]
+00197c1e string [shift-after-method simple]
+00197c3a string [strength 1]
+00197c47 string [strength 2]
+00197c54 string [before primary]
+00197c65 string [before 1]
+00197c70 string [before secondary]
+00197c83 string [before 2]
+00197c8e string [before 3]
+00197c99 string [before tertiary]
+00197cab string [before quaternary]
+00197cbf string [before 4]
+00197cca string [first non-ignorable]
+00197ce0 string [last non-ignorable]
+00197cf5 string [first primary ignorable]
+00197d0f string [last primary ignorable]
+00197d28 string [first secondary ignorable]
+00197d44 string [last secondary ignorable]
+00197d5f string [first tertiary ignorable]
+00197d7a string [last tertiary ignorable]
+00197d94 string [first trailing]
+00197da5 string [last trailing]
+00197db5 string [first variable]
+00197dc6 string [last variable]
+00197dd6 string Logical position
+00197de7 string Shift
+00197df1 string %s at '%s'
+00197dfc string utf16_unicode_520_nopad_ci
+00197e17 string utf16_unicode_nopad_ci
+00197e2e string utf16_vietnamese_ci
+00197e42 string utf16_unicode_520_ci
+00197e57 string utf16_thai_520_w2
+00197e69 string utf16_myanmar_ci
+00197e7a string utf16_croatian_ci
+00197e8c string utf16_croatian_mysql561_ci
+00197ea7 string utf16_german2_ci
+00197eb8 string utf16_sinhala_ci
+00197ec9 string utf16_hungarian_ci
+00197edc string utf16_esperanto_ci
+00197eef string utf16_persian_ci
+00197f00 string utf16_roman_ci
+00197f0f string utf16_spanish2_ci
+00197f21 string utf16_slovak_ci
+00197f31 string utf16_lithuanian_ci
+00197f45 string utf16_danish_ci
+00197f55 string utf16_czech_ci
+00197f64 string utf16_turkish_ci
+00197f75 string utf16_swedish_ci
+00197f86 string utf16_spanish_ci
+00197f97 string utf16_estonian_ci
+00197fa9 string utf16_polish_ci
+00197fb9 string utf16_slovenian_ci
+00197fcc string utf16_romanian_ci
+00197fde string utf16_latvian_ci
+00197fef string utf16_icelandic_ci
+00198002 string utf16_unicode_ci
+00198013 string utf32_unicode_520_nopad_ci
+0019802e string utf32_unicode_nopad_ci
+00198045 string utf32_vietnamese_ci
+00198059 string utf32_unicode_520_ci
+0019806e string utf32_thai_520_w2
+00198080 string utf32_myanmar_ci
+00198091 string utf32_croatian_ci
+001980a3 string utf32_croatian_mysql561_ci
+001980be string utf32_german2_ci
+001980cf string utf32_sinhala_ci
+001980e0 string utf32_hungarian_ci
+001980f3 string utf32_esperanto_ci
+00198106 string utf32_persian_ci
+00198117 string utf32_roman_ci
+00198126 string utf32_spanish2_ci
+00198138 string utf32_slovak_ci
+00198148 string utf32_lithuanian_ci
+0019815c string utf32_danish_ci
+0019816c string utf32_czech_ci
+0019817b string utf32_turkish_ci
+0019818c string utf32_swedish_ci
+0019819d string utf32_spanish_ci
+001981ae string utf32_estonian_ci
+001981c0 string utf32_polish_ci
+001981d0 string utf32_slovenian_ci
+001981e3 string utf32_romanian_ci
+001981f5 string utf32_latvian_ci
+00198206 string utf32_icelandic_ci
+00198219 string utf32_unicode_ci
+0019822a string utf8mb4_unicode_520_nopad_ci
+00198247 string utf8mb4_unicode_nopad_ci
+00198260 string utf8mb4_vietnamese_ci
+00198276 string utf8mb4_unicode_520_ci
+0019828d string utf8mb4_thai_520_w2
+001982a1 string utf8mb4_myanmar_ci
+001982b4 string utf8mb4_croatian_ci
+001982c8 string utf8mb4_croatian_mysql561_ci
+001982e5 string utf8mb4_german2_ci
+001982f8 string utf8mb4_sinhala_ci
+0019830b string utf8mb4_hungarian_ci
+00198320 string utf8mb4_esperanto_ci
+00198335 string utf8mb4_persian_ci
+00198348 string utf8mb4_roman_ci
+00198359 string utf8mb4_spanish2_ci
+0019836d string utf8mb4_slovak_ci
+0019837f string utf8mb4_lithuanian_ci
+00198395 string utf8mb4_danish_ci
+001983a7 string utf8mb4_czech_ci
+001983b8 string utf8mb4_turkish_ci
+001983cb string utf8mb4_swedish_ci
+001983de string utf8mb4_spanish_ci
+001983f1 string utf8mb4_estonian_ci
+00198405 string utf8mb4_polish_ci
+00198417 string utf8mb4_slovenian_ci
+0019842c string utf8mb4_romanian_ci
+00198440 string utf8mb4_latvian_ci
+00198453 string utf8mb4_icelandic_ci
+00198468 string utf8mb4_unicode_ci
+0019847b string utf8mb3_unicode_520_nopad_ci
+00198498 string utf8mb3_unicode_nopad_ci
+001984b1 string utf8mb3_vietnamese_ci
+001984c7 string utf8mb3_thai_520_w2
+001984db string utf8mb3_unicode_520_ci
+001984f2 string utf8mb3_myanmar_ci
+00198505 string utf8mb3_croatian_ci
+00198519 string utf8mb3_croatian_mysql561_ci
+00198536 string utf8mb3_german2_ci
+00198549 string utf8mb3_sinhala_ci
+0019855c string utf8mb3_hungarian_ci
+00198571 string utf8mb3_esperanto_ci
+00198586 string utf8mb3_persian_ci
+00198599 string utf8mb3_roman_ci
+001985aa string utf8mb3_spanish2_ci
+001985be string utf8mb3_slovak_ci
+001985d0 string utf8mb3_lithuanian_ci
+001985e6 string utf8mb3_danish_ci
+001985f8 string utf8mb3_czech_ci
+00198609 string utf8mb3_turkish_ci
+0019861c string utf8mb3_swedish_ci
+0019862f string utf8mb3_spanish_ci
+00198642 string utf8mb3_estonian_ci
+00198656 string utf8mb3_polish_ci
+00198668 string utf8mb3_slovenian_ci
+0019867d string utf8mb3_romanian_ci
+00198691 string utf8mb3_latvian_ci
+001986a4 string utf8mb3_icelandic_ci
+001986b9 string utf8mb3_unicode_ci
+001986cc string ucs2_unicode_520_nopad_ci
+001986e6 string ucs2_unicode_nopad_ci
+001986fc string ucs2_vietnamese_ci
+0019870f string ucs2_unicode_520_ci
+00198723 string ucs2_thai_520_w2
+00198734 string ucs2_myanmar_ci
+00198744 string ucs2_croatian_ci
+00198755 string ucs2_croatian_mysql561_ci
+0019876f string ucs2_german2_ci
+0019877f string ucs2_sinhala_ci
+0019878f string ucs2_hungarian_ci
+001987a1 string ucs2_esperanto_ci
+001987b3 string ucs2_persian_ci
+001987c3 string ucs2_roman_ci
+001987d1 string ucs2_spanish2_ci
+001987e2 string ucs2_slovak_ci
+001987f1 string ucs2_lithuanian_ci
+00198804 string ucs2_danish_ci
+00198813 string ucs2_czech_ci
+00198821 string ucs2_turkish_ci
+00198831 string ucs2_swedish_ci
+00198841 string ucs2_spanish_ci
+00198851 string ucs2_estonian_ci
+00198862 string ucs2_polish_ci
+00198871 string ucs2_slovenian_ci
+00198883 string ucs2_romanian_ci
+00198894 string ucs2_latvian_ci
+001988a4 string ucs2_icelandic_ci
+001988b6 string ucs2_unicode_ci
+001988c6 string icelandic
+001988d0 string latvian
+001988d8 string romanian
+001988e1 string slovenian
+001988eb string polish
+001988f2 string estonian
+001988fb string spanish
+00198903 string swedish
+0019890b string turkish
+00198919 string danish
+00198920 string lithuanian
+0019892b string slovak
+00198932 string spanish2
+0019893b string persian
+00198943 string esperanto
+0019894d string hungarian
+00198957 string sinhala
+0019895f string german2
+00198967 string vietnamese
+00198972 string croatian
+00198981 string Alias for 
+0019898c string utf8mb4_0900_bin
+0019899d string de_pb
+001989be string es_trad
+001989e1 string as_cs
+001989e7 string _ja_0900_as_cs_ks
+00198a08 string nopad
+00198a0e string %.*s_uca1400%s%s%s%s%s
+00198a2c string ucs2_nopad_bin
+00198a3b string ucs2_general_nopad_ci
+00198a51 string ucs2_bin
+00198a5a string ucs2_general_mysql500_ci
+00198a73 string ucs2_general_ci
+00198a83 string utf32_nopad_bin
+00198a93 string UTF-32 Unicode
+00198aa2 string utf32_general_nopad_ci
+00198ab9 string utf32_bin
+00198ac3 string utf32_general_ci
+00198ad4 string utf16le_nopad_bin
+00198ae6 string UTF-16LE Unicode
+00198af7 string utf16le_general_nopad_ci
+00198b10 string utf16le_bin
+00198b1c string utf16le_general_ci
+00198b2f string utf16_nopad_bin
+00198b3f string UTF-16 Unicode
+00198b4e string utf16_general_nopad_ci
+00198b65 string utf16_bin
+00198b6f string utf16_general_ci
+00198b80 string ujis_nopad_bin
+00198b8f string ujis_japanese_nopad_ci
+00198ba6 string ujis_bin
+00198baf string ujis_japanese_ci
+00198bc0 string utf8mb4_general1400_as_ci
+00198bda string UTF-8 Unicode
+00198be8 string utf8mb4_nopad_bin
+00198bfa string utf8mb4_general_nopad_ci
+00198c13 string utf8mb4_bin
+00198c1f string utf8mb4_general_ci
+00198c32 string filename
+00198c3b string utf8mb3_nopad_bin
+00198c4d string utf8mb3_general_nopad_ci
+00198c66 string utf8mb3_bin
+00198c72 string utf8mb3_general1400_as_ci
+00198c8c string utf8mb3_general_mysql500_ci
+00198ca8 string utf8mb3_general_ci
+00198cbb string cp1250_czech_cs
+00198cd0 string primary
+00198cd8 string compiled
+00198ce1 string [version %.*s]
+00198cf0 string [import %.*s]
+00198cfe string [suppress contractions %.*s]
+00198d1b string [optimize %.*s]
+00198d2b string [shift-after-method %.*s]
+00198d45 string [strength %.*s]
+00198d55 string [alternate %.*s]
+00198d66 string [backwards %.*s]
+00198d77 string [normalization %.*s]
+00198d8c string [caseLevel %.*s]
+00198d9d string [caseFirst %.*s]
+00198dae string [hiraganaQ %.*s]
+00198dbf string [numeric %.*s]
+00198dce string [variableTop %.*s]
+00198de1 string [match-boundaries %.*s]
+00198df9 string [match-style %.*s]
+00198e14 string [before %.*s]
+00198e22 string Unknown LDML tag: '%.*s'
+00198e3e string at line %d pos %d: %s
+00198e57 string <%.*s|%.*s
+00198e62 string =%.*s|%.*s
+00198e70 string <%.*s
+00198e76 string =%.*s
+00198e7c string xml/version
+00198e88 string xml/encoding
+00198e95 string charsets
+00198e9e string charsets/max-id
+00198eae string charsets/copyright
+00198ec1 string charsets/description
+00198ed6 string charsets/charset
+00198ee7 string charsets/charset/primary-id
+00198f03 string charsets/charset/binary-id
+00198f1e string charsets/charset/name
+00198f34 string charsets/charset/family
+00198f4c string charsets/charset/description
+00198f69 string charsets/charset/alias
+00198f80 string charsets/charset/ctype
+00198f97 string charsets/charset/ctype/map
+00198fb2 string charsets/charset/upper
+00198fc9 string charsets/charset/upper/map
+00198fe4 string charsets/charset/lower
+00198ffb string charsets/charset/lower/map
+00199016 string charsets/charset/unicode
+0019902f string charsets/charset/unicode/map
+0019904c string charsets/charset/collation
+00199067 string charsets/charset/collation/id
+00199085 string unknown error
+00199093 string Undefined handler error 125
+001990af string Index is corrupted
+001990c2 string Table file is corrupted
+001990da string Out of memory in engine
+001990f2 string Undefined handler error 129
+0019910e string Incorrect file format
+00199124 string Old database file
+00199136 string No record read before update
+00199153 string No more room in record file
+0019916f string No more room in index file
+0019918a string Too big row
+00199196 string Wrong create options
+001991ab string Cannot add a child row
+001991c2 string Cannot delete a parent row
+001991dd string No savepoint with that name
+001991f9 string Non unique key block size
+00199213 string Table is read only
+00199226 string Read page with wrong checksum
+00199244 string Index corrupted
+00199254 string Undo record too big
+00199268 string Invalid InnoDB FTS Doc ID
+00199282 string Tablespace already exists
+0019929c string Too many columns
+001992ad string Row in wrong partition
+001992c4 string Disk full
+001992ce string Sequence has been run out
+001992e8 string Error during commit
+001992fc string Cannot select partitions
+00199315 string Transaction was aborted
+0019933b string ?=/<>!
+00199342 string END-OF-INPUT
+0019934f string STRING
+00199356 string IDENT
+0019935c string CDATA
+00199372 string COMMENT
+00199387 string unknown token
+00199395 string %s unexpected (ident wanted)
+001993b2 string %s unexpected ('?' wanted)
+001993cd string %s unexpected ('>' wanted)
+00199450 string include
+00199458 string includedir
+001a8493 string rCsMsQsLsbtstqtutrtgtnt
+001abe17 string NMOOOGOWO^O4O[OUO0OPOQO=O:O8OCOTO<OFOcO
+001b1e61 string binary
+001f5c80 string  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+001f6398 string FGHIJKLMNO
+00252107 string c)c*c-c5c6c9c<cAcBcCcDcFcJcKcNcRcScTcXc[cecfclcmcqctcuc
+00253113 string n"n'n2n6n9n;n<nDnEnHnInKnOnQnRnSnTnWn\n]n^n
+002a89a0 string [\]^_`bcdefghijklmnopqrstuvwxyz{[\]^_`bcdefghijklmnopqrstuvwxyz{
+002abae0 string !#"###g!%#&#'#(#)#*#+#,#-#.#/#0#1#2#3#4#5#6#7#8#9#:#;#<#=#>#?#@#A#B#C#D#E#F#G#H#I#J#K#L#M#N#O#P#Q#R#S#T#U#V#W#X#Y#Z#[#\#]#^#_#`#a#b#c#d#e#f#g#h#i#j#k#l#m#n#o#p#q#r#s#t#u#v#w#x#y#z#{#|#}#+!
+002abcc0 string qD/p&<0pyC
+002b152e string iIRTAmBmCmEm
+002b4396 string mi*WniVBmHd:oipiqiaVrisiuitiviwiaGxiXTyiN=
+002b4488 string FeDeHe
+002b4e60 string mnnnon
+002b4f10 string GOCoAoBoDo'6|<b>LCEoFo
+002b4f82 string bocoMAdoeofogohoiojokoloX@
+002b4f9e string mo-Anooopo
+002b518e string mZITUOcE
+002b5b70 string e"f"g"h"i"j"k"l"m"n"
+002b5ba0 string !!"!#!(!
+002b5e00 string Y"Z"["\"]"^"_"`"a"b"
+002cfc23 string R!R"R#R%R&R'R*R,R/R1R2R4R5R<R>RDRERFRGRHRIRKRNRORRRSRURWRXR
+002d22f9 string i!i"i#i%i&i'i(i)i*i+i,i.i/i1i2i3i5i6i7i8i:i;i<i>i@iAiCiDiEiFiGiHiIiJiKiLiMiNiOiPiQiRiSiUiViXiYi[i\i_i
+002d4860 string IsJsKsLsNsOsQsSsTsUsVsXsYsZs[s\s]s^s_sasbscsdsesfsgshsisjsksnspsqs
+002d4c60 string NtOtPtQtRtStTtVtXt]t`tatbtctdtetftgthtitjtktltntotqtrtstttutxtytzt
+002edc61 string latin1
+00332a60 string [shift-after-method expand]&\u108C<\u1037<\u1038<\u1037\u1038&\u102C<<\u102B&\u1032<\u1031\u102C<<\u1031\u102B<\u1031\u102C\u103A<<\u1031\u102B\u103A&\u1034<\u1036<\u102D\u102F<\u1000\u1039<<\u1000\u103A<\u102C\u1000\u1039<<\u102C\u1000\u103A<<\u102B\u1000\u1039<<\u102B\u1000\u103A<\u102D\u1000\u1039<<\u102D\u1000\u103A<\u102F\u1000\u1039<<\u102F\u1000\u103A<\u1031\u1000\u1039<<\u1031\u1000\u103A<\u1031\u102C\u1000\u1039<<\u1031\u102C\u1000\u103A<<\u1031\u102B\u1000\u1039<<\u1031\u102B\u1000\u103A<\u102D\u102F\u1000\u1039<<\u102D\u102F\u1000\u103A<\u1001\u1039<<\u1001\u103A<\u102C\u1001\u1039<<\u102C\u1001\u103A<<\u102B\u1001\u1039<<\u102B\u1001\u103A<\u102D\u1001\u1039<<\u102D\u1001\u103A<\u102F\u1001\u1039<<\u102F\u1001\u103A<\u1031\u1001\u1039<<\u1031\u1001\u103A<\u1031\u102C\u1001\u1039<<\u1031\u102C\u1001\u103A<<\u1031\u102B\u1001\u1039<<\u1031\u102B\u1001\u103A<\u102D\u102F\u1001\u1039<<\u102D\u102F\u1001\u103A<\u1002\u1039<<\u1002\u103A<\u102C\u1002\u1039<<\u102C\u1002\u103A<<\u102B\u1002\u1039<<\u102B\u1002\u103A<\u102D\u1002\u1039<<\u102D\u1002\u103A<\u102F\u1002\u1039<<\u102F\u1002\u103A<\u1031\u1002\u1039<<\u1031\u1002\u103A<\u1031\u102C\u1002\u1039<<\u1031\u102C\u1002\u103A<<\u1031\u102B\u1002\u1039<<\u1031\u102B\u1002\u103A<\u102D\u102F\u1002\u1039<<\u102D\u102F\u1002\u103A<\u1003\u1039<<\u1003\u103A<\u102C\u1003\u1039<<\u102C\u1003\u103A<<\u102B\u1003\u1039<<\u102B\u1003\u103A<\u102D\u1003\u1039<<\u102D\u1003\u103A<\u102F\u1003\u1039<<\u102F\u1003\u103A<\u1031\u1003\u1039<<\u1031\u1003\u103A<\u1031\u102C\u1003\u1039<<\u1031\u102C\u1003\u103A<<\u1031\u102B\u1003\u1039<<\u1031\u102B\u1003\u103A<\u102D\u102F\u1003\u1039<<\u102D\u102F\u1003\u103A<\u1004\u103A\u1039<<\u1004\u103A<\u102C\u1004\u103A\u1039<<\u102C\u1004\u103A<<\u102B\u1004\u103A\u1039<<\u102B\u1004\u103A<\u102D\u1004\u103A\u1039<<\u102D\u1004\u103A<\u102F\u1004\u103A\u1039<<\u102F\u1004\u103A<\u1031\u1004\u103A\u1039<<\u1031\u1004\u103A<\u1031\u102C\u1004\u103A\u1039<<\u1031\u102C\u1004\u103A<<\u1031\u102B\u1004\u103A\u1039<<\u1031\u102B\u1004\u103A<\u102D\u102F\u1004\u103A\u1039<<\u102D\u102F\u1004\u103A<\u1005\u1039<<\u1005\u103A<\u102C\u1005\u1039<<\u102C\u1005\u103A<<\u102B\u1005\u1039<<\u102B\u1005\u103A<\u102D\u1005\u1039<<\u102D\u1005\u103A<\u102F\u1005\u1039<<\u102F\u1005\u103A<\u1031\u1005\u1039<<\u1031\u1005\u103A<\u1031\u102C\u1005\u1039<<\u1031\u102C\u1005\u103A<<\u1031\u102B\u1005\u1039<<\u1031\u102B\u1005\u103A<\u102D\u102F\u1005\u1039<<\u102D\u102F\u1005\u103A<\u1006\u1039<<\u1006\u103A<\u102C\u1006\u1039<<\u102C\u1006\u103A<<\u102B\u1006\u1039<<\u102B\u1006\u103A<\u102D\u1006\u1039<<\u102D\u1006\u103A<\u102F\u1006\u1039<<\u102F\u1006\u103A<\u1031\u1006\u1039<<\u1031\u1006\u103A<\u1031\u102C\u1006\u1039<<\u1031\u102C\u1006\u103A<<\u1031\u102B\u1006\u1039<<\u1031\u102B\u1006\u103A<\u102D\u102F\u1006\u1039<<\u102D\u102F\u1006\u103A<\u1007\u1039<<\u1007\u103A<\u102C\u1007\u1039<<\u102C\u1007\u103A<<\u102B\u1007\u1039<<\u102B\u1007\u103A<\u102D\u1007\u1039<<\u102D\u1007\u103A<\u102F\u1007\u1039<<\u102F\u1007\u103A<\u1031\u1007\u1039<<\u1031\u1007\u103A<\u1031\u102C\u1007\u1039<<\u1031\u102C\u1007\u103A<<\u1031\u102B\u1007\u1039<<\u1031\u102B\u1007\u103A<\u102D\u102F\u1007\u1039<<\u102D\u102F\u1007\u103A<\u1008\u103A<\u102C\u1008\u103A<<\u102B\u1008\u103A<\u102D\u1008\u103A<\u102F\u1008\u103A<\u1031\u1008\u103A<\u1031\u102C\u1008\u103A<<\u1031\u102B\u1008\u103A<\u102D\u102F\u1008\u103A<\u1009\u1039<<\u1009\u103A<\u102C\u1009\u1039<<\u102C\u1009\u103A<<\u102B\u1009\u1039<<\u102B\u1009\u103A<\u102D\u1009\u1039<<\u102D\u1009\u103A<\u102F\u1009\u1039<<\u102F\u1009\u103A<\u1031\u1009\u1039<<\u1031\u1009\u103A<\u1031\u102C\u1009\u1039<<\u1031\u102C\u1009\u103A<<\u1031\u102B\u1009\u1039<<\u1031\u102B\u1009\u103A<\u102D\u102F\u1009\u1039<<\u102D\u102F\u1009\u103A<\u100A\u1039<<\u100A\u103A<\u102C\u100A\u1039<<\u102C\u100A\u103A<<\u102B\u100A\u1039<<\u102B\u100A\u103A<\u102D\u100A\u1039<<\u102D\u100A\u103A<\u102F\u100A\u1039<<\u102F\u100A\u103A<\u1031\u100A\u1039<<\u1031\u100A\u103A<\u1031\u102C\u100A\u1039<<\u1031\u102C\u100A\u103A<<\u1031\u102B\u100A\u1039<<\u1031\u102B\u100A\u103A<\u102D\u102F\u100A\u1039<<\u102D\u102F\u100A\u103A<\u100B\u1039<<\u100B\u103A<\u102C\u100B\u1039<<\u102C\u100B\u103A<<\u102B\u100B\u1039<<\u102B\u100B\u103A<\u102D\u100B\u1039<<\u102D\u100B\u103A<\u102F\u100B\u1039<<\u102F\u100B\u103A<\u1031\u100B\u1039<<\u1031\u100B\u103A<\u1031\u102C\u100B\u1039<<\u1031\u102C\u100B\u103A<<\u1031\u102B\u100B\u1039<<\u1031\u102B\u100B\u103A<\u102D\u102F\u100B\u1039<<\u102D\u102F\u100B\u103A<\u100C\u1039<<\u100C\u103A<\u102C\u100C\u1039<<\u102C\u100C\u103A<<\u102B\u100C\u1039<<\u102B\u100C\u103A<\u102D\u100C\u1039<<\u102D\u100C\u103A<\u102F\u100C\u1039<<\u102F\u100C\u103A<\u1031\u100C\u1039<<\u1031\u100C\u103A<\u1031\u102C\u100C\u1039<<\u1031\u102C\u100C\u103A<<\u1031\u102B\u100C\u1039<<\u1031\u102B\u100C\u103A<\u102D\u102F\u100C\u1039<<\u102D\u102F\u100C\u103A<\u100D\u1039<<\u100D\u103A<\u102C\u100D\u1039<<\u102C\u100D\u103A<<\u102B\u100D\u1039<<\u102B\u100D\u103A<\u102D\u100D\u1039<<\u102D\u100D\u103A<\u102F\u100D\u1039<<\u102F\u100D\u103A<\u1031\u100D\u1039<<\u1031\u100D\u103A<\u1031\u102C\u100D\u1039<<\u1031\u102C\u100D\u103A<<\u1031\u102B\u100D\u1039<<\u1031\u102B\u100D\u103A<\u102D\u102F\u100D\u1039<<\u102D\u102F\u100D\u103A<\u100E\u1039<<\u100E\u103A<\u102C\u100E\u1039<<\u102C\u100E\u103A<<\u102B\u100E\u1039<<\u102B\u100E\u103A<\u102D\u100E\u1039<<\u102D\u100E\u103A<\u102F\u100E\u1039<<\u102F\u100E\u103A<\u1031\u100E\u1039<<\u1031\u100E\u103A<\u1031\u102C\u100E\u1039<<\u1031\u102C\u100E\u103A<<\u1031\u102B\u100E\u1039<<\u1031\u102B\u100E\u103A<\u102D\u102F\u100E\u1039<<\u102D\u102F\u100E\u103A<\u100F\u1039<<\u100F\u103A<\u102C\u100F\u1039<<\u102C\u100F\u103A<<\u102B\u100F\u1039<<\u102B\u100F\u103A<\u102D\u100F\u1039<<\u102D\u100F\u103A<\u102F\u100F\u1039<<\u102F\u100F\u103A<\u1031\u100F\u1039<<\u1031\u100F\u103A<\u1031\u102C\u100F\u1039<<\u1031\u102C\u100F\u103A<<\u1031\u102B\u100F\u1039<<\u1031\u102B\u100F\u103A<\u102D\u102F\u100F\u1039<<\u102D\u102F\u100F\u103A<\u1010\u1039<<\u1010\u103A<\u102C\u1010\u1039<<\u102C\u1010\u103A<<\u102B\u1010\u1039<<\u102B\u1010\u103A<\u102D\u1010\u1039<<\u102D\u1010\u103A<\u102F\u1010\u1039<<\u102F\u1010\u103A<\u1031\u1010\u1039<<\u1031\u1010\u103A<\u1031\u102C\u1010\u1039<<\u1031\u102C\u1010\u103A<<\u1031\u102B\u1010\u1039<<\u1031\u102B\u1010\u103A<\u102D\u102F\u1010\u1039<<\u102D\u102F\u1010\u103A<\u1011\u1039<<\u1011\u103A<\u102C\u1011\u1039<<\u102C\u1011\u103A<<\u102B\u1011\u1039<<\u102B\u1011\u103A<\u102D\u1011\u1039<<\u102D\u1011\u103A<\u102F\u1011\u1039<<\u102F\u1011\u103A<\u1031\u1011\u1039<<\u1031\u1011\u103A<\u1031\u102C\u1011\u1039<<\u1031\u102C\u1011\u103A<<\u1031\u102B\u1011\u1039<<\u1031\u102B\u1011\u103A<\u102D\u102F\u1011\u1039<<\u102D\u102F\u1011\u103A<\u1012\u1039<<\u1012\u103A<\u102C\u1012\u1039<<\u102C\u1012\u103A<<\u102B\u1012\u1039<<\u102B\u1012\u103A<\u102D\u1012\u1039<<\u102D\u1012\u103A<\u102F\u1012\u1039<<\u102F\u1012\u103A<\u1031\u1012\u1039<<\u1031\u1012\u103A<\u1031\u102C\u1012\u1039<<\u1031\u102C\u1012\u103A<<\u1031\u102B\u1012\u1039<<\u1031\u102B\u1012\u103A<\u102D\u102F\u1012\u1039<<\u102D\u102F\u1012\u103A<\u1013\u1039<<\u1013\u103A<\u102C\u1013\u1039<<\u102C\u1013\u103A<<\u102B\u1013\u1039<<\u102B\u1013\u103A<\u102D\u1013\u1039<<\u102D\u1013\u103A<\u102F\u1013\u1039<<\u102F\u1013\u103A<\u1031\u1013\u1039<<\u1031\u1013\u103A<\u1031\u102C\u1013\u1039<<\u1031\u102C\u1013\u103A<<\u1031\u102B\u1013\u1039<<\u1031\u102B\u1013\u103A<\u102D\u102F\u1013\u1039<<\u102D\u102F\u1013\u103A<\u1014\u1039<<\u1014\u103A<\u102C\u1014\u1039<<\u102C\u1014\u103A<<\u102B\u1014\u1039<<\u102B\u1014\u103A<\u102D\u1014\u1039<<\u102D\u1014\u103A<\u102F\u1014\u1039<<\u102F\u1014\u103A<\u1031\u1014\u1039<<\u1031\u1014\u103A<\u1031\u102C\u1014\u1039<<\u1031\u102C\u1014\u103A<<\u1031\u102B\u1014\u1039<<\u1031\u102B\u1014\u103A<\u102D\u102F\u1014\u1039<<\u102D\u102F\u1014\u103A<\u1015\u1039<<\u1015\u103A<\u102C\u1015\u1039<<\u102C\u1015\u103A<<\u102B\u1015\u1039<<\u102B\u1015\u103A<\u102D\u1015\u1039<<\u102D\u1015\u103A<\u102F\u1015\u1039<<\u102F\u1015\u103A<\u1031\u1015\u1039<<\u1031\u1015\u103A<\u1031\u102C\u1015\u1039<<\u1031\u102C\u1015\u103A<<\u1031\u102B\u1015\u1039<<\u1031\u102B\u1015\u103A<\u102D\u102F\u1015\u1039<<\u102D\u102F\u1015\u103A<\u1016\u1039<<\u1016\u103A<\u102C\u1016\u1039<<\u102C\u1016\u103A<<\u102B\u1016\u1039<<\u102B\u1016\u103A<\u102D\u1016\u1039<<\u102D\u1016\u103A<\u102F\u1016\u1039<<\u102F\u1016\u103A<\u1031\u1016\u1039<<\u1031\u1016\u103A<\u1031\u102C\u1016\u1039<<\u1031\u102C\u1016\u103A<<\u1031\u102B\u1016\u1039<<\u1031\u102B\u1016\u103A<\u102D\u102F\u1016\u1039<<\u102D\u102F\u1016\u103A<\u1017\u1039<<\u1017\u103A<\u102C\u1017\u1039<<\u102C\u1017\u103A<<\u102B\u1017\u1039<<\u102B\u1017\u103A<\u102D\u1017\u1039<<\u102D\u1017\u103A<\u102F\u1017\u1039<<\u102F\u1017\u103A<\u1031\u1017\u1039<<\u1031\u1017\u103A<\u1031\u102C\u1017\u1039<<\u1031\u102C\u1017\u103A<<\u1031\u102B\u1017\u1039<<\u1031\u102B\u1017\u103A<\u102D\u102F\u1017\u1039<<\u102D\u102F\u1017\u103A<\u1018\u1039<<\u1018\u103A<\u102C\u1018\u1039<<\u102C\u1018\u103A<<\u102B\u1018\u1039<<\u102B\u1018\u103A<\u102D\u1018\u1039<<\u102D\u1018\u103A<\u102F\u1018\u1039<<\u102F\u1018\u103A<\u1031\u1018\u1039<<\u1031\u1018\u103A<\u1031\u102C\u1018\u1039<<\u1031\u102C\u1018\u103A<<\u1031\u102B\u1018\u1039<<\u1031\u102B\u1018\u103A<\u102D\u102F\u1018\u1039<<\u102D\u102F\u1018\u103A<\u1019\u1039<<\u1019\u103A<\u102C\u1019\u1039<<\u102C\u1019\u103A<<\u102B\u1019\u1039<<\u102B\u1019\u103A<\u102D\u1019\u1039<<\u102D\u1019\u103A<\u102F\u1019\u1039<<\u102F\u1019\u103A<\u1031\u1019\u1039<<\u1031\u1019\u103A<\u1031\u102C\u1019\u1039<<\u1031\u102C\u1019\u103A<<\u1031\u102B\u1019\u1039<<\u1031\u102B\u1019\u103A<\u102D\u102F\u1019\u1039<<\u102D\u102F\u1019\u103A<\u101A\u1039<<\u101A\u103A<\u102C\u101A\u1039<<\u102C\u101A\u103A<<\u102B\u101A\u1039<<\u102B\u101A\u103A<\u102D\u101A\u1039<<\u102D\u101A\u103A<\u102F\u101A\u1039<<\u102F\u101A\u103A<\u1031\u101A\u1039<<\u1031\u101A\u103A<\u1031\u102C\u101A\u1039<<\u1031\u102C\u101A\u103A<<\u1031\u102B\u101A\u1039<<\u1031\u102B\u101A\u103A<\u102D\u102F\u101A\u1039<<\u102D\u102F\u101A\u103A<\u101B\u1039<<\u101B\u103A<\u102C\u101B\u1039<<\u102C\u101B\u103A<<\u102B\u101B\u1039<<\u102B\u101B\u103A<\u102D\u101B\u1039<<\u102D\u101B\u103A<\u102F\u101B\u1039<<\u102F\u101B\u103A<\u1031\u101B\u1039<<\u1031\u101B\u103A<\u1031\u102C\u101B\u1039<<\u1031\u102C\u101B\u103A<<\u1031\u102B\u101B\u1039<<\u1031\u102B\u101B\u103A<\u102D\u102F\u101B\u1039<<\u102D\u102F\u101B\u103A<\u101C\u1039<<\u101C\u103A<\u102C\u101C\u1039<<\u102C\u101C\u103A<<\u102B\u101C\u1039<<\u102B\u101C\u103A<\u102D\u101C\u1039<<\u102D\u101C\u103A<\u102F\u101C\u1039<<\u102F\u101C\u103A<\u1031\u101C\u1039<<\u1031\u101C\u103A<\u1031\u102C\u101C\u1039<<\u1031\u102C\u101C\u103A<<\u1031\u102B\u101C\u1039<<\u1031\u102B\u101C\u103A<\u102D\u102F\u101C\u1039<<\u102D\u102F\u101C\u103A<\u101D\u103A<\u102C\u101D\u103A<<\u102B\u101D\u103A<\u102D\u101D\u103A<\u102F\u101D\u103A<\u1031\u101D\u103A<\u1031\u102C\u101D\u103A<<\u1031\u102B\u101D\u103A<\u102D\u102F\u101D\u103A<\u101E\u1039<<\u101E\u103A<\u102C\u101E\u1039<<\u102C\u101E\u103A<<\u102B\u101E\u1039<<\u102B\u101E\u103A<\u102D\u101E\u1039<<\u102D\u101E\u103A<\u102F\u101E\u1039<<\u102F\u101E\u103A<\u1031\u101E\u1039<<\u1031\u101E\u103A<\u1031\u102C\u101E\u1039<<\u1031\u102C\u101E\u103A<<\u1031\u102B\u101E\u1039<<\u1031\u102B\u101E\u103A<\u102D\u102F\u101E\u1039<<\u102D\u102F\u101E\u103A<\u101F\u1039<<\u101F\u103A<\u102C\u101F\u1039<<\u102C\u101F\u103A<<\u102B\u101F\u1039<<\u102B\u101F\u103A<\u102D\u101F\u1039<<\u102D\u101F\u103A<\u102F\u101F\u1039<<\u102F\u101F\u103A<\u1031\u101F\u1039<<\u1031\u101F\u103A<\u1031\u102C\u101F\u1039<<\u1031\u102C\u101F\u103A<<\u1031\u102B\u101F\u1039<<\u1031\u102B\u101F\u103A<\u102D\u102F\u101F\u1039<<\u102D\u102F\u101F\u103A<\u1020\u103A<\u102C\u1020\u103A<<\u102B\u1020\u103A<\u102D\u1020\u103A<\u102F\u1020\u103A<\u1031\u1020\u103A<\u1031\u102C\u1020\u103A<<\u1031\u102B\u1020\u103A<\u102D\u102F\u1020\u103A<\u1021\u103A<\u102C\u1021\u103A<<\u102B\u1021\u103A<\u102D\u1021\u103A<\u102F\u1021\u103A<\u1031\u1021\u103A<\u1031\u102C\u1021\u103A<<\u1031\u102B\u1021\u103A<\u102D\u102F\u1021\u103A<\u105E<\u105F<\u103B<\u103C<\u1060<\u103D<\u1082<\u103E<\u103B\u103D<\u103C\u103D<\u103B\u103E<\u103C\u103E<\u103D\u103E<\u103B\u103D\u103E<\u103C\u103D\u103E&\u1021\u102D<<<\u1023&\u1021\u102E<<<\u1024&\u1021\u102F<<<\u1025&\u1021\u1030<<<\u1026&\u1021\u1031<<<\u1027<<<\u1028&\u1021\u1031\u102C<<<\u1029&\u1021\u1031\u102C\u103A<<<\u102A&\u102D\u1019\u103A<\u102D\u1036<\u102D\u1019\u103A\u1037<\u102D\u1036\u1037<\u102D\u1019\u103A\u1038<\u102D\u1036\u1038&\u102F\u1019\u103A<\u102F\u1036<\u102F\u1019\u103A\u1037<\u102F\u1036\u1037<\u102F\u1019\u103A\u1038<\u102F\u1036\u1038&\u1021\u102F\u1036<<<\u1025\u102F\u1036&\u1021\u102D\u1000\u1039<<<\u1023\u1000\u1039&\u1021\u102D\u1000\u103A<<<\u1023\u1000\u103A&\u1021\u102F\u1000\u1039<<<\u1025\u1000\u1039&\u1021\u102F\u1000\u103A<<<\u1025\u1000\u103A&\u1021\u1031\u1000\u1039<<<\u1027\u1000\u1039&\u1021\u1031\u1000\u103A<<<\u1027\u1000\u103A&\u1021\u1031\u102C\u1000\u1039<<<\u1029\u1000\u1039&\u1021\u1031\u102C\u1000\u103A<<<\u1029\u1000\u103A&\u1021\u1031\u102C\u1000\u1039<<<\u1029\u1031\u102C\u1000\u1039&\u1021\u1031\u102C\u1000\u103A<<<\u1029\u1031\u102C\u1000\u103A&\u1021\u102D\u1001\u1039<<<\u1023\u1001\u1039&\u1021\u102D\u1001\u103A<<<\u1023\u1001\u103A&\u1021\u102F\u1001\u1039<<<\u1025\u1001\u1039&\u1021\u102F\u1001\u103A<<<\u1025\u1001\u103A&\u1021\u1031\u1001\u1039<<<\u1027\u1001\u1039&\u1021\u1031\u1001\u103A<<<\u1027\u1001\u103A&\u1021\u1031\u102C\u1001\u1039<<<\u1029\u1001\u1039&\u1021\u1031\u102C\u1001\u103A<<<\u1029\u1001\u103A&\u1021\u1031\u102C\u1001\u1039<<<\u1029\u1031\u102C\u1001\u1039&\u1021\u1031\u102C\u1001\u103A<<<\u1029\u1031\u102C\u1001\u103A&\u1021\u102D\u1002\u1039<<<\u1023\u1002\u1039&\u1021\u102D\u1002\u103A<<<\u1023\u1002\u103A&\u1021\u102F\u1002\u1039<<<\u1025\u1002\u1039&\u1021\u102F\u1002\u103A<<<\u1025\u1002\u103A&\u1021\u1031\u1002\u1039<<<\u1027\u1002\u1039&\u1021\u1031\u1002\u103A<<<\u1027\u1002\u103A&\u1021\u1031\u102C\u1002\u1039<<<\u1029\u1002\u1039&\u1021\u1031\u102C\u1002\u103A<<<\u1029\u1002\u103A&\u1021\u1031\u102C\u1002\u1039<<<\u1029\u1031\u102C\u1002\u1039&\u1021\u1031\u102C\u1002\u103A<<<\u1029\u1031\u102C\u1002\u103A&\u1021\u102D\u1003\u1039<<<\u1023\u1003\u1039&\u1021\u102D\u1003\u103A<<<\u1023\u1003\u103A&\u1021\u102F\u1003\u1039<<<\u1025\u1003\u1039&\u1021\u102F\u1003\u103A<<<\u1025\u1003\u103A&\u1021\u1031\u1003\u1039<<<\u1027\u1003\u1039&\u1021\u1031\u1003\u103A<<<\u1027\u1003\u103A&\u1021\u1031\u102C\u1003\u1039<<<\u1029\u1003\u1039&\u1021\u1031\u102C\u1003\u103A<<<\u1029\u1003\u103A&\u1021\u1031\u102C\u1003\u1039<<<\u1029\u1031\u102C\u1003\u1039&\u1021\u1031\u102C\u1003\u103A<<<\u1029\u1031\u102C\u1003\u103A&\u1021\u102D\u1004\u1039<<<\u1023\u1004\u1039&\u1021\u102D\u1004\u103A<<<\u1023\u1004\u103A&\u1021\u102F\u1004\u1039<<<\u1025\u1004\u1039&\u1021\u102F\u1004\u103A<<<\u1025\u1004\u103A&\u1021\u1031\u1004\u1039<<<\u1027\u1004\u1039&\u1021\u1031\u1004\u103A<<<\u1027\u1004\u103A&\u1021\u1031\u102C\u1004\u1039<<<\u1029\u1004\u1039&\u1021\u1031\u102C\u1004\u103A<<<\u1029\u1004\u103A&\u1021\u1031\u102C\u1004\u1039<<<\u1029\u1031\u102C\u1004\u1039&\u1021\u1031\u102C\u1004\u103A<<<\u1029\u1031\u102C\u1004\u103A&\u1021\u102D\u1005\u1039<<<\u1023\u1005\u1039&\u1021\u102D\u1005\u103A<<<\u1023\u1005\u103A&\u1021\u102F\u1005\u1039<<<\u1025\u1005\u1039&\u1021\u102F\u1005\u103A<<<\u1025\u1005\u103A&\u1021\u1031\u1005\u1039<<<\u1027\u1005\u1039&\u1021\u1031\u1005\u103A<<<\u1027\u1005\u103A&\u1021\u1031\u102C\u1005\u1039<<<\u1029\u1005\u1039&\u1021\u1031\u102C\u1005\u103A<<<\u1029\u1005\u103A&\u1021\u1031\u102C\u1005\u1039<<<\u1029\u1031\u102C\u1005\u1039&\u1021\u1031\u102C\u1005\u103A<<<\u1029\u1031\u102C\u1005\u103A&\u1021\u102D\u1006\u1039<<<\u1023\u1006\u1039&\u1021\u102D\u1006\u103A<<<\u1023\u1006\u103A&\u1021\u102F\u1006\u1039<<<\u1025\u1006\u1039&\u1021\u102F\u1006\u103A<<<\u1025\u1006\u103A&\u1021\u1031\u1006\u1039<<<\u1027\u1006\u1039&\u1021\u1031\u1006\u103A<<<\u1027\u1006\u103A&\u1021\u1031\u102C\u1006\u1039<<<\u1029\u1006\u1039&\u1021\u1031\u102C\u1006\u103A<<<\u1029\u1006\u103A&\u1021\u1031\u102C\u1006\u1039<<<\u1029\u1031\u102C\u1006\u1039&\u1021\u1031\u102C\u1006\u103A<<<\u1029\u1031\u102C\u1006\u103A&\u1021\u102D\u1007\u1039<<<\u1023\u1007\u1039&\u1021\u102D\u1007\u103A<<<\u1023\u1007\u103A&\u1021\u102F\u1007\u1039<<<\u1025\u1007\u1039&\u1021\u102F\u1007\u103A<<<\u1025\u1007\u103A&\u1021\u1031\u1007\u1039<<<\u1027\u1007\u1039&\u1021\u1031\u1007\u103A<<<\u1027\u1007\u103A&\u1021\u1031\u102C\u1007\u1039<<<\u1029\u1007\u1039&\u1021\u1031\u102C\u1007\u103A<<<\u1029\u1007\u103A&\u1021\u1031\u102C\u1007\u1039<<<\u1029\u1031\u102C\u1007\u1039&\u1021\u1031\u102C\u1007\u103A<<<\u1029\u1031\u102C\u1007\u103A&\u1021\u102D\u1009\u1039<<<\u1023\u1009\u1039&\u1021\u102D\u1009\u103A<<<\u1023\u1009\u103A&\u1021\u102F\u1009\u1039<<<\u1025\u1009\u1039&\u1021\u102F\u1009\u103A<<<\u1025\u1009\u103A&\u1021\u1031\u1009\u1039<<<\u1027\u1009\u1039&\u1021\u1031\u1009\u103A<<<\u1027\u1009\u103A&\u1021\u1031\u102C\u1009\u1039<<<\u1029\u1009\u1039&\u1021\u1031\u102C\u1009\u103A<<<\u1029\u1009\u103A&\u1021\u1031\u102C\u1009\u1039<<<\u1029\u1031\u102C\u1009\u1039&\u1021\u1031\u102C\u1009\u103A<<<\u1029\u1031\u102C\u1009\u103A&\u1021\u102D\u100A\u1039<<<\u1023\u100A\u1039&\u1021\u102D\u100A\u103A<<<\u1023\u100A\u103A&\u1021\u102F\u100A\u1039<<<\u1025\u100A\u1039&\u1021\u102F\u100A\u103A<<<\u1025\u100A\u103A&\u1021\u1031\u100A\u1039<<<\u1027\u100A\u1039&\u1021\u1031\u100A\u103A<<<\u1027\u100A\u103A&\u1021\u1031\u102C\u100A\u1039<<<\u1029\u100A\u1039&\u1021\u1031\u102C\u100A\u103A<<<\u1029\u100A\u103A&\u1021\u1031\u102C\u100A\u1039<<<\u1029\u1031\u102C\u100A\u1039&\u1021\u1031\u102C\u100A\u103A<<<\u1029\u1031\u102C\u100A\u103A&\u1021\u102D\u100B\u1039<<<\u1023\u100B\u1039&\u1021\u102D\u100B\u103A<<<\u1023\u100B\u103A&\u1021\u102F\u100B\u1039<<<\u1025\u100B\u1039&\u1021\u102F\u100B\u103A<<<\u1025\u100B\u103A&\u1021\u1031\u100B\u1039<<<\u1027\u100B\u1039&\u1021\u1031\u100B\u103A<<<\u1027\u100B\u103A&\u1021\u1031\u102C\u100B\u1039<<<\u1029\u100B\u1039&\u1021\u1031\u102C\u100B\u103A<<<\u1029\u100B\u103A&\u1021\u1031\u102C\u100B\u1039<<<\u1029\u1031\u102C\u100B\u1039&\u1021\u1031\u102C\u100B\u103A<<<\u1029\u1031\u102C\u100B\u103A&\u1021\u102D\u100C\u1039<<<\u1023\u100C\u1039&\u1021\u102D\u100C\u103A<<<\u1023\u100C\u103A&\u1021\u102F\u100C\u1039<<<\u1025\u100C\u1039&\u1021\u102F\u100C\u103A<<<\u1025\u100C\u103A&\u1021\u1031\u100C\u1039<<<\u1027\u100C\u1039&\u1021\u1031\u100C\u103A<<<\u1027\u100C\u103A&\u1021\u1031\u102C\u100C\u1039<<<\u1029\u100C\u1039&\u1021\u1031\u102C\u100C\u103A<<<\u1029\u100C\u103A&\u1021\u1031\u102C\u100C\u1039<<<\u1029\u1031\u102C\u100C\u1039&\u1021\u1031\u102C\u100C\u103A<<<\u1029\u1031\u102C\u100C\u103A&\u1021\u102D\u100D\u1039<<<\u1023\u100D\u1039&\u1021\u102D\u100D\u103A<<<\u1023\u100D\u103A&\u1021\u102F\u100D\u1039<<<\u1025\u100D\u1039&\u1021\u102F\u100D\u103A<<<\u1025\u100D\u103A&\u1021\u1031\u100D\u1039<<<\u1027\u100D\u1039&\u1021\u1031\u100D\u103A<<<\u1027\u100D\u103A&\u1021\u1031\u102C\u100D\u1039<<<\u1029\u100D\u1039&\u1021\u1031\u102C\u100D\u103A<<<\u1029\u100D\u103A&\u1021\u1031\u102C\u100D\u1039<<<\u1029\u1031\u102C\u100D\u1039&\u1021\u1031\u102C\u100D\u103A<<<\u1029\u1031\u102C\u100D\u103A&\u1021\u102D\u100E\u1039<<<\u1023\u100E\u1039&\u1021\u102D\u100E\u103A<<<\u1023\u100E\u103A&\u1021\u102F\u100E\u1039<<<\u1025\u100E\u1039&\u1021\u102F\u100E\u103A<<<\u1025\u100E\u103A&\u1021\u1031\u100E\u1039<<<\u1027\u100E\u1039&\u1021\u1031\u100E\u103A<<<\u1027\u100E\u103A&\u1021\u1031\u102C\u100E\u1039<<<\u1029\u100E\u1039&\u1021\u1031\u102C\u100E\u103A<<<\u1029\u100E\u103A&\u1021\u1031\u102C\u100E\u1039<<<\u1029\u1031\u102C\u100E\u1039&\u1021\u1031\u102C\u100E\u103A<<<\u1029\u1031\u102C\u100E\u103A&\u1021\u102D\u100F\u1039<<<\u1023\u100F\u1039&\u1021\u102D\u100F\u103A<<<\u1023\u100F\u103A&\u1021\u102F\u100F\u1039<<<\u1025\u100F\u1039&\u1021\u102F\u100F\u103A<<<\u1025\u100F\u103A&\u1021\u1031\u100F\u1039<<<\u1027\u100F\u1039&\u1021\u1031\u100F\u103A<<<\u1027\u100F\u103A&\u1021\u1031\u102C\u100F\u1039<<<\u1029\u100F\u1039&\u1021\u1031\u102C\u100F\u103A<<<\u1029\u100F\u103A&\u1021\u1031\u102C\u100F\u1039<<<\u1029\u1031\u102C\u100F\u1039&\u1021\u1031\u102C\u100F\u103A<<<\u1029\u1031\u102C\u100F\u103A&\u1021\u102D\u1010\u1039<<<\u1023\u1010\u1039&\u1021\u102D\u1010\u103A<<<\u1023\u1010\u103A&\u1021\u102F\u1010\u1039<<<\u1025\u1010\u1039&\u1021\u102F\u1010\u103A<<<\u1025\u1010\u103A&\u1021\u1031\u1010\u1039<<<\u1027\u1010\u1039&\u1021\u1031\u1010\u103A<<<\u1027\u1010\u103A&\u1021\u1031\u102C\u1010\u1039<<<\u1029\u1010\u1039&\u1021\u1031\u102C\u1010\u103A<<<\u1029\u1010\u103A&\u1021\u1031\u102C\u1010\u1039<<<\u1029\u1031\u102C\u1010\u1039&\u1021\u1031\u102C\u1010\u103A<<<\u1029\u1031\u102C\u1010\u103A&\u1021\u102D\u1011\u1039<<<\u1023\u1011\u1039&\u1021\u102D\u1011\u103A<<<\u1023\u1011\u103A&\u1021\u102F\u1011\u1039<<<\u1025\u1011\u1039&\u1021\u102F\u1011\u103A<<<\u1025\u1011\u103A&\u1021\u1031\u1011\u1039<<<\u1027\u1011\u1039&\u1021\u1031\u1011\u103A<<<\u1027\u1011\u103A&\u1021\u1031\u102C\u1011\u1039<<<\u1029\u1011\u1039&\u1021\u1031\u102C\u1011\u103A<<<\u1029\u1011\u103A&\u1021\u1031\u102C\u1011\u1039<<<\u1029\u1031\u102C\u1011\u1039&\u1021\u1031\u102C\u1011\u103A<<<\u1029\u1031\u102C\u1011\u103A&\u1021\u102D\u1012\u1039<<<\u1023\u1012\u1039&\u1021\u102D\u1012\u103A<<<\u1023\u1012\u103A&\u1021\u102F\u1012\u1039<<<\u1025\u1012\u1039&\u1021\u102F\u1012\u103A<<<\u1025\u1012\u103A&\u1021\u1031\u1012\u1039<<<\u1027\u1012\u1039&\u1021\u1031\u1012\u103A<<<\u1027\u1012\u103A&\u1021\u1031\u102C\u1012\u1039<<<\u1029\u1012\u1039&\u1021\u1031\u102C\u1012\u103A<<<\u1029\u1012\u103A&\u1021\u1031\u102C\u1012\u1039<<<\u1029\u1031\u102C\u1012\u1039&\u1021\u1031\u102C\u1012\u103A<<<\u1029\u1031\u102C\u1012\u103A&\u1021\u102D\u1013\u1039<<<\u1023\u1013\u1039&\u1021\u102D\u1013\u103A<<<\u1023\u1013\u103A&\u1021\u102F\u1013\u1039<<<\u1025\u1013\u1039&\u1021\u102F\u1013\u103A<<<\u1025\u1013\u103A&\u1021\u1031\u1013\u1039<<<\u1027\u1013\u1039&\u1021\u1031\u1013\u103A<<<\u1027\u1013\u103A&\u1021\u1031\u102C\u1013\u1039<<<\u1029\u1013\u1039&\u1021\u1031\u102C\u1013\u103A<<<\u1029\u1013\u103A&\u1021\u1031\u102C\u1013\u1039<<<\u1029\u1031\u102C\u1013\u1039&\u1021\u1031\u102C\u1013\u103A<<<\u1029\u1031\u102C\u1013\u103A&\u1021\u102D\u1014\u1039<<<\u1023\u1014\u1039&\u1021\u102D\u1014\u103A<<<\u1023\u1014\u103A&\u1021\u102F\u1014\u1039<<<\u1025\u1014\u1039&\u1021\u102F\u1014\u103A<<<\u1025\u1014\u103A&\u1021\u1031\u1014\u1039<<<\u1027\u1014\u1039&\u1021\u1031\u1014\u103A<<<\u1027\u1014\u103A&\u1021\u1031\u102C\u1014\u1039<<<\u1029\u1014\u1039&\u1021\u1031\u102C\u1014\u103A<<<\u1029\u1014\u103A&\u1021\u1031\u102C\u1014\u1039<<<\u1029\u1031\u102C\u1014\u1039&\u1021\u1031\u102C\u1014\u103A<<<\u1029\u1031\u102C\u1014\u103A&\u1021\u102D\u1015\u1039<<<\u1023\u1015\u1039&\u1021\u102D\u1015\u103A<<<\u1023\u1015\u103A&\u1021\u102F\u1015\u1039<<<\u1025\u1015\u1039&\u1021\u102F\u1015\u103A<<<\u1025\u1015\u103A&\u1021\u1031\u1015\u1039<<<\u1027\u1015\u1039&\u1021\u1031\u1015\u103A<<<\u1027\u1015\u103A&\u1021\u1031\u102C\u1015\u1039<<<\u1029\u1015\u1039&\u1021\u1031\u102C\u1015\u103A<<<\u1029\u1015\u103A&\u1021\u1031\u102C\u1015\u1039<<<\u1029\u1031\u102C\u1015\u1039&\u1021\u1031\u102C\u1015\u103A<<<\u1029\u1031\u102C\u1015\u103A&\u1021\u102D\u1016\u1039<<<\u1023\u1016\u1039&\u1021\u102D\u1016\u103A<<<\u1023\u1016\u103A&\u1021\u102F\u1016\u1039<<<\u1025\u1016\u1039&\u1021\u102F\u1016\u103A<<<\u1025\u1016\u103A&\u1021\u1031\u1016\u1039<<<\u1027\u1016\u1039&\u1021\u1031\u1016\u103A<<<\u1027\u1016\u103A&\u1021\u1031\u102C\u1016\u1039<<<\u1029\u1016\u1039&\u1021\u1031\u102C\u1016\u103A<<<\u1029\u1016\u103A&\u1021\u1031\u102C\u1016\u1039<<<\u1029\u1031\u102C\u1016\u1039&\u1021\u1031\u102C\u1016\u103A<<<\u1029\u1031\u102C\u1016\u103A&\u1021\u102D\u1017\u1039<<<\u1023\u1017\u1039&\u1021\u102D\u1017\u103A<<<\u1023\u1017\u103A&\u1021\u102F\u1017\u1039<<<\u1025\u1017\u1039&\u1021\u102F\u1017\u103A<<<\u1025\u1017\u103A&\u1021\u1031\u1017\u1039<<<\u1027\u1017\u1039&\u1021\u1031\u1017\u103A<<<\u1027\u1017\u103A&\u1021\u1031\u102C\u1017\u1039<<<\u1029\u1017\u1039&\u1021\u1031\u102C\u1017\u103A<<<\u1029\u1017\u103A&\u1021\u1031\u102C\u1017\u1039<<<\u1029\u1031\u102C\u1017\u1039&\u1021\u1031\u102C\u1017\u103A<<<\u1029\u1031\u102C\u1017\u103A&\u1021\u102D\u1018\u1039<<<\u1023\u1018\u1039&\u1021\u102D\u1018\u103A<<<\u1023\u1018\u103A&\u1021\u102F\u1018\u1039<<<\u1025\u1018\u1039&\u1021\u102F\u1018\u103A<<<\u1025\u1018\u103A&\u1021\u1031\u1018\u1039<<<\u1027\u1018\u1039&\u1021\u1031\u1018\u103A<<<\u1027\u1018\u103A&\u1021\u1031\u102C\u1018\u1039<<<\u1029\u1018\u1039&\u1021\u1031\u102C\u1018\u103A<<<\u1029\u1018\u103A&\u1021\u1031\u102C\u1018\u1039<<<\u1029\u1031\u102C\u1018\u1039&\u1021\u1031\u102C\u1018\u103A<<<\u1029\u1031\u102C\u1018\u103A&\u1021\u102D\u1019\u1039<<<\u1023\u1019\u1039&\u1021\u102D\u1019\u103A<<<\u1023\u1019\u103A&\u1021\u102F\u1019\u1039<<<\u1025\u1019\u1039&\u1021\u102F\u1019\u103A<<<\u1025\u1019\u103A&\u1021\u1031\u1019\u1039<<<\u1027\u1019\u1039&\u1021\u1031\u1019\u103A<<<\u1027\u1019\u103A&\u1021\u1031\u102C\u1019\u1039<<<\u1029\u1019\u1039&\u1021\u1031\u102C\u1019\u103A<<<\u1029\u1019\u103A&\u1021\u1031\u102C\u1019\u1039<<<\u1029\u1031\u102C\u1019\u1039&\u1021\u1031\u102C\u1019\u103A<<<\u1029\u1031\u102C\u1019\u103A&\u1021\u102D\u101A\u1039<<<\u1023\u101A\u1039&\u1021\u102D\u101A\u103A<<<\u1023\u101A\u103A&\u1021\u102F\u101A\u1039<<<\u1025\u101A\u1039&\u1021\u102F\u101A\u103A<<<\u1025\u101A\u103A&\u1021\u1031\u101A\u1039<<<\u1027\u101A\u1039&\u1021\u1031\u101A\u103A<<<\u1027\u101A\u103A&\u1021\u1031\u102C\u101A\u1039<<<\u1029\u101A\u1039&\u1021\u1031\u102C\u101A\u103A<<<\u1029\u101A\u103A&\u1021\u1031\u102C\u101A\u1039<<<\u1029\u1031\u102C\u101A\u1039&\u1021\u1031\u102C\u101A\u103A<<<\u1029\u1031\u102C\u101A\u103A&\u1021\u102D\u101B\u1039<<<\u1023\u101B\u1039&\u1021\u102D\u101B\u103A<<<\u1023\u101B\u103A&\u1021\u102F\u101B\u1039<<<\u1025\u101B\u1039&\u1021\u102F\u101B\u103A<<<\u1025\u101B\u103A&\u1021\u1031\u101B\u1039<<<\u1027\u101B\u1039&\u1021\u1031\u101B\u103A<<<\u1027\u101B\u103A&\u1021\u1031\u102C\u101B\u1039<<<\u1029\u101B\u1039&\u1021\u1031\u102C\u101B\u103A<<<\u1029\u101B\u103A&\u1021\u1031\u102C\u101B\u1039<<<\u1029\u1031\u102C\u101B\u1039&\u1021\u1031\u102C\u101B\u103A<<<\u1029\u1031\u102C\u101B\u103A&\u1021\u102D\u101C\u1039<<<\u1023\u101C\u1039&\u1021\u102D\u101C\u103A<<<\u1023\u101C\u103A&\u1021\u102F\u101C\u1039<<<\u1025\u101C\u1039&\u1021\u102F\u101C\u103A<<<\u1025\u101C\u103A&\u1021\u1031\u101C\u1039<<<\u1027\u101C\u1039&\u1021\u1031\u101C\u103A<<<\u1027\u101C\u103A&\u1021\u1031\u102C\u101C\u1039<<<\u1029\u101C\u1039&\u1021\u1031\u102C\u101C\u103A<<<\u1029\u101C\u103A&\u1021\u1031\u102C\u101C\u1039<<<\u1029\u1031\u102C\u101C\u1039&\u1021\u1031\u102C\u101C\u103A<<<\u1029\u1031\u102C\u101C\u103A&\u1021\u102D\u101E\u1039<<<\u1023\u101E\u1039&\u1021\u102D\u101E\u103A<<<\u1023\u101E\u103A&\u1021\u102F\u101E\u1039<<<\u1025\u101E\u1039&\u1021\u102F\u101E\u103A<<<\u1025\u101E\u103A&\u1021\u1031\u101E\u1039<<<\u1027\u101E\u1039&\u1021\u1031\u101E\u103A<<<\u1027\u101E\u103A&\u1021\u1031\u102C\u101E\u1039<<<\u1029\u101E\u1039&\u1021\u1031\u102C\u101E\u103A<<<\u1029\u101E\u103A&\u1021\u1031\u102C\u101E\u1039<<<\u1029\u1031\u102C\u101E\u1039&\u1021\u1031\u102C\u101E\u103A<<<\u1029\u1031\u102C\u101E\u103A&\u1021\u102D\u101F\u1039<<<\u1023\u101F\u1039&\u1021\u102D\u101F\u103A<<<\u1023\u101F\u103A&\u1021\u102F\u101F\u1039<<<\u1025\u101F\u1039&\u1021\u102F\u101F\u103A<<<\u1025\u101F\u103A&\u1021\u1031\u101F\u1039<<<\u1027\u101F\u1039&\u1021\u1031\u101F\u103A<<<\u1027\u101F\u103A&\u1021\u1031\u102C\u101F\u1039<<<\u1029\u101F\u1039&\u1021\u1031\u102C\u101F\u103A<<<\u1029\u101F\u103A&\u1021\u1031\u102C\u101F\u1039<<<\u1029\u1031\u102C\u101F\u1039&\u1021\u1031\u102C\u101F\u103A<<<\u1029\u1031\u102C\u101F\u103A&\u1031\u102C\u1000\u103A\u1000\u103B=\u1031\u102C\u1000\u103A\u103B&\u1014\u103A\u1014\u102F\u1015\u103A=\u1014\u103A\u102F\u1015\u103A&\u1031\u101E\u1039\u101E=\u1031\u103F&\u102D\u101E\u1039\u101E=\u102D\u103F&\u102F\u101E\u1039\u101E=\u102F\u103F&\u1021\u102D\u101E\u1039\u101E<<<\u1023\u103F&\u1021\u102F\u101E\u1039\u101E<<<\u1025\u103F&\u101E\u1039\u101E=\u103F&\u1014\u103E\u102D\u102F\u1000\u103A<<\u104C&\u101B\u103D\u1031\u1037<<\u104D&\u101C\u100A\u103A\u1038\u1000\u1031\u102C\u1004\u103A\u1038<<\u104E\u1004\u103A\u1038&\u1021\u102D<<\u104F&\u101C\u1000\u103A\u101A\u102C=\u101C\u1000\u103A\u103B\u102C&\u101E\u1019\u102E=\u101E\u1039\u1019\u102E&\u1011\u1019\u1004\u103A\u1038=\u1011\u1039\u1019\u1004\u103A\u1038&\u101C\u1000\u103A\u1018\u1000\u103A=\u101C\u1039\u1018\u1000\u103A
+00339b80 string  &A << \u00E0 <<< \u00C0 << \u1EA3 <<< \u1EA2 << \u00E3 <<< \u00C3 << \u00E1 <<< \u00C1 << \u1EA1 <<< \u1EA0  < \u0103 <<< \u0102 << \u1EB1 <<< \u1EB0 << \u1EB3 <<< \u1EB2 << \u1EB5 <<< \u1EB4 << \u1EAF <<< \u1EAE << \u1EB7 <<< \u1EB6  < \u00E2 <<< \u00C2 << \u1EA7 <<< \u1EA6 << \u1EA9 <<< \u1EA8 << \u1EAB <<< \u1EAA << \u1EA5 <<< \u1EA4 << \u1EAD <<< \u1EAC &D  < \u0111 <<< \u0110 &E << \u00E8 <<< \u00C8 << \u1EBB <<< \u1EBA << \u1EBD <<< \u1EBC << \u00E9 <<< \u00C9 << \u1EB9 <<< \u1EB8  < \u00EA <<< \u00CA << \u1EC1 <<< \u1EC0 << \u1EC3 <<< \u1EC2 << \u1EC5 <<< \u1EC4 << \u1EBF <<< \u1EBE << \u1EC7 <<< \u1EC6 &I << \u00EC <<< \u00CC << \u1EC9 <<< \u1EC8 << \u0129 <<< \u0128 << \u00ED <<< \u00CD << \u1ECB <<< \u1ECA &O << \u00F2 <<< \u00D2 << \u1ECF <<< \u1ECE << \u00F5 <<< \u00D5 << \u00F3 <<< \u00D3 << \u1ECD <<< \u1ECC  < \u00F4 <<< \u00D4 << \u1ED3 <<< \u1ED2 << \u1ED5 <<< \u1ED4 << \u1ED7 <<< \u1ED6 << \u1ED1 <<< \u1ED0 << \u1ED9 <<< \u1ED8  < \u01A1 <<< \u01A0 << \u1EDD <<< \u1EDC << \u1EDF <<< \u1EDE << \u1EE1 <<< \u1EE0 << \u1EDB <<< \u1EDA << \u1EE3 <<< \u1EE2 &U << \u00F9 <<< \u00D9 << \u1EE7 <<< \u1EE6 << \u0169 <<< \u0168 << \u00FA <<< \u00DA << \u1EE5 <<< \u1EE4  < \u01B0 <<< \u01AF << \u1EEB <<< \u1EEA << \u1EED <<< \u1EEC << \u1EEF <<< \u1EEE << \u1EE9 <<< \u1EE8 << \u1EF1 <<< \u1EF0 &Y << \u1EF3 <<< \u1EF2 << \u1EF7 <<< \u1EF6 << \u1EF9 <<< \u1EF8 << \u00FD <<< \u00DD << \u1EF5 <<< \u1EF4
+0033a120 string &C <  \u010D <<< \u010C < \u0107 <<< \u0106 &D <  d\u017E <<< \u01C6 <<< D\u017E <<< \u01C5 <<< D\u017D <<< \u01C4    <  \u0111 <<< \u0110 &L < lj <<< \u01C9 <<< Lj <<< \u01C8 <<< LJ <<< \u01C7 &N < nj <<< \u01CC <<< Nj <<< \u01CB <<< NJ <<< \u01CA &S < \u0161 <<< \u0160 &Z < \u017E <<< \u017D
+0033a260 string & \u0D96 < \u0D82 < \u0D83 < \u0D9A < \u0D9B < \u0D9C < \u0D9D< \u0D9E < \u0D9F < \u0DA0 < \u0DA1 < \u0DA2 < \u0DA3< \u0DA5 < \u0DA4 < \u0DA6< \u0DA7 < \u0DA8 < \u0DA9 < \u0DAA < \u0DAB < \u0DAC< \u0DAD < \u0DAE < \u0DAF < \u0DB0 < \u0DB1< \u0DB3 < \u0DB4 < \u0DB5 < \u0DB6 < \u0DB7 < \u0DB8< \u0DB9 < \u0DBA < \u0DBB < \u0DBD < \u0DC0 < \u0DC1< \u0DC2 < \u0DC3 < \u0DC4 < \u0DC5 < \u0DC6< \u0DCF< \u0DD0 < \u0DD1 < \u0DD2 < \u0DD3 < \u0DD4 < \u0DD6< \u0DD8 < \u0DF2 < \u0DDF < \u0DF3 < \u0DD9 < \u0DDA< \u0DDB < \u0DDC < \u0DDD < \u0DDE < \u0DCA
+0033a4a0 string &C < \u010D <<< \u010C < \u0107 <<< \u0106&D < d\u017E = \u01C6 <<< d\u017D <<< D\u017E = \u01C5 <<< D\u017D = \u01C4   < \u0111 <<< \u0110&L < lj = \u01C9  <<< lJ <<< Lj = \u01C8 <<< LJ = \u01C7&N < nj = \u01CC  <<< nJ <<< Nj = \u01CB <<< NJ = \u01CA&S < \u0161 <<< \u0160&Z < \u017E <<< \u017D
+0033a5e0 string &O < \u00F6 <<< \u00D6 << \u0151 <<< \u0150&U < \u00FC <<< \u00DC << \u0171 <<< \u0170
+0033a640 string & C < \u0109 <<< \u0108& G < \u011D <<< \u011C& H < \u0125 <<< \u0124& J < \u0135 <<< \u0134& S < \u015d <<< \u015c& U < \u016d <<< \u016c
+0033a6e0 string & \u066D < \u064E < \uFE76 < \uFE77 < \u0650 < \uFE7A < \uFE7B < \u064F < \uFE78 < \uFE79 < \u064B < \uFE70 < \uFE71 < \u064D < \uFE74 < \u064C < \uFE72& \uFE7F < \u0653 < \u0654 < \u0655 < \u0670& \u0669 < \u0622 < \u0627 < \u0671 < \u0621 < \u0623 < \u0625 < \u0624 < \u0626& \u0642 < \u06A9 < \u0643& \u0648 < \u0647 < \u0629 < \u06C0 < \u06CC < \u0649 < \u064A& \uFE80 < \uFE81 < \uFE82 < \uFE8D < \uFE8E < \uFB50 < \uFB51 < \uFE80  & \uFE80 < \uFE83 < \uFE84 < \uFE87 < \uFE88 < \uFE85 < \uFE86 < \u0689 < \u068A& \uFEAE < \uFDFC& \uFED8 < \uFB8E < \uFB8F < \uFB90 < \uFB91 < \uFED9 < \uFEDA < \uFEDB < \uFEDC& \uFEEE < \uFEE9 < \uFEEA < \uFEEB < \uFEEC < \uFE93 < \uFE94 < \uFBA4 < \uFBA5 < \uFBFC < \uFBFD < \uFBFE < \uFBFF < \uFEEF < \uFEF0 < \uFEF1 < \uFEF2 < \uFEF3 < \uFEF4 < \uFEF5 < \uFEF6 < \uFEF7 < \uFEF8 < \uFEF9 < \uFEFA < \uFEFB < \uFEFC
+0033aa40 string & I << j <<< J & V << u <<< U 
+0033aa60 string &C <  ch <<< Ch <<< CH&L <  ll <<< Ll <<< LL&N < \u00F1 <<< \u00D1
+0033aac0 string & A < \u00E4 <<< \u00C4& C < \u010D <<< \u010C& H < ch <<< Ch <<< CH& O < \u00F4 <<< \u00D4& S < \u0161 <<< \u0160& Z < \u017E <<< \u017D
+0033ab60 string & C << ch <<< Ch <<< CH< \u010D <<< \u010C& E << \u0119 <<< \u0118 << \u0117 <<< \u0116& I << y <<< Y& S  < \u0161 <<< \u0160& Z  < \u017E <<< \u017D
+0033ac00 string & Y << \u00FC <<< \u00DC << \u0171 <<< \u0170& Z  < \u00E6 <<< \u00C6 << \u00E4 <<< \u00C4 < \u00F8 <<< \u00D8 << \u00F6 <<< \u00D6 << \u0151 <<< \u0150 < \u00E5 <<< \u00C5 << aa <<<  Aa <<< AA
+0033ace0 string & C < \u010D <<< \u010C & H <      ch <<<      Ch <<< CH& R < \u0159 <<< \u0158& S < \u0161 <<< \u0160& Z < \u017E <<< \u017D
+0033ad60 string & C < \u00E7 <<< \u00C7 & G < \u011F <<< \u011E & H < \u0131 <<< \u0049 & O < \u00F6 <<< \u00D6 & S < \u015F <<< \u015E & U < \u00FC <<< \u00DC 
+0033ae00 string & Y <<\u00FC <<< \u00DC & Z < \u00E5 <<< \u00C5 < \u00E4 <<< \u00C4 << \u00E6 <<< \u00C6 < \u00F6 <<< \u00D6 << \u00F8 <<< \u00D8 
+0033ae90 string & N < \u00F1 <<< \u00D1 
+0033aec0 string & S < \u0161 <<< \u0160  < \u007A <<< \u005A  < \u017E <<< \u017D & W < \u00F5 <<< \u00D5 < \u00E4 <<< \u00C4 < \u00F6 <<< \u00D6 < \u00FC <<< \u00DC 
+0033af60 string & A < \u0105 <<< \u0104 & C < \u0107 <<< \u0106 & E < \u0119 <<< \u0118 & L < \u0142 <<< \u0141 & N < \u0144 <<< \u0143 & O < \u00F3 <<< \u00D3 & S < \u015B <<< \u015A & Z < \u017A <<< \u0179 < \u017C <<< \u017B
+0033b040 string & C < \u010D <<< \u010C & S < \u0161 <<< \u0160 & Z < \u017E <<< \u017D 
+0033b0a0 string & A < \u0103 <<< \u0102 < \u00E2 <<< \u00C2 & I < \u00EE <<< \u00CE & S < \u0219 <<< \u0218 << \u015F <<< \u015E & T < \u021B <<< \u021A << \u0163 <<< \u0162 
+0033b140 string & C < \u010D <<< \u010C & G < \u0123 <<< \u0122 & I < \u0079 <<< \u0059 & K < \u0137 <<< \u0136 & L < \u013C <<< \u013B & N < \u0146 <<< \u0145 & R < \u0157 <<< \u0156 & S < \u0161 <<< \u0160 & Z < \u017E <<< \u017D 
+0033b220 string & A < \u00E1 <<< \u00C1 & D < \u00F0 <<< \u00D0 & E < \u00E9 <<< \u00C9 & I < \u00ED <<< \u00CD & O < \u00F3 <<< \u00D3 & U < \u00FA <<< \u00DA & Y < \u00FD <<< \u00DD & Z < \u00FE <<< \u00DE < \u00E6 <<< \u00C6 << \u00E4 <<< \u00C4 < \u00F6 <<< \u00D6 << \u00F8 <<< \u00D8 < \u00E5 <<< \u00C5 
+0033b360 string &AE << \u00E6 <<< \u00C6 << \u00E4 <<< \u00C4 &OE << \u0153 <<< \u0152 << \u00F6 <<< \u00D6 &UE << \u00FC <<< \u00DC 
+003dc320 unicode   8  
+003eb720 unicode32                         jk  bbcccdddeeffggghil                                           444                                                    
+0046dd67 string c)c*c-c5c6c9c<cAcBcCcDcFcJcKcNcRcScTcXc[cecfclcmcqctcuc
+0046ed73 string n"n'n2n6n9n;n<nDnEnHnInKnOnQnRnSnTnWn\n]n^n
+004b61c0 string 0123456789abcdef
+004bb648 string utf8mb4
+004bb655 string utf32
+004bb65b string utf16
+004bb668 string utf8mb3
+004bb670 string latin2
+004bb7a0 string 0123456789abcdefghijklmnopqrstuvwxyz
+004bb7e0 string 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+004bb820 string 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+004df5b1 string zR
+004df5e1 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/mariadb-client.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .note.package
+.shstrtab::000000da string-utf8 .tbss
+.shstrtab::000000e0 string-utf8 .init_array
+.shstrtab::000000ec string-utf8 .fini_array
+.shstrtab::000000f8 string-utf8 .data.rel.ro
+.shstrtab::00000105 string-utf8 .dynamic
+.shstrtab::0000010e string-utf8 .data
+.shstrtab::00000114 string-utf8 .bss
+.shstrtab::00000119 string-utf8 .gnu_debugaltlink
+.shstrtab::0000012b string-utf8 .gnu_debuglink

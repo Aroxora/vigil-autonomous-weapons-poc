@@ -1,0 +1,156 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001008a9 string-utf8 _ITM_deregisterTMCloneTable
+001008c5 string-utf8 __gmon_start__
+001008d4 string-utf8 _ITM_registerTMCloneTable
+001008ee string-utf8 i2c_smbus_read_block_data
+00100908 string-utf8 i2c_smbus_read_byte_data
+00100921 string-utf8 i2c_smbus_write_byte
+00100936 string-utf8 i2c_smbus_read_word_data
+0010094f string-utf8 i2c_smbus_read_byte
+00100963 string-utf8 i2c_smbus_read_i2c_block_data
+00100981 string-utf8 fgetc
+00100987 string-utf8 optind
+0010098e string-utf8 fgets
+00100994 string-utf8 strcpy
+0010099b string-utf8 stdin
+001009a1 string-utf8 __stack_chk_fail
+001009b2 string-utf8 __printf_chk
+001009bf string-utf8 free
+001009c4 string-utf8 exit
+001009c9 string-utf8 strdup
+001009d0 string-utf8 closedir
+001009d9 string-utf8 strrchr
+001009e1 string-utf8 fflush
+001009e8 string-utf8 fopen
+001009ee string-utf8 __isoc23_sscanf
+001009fe string-utf8 strlen
+00100a05 string-utf8 __isoc23_strtol
+00100a15 string-utf8 realloc
+00100a1d string-utf8 strcasecmp
+00100a28 string-utf8 __fprintf_chk
+00100a36 string-utf8 malloc
+00100a3d string-utf8 __libc_start_main
+00100a4f string-utf8 stderr
+00100a56 string-utf8 getopt
+00100a5d string-utf8 __strcat_chk
+00100a6a string-utf8 __cxa_finalize
+00100a79 string-utf8 strchr
+00100a80 string-utf8 strerror
+00100a89 string-utf8 readdir
+00100a91 string-utf8 calloc
+00100a98 string-utf8 fclose
+00100a9f string-utf8 __isoc23_strtoul
+00100ab0 string-utf8 ioctl
+00100ab6 string-utf8 opendir
+00100abe string-utf8 __snprintf_chk
+00100acd string-utf8 fwrite
+00100ad4 string-utf8 strcmp
+00100adb string-utf8 qsort
+00100ae1 string-utf8 __errno_location
+00100af2 string-utf8 strncmp
+00100afa string-utf8 libi2c.so.0
+00100b06 string-utf8 libc.so.6
+00100b10 string-utf8 GLIBC_2.4
+00100b1a string-utf8 GLIBC_2.34
+00100b25 string-utf8 GLIBC_2.2.5
+00100b31 string-utf8 GLIBC_2.38
+00100b3c string-utf8 GLIBC_2.3.4
+00104008 string Usage: i2cget [-f] [-y] [-a] I2CBUS CHIP-ADDRESS [DATA-ADDRESS [MODE [LENGTH]]]   I2CBUS is an integer or an I2C bus name   ADDRESS is an integer (0x08 - 0x77, or 0x00 - 0x7f if -a is given)   MODE is one of:     b (read byte data, default)     w (read word data)     c (write byte/read byte)     s (read SMBus block data)     i (read I2C block data)     Append p for SMBus PEC   LENGTH is the I2C block data length (between 1 and %d, default %d) 
+001041c8 string Error: PEC not supported for I2C block data! 
+001041f8 string Error: Length only valid for I2C block data! 
+00104228 string Error: Could not get the adapter functionality matrix: %s 
+00104268 string Error: Adapter does not have %s capability 
+00104298 string Warning: Adapter does not seem to support PEC 
+001042c8 string WARNING! This program can confuse your I2C bus, cause data loss and worse! 
+00104318 string STOP! EEPROMs are I2C devices, not SMBus devices. Using PEC on I2C devices may result in unexpected results, such as trashing the contents of EEPROMs. We can't let you do that, sorry. 
+001043d8 string WARNING! All I2C chips and some SMBus chips will interpret a write byte command with PEC as awrite byte data command, effectively writing a value into a register! 
+00104480 string I will read from device file %s, chip address 0x%02x, 
+001044b8 string , %d %s using read I2C block data. 
+001044e0 string Error: Chip address is not a number! 
+00104508 string Error: Chip address out of range (0x%02lx-0x%02lx)! 
+00104540 string Error: Could not open file `/dev/i2c-%d' or `/dev/i2c/%d': %s 
+00104580 string Error: Could not open file `%s': %s 
+001045a8 string Error: I2C bus name is not unique! 
+001045d0 string Error: I2C bus name doesn't match any bus present! 
+00104608 string Error: Could not set address to 0x%02x: %s 
+00104634 string bytes
+0010463a string write byte/read byte
+0010464f string read byte data
+0010465e string read SMBus block data
+00104674 string read word data
+0010468b string Vafhy
+00104695 string i2cget version %s 
+001046a8 string Error: Data address invalid! 
+001046c6 string Error: Invalid mode! 
+001046dc string Error: Length invalid! 
+001046f4 string SMBus receive byte
+00104707 string SMBus send byte
+00104717 string SMBus read byte
+00104727 string SMBus read word
+00104737 string SMBus block read
+00104748 string I2C block read
+00104757 string current data address
+0010476c string data address 0x%02x
+00104780 string , using %s. 
+0010478d string PEC checking enabled. 
+001047a4 string Continue? [%s] 
+001047b4 string Aborting on user request. 
+001047cf string Error: Could not set PEC: %s 
+001047ed string Warning - write failed 
+00104805 string Error: Read failed 
+00104819 string 0x%02hhx 
+00104823 string 0x%02hhx 
+0010482d string 0x%0*x 
+00104835 string /dev/i2c/%d
+00104841 string %s: path truncated 
+0010485a string i2c-%d
+00104861 string Run as root? 
+0010486f string /proc/bus/i2c
+0010487d string /proc/mounts
+0010488a string %*[^ ] %[^ ] %[^ ] %*s 
+001048a2 string sysfs
+001048a8 string %s/%s/name
+001048b3 string %s/%s/device/name
+001048c5 string %s/%s/device
+001048da string %s/%s/device/%s/name
+001048ef string %s: read error 
+00104904 string /class/i2c-dev
+00104913 string Error: Out of memory! 
+0010492a string Error: I2C bus out of range! 
+00104948 string dummy
+0010494e string Dummy bus
+0010495c string ISA bus
+00104964 string I2C adapter
+00104970 string smbus
+00104976 string SMBus adapter
+00104984 string unknown
+00104b19 string zR
+00104b49 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/i2c-tools.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

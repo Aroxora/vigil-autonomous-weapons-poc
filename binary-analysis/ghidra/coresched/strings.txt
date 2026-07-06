@@ -1,0 +1,159 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001009b9 string-utf8 fgetc
+001009bf string-utf8 optind
+001009c6 string-utf8 prctl
+001009cc string-utf8 program_invocation_short_name
+001009ea string-utf8 dcgettext
+001009f4 string-utf8 __stack_chk_fail
+00100a05 string-utf8 __printf_chk
+00100a12 string-utf8 free
+00100a17 string-utf8 __assert_fail
+00100a25 string-utf8 __isoc23_strtoimax
+00100a38 string-utf8 strdup
+00100a3f string-utf8 strspn
+00100a46 string-utf8 ferror
+00100a4d string-utf8 fflush
+00100a54 string-utf8 strtod
+00100a5b string-utf8 strndup
+00100a63 string-utf8 strlen
+00100a6a string-utf8 __ctype_b_loc
+00100a78 string-utf8 __vasprintf_chk
+00100a88 string-utf8 __isoc23_strtol
+00100a98 string-utf8 getpid
+00100a9f string-utf8 stdout
+00100aa6 string-utf8 optarg
+00100aad string-utf8 realloc
+00100ab5 string-utf8 isatty
+00100abc string-utf8 execvp
+00100ac3 string-utf8 _exit
+00100ac9 string-utf8 bindtextdomain
+00100ad8 string-utf8 __fprintf_chk
+00100ae6 string-utf8 localeconv
+00100af1 string-utf8 strcspn
+00100af9 string-utf8 malloc
+00100b00 string-utf8 __libc_start_main
+00100b12 string-utf8 strtold
+00100b1a string-utf8 stderr
+00100b21 string-utf8 __isoc23_strtoumax
+00100b34 string-utf8 __ctype_tolower_loc
+00100b48 string-utf8 warn
+00100b4d string-utf8 __cxa_finalize
+00100b5c string-utf8 setlocale
+00100b66 string-utf8 strchr
+00100b6d string-utf8 close
+00100b73 string-utf8 fputc
+00100b79 string-utf8 fputs
+00100b7f string-utf8 __snprintf_chk
+00100b8e string-utf8 memcpy
+00100b95 string-utf8 fileno
+00100b9c string-utf8 strcmp
+00100ba3 string-utf8 __errno_location
+00100bb4 string-utf8 getopt_long
+00100bc0 string-utf8 strncmp
+00100bc8 string-utf8 warnx
+00100bce string-utf8 errx
+00100bd3 string-utf8 __progname
+00100bde string-utf8 __cxa_atexit
+00100beb string-utf8 libc.so.6
+00100bf5 string-utf8 GLIBC_2.3
+00100bff string-utf8 GLIBC_2.8
+00100c09 string-utf8 GLIBC_2.14
+00100c14 string-utf8 GLIBC_2.4
+00100c1e string-utf8 GLIBC_2.38
+00100c29 string-utf8 GLIBC_2.34
+00100c34 string-utf8 GLIBC_2.3.4
+00100c40 string-utf8 GLIBC_2.2.5
+00100c4c string-utf8 _ITM_deregisterTMCloneTable
+00100c68 string-utf8 __gmon_start__
+00100c77 string-utf8 _ITM_registerTMCloneTable
+00106010 string Failed to get cookie from PID %d
+00106038 string set cookie of PID %d to 0x%llx
+00106058 string Failed to create cookie for PID %d
+00106080 string Failed to pull cookie from PID %d
+001060a8 string  %s new [-t <TYPE>] --dest <PID> 
+001060d0 string  %s new [-t <TYPE>] -- PROGRAM [ARGS...] 
+00106100 string  %s copy [--source <PID>] [-t <TYPE>] --dest <PID> 
+00106138 string  %s copy [--source <PID>] [-t <TYPE>] -- PROGRAM [ARGS...] 
+00106178 string Manage core scheduling cookies for tasks.
+001061a8 string  get                      retrieve the core scheduling cookie of a PID
+001061f0 string  new                      assign a new core scheduling cookie to an existing                             PID or execute a program with a new cookie
+00106288 string  copy                     copy the core scheduling cookie from an existing PID                             to another PID, or execute a program with that                             copied cookie
+00106350 string  -s, --source <PID>       which PID to get the cookie from                             If omitted, it is the PID of %s itself 
+001063d0 string  -d, --dest <PID>         which PID to modify the cookie of 
+00106410 string  -t, --dest-type <TYPE>   type of the destination PID, or the type of the PID                             when a new core scheduling cookie is created.                             Can be one of the following: pid, tgid or pgid.                             The default is tgid.
+00106528 string Failed to parse PID for -s/--source
+00106550 string Failed to parse PID for -d/--dest
+00106578 string '%s' is an invalid option. Must be one of pid/tgid/pgid
+001065b0 string Try '%s --help' for more information. 
+001065d8 string get does not accept the --dest option
+00106600 string new does not accept the --source option
+00106628 string new requires either a -d/--dest or a command
+00106658 string copy requires either a -d/--dest or a command
+00106688 string Core scheduling is not supported on this system. Either SMT is unavailable or your kernel does not support CONFIG_SCHED_CORE.
+00106708 string Failed to push cookie to PID %d
+00106728 string copied cookie 0x%llx from PID %d to PID %d
+00106753 string failed to execute %s
+00106768 string  Usage: 
+00106771 string  %s [get] [--source <PID>] 
+0010678d string  Functions: 
+0010679a string  Options: 
+001067a5 string  -v, --verbose      verbose
+001067c1 string display version
+001067d1 string display this help
+001067e3 string  -V, --version
+001067f2 string  -h, --help
+001067fe string %-20s%s %-20s%s 
+0010680f string  For more details see %s. 
+0010682a string coresched(1)
+00106837 string write error
+00106843 string /usr/share/locale
+00106855 string util-linux
+0010686e string %s from %s 
+0010687a string util-linux 2.41.3
+0010688c string s:d:t:vVh
+001068a3 string Unknown function
+001068b4 string bad usage of the get function
+001068d2 string cookie of pid %d is 0x%llx 
+001068ee string source
+001068fa string dest-type
+00106904 string KMGTPEZY
+0010690d string kmgtpezy
+00106916 string %s: '%s'
+0010691f string never
+00106925 string always
+00106935 string MGTPE
+0010693b string %d%s%02lu
+0010694d string lib/strutils.c
+0010695d string optstr
+001069e8 string ul_optstr_next
+00106c39 string zR
+00106c69 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/util-linux-extra.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .note.package
+.shstrtab::000000da string-utf8 .init_array
+.shstrtab::000000e6 string-utf8 .fini_array
+.shstrtab::000000f2 string-utf8 .data.rel.ro
+.shstrtab::000000ff string-utf8 .dynamic
+.shstrtab::00000108 string-utf8 .data
+.shstrtab::0000010e string-utf8 .bss
+.shstrtab::00000113 string-utf8 .gnu_debugaltlink
+.shstrtab::00000125 string-utf8 .gnu_debuglink

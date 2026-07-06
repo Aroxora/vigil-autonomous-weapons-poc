@@ -1,0 +1,196 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100a91 string-utf8 _ITM_deregisterTMCloneTable
+00100aad string-utf8 __gmon_start__
+00100abc string-utf8 _ITM_registerTMCloneTable
+00100ad6 string-utf8 sc_asn1_sig_value_rs_to_sequence
+00100af7 string-utf8 sc_ctx_detect_readers
+00100b0d string-utf8 sc_pkcs15_bind
+00100b1c string-utf8 sc_ctx_get_reader_by_name
+00100b36 string-utf8 sc_context_create
+00100b48 string-utf8 sc_hex_to_bin
+00100b56 string-utf8 sc_lock
+00100b5e string-utf8 sc_pkcs15_verify_pin
+00100b73 string-utf8 sc_notify_close
+00100b83 string-utf8 sc_strerror
+00100b8f string-utf8 sc_release_context
+00100ba2 string-utf8 sc_ctx_get_reader
+00100bb4 string-utf8 sc_wait_for_event
+00100bc6 string-utf8 sc_pkcs15_find_pin_by_auth_id
+00100be4 string-utf8 sc_pkcs15_decipher
+00100bf7 string-utf8 sc_connect_card
+00100c07 string-utf8 sc_pkcs15_find_prkey_by_id_usage
+00100c28 string-utf8 sc_pkcs15_unbind
+00100c39 string-utf8 sc_pkcs15_hex_string_to_id
+00100c54 string-utf8 sc_ctx_get_reader_count
+00100c6c string-utf8 sc_detect_card_presence
+00100c84 string-utf8 sc_disconnect_card
+00100c97 string-utf8 sc_pkcs15_compute_signature
+00100cb3 string-utf8 sc_notify_init
+00100cc2 string-utf8 fgets
+00100cc8 string-utf8 stdin
+00100cce string-utf8 perror
+00100cd5 string-utf8 __stack_chk_fail
+00100ce6 string-utf8 __printf_chk
+00100cf3 string-utf8 free
+00100cf8 string-utf8 fread
+00100cfe string-utf8 exit
+00100d03 string-utf8 setbuf
+00100d0a string-utf8 getc
+00100d0f string-utf8 strdup
+00100d16 string-utf8 fflush
+00100d1d string-utf8 fopen
+00100d23 string-utf8 strlcat
+00100d2b string-utf8 strlen
+00100d32 string-utf8 __ctype_b_loc
+00100d40 string-utf8 __vfprintf_chk
+00100d4f string-utf8 __isoc23_strtol
+00100d5f string-utf8 stdout
+00100d66 string-utf8 optarg
+00100d6d string-utf8 getpass
+00100d75 string-utf8 __sprintf_chk
+00100d83 string-utf8 __fprintf_chk
+00100d91 string-utf8 __libc_start_main
+00100da3 string-utf8 stderr
+00100daa string-utf8 strncasecmp
+00100db6 string-utf8 __cxa_finalize
+00100dc5 string-utf8 strchr
+00100dcc string-utf8 getenv
+00100dd3 string-utf8 calloc
+00100dda string-utf8 memcmp
+00100de1 string-utf8 fclose
+00100de8 string-utf8 fputc
+00100dee string-utf8 tcgetattr
+00100df8 string-utf8 fputs
+00100dfe string-utf8 __snprintf_chk
+00100e0d string-utf8 tcsetattr
+00100e17 string-utf8 memcpy
+00100e1e string-utf8 fileno
+00100e25 string-utf8 fwrite
+00100e2c string-utf8 strcmp
+00100e33 string-utf8 __errno_location
+00100e44 string-utf8 getopt_long
+00100e50 string-utf8 libopensc.so.13
+00100e60 string-utf8 libc.so.6
+00100e6a string-utf8 GLIBC_2.38
+00100e75 string-utf8 GLIBC_2.4
+00100e7f string-utf8 GLIBC_2.3
+00100e89 string-utf8 GLIBC_2.14
+00100e94 string-utf8 GLIBC_2.34
+00100e9f string-utf8 GLIBC_2.2.5
+00100eab string-utf8 GLIBC_2.3.4
+00105007 string signature
+00105011 string decryption
+0010501e string Enter PIN [%.*s]: 
+00105031 string PIN code correct. 
+0010504c string Compute signature failed: %s 
+0010506a string openssl
+00105072 string sequence
+0010507b string Signature sequence too large 
+00105099 string Decrypt failed: %s 
+001050ad string sck:r:i:o:f:Rp:vw
+001050bf string pkcs15-crypt
+001050cc string Invalid AID value: '%s' 
+001050e5 string PKCS #15 binding failed: %s 
+00105102 string Found %s! 
+0010510d string Print OpenSC package version
+0010512a string Decipher operation
+0010513d string Uses reader number <arg>
+00105156 string Outputs raw 8 bit data
+0010516d string Input file is a SHA-1 hash
+00105188 string Input file is a SHA-256 hash
+001051a5 string Input file is a SHA-384 hash
+001051c2 string Input file is a SHA-512 hash
+001051df string Input file is a SHA-224 hash
+001051fc string Input file is a MD5 hash
+00105215 string Use PKCS #1 v1.5 padding
+0010522e string Wait for card insertion
+0010524b string decipher
+00105258 string reader
+0010525f string input
+00105265 string output
+0010526c string signature-format
+001052be string verbose
+001052c6 string No smart card readers found. 
+001052e4 string Using reader with a card: %s 
+00105302 string Matched ATR in reader: %s 
+0010531d string Card not present. 
+00105330 string Using card driver %s. 
+00105347 string Failed to lock card: %s 
+0010536a string %08X: 
+00105371 string %02X 
+0010537b string  [arg]
+00105382 string Usage: %s [OPTIONS] %s 
+0010539a string Usage: %s [OPTIONS] 
+001053af string Options:
+001053b8 string -%c, --%s%s
+001053c4 string     --%s%s
+001053dc string Unable to get card drivers! 
+001053f9 string No card drivers installed! 
+00105415 string Available card drivers:
+0010542d string   %-16s %s 
+00105450 string error: 
+00105458 string  Aborting. 
+00105464 string warning: 
+00105473 string file:
+00105480 string Unable to open '%s' for writing. 
+001054a8 string Unable to find private %s key '%s': %s 
+001054d0 string Unable to find any private %s key: %s 
+001054f8 string Unable to find PIN code for private key: %s 
+00105528 string PIN code verification failed: %s 
+00105550 string Unable to open '%s' for reading. 
+00105578 string No input file specified. Reading from stdin 
+001055a8 string Input has to be exactly %lu bytes, when using no padding. 
+001055e8 string Deprecated non-native key detected! Upgrade your smart cards. 
+00105628 string Failed to convert signature to ASN1 sequence format. 
+00105660 string No Git revision info available
+00105680 string Failed to establish context: %s 
+001056a8 string Trying to find a PKCS #15 compatible card... 
+001056d8 string Performs digital signature operation
+00105700 string Selects the private key ID to use
+00105728 string Selects the input file to use (defaults to stdin)
+00105760 string Outputs to file <arg> (defaults to stdout)
+00105790 string Format for ECDSA signature <arg>: 'rs' (default), 'sequence', 'openssl'
+001057d8 string Uses password (PIN) <arg> (use - for reading PIN from STDIN)
+00105818 string Specify AID of the on-card PKCS#15 application to be binded to (in hexadecimal form)
+00105870 string Verbose operation, may be used several times
+001058a0 string Waiting for a reader to be attached... 
+001058c8 string Error while waiting for a reader: %s 
+001058f0 string Error while refreshing readers: %s 
+00105918 string Waiting for a card to be inserted... 
+00105940 string Error while waiting for a card: %s 
+00105968 string Reader "%s" not found (%d reader(s) detected) 
+00105998 string Connecting to card in reader %s... 
+001059c0 string Failed to connect to card: %s 
+001059e0 string Reading PIN from file not supported! 
+00105b50 string Sec.ControlByte PKCS#15 AuthID 
+00105c61 string zR
+00105c91 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/opensc.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .got.plt
+.shstrtab::00000103 string-utf8 .data
+.shstrtab::00000109 string-utf8 .bss
+.shstrtab::0000010e string-utf8 .gnu_debugaltlink
+.shstrtab::00000120 string-utf8 .gnu_debuglink

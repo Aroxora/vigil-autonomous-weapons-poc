@@ -1,0 +1,221 @@
+001003ac TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100a39 string-utf8 _ITM_deregisterTMCloneTable
+00100a55 string-utf8 __gmon_start__
+00100a64 string-utf8 _ITM_registerTMCloneTable
+00100a7e string-utf8 ntfs_attr_close
+00100a8e string-utf8 AT_UNNAMED
+00100a99 string-utf8 ntfs_inode_open
+00100aa9 string-utf8 ntfs_attr_put_search_ctx
+00100ac2 string-utf8 ntfs_log_set_handler
+00100ad7 string-utf8 ntfs_attr_find_in_attrdef
+00100af1 string-utf8 ntfs_log_redirect
+00100b03 string-utf8 ntfs_attr_truncate_solid
+00100b1c string-utf8 ntfs_mbstoucs
+00100b2a string-utf8 ntfs_bitmap_clear_run
+00100b40 string-utf8 ntfs_ucsfree
+00100b4d string-utf8 ntfs_volume_get_free_space
+00100b68 string-utf8 ntfs_attr_map_whole_runlist
+00100b84 string-utf8 ntfs_umount
+00100b90 string-utf8 ntfs_log_clear_levels
+00100ba6 string-utf8 ntfs_attr_update_mapping_pairs
+00100bc5 string-utf8 ntfs_inode_close
+00100bd6 string-utf8 ntfs_pwrite
+00100be2 string-utf8 ntfs_cluster_alloc
+00100bf5 string-utf8 ntfs_attr_truncate
+00100c08 string-utf8 ntfs_file_record_read
+00100c1e string-utf8 ntfs_malloc
+00100c2a string-utf8 ntfs_attr_open
+00100c39 string-utf8 ntfs_log_handler_outerr
+00100c51 string-utf8 ntfs_ucsnlen
+00100c5e string-utf8 ntfs_log_set_levels
+00100c72 string-utf8 ntfs_attr_get_search_ctx
+00100c8b string-utf8 ntfs_pathname_to_inode
+00100ca2 string-utf8 ntfs_mount
+00100cad string-utf8 NTFS_INDEX_I30
+00100cbc string-utf8 ntfs_attr_pread
+00100ccc string-utf8 ntfs_check_if_mounted
+00100ce2 string-utf8 ntfs_attr_lookup
+00100cf3 string-utf8 ntfs_home
+00100cfd string-utf8 ntfs_runlists_merge
+00100d11 string-utf8 ntfs_ucstombs
+00100d1f string-utf8 optind
+00100d26 string-utf8 snprintf
+00100d2f string-utf8 __stack_chk_fail
+00100d40 string-utf8 exit
+00100d45 string-utf8 stat
+00100d4a string-utf8 __vfprintf_chk
+00100d59 string-utf8 realloc
+00100d61 string-utf8 __isoc23_strtoll
+00100d72 string-utf8 __fprintf_chk
+00100d80 string-utf8 __libc_start_main
+00100d92 string-utf8 stderr
+00100d99 string-utf8 __cxa_finalize
+00100da8 string-utf8 setlocale
+00100db2 string-utf8 strchr
+00100db9 string-utf8 strerror
+00100dc2 string-utf8 calloc
+00100dc9 string-utf8 __isoc23_strtoul
+00100dda string-utf8 fputc
+00100de0 string-utf8 fputs
+00100de6 string-utf8 __snprintf_chk
+00100df5 string-utf8 memcpy
+00100dfc string-utf8 fwrite
+00100e03 string-utf8 __errno_location
+00100e14 string-utf8 getopt_long
+00100e20 string-utf8 libntfs-3g.so.89
+00100e31 string-utf8 libc.so.6
+00100e3b string-utf8 GLIBC_2.14
+00100e46 string-utf8 GLIBC_2.33
+00100e51 string-utf8 GLIBC_2.4
+00100e5b string-utf8 GLIBC_2.34
+00100e66 string-utf8 GLIBC_2.2.5
+00100e72 string-utf8 GLIBC_2.3.4
+00100e7e string-utf8 GLIBC_2.38
+00106008 string Copyright (c) 2013-2014 Jean-Pierre Andre Allocate clusters to a specified attribute of a specified file. 
+00106078 string Usage: %s [options] -l length device file [attr-type [attr-name]]     If attr-type is not specified, 0x80 (i.e. $DATA) is assumed.     If attr-name is not specified, an unnamed attribute is assumed.     -f         Force execution despite errors     -n         Do not change the apparent size of file     -l length  Allocate length bytes     -o offset  Start allocating at offset     -v         Verbose execution     -vv        Very verbose execution     -V         Display version information     -h         Display this help 
+00106288 string Failed to free %lld clusters from 0x%llx 
+001062b8 string Failed to allocate a search context
+001062e0 string Cannot fallocate a compressed file
+00106308 string Invalid attribute type %s: %s 
+00106328 string Invalid attribute name "%s": %s 
+00106350 string attribute name = "" (UNNAMED) 
+00106370 string attribute name = "%s" (length %u Unicode characters) 
+001063a8 string Failed to determine whether %s is mounted
+001063d8 string ntfsfallocate forced anyway. Hope /etc/mtab is incorrect. 
+00106418 string Volume is dirty, please run chkdsk. 
+00106440 string Failed to get free clusters %s: %s 
+00106468 string Failed to open attribute 0x%lx: 
+00106490 string Failed to zero at offset %lld 
+001064b0 string File size error : apparent %lld, compressed %lld > allocated %lld
+001064f8 string Failed to merge the new allocation 
+00106520 string Failed to locate the attribute 
+00106540 string Failed to restore the original runlist 
+00106568 string Failed to close inode "%s" : %s 
+00106590 string ntfsfallocate completed successfully. Have a nice day. 
+001065c8 string Failed to set locale, using default '%s'. 
+001065f8 string Error getting information about %s
+00106620 string Use the force option to ignore this error. 
+00106650 string Access is denied because the NTFS volume is already exclusively opened. The volume may be already mounted, or another software may use it which could be identified for example by the help of the 'fuser' command. 
+00106728 string You can use force option to avoid this check, but this is not recommended and may lead to data corruption. 
+00106798 string The device '%s' doesn't have a valid NTFS. Maybe you selected the wrong device? Or the whole disk instead of a partition (e.g. /dev/hda, not /dev/hda1)? Or the other way around? 
+00106850 string NTFS is inconsistent. Run chkdsk /f on Windows then reboot it TWICE! The usage of the /f parameter is very IMPORTANT! No modification was made to NTFS by this software. 
+00106900 string The NTFS partition is hibernated. Please resume Windows and turned it  off properly, so mounting could be done safely. 
+00106978 string Access is denied because the NTFS journal file is unclean. Choices are:  A) Shutdown Windows properly.  B) Click the 'Safely Remove Hardware' icon in the Windows taskbar     notification area before disconnecting the device.  C) Use 'Eject' from Windows Explorer to safely remove the device.  D) If you ran chkdsk previously then boot Windows again which will     automatically initialize the journal.  E) Submit 'force' option (WARNING: This solution it not recommended).  F) ntfsmount: Mount the volume read-only by using the 'ro' mount option. 
+00106ba0 string You seem to have a SoftRAID/FakeRAID hardware and must use an activated, different device under /dev/mapper, (e.g. /dev/mapper/nvidia_eahaabcc1) to mount NTFS. Please see the 'dmraid' documentation for help. 
+00106c78 string Volume is scheduled for check. Please boot into Windows TWICE, or use the 'force' option. NOTE: If you had not scheduled check and last time accessed this volume using ntfsmount and shutdown system properly, then init scripts in your distribution are broken. Please report to your distribution developers (NOT to us!) that init scripts kill ntfsmount or mount.ntfs-fuse during shutdown instead of proper umount. 
+00106e18 string WARNING: Dirty volume mount was forced by the 'force' mount option. 
+00106e60 string Internal error, strtoll didn't return a suffix. 
+00106e98 string Invalid size suffix '%s'.  Use T, G, M, or K. 
+00106ec8 string Couldn't create a search context. 
+00106ef0 string Couldn't translate filename to current locale. 
+00106f20 string The directory structure is too deep (over %d) nested directories. 
+00106f68 string Couldn't translate attribute type to current locale. 
+00106fa0 string Unknown attribute type 0x%02x 
+00106fc0 string Attribute type was truncated. 
+00106fe0 string Couldn't translate attribute name to current locale. 
+00107018 string Attribute name was truncated. 
+00107038 string Error reading inode %llu.  Aborting. 
+00107060 string Inode %lld is an extent of inode %lld. 
+00107088 string This program is free software, released under the GNU General Public License and you are welcome to redistribute it under certain conditions.  It comes with ABSOLUTELY NO WARRANTY; for details read the GNU General Public License to be found in the file "COPYING" distributed with this program, or online at: http://www.gnu.org/copyleft/gpl.html 
+001071e8 string Developers' email address: ntfs-3g-devel@lists.sf.net 
+00107224 string ERROR: 
+0010722c string Aborting... 
+00107239 string Warning: Could not umount %s 
+00107257 string Too big value : %s 
+0010726b string Invalid suffix in : %s 
+00107283 string ntfsfallocate.c
+00107293 string 2022.10.3
+0010729d string %s v%s (libntfs-3g) 
+001072b2 string Invalid length : %s 
+001072c7 string Invalid offset : %s 
+001072dc string fh?no:qvVl:
+001072e8 string Missing allocation length 
+00107303 string length = %lli = 0x%llx 
+0010731b string offset = %lli = 0x%llx 
+00107333 string device name = %s 
+00107345 string file name = "%s" 
+00107357 string attribute type = 0x%lx 
+0010736f string %s is mounted. 
+0010737f string Refusing to run! 
+00107391 string Running in READ-ONLY mode! 
+001073ad string Failed to mount %s: %s 
+001073c5 string Failed to open file "%s": %s 
+001073e3 string Wrong hole size %lld 
+001073f9 string Failed to allocate memory 
+00107414 string Failed to update the runlist 
+00107432 string Warning: Failed to umount %s
+0010744f string offset
+00107456 string length
+0010745d string force
+00107468 string no-action
+00107472 string no-size-change
+00107487 string version
+0010748f string verbose
+00107497 string ntfsfallocate
+001074a5 string utils.c
+001074ad string The device %s doesn't exist 
+001074ca string Forced to continue. 
+001074df string Failed to mount '%s'
+001074f4 string Invalid size '%s'. 
+00107508 string Invalid number '%.*s'. 
+00107520 string <MFT%llu>
+0010752a string Couldn't open inode %llu. 
+0010754a string Pathname was truncated. 
+00107563 string <UNKNOWN>
+00107572 string Couldn't open $Bitmap
+00107588 string Couldn't read $Bitmap
+0010759e string Couldn't read $MFT/$BITMAP
+001075b9 string Error reading inode %lld. 
+001075d4 string Out of memory.  Aborting. 
+001075ef string Couldn't open $MFT/$DATA
+00107608 string Couldn't read MFT Record %llu
+00107626 string Error closing inode %llu. 
+00107738 string free_common
+00107750 string ntfs_restore_rl
+00107760 string ntfs_inner_zero
+00107770 string ntfs_merge_allocation
+00107790 string ntfs_inner_allocation
+001077b0 string ntfs_full_allocation
+001077c8 string ntfs_fallocate
+001077d8 string parse_options
+00107970 string mft_next_record
+00107980 string utils_mftrec_in_use
+001079a0 string utils_cluster_in_use
+001079c0 string utils_attr_get_name
+001079e0 string utils_inode_get_name
+00107a00 string find_first_attribute
+00107a20 string utils_parse_size
+00107a40 string utils_mount_volume
+00107a60 string utils_valid_device
+00107a80 string utils_set_locale
+00107b79 string zR
+00107ba9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/ntfs-3g.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .sframe
+.shstrtab::000000b3 string-utf8 .note.gnu.property
+.shstrtab::000000c6 string-utf8 .note.ABI-tag
+.shstrtab::000000d4 string-utf8 .init_array
+.shstrtab::000000e0 string-utf8 .fini_array
+.shstrtab::000000ec string-utf8 .data.rel.ro
+.shstrtab::000000f9 string-utf8 .dynamic
+.shstrtab::00000102 string-utf8 .data
+.shstrtab::00000108 string-utf8 .bss
+.shstrtab::0000010d string-utf8 .gnu_debugaltlink
+.shstrtab::0000011f string-utf8 .gnu_debuglink

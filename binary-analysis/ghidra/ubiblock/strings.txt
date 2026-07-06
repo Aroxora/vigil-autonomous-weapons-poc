@@ -1,0 +1,146 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100709 string-utf8 puts
+0010070e string-utf8 strncpy
+00100716 string-utf8 __stack_chk_fail
+00100727 string-utf8 __printf_chk
+00100734 string-utf8 free
+00100739 string-utf8 exit
+0010073e string-utf8 stat
+00100743 string-utf8 closedir
+0010074c string-utf8 __isoc23_sscanf
+0010075c string-utf8 strlen
+00100763 string-utf8 read
+00100768 string-utf8 optarg
+0010076f string-utf8 __sprintf_chk
+0010077d string-utf8 __fprintf_chk
+0010078b string-utf8 open
+00100790 string-utf8 malloc
+00100797 string-utf8 __libc_start_main
+001007a9 string-utf8 stderr
+001007b0 string-utf8 __cxa_finalize
+001007bf string-utf8 strerror
+001007c8 string-utf8 readdir
+001007d0 string-utf8 calloc
+001007d7 string-utf8 ioctl
+001007dd string-utf8 close
+001007e3 string-utf8 opendir
+001007eb string-utf8 memcpy
+001007f2 string-utf8 fwrite
+001007f9 string-utf8 strcmp
+00100800 string-utf8 __errno_location
+00100811 string-utf8 getopt_long
+0010081d string-utf8 strncmp
+00100825 string-utf8 libc.so.6
+0010082f string-utf8 GLIBC_2.3.4
+0010083b string-utf8 GLIBC_2.14
+00100846 string-utf8 GLIBC_2.33
+00100851 string-utf8 GLIBC_2.4
+0010085b string-utf8 GLIBC_2.38
+00100866 string-utf8 GLIBC_2.34
+00100871 string-utf8 GLIBC_2.2.5
+0010087d string-utf8 _ITM_deregisterTMCloneTable
+00100899 string-utf8 __gmon_start__
+001008a8 string-utf8 _ITM_registerTMCloneTable
+00105004 string c:r:h?V
+00105011 string 2.3.0
+00105017 string ubiblock
+00105020 string %s (mtd-utils) %s 
+00105033 string Use -h for help 
+00105044 string %*serror %d (%s) 
+00105056 string create
+0010505d string remove
+00105069 string version
+00105071 string libubi
+00105078 string %s: error!: cannot read "%s" 
+00105096 string %lld 
+0010509c string %d:%d 
+001050a3 string %s: error!: cannot stat "%s" 
+001050c1 string %s: error!: cannot open "%s" 
+001050df string class/misc/ubi_ctrl/
+001050fd string class/ubi
+00105107 string ubi%d
+0010510d string avail_eraseblocks
+0010511f string total_eraseblocks
+00105131 string bad_peb_count
+0010513f string eraseblock_size
+0010514f string max_ec
+00105156 string reserved_for_bad
+00105167 string max_vol_count
+00105175 string min_io_size
+00105181 string mtd_num
+00105189 string ubi%d_%d
+00105197 string alignment
+001051a1 string data_bytes
+001051ac string reserved_ebs
+001051b9 string usable_eb_size
+001051c8 string corrupted
+001051d7 string ubi%d%s
+001051df string ubi%d_%d%s
+001051ea string static 
+001051f2 string dynamic 
+00105200 string %s: error!: invalid arguments (use -h for help) 
+00105238 string %s: error!: UBI is not present in the system 
+00105268 string %s: error!: cannot open libubi 
+00105288 string %s: error!: "%s" is an UBI device node, not an UBI volume node 
+001052c8 string %s: error!: "%s" is not an UBI volume node 
+001052f8 string %s: error!: error while probing "%s" 
+00105320 string %s: error!: cannot open UBI volume "%s" 
+00105350 string %s: error!: UBI block is not present in the system 
+00105388 string %s: error!: UBI block not supported (check your kernel version) 
+001053d0 string %s: error!: cannot create block device 
+001053f8 string %s: error!: cannot remove block device 
+00105420 string %s: error!: contents of "%s" is too long 
+00105450 string %s: error!: cannot read integer from "%s"  
+00105480 string %s: error!: negative value %lld in "%s" 
+001054b0 string %s: error!: close failed on "%s" 
+001054d8 string %s: error!: value %lld read from file "%s" is out of range 
+00105518 string %s: error!: file "%s" contains too much data (> %d bytes) 
+00105558 string %s: error!: "%s" does not have major:minor format 
+00105590 string %s: error!: bad major:minor %d:%d in "%s" 
+001055c0 string %s: error!: cannot allocate %d bytes 
+001055e8 string %s: error!: "%s" is not a character device 
+00105618 string %s: error!: "%s" is not an MTD device 
+00105640 string %s: error!: this library was made for UBI version %d, but UBI version %d is detected  
+00105698 string %s: error!: invalid entry in %s: "%s" 
+001056c0 string %s: error!: readdir failed on "%s" 
+001056e8 string %s: error!: closedir failed on "%s" 
+00105710 string %s: error!: cannot get information about "%s" 
+00105740 string %s: error!: "%s" has major:minor %d:%d, but this does not correspond to any existing UBI device or volume 
+001057b0 string %s: error!: "%s" is not an UBI character device 
+001057e8 string %s: error!: UBI character device minor number is %d, but must be 0 
+00105830 string %s: error!: bad value at "%s" 
+00105850 string %s: error!: "%s" is not a volume character device 
+00105888 string %s: error!: bad "name" input parameter 
+001058c0 string Usage: ubiblock [-c,-r] <UBI volume node file name> Example: ubiblock --create /dev/ubi0_0
+00105920 string -c, --create               create block on top of a volume -r, --remove               remove block from volume -h, --help                 print help message -V, --version              print program version
+00105a00 string ubiblock version 2.3.0 - a tool to create/remove block device interface from UBI volumes.
+00105ba1 string zR
+00105bd1 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/mtd-utils.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

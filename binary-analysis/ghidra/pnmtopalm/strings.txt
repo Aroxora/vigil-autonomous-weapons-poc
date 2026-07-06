@@ -1,0 +1,114 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100689 string-utf8 __gmon_start__
+00100698 string-utf8 _ITM_deregisterTMCloneTable
+001006b4 string-utf8 _ITM_registerTMCloneTable
+001006ce string-utf8 pm_optParseOptions3
+001006e2 string-utf8 pm_readbiglong
+001006f1 string-utf8 pm_rlenc_compressbyte
+00100707 string-utf8 pm_close
+00100710 string-utf8 pm_openr
+00100719 string-utf8 pm_readbigshort
+00100729 string-utf8 pm_writebigshort
+0010073a string-utf8 pm_error
+00100743 string-utf8 ppm_parsecolor
+00100752 string-utf8 pm_writebiglong
+00100762 string-utf8 pm_rlenc_allocoutbuf
+00100777 string-utf8 pm_proginit
+00100783 string-utf8 pnm_readpnm
+0010078f string-utf8 pm_message
+0010079a string-utf8 __stack_chk_fail
+001007ab string-utf8 free
+001007b0 string-utf8 stdout
+001007b7 string-utf8 realloc
+001007bf string-utf8 malloc
+001007c6 string-utf8 __libc_start_main
+001007d8 string-utf8 __cxa_finalize
+001007e7 string-utf8 fputc
+001007ed string-utf8 memcpy
+001007f4 string-utf8 fwrite
+001007fb string-utf8 qsort
+00100801 string-utf8 abort
+00100807 string-utf8 libnetpbm.so.11
+00100817 string-utf8 libc.so.6
+00100821 string-utf8 GLIBC_2.14
+0010082c string-utf8 GLIBC_2.34
+00100837 string-utf8 GLIBC_2.4
+00100841 string-utf8 GLIBC_2.2.5
+00104008 string Image too large.  Arithmetic overflow trying to expand buffer beyond %u bytes.
+00104058 string Couldn't (re)allocate %u bytes of memory for buffer.
+00104090 string invalid value for -depth: %u.  Valid values are 1, 2, 4, 8, and 16
+001040d8 string invalid value for -maxdepth: %u.  Valid values are 1, 2, 4, 8, and 16
+00104120 string -depth value (%u) is greater than -maxdepth (%u) value.
+00104158 string Invalid value for -density: %u.  Valid values are %u, %u, %u, %u and %u.
+001041a8 string You can't specify -withdummy with -density value %u.  It is valid only with low density (%u)
+00104208 string -withdummy does not make sense without -offset
+00104238 string You may specify only one of -scanline_compression, -rle_compression, and -packbits_compression
+00104298 string This program takes at most 1 argument: the file name.  You specified %u
+001042e0 string You requested %u bits per pixel and compression.  This program does not know how to generate a compressed image with more than 8 bits per pixel
+00104370 string You requested %u max bits per pixel and compression.  This program does not know how to generate a compressed image with more than 8 bits per pixel
+00104408 string You specified -colormap with a black and white input image.  -colormap is valid only with color.
+00104470 string You specified -colormap with a black and white inputimage.  -colormap is valid only with color.
+001044d0 string output is grayscale %u bits-per-pixel
+001044f8 string Must use depth of 8 for color Palm Bitmap without custom color table.
+00104540 string A color in the input image is not in the standard Palm 8-bit color palette.  Either adjust the colors in the input with 'pnmremap' and the 'palmcolor8.map' file (see manual) or specify -colormap or -depth=16
+00104610 string Output is color with default colormap at 8 bpp
+00104640 string Too many colors for specified depth.  Specified depth is %u bits; would need %u to represent the %u colors in the image.  Use pnmquant to reduce.
+001046d8 string Too many colors for specified max depth.  Specified maximum is %u bits; would need %u to represent the %u colors in the image.  Use pnmquant to reduce.
+00104770 string Too many colors for a compressed image.  Maximum is 256; the image has %u
+001047c0 string Output is color with custom colormap with %u colors at %u bpp
+00104800 string unknown format 0x%x on input file
+00104828 string Specified transparent color %s not found in colormap.
+00104860 string Too many columns for Palm Bitmap: %u
+00104888 string Too many rows for Palm Bitmap: %u
+001048b0 string Too many bytes per row for Palm Bitmap: %u
+001048e0 string oops.  Bug in color re-calculation code.  color of %u.
+00104918 string INTERNAL ERROR: Color (%u,%u,%u) not found in colormap, though it was supposedly there before
+00104978 string Oversized compressed bitmap: %u bytes
+001049a0 string Image too large for Palm Bitmap
+001049c0 string Internal error: user specified -colormap, but we did not generate a colormap.
+00104a10 string Don't know how to create %u bit DirectColor bitmaps.
+00104a48 string fwrite() failed to write out the buffer.
+00104a78 string Too many colors for custom colormap (max %u).  Try using pnmquant to reduce the number of colors.
+00104ada string color
+00104ae0 string grayscale
+00104aee string transparent
+00104afa string maxdepth
+00104b03 string scanline_compression
+00104b18 string rle_compression
+00104b28 string packbits_compression
+00104b3d string verbose
+00104b45 string colormap
+00104b4e string offset
+00104b55 string density
+00104b5d string withdummy
+00104b69 string Input is %ux%u %s, maxval %u
+00104b86 string output is black and white
+00105889 string zR
+001058b9 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/netpbm.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

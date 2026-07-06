@@ -1,0 +1,112 @@
+00100394 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100731 string-utf8 optind
+00100738 string-utf8 getpagesize
+00100744 string-utf8 perror
+0010074b string-utf8 __stack_chk_fail
+0010075c string-utf8 __printf_chk
+00100769 string-utf8 free
+0010076e string-utf8 chdir
+00100774 string-utf8 exit
+00100779 string-utf8 lseek64
+00100781 string-utf8 open64
+00100788 string-utf8 fflush
+0010078f string-utf8 strlen
+00100796 string-utf8 read
+0010079b string-utf8 mkdir
+001007a1 string-utf8 __isoc23_strtol
+001007b1 string-utf8 stdout
+001007b8 string-utf8 optarg
+001007bf string-utf8 __fprintf_chk
+001007cd string-utf8 malloc
+001007d4 string-utf8 __libc_start_main
+001007e6 string-utf8 stderr
+001007ed string-utf8 getopt
+001007f4 string-utf8 __strcat_chk
+00100801 string-utf8 __cxa_finalize
+00100810 string-utf8 strerror
+00100819 string-utf8 close
+0010081f string-utf8 __snprintf_chk
+0010082e string-utf8 fwrite
+00100835 string-utf8 __errno_location
+00100846 string-utf8 __strncat_chk
+00100854 string-utf8 libc.so.6
+0010085e string-utf8 GLIBC_2.38
+00100869 string-utf8 GLIBC_2.4
+00100873 string-utf8 GLIBC_2.34
+0010087e string-utf8 GLIBC_2.2.5
+0010088a string-utf8 GLIBC_2.3.4
+00100896 string-utf8 _ITM_deregisterTMCloneTable
+001008b2 string-utf8 __gmon_start__
+001008c1 string-utf8 _ITM_registerTMCloneTable
+00103008 string Usage: recoverjpeg [options] file|device 
+00103038 string    -b blocksize   Block size in bytes (default: 512) 
+00103070 string    -d format      Directory format string in printf syntax 
+001030b0 string    -f format      File format string in printf syntax 
+001030e8 string    -h             This help message 
+00103110 string    -i index       Initial picture index 
+00103140 string    -m maxsize     Max jpeg file size in bytes (default: 6m) 
+00103180 string    -o directory   Restore jpeg files into this directory 
+001031c0 string    -r readsize    Size of disk reads in bytes (default: 128m) 
+00103200 string    -s cutoff      Minimal file size in bytes to restore 
+00103240 string    -S skipsize    Size to skip at the beginning 
+00103278 string    -V             Display version and exit 
+001032a8 string recoverjpeg: unable to open %s for reading (%s) 
+001032e0 string Adjusted read size to %ld bytes 
+00103308 string recoverjpeg: cannot allocate necessary memory (%s) 
+00103340 string Adjusted skip size to %ld bytes 
+00103368 string  Recovered files: %4u        Analyzed: %4.1f %s  
+001033a0 string recoverjpeg: unable to read data (%s) 
+001033c8 string    Incorrect marker %02x, stopping prematurely 
+001033f8 string    Found end of image after %ld bytes 
+00103420 string    Found lengthless section %02x 
+00103448 string    Found section %02x of len %ld 
+00103470 string    Section size is out of bounds, aborting 
+001034a0 string recoverjpeg: unable to create directory %s (%s) 
+001034d8 string Unable to open %s for writing 
+001034f8 string Unable to write %ld bytes to %s 
+00103520 string                                                        
+00103558 string %s %s (from the `%s' package) 
+00103578 string cannot change directory to `%s'
+00103598 string Options: 
+001035a2 string    -q             Be quiet 
+001035be string    -v             Be verbose 
+001035dc string image%05d.jpg
+001035f4 string recoverjpeg
+00103600 string b:d:f:hi:m:o:qr:s:S:vV
+00103617 string Candidate jpeg found 
+0010362d string    Looking for end marker... 
+0010364b string too big, aborting 
+0010365e string found at offset %ld 
+00103675 string %s %ld bytes 
+00103683 string Restored %d picture%s 
+0010369a string 2.6.3
+001036a0 string malloc
+00103869 string zR
+00103899 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/recoverjpeg.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.property
+.shstrtab::0000001e string-utf8 .note.gnu.build-id
+.shstrtab::00000031 string-utf8 .interp
+.shstrtab::00000039 string-utf8 .gnu.hash
+.shstrtab::00000043 string-utf8 .dynsym
+.shstrtab::0000004b string-utf8 .dynstr
+.shstrtab::00000053 string-utf8 .gnu.version
+.shstrtab::00000060 string-utf8 .gnu.version_r
+.shstrtab::0000006f string-utf8 .rela.dyn
+.shstrtab::00000079 string-utf8 .rela.plt
+.shstrtab::00000083 string-utf8 .init
+.shstrtab::00000089 string-utf8 .plt.got
+.shstrtab::00000092 string-utf8 .text
+.shstrtab::00000098 string-utf8 .fini
+.shstrtab::0000009e string-utf8 .rodata
+.shstrtab::000000a6 string-utf8 .eh_frame_hdr
+.shstrtab::000000b4 string-utf8 .eh_frame
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

@@ -1,0 +1,212 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100a71 string-utf8 __libc_start_main
+00100a83 string-utf8 __cxa_finalize
+00100a92 string-utf8 dcgettext
+00100a9c string-utf8 stderr
+00100aa3 string-utf8 __fprintf_chk
+00100ab1 string-utf8 exit
+00100ab6 string-utf8 alarm
+00100abc string-utf8 wait
+00100ac1 string-utf8 __stack_chk_fail
+00100ad2 string-utf8 __printf_chk
+00100adf string-utf8 putchar
+00100ae7 string-utf8 fopen
+00100aed string-utf8 fgets
+00100af3 string-utf8 __isoc99_sscanf
+00100b03 string-utf8 fclose
+00100b0a string-utf8 __sprintf_chk
+00100b18 string-utf8 strstr
+00100b1f string-utf8 fread
+00100b25 string-utf8 strncpy
+00100b2d string-utf8 strchr
+00100b34 string-utf8 strrchr
+00100b3c string-utf8 opendir
+00100b44 string-utf8 __ctype_b_loc
+00100b52 string-utf8 readdir
+00100b5a string-utf8 closedir
+00100b63 string-utf8 regcomp
+00100b6b string-utf8 regexec
+00100b73 string-utf8 regfree
+00100b7b string-utf8 getpwuid
+00100b84 string-utf8 strcmp
+00100b8b string-utf8 write
+00100b91 string-utf8 puts
+00100b96 string-utf8 perror
+00100b9d string-utf8 mktime
+00100ba4 string-utf8 __snprintf_chk
+00100bb3 string-utf8 strftime
+00100bbc string-utf8 getenv
+00100bc3 string-utf8 malloc
+00100bca string-utf8 memset
+00100bd1 string-utf8 strtol
+00100bd8 string-utf8 __errno_location
+00100be9 string-utf8 strerror
+00100bf2 string-utf8 setlocale
+00100bfc string-utf8 bindtextdomain
+00100c0b string-utf8 strtok
+00100c12 string-utf8 strlen
+00100c19 string-utf8 strspn
+00100c20 string-utf8 isatty
+00100c27 string-utf8 sysconf
+00100c2f string-utf8 getpid
+00100c36 string-utf8 stat
+00100c3b string-utf8 strncmp
+00100c43 string-utf8 localtime_r
+00100c4f string-utf8 stdout
+00100c56 string-utf8 setbuf
+00100c5d string-utf8 uname
+00100c63 string-utf8 sigaction
+00100c6d string-utf8 pause
+00100c73 string-utf8 ioctl
+00100c79 string-utf8 fork
+00100c7e string-utf8 execvp
+00100c85 string-utf8 libc.so.6
+00100c8f string-utf8 GLIBC_2.3
+00100c99 string-utf8 GLIBC_2.7
+00100ca3 string-utf8 GLIBC_2.33
+00100cae string-utf8 GLIBC_2.4
+00100cb8 string-utf8 GLIBC_2.34
+00100cc3 string-utf8 GLIBC_2.3.4
+00100ccf string-utf8 GLIBC_2.2.5
+00100cdb string-utf8 _ITM_deregisterTMCloneTable
+00100cf7 string-utf8 __gmon_start__
+00100d06 string-utf8 _ITM_registerTMCloneTable
+0010a008 string Usage: %s [ options ] [ <interval> [ <count> ] ] [ -e <program> <args> ] 
+0010a058 string Options are: [ -d ] [ -H ] [ -h ] [ -I ] [ -l ] [ -R ] [ -r ] [ -s ] [ -t ] [ -U [ <username> ] ] [ -u ] [ -V ] [ -v ] [ -w ] [ -C <command> ] [ -G <process_name> ] [ -p { <pid> [,...] | SELF | ALL } ] [ -T { TASK | CHILD | ALL } ] [ --dec={ 0 | 1 | 2 } ] [ --human ] 
+0010a168 string %*s %*d %*d %*d %*d %*d %*u %llu %llu %llu %llu %llu %llu %lld %lld %*d %*d %u %*u %*d %llu %llu %*u %*u %*u %*u %*u %*u %*u %*u %*u %*u %*u %*u %*u %*u %u %u %u %llu %llu %lld 
+0010a220 string     %%usr %%system  %%guest   %%wait    %%CPU   CPU
+0010a258 string   minflt/s  majflt/s     VSZ     RSS   %%MEM
+0010a288 string    kB_rd/s   kB_wr/s kB_ccwr/s iodelay
+0010a2b0 string     usr-ms system-ms  guest-ms
+0010a2d0 string     %%usr %%system  %%guest   %%wait    %%CPU   CPU  Command 
+0010a310 string     usr-ms system-ms  guest-ms  Command
+0010a338 string   minflt/s  majflt/s     VSZ     RSS   %%MEM  Command 
+0010a370 string    kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+0010a3a0 string %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu
+0010a3d8 string %d %llu %llu %llu %llu %llu %llu %llu %llu %llu %llu
+0010a410 string (C) Sebastien Godard (sysstat <at> orange.fr)
+0010a440 string Requested activities not available 
+0010a468 string %s %s (%s) 	%s 	_%s_	(%d CPU) 
+0010a487 string  %*.*f
+0010a491 string __%s 
+0010a497 string   (%s)
+0010a49e string   %s 
+0010a4a4 string /proc/uptime
+0010a4b9 string Cannot read %s 
+0010a4c9 string /proc/%u/task/%u/status
+0010a4e1 string /proc/%u/status
+0010a4f9 string Threads:
+0010a502 string nonvoluntary_ctxt_switches:
+0010a51e string /proc/%u/task/%u/io
+0010a532 string /proc/%u/io
+0010a53e string read_bytes:
+0010a54f string cancelled_write_bytes:
+0010a566 string /proc/%u/task/%u/smaps
+0010a57d string /proc/%u/smaps
+0010a58f string Referenced:
+0010a59b string Size:
+0010a5a1 string [stack]
+0010a5a9 string /proc/%u/task/%u/cmdline
+0010a5c2 string /proc/%u/cmdline
+0010a5d3 string /proc/%u/task/%u/stat
+0010a5e9 string /proc/%u/stat
+0010a5f7 string /proc/%u/task/%u/schedstat
+0010a612 string /proc/%u/schedstat
+0010a633 string /proc/%u/task/%u/fd
+0010a647 string /proc/%u/fd
+0010a65d string          %c %%9u
+0010a66e string  %%9u         %c
+0010a67f string  %*lu
+0010a688 string NORMAL
+0010a699 string BATCH
+0010a6a4 string DEADLN
+0010a6ab string stdout
+0010a6b3 string %-11s
+0010a6b9 string      USER
+0010a6c3 string    UID
+0010a6ca string       TGID       TID
+0010a6df string        PID
+0010a6ea string  StkSize  StkRef
+0010a6fb string    cswch/s nvcswch/s
+0010a710 string  threads   fd-nr
+0010a721 string  prio policy
+0010a72e string    %3d
+0010a735 string  %9.2f %9.2f %9.2f
+0010a755 string  minflt-nr majflt-nr
+0010a76a string      -
+0010a771 string  minflt-nr majflt-nr  Command
+0010a78f string  StkSize  StkRef  Command
+0010a7a9 string    cswch/s nvcswch/s  Command
+0010a7c7 string  prio policy  Command
+0010a7dd string %-11ld
+0010a7e4 string S_TIME_FORMAT
+0010a7f9 string %H:%M:%S
+0010a802 string malloc
+0010a809 string /proc/%u/task
+0010a817 string /proc/stat
+0010a822 string Cannot open %s: %s 
+0010a83b string /proc
+0010a841 string opendir
+0010a849 string /usr/share/locale
+0010a85b string sysstat
+0010a863 string S_COLORS
+0010a86c string never
+0010a872 string always
+0010a879 string S_COLORS_SGR
+0010a887 string 0123456789
+0010a898 string sysconf
+0010a8b5 string --human
+0010a8bd string --dec=
+0010a8c9 string CHILD
+0010a8cf string %s=%s 
+0010a8d6 string sysstat version %s 
+0010a8ea string 12.7.5
+0010a8f1 string /sys/devices/system/cpu
+0010a90f string S_REPEAT_HEADER
+0010a92b string /proc/meminfo
+0010a939 string MemTotal:
+0010a943 string MemFree:
+0010a94c string MemAvailable:
+0010a95a string Buffers:
+0010a963 string SwapCached:
+0010a96f string Active:
+0010a977 string Inactive:
+0010a981 string SwapTotal:
+0010a98c string SwapFree:
+0010a996 string Dirty:
+0010a99d string Committed_AS:
+0010a9ab string AnonPages:
+0010a9b6 string Slab:
+0010a9bc string KernelStack:
+0010a9c9 string PageTables:
+0010a9d5 string VmallocUsed:
+0010a9e2 string Average:
+0010ad11 string zR
+0010ad41 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/sysstat.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink

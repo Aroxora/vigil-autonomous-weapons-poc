@@ -1,0 +1,1044 @@
+00100318 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100ba1 string-utf8 fgets
+00100ba7 string-utf8 strcpy
+00100bae string-utf8 stdin
+00100bb4 string-utf8 sleep
+00100bba string-utf8 puts
+00100bbf string-utf8 fopen64
+00100bc7 string-utf8 perror
+00100bce string-utf8 __strcpy_chk
+00100bdb string-utf8 __stpcpy_chk
+00100be8 string-utf8 __stack_chk_fail
+00100bf9 string-utf8 __printf_chk
+00100c06 string-utf8 free
+00100c0b string-utf8 exit
+00100c10 string-utf8 lseek64
+00100c18 string-utf8 readdir64
+00100c22 string-utf8 getc
+00100c27 string-utf8 strdup
+00100c2e string-utf8 munlockall
+00100c39 string-utf8 closedir
+00100c42 string-utf8 strrchr
+00100c4a string-utf8 putchar
+00100c52 string-utf8 unlink
+00100c59 string-utf8 munmap
+00100c60 string-utf8 fflush
+00100c67 string-utf8 fdatasync
+00100c71 string-utf8 strtol
+00100c78 string-utf8 fopen
+00100c7e string-utf8 strndup
+00100c86 string-utf8 strlen
+00100c8d string-utf8 __ctype_b_loc
+00100c9b string-utf8 read
+00100ca0 string-utf8 __memcpy_chk
+00100cad string-utf8 munlock
+00100cb5 string-utf8 stdout
+00100cbc string-utf8 getpass
+00100cc4 string-utf8 __sprintf_chk
+00100cd2 string-utf8 __open_2
+00100cdb string-utf8 strcasecmp
+00100ce6 string-utf8 __fprintf_chk
+00100cf4 string-utf8 malloc
+00100cfb string-utf8 __libc_start_main
+00100d0d string-utf8 strtoll
+00100d15 string-utf8 stderr
+00100d1c string-utf8 __strcat_chk
+00100d29 string-utf8 mlockall
+00100d32 string-utf8 fstat64
+00100d3a string-utf8 __isoc99_fscanf
+00100d4a string-utf8 __cxa_finalize
+00100d59 string-utf8 mlock
+00100d5f string-utf8 strerror
+00100d68 string-utf8 readdir
+00100d70 string-utf8 calloc
+00100d77 string-utf8 fsync
+00100d7d string-utf8 fclose
+00100d84 string-utf8 memset
+00100d8b string-utf8 ioctl
+00100d91 string-utf8 fputc
+00100d97 string-utf8 opendir
+00100d9f string-utf8 access
+00100da6 string-utf8 __isoc99_scanf
+00100db5 string-utf8 memcpy
+00100dbc string-utf8 fwrite
+00100dc3 string-utf8 strcmp
+00100dca string-utf8 __errno_location
+00100ddb string-utf8 getitimer
+00100de5 string-utf8 syscall
+00100ded string-utf8 setitimer
+00100df7 string-utf8 mmap
+00100dfc string-utf8 lseek
+00100e02 string-utf8 fstat
+00100e08 string-utf8 strncmp
+00100e10 string-utf8 libc.so.6
+00100e1a string-utf8 GLIBC_2.3
+00100e24 string-utf8 GLIBC_2.14
+00100e2f string-utf8 GLIBC_2.33
+00100e3a string-utf8 GLIBC_2.4
+00100e44 string-utf8 GLIBC_2.7
+00100e4e string-utf8 GLIBC_2.34
+00100e59 string-utf8 GLIBC_2.2.5
+00100e65 string-utf8 GLIBC_2.3.4
+00100e71 string-utf8 _ITM_deregisterTMCloneTable
+00100e8d string-utf8 __gmon_start__
+00100e9c string-utf8 _ITM_registerTMCloneTable
+00117007 string ?malloc()
+00117011 string clue=%d 
+0011701a string read() failed
+00117028 string read(%u) returned %u bytes 
+00117044 string BLKFLSBUF failed
+00117055 string   %s: %s 
+0011705f string bad char: '%c' 0x%02x 
+0011707b string missing PASSWD 
+00117095 string security_password:
+001170a8 string  "%s" 
+001170af string  %02x
+001170b5 string %02x%02x
+001170be string could not allocate timing buf
+001170dc string mlock() failed on timing buf
+001170f9 string the full disk
+00117107 string Aborting. 
+00117112 string FAILED
+00117119 string succeeded
+00117133 string  ATA/ATAPI-
+0011713f string   Config={
+0011714d string  BuffType=
+00117162 string , BuffSize=%ukB
+00117172 string , BuffSize=unknown
+00117185 string , MaxMultSect=%u
+00117196 string , MultSect=
+001171a7 string pio1 
+001171ad string pio2 
+001171b3 string  (maybe):
+001171bd string  CurCHS=%u/%u/%u, CurSects=%u
+001171db string , LBA=%s
+001171e4 string , LBAsects=%llu
+001171f4 string sdma0 
+001171fb string sdma1 
+00117202 string sdma2 
+00117209 string sdma? 
+00117210 string mdma0 
+00117217 string mdma1 
+0011721e string mdma2 
+00117225 string mdma? 
+0011722c string   IORDY=
+00117235 string , tPIO={min:%u,w/IORDY:%u}
+00117250 string pio3 
+00117256 string pio4 
+0011725c string pio? 
+00117262 string udma0 
+00117269 string udma1 
+00117270 string udma2 
+00117277 string udma3 
+0011727e string udma4 
+00117285 string udma5 
+0011728c string udma6 
+00117293 string , tDMA={min:%u,rec:%u}
+001172aa string   PIO modes:  %s
+001172bb string   DMA modes:  %s
+001172cc string   UDMA modes: %s
+001172dd string   AdvancedPM=%s
+001172ed string : disabled (255)
+001172fe string : unknown setting
+00117310 string : mode=0x%02X (%u)
+00117323 string  WriteCache=%s
+00117332 string   Drive conforms to: 
+0011734d string unknown: 
+00117357 string READ_LOG_EXT(0,0) failed: %s 
+00117375 string  (on) 
+0011737c string  (off) 
+00117384 string SECURITY_SET_PASS
+00117396 string SECURITY_DISABLE
+001173a7 string SECURITY_UNLOCK
+001173b7 string SECURITY_ERASE
+001173d0 string SANITIZE_STATUS
+001173e0 string SANITIZE_ANTIFREEZE_LOCK
+001173f9 string SANITIZE_BLOCK_ERASE
+0011740e string SANITIZE_OVERWRITE
+00117421 string SANITIZE_FREEZE_LOCK
+00117436 string SANITIZE_CRYPTO_SCRAMBLE
+0011744f string permanent
+00117459 string temporary
+00117463 string flagged
+0011746b string pseudo
+00117472 string NVcache_spindown
+00117483 string NVcache_spinup
+00117492 string active/idle
+0011749e string O_DIRECT 
+001174a8 string O_DIRECT
+001174b1 string buffered
+001174ba string  %s: 
+001174c0 string --set-sector-size
+001174d2 string --trim-sector-ranges-stdin
+001174ed string OCZ VERTEX-LE
+001174fb string OCZ-VERTEX
+00117506 string queue/max_sectors_kb
+0011751b string mmap(MAP_ANONYMOUS)
+0011752f string %llu:%llu
+0011753c string  setting wdidle3 to 
+00117551 string  setting fs readahead to %d 
+0011756e string  BLKRASET failed
+0011757f string  HDIO_SET_PIO_MODE failed
+00117599 string  HDIO_SET_32BIT failed
+001175b0 string  setting multcount to %d 
+001175ca string  HDIO_SET_MULTCOUNT failed
+001175e8 string  setting readonly to %d
+00117600 string  BLKROSET failed
+00117611 string  setting unmaskirq to %d
+0011762a string  HDIO_SET_UNMASKINTR failed
+00117646 string  setting using_dma to %d
+0011765f string  HDIO_SET_DMA failed
+00117674 string  setting queue_depth to %d 
+00117690 string device/queue_depth
+001176a3 string  setting nowerr to %d
+001176b9 string  HDIO_SET_NOWERR failed
+001176d1 string  setting keep_settings to %d
+001176ee string  HDIO_SET_KEEPSETTINGS failed
+0011770c string  setting drive doorlock to %d
+0011772a string  setting xfermode to %d
+00117742 string default PIO mode
+00117753 string PIO flow control mode%u
+0011776b string singleword DMA mode%u
+00117781 string multiword DMA mode%u
+00117796 string UltraDMA mode%u
+001177a6 string unknown, probably not valid
+001177c2 string  spin-up:
+001177d0 string  0x%02x (%d) 
+001177de string  HDIO_DRIVE_CMD failed
+001177f5 string setting cd/dvd speed to %d 
+00117811 string  HDIO_DRIVE_CMD:WRV failed
+0011782c string  setting standby to %u
+00117843 string 21 minutes
+0011784e string vendor-specific
+0011785e string ?reserved
+00117868 string 21 minutes + 15 seconds
+00117880 string %u minute%s
+00117890 string %u seconds
+0011789b string %u hour%s
+001178a5 string %u minutes
+001178b0 string illegal value
+001178be string , mode=%s
+001178c8 string ERASE_PREPARE
+001178d6 string --sanitize
+001178e1 string Issuing %s command 
+001178f5 string SANITIZE failed
+00117905 string Reason not reported
+00117919 string SD3 Sanitize Operation Failed
+00117937 string Drive in %s state 
+0011794a string Sanitize status:
+0011795b string     State:    %s 
+0011796d string SD0 Sanitize Idle
+0011797f string SD1 Sanitize Frozen
+00117993 string     Progress: 0x%x (%d%%) 
+001179ae string     Antifreeze bit set
+001179c5 string DCO Checksum verified.
+001179dc string DCO Checksum FAILED!
+001179f1 string --dco-restore
+001179ff string  issuing DCO restore command
+00117a1c string  issuing DCO freeze command
+00117a38 string --dco-setmax
+00117a45 string Original DCO:
+00117a53 string New DCO:
+00117a5c string DCO data is NULL!
+00117a6e string DEVICE CONFIGURATION SET
+00117a87 string  HDIO_SET_BUSSTATE failed
+00117aa1 string -Nnnnnn
+00117aa9 string  SET_MAX_ADDRESS(_EXT) failed
+00117ac7 string --make-bad-sector
+00117ad9 string --trim-sector-ranges
+00117aee string --write-sector
+00117afd string re-writing sector %llu: 
+00117b16 string --fwdownload
+00117b23 string reading sector %llu: 
+00117b39 string drq_hsm_error
+00117b47 string under -20
+00117b51 string over 107
+00117b5a string  HDIO_GET_MULTCOUNT failed
+00117b75 string  multcount     = %2ld
+00117b8b string  IO_support    =%3ld (
+00117ba2 string default) 
+00117bbc string 32-bit w/sync)
+00117bcb string Request-Queue-Bypass)
+00117be6 string  HDIO_GET_32BIT failed
+00117bfd string  unmaskirq     = %2ld
+00117c13 string  HDIO_GET_UNMASKINTR failed
+00117c2f string  using_dma     = %2ld
+00117c45 string  (DMA-Assisted-PIO)
+00117c59 string  HDIO_GET_DMA failed
+00117c6e string  queue_depth   = %2u 
+00117c84 string  keepsettings  = %2ld
+00117c9a string  HDIO_GET_KEEPSETTINGS failed
+00117cb8 string  HDIO_GET_NOWERR failed
+00117cd0 string  nowerr        = %2ld
+00117ce6 string  BLKROGET failed
+00117cf7 string  readonly      = %2ld
+00117d0d string  BLKRAGET failed
+00117d1e string  readahead     = %2ld
+00117d34 string %lld 
+00117d3a string  wdidle3      = 
+00117d4b string  drive state is:  %s 
+00117d61 string  HDIO_GET_IDENTITY failed
+00117d7b string  look-ahead    = %2d
+00117d90 string  write-caching = %2d
+00117da5 string  APM_level	= 
+00117db3 string  write-read-verify = %2u 
+00117dcd string  HDIO_GET_BUSSTATE failed
+00117de7 string  busstate      = %2ld (%s) 
+00117e03 string  max sectors   = %llu/%llu
+00117e1e string , HPA is enabled
+00117e2f string , HPA is disabled
+00117e41 string (%llu?)
+00117e49 string , HPA setting seems invalid
+00117e65 string lseek() failed
+00117e74 string  Timing %scached reads:   
+00117e8f string  Timing %s disk reads
+00117ea5 string  (offset %llu GB)
+00117eb7 string  re-reading partition table
+00117ed3 string  BLKRRPART failed
+00117ee5 string  issuing standby command
+00117efe string  issuing sleep command
+00117f15 string  HDIO_DRIVE_CMD(sleep) failed
+00117f33 string  resetting drive
+00117f44 string  HDIO_DRIVE_RESET failed
+00117f5d string Excess flags given. 
+00117f72 string filesystem-read-ahead
+00117f88 string look-ahead
+00117f93 string bus-state
+00117f9d string power-management-mode
+00117fb3 string 32-bit-IO
+00117fbd string dma-enable
+00117fc8 string defects-management
+00117fdb string CDROM/DVD-speed
+00117feb string WDC-idle3-timeout
+00117ffd string kernel-keep-settings
+00118012 string drive-keep-settings
+00118026 string door-lock
+00118030 string multmode-count
+0011803f string acoustic-management
+00118053 string ignore-write-errors
+00118067 string bad/missing sector value
+00118083 string prefetch
+0011808c string queue-depth
+00118098 string powerup-in-standby
+001180ab string standby-interval
+001180bc string read-only
+001180c6 string write-read-verify
+001180d8 string unmask-irq
+001180e3 string v9.65
+001180e9 string write-cache
+001180f5 string verbose
+001180fd string prefer-ata12
+0011810a string GB offset for -t flag
+00118120 string yes-i-know-what-i-am-doing
+0011813b string please-destroy-my-drive
+00118153 string direct
+0011815a string sanitize-overwrite-passes
+00118174 string drq-hsm-error
+00118182 string dco-freeze
+0011818d string dco-identify
+0011819a string fallocate
+001181a4 string bad/missing block-count
+001181bc string fibmap
+001181c3 string fwdownload-mode3
+001181d4 string fwdownload-modee
+001181e5 string fwdownload-modee-max
+001181fa string fwdownload-mode3-max
+0011820f string fwdownload-mode7
+00118220 string idle-immediate
+0011822f string idle-unload
+0011823b string sector size out of range
+00118254 string %s[%u]
+0011825b string bad/missing sector count
+00118274 string repair-sector
+00118282 string read-sector
+0011828e string Istdout
+0011829b string security-mode
+001182a9 string security-prompt-for-password
+001182c6 string user-master
+001182d2 string security-freeze
+001182e2 string Istdin
+001182e9 string %s: argc(%d) > 0 
+001182fb string security-help
+00118309 string security-unlock
+00118319 string security-set-pass
+0011832b string security-disable
+0011833c string security-erase
+0011834b string security-erase-enhanced
+00118363 string sanitize-status
+00118373 string sanitize-freeze-lock
+00118388 string sanitize-antifreeze-lock
+001183a1 string sanitize-block-erase
+001183b6 string sanitize-crypto-scramble
+001183cf string sanitize-overwrite
+001183e2 string missing PATTERN 
+001183f3 string %s: unknown flag 
+00118405 string -X: missing value 
+00118418 string tristate
+001184aa string 1Sect
+001184b0 string DualPort
+001184b9 string DualPortCache
+001184cc string medium
+001184dd string  HardSect
+001184e7 string  SoftSect
+001184f1 string  NotMFM
+001184f9 string  HdSw>15uSec
+00118506 string  SpinMotCtl
+00118512 string  Fixed
+00118519 string  Removable
+00118524 string  DTR<=5Mbs
+0011852f string  DTR>5Mbs
+00118539 string  DTR>10Mbs
+00118544 string  RotSpdTol>.5%
+00118553 string  dStbOff
+0011855c string  TrkOff
+00118564 string  FmtGapReq
+0011856f string  nonMagnetic
+0011857c string Unsupported command
+00118590 string Device in FROZEN state
+001185a7 string Antifreeze lock enabled
+001185cb string %cdma%u 
+001185d4 string ATA-8-ACS revision 2d
+001185ea string ATA-8-ACS revision 3f
+00118600 string ATA-8-ACS revision 3e
+00118616 string ATA-8-ACS revision 3c
+0011862c string ATA-8-ACS revision 3b
+00118642 string 	not	
+00118648 string 	(?)	
+0011864e string default
+00118656 string CompactFlash ATA device
+0011866e string ATA device, with 
+00118680 string ATAPI %s, with 
+00118695 string removable media
+001186a5 string Model Number:
+001186b3 string 	%-20s
+001186ba string Serial Number:
+001186c9 string Firmware Revision:
+001186dc string Media Serial Num:
+001186ee string Media Manufacturer:
+00118702 string Transport:
+0011870d string Parallel
+00118716 string , ATA8-APT
+00118721 string Serial
+00118728 string , ATA8-AST
+00118733 string , SATA 1.0a
+0011873f string , SATA II Extensions
+00118754 string , SATA Rev 2.5
+00118763 string , SATA Rev 2.6
+00118772 string , SATA Rev 3.0
+00118781 string ; Revision: 
+0011878e string Standards:
+00118799 string  	Used: %s 
+001187a5 string  	Supported: 
+001187b3 string  	Likely used: %u 
+001187c6 string & some of %u 
+001187d4 string  	Likely used CD-ROM ATAPI-1
+001187f1 string Configuration:
+00118800 string  	Supported: CD-ROM ATAPI
+0011881f string 	DRQ response: 
+00118834 string <=10ms with INTRQ
+00118846 string 50us.
+0011884c string unknown.
+00118855 string 	Packet size: 
+00118864 string 12 bytes
+0011886d string 16 bytes
+00118876 string Unknown
+0011887e string 	CHS addressing not supported
+0011889c string 	Logical		max	current
+001188b2 string 	cylinders	%u	%u 
+001188d3 string 	sectors/track	%u	%u 
+001188ed string 	bytes/track: %u
+001188fe string 	bytes/sector: %u 
+00118911 string Logical/Physical Sector size:
+0011892f string 	%-31s %11u bytes 
+00118942 string Logical  Sector size:
+00118958 string 	%-31s %11u bytes
+0011896a string  [ Supported:
+0011897b string Logical Sector-0 offset:
+00118994 string (%llu GB) 
+0011899f string 	cache/buffer size  = 
+001189b6 string %u KBytes
+001189c0 string  (type=%s)
+001189cb string 	Form Factor: 
+001189da string 5.25 inch
+001189e4 string 3.5 inch
+001189ed string 2.5 inch
+001189f6 string less than 1.8 inch
+00118a09 string unknown (0x%04x]
+00118a1a string Capabilities:
+00118a28 string Cmd queuing, 
+00118a36 string Cmd overlap, 
+00118a44 string LBA, 
+00118a4a string IORDY
+00118a50 string (may be)
+00118a5e string (cannot
+00118a66 string  be disabled)
+00118a74 string IORDY not likely
+00118a85 string 	Buffer type: %04x: 
+00118a9a string single port, single-sector
+00118ab5 string dual port, multi-sector
+00118acd string  with read caching ability
+00118ae8 string 	Buffer size: %.1fkB
+00118afd string 	bytes avail on r/w long: %u
+00118b1a string 	Queue depth: %u
+00118b30 string  perform double-word IO
+00118b48 string Standard
+00118b51 string , no 
+00118b57 string device specific minimum
+00118b6f string Max = %u	
+00118b79 string Current = 
+00118b84 string 	ATA sw reset required
+00118b9b string 	Overlap support:
+00118bad string  %uus to release bus.
+00118bca string 	PIO: 
+00118bd1 string sdma%u
+00118bdc string 	     Interleaved DMA support
+00118bfa string 	     Cycle time:
+00118c0c string  min=%uns
+00118c16 string  recommended=%uns
+00118c28 string pio%d 
+00118c2f string  no flow control=%uns
+00118c45 string   IORDY flow control=%uns
+00118c5f string  (limit %u block%s) 
+00118c74 string  (limit unknown)
+00118c85 string pio%u 
+00118c8c string mdma%u 
+00118c94 string io_udma%u 
+00118c9f string mem_udma%u 
+00118cab string 	   *	CFA advanced modes: %s 
+00118cce string 	CFA Power Level 1 
+00118ce2 string  (max %umA)
+00118cee string Security: 
+00118cf9 string 	Security level 
+00118d0a string maximum
+00118d12 string more than 65532
+00118d22 string more than 508
+00118d30 string min for SECURITY ERASE UNIT.
+00118d4d string 	NAA		: %x 
+00118d59 string 	IEEE OUI	: %06x 
+00118d6b string 	Unique ID	: %x%08x 
+00118d80 string HW reset results:
+00118d92 string 	CBLID- above Vih
+00118da4 string 	CBLID- below Vih
+00118db6 string 	Device num = 0
+00118dc6 string 	Device num = 1
+00118dd6 string  determined by the jumper
+00118df0 string  determined by CSEL
+00118e04 string Device Sleep:
+00118e12 string Checksum: %scorrect
+00118e26 string  (0x%02x), expected 0x%02x 
+00118e42 string DCO Revision: 0x%04x
+00118e57 string  -- unknown, treating as 0002
+00118e75 string 	Transfer modes: 		
+00118e89 string  mdma0 mdma1 mdma2
+00118e9c string  mdma0 mdma1
+00118ea9 string  mdma0
+00118eb0 string  udma0 udma1 udma2 udma3
+00118ec9 string  udma0 udma1 udma2
+00118edc string  udma0 udma1
+00118ee9 string  udma0
+00118ef0 string 	Real max sectors: %llu 
+00118f09 string 	ATA command/feature sets:
+00118f24 string  SMART
+00118f2b string  self_test
+00118f36 string  error_log
+00118f41 string  security
+00118f4b string  PUIS
+00118f60 string  48_bit
+00118f68 string  (?):
+00118f6e string  streaming
+00118f79 string  TLC_Reserved_7[10]
+00118f92 string  selective_test
+00118fa2 string  conveyance_test
+00118fb3 string  write_read_verify
+00118fc6 string  reserved_7[15]
+00118fd6 string  free_fall
+00118fe1 string  trusted_computing
+00118ff4 string  WRITE_UNC_EXT
+00119003 string  NV_cache_power_management
+0011901e string  NV_cache
+0011902d string  NZ_buffer_offsets
+00119040 string  interface_power_management
+0011905c string  async_notification
+00119075 string unknown 206[11]
+00119085 string unknown 206[10]
+00119095 string unknown 206[9]
+001190a4 string unknown 206[8]
+001190b3 string unknown 206[7]
+001190c2 string unknown 206[6]
+001190d1 string SCT Data Tables (AC5)
+001190e7 string SCT Features Control (AC4)
+00119102 string SCT Write Same (AC2)
+00119117 string locked
+0011911e string frozen
+00119125 string expired: security count
+0011913d string supported: enhanced erase
+00119157 string unknown 78[15]
+00119166 string unknown 78[14]
+00119175 string unknown 78[13]
+00119184 string unknown 78[12]
+00119193 string unknown 78[11]
+001191a2 string unknown 78[10]
+001191b1 string unknown 78[9]
+001191bf string Device Sleep (DEVSLP)
+001191d5 string unknown 78[7]
+001191e3 string In-order data delivery
+001191fa string unknown 78[0]
+00119208 string NCQ priority information
+00119221 string Phy event counters
+00119234 string Native Command Queueing (NCQ)
+00119252 string unknown 76[7]
+00119260 string unknown 76[6]
+0011926e string unknown 76[5]
+0011927c string unknown 76[4]
+0011928a string unknown 76[0]
+00119298 string unknown 119[13]
+001192a8 string unknown 119[12]
+001192b8 string unknown 119[11]
+001192c8 string unknown 119[10]
+001192d8 string unknown 119[9]
+001192e7 string unknown 119[8]
+001192f6 string unknown 119[7]
+00119305 string unknown 119[6]
+00119314 string Free-fall Control feature set
+00119332 string Segmented DOWNLOAD_MICROCODE
+0011934f string Write-Read-Verify feature set
+0011936d string IDLE_IMMEDIATE with UNLOAD
+00119388 string URG for READ_STREAM[_DMA]_EXT
+001193a6 string 64-bit World wide name
+001193bd string WRITE_DMA_QUEUED_FUA_EXT
+001193d6 string WRITE_{DMA|MULTIPLE}_FUA_EXT
+001193f3 string Media Card Pass-Through
+0011940b string Media serial number
+0011941f string SMART self-test
+0011942f string SMART error logging
+00119443 string FLUSH_CACHE_EXT
+00119453 string Mandatory FLUSH_CACHE
+00119469 string 48-bit Address feature set
+00119484 string SET_MAX security extension
+0011949f string CFA feature set
+001194af string READ/WRITE_DMA_QUEUED
+001194c5 string obsolete 82[15]
+001194d5 string NOP cmd
+001194dd string READ_BUFFER command
+001194f1 string WRITE_BUFFER command
+00119506 string WRITE_VERIFY command
+0011951b string DEVICE_RESET command
+00119530 string SERVICE interrupt
+00119542 string Release interrupt
+00119554 string Look-ahead
+0011955f string Write cache
+0011956b string PACKET command feature set
+00119586 string Power Management feature set
+001195a3 string Removable Media feature set
+001195bf string Security Mode feature set
+001195d9 string SMART feature set
+001195eb string CFast specification support
+00119607 string READ BUFFER DMA command
+0011961f string WRITE BUFFER DMA command
+00119638 string Device encrypts all user data
+00119656 string reserved 69[1]
+00119665 string reserved 69[0]
+00119674 string Unspecified
+00119680 string ATA-1 X3T9.2 781D revision 4
+0011969d string ATA-3 X3T10 2008D revision 1
+001196ba string ATA-2 X3T10 948D revision 2k
+001196d7 string ATA-3 X3T10 2008D revision 0
+001196f4 string ATA-2 X3T10 948D revision 3
+00119710 string ATA-3 X3T10 2008D revision 6
+0011972d string Reserved
+00119736 string BLOCK_ERASE_EXT command
+0011974e string OVERWRITE_EXT command
+00119764 string CRYPTO_SCRAMBLE_EXT command
+00119780 string SANITIZE feature set
+00119795 string hard sectored
+001197a3 string soft sectored
+001197b1 string not MFM encoded 
+001197c2 string head switch time > 15us
+001197da string spindle motor control option
+001197f7 string fixed drive
+00119803 string removable drive
+00119813 string disk xfer rate <= 5Mbs
+0011982a string disk xfer rate > 5Mbs
+00119840 string rotational speed tol.
+00119856 string data strobe offset option
+00119870 string track offset option
+00119884 string Direct-access device
+00119899 string Sequential-access device
+001198b2 string Printer
+001198ba string Processor
+001198c4 string Write-once device
+001198d6 string CD-ROM
+001198dd string Scanner
+001198e5 string Optical memory
+001198f4 string Medium changer
+00119903 string Communications device
+00119919 string ACS-IT8 device
+00119928 string Array controller
+00119939 string Enclosure services
+0011994c string Reduced block command device
+00119969 string Optical card reader/writer
+00119984 string outgoing cdb
+00119991 string outgoing_data
+0011999f string ioctl(fd,SG_IO)
+001199af string SG_IO: bad status: 0x%x 
+001199c8 string SG_IO: bad host status: 0x%x 
+001199e6 string SG_IO: sb[]
+001199f2 string incoming_data
+00119a00 string SG_IO: desc[]
+00119a0e string Trying legacy HDIO_DRIVE_CMD 
+00119a2c string  feat
+00119a32 string  nsect
+00119a39 string  lbal
+00119a3f string  lbam
+00119a45 string  lbah
+00119a50 string using LBA48 taskfile 
+00119a66 string  er=%02x
+00119a6f string  ns=%02x
+00119a78 string  ll=%02x
+00119a81 string  lm=%02x
+00119a8a string  lh=%02x
+00119a93 string  dh=%02x
+00119a9c string  st=%02x
+00119aa5 string  err=%02x
+00119aaf string /sys/devices
+00119ac2 string %u:%u
+00119ac8 string  fstat() failed
+00119ad8 string %s(%u:%u): %s 
+00119ae7 string fstat()
+00119aef string  BLKGETSIZE failed
+00119b02 string md/level
+00119b0b string md/raid_disks
+00119b1f string md/rd%u/offset
+00119b2e string md/rd%u/block/dev
+00119b40 string md/rd%u/block/start
+00119b54 string  HDIO_GETGEO failed
+00119b6e string %10llu %10llu
+00119b7c string %12llu %s %s 
+00119b8a string %s: not a regular file 
+00119ba2 string sectors
+00119baa string end_LBA
+00119bb2 string begin_LBA
+00119bbc string byte_offset
+00119bc8 string %12s %10s %10s %10s 
+00119bdd string ioctl(FIBMAP)
+00119beb string %s: %llu bytes 
+00119bfb string  Done.
+00119c02 string [raw=0x%02x] 
+00119c16 string %u.%u secs
+00119c21 string APT: JMicron Port: 0x%X 
+00119c3d string idVendor
+00119c46 string idProduct
+00119c50 string bcdDevice
+00119c5a string APT: Unsupported device
+00119c78 string  %s - get/set hard disk parameters - version v9.65, by Mark Lord.  
+00119cc0 string Usage:  %s  [options] [device ...]  
+00119ce8 string Options:  -a   Get/set fs readahead  -A   Get/set the drive look-ahead flag (0/1)  -b   Get/set bus state (0 == off, 1 == on, 2 == tristate)  -B   Set Advanced Power Management setting (1-255)  -c   Get/set IDE 32-bit IO setting  -C   Check drive power mode status  -d   Get/set using_dma flag  -D   Enable/disable drive defect management  -E   Set cd/dvd drive speed  -f   Flush buffer cache for device on exit  -F   Flush drive write cache  -g   Display drive geometry  -h   Display terse usage information  -H   Read temperature from drive (Hitachi only)  -i   Display drive identification  -I   Detailed/current information directly from drive  -J   Get/set Western DIgital "Idle3" timeout for a WDC "Green" drive (DANGEROUS)  -k   Get/set keep_settings_over_reset flag (0/1)  -K   Set drive keep_features_over_reset flag (0/1)  -L   Set drive doorlock (0/1) (removable harddisks only)  -m   Get/set multiple sector count  -M   Get/set acoustic management (0-254, 128: quiet, 254: fast)  -n   Get/set ignore-write-errors flag (0/1)  -N   Get/set max visible number of sectors (HPA) (VERY DANGEROUS)  -p   Set PIO mode on IDE interface chipset (0,1,2,3,4,...)  -P   Set drive prefetch count  -q   Change next setting quietly  -Q   Get/set DMA queue_depth (if supported)  -r   Get/set device readonly flag (DANGEROUS to set)  -R   Get/set device write-read-verify flag  -s   Set power-up in standby flag (0/1) (DANGEROUS)  -S   Set standby (spindown) timeout  -t   Perform device read timings  -T   Perform cache read timings  -u   Get/set unmaskirq flag (0/1)  -U   Obsolete  -v   Use defaults; same as -acdgkmur for IDE drives  -V   Display program version and exit immediately  -w   Perform device reset (DANGEROUS)  -W   Get/set drive write-caching flag (0/1)  -x   Obsolete  -X   Set IDE xfer mode (DANGEROUS)  -y   Put drive in standby mode  -Y   Put drive to sleep  -z   Re-read partition table  -Z   Disable Seagate auto-powersaving mode  --dco-freeze      Freeze/lock current device configuration until next power cycle  --dco-identify    Read/dump device configuration identify data  --dco-restore     Reset device configuration back to factory defaults  --dco-setmax      Use DCO to set maximum addressable sectors  --direct          Use O_DIRECT to bypass page cache for timings  --drq-hsm-error   Crash system with a "stuck DRQ" error (VERY DANGEROUS)  --fallocate       Create a file without writing data to disk  --fibmap          Show device extents (and fragmentation) for a file  --fwdownload            Download firmware file to drive (EXTREMELY DANGEROUS)  --fwdownload-mode3      Download firmware using min-size segments (EXTREMELY DANGEROUS)  --fwdownload-mode3-max  Download firmware using max-size segments (EXTREMELY DANGEROUS)  --fwdownload-mode7      Download firmware using a single segment (EXTREMELY DANGEROUS)  --fwdownload-modee      Download firmware using mode E (min-size segments) (EXTREMELY DANGEROUS)  --fwdownload-modee-max  Download firmware using mode E (max-size segments) (EXTREMELY DANGEROUS)  --idle-immediate  Idle drive immediately  --idle-unload     Idle immediately and unload heads  --Iraw filename   Write raw binary identify data to the specfied file  --Istdin          Read identify data from stdin as ASCII hex  --Istdout         Write identify data to stdout as ASCII hex  --make-bad-sector Deliberately corrupt a sector directly on the media (VERY DANGEROUS)  --offset          use with -t, to begin timings at given offset (in GiB) from start of drive  --prefer-ata12    Use 12-byte (instead of 16-byte) SAT commands when possible  --read-sector     Read and dump (in hex) a sector directly from the media  --repair-sector   Alias for the --write-sector option (VERY DANGEROUS)  --sanitize-antifreeze-lock  Block sanitize-freeze-lock command until next power cycle  --sanitize-block-erase      Start block erase operation  --sanitize-crypto-scramble  Change the internal encryption keys that used for used data  --sanitize-freeze-lock      Lock drive's sanitize features until next power cycle  --sanitize-overwrite  PATTERN  Overwrite the internal media with constant PATTERN  --sanitize-overwrite-passes COUNT  Number of overwrite passes from 0 to 7, default 0 means 16 passes  --sanitize-status           Show sanitize status information  --security-help             Display help for ATA security commands  --set-sector-size           Change logical sector size of drive  --trim-sector-ranges        Tell SSD firmware to discard unneeded data sectors: lba:count ..  --trim-sector-ranges-stdin  Same as above, but reads lba:count pairs from stdin  --verbose                   Display extra diagnostics from some commands  --write-sector              Repair/overwrite a (possibly bad) sector directly on the media (VERY DANGEROUS)  
+0011afa8 string  ATA Security Commands:  Most of these are VERY DANGEROUS and can destroy all of your data!  Due to bugs in older Linux kernels, use of these commands may even  trigger kernel segfaults or worse.  EXPERIMENT AT YOUR OWN RISK!   --security-freeze           Freeze security settings until reset.   --security-set-pass PASSWD  Lock drive, using password PASSWD:                                   Use 'NULL' to set empty password.                                   Drive gets locked if user-passwd is selected.  --security-prompt-for-password   Prompt user to enter the drive password.   --security-unlock   PASSWD  Unlock drive.  --security-disable  PASSWD  Disable drive locking.  --security-erase    PASSWD  Erase a (locked) drive.  --security-erase-enhanced PASSWD   Enhanced-erase a (locked) drive.   The above four commands may optionally be preceded by these options:  --security-mode  LEVEL      Use LEVEL to select security level:                                   h   high security (default).                                   m   maximum security.  --user-master    WHICH      Use WHICH to choose password type:                                   u   user-password (default).                                   m   master-password 
+0011b480 string   %s: bad/missing filename parameter 
+0011b4a8 string read() hit EOF - device too small 
+0011b4d0 string Use of %s is VERY DANGEROUS. %s Please supply the --yes-i-know-what-i-am-doing flag if you really want this. Program aborted. 
+0011b550 string Use of %s is EXTREMELY DANGEROUS. %s Please also supply the --please-destroy-my-drive flag if you really want this. Program aborted. 
+0011b5d8 string  HDIO_DRIVE_CMD(identify) failed
+0011b600 string  GET_NATIVE_MAX_ADDRESS_EXT failed
+0011b628 string GET_NATIVE_MAX_ADDRESS_EXT response: hob={%02x %02x %02x} lob={%02x %02x %02x} 
+0011b678 string  READ_NATIVE_MAX_ADDRESS_EXT failed
+0011b6a0 string READ_NATIVE_MAX_ADDRESS_EXT response: hob={%02x %02x %02x} lob={%02x %02x %02x} 
+0011b6f8 string  READ_NATIVE_MAX_ADDRESS failed
+0011b718 string  HDIO_DRIVE_CMD(dco_identify) failed
+0011b740 string  HDIO_DRIVE_CMD(flushcache) failed
+0011b768 string Please enter the drive password: 
+0011b790 string failed to read a password, errno=%d 
+0011b7b8 string password is too long (%u chars max) 
+0011b7e0 string invalid PASSWD length (hex string must be exactly %d chars) 
+0011b820 string PASSWD too long (must be %d chars max) 
+0011b848 string   -%c: bad/missing %s value (%d..%d) 
+0011b870 string %04x %04x %04x %04x %04x %04x %04x %04x 
+0011b8a0 string %s is a RAID device: please specify an absolute LBA of a raw member device instead (raid1 only) 
+0011b908 string Device %s has non-zero LBA starting offset of %llu. 
+0011b940 string Please use an absolute LBA with the /dev/ entry for the raw device, rather than a partition or raid name. 
+0011b9b0 string %s is probably a partition of %s (?) 
+0011b9d8 string The absolute LBA of sector %llu from %s should be %llu 
+0011ba10 string trimming %llu sectors from %d ranges 
+0011ba38 string read only %u/256 IDENTIFY words from stdin: %s 
+0011ba68 string   Model=%.40s, FwRev=%.8s, SerialNo=%.20s
+0011ba98 string  RawCHS=%u/%u/%u, TrkSize=%u, SectSize=%u, ECCbytes=%u 
+0011bad0 string   * signifies the current active mode
+0011baf8 string READ_LOG_EXT(0x%02x, %u) failed: %s 
+0011bb20 string This will likely destroy all data on the drive.
+0011bb50 string READ_LOG_EXT(SECTOR_CONFIGURATION) failed: %s 
+0011bb80 string changing sector size configuration to %llu: 
+0011bbb0 string ERROR: unsupported sector size: %d 
+0011bbd8 string This might destroy the drive and/or all data on it.
+0011bc10 string stdin: error at lba:count pair #%d: %s 
+0011bc38 string This implementation is not as thorough as the official WDIDLE3.EXE. Use at your own risk!
+0011bc98 string  attempting to auto-tune PIO mode
+0011bcc0 string  attempting to set PIO mode to %d 
+0011bce8 string  attempting to set MDMA mode to %d 
+0011bd10 string  attempting to set UDMA mode to %d 
+0011bd38 string  setting 32-bit IO_support flag to %d 
+0011bd60 string Only the old IDE drivers work correctly with -m with kernels up to at least 2.6.29. libata drives may fail and get hung if you set this flag.
+0011bdf0 string  HDIO_DRIVE_CMD(set_multi_count) failed
+0011be18 string  HDIO_DRIVE_CMD(doorlock) failed
+0011be40 string  setting drive keep features to %d
+0011be68 string  HDIO_DRIVE_CMD(keepsettings) failed
+0011be90 string  setting drive defect management to %d 
+0011beb8 string  HDIO_DRIVE_CMD(defectmgmt) failed
+0011bee0 string  setting drive prefetch to %d 
+0011bf00 string  HDIO_DRIVE_CMD(setprefetch) failed
+0011bf28 string default PIO mode, disable IORDY
+0011bf48 string  HDIO_DRIVE_CMD(setxfermode) failed
+0011bf70 string  setting drive read-lookahead to %d
+0011bf98 string  HDIO_DRIVE_CMD(setreadahead) failed
+0011bfc0 string This requires BIOS and kernel support to recognize/boot the drive.
+0011c008 string  setting power-up in standby to %d
+0011c030 string  HDIO_DRIVE_CMD(powerup_in_standby) failed
+0011c060 string  setting Advanced Power Management level to
+0011c090 string  SET_STREAMING/CDROM_SELECT_SPEED both failed
+0011c0c0 string  setting acoustic management to %d 
+0011c0e8 string  HDIO_DRIVE_CMD:ACOUSTIC failed
+0011c108 string  setting write-read-verify to %d 
+0011c130 string  setting drive write-caching to %d
+0011c158 string  HDIO_DRIVE_CMD(setcache) failed
+0011c180 string  HDIO_DRIVE_CMD(setidle) failed
+0011c1a0 string BUG in do_set_security(), command1=0x%x 
+0011c1d0 string  Issuing %s command, password="%s", user=%s
+0011c200 string BUG in do_set_security(), command2=0x%x 
+0011c230 string This sanitize command destroys all user data.
+0011c260 string BUG in do_sanitize_cmd(), feat=0x%x 
+0011c288 string SANITIZE device error reason: %s 
+0011c2b0 string SD2 Sanitize operation In Process
+0011c2d8 string     Last Sanitize Operation Completed Without Error
+0011c310 string Operation started in background
+0011c330 string You may use `--sanitize-status` to check progress
+0011c368 string SANITIZE feature set is not supported 
+0011c390 string You are trying to deliberately reset your drive configuration back to the factory defaults. This may change the apparent capacity and feature set of the drive, making all data on it inaccessible. You could lose *everything*.
+0011c478 string  HDIO_DRIVE_CMD(dco_restore) failed
+0011c4a0 string  HDIO_DRIVE_CMD(dco_freeze) failed
+0011c4c8 string You have requested reducing the apparent size of the drive. This is a BAD idea, and can easily destroy all of the drive's contents.
+0011c550 string issuing DCO set command (sectors = %llu) 
+0011c580 string  issuing security freeze command
+0011c5a8 string  HDIO_DRIVE_CMD(security_freeze) failed
+0011c5d0 string  disabling Seagate auto powersaving mode
+0011c600 string  HDIO_DRIVE_CMD(seagatepwrsave) failed
+0011c628 string  setting bus state to %d (%s) 
+0011c648 string  setting max visible sectors to %llu (%s) 
+0011c678 string  SET_ACCESSIBLE_MAX_ADDRESS_EXT failed
+0011c6a0 string You are trying to deliberately corrupt a low-level sector on the media. This is a BAD idea, and can easily result in total data loss.
+0011c728 string Device does not claim to implement the required WRITE_UNC_EXT command This operation will probably fail (continuing regardless).
+0011c7b0 string Corrupting sector %llu (WRITE_UNC_EXT as %s): 
+0011c7e0 string Corrupting sector %llu (WRITE_LONG): 
+0011c808 string You are trying to deliberately overwrite a low-level sector on the media. This is a BAD idea, and can easily result in total data loss.
+0011c890 string --fwdownload requires the raw device, not a partition.
+0011c8c8 string This flag has not been tested with many drives to date. You are trying to deliberately overwrite the drive firmware with the contents of the specified file. If this fails, your drive could be toast.
+0011c990 string This might destroy the drive and well as all of the data on it.
+0011c9d0 string  triggering "stuck DRQ" host state machine error
+0011ca08 string ata status=0x%02x ata error=0x%02x 
+0011ca30 string  HDIO_DRIVE_CMD(hitachisensecondition) failed
+0011ca60 string  drive temperature (celsius) is:  
+0011ca88 string   drive temperature in range:  %s 
+0011cab0 string  geometry      = %u/%u/%u, sectors = %lld, start = 
+0011cae8 string  no identification info available
+0011cb10 string Error writing IDENTIFY DEVICE data to "%s" 
+0011cb40 string Wrote IDENTIFY DEVICE data to "%s" 
+0011cb68 string  look-ahead    = not supported
+0011cb88 string  write-caching = not supported
+0011cba8 string  acoustic      = %2u (128=quiet ... 254=fast) 
+0011cbd8 string  acoustic      = not supported
+0011cbf8 string  write-read-verify = not supported
+0011cc20 string , ACCESSIBLE MAX ADDRESS enabled
+0011cc48 string Power cycle your device after every ACCESSIBLE MAX ADDRESS
+0011cc88 string , ACCESSIBLE MAX ADDRESS disabled
+0011ccb0 string  (buggy kernel device driver?)
+0011ccd0 string %3u MB in %5.2f seconds = %6.2f MB/sec 
+0011ccf8 string %3u MB in %5.2f seconds = %6.2f kB/sec 
+0011cd20 string  issuing idle_immediate command
+0011cd40 string  HDIO_DRIVE_CMD(idle_immediate) failed
+0011cd68 string  HDIO_DRIVE_CMD(standby) failed
+0011cd88 string  issuing idle_immediate_unload command
+0011cdb0 string TASKFILE(idle_immediate_unload) failed
+0011cdd8 string Number of passes must be in range 0..7
+0011ce00 string %s: num_flags_processed == %d 
+0011ce20 string invalid PATTERN length (hex string must be exactly %d chars) 
+0011ce60 string invalid PATTERN format (must be hex:XXXXXXXX) 
+0011ce90 string Last Sanitize Command completed unsuccessfully
+0011cec0 string Unknown device type: 	bits 15&14 of general configuration word 0 both set to 1.
+0011cf10 string powers-up in standby; SET FEATURES subcmd spins-up.
+0011cf48 string  	WARNING: ID response incomplete. 	WARNING: Following data may be incorrect. 
+0011cf98 string ATA8-AST T13 Project D1697 Revision 0b
+0011cfc0 string  	Used: unknown (minor revision code 0x%04x) 
+0011cff0 string  	Used: ATAPI for CD-ROMs, SFF-8020i, r2.5
+0011d020 string 	CHS current addressable sectors:%12u 
+0011d048 string 	LBA    user addressable sectors:%12u 
+0011d070 string 	LBA48  user addressable sectors:%12llu 
+0011d0a0 string 	device size with M = 1024*1024: %11llu MBytes 
+0011d0d0 string 	device size with M = 1000*1000: %11llu MBytes 
+0011d100 string 	Nominal Media Rotation Rate: Solid State Device
+0011d138 string 	Nominal Media Rotation Rate: %u 
+0011d160 string 	R/W multiple sector transfer: 
+0011d180 string 	Standby timer values: spec'd by 
+0011d1a8 string 	Advanced power management level: 
+0011d1d0 string 	Recommended acoustic management value: %u, current value: %u 
+0011d210 string  %uus to clear BSY after SERVICE cmd.
+0011d238 string 	DMADIR bit required in PACKET commands
+0011d260 string Commands/features: 	Enabled	Supported:
+0011d288 string                 (%u msec for TLC completion timer) 
+0011d2c0 string 	   *	Data Set Management TRIM supported
+0011d2f0 string 		CFA max advanced io_udma cycle time: %uns 
+0011d320 string 		CFA max advanced mem_udma cycle time: %uns 
+0011d350 string 		Key Management (CPRM) feature set
+0011d378 string 		Removable Media Status Notification feature set supported
+0011d3b8 string min for ENHANCED SECURITY ERASE UNIT.
+0011d3e0 string Logical Unit WWN Device Identifier: %04x%04x%04x%04x 
+0011d418 string 	DEVSLP Exit Timeout (DETO): %d ms (%s) 
+0011d448 string 	Minimum DEVSLP Assertion Time (MDAT): %d ms (%s) 
+0011d480 string Integrity word not set (found 0x%04x, expected 0x%02x%02x) 
+0011d4c0 string 	Master password revision code = %u 
+0011d4e8 string  The following features can be selectively disabled via DCO:
+0011d528 string  udma0 udma1 udma2 udma3 udma4 udma5 udma6
+0011d558 string  udma0 udma1 udma2 udma3 udma4 udma5
+0011d580 string  udma0 udma1 udma2 udma3 udma4
+0011d5a0 string 	SATA command/feature sets: 		
+0011d5c0 string unknown 206[15] (vendor specific)
+0011d5e8 string unknown 206[14] (vendor specific)
+0011d610 string unknown 206[13] (vendor specific)
+0011d638 string unknown 206[12] (vendor specific)
+0011d660 string SCT Error Recovery Control (AC3)
+0011d688 string SCT Read/Write Long (AC1), obsolete
+0011d6b0 string SMART Command Transport (SCT) feature set
+0011d6e0 string Software settings preservation
+0011d700 string Asynchronous notification (eg. media change)
+0011d730 string Device-initiated interface power management
+0011d760 string DMA Setup Auto-Activate optimization
+0011d788 string Non-Zero buffer offsets in DMA Setup FIS
+0011d7b8 string READ_LOG_DMA_EXT equivalent to READ_LOG_EXT
+0011d7e8 string Device automatic Partial to Slumber transitions
+0011d818 string Host automatic Partial to Slumber transitions
+0011d848 string Idle-Unload when NCQ is active
+0011d868 string Host-initiated interface power management
+0011d898 string Gen3 signaling speed (6.0Gb/s)
+0011d8b8 string Gen2 signaling speed (3.0Gb/s)
+0011d8d8 string Gen1 signaling speed (1.5Gb/s)
+0011d8f8 string {READ,WRITE}_DMA_EXT_GPL commands
+0011d920 string WRITE_UNCORRECTABLE_EXT command
+0011d940 string Disable Data Transfer After Error Detection
+0011d970 string Command Completion Time Limit (CCTL)
+0011d998 string Time Limited Commands (TLC) feature set
+0011d9c0 string URG for WRITE_STREAM[_DMA]_EXT
+0011d9e0 string General Purpose Logging feature set
+0011da08 string Media Card Pass Through Command feature set
+0011da38 string Device Configuration Overlay feature set
+0011da68 string Automatic Acoustic Management feature set
+0011da98 string Address Offset Reserved Area Boot
+0011dac0 string SET_FEATURES required to spinup after power up
+0011daf0 string Power-Up In Standby feature set
+0011db10 string Removable Media Status Notification feature set
+0011db40 string Advanced Power Management feature set
+0011db68 string Host Protected Area feature set
+0011db88 string Deterministic read data after TRIM
+0011dbb0 string Long physical sector diagnostics
+0011dbd8 string DEVICE CONFIGURATION SET/IDENTIFY DMA commands
+0011dc08 string SET MAX SETPASSWORD/UNLOCK DMA commands
+0011dc30 string DOWNLOAD MICROCODE DMA command
+0011dc50 string IEEE 1667 authentication of transient storage devices
+0011dc88 string Optional ATA device 28-bit commands
+0011dcb0 string Deterministic read ZEROs after TRIM
+0011dcd8 string Extended number of user addressable sectors 
+0011dd08 string All write cache is non-volatile
+0011dd28 string ATA-1 X3T9.2 781D prior to revision 4
+0011dd50 string ATA-1 published, ANSI X3.221-1994
+0011dd78 string ATA-2 published, ANSI X3.279-1996
+0011dda0 string ATA-2 X3T10 948D prior to revision 2k
+0011ddc8 string ATA-3 published, ANSI X3.298-199x
+0011ddf0 string ATA-3 X3T13 2008D revision 7 and 7a
+0011de18 string ATA/ATAPI-4 X3T13 1153D revision 6
+0011de40 string ATA/ATAPI-4 T13 1153D revision 13
+0011de68 string ATA/ATAPI-4 X3T13 1153D revision 7
+0011de90 string ATA/ATAPI-4 T13 1153D revision 18
+0011deb8 string ATA/ATAPI-4 T13 1153D revision 15
+0011dee0 string ATA/ATAPI-4 published, ANSI INCITS 317-1998
+0011df10 string ATA/ATAPI-5 T13 1321D revision 3
+0011df38 string ATA/ATAPI-4 T13 1153D revision 14
+0011df60 string ATA/ATAPI-5 T13 1321D revision 1
+0011df88 string ATA/ATAPI-5 published, ANSI INCITS 340-2000
+0011dfb8 string ATA/ATAPI-4 T13 1153D revision 17
+0011dfe0 string ATA/ATAPI-6 T13 1410D revision 0
+0011e008 string ATA/ATAPI-6 T13 1410D revision 3a
+0011e030 string ATA/ATAPI-7 T13 1532D revision 1
+0011e058 string ATA/ATAPI-6 T13 1410D revision 2
+0011e080 string ATA/ATAPI-6 T13 1410D revision 1
+0011e0a8 string ATA/ATAPI-7 published, ANSI INCITS 397-2005
+0011e0d8 string ATA/ATAPI-7 T13 1532D revision 0
+0011e100 string ATA/ATAPI-7 T13 1532D revision 4a
+0011e128 string ATA/ATAPI-6 published, ANSI INCITS 361-2002
+0011e158 string SANITIZE_ANTIFREEZE_LOCK_EXT command
+0011e180 string disk xfer rate > 5Mbs, <= 10Mbs
+0011e1a0 string format speed tolerance gap reqd
+0011e1c0 string SG_IO: ATA_%u status=0x%x, host_status=0x%x, driver_status=0x%x 
+0011e208 string SG_IO: bad driver status: 0x%x 
+0011e228 string SG_IO: questionable sense data, results may be incorrect 
+0011e268 string SG_IO: bad/missing sense data, sb[]
+0011e290 string       ATA_%u stat=%02x err=%02x nsect=%02x lbal=%02x lbam=%02x lbah=%02x dev=%02x 
+0011e2e8 string I/O error, ata_op=0x%02x ata_status=0x%02x ata_error=0x%02x 
+0011e328 string oflags.bits.lob_all=0x%02x, flags={
+0011e350 string oflags.bits.hob_all=0x%02x, flags={
+0011e378 string trying legacy HDIO_DRIVE_TASKFILE 
+0011e3a0 string rc=%d, errno=%d, returned ATA registers: 
+0011e3d0 string The running kernel lacks CONFIG_IDE_TASK_IOCTL support for this device. 
+0011e420 string %d,%d: device not found in %s 
+0011e440 string Unable to determine start offset LBA for device, aborting. 
+0011e480 string Unable to determine block size, aborting. 
+0011e4b0 string  %s:  filesystem blocksize %u, begins at LBA %llu; assuming %u byte sectors. 
+0011e500 string %s: file size too large, max=%u bytes 
+0011e528 string %s: file size (%llu) not a multiple of 512 
+0011e558 string DOWNLOAD_MICROCODE: not supported by device 
+0011e588 string Error: file size (%llu) too large for mode7 transfers 
+0011e5c0 string %s: xfer_mode=%d min=%u max=%u size=%u 
+0011e5e8 string Error: drive completed transfer at %llu/%llu bytes 
+0011e620 string Error: drive expects more data than provided, 
+0011e650 string but the transfer may have worked regardless. 
+0011e680 string  (or %u.%u secs for older drives)
+0011e6a8 string APT: JMicron doesn't support DMA
+0011e6d0 string APT: JMicron doesn't support 48-bit ATA commands 
+0011e708 string APT: No JMicron device connected
+0011e730 string APT: No idVendor found -> not USB bridge device
+0011e760 string APT: USB ID = 0x%04x:0x%04x (0x%03x) 
+0011e788 string APT: Found supported device %s 
+0011eab0 string handle_standalone_longarg
+0011eb40 string       -         
+0011eba8 string sysfs_find_dev
+0011ebb8 string /proc/devices
+0011ebc8 string fwdownload
+0011ebe0 string wdidle3_data_in
+0011ebf0 string wdidle3_vsc_enable_disable
+0011ec10 string wdidle3_vsc_data_out
+0011ec30 string wdidle3_vsc_send_key
+0011ec48 string unsupported
+0011ec58 string jmicron
+0011f209 string zR
+0011f239 string zR
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .interp
+.shstrtab::00000013 string-utf8 .note.gnu.property
+.shstrtab::00000026 string-utf8 .note.gnu.build-id
+.shstrtab::00000039 string-utf8 .note.ABI-tag
+.shstrtab::00000047 string-utf8 .gnu.hash
+.shstrtab::00000051 string-utf8 .dynsym
+.shstrtab::00000059 string-utf8 .dynstr
+.shstrtab::00000061 string-utf8 .gnu.version
+.shstrtab::0000006e string-utf8 .gnu.version_r
+.shstrtab::0000007d string-utf8 .rela.dyn
+.shstrtab::00000087 string-utf8 .rela.plt
+.shstrtab::00000091 string-utf8 .init
+.shstrtab::00000097 string-utf8 .plt.got
+.shstrtab::000000a0 string-utf8 .text
+.shstrtab::000000a6 string-utf8 .fini
+.shstrtab::000000ac string-utf8 .rodata
+.shstrtab::000000b4 string-utf8 .eh_frame_hdr
+.shstrtab::000000c2 string-utf8 .eh_frame
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debuglink
