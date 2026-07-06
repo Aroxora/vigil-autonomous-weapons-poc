@@ -1072,9 +1072,6 @@ export class AgentRuntime {
         }
         return;
       }
-        }
-        return;
-      }
     }
 
     // Check for cancellation before starting tool execution
