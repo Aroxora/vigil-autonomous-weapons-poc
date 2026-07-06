@@ -1,0 +1,175 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-06 11:15 -0400
+Nmap scan report for api.openai.com (172.66.0.243)
+Host is up (0.011s latency).
+Other addresses for api.openai.com (not scanned): 162.159.140.245
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+| http-security-headers: 
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|     Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|   Cache_Control: 
+|     Header: Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: 
+|_    Header: Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|_http-server-header: cloudflare
+| http-headers: 
+|   Date: Mon, 06 Jul 2026 15:16:12 GMT
+|   Content-Type: application/json
+|   Content-Length: 228
+|   Connection: close
+|   Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|   Referrer-Policy: same-origin
+|   X-Frame-Options: SAMEORIGIN
+|   X-Content-Type-Options: nosniff
+|   set-cookie: __cf_bm=axhLgttdf39hRG.6qRjJEXkBA5fE7watDNp8ql65tcE-1783350972.29007-1.0.1.1-koAKxjHKy1n93XaZKgtGGuvT5YJtOHEYyPcMYqjcFSZH7n0HxuHzLw3S.O1tBABhi1LYTwMR3793lT1ll2pzqt2ZdUaM7KVRPnaepPNDLG6feYgAoMHV0MN3ScZg.8ku; HttpOnly; Path=/; Domain=api.openai.com; Expires=Mon, 06 Jul 2026 15:46:12 GMT
+|   Access-Control-Expose-Headers: CF-Ray
+|   Server: cloudflare
+|   CF-RAY: a16f91b8ca904cee-BOS
+|   alt-svc: h3=":443"; ma=86400
+|   
+|_  (Request type: GET)
+443/tcp  open  ssl/http Cloudflare http proxy
+|_http-server-header: cloudflare
+| ssl-enum-ciphers: 
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|   TLSv1.3: 
+|     ciphers: 
+|       TLS_AKE_WITH_AES_128_GCM_SHA256 (X25519MLKEM768) - A
+|       TLS_AKE_WITH_AES_256_GCM_SHA384 (X25519MLKEM768) - A
+|       TLS_AKE_WITH_CHACHA20_POLY1305_SHA256 (X25519MLKEM768) - A
+|     cipher preference: client
+|_  least strength: A
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     Header: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|     Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|   Cookie: 
+|     Cookies are secured with Secure Flag in HTTPS Connection
+|   Cache_Control: 
+|     Header: Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: 
+|_    Header: Expires: Thu, 01 Jan 1970 00:00:01 GMT
+| http-headers: 
+|   Date: Mon, 06 Jul 2026 15:16:12 GMT
+|   Content-Type: application/json
+|   Content-Length: 124
+|   Connection: close
+|   Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|   Referrer-Policy: same-origin
+|   X-Frame-Options: SAMEORIGIN
+|   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   X-Content-Type-Options: nosniff
+|   set-cookie: __cf_bm=BldYCVx6iJIjGV4Ccyv1FgBAdXMjNAt4GaF4Se0x3FA-1783350972.32598-1.0.1.1-MDeu_n2f.yh_mVraKcntRbivnUAW_AXr2m3kPYSwEQFqV_de0teTFr5tPllENGbtPr.fC1C4GR0N7hvP40EpiB_dkUeIOHocWrpwk6tf8EPxiTZJOtn52g9MapiYIDEh; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.openai.com; Expires=Mon, 06 Jul 2026 15:46:12 GMT
+|   Access-Control-Expose-Headers: CF-Ray
+|   Server: cloudflare
+|   CF-RAY: a16f91b909778f9f-BOS
+|   alt-svc: h3=":443"; ma=86400
+|   
+|_  (Request type: GET)
+8080/tcp open  http     Cloudflare http proxy
+| http-headers: 
+|   Date: Mon, 06 Jul 2026 15:16:12 GMT
+|   Content-Type: application/json
+|   Content-Length: 228
+|   Connection: close
+|   Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|   Referrer-Policy: same-origin
+|   X-Frame-Options: SAMEORIGIN
+|   X-Content-Type-Options: nosniff
+|   set-cookie: __cf_bm=.lMf3YR3c0DCopknCfAPXgBNxgzSBv78lb8kfr3zTGk-1783350972.2563245-1.0.1.1-PqQKvHk0nokujMStoRYri11E1pQn0HahDs1PWuMvVe.CDJtNZoPQT93Cocn065PpqJDdPWzCB9zbZZyE2xCwNzsSKwx0Ytie2ASXcodiP4NdwTZV8AgUMNC8W_VR.gqL; HttpOnly; Path=/; Domain=api.openai.com; Expires=Mon, 06 Jul 2026 15:46:12 GMT
+|   Access-Control-Expose-Headers: CF-Ray
+|   Server: cloudflare
+|   CF-RAY: a16f91b89b8a7d47-BOS
+|   alt-svc: h3=":443"; ma=86400
+|   
+|_  (Request type: GET)
+| http-security-headers: 
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|     Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|   Cache_Control: 
+|     Header: Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: 
+|_    Header: Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|_http-server-header: cloudflare
+8443/tcp open  ssl/http Cloudflare http proxy
+|_http-server-header: cloudflare
+| http-headers: 
+|   Date: Mon, 06 Jul 2026 15:16:12 GMT
+|   Content-Type: text/html; charset=UTF-8
+|   Content-Length: 4547
+|   Connection: close
+|   Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|   Referrer-Policy: same-origin
+|   X-Frame-Options: SAMEORIGIN
+|   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   X-Content-Type-Options: nosniff
+|   set-cookie: __cf_bm=6sOdGv5SLC3r03c9q4ZTOfc2ndFrmHpoZ7Qoc_AKjfc-1783350972.2974706-1.0.1.1-6I0Obujeg6Zbqh9ljtzT.bUo5SHCCklrFSJOOxyzXVuq7kWBfZsk8bzA76UjBlpwIMABgDJ_btehlFCqwyU2MBUEv7O24FUR.RmdI.QCKJELHovz.CkmTG8A.uC4IoPe; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.openai.com; Expires=Mon, 06 Jul 2026 15:46:12 GMT
+|   Access-Control-Expose-Headers: CF-Ray
+|   Server: cloudflare
+|   CF-RAY: a16f91b8d9554cc6-BOS
+|   alt-svc: h3=":8443"; ma=86400
+|   
+|_  (Request type: GET)
+| ssl-enum-ciphers: 
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (ecdh_x25519) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (ecdh_x25519) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|   TLSv1.3: 
+|     ciphers: 
+|       TLS_AKE_WITH_AES_128_GCM_SHA256 (X25519MLKEM768) - A
+|       TLS_AKE_WITH_AES_256_GCM_SHA384 (X25519MLKEM768) - A
+|       TLS_AKE_WITH_CHACHA20_POLY1305_SHA256 (X25519MLKEM768) - A
+|     cipher preference: client
+|_  least strength: A
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     Header: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|     Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|   Cookie: 
+|     Cookies are secured with Secure Flag in HTTPS Connection
+|   Cache_Control: 
+|     Header: Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: 
+|_    Header: Expires: Thu, 01 Jan 1970 00:00:01 GMT
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.58 seconds

@@ -1,0 +1,130 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-06 11:15 -0400
+Nmap scan report for chatgpt.com (172.64.155.209)
+Host is up (0.010s latency).
+Other addresses for chatgpt.com (not scanned): 2606:4700:4408::ac40:9bd1 2a06:98c1:3101::6812:202f 104.18.32.47
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+| http-headers: 
+|   Date: Mon, 06 Jul 2026 15:16:12 GMT
+|   Content-Type: text/html; charset=UTF-8
+|   Transfer-Encoding: chunked
+|   Connection: close
+|   set-cookie: __cf_bm=kEwH0sud1DmR.kG9ESXvZdw1r4fAJCpWZ6FiuO39UFA-1783350972.7245762-1.0.1.1-D9mw2iVj5irwXCZtiksgvdNUFfW7UxrBxsxTuUE.ChocnEY.0rhhkrFXPHryT8r4GH8eo5BmetbkzMpqTWW6OcgHiFjPnY1JM2KsxNAnCSyVLHypJZsqmWRgm3rZRdsD; HttpOnly; Path=/; Domain=chatgpt.com; Expires=Mon, 06 Jul 2026 15:46:12 GMT
+|   set-cookie: _cfuvid=U8EFnt5yrjdBcz2CoQ_Z8rZsSpC5RRTZFv.bd4XxmGU-1783350972.7245762-1.0.1.1-q.4l_YuxyR8aUTS8Z0i9HRrls14FTBE_Nmuhx28AfmI; HttpOnly; SameSite=None; Secure; Path=/; Domain=chatgpt.com
+|   Location: https://chatgpt.com/
+|   X-Content-Type-Options: nosniff
+|   Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=qA8PK4V2m2DUlQRMb5YDPiX1Gdq5UVPwZQ6a5Vbrq2q2QUN809Kgmgsd8XxsrW5W1DOku9PW6uUBiaIzFFnr7NhF%2FqEJyeiiOHFikZnKBeF0R3yz1N8BtqW%2FHv%2Fw"}]}
+|   Nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+|   Referrer-Policy: strict-origin-when-cross-origin
+|   Cross-Origin-Opener-Policy: same-origin-allow-popups
+|   Server: cloudflare
+|   CF-RAY: a16f91bb8e8d228f-BOS
+|   
+|_  (Request type: GET)
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     Header: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|_    Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|_http-server-header: cloudflare
+443/tcp  open  ssl/http Cloudflare http proxy
+|_http-server-header: cloudflare
+| http-headers: 
+|   Date: Mon, 06 Jul 2026 15:16:12 GMT
+|   Content-Type: text/html; charset=utf-8
+|   Connection: close
+|   Server: cloudflare
+|   X-Content-Type-Options: nosniff
+|   Set-Cookie: oai-did=a9cd9810-762d-410e-9e9b-fc2ab6250784; Path=/; Domain=chatgpt.com; Max-Age=31104000; SameSite=Lax
+|   set-cookie: __cf_bm=UbK_rKNiolbcD1.Yv5I9jyWkuyEIu4Y804SDJZO8Ty8-1783350972.4968395-1.0.1.1-n5bdLYnvq_fcbgXGjLSJCC9FgNO1WVn73Ru0JyA_wqAgHtkdHVgTLvqYmk7epS1BUxZAJ9GSEDbLb76ZZfLdVhGCiZ1JFCjq0MPL9nsUkthmeixHdkbpKqiFVHHBDvV2; HttpOnly; SameSite=None; Secure; Path=/; Domain=chatgpt.com; Expires=Mon, 06 Jul 2026 15:46:12 GMT
+|   set-cookie: __cflb=0H28vzvP5FJafnkHxih59LDfgLxed3prBsMZgkpFwfh; HttpOnly; SameSite=None; Secure; Path=/; Expires=Mon, 06 Jul 2026 16:16:12 GMT
+|   set-cookie: _cfuvid=8Rl3xgyk5VQT0NbLU_bB9yf8CSnsDnHH1jyBDZrNgVg-1783350972.4968395-1.0.1.1-zZ4mZF8elvYCxws.ksatr5l9BkcC5VAuXmVX9NPfPN0; HttpOnly; SameSite=None; Secure; Path=/; Domain=chatgpt.com
+|   Cross-Origin-Opener-Policy: same-origin-allow-popups
+|   cf-cache-status: DYNAMIC
+|   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   Nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+|   Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=qEIcWDOI7wl5jSNuaFwSInabzUmpDnb4X3YlONpwVdD1nnCKEvR4UvK9oeHv1SSs8k7cLCydO3DFKZg4vYHy2YIm7kbATLz88hETsX2kYBA3pp0k06wnvvKwquDT"}]}
+|   Referrer-Policy: strict-origin-when-cross-origin
+|   CF-RAY: a16f91ba189b83fb-BOS
+|   
+|_  (Request type: HEAD)
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     Header: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|     Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|   Cookie: 
+|_    Cookies are secured with Secure Flag in HTTPS Connection
+8080/tcp open  http     Cloudflare http proxy
+| http-headers: 
+|   Date: Mon, 06 Jul 2026 15:16:13 GMT
+|   Content-Type: text/html; charset=UTF-8
+|   Transfer-Encoding: chunked
+|   Connection: close
+|   Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|   Referrer-Policy: strict-origin-when-cross-origin
+|   X-Frame-Options: SAMEORIGIN
+|   X-Content-Type-Options: nosniff
+|   set-cookie: __cf_bm=eSYt7B51jjACCtB.rqrBnKuUI8_7TXJp76ILouW73zU-1783350973.2707934-1.0.1.1-fxmEuNHkCQ7ajhqrGKL0Wvu6YpHzrLx6u9ivuQ.XvazQnNnt7FhTUkr86TrYLMJqb0yzj604V9uUUjWi3W_V_ad2iaqTwiR9e5RlldUWFrD2GyG05bfv3zPIyYRCbRMD; HttpOnly; Path=/; Domain=chatgpt.com; Expires=Mon, 06 Jul 2026 15:46:13 GMT
+|   Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3L%2Fdy01wOKHvSumCHLZQOS1bp4TCkAmBavtiGwamkezSpfp9CCXKEfRs2azaYiqOEC8YcMZz3Y4oVgb2Mjf6bUSbiwp0AO%2BP%2BGcByC4e9e4ks7bALsQP5%2FoPAufv"}]}
+|   Nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+|   Cross-Origin-Opener-Policy: same-origin-allow-popups
+|   Server: cloudflare
+|   CF-RAY: a16f91befde6dd5e-BOS
+|   
+|_  (Request type: GET)
+| http-security-headers: 
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|     Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|   Cache_Control: 
+|     Header: Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: 
+|_    Header: Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|_http-server-header: cloudflare
+8443/tcp open  ssl/http Cloudflare http proxy
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     Header: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   X_Content_Type_Options: 
+|     Header: X-Content-Type-Options: nosniff
+|     Description: Will prevent the browser from MIME-sniffing a response away from the declared content-type. 
+|   Cookie: 
+|     Cookies are secured with Secure Flag in HTTPS Connection
+|   Cache_Control: 
+|     Header: Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: 
+|_    Header: Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|_http-server-header: cloudflare
+| http-headers: 
+|   Date: Mon, 06 Jul 2026 15:16:13 GMT
+|   Content-Type: text/html; charset=UTF-8
+|   Transfer-Encoding: chunked
+|   Connection: close
+|   Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Expires: Thu, 01 Jan 1970 00:00:01 GMT
+|   Referrer-Policy: strict-origin-when-cross-origin
+|   X-Frame-Options: SAMEORIGIN
+|   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+|   X-Content-Type-Options: nosniff
+|   set-cookie: __cf_bm=Z4iMIQZKMopbhs.RMpKAqjCS2qAJUsuro8a0rOIm9VM-1783350973.270321-1.0.1.1-05aowZIPYc2Yql3.nfQn_9C3ryg_BqHLwYaeGIiY.7hhyYHPJdk6ipAyHwHWgea1N7S4G3eUddC12SPU3U9aq0RyejhQM8qhvSwjdRNvUUVxesZnbim7J1UHMOJlxm9i; HttpOnly; SameSite=None; Secure; Path=/; Domain=chatgpt.com; Expires=Mon, 06 Jul 2026 15:46:13 GMT
+|   Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HG46TjPR4egp2ZgUQMfGgnLej3B6%2FqYOItJoaDWQGs6%2FKnP3hrMic331jVw2QgKV2j%2B4AOLxsBcajbx%2BPpu1U%2BFtJvXn1SZu4nAMVdbFbSoOG1vYbat1C3ZFRjid"}]}
+|   Nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+|   Cross-Origin-Opener-Policy: same-origin-allow-popups
+|   Server: cloudflare
+|   CF-RAY: a16f91beea8b6cae-BOS
+|   
+|_  (Request type: GET)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.32 seconds
