@@ -126,7 +126,7 @@ async function runCLITests(): Promise<TestResult[]> {
     const ctx = await launchCLI();
     try {
       // Non-TTY mode: CLI prints TTY requirement message and exits cleanly
-      await waitForOutput(ctx, /terminal|TTY|trenchwork|vigil|v[0-9]|◈/i, 5000);
+      await waitForOutput(ctx, /terminal|TTY|vigil|v[0-9]|◈/i, 5000);
       // Accept either the welcome banner (if TTY somehow works) or the error message
     } finally {
       await stopCLI(ctx);
