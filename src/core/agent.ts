@@ -357,14 +357,34 @@ export class AgentRuntime {
   }
 
   /**
-   * Remove orphaned tool_calls from conversation history that don't have
-   * corresponding tool result messages. Required after interrupts leave
-   * the conversation in an inconsistent state that the API rejects.
+   * Remove orphaned tool_calls and orphaned tool results from conversation
+   * history. Both directions cause 400 API errors:
+   *   - tool_calls without matching tool results  → "must be followed by tool messages"
+   *   - tool results without preceding tool_calls → "must be a response to a preceding message"
    */
   private removeOrphanedToolCalls(): void {
+    // --- Pass 1: collect all valid tool_call_ids from assistant messages ---
+    const validIds = new Set<string>();
+    for (const msg of this.messages) {
+      if (msg.role === 'assistant' && msg.toolCalls) {
+        for (const tc of msg.toolCalls) validIds.add(tc.id);
+      }
+    }
+
+    // --- Pass 2: build cleaned history ---
     const cleaned: ConversationMessage[] = [];
     for (let i = 0; i < this.messages.length; i++) {
       const msg = this.messages[i];
+
+      // Strip orphaned tool results (no matching assistant tool_call)
+      if (msg.role === 'tool') {
+        const tm = msg as ConversationMessage & { toolCallId?: string };
+        if (tm.toolCallId && !validIds.has(tm.toolCallId)) continue;
+        cleaned.push(msg);
+        continue;
+      }
+
+      // Fill in missing tool results for assistant with tool_calls
       if (msg.role === 'assistant' && msg.toolCalls?.length) {
         const remainingIds = new Set(msg.toolCalls.map((tc) => tc.id));
         let j = i + 1;
@@ -389,6 +409,7 @@ export class AgentRuntime {
           continue;
         }
       }
+
       cleaned.push(msg);
     }
     this.messages.splice(0, this.messages.length, ...cleaned);
