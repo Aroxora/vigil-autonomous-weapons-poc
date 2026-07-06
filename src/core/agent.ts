@@ -361,32 +361,48 @@ export class AgentRuntime {
    * history. Both directions cause 400 API errors:
    *   - tool_calls without matching tool results  → "must be followed by tool messages"
    *   - tool results without preceding tool_calls → "must be a response to a preceding message"
+   * Also strips tool results that appear BEFORE their corresponding assistant
+   * message (wrong order), and tool_calls that appear after their results.
    */
   private removeOrphanedToolCalls(): void {
-    // --- Pass 1: collect all valid tool_call_ids from assistant messages ---
-    const validIds = new Set<string>();
-    for (const msg of this.messages) {
+    // --- Pass 1: collect valid tool_call_ids with their assistant message index ---
+    const toolCallIdToAssistantIdx = new Map<string, number>();
+    for (let i = 0; i < this.messages.length; i++) {
+      const msg = this.messages[i];
       if (msg.role === 'assistant' && msg.toolCalls) {
-        for (const tc of msg.toolCalls) validIds.add(tc.id);
+        for (const tc of msg.toolCalls) {
+          toolCallIdToAssistantIdx.set(tc.id, i);
+        }
       }
     }
 
-    // --- Pass 2: build cleaned history ---
+    // --- Pass 2: build cleaned history enforcing correct ordering ---
     const cleaned: ConversationMessage[] = [];
+    const seenToolCallIds = new Set<string>();
+
     for (let i = 0; i < this.messages.length; i++) {
       const msg = this.messages[i];
 
-      // Strip orphaned tool results (no matching assistant tool_call)
+      // Strip tool messages whose toolCallId is unknown OR appears before its
+      // corresponding assistant message (API requires tool messages AFTER tool_calls)
       if (msg.role === 'tool') {
         const tm = msg as ConversationMessage & { toolCallId?: string };
-        if (tm.toolCallId && !validIds.has(tm.toolCallId)) continue;
+        if (!tm.toolCallId) continue;
+        const asstIdx = toolCallIdToAssistantIdx.get(tm.toolCallId);
+        if (asstIdx === undefined) continue; // unknown ID — orphaned
+        if (asstIdx > i) continue; // tool appears BEFORE assistant — wrong order
         cleaned.push(msg);
+        seenToolCallIds.add(tm.toolCallId);
         continue;
       }
 
       // Fill in missing tool results for assistant with tool_calls
       if (msg.role === 'assistant' && msg.toolCalls?.length) {
-        const remainingIds = new Set(msg.toolCalls.map((tc) => tc.id));
+        const remainingIds = new Set<string>();
+        for (const tc of msg.toolCalls) {
+          // Only fill in if the result wasn't already seen (it should come AFTER this)
+          remainingIds.add(tc.id);
+        }
         let j = i + 1;
         while (j < this.messages.length && this.messages[j].role === 'tool') {
           const tm = this.messages[j] as ConversationMessage & { toolCallId?: string };
