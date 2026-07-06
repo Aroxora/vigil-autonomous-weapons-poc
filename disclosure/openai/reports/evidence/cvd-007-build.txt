@@ -1,21 +1,66 @@
-=== CVD-007: Build/CI Exposure ===
+=== CVD-007 DEEP: Build/CI Infrastructure ===
 --- develocity.api.openai.com ---
-172.64.155.70
 104.18.32.186
-HTTP/2 404 
-date: Mon, 06 Jul 2026 15:40:06 GMT
-set-cookie: __cf_bm=173DyYDd8nz1D75PPNstAKnZCyUFqkTxhUpJesxyig0-1783352406.2748342-1.0.1.1-umcOG1UBC_H7hZ7EPArhZL1jaPV883fxll4CTeLYDKCXuCfphe_0OJPy2SKhu6xWQIqgSpyFBxqoq6QVh1pnaivxJBlJtWu6.579mNVFtXfIKmEftKhRO3N65cLsWDBZ; HttpOnly; SameSite=None; Secure; Path=/; Domain=develocity.api.openai.com; Expires=Mon, 06 Jul 2026 16:10:06 GMT
-set-cookie: _cfuvid=dWpeV0sZVMx3YS67S8ui0gBKfmpOT6pdhf7ThiRjOeE-1783352406.2748342-1.0.1.1-jmyOlqnUZXm5eRG2GZpXsfOZYS5swjAEMXRg.jkQFoc; HttpOnly; SameSite=None; Secure; Path=/; Domain=develocity.api.openai.com
-cf-cache-status: DYNAMIC
+172.64.155.70
+HTTP 404 detail:
+* Host develocity.api.openai.com:443 was resolved.
+* IPv6: 2606:4700:4409::ac40:9b46, 2a06:98c1:310d::6812:20ba
+* IPv4: 172.64.155.70, 104.18.32.186
+*   Trying [2606:4700:4409::ac40:9b46]:443...
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1704 bytes data]
+* SSL Trust Anchors:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+*   CApath: /etc/ssl/certs
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2530 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [78 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [52 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+
 --- ci-webhooks.api.openai.com ---
+ci-webhooks.api.openai.com.cdn.cloudflare.net.
 ci-webhooks.api.openai.com.cdn.cloudflare.net.
 104.18.38.202
 172.64.149.54
-HTTP/2 404 
-date: Mon, 06 Jul 2026 15:40:07 GMT
-cf-cache-status: DYNAMIC
-set-cookie: __cf_bm=ymkDvicqF8IOBYMW42X8pRpgPdumwHJ4FDeSK9U4jgg-1783352406.6061337-1.0.1.1-J9AOZi7KpKvG7Wg865aILvgYscd8p_y48eyZ2JY7KoWHVGai57MrPwqfNhpoE9KME4A_sUrxt5k8Mp22e0HVqH5rVWo_Nm6NMwU3fwjjJKK9AiHa9X9xKeY2TSdetlPL; HttpOnly; SameSite=None; Secure; Path=/; Domain=ci-webhooks.api.openai.com; Expires=Mon, 06 Jul 2026 16:10:07 GMT
-set-cookie: _cfuvid=gU7D3LK710paXLo8o6NJJFBfc_HHzDC6uesnxJJzb1A-1783352406.6061337-1.0.1.1-MZmmzo2IhaBAp6CXbWAVhePKYETbi8JZdeouSVJcyj0; HttpOnly; SameSite=None; Secure; Path=/; Domain=ci-webhooks.api.openai.com
---- AKS production endpoints ---
-prod-first-party-aks-scentralus-api-b.api.openai.com: 
-prod-primary-aks-scentralus-api-b.api.openai.com: 
+* Host ci-webhooks.api.openai.com:443 was resolved.
+* IPv6: 2606:4700:440d::6812:26ca, 2a06:98c1:3100::ac40:9536
+* IPv4: 104.18.38.202, 172.64.149.54
+*   Trying [2606:4700:440d::6812:26ca]:443...
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1705 bytes data]
+* SSL Trust Anchors:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+*   CApath: /etc/ssl/certs
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [3440 bytes data]
+
+--- AKS prod endpoints ---
+prod-first-party-aks-scentralus-api-b.api.openai.com:
+prod-primary-aks-scentralus-api-b.api.openai.com:
+
+--- Additional build/dev endpoints ---
+observability-webhook.api.openai.com: observability-webhook.api.openai.com.cdn.cloudflare.net.
+webhook-router.api.openai.com: 104.18.42.76
+webhook-0.api.openai.com: 
+nori-webhooks.api.openai.com: 172.64.150.68

@@ -1,18 +1,42 @@
-=== CVD-004: Origin IP Disclosure ===
---- staging.openai.com ---
-staging-openaicom.azurewebsites.net.
-hosts.staging-openaicom.azurewebsites.net.
-20.40.202.23
---- production.openai.com ---
-production-openaicom.azurewebsites.net.
-hosts.production-openaicom.azurewebsites.net.
-20.40.202.18
---- Direct origin test ---
---- preprod/preview prism ---
-preprod.prism.openai.com: 172.64.146.247
-104.18.41.9
-preview.prism.openai.com: 
-prism.openai.com: 172.64.146.247
-104.18.41.9
-staging.prism.openai.com: 172.64.146.247
-104.18.41.9
+=== CVD-004 DEEP: Origin IP Access ===
+--- staging.openai.com chain ---
+CNAME: staging-openaicom.azurewebsites.net.
+Azure CNAME: hosts.staging-openaicom.azurewebsites.net.
+IP: 20.40.202.23
+Direct origin test (Host: staging.openai.com):
+HTTP/1.1 401 Unauthorized
+Content-Length: 58
+Content-Type: text/html
+Date: Mon, 06 Jul 2026 15:43:37 GMT
+WWW-Authenticate: Bearer realm="staging.openai.com" authorization_uri="https://login.windows.net/a48cca56-e6da-484e-a814-9c849652bcb3/oauth2/v2.0/authorize" resource_id="759da1d2-9a4b-4b10-8beb-e9ada33498e3"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+x-ms-middleware-request-id: 4d3ec141-8772-4586-b289-54b9562ba824
+
+
+--- production.openai.com chain ---
+CNAME: production-openaicom.azurewebsites.net.
+Azure CNAME: hosts.production-openaicom.azurewebsites.net.
+IP: 20.40.202.18
+Direct origin test (Host: production.openai.com):
+HTTP/1.1 401 Unauthorized
+Content-Length: 58
+Content-Type: text/html
+Date: Mon, 06 Jul 2026 15:43:38 GMT
+WWW-Authenticate: Bearer realm="production.openai.com" authorization_uri="https://login.windows.net/a48cca56-e6da-484e-a814-9c849652bcb3/oauth2/v2.0/authorize" resource_id="5ad6c00a-8a9e-4e6c-9417-340b25b5f5fe"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+x-ms-middleware-request-id: 988835bd-b7b7-446d-aa5b-5bc4c812f611
+
+
+--- Cloudflare-proxied comparison ---
+staging.openai.com via CF:
+HTTP/1.1 401 Unauthorized
+Content-Length: 58
+Content-Type: text/html
+Date: Mon, 06 Jul 2026 15:43:38 GMT
+WWW-Authenticate: Bearer realm="staging.openai.com" authorization_uri="https://login.windows.net/a48cca56-e6da-484e-a814-9c849652bcb3/oauth2/v2.0/authorize" resource_id="759da1d2-9a4b-4b10-8beb-e9ada33498e3"
+production.openai.com via CF:
+HTTP/1.1 401 Unauthorized
+Content-Length: 58
+Content-Type: text/html
+Date: Mon, 06 Jul 2026 15:43:38 GMT
+WWW-Authenticate: Bearer realm="production.openai.com" authorization_uri="https://login.windows.net/a48cca56-e6da-484e-a814-9c849652bcb3/oauth2/v2.0/authorize" resource_id="5ad6c00a-8a9e-4e6c-9417-340b25b5f5fe"

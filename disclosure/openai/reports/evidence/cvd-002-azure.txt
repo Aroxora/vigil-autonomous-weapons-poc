@@ -1,10 +1,33 @@
-=== CVD-002: Azure Private Links ===
---- eastus2 ---
---- southcentralus ---
---- westus ---
---- spaincentral ---
---- northeurope ---
---- westus2 ---
---- Private gateways ---
---- DNS SOA for openai.com ---
+=== CVD-002 DEEP: Azure Private Link Full Resolution ===
+--- eastus2.privatelink.api.openai.com ---
+
+--- southcentralus.privatelink.api.openai.com ---
+
+--- westus.privatelink.api.openai.com ---
+
+--- spaincentral.privatelink.api.openai.com ---
+
+--- northeurope.privatelink.api.openai.com ---
+
+--- westus2.privatelink.api.openai.com ---
+
+--- private.southcentralus.api.openai.com ---
+
+--- private.northeurope.api.openai.com ---
+
+--- private.spaincentral.api.openai.com ---
+
+--- private.westus2.api.openai.com ---
+
+--- gateway.private-0,1,2 ---
+gateway.private-0.api.openai.com:
+gateway.private-1.api.openai.com:
+gateway.private-2.api.openai.com:
+
+--- Azure DNS authority ---
+ns1-02.azure-dns.com.
+ns2-02.azure-dns.net.
+ns3-02.azure-dns.org.
+ns4-02.azure-dns.info.
+SOA:
 ns1-02.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300

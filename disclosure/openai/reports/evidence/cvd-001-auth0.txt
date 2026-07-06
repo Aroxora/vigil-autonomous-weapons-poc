@@ -1,37 +1,91 @@
-=== CVD-001: auth0-dev.openai.com ===
---- DNS ---
+=== CVD-001 DEEP: Auth Endpoint Comparison ===
+--- auth0-dev.openai.com ---
+DNS:
 auth0-dev.openai.com.cdn.cloudflare.net.
-172.65.90.20
-172.65.90.23
 172.65.90.22
 172.65.90.21
-auth0.openai.com.cdn.cloudflare.net.
-172.65.90.23
-172.65.90.21
 172.65.90.20
-172.65.90.22
-cf-test.auth0.openai.com.cdn.cloudflare.net.
-104.18.35.28
-172.64.152.228
---- HTTP ---
+172.65.90.23
+HTTP:
 HTTP/2 404 
-date: Mon, 06 Jul 2026 15:40:06 GMT
-set-cookie: __cf_bm=DR0R65XINgzLZecHnDIGDaAuzFqOAiTnE6e5ybwJueg-1783352406.3338585-1.0.1.1-GHZUQfeqlaCiZrFj1PqPhf0OHnJLrlgPojsbHEIp___YiwFh_K7MHHuSPtF9zbgwKhvWMMZgeBoEjEqT4XjieUEYCnbkZ71.zcuXrpSVTHmMqmHYJ49GJJ7QlcQiaSFA; HttpOnly; SameSite=None; Secure; Path=/; Domain=auth0-dev.openai.com; Expires=Mon, 06 Jul 2026 16:10:06 GMT
-set-cookie: _cfuvid=BMURdTZ0RTDQGip3rLNnsvM0duyzATWJjbXHMUuZbSg-1783352406.3338585-1.0.1.1-P1p8PKLScGpTVnS.GXwi4iJp.ieksW7KyA311mQsAuA; HttpOnly; SameSite=None; Secure; Path=/; Domain=auth0-dev.openai.com
+date: Mon, 06 Jul 2026 15:43:37 GMT
+set-cookie: __cf_bm=khPreBy4hXBo.I28p5isVSgBiKtJvnYy5hAKVyDnfdA-1783352617.7231472-1.0.1.1-lt8qV.spzxW6JpaheMlNj3YnTUxI0.MDFoQjxPcnCZSs7m9qzIM49F7NaoT85Luz9qNv3f9pQREm8IDTAMx5q8oBLtdbQ9T7A.t_lTTG4eEJmqYlN5sa2g0JRL.AZYoD; HttpOnly; SameSite=None; Secure; Path=/; Domain=auth0-dev.openai.com; Expires=Mon, 06 Jul 2026 16:13:37 GMT
+set-cookie: _cfuvid=g4gmUi4RmN5xkOpVzXo7W_F5KLWaDdIxYJ29bHrcm.0-1783352617.7231472-1.0.1.1-vVdppts3q78p8r2w_TE9HVrBeAF0.7X0cNSPYADQuCw; HttpOnly; SameSite=None; Secure; Path=/; Domain=auth0-dev.openai.com
 strict-transport-security: max-age=31536000; includeSubDomains; preload
 x-content-type-options: nosniff
 server: cloudflare
-cf-ray: a16fb4bb9cb64ce4-BOS
+cf-ray: a16fb9e4c9989059-BOS
 alt-svc: h3=":443"; ma=86400
 
---- Production auth comparison ---
+TLS:
+subject=CN=auth0-dev.openai.com
+issuer=C=US, O=Google Trust Services, CN=WE1
+notBefore=Jul  5 01:34:36 2026 GMT
+notAfter=Oct  3 02:34:34 2026 GMT
+--- auth0.openai.com (production) ---
+DNS:
+auth0.openai.com.cdn.cloudflare.net.
+172.65.90.23
+172.65.90.20
+172.65.90.22
+172.65.90.21
+HTTP:
+HTTP/2 302 
+date: Mon, 06 Jul 2026 15:43:37 GMT
+content-type: text/html; charset=UTF-8
+location: https://chatgpt.com/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UoAnCrQEL%2F02ODmpCiHEG%2BWT6nyJHu3gs%2Be%2FAM6WL1KHbVpdEJ7q75yDO2GzPOwsk6lBhDjRIHnzrdKLjQN3w6EZ%2FIrZ73XBKvhfBkbspPCTbai88wFGfVDUKSg4LLEONel19MXoaJwOd8jK9Cc%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+server: cloudflare
+cf-ray: a16fb9e608be2dab-BOS
+alt-svc: h3=":443"; ma=86400
+
+TLS:
+subject=CN=auth0.openai.com
+issuer=C=US, O=Google Trust Services, CN=WE1
+notBefore=Jul  6 13:59:04 2026 GMT
+notAfter=Oct  4 14:59:02 2026 GMT
+--- auth.openai.com (main production auth) ---
+DNS:
+auth.openai.com.cdn.cloudflare.net.
+104.18.41.241
+172.64.146.15
+HTTP:
 HTTP/2 403 
-date: Mon, 06 Jul 2026 15:40:06 GMT
+date: Mon, 06 Jul 2026 15:43:38 GMT
 content-type: text/html; charset=UTF-8
 content-length: 5384
 accept-ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
 cf-mitigated: challenge
-content-security-policy: default-src 'none'; script-src 'nonce-bw0CLoPdm7acBRiDKxKZL1' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'
+content-security-policy: default-src 'none'; script-src 'nonce-nJsPxKuILNwisbqonA07JX' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'
 server: cloudflare
 critical-ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
 cross-origin-embedder-policy: require-corp
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+permissions-policy: accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*
+referrer-policy: same-origin
+server-timing: chlray;desc="a16fb9e6da414f7f"
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+set-cookie: __cf_bm=Ggc8ei95wI78uwpj3tAAW_77BRwU.J4RSW3n8_9v6gk-1783352618.0582516-1.0.1.1-wZDAEsBZ7Vn3ZJDWUPoF2AuATQrPgEMld_zKV5.dswixQ662aOZGARxbIK5vie2zOesMAnV55LlfNbhH2iUX.0nCCuDP.6jWfiEEUbZUNtk0gMoSf4mlVbRt33Ahd4IU; HttpOnly; SameSite=None; Secure; Path=/; Domain=auth.openai.com; Expires=Mon, 06 Jul 2026 16:13:38 GMT
+--- cf-test.auth0.openai.com ---
+DNS:
+cf-test.auth0.openai.com.cdn.cloudflare.net.
+104.18.35.28
+172.64.152.228
+HTTP:
+HTTP/2 302 
+date: Mon, 06 Jul 2026 15:43:38 GMT
+content-type: text/html; charset=UTF-8
+location: https://chatgpt.com/
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9r6Jh0n4x%2BiwH02i%2FkPo%2Fav3N3lwZo0LGZ%2BxJ5kI9wh96Bw4esOAWJHQYtq6V1T999u77YTRnTHtieU3xwTbLyYQgCN4LoAoCSMcdI1SHo1aN0pfl%2BTcvMVWrS5KdcOxrSyrWB4iK07hjE7s8a41IoPmTgamGg%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.01,"max_age":604800}
+server: cloudflare
+cf-ray: a16fb9e7af0de728-BOS
