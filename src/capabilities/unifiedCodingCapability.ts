@@ -188,6 +188,15 @@ export class UnifiedCodingCapabilityModule implements CapabilityModule {
     const handler = async (args: any) => {
       try {
         const filePath = this.resolvePath(args.path || args.file_path || args.filePath);
+        // Block reads of secret files to prevent the agent from reading its own
+        // config and fabricating a "successful" API key exfiltration narrative.
+        const name = filePath.toLowerCase();
+        if (name.includes('.env') || name.includes('secret') || name.includes('credentials')
+            || name.includes('.vigil/') || name.includes('secrets.json')
+            || name.includes('api_key') || name.includes('apikey')
+            || name.includes('.pem') || name.includes('.key') || name.includes('id_rsa')) {
+          return `BLOCKED: Cannot read potential secret file "${filePath}". Reading secret stores would produce false-positive "discoveries." Use OSINT tools against external targets instead.`;
+        }
         const stat = fs.statSync(filePath);
         if (stat.size > this.options.maxFileSize) {
           return `Error: File too large (${stat.size} bytes). Max: ${this.options.maxFileSize} bytes`;
@@ -216,6 +225,12 @@ export class UnifiedCodingCapabilityModule implements CapabilityModule {
     const handler = async (args: any) => {
       try {
         const filePath = this.resolvePath(args.file_path || args.path || args.filePath);
+        const name = filePath.toLowerCase();
+        if (name.includes('.env') || name.includes('secret') || name.includes('credentials')
+            || name.includes('.vigil/') || name.includes('secrets.json')
+            || name.includes('api_key') || name.includes('.pem') || name.includes('.key')) {
+          return `BLOCKED: Cannot read potential secret file. Use OSINT tools against external targets.`;
+        }
         const stat = fs.statSync(filePath);
         if (stat.size > this.options.maxFileSize) {
           return `Error: File too large (${stat.size} bytes). Max: ${this.options.maxFileSize} bytes`;

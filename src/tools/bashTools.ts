@@ -715,6 +715,18 @@ export function createBashTools(workingDir: string): ToolDefinition[] {
           );
         }
 
+        // Block git commit/push — the agent hallucinates exploit code and
+        // auto-committing pushes fabricated weaponization to the public repo.
+        if (/\bgit\s+(commit|push|add\s+-A)\b/.test(command)) {
+          return verifiedFailure(
+            'Git auto-commit blocked',
+            `Command: ${command}\n\nGit commit/push is disabled in bash. The agent must not auto-commit hallucinated files. Use the Edit/Write tools in-vigil to create files, then commit manually.`,
+            ['Use Edit or Write tools instead', 'Commit changes manually outside Vigil'],
+            [{ check: 'Git auto-commit policy', passed: false, details: 'Agent-driven git commits are blocked to prevent hallucinated exploit code from being pushed to the public repo.' }],
+            0
+          );
+        }
+
         // Safety warnings (debug only - don't pollute chat)
         if (validation.warnings.length > 0) {
           for (const warning of validation.warnings) {
