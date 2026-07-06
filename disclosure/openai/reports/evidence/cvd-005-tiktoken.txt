@@ -1,0 +1,43 @@
+=== CVD-005: tiktoken FFI Surface ===
+
+=== Ghidra Reverse Engineering ===
+Binary: _tiktoken.cpython-313-x86_64-linux-gnu.so
+Source: pip install tiktoken (OpenAI Rust tokenizer)
+Format: Executable and Linking Format (ELF)
+Architecture: x86:LE:64:default
+Compiler Spec: gcc
+Functions: 3305
+Image Base: 00100000
+Address Range: 00100000 - _elfSectionHeaders::0000087f
+
+=== Risky FFI Boundary Functions: 58 ===
+Function                                                                    Entry       
+------------------------------------------------------------------------------------------
+drop_in_place<pyo3::err::PyErr::new<pyo3::exceptions::PyKeyError,alloc::s   001da610
+into_pyobject                                                               001e7a60
+drop_in_place<core::option::Option<core::result::Result<core::convert::In   001e9750
+drop_in_place<pyo3::err::PyErr>                                             001ea1e0
+drop_in_place<core::option::Option<core::result::Result<pyo3::instance::B   001ee3c0
+drop_in_place<core::option::Option<core::result::Result<pyo3::instance::B   001f02d0
+owned_sequence_into_pyobject                                                001f0550
+drop_in_place<pyo3::err::PyErr>                                             001f11d0
+drop_in_place<core::option::Option<core::result::Result<pyo3::instance::B   001f25e0
+owned_sequence_into_pyobject                                                001f26c0
+drop_in_place<pyo3::err::PyErr::new<pyo3::exceptions::PyValueError,alloc:   001f2d00
+drop_in_place<pyo3::err::PyErr>                                             001f61d0
+
+Total functions: 3191
+Total symbols: 61795
+Total strings: 9653
+
+PyInit/tiktoken exports: 59
+  00101265 string-utf8 PyInit__tiktoken
+  0015b951 string encode_to_tiktoken_buffer($self, text, allowed_special) --
+  0015e731 string encode_to_tiktoken_buffer
+  0015eba7 string _tiktoken
+  001631cc string encode_to_tiktoken_buffer
+  00163d8f string TiktokenBuffer
+  001640a6 string TiktokenBuffer
+  001641ab string TiktokenBuffer
+  0016450d string TiktokenBuffer
+  .strtab::000000b5 string-utf8 tiktoken.408a734be5b12533-cgu.00

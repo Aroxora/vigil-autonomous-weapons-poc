@@ -1,0 +1,69 @@
+=== CVD-006: Alt Ports ===
+--- api.openai.com :8080 ---
+HTTP/1.1 403 Forbidden
+Date: Mon, 06 Jul 2026 15:40:06 GMT
+Content-Type: application/json
+Content-Length: 228
+Connection: keep-alive
+--- api.openai.com :8443 ---
+HTTP/2 403 
+date: Mon, 06 Jul 2026 15:40:06 GMT
+content-type: text/html; charset=UTF-8
+content-length: 4547
+cache-control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+--- chatgpt.com :8080 ---
+HTTP/1.1 403 Forbidden
+Date: Mon, 06 Jul 2026 15:40:06 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+--- chatgpt.com :8443 ---
+HTTP/2 103 
+link: </cdn/assets/root-hh0n1vpl.css>; as=style; rel=preload, </cdn/assets/conversation-small-ho5792jh.css>; as=style; rel=preload
+
+HTTP/2 403 
+date: Mon, 06 Jul 2026 15:40:06 GMT
+--- platform.openai.com :8080 ---
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 06 Jul 2026 15:40:06 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Location: https://platform.openai.com/
+--- platform.openai.com :8443 ---
+HTTP/2 403 
+date: Mon, 06 Jul 2026 15:40:06 GMT
+content-type: text/html; charset=UTF-8
+content-length: 9667
+accept-ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+--- auth.openai.com :8080 ---
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 06 Jul 2026 15:40:06 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Location: https://auth.openai.com/
+--- auth.openai.com :8443 ---
+HTTP/2 403 
+date: Mon, 06 Jul 2026 15:40:06 GMT
+content-type: text/html; charset=UTF-8
+content-length: 5384
+accept-ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+--- openai.com :8080 ---
+HTTP/1.1 301 Moved Permanently
+Date: Mon, 06 Jul 2026 15:40:06 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Location: https://openai.com/
+--- openai.com :8443 ---
+HTTP/2 403 
+date: Mon, 06 Jul 2026 15:40:06 GMT
+content-type: text/html; charset=UTF-8
+content-length: 9594
+accept-ch: Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA
+--- Proxy version header ---
+server: cloudflare
+www-authenticate: Bearer realm="OpenAI API"
+openai-version: 2020-10-01
+openai-processing-ms: 1
+x-openai-proxy-wasm: v0.1
+set-cookie: __cf_bm=rIBwtSyZ.ld6C0RXQQbDCqE5G8u6ccLEtxPT0adH4JI-1783352406.7412906-1.0.1.1-Ah1j.eZgSv6.e3.rZhdHmhEWpIAojhof0PLbkkQpUagbcOF_FmUWPLt9.comzBx5vgsTRTj18T52D0Tj4csKGugLFVIULa9xBZWBz_PJ7IHTk_bH2KDgkgAYDVDKowzM; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.openai.com; Expires=Mon, 06 Jul 2026 16:10:06 GMT
+set-cookie: _cfuvid=X8uqie6efCoSoavGOmiHqG07A3fboALcYbIyCLZvZI8-1783352406.7412906-1.0.1.1-PC_A0Et1jJ7zKCD6uqAShTZEOZP3ZwT27tuWJQ4eCuo; HttpOnly; SameSite=None; Secure; Path=/; Domain=api.openai.com
