@@ -357,6 +357,44 @@ export class AgentRuntime {
   }
 
   /**
+   * Remove orphaned tool_calls from conversation history that don't have
+   * corresponding tool result messages. Required after interrupts leave
+   * the conversation in an inconsistent state that the API rejects.
+   */
+  private removeOrphanedToolCalls(): void {
+    const cleaned: ConversationMessage[] = [];
+    for (let i = 0; i < this.messages.length; i++) {
+      const msg = this.messages[i];
+      if (msg.role === 'assistant' && msg.toolCalls?.length) {
+        const remainingIds = new Set(msg.toolCalls.map((tc) => tc.id));
+        let j = i + 1;
+        while (j < this.messages.length && this.messages[j].role === 'tool') {
+          const tm = this.messages[j] as ConversationMessage & { toolCallId?: string };
+          if (tm.toolCallId) remainingIds.delete(tm.toolCallId);
+          cleaned.push(this.messages[j]);
+          j++;
+        }
+        i = j - 1;
+        if (remainingIds.size > 0) {
+          cleaned.push(msg);
+          for (const id of remainingIds) {
+            const tc = msg.toolCalls!.find((t) => t.id === id);
+            cleaned.push({
+              role: 'tool',
+              name: tc?.name ?? 'unknown',
+              toolCallId: id,
+              content: '[Interrupted: tool execution was cancelled]',
+            });
+          }
+          continue;
+        }
+      }
+      cleaned.push(msg);
+    }
+    this.messages = cleaned;
+  }
+
+  /**
    * Check if the agent is currently processing a request.
    */
   isRunning(): boolean {
@@ -421,6 +459,11 @@ export class AgentRuntime {
     // Reset cancellation flag and loop tracking at start of new request
     this.cancellationRequested = false;
     this.resetBehavioralLoopTracking();
+
+    // Sanitize conversation: remove orphaned tool_calls from prior interrupted runs.
+    // Without this, the API rejects messages with "insufficient tool messages"
+    // when a previous run was interrupted mid-tool-execution.
+    this.removeOrphanedToolCalls();
     // Track tool history position for this run
     this.toolHistoryCursor = this.toolRuntime.getToolHistory().length;
 
