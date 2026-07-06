@@ -16,22 +16,27 @@ const TOOL_TIERS = {
   core: ['curl', 'wget', 'git', 'python3', 'gcc'] as const,
   // Operational tools — Kali-specific, require apt install
   operational: [
-    'nmap',
-    'msfvenom',
-    'msfconsole',
-    'sqlmap',
-    'hydra',
-    'searchsploit',
-    'nikto',
-    'dirb',
-    'netcat',
+    'nmap', 'masscan', 'rustscan',
+    'msfvenom', 'msfconsole', 'searchsploit',
+    'sqlmap', 'hydra', 'john', 'hashcat',
+    'nikto', 'wpscan', 'dirb', 'gobuster', 'ffuf', 'wfuzz',
+    'dnsrecon', 'dnsenum', 'fierce', 'amass', 'subfinder', 'assetfinder',
+    'whatweb', 'wafw00f', 'theharvester',
+    'medusa', 'ncrack', 'patator', 'cewl', 'crunch',
+    'responder', 'bettercap', 'impacket-secretsdump',
+    'netsniffng', 'dsniff',
+    'binwalk', 'foremost',
+    'ghidra', 'radare2', 'gdb',
+    'aircrackng', 'kismet',
+    'netcat', 'commix', 'xsser', 'zaproxy', 'burpsuite',
+    'lynis', 'chkrootkit', 'rkhunter',
   ] as const,
   // Extended tools — nice to have, not gating
   extended: [
-    'john',
-    'hashcat',
-    'responder',
-    'impacket-secretsdump',
+    'socat', 'chisel', 'powershell',
+    'driftnet', 'ferret',
+    'volatility3', 'edb', 'ollydbg',
+    'eyewitness', 'faraday', 'reaver', 'ophcrack',
   ] as const,
 };
 
@@ -44,24 +49,56 @@ const ALL_TOOLS = [
 
 // ── Apt package mappings (tool name → apt package) ────────────────────────
 const APT_PACKAGES: Record<string, string> = {
-  nmap: 'nmap',
-  msfvenom: 'metasploit-framework',
-  msfconsole: 'metasploit-framework',
-  sqlmap: 'sqlmap',
-  hydra: 'hydra',
-  searchsploit: 'exploitdb',
-  nikto: 'nikto',
-  dirb: 'dirb',
-  john: 'john',
-  hashcat: 'hashcat',
-  responder: 'responder',
-  'impacket-secretsdump': 'impacket-scripts',
-  netcat: 'netcat-openbsd',
-  curl: 'curl',
-  wget: 'wget',
-  git: 'git',
-  python3: 'python3',
-  gcc: 'gcc',
+  // Information gathering
+  nmap: 'nmap', masscan: 'masscan', rustscan: 'rustscan',
+  dnsrecon: 'dnsrecon', dnsenum: 'dnsenum', fierce: 'fierce',
+  theharvester: 'theharvester', amass: 'amass', subfinder: 'subfinder',
+  assetfinder: 'assetfinder', whatweb: 'whatweb', wafw00f: 'wafw00f',
+  // Vulnerability analysis
+  nikto: 'nikto', wpscan: 'wpscan', sqlmap: 'sqlmap',
+  commix: 'commix', xsser: 'xsser', lynis: 'lynis',
+  unixprivesccheck: 'unix-privesc-check',
+  // Password attacks
+  hydra: 'hydra', john: 'john', hashcat: 'hashcat',
+  medusa: 'medusa', ncrack: 'ncrack', patator: 'patator',
+  cewl: 'cewl', crunch: 'crunch', ophcrack: 'ophcrack',
+  // Exploitation
+  msfvenom: 'metasploit-framework', msfconsole: 'metasploit-framework',
+  searchsploit: 'exploitdb', 'impacket-secretsdump': 'impacket-scripts',
+  responder: 'responder', bettercap: 'bettercap',
+  // Web
+  dirb: 'dirb', gobuster: 'gobuster', ffuf: 'ffuf',
+  wfuzz: 'wfuzz', burpsuite: 'burpsuite', zaproxy: 'zaproxy',
+  // Sniffing
+  wireshark: 'wireshark', tcpdump: 'tcpdump', netsniffng: 'netsniff-ng',
+  dsniff: 'dsniff', driftnet: 'driftnet', ferret: 'ferret-sidejack',
+  // Post-exploitation
+  powershell: 'powershell', chisel: 'chisel', socat: 'socat',
+  // Forensics
+  binwalk: 'binwalk', foremost: 'foremost', volatility3: 'volatility3',
+  // Reverse engineering
+  ghidra: 'ghidra', radare2: 'radare2', gdb: 'gdb',
+  edb: 'edb-debugger', ollydbg: 'ollydbg',
+  // Reporting
+  eyewitness: 'eyewitness', faraday: 'faraday',
+  // Wireless
+  aircrackng: 'aircrack-ng', reaver: 'reaver', kismet: 'kismet',
+  // Others
+  netcat: 'netcat-openbsd', curl: 'curl', wget: 'wget',
+  git: 'git', python3: 'python3', gcc: 'gcc',
+  // Kali metapackages for full categories
+  'kali-tools-information-gathering': 'kali-tools-information-gathering',
+  'kali-tools-vulnerability': 'kali-tools-vulnerability',
+  'kali-tools-web': 'kali-tools-web',
+  'kali-tools-password': 'kali-tools-password',
+  'kali-tools-wireless': 'kali-tools-wireless',
+  'kali-tools-exploitation': 'kali-tools-exploitation',
+  'kali-tools-sniffing': 'kali-tools-sniffing',
+  'kali-tools-post-exploitation': 'kali-tools-post-exploitation',
+  'kali-tools-forensics': 'kali-tools-forensics',
+  'kali-tools-reverse-engineering': 'kali-tools-reverse-engineering',
+  'kali-tools-reporting': 'kali-tools-reporting',
+  'kali-tools-social-engineering': 'kali-tools-social-engineering',
 };
 
 const TOOL_CHECK_COMMANDS: Record<string, string[]> = {
