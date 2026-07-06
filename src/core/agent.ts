@@ -501,6 +501,9 @@ export class AgentRuntime {
 
     // eslint-disable-next-line no-constant-condition
     while (true) {
+      // Sanitize conversation each iteration to prevent 400 API errors
+      this.removeOrphanedToolCalls();
+
       // Check for cancellation at start of each iteration
       if (this.cancellationRequested) {
         this.callbacks.onCancelled?.();
@@ -642,6 +645,9 @@ export class AgentRuntime {
 
     // eslint-disable-next-line no-constant-condition
     while (true) {
+      // Sanitize conversation each iteration to prevent 400 API errors
+      this.removeOrphanedToolCalls();
+
       // Check for cancellation at start of each iteration
       if (this.cancellationRequested) {
         this.callbacks.onCancelled?.();
