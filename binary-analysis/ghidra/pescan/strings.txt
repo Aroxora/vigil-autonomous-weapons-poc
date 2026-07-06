@@ -1,0 +1,201 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+00100a21 string-utf8 _ITM_deregisterTMCloneTable
+00100a3d string-utf8 __gmon_start__
+00100a4c string-utf8 _ITM_registerTMCloneTable
+00100a66 string-utf8 pe_parse
+00100a6f string-utf8 pe_directory_by_entry
+00100a85 string-utf8 pe_rva2section
+00100a94 string-utf8 pe_calculate_entropy_file
+00100aae string-utf8 pe_utils_str_inplace_trim
+00100ac8 string-utf8 pe_is_pe
+00100ad1 string-utf8 pe_utils_str_ends_with
+00100ae8 string-utf8 pe_can_read
+00100af4 string-utf8 pe_unload
+00100afe string-utf8 pe_fpu_trick
+00100b0b string-utf8 pe_sections_count
+00100b1d string-utf8 pe_rva2ofs
+00100b28 string-utf8 pe_error_print
+00100b37 string-utf8 pe_optional
+00100b43 string-utf8 pe_utils_str_array_join
+00100b5b string-utf8 pe_load_file
+00100b68 string-utf8 pe_dos
+00100b6f string-utf8 pe_utils_get_homedir
+00100b84 string-utf8 pe_sections
+00100b90 string-utf8 pe_coff
+00100b98 string-utf8 pe_utils_is_file_readable
+00100bb2 string-utf8 pe_is_dll
+00100bbc string-utf8 __stack_chk_fail
+00100bcd string-utf8 __printf_chk
+00100bda string-utf8 free
+00100bdf string-utf8 exit
+00100be4 string-utf8 __assert_fail
+00100bf2 string-utf8 dlclose
+00100bfa string-utf8 strdup
+00100c01 string-utf8 closedir
+00100c0a string-utf8 __getdelim
+00100c15 string-utf8 strrchr
+00100c1d string-utf8 strtok
+00100c24 string-utf8 fopen
+00100c2a string-utf8 strlen
+00100c31 string-utf8 __ctype_b_loc
+00100c3f string-utf8 gmtime
+00100c46 string-utf8 optarg
+00100c4d string-utf8 realloc
+00100c55 string-utf8 strftime
+00100c5e string-utf8 __fprintf_chk
+00100c6c string-utf8 malloc
+00100c73 string-utf8 __libc_start_main
+00100c85 string-utf8 stderr
+00100c8c string-utf8 __strcat_chk
+00100c99 string-utf8 dlsym
+00100c9f string-utf8 dlopen
+00100ca6 string-utf8 __cxa_finalize
+00100cb5 string-utf8 dlerror
+00100cbd string-utf8 strerror
+00100cc6 string-utf8 readdir
+00100cce string-utf8 calloc
+00100cd5 string-utf8 memcmp
+00100cdc string-utf8 fclose
+00100ce3 string-utf8 __asprintf_chk
+00100cf2 string-utf8 memset
+00100cf9 string-utf8 opendir
+00100d01 string-utf8 __snprintf_chk
+00100d10 string-utf8 memcpy
+00100d17 string-utf8 strcmp
+00100d1e string-utf8 __errno_location
+00100d2f string-utf8 abort
+00100d35 string-utf8 getopt_long
+00100d41 string-utf8 libpe.so.1
+00100d4c string-utf8 libc.so.6
+00100d56 string-utf8 GLIBC_2.8
+00100d60 string-utf8 GLIBC_2.4
+00100d6a string-utf8 GLIBC_2.3
+00100d74 string-utf8 GLIBC_2.14
+00100d7f string-utf8 GLIBC_2.34
+00100d8a string-utf8 GLIBC_2.2.5
+00100d96 string-utf8 GLIBC_2.3.4
+00105004 string pescan
+00105012 string pescan.c
+0010501b string invalid format option
+00105031 string ERROR: %s [at %s:%d] 
+00105047 string %s %s %s 
+00105051 string not a valid PE file
+00105065 string %f (normal)
+00105071 string %f (probably packed)
+00105086 string file entropy
+00105093 string malware
+0010509b string cpl analysis
+001050a8 string no threat
+001050b2 string cpl analysis:
+001050c0 string fpu anti-disassembly
+001050d5 string suspicious - %#lx
+001050e7 string normal - %#lx
+001050f5 string imagebase
+001050ff string WARNING: %s [at %s:%d] 
+00105117 string fake - va: %#x - raw: %#lx
+00105132 string normal - va: %#x - raw: %#lx
+0010514f string entrypoint
+0010515a string unable to seek in file
+00105171 string suspicious - raw: %#x
+00105187 string DOS stub
+00105190 string TLS callback function
+001051a6 string found - %d function(s)
+001051bd string TLS directory
+001051cb string unable to read coff header
+001051e6 string  - %a, %d %b %Y %H:%M:%S UTC
+00105203 string timestamp
+0010520d string %d (low)
+00105216 string %d (high)
+00105223 string section count
+00105231 string sections
+0010523a string section
+00105247 string zero length
+00105253 string small length
+00105263 string self-modifying
+00105272 string format
+0010527e string verbose
+00105286 string version
+0010528e string plugins_dir
+0010529c string %s/.config/pev/pev.conf
+001052b4 string /usr/lib/pev/plugins
+001052c9 string plugin_loaded
+001052d7 string plugin_initialize
+001052e9 string plugin_shutdown
+001052f9 string plugin_unloaded
+0010530d string %s/%s
+0010531b string ../include/stack.h
+0010532e string stack != NULL
+0010533c string output.c
+00105345 string g_format != NULL
+00105356 string stack: failed to allocate 
+00105371 string capacity > stack->capacity
+0010538c string !g_is_document_open
+001053a0 string Usage: %s OPTIONS FILE Search for suspicious things in PE files  Example: %s putty.exe  Options:  -f, --format <%s> Change output format (default: text).  -v, --verbose                         Show more information about found items.  -V, --version                         Show version.  --help                                Show this help. 
+00105500 string License GPLv2+: GNU GPL version 2 or later <https://www.gnu.org/licenses/gpl-2.0.txt>. This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
+001055d0 string from pev 0.85 <https://github.com/mentebinaria/readpe/> toolkit
+00105610 string %s: try '--help' for more information 
+00105638 string unable to read optional header
+00105658 string unable to retrieve PE DOS header
+00105680 string Can't load library because it's already loaded: %s 
+001056b8 string Failed to load library %s: %s 
+001056d8 string Can't unload library '%s' because it's not loaded 
+00105710 string Failed to unload library %s: %s 
+00105738 string Symbol '%s' not found in '%s': %s 
+00105760 string fatal: memory exhausted (malloc of %zu bytes) 
+00105790 string fatal: unable to calloc (%zu elements of %zu bytes) 
+001057c8 string plugin: allocation failed for entry 
+001057f0 string plugins: %s is incompatible with this version. 
+00105820 string plugins: plugin didn't load correctly 
+00105848 string plugins: plugin didn't initialize correctly 
+00105878 string plugins: could not open directory '%s' -- %s 
+001058a8 string plugins: allocation failed for relative path 
+001058d8 string stack: failed to allocate requested capacity 
+00105908 string output: terminating the output while there are open scopes will cause memory leaks
+00105960 string output: allocation failed for pe_utils_str_array_join 
+00105998 string stack: stack is empty - failed to peek 
+001059c0 string stack: stack is full - failed to push 
+001059e8 string stack: stack is empty - failed to pop 
+00105a10 string output: cannot close a scope that has not been opened. 
+00105a48 string output: trying to close a document, but the current scope is of a different type. 
+00105aad string !This program cannot be run in DOS mode.   $
+00105af0 string found - no functtoo old (pre-200suspicious name
+00105b20 string output_keyval
+00105b30 string PEV_stack_pop
+00105b40 string output_close_scope
+00105b58 string PEV_stack_push
+00105b70 string output_open_scope
+00105b88 string PEV_stack_peek
+00105ba0 string output_close_document
+00105bc0 string output_open_document_with_name
+00105be0 string PEV_stack_count
+00105bf0 string PEV_stack_grow
+00105df1 string zR
+00105e21 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/readpe.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .data.rel.ro
+.shstrtab::000000f1 string-utf8 .dynamic
+.shstrtab::000000fa string-utf8 .data
+.shstrtab::00000100 string-utf8 .bss
+.shstrtab::00000105 string-utf8 .gnu_debugaltlink
+.shstrtab::00000117 string-utf8 .gnu_debuglink

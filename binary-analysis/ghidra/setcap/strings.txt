@@ -1,0 +1,92 @@
+00100374 TerminatedCString /lib64/ld-linux-x86-64.so.2
+001006c1 string-utf8 _ITM_deregisterTMCloneTable
+001006dd string-utf8 __gmon_start__
+001006ec string-utf8 _ITM_registerTMCloneTable
+00100706 string-utf8 cap_set_nsowner
+00100716 string-utf8 _IO_stdin_used
+00100725 string-utf8 cap_set_flag
+00100732 string-utf8 cap_compare
+0010073e string-utf8 cap_set_proc
+0010074b string-utf8 cap_free
+00100754 string-utf8 cap_get_file
+00100761 string-utf8 cap_from_text
+0010076f string-utf8 cap_init
+00100778 string-utf8 cap_get_nsowner
+00100788 string-utf8 cap_get_flag
+00100795 string-utf8 cap_set_file
+001007a2 string-utf8 cap_get_proc
+001007af string-utf8 perror
+001007b6 string-utf8 __printf_chk
+001007c3 string-utf8 exit
+001007c8 string-utf8 strlen
+001007cf string-utf8 __ctype_b_loc
+001007dd string-utf8 __fprintf_chk
+001007eb string-utf8 __libc_start_main
+001007fd string-utf8 stderr
+00100804 string-utf8 __read_chk
+0010080f string-utf8 __cxa_finalize
+0010081e string-utf8 strerror
+00100827 string-utf8 __isoc23_strtoul
+00100838 string-utf8 fwrite
+0010083f string-utf8 strcmp
+00100846 string-utf8 __errno_location
+00100857 string-utf8 libcap.so.2
+00100863 string-utf8 libc.so.6
+0010086d string-utf8 GLIBC_2.3
+00100877 string-utf8 GLIBC_2.3.4
+00100883 string-utf8 GLIBC_2.4
+0010088d string-utf8 GLIBC_2.2.5
+00100899 string-utf8 GLIBC_2.34
+001008a4 string-utf8 GLIBC_2.38
+00102008 string usage: setcap [--license] [-f] [-h] [-n <rootid>] [-q] [-v] (-r|-|<caps>) <filename> [ ... (-r|-|<capsN>) <filenameN> ]   Note <filename> must be a regular (non-symlink) file.  -r          remove capability from file  -           read capability text from stdin  <capsN>     cap_from_text(3) formatted file capability  [ Note: capsh --suggest="something..." might help you pick. ]  --license   display the license info  -f          force setting even when the capability is invalid  -h          this message and exit status 0  -n <rootid> write a user namespace (!= 0) limited capability  -q          quietly  -v          validate supplied capability matches file 
+001022a8 string warning - unable to get process capabilities (old libcap?) 
+001022e8 string %s see LICENSE file for details. Copyright (c) 1997,2007-8,2020-21 Andrew G. Morgan <morgan@kernel.org> 
+00102358 string usage: .. -n <rootid> .. - rootid!=0 file caps
+00102388 string %s: want positive integer, got "%s" 
+001023b0 string Please enter caps for file [empty line to end]: 
+001023e8 string empty space is an invalid capability, did you mean -r? 
+00102420 string unable to obtain empty capability
+00102448 string unable to use missing capability
+00102470 string unable to manipulate CAP_SETFCAP - try a newer libcap?
+001024a8 string unable to set CAP_SETFCAP effective capability
+001024d8 string Error: under Linux, effective file capabilities must either be empty, or        exactly match the union of selected permitted and inheritable bits. 
+00102570 string Invalid file '%s' for capability operation 
+001025a0 string File '%s' has no capability to remove 
+001025c8 string Failed to set capabilities on file '%s': %s 
+001025f9 string --license
+00102603 string bad ns rootid
+0010261c string  [Error - aborting] 
+00102631 string argument: %s 
+0010263f string fatal error
+0010264b string unable to set nsowner
+00102661 string nsowner[got=%d, want=%d],
+0010267b string %s differs in [%s%s%s] 
+001026e1 string zR
+00102711 string zR
+.gnu_debugaltlink::00000000 string /usr/lib/debug/.dwz/x86_64-linux-gnu/libcap2-bin.debug
+.shstrtab::00000001 string-utf8 .shstrtab
+.shstrtab::0000000b string-utf8 .note.gnu.build-id
+.shstrtab::0000001e string-utf8 .interp
+.shstrtab::00000026 string-utf8 .gnu.hash
+.shstrtab::00000030 string-utf8 .dynsym
+.shstrtab::00000038 string-utf8 .dynstr
+.shstrtab::00000040 string-utf8 .gnu.version
+.shstrtab::0000004d string-utf8 .gnu.version_r
+.shstrtab::0000005c string-utf8 .rela.dyn
+.shstrtab::00000066 string-utf8 .rela.plt
+.shstrtab::00000070 string-utf8 .init
+.shstrtab::00000076 string-utf8 .plt.got
+.shstrtab::0000007f string-utf8 .text
+.shstrtab::00000085 string-utf8 .fini
+.shstrtab::0000008b string-utf8 .rodata
+.shstrtab::00000093 string-utf8 .eh_frame_hdr
+.shstrtab::000000a1 string-utf8 .eh_frame
+.shstrtab::000000ab string-utf8 .note.gnu.property
+.shstrtab::000000be string-utf8 .note.ABI-tag
+.shstrtab::000000cc string-utf8 .init_array
+.shstrtab::000000d8 string-utf8 .fini_array
+.shstrtab::000000e4 string-utf8 .dynamic
+.shstrtab::000000ed string-utf8 .data
+.shstrtab::000000f3 string-utf8 .bss
+.shstrtab::000000f8 string-utf8 .gnu_debugaltlink
+.shstrtab::0000010a string-utf8 .gnu_debuglink
