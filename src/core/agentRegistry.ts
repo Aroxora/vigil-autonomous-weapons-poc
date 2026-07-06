@@ -34,6 +34,7 @@ export const TOOL_SUBSETS: Record<AgentType, ReadonlySet<string> | null> = {
   general: null, // null = full toolset minus spawn tools (registry strips below)
   explore: new Set([
     'read_file',
+    'Read',
     'list_files',
     'file_exists',
     'grep',

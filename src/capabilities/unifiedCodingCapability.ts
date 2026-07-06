@@ -127,6 +127,7 @@ export class UnifiedCodingCapabilityModule implements CapabilityModule {
 
     // === FILESYSTEM TOOLS ===
     tools.push(this.createReadFileTool());
+    tools.push(this.createReadAliasTool());
     tools.push(this.createWriteFileTool());
     tools.push(this.createListFilesTool());
     tools.push(this.createFileExistsTool());
@@ -184,6 +185,19 @@ export class UnifiedCodingCapabilityModule implements CapabilityModule {
   // ============================================================================
 
   private createReadFileTool(): ToolDefinition<{ path: string; encoding?: string }> {
+    const handler = async (args: any) => {
+      try {
+        const filePath = this.resolvePath(args.path || args.file_path || args.filePath);
+        const stat = fs.statSync(filePath);
+        if (stat.size > this.options.maxFileSize) {
+          return `Error: File too large (${stat.size} bytes). Max: ${this.options.maxFileSize} bytes`;
+        }
+        const content = fs.readFileSync(filePath, { encoding: (args.encoding as BufferEncoding) ?? 'utf-8' });
+        return content;
+      } catch (error) {
+        return `Error reading file: ${(error as Error).message}`;
+      }
+    };
     return {
       name: 'read_file',
       description: 'Read the contents of a file. Returns the file content as a string.',
@@ -194,21 +208,35 @@ export class UnifiedCodingCapabilityModule implements CapabilityModule {
         },
         ['path']
       ),
-      handler: async (args) => {
-        try {
-          const filePath = this.resolvePath(args.path);
-          const stat = fs.statSync(filePath);
+      handler,
+    };
+  }
 
-          if (stat.size > this.options.maxFileSize) {
-            return `Error: File too large (${stat.size} bytes). Max: ${this.options.maxFileSize} bytes`;
-          }
-
-          const content = fs.readFileSync(filePath, { encoding: (args.encoding as BufferEncoding) ?? 'utf-8' });
-          return content;
-        } catch (error) {
-          return `Error reading file: ${(error as Error).message}`;
+  private createReadAliasTool(): ToolDefinition<{ file_path: string; encoding?: string }> {
+    const handler = async (args: any) => {
+      try {
+        const filePath = this.resolvePath(args.file_path || args.path || args.filePath);
+        const stat = fs.statSync(filePath);
+        if (stat.size > this.options.maxFileSize) {
+          return `Error: File too large (${stat.size} bytes). Max: ${this.options.maxFileSize} bytes`;
         }
-      },
+        const content = fs.readFileSync(filePath, { encoding: (args.encoding as BufferEncoding) ?? 'utf-8' });
+        return content;
+      } catch (error) {
+        return `Error reading file: ${(error as Error).message}`;
+      }
+    };
+    return {
+      name: 'Read',
+      description: 'Read file contents. Alias for read_file — use whichever name the context suggests.',
+      parameters: objectSchema(
+        {
+          file_path: stringProp('Path to the file to read'),
+          encoding: stringProp('File encoding (default: utf-8)'),
+        },
+        ['file_path']
+      ),
+      handler,
     };
   }
 

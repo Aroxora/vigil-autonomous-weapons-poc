@@ -1,10 +1,12 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "rootDir": ".",
     "noEmit": true,
     "incremental": true,
     "tsBuildInfoFile": ".tsbuildinfo",
     "declaration": false,
+    "declarationMap": false,
     "sourceMap": true,
     "removeComments": false
   },

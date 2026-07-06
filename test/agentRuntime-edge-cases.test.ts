@@ -44,7 +44,7 @@ class ScriptedProvider implements LLMProvider {
     const step = this.script[this.idx++];
     if (!step) {
       // Default terminal response when script is exhausted
-      return { type: 'message', content: '[end of script]', stopReason: 'stop' };
+      return { type: 'message', content: '[end of script]', stopReason: 'end_turn' };
     }
     if (step.throwError) throw step.throwError;
     return step.response;

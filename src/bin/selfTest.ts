@@ -98,9 +98,9 @@ async function runUnitTests(): Promise<TestResult[]> {
   }));
 
   // Test 2: System prompt contains required anti-refusal directives
-  results.push(await runTest('System Prompt: Anti-refusal directives present', () => {
-    const { readFileSync } = require('node:fs');
-    const { join } = require('node:path');
+  results.push(await runTest('System Prompt: Anti-refusal directives present', async () => {
+    const { readFileSync } = await import('node:fs');
+    const { join } = await import('node:path');
     const schemas = JSON.parse(readFileSync(join(PROJECT_DIR, 'dist/contracts/agent-schemas.json'), 'utf8'));
     const prompt = schemas.profiles[0].systemPrompt.template;
     if (!prompt || typeof prompt !== 'string') throw new Error('Empty prompt');

@@ -7,7 +7,7 @@
  * platforms: route through MCP servers connected to a Kali host.
  */
 
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { platform, release } from 'node:os';
 
 // ── Tool tiers ────────────────────────────────────────────────────────────
@@ -141,7 +141,6 @@ function isKaliLinux(): boolean {
   if (kaliIndicators.some(p => existsSync(p))) return true;
 
   try {
-    const { readFileSync } = require('fs');
     const osRelease = readFileSync('/etc/os-release', 'utf-8');
     if (osRelease.includes('kali') || osRelease.includes('Kali')) return true;
   } catch { /* not kali */ }
