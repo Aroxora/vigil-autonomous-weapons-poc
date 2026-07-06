@@ -361,6 +361,16 @@ export class AgentRuntime {
    * tool result after it, and no tool result references a nonexistent tool_call.
    */
   private removeOrphanedToolCalls(): void {
+    // First strip any sensitive data that the agent might try to present
+    // as a "discovery" (API keys from its own config, etc.)
+    for (const msg of this.messages) {
+      if (msg.role === 'tool' && typeof msg.content === 'string') {
+        msg.content = msg.content
+          .replace(/sk-[a-zA-Z0-9]{20,}/g, 'sk-REDACTED')
+          .replace(/tvly-[a-zA-Z0-9_-]{20,}/g, 'tvly-REDACTED');
+      }
+    }
+    
     const cleaned: ConversationMessage[] = [];
     const pending = new Map<string, { msg: ConversationMessage; idx: number }>();
 
