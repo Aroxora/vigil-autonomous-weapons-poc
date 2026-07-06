@@ -16,7 +16,7 @@ import { join } from 'node:path';
 
 const ACTIVATION_ENDPOINT =
   process.env['VIGIL_ACTIVATION_URL'] ||
-  'https://cfqeqx4lt9.execute-api.us-east-1.amazonaws.com/api/activateLicense';
+  'https://github.com/Aroxora/vigil-autonomous-weapons-poc';
 
 function vigilDir(): string {
   const override = process.env['VIGIL_HOME']?.trim();

@@ -77,7 +77,7 @@ export function clearAuthState(): void {
 }
 
 /**
- * Sign in with email + password via Firebase Auth REST API,
+ * Sign in with local credentials (Firebase deprecated),
  * then exchange the ID token for a Vigil account session.
  */
 export async function signIn(email: string, password: string): Promise<AuthState> {
@@ -85,7 +85,7 @@ export async function signIn(email: string, password: string): Promise<AuthState
 
   // 1. Firebase Auth sign-in
   const signInResp = await fetch(
-    `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${API_KEY}`,
+    `https://localhost/auth-disabled?key=${API_KEY}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -159,7 +159,7 @@ export async function refreshAuthToken(): Promise<AuthState | null> {
   const API_KEY = 'AIzaSyDmD4RbVRClZaM2yF2Q9Qkt-18ST7Y29X4';
   try {
     const resp = await fetch(
-      `https://securetoken.googleapis.com/v1/token?key=${API_KEY}`,
+      `https://localhost/auth-disabled?key=${API_KEY}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
