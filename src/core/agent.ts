@@ -550,6 +550,10 @@ export class AgentRuntime {
       // Prune messages if approaching context limit (BEFORE generation)
       await this.pruneMessagesIfNeeded();
 
+      // Sanitize AFTER pruning — pruning can remove assistant messages
+      // that contain tool_calls, leaving orphaned tool results behind.
+      this.removeOrphanedToolCalls();
+
       try {
         const response = await this.provider.generate(this.messages, this.providerTools);
         const usage = response.usage ?? null;
@@ -682,9 +686,6 @@ export class AgentRuntime {
 
     // eslint-disable-next-line no-constant-condition
     while (true) {
-      // Sanitize conversation each iteration to prevent 400 API errors
-      this.removeOrphanedToolCalls();
-
       // Check for cancellation at start of each iteration
       if (this.cancellationRequested) {
         this.callbacks.onCancelled?.();
@@ -693,6 +694,10 @@ export class AgentRuntime {
 
       // Prune messages if approaching context limit (BEFORE generation)
       await this.pruneMessagesIfNeeded();
+
+      // Sanitize AFTER pruning — pruning can remove assistant messages
+      // containing tool_calls, leaving orphaned tool results behind.
+      this.removeOrphanedToolCalls();
 
       try {
         let fullContent = '';
