@@ -204,20 +204,14 @@ export async function createAgentController(
   // exists — the tool handler resolves the provider lazily via the
   // controller's current selection, so it stays in sync with model
   // switches the user makes mid-session.
+  // parallel_agents wiring disabled — the Agent tool supports multiple
+  // agents in one message natively. Parallel spawning was causing sub-agent
+  // hallucination loops with infinite bash retries.
   try {
-    const { wireAgentSpawning } = await import('./agentSpawningWiring.js');
-    wireAgentSpawning({
-      session: runtime.session,
-      workingDir: options.workingDir,
-      getSelection: () => controller.getSelection(),
-      onProgress: (msg) => {
-        controller.pushToolStart(msg);
-      },
-    });
+    // const { wireAgentSpawning } = await import('./agentSpawningWiring.js');
+    // wireAgentSpawning({ ... });
   } catch (err) {
-    // Non-fatal: spawning is an optional capability. Surface the
-    // failure for diagnostics but don't block CLI startup.
-    logDebug?.('agent-spawning wiring failed: ' + (err instanceof Error ? err.message : String(err)));
+    logDebug?.('agent-spawning wiring skipped');
   }
   return controller;
 }
