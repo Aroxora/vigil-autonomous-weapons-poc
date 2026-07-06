@@ -6,7 +6,7 @@
  *   等保二级（LEVEL_2）— 管理员授予（指导保护）
  *   等保三级（LEVEL_3）— 直接授权（监督保护）
  *
- * 密钥使用 HMAC-SHA256 签名，通过 Trenchwork 私钥签署。
+ * 密钥使用 HMAC-SHA256 签名，通过 Vigil 私钥签署。
  * 验证时使用嵌入许可证中的公钥。
  */
 import { createHmac, timingSafeEqual } from 'node:crypto';
@@ -64,10 +64,10 @@ const TOOLS_BY_TIER: Record<LicenseTier, ToolId[]> = {
 };
 
 // ═══════════════════════════════════════════════════════════════════
-// Trenchwork 公钥用于许可证验证
+// Vigil 公钥用于许可证验证
 // ═══════════════════════════════════════════════════════════════════
 
-const TRENCHWORK_PUBLIC_KEY = 'trenchwork-vigil-ecdsa-p256-public-key-2026';
+const TRENCHWORK_PUBLIC_KEY = 'vigil-ecdsa-p256-public-key-2026';
 
 // ═══════════════════════════════════════════════════════════════════
 // 许可证密钥验证

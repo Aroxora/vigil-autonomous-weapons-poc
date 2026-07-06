@@ -44,7 +44,7 @@ Commit message format:
 
 🤖 Generated with [AGI-CLI](https://github.com/agi-cli)
 
-Co-Authored-By: Vigil <vigil@trenchwork.org>
+Co-Authored-By: Vigil <vigil@anvilwing.ai>
 
 Important notes:
 - DO NOT push to remote unless explicitly requested
@@ -243,7 +243,7 @@ EOF
     parts.push('');
     parts.push('🤖 Generated with [AGI-CLI](https://github.com/agi-cli)');
     parts.push('');
-    parts.push('Co-Authored-By: Vigil <vigil@trenchwork.org>');
+    parts.push('Co-Authored-By: Vigil <vigil@anvilwing.ai>');
 
     return parts.join('\n');
   }

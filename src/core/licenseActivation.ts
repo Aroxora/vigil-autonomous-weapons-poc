@@ -2,7 +2,7 @@
  * Vigil License Activation — CLI-side license management.
  *
  * Flow:
- *   1. User obtains license key (VIG-XXXX-XXXX-XXXX) via trenchwork.live
+ *   1. User obtains license key (VIG-XXXX-XXXX-XXXX) via github.com/Aroxora/vigil-autonomous-weapons-poc
  *   2. vigil --activate VIG-XXXX-XXXX-XXXX
  *   3. CLI calls activation endpoint with machine fingerprint
  *   4. Endpoint validates, returns API keys (built-in) or confirms activation
@@ -178,7 +178,7 @@ export async function checkLicense(): Promise<boolean> {
     if (Date.now() > expiry) {
       console.error(
         `\n⚠  Vigil license expired on ${state.expiresAt}.\n` +
-         '   Contact Trenchwork to renew your license.\n'
+         '   Contact the repository owner to renew your license.\n'
       );
       return false;
     }
@@ -203,7 +203,7 @@ export async function checkLicense(): Promise<boolean> {
           console.error(
             `\n⛔  Vigil license REVOKED: ${status.revocationReason || 'No reason given'}.\n` +
             '   This CLI installation has been deauthorized.\n' +
-             '   Contact Trenchwork to appeal.\n'
+             '   Contact the repository owner to appeal.\n'
           );
           return false;
         }
@@ -233,7 +233,7 @@ export async function checkLicense(): Promise<boolean> {
       '   Each license allows up to 3 device activations.\n' +
       `   Current fingerprint: ${currentFp}\n` +
       `   License fingerprint: ${state.machineFingerprint}\n` +
-       '   Contact Trenchwork to add this device.\n'
+       '   Contact the repository owner to add this device.\n'
     );
     return false;
   }

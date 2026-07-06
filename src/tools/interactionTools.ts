@@ -54,7 +54,7 @@ async function askViaPortal(
   multiSelect: boolean,
   timeoutMs: number,
 ): Promise<AskAnswer> {
-  // Push the question to Firestore via Lambda; the portal renders it
+  // Push the question to portal via Lambda; the portal renders it
   // under the "Pending questions" panel. The user clicks an answer,
   // which writes back through cliQuestionAnswer; we poll until the
   // doc says answered or we hit the timeout.

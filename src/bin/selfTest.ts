@@ -137,7 +137,7 @@ async function runCLITests(): Promise<TestResult[]> {
   results.push(await runTest('CLI: /help command works', async () => {
     const ctx = await launchCLI();
     try {
-      await waitForOutput(ctx, /terminal|TTY|trenchwork|vigil|◈/i, 5000);
+      await waitForOutput(ctx, /terminal|TTY|vigil|◈/i, 5000);
     } finally {
       await stopCLI(ctx);
     }
@@ -147,7 +147,7 @@ async function runCLITests(): Promise<TestResult[]> {
   results.push(await runTest('CLI: /clear command works', async () => {
     const ctx = await launchCLI();
     try {
-      await waitForOutput(ctx, /terminal|TTY|trenchwork|vigil|◈/i, 5000);
+      await waitForOutput(ctx, /terminal|TTY|vigil|◈/i, 5000);
       // CLI exits cleanly in non-TTY after printing message
     } finally {
       await stopCLI(ctx);
@@ -158,7 +158,7 @@ async function runCLITests(): Promise<TestResult[]> {
   results.push(await runTest('CLI: Graceful shutdown (Ctrl+C/D)', async () => {
     const ctx = await launchCLI();
     try {
-      await waitForOutput(ctx, /terminal|TTY|trenchwork|vigil|◈/i, 5000);
+      await waitForOutput(ctx, /terminal|TTY|vigil|◈/i, 5000);
       // CLI should have exited already (non-TTY), just verify process cleanup
       ctx.cli?.stdin?.write('\x03');
       await wait(200);

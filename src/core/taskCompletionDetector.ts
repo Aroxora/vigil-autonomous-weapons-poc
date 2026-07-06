@@ -11,7 +11,7 @@
  * - Work-in-progress detection
  *
  * @license MIT
- * @author Trenchwork
+ * 
  */
 
 export interface ToolActivity {

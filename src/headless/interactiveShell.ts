@@ -2016,7 +2016,7 @@ class InteractiveShell {
               tokensUsed: event.totalTokens,
               tokenLimit: 1_000_000, // DeepSeek V4 Pro/Flash: 1M context (api-docs.deepseek.com)
             });
-            // Roll up to session totals for the session-end Firestore write.
+            // Legacy session tracking (portal-deprecated).
             this.sessionTokensIn += event.inputTokens || 0;
             this.sessionTokensOut += event.outputTokens || 0;
             break;

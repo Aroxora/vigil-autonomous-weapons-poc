@@ -1,8 +1,8 @@
 /**
- * Vigil CLI — Trenchwork Account Authentication
+ * Vigil CLI — Account Authentication
  *
  * Supports:
- *   - /login with Trenchwork account via Lambda API
+ *   - /login via local authentication
  *   - Token caching to ~/.vigil/auth.json
  *   - Login status checks
  *   - Provider key validation (DeepSeek, Tavily)
@@ -78,7 +78,7 @@ export function clearAuthState(): void {
 
 /**
  * Sign in with email + password via Firebase Auth REST API,
- * then exchange the Firebase ID token for a Trenchwork account session.
+ * then exchange the ID token for a Vigil account session.
  */
 export async function signIn(email: string, password: string): Promise<AuthState> {
   const API_KEY = 'AIzaSyDmD4RbVRClZaM2yF2Q9Qkt-18ST7Y29X4';

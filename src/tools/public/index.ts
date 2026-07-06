@@ -1,7 +1,7 @@
 /**
  * Vigil Public Tools API — 3rd Party Accessible
  *
- * All 8 Trenchwork proprietary tools exposed as public, importable modules.
+ * All 8 Vigil proprietary tools exposed as public, importable modules.
  * Each tool wraps the core exploit chaining engine with sensible defaults.
  * No API key required for static analysis; DeepSeek API key required for
  * AI-powered features (auto-detected from env/secret store).

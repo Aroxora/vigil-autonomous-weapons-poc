@@ -3,7 +3,7 @@
  *
  * Design contract: NO emoji in chrome. All decorative elements use
  * Unicode symbols/glyphs for consistent rendering across terminals.
- * Ported from erosolar-coder's glyph system, adapted for Vigil.
+ * Vigil glyph system.
  */
 
 export const GLYPHS = {

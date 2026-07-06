@@ -172,7 +172,7 @@ function generateCanary(type: string): { type: string; location: string; hash: s
     'decoy-creds': { location: 'AWS IAM user: vigil-canary-auditor', description: 'Decoy IAM creds with CloudTrail alert on any API call.' },
     'honeypot-file': { location: '/etc/shadow.backup (honeypot)', description: 'Fake shadow with auditd watch — access triggers alert.' },
     'canary-token': { location: `https://canarytokens.org/token/${tok}/index.html`, description: 'URL canary — HTTP GET triggers webhook.' },
-    'decoy-key': { location: `~/.ssh/id_rsa_trenchwork_${tok.substring(0, 8)}`, description: 'Decoy SSH key. Auth attempt triggers audit log.' },
+    'decoy-key': { location: `~/.ssh/id_rsa_decoy_${tok.substring(0, 8)}`, description: 'Decoy SSH key. Auth attempt triggers audit log.' },
     'git-token': { location: 'ghp_' + tok + ' (GitHub PAT)', description: 'Decoy GitHub token. Usage triggers webhook alert.' },
   };
 

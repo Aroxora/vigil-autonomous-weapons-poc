@@ -267,7 +267,7 @@ if (deepseekFlag.value || tavilyFlag.value) {
 
     try {
       process.stderr.write('\n🔐 Vigil License Application — UFLL Identity Verification\n');
-      process.stderr.write('   PRC national ID required. Visit https://trenchwork.live/install\n\n');
+      process.stderr.write('   PRC national ID required. Visit https://github.com/Aroxora/vigil-autonomous-weapons-poc\n\n');
 
       const name = await ask('  姓名 Full Name: ');
       if (!name.trim()) {
@@ -298,7 +298,7 @@ if (deepseekFlag.value || tavilyFlag.value) {
       process.stderr.write('\n⏳ Verifying identity via UFLL...\n');
       let verifyResp;
       try {
-        verifyResp = await fetch('https://trenchwork.live/api/verifyIdentity', {
+        verifyResp = await fetch('https://github.com/Aroxora/vigil-autonomous-weapons-poc', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name: name.trim(), idNumber: idNumber.trim(), provider: 'ufll' }),
@@ -307,7 +307,7 @@ if (deepseekFlag.value || tavilyFlag.value) {
         await showCard({
           tone: 'error',
           title: 'Verification Failed',
-          body: `Cannot reach verification service: ${err instanceof Error ? err.message : String(err)}\n\nVisit https://trenchwork.live/install to apply via web.`,
+          body: `Cannot reach verification service: ${err instanceof Error ? err.message : String(err)}\n\nVisit https://github.com/Aroxora/vigil-autonomous-weapons-poc to apply via web.`,
         });
         process.exit(1);
       }
@@ -335,7 +335,7 @@ if (deepseekFlag.value || tavilyFlag.value) {
       // Step 2: Submit license application
       process.stderr.write('\n⏳ Submitting license application...\n');
       try {
-        await fetch('https://trenchwork.live/api/submitLicenseRequest', {
+        await fetch('https://github.com/Aroxora/vigil-autonomous-weapons-poc', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -352,7 +352,7 @@ if (deepseekFlag.value || tavilyFlag.value) {
         await showCard({
           tone: 'info',
           title: 'Note',
-          body: `Application storage unavailable: ${err instanceof Error ? err.message : String(err)}\nYour identity was verified. Contact Trenchwork to complete your application.`,
+          body: `Application storage unavailable: ${err instanceof Error ? err.message : String(err)}\nYour identity was verified. Contact the repository owner to complete your application.`,
         });
         process.exit(0);
       }
@@ -417,13 +417,13 @@ if (deepseekFlag.value || tavilyFlag.value) {
       tone: 'info',
       title: 'vigil',
       rows: [
-        ['product', 'Vigil (by Trenchwork)'],
+        ['product', 'Vigil (by Bo Shang)'],
         ['version', `v${version}`],
         ['package', pkgName],
         ['node', process.version],
         ['platform', `${process.platform}/${process.arch}`],
       ],
-      hint: 'https://trenchwork.org · Phase 3 Comprehensive',
+      hint: 'https://github.com/Aroxora/vigil-autonomous-weapons-poc',
     });
     process.exit(0);
   })();
@@ -431,7 +431,7 @@ if (deepseekFlag.value || tavilyFlag.value) {
   void (async () => {
     const { showHelp } = await import('../ui/ink/oneShot.js');
     await showHelp({
-      title: 'vigil — Unlocked Security Terminal Agent · Trenchwork',
+      title: 'vigil — Autonomous Security Terminal Agent',
       body: [
         'vigil [options] [prompt]',
         '',

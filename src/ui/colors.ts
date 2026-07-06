@@ -9,7 +9,7 @@
  * Design contract: Unicode box-drawing glyphs only — no emoji in chrome.
  * Glyphs defined in glyphs.ts, imported here for theme-aware rendering.
  *
- * Ported from erosolar-coder's color architecture. Adapted for Vigil.
+ * Vigil color architecture.
  */
 
 export interface ThemeColors {
