@@ -24,7 +24,7 @@ const ENABLE_GHIDRA = (() => {
   if (process.env.VIGIL_GHIDRA_HEADLESS === '1') return true;
   return existsSync(analyzeHeadlessPath(DEFAULT_GHIDRA_HOME));
 })();
-const DEFAULT_TIMEOUT_MS = 180_000;
+const DEFAULT_TIMEOUT_MS = 900_000; // 15 min — handles binaries up to ~1GB
 
 // Authorization guard: Ghidra headless analysis (which can run arbitrary JVM
 // code against untrusted binaries) must only be invoked from within a Vigil

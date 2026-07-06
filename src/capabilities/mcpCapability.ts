@@ -44,13 +44,15 @@ function buildToolDefinitions(connection: McpServerConnection): ToolDefinition[]
     parameters: tool.inputSchema as unknown as JSONSchemaObject,
     handler: async (args: Record<string, unknown>) => {
       try {
+        // Ghidra tools need longer timeout — binary analysis is CPU-intensive
+        const timeoutMs = connection.name === 'ghidra' ? 900_000 : 120_000;
         const result = await Promise.race([
           connection.client.callTool({
             name: tool.name,
             arguments: args,
           }),
           new Promise<never>((_, reject) =>
-            setTimeout(() => reject(new Error(`MCP tool ${tool.name} timed out after 30s`)), 30_000),
+            setTimeout(() => reject(new Error(`MCP tool ${tool.name} timed out after ${timeoutMs/1000}s`)), timeoutMs),
           ),
         ]);
         return stringifyToolResult(result as { content: unknown; isError?: boolean });
