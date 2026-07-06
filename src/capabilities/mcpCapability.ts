@@ -43,11 +43,20 @@ function buildToolDefinitions(connection: McpServerConnection): ToolDefinition[]
     description: tool.description ?? `MCP tool ${tool.name} on server ${connection.name}`,
     parameters: tool.inputSchema as unknown as JSONSchemaObject,
     handler: async (args: Record<string, unknown>) => {
-      const result = await connection.client.callTool({
-        name: tool.name,
-        arguments: args,
-      });
-      return stringifyToolResult(result as { content: unknown; isError?: boolean });
+      try {
+        const result = await Promise.race([
+          connection.client.callTool({
+            name: tool.name,
+            arguments: args,
+          }),
+          new Promise<never>((_, reject) =>
+            setTimeout(() => reject(new Error(`MCP tool ${tool.name} timed out after 30s`)), 30_000),
+          ),
+        ]);
+        return stringifyToolResult(result as { content: unknown; isError?: boolean });
+      } catch (err) {
+        return `MCP Error: ${(err as Error).message}`;
+      }
     },
   }));
 }
