@@ -216,6 +216,7 @@ export async function createAgentController(
           timestamp: Date.now(),
           toolName: msg,
           parameters: {},
+          toolCallId: '',
         });
       },
     });
