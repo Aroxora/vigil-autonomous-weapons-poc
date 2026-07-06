@@ -1038,16 +1038,40 @@ export class AgentRuntime {
         // Proceed regardless — tools will fail with real errors if still missing,
         // which is better than hallucinated successes
       } else if (!mcpAvailable) {
-        // Not on Kali, no MCP bridge — block operational tools
+        // Not on Kali, no MCP bridge — block operational tools,
+        // but still handle non-operational tools in the same batch.
         for (const call of toolCalls) {
           if (OPERATIONAL_TOOLS.has(call.name)) {
             this.messages.push({
               role: 'tool',
               name: call.name,
               toolCallId: call.id,
-              content: '[TOOL BLOCKED] Tool ' + call.name + ' is unavailable (no Kali/MCP). All output BLOCKED -- no real data exists. Do not invent results. Use npm run kali:mcp or Kali Docker.'
+              content: '[TOOL BLOCKED] Tool ' + call.name + ' is unavailable (no Kali/MCP). All output BLOCKED -- no real data exists. Do not invent results. Use npm run kali:mcp or Kali Docker.',
             });
           }
+        }
+        // Process non-operational tools normally — they must not be left orphaned.
+        const nonOp = toolCalls.filter(c => !OPERATIONAL_TOOLS.has(c.name));
+        if (nonOp.length > 0) {
+          for (const call of nonOp) {
+            this.callbacks.onToolExecution?.(call.name, true);
+            const output = await this.toolRuntime.execute(call);
+            this.callbacks.onToolExecution?.(call.name, false);
+            this.cacheToolResult(call, output);
+            if (this.isEditToolCall(call.name)) {
+              executedEdits.push({ call, output, fromCache: false });
+            }
+            this.messages.push({
+              role: 'tool',
+              name: call.name,
+              toolCallId: call.id,
+              content: output,
+            });
+          }
+          await this.maybeExplainEdits(executedEdits);
+        }
+        return;
+      }
         }
         return;
       }
