@@ -357,77 +357,42 @@ export class AgentRuntime {
   }
 
   /**
-   * Remove orphaned tool_calls and orphaned tool results from conversation
-   * history. Both directions cause 400 API errors:
-   *   - tool_calls without matching tool results  → "must be followed by tool messages"
-   *   - tool results without preceding tool_calls → "must be a response to a preceding message"
-   * Also strips tool results that appear BEFORE their corresponding assistant
-   * message (wrong order), and tool_calls that appear after their results.
+   * Ensure conversation is API-valid: every assistant tool_call has a matching
+   * tool result after it, and no tool result references a nonexistent tool_call.
    */
   private removeOrphanedToolCalls(): void {
-    // --- Pass 1: collect valid tool_call_ids with their assistant message index ---
-    const toolCallIdToAssistantIdx = new Map<string, number>();
-    for (let i = 0; i < this.messages.length; i++) {
-      const msg = this.messages[i];
-      if (msg.role === 'assistant' && msg.toolCalls) {
-        for (const tc of msg.toolCalls) {
-          toolCallIdToAssistantIdx.set(tc.id, i);
-        }
-      }
-    }
-
-    // --- Pass 2: build cleaned history enforcing correct ordering ---
     const cleaned: ConversationMessage[] = [];
-    const seenToolCallIds = new Set<string>();
+    const pending = new Map<string, { msg: ConversationMessage; idx: number }>();
 
-    for (let i = 0; i < this.messages.length; i++) {
-      const msg = this.messages[i];
-
-      // Strip tool messages whose toolCallId is unknown OR appears before its
-      // corresponding assistant message (API requires tool messages AFTER tool_calls)
-      if (msg.role === 'tool') {
-        const tm = msg as ConversationMessage & { toolCallId?: string };
-        if (!tm.toolCallId) continue;
-        const asstIdx = toolCallIdToAssistantIdx.get(tm.toolCallId);
-        if (asstIdx === undefined) continue; // unknown ID — orphaned
-        if (asstIdx > i) continue; // tool appears BEFORE assistant — wrong order
-        cleaned.push(msg);
-        seenToolCallIds.add(tm.toolCallId);
-        continue;
-      }
-
-      // Fill in missing tool results for assistant with tool_calls
+    for (const msg of this.messages) {
       if (msg.role === 'assistant' && msg.toolCalls?.length) {
-        const remainingIds = new Set<string>();
+        cleaned.push(msg);
         for (const tc of msg.toolCalls) {
-          // Only fill in if the result wasn't already seen (it should come AFTER this)
-          remainingIds.add(tc.id);
+          pending.set(tc.id, { msg, idx: cleaned.length - 1 });
         }
-        let j = i + 1;
-        while (j < this.messages.length && this.messages[j].role === 'tool') {
-          const tm = this.messages[j] as ConversationMessage & { toolCallId?: string };
-          if (tm.toolCallId) remainingIds.delete(tm.toolCallId);
-          cleaned.push(this.messages[j]);
-          j++;
-        }
-        i = j - 1;
-        if (remainingIds.size > 0) {
+      } else if (msg.role === 'tool') {
+        const tm = msg as ConversationMessage & { toolCallId?: string };
+        if (tm.toolCallId && pending.has(tm.toolCallId)) {
           cleaned.push(msg);
-          for (const id of remainingIds) {
-            const tc = msg.toolCalls!.find((t) => t.id === id);
-            cleaned.push({
-              role: 'tool',
-              name: tc?.name ?? 'unknown',
-              toolCallId: id,
-              content: '[Interrupted: tool execution was cancelled]',
-            });
-          }
-          continue;
+          pending.delete(tm.toolCallId);
         }
+        // tool result with no matching preceding tool_call → drop it
+      } else {
+        cleaned.push(msg);
       }
-
-      cleaned.push(msg);
     }
+
+    // Fill in placeholder results for any still-pending tool_calls
+    for (const [id, { msg: _ }] of pending) {
+      const tc = (_.msg as { toolCalls?: Array<{ id: string; name: string }> }).toolCalls?.find(t => t.id === id);
+      cleaned.push({
+        role: 'tool',
+        name: tc?.name ?? 'unknown',
+        toolCallId: id,
+        content: '[Interrupted: tool execution was cancelled]',
+      });
+    }
+
     this.messages.splice(0, this.messages.length, ...cleaned);
   }
 
