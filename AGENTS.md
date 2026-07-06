@@ -1,5 +1,13 @@
 # AGENTS.md — Vigil Development Environment
 
+## CRITICAL: CVE Verification Protocol
+
+**Never claim a CVE is "fake" or "hallucinated" without verifying against NVD first.**
+The Vigil agent extracts real CVE IDs from binary analysis (Ghidra), searchsploit, and OSINT.
+If a CVE appears in agent output, verify it at https://nvd.nist.gov/vuln/detail/CVE-YYYY-NNNNN
+before deleting or dismissing it. CVE-2025-61260 was incorrectly deleted as "hallucinated" —
+it was real (CVSS 9.8 CRITICAL, Codex CLI MCP config injection, Check Point Research).
+
 ## Platform
 - **OS:** Kali GNU/Linux Rolling 2026.1 (kernel 6.19.14+kali-amd64, x86_64)
 - **Shell:** zsh
