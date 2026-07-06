@@ -280,6 +280,23 @@ server.registerTool(
       return jsonResult({ error: `Tool not installed: ${args.tool}`, installed: false });
     }
 
+    // Block GUI applications — the MCP bridge is headless-only.
+    // Any tool requiring X11/Wayland/display must never launch.
+    const GUI_TOOLS = new Set([
+      'ophcrack', 'burpsuite', 'zaproxy', 'wireshark', 'ghidraRun', 'ghidra',
+      'firefox', 'chromium', 'google-chrome', 'brave-browser',
+      'xterm', 'gnome-terminal', 'konsole', 'xfce4-terminal',
+      'zenity', 'kdialog', 'xmessage', 'gksudo', 'kdesudo',
+      'ettercap-gtk', 'zenmap', 'maltego', 'spiderfoot',
+      'armitage', 'beef-xss', 'faraday', 'snort', 'ethereal',
+    ]);
+    if (GUI_TOOLS.has(args.tool)) {
+      return jsonResult({
+        error: `GUI application blocked: ${args.tool} requires a display. Use headless alternatives: ghidra→ghidra_headless, wireshark→tshark, burpsuite→curl/nikto/sqlmap.`,
+        blocked: true,
+      });
+    }
+
     const timeoutMs = args.timeoutMs || TIMEOUT_MS;
     const extraArgs = (args.args || '').trim();
     const spawnArgs = extraArgs ? parseFlags(extraArgs) : [];
