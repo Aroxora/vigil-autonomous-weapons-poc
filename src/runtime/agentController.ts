@@ -211,13 +211,7 @@ export async function createAgentController(
       workingDir: options.workingDir,
       getSelection: () => controller.getSelection(),
       onProgress: (msg) => {
-        controller.activeSink?.push({
-          type: 'tool.start',
-          timestamp: Date.now(),
-          toolName: msg,
-          parameters: {},
-          toolCallId: '',
-        });
+        controller.pushToolStart(msg);
       },
     });
   } catch (err) {
@@ -233,6 +227,17 @@ export class AgentController implements IAgentController {
   private readonly sinkRef: EventSinkRef;
   private readonly externalCallbacks: AgentCallbacks | undefined;
   private activeSink: EventStream<AgentEventUnion> | null = null;
+
+  /** Push a tool.start event from external sources (e.g. sub-agent progress). */
+  pushToolStart(toolName: string): void {
+    this.activeSink?.push({
+      type: 'tool.start',
+      timestamp: Date.now(),
+      toolName,
+      parameters: {},
+      toolCallId: '',
+    });
+  }
   private agent: ReturnType<AgentSession['createAgent']> | null = null;
   private cachedHistory: ConversationMessage[] = [];
   private selection: ModelSelection;
