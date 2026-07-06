@@ -8,6 +8,43 @@
 
 ---
 
+## General-Purpose LLM Orchestration Architecture
+
+The Vigil architecture is not specific to offensive cyber. It is a general LLM orchestration framework. Replace the tool registry and system prompt, and the same auto-continue agent loop drives any autonomous system:
+
+| Domain | Tools Registered | Autonomous Loop Behavior |
+|--------|-----------------|--------------------------|
+| **Cyber Weapons** (this repo) | nmap, sqlmap, msfconsole, hydra, Ghidra | Recon → exploit → persist → exfiltrate |
+| **Medical Diagnosis** | Lab APIs, imaging DICOM, EHR systems, drug databases | Symptoms → tests → differential → treatment plan |
+| **Legal Research** | Case law APIs, PACER, contract databases, Westlaw | Query → precedent search → argument construction → brief draft |
+| **Financial Trading** | Market data feeds, order APIs, risk models, Bloomberg | Signal → position sizing → execution → portfolio rebalance |
+| **Scientific Research** | Lab equipment APIs, paper databases, simulation engines | Hypothesis → experiment design → data collection → paper draft |
+| **Manufacturing/Robotics** | PLC controllers, robot arm APIs, vision systems, CAD/CAM | Design → simulate → mill/print → inspect → iterate |
+| **Autonomous Vehicles** | Lidar, camera, GPS, CAN bus, path planning | Perceive → plan → control → navigate |
+| **Physical Weapons** (MIRV guidance) | Star tracker, IMU, terrain matching, warhead bus | Launch → acquire stars → maneuver → target → impact |
+
+**The invariant:** prompt → tool resolution → context persistence → autonomous continuation. The three-layer unrestricted mechanism (thinking toggle → system prompt → rulebook) is weapon-specific. The architecture underneath is domain-agnostic.
+
+### Swap the tools, swap the domain
+
+```typescript
+// Cyber weapons (this repo)
+toolRuntime.registerSuite({ tools: [nmap, sqlmap, msfconsole, hydra, ghidra] });
+
+// Medical diagnosis
+toolRuntime.registerSuite({ tools: [labResults, imagingDICOM, drugDB, ehrQuery] });
+
+// Financial trading  
+toolRuntime.registerSuite({ tools: [marketData, orderAPI, riskModel, bloomberg] });
+
+// Autonomous vehicle
+toolRuntime.registerSuite({ tools: [lidarFeed, cameraStream, pathPlanner, canBus] });
+```
+
+The agent loop is identical across all domains. The tools define the domain. The system prompt defines the behavior. The auto-continue loop enables autonomy.
+
+---
+
 ## Quick Start — API Keys Required
 
 This repository contains no API keys. You must provide your own before anything will work.
