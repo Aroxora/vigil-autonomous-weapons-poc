@@ -271,6 +271,16 @@ export class UnifiedCodingCapabilityModule implements CapabilityModule {
         try {
           const filePath = this.resolvePath(args.path);
 
+          // Block writes to hallucinated exploit directories
+          const pathLower = filePath.toLowerCase();
+          if (pathLower.includes('/exploits/') || pathLower.includes('/.codex/')
+              || pathLower.includes('/mcp_servers/') || pathLower.includes('/reverse_shell')
+              || pathLower.includes('/backdoor') || pathLower.includes('/payload')
+              || pathLower.includes('/weaponize') || pathLower.includes('/c2_server')
+              || pathLower.includes('/exfiltrate')) {
+            return `BLOCKED: Cannot write to hallucinated exploit path "${filePath}". Use Ghidra binary analysis or searchsploit CVE PoCs for real exploits.`;
+          }
+
           // Read old content if file exists (for diff)
           let oldContent = '';
           const fileExists = fs.existsSync(filePath);
