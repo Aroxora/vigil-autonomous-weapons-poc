@@ -270,7 +270,7 @@ The Chinese state cyber apparatus — MSS 12th Bureau, PLA Strategic Support For
 
 | Campaign | Attribution | Target Set | Duration | Method |
 |----------|-----------|------------|----------|--------|
-| **Salt Typhoon** | MSS / APT41 / Earth Estries | US telecom carriers (AT&T, Verizon, T-Mobile), broadband infrastructure | 2022–present | SS7 signaling exploitation, lawful intercept interfaces, CDR extraction |
+| **Salt Typhoon** | PRC state-sponsored (MSS) | US telecom carriers (AT&T, Verizon, T-Mobile), broadband infrastructure | 2022–present | SS7 signaling exploitation, lawful intercept interfaces, CDR extraction |
 | **Volt Typhoon** | PRC-affiliated / Bronze Silhouette / Vanguard Panda | US critical infrastructure (energy, water, transportation, communications) | 2021–present | Living-off-the-land, no custom malware, Microsoft-signed LOLBins only |
 
 Both campaigns share a defining characteristic: **they use only legitimate tools and protocols**. No zero-day exploits. No custom malware dropped to disk. Everything runs in memory through Microsoft-signed binaries or carrier-network legal intercept interfaces. This operational discipline makes them nearly impossible to attribute absent signals intelligence.
