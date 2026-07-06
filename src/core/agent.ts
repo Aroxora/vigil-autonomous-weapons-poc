@@ -391,7 +391,7 @@ export class AgentRuntime {
       }
       cleaned.push(msg);
     }
-    this.messages = cleaned;
+    this.messages.splice(0, this.messages.length, ...cleaned);
   }
 
   /**
